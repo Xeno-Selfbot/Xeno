@@ -1176,6 +1176,8 @@ bot.on("message", async message => {
                 message.channel.send("```" + data + "```")
             })
     }
+} else {
+    return;
 }
 })
 
