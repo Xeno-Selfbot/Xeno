@@ -42,8 +42,8 @@ To simply run the bot, just run `start.bat`. The bot should be working fine as l
 # Cryptic ToS
 
 1. You MUST NOT claim the code as your own code
-2. You MUST NOT edit the code for the bot.
-3. You MUST NOT claim owner ship of the bot
+2. You MUST NOT claim owner ship of the bot
+3. Feel free to edit the code if you want to make something better.
 
 # Cryptic Risks
 
