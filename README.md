@@ -5,7 +5,7 @@ A discord user automation tool
 
 Run `install.bat`\
 Wait for everything to install\
-Then you are done!
+Then you are done installing the required packages!
 # Setup
 
 Before you do anything, make sure you rename `config-example.json` to `config.json`
