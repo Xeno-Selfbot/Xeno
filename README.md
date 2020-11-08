@@ -13,7 +13,7 @@ Before you do anything, make sure you rename `config-example.json` to `config.js
 Next, get your discord token and paste it into `config.json`
 
 So far, your config file should look like this
-```js
+```json
 {
     "token": "token-here",
     "nitro_sniper": false,
