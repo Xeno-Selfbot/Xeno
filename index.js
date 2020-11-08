@@ -560,9 +560,11 @@ bot.on("message", async message => {
         \`${prefix}ascii <text>\` ❯ Converts your message to ascii
         \`${prefix}avatar [user]\` ❯ Gets the avatar from the mentioned user
         \`${prefix}cb <message>\` ❯ Talk to yourself as if it's a chat bot
+        \`${prefix}clean <amount>\` ❯ Deletes the specified amount of your messages
         \`${prefix}dmall <message>\` ❯ Sends everyone the specified message
         \`${prefix}embed <message>\` ❯ Sends an embed with your text
         \`${prefix}empty\` ❯ Sends an empty message
+        \`${prefix}emojify <text>\` ❯ Converts your text to emojis
         \`${prefix}fakenitro <user-id>\` ❯ Sends the user a fake discord nitro scam
         \`${prefix}ghostping <channel-id> <user-id>\` ❯ Ghostpings the user in the channel
         \`${prefix}hug <user>\` ❯ Random anime hugging gif
@@ -574,6 +576,7 @@ bot.on("message", async message => {
         \`${prefix}rainbowrole <role-id>\` ❯ Edits the color of the specified role
         \`${prefix}spamall <message>\` ❯ Sends every channel a message
         \`${prefix}say <message>\` ❯ Says what ever you want
+        \`${prefix}snipe [page-num]\` ❯ Snipes the recently deleted message
         \`${prefix}spam <amount> <message>\` ❯ Spams your message the specified amount of times
         \`${prefix}text <bold|italics|underline|destroy|upper|lower|strikethrough|hidden|everything> <message>\` ❯ Sends your message in different forms
         \`${prefix}uptime\` ❯ Shows how long the bot has been currently been running for
