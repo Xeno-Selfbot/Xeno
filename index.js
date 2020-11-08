@@ -1231,4 +1231,8 @@ bot.on("message", async message => {
     }
 })
 
-bot.login(config.token)
+if(config.token === "token-here") {
+    console.log(`${colors.red("[ERROR]:")} ${colors.yellow("No token was specified in config.json")}`)
+} else {
+    bot.login(config.token)
+}
