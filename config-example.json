@@ -1,0 +1,12 @@
+{
+    "token": "token-here",
+    "nitro_sniper": false,
+    "prefix": "!",
+    "webhookID": "" ,
+    "webhookToken": "",
+    "embedOptions": {
+        "color": "",
+        "image": "",
+        "footer": "" 
+    }
+}
