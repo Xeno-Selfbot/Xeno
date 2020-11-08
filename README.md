@@ -37,7 +37,7 @@ For the embed options. You can play around with the options to customise the way
 
 # Run the bot
 
-To simply run the bot, just run `start.bat`. The bot should be working fine as long as you DON'T edit the code.
+To simply run the bot, just run `start.bat`. The bot should be working fine as long as you don't muck up the code.
 
 # Cryptic ToS
 
