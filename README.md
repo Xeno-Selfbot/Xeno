@@ -17,6 +17,7 @@ So far, your config file should look like this
 {
     "token": "token-here",
     "nitro_sniper": false,
+    "whitelisted": [],
     "prefix": "!",
     "webhookID": "" ,
     "webhookToken": "",
@@ -31,7 +32,9 @@ So far, your config file should look like this
 You should choose a desired prefix for the commands so then the commands won't run if you sent `ping` for an example.
 [ NOTE: The prefix must not include any spaces or the commands will not register properly ]
 
-For the webhook id and token, those are optional. The webhook is just used for spamming @everyone in your discord server. Just to annoy people :wink:
+For the `whitelisted` part, that is optional, you can put your own id in there so then you can use the selfbot commands
+
+For the webhook id and token, those are optional. The webhook is just used for spamming `@everyone` in your discord server. Just to annoy people :wink:
 
 For the embed options. You can play around with the options to customise the way embeds are sent into discord. (embed options are optional to play around with)
 

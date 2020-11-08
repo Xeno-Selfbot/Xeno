@@ -1,6 +1,7 @@
 {
     "token": "token-here",
     "nitro_sniper": false,
+    "whitelisted": [],
     "prefix": "!",
     "webhookID": "" ,
     "webhookToken": "",

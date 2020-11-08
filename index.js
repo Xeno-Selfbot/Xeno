@@ -51,61 +51,6 @@ bot.on("ready", () => {
     `)
 })
 
-bot.on("messageDelete", message => {
-    if(message.author.bot) return;
-    const snipes = bot.snipes.get(message.channel.id) || [];
-    snipes.unshift({
-        content: message.content,
-        author: message.author,
-        attachment: message.attachments.first() ? message.attachments.first().proxyURL : null,
-        date: new Date().toLocaleString("en-GB", { dataStyle: "full", timeStyle: "short"})
-    })
-    snipes.splice(10);
-    bot.snipes.set(message.channel.id, snipes) 
-})
-
-bot.on("message", message => {
-    const start = process.hrtime();
-    const difference = process.hrtime(start);
-
-    function nitroData(code) {
-        console.log(`- CHANNEL: ${colors.yellow(`${message.channel.name}`)}`)
-        console.log(`- SERVER: ${colors.yellow(`${message.guild.name}`)}`)
-        console.log(`- AUTHOR: ${colors.yellow(`${message.author.tag}`)}`)
-        console.log(`- ELAPSED: ${colors.yellow(`${difference[0] > 0 ? `${difference[0]}s ` : ""}${difference[1] / 1e6}ms`)}`)
-        console.log(`- CODE: ${colors.yellow(`${code}`)}`)
-        console.log()  
-    }
-
-    if(message.content.includes("https://discord.gift/") || message.content.includes("discord.gift")) {
-        if(config.nitro_sniper === true) {
-
-        var Nitro = /(discord\.(gift)|discord\.com\/gift)\/.+[a-z]/
-
-        var NitroUrl = Nitro.exec(message.content);
-        var NitroCode = NitroUrl[0].split('/')[1];
-
-        axios({
-            method: 'POST',
-            url: `https://discord.com/api/v6/entitlements/gift-codes/${NitroCode}/redeem`,
-            headers:
-            {
-                'Authorization': config.token
-            }
-        }).then(() => {
-            console.log(colors.green(`[${moment().format("LTS")} - Valid nitro code was successfully redeemed]`))
-            nitroData(NitroCode)
-        })
-        .catch(ex => {
-        console.log(colors.red(`[${moment().format("LTS")} - Unknown nitro code was either redeemed or invalid/fake]`))
-        nitroData(NitroCode)
-        })
-        } else {
-            return;
-        } 
-    }
-})
-
 bot.on("message", async message => {
     if(message.author.bot) return;
     if(message.author.id !== bot.user.id) return;
@@ -115,6 +60,8 @@ bot.on("message", async message => {
     let args = messageArray.slice(1);
     if(!message.content.startsWith(prefix)) return;
 
+    if(config.whitelisted.includes(message.author.id)) {
+    
     // Selfbot commands
     if(cmd === "rainbowrole") {
         if(message.deletable) {
@@ -1228,6 +1175,62 @@ bot.on("message", async message => {
     
                 message.channel.send("```" + data + "```")
             })
+    }
+}
+})
+
+bot.on("messageDelete", message => {
+    if(message.author.bot) return;
+    const snipes = bot.snipes.get(message.channel.id) || [];
+    snipes.unshift({
+        content: message.content,
+        author: message.author,
+        attachment: message.attachments.first() ? message.attachments.first().proxyURL : null,
+        date: new Date().toLocaleString("en-GB", { dataStyle: "full", timeStyle: "short"})
+    })
+    snipes.splice(10);
+    bot.snipes.set(message.channel.id, snipes) 
+})
+
+bot.on("message", message => {
+    const start = process.hrtime();
+    const difference = process.hrtime(start);
+
+    function nitroData(code) {
+        console.log(`- CHANNEL: ${colors.yellow(`${message.channel.name}`)}`)
+        console.log(`- SERVER: ${colors.yellow(`${message.guild.name}`)}`)
+        console.log(`- AUTHOR: ${colors.yellow(`${message.author.tag}`)}`)
+        console.log(`- ELAPSED: ${colors.yellow(`${difference[0] > 0 ? `${difference[0]}s ` : ""}${difference[1] / 1e6}ms`)}`)
+        console.log(`- CODE: ${colors.yellow(`${code}`)}`)
+        console.log()  
+    }
+
+    if(message.content.includes("https://discord.gift/") || message.content.includes("discord.gift")) {
+        if(config.nitro_sniper === true) {
+
+        var Nitro = /(discord\.(gift)|discord\.com\/gift)\/.+[a-z]/
+
+        var NitroUrl = Nitro.exec(message.content);
+        var NitroCode = NitroUrl[0].split('/')[1];
+
+        axios({
+            method: 'POST',
+            url: `https://discord.com/api/v6/entitlements/gift-codes/${NitroCode}/redeem`,
+            headers:
+            {
+                'Authorization': config.token
+            }
+        }).then(() => {
+            console.log(colors.green(`[${moment().format("LTS")} - Valid nitro code was successfully redeemed]`))
+            nitroData(NitroCode)
+        })
+        .catch(ex => {
+        console.log(colors.red(`[${moment().format("LTS")} - Unknown nitro code was either redeemed or invalid/fake]`))
+        nitroData(NitroCode)
+        })
+        } else {
+            return;
+        } 
     }
 })
 
