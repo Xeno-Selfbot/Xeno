@@ -4,9 +4,11 @@ A discord user automation tool
 -
 Installation
 -
+
 Run `install.bat`
 Wait for everything to install
 Then you are done!
+
 -
 Setup
 -
