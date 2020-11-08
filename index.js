@@ -569,6 +569,7 @@ bot.on("message", async message => {
         \`${prefix}ghostping <channel-id> <user-id>\` ❯ Ghostpings the user in the channel
         \`${prefix}hug <user>\` ❯ Random anime hugging gif
         \`${prefix}meme\` ❯ Sends a fresh meme of the internet
+        \`${prefix}nitro\` ❯ Sends a fake discord nitro gift into the channel
         \`${prefix}ping\` ❯ Shows the message and the websocket latency
         \`${prefix}pat <user>\` ❯ Random anime patting gif
         \`${prefix}reverse <message>\` ❯ Reverses your message
@@ -1011,6 +1012,21 @@ bot.on("message", async message => {
         .setDescription(`${bot.users.get(args[0]).tag} has been sent a fake discord nitro scam`)
         .setTimestamp()
         message.channel.send(successEmbed)
+    }
+
+    if(cmd === "nitro") {
+        if(message.deletable) {
+            message.delete()
+        }
+        let embed = new Discord.RichEmbed()
+        .setAuthor("Free Discord Nitro")
+        .setColor(color ? color : null)
+        .setFooter(footer ? footer : null)
+        .setTitle("Congratulations, you have received a free discord nitro gift")
+        .setDescription("Click **[Here](https://www.youtube.com/watch?v=dQw4w9WgXcQ)** to redeem your free discord nitro")
+        .setThumbnail("https://cdn.discordapp.com/attachments/739274510544404480/757460435984449607/DiscordNitoLogo.png")
+        .setImage("https://cdn.discordapp.com/attachments/739274510544404480/757460356384948254/BlaringPointedInvisiblerail-size_restricted.gif")
+        message.channel.send(embed)
     }
 
     if(cmd === "ghostping") {
