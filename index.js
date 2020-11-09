@@ -556,6 +556,7 @@ bot.on("message", async message => {
         \`${prefix}dmall <message>\` ❯ Sends everyone the specified message
         \`${prefix}embed <message>\` ❯ Sends an embed with your text
         \`${prefix}empty\` ❯ Sends an empty message
+        \`${prefix}eval <code>\` ❯ Evaluates JavaScript code
         \`${prefix}emojify <text>\` ❯ Converts your text to emojis
         \`${prefix}fakenitro <user-id>\` ❯ Sends the user a fake discord nitro scam
         \`${prefix}ghostping <channel-id> <user-id>\` ❯ Ghostpings the user in the channel
