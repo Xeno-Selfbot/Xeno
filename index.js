@@ -111,8 +111,6 @@ bot.on("message", async message => {
             message.delete()
         }
         const msg = message;
-        let embed = new Discord.RichEmbed()
-        .addField("Input", "```js\n" + args.join(" ") + "```")
 
         try {
             let code = args.join(" ");
@@ -127,22 +125,19 @@ bot.on("message", async message => {
             let output = clean(evaled)
             if (output.length > 1024) {
                 const {body} = await post("https://hastebin.com/documents").send(output);
-                embed.addField("Output", "```js\n" + `https://hastebin.com/${body.key}.js` + "```").setColor(0x7289DA);
+                msg.channel.send("```js\n" + `https://hastebin.com/${body.key}.js` + "```")
             } else {
-                embed.addField("Output", "```js\n" + output + "```").setColor(0x7289DA);
+                msg.channel.send("```js\n" + output + "```")
             }
-
-            msg.channel.send(embed);
 
         } catch (error) {
             let err = clean(error);
             if (err.length > 1024) {
             const {body} = await post("https://hastebin.com/documents").send(err);
-            embed.addField("Output", "```js\n" + `https://hastebin.com/${body.key}.js` + "```").setColor("RED");
+            msg.channel.send("```js\n" + `https://hastebin.com/${body.key}.js` + "```")
         } else {
-            embed.addField("Output", "```js\n" + err + "```").setColor("RED");
+            msg.channel.send("```js\n" + err + "```")
         }
-        msg.channel.send(embed);
     }
 
     function clean(string) {
