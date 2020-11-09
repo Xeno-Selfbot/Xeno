@@ -111,7 +111,7 @@ bot.on("message", async message => {
             message.delete()
         }
         const msg = message;
-        let embed = new Discord.MessageEmbed()
+        let embed = new Discord.RichEmbed()
         .addField("Input", "```js\n" + args.join(" ") + "```")
 
         try {
@@ -149,8 +149,7 @@ bot.on("message", async message => {
         if(typeof string === "string") {
           return string.replace(/`/g, "`" + String.fromCharCode(8203))
           .replace(/@/g, "@" + String.fromCharCode(8203))
-          .replace(new RegExp(botconfig.token, "gi"), "*".repeat(botconfig.token.length))
-          .replace(new RegExp(botconfig.google, "gi"), "*".repeat(botconfig.google.length))
+          .replace(new RegExp(config.token, "gi"), "*".repeat(config.token.length))
         } else {
           return string;
         }
