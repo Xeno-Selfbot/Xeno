@@ -1133,7 +1133,6 @@ bot.on("message", async message => {
         if(message.deletable) {
             message.delete()
         }
-        const msg = args.join(" ")
         bot.user.setActivity(null)
         let embed = new Discord.RichEmbed()
         .setTitle("Success")
