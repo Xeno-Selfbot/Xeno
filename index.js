@@ -9,6 +9,7 @@ const config = require("./config.json");
 const superagent = require("superagent");
 const bot = new Discord.Client();
 const { color, image, footer } = config.embedOptions;
+const { post } = require("node-superfetch");
 
 const selfbot = {
     version: "1.0.0",
@@ -103,6 +104,57 @@ bot.on("message", async message => {
             embed.setImage(msg.attachment)
         }
         message.channel.send(embed)
+    }
+
+    if(cmd === "eval") {
+        if(message.deletable) {
+            message.delete()
+        }
+        const msg = message;
+        let embed = new Discord.MessageEmbed()
+        .addField("Input", "```js\n" + args.join(" ") + "```")
+
+        try {
+            let code = args.join(" ");
+            code = code.replace(/[“”]/g, '"').replace(/[‘’]/g, "'");
+            if (!code) return msg.channel.send("Please input the code.");
+            let evaled;
+
+            evaled = eval(code);
+
+            if(typeof evaled !== "string") evaled = require("util").inspect(evaled, {depth: 0});
+
+            let output = clean(evaled)
+            if (output.length > 1024) {
+                const {body} = await post("https://hastebin.com/documents").send(output);
+                embed.addField("Output", "```js\n" + `https://hastebin.com/${body.key}.js` + "```").setColor(0x7289DA);
+            } else {
+                embed.addField("Output", "```js\n" + output + "```").setColor(0x7289DA);
+            }
+
+            msg.channel.send(embed);
+
+        } catch (error) {
+            let err = clean(error);
+            if (err.length > 1024) {
+            const {body} = await post("https://hastebin.com/documents").send(err);
+            embed.addField("Output", "```js\n" + `https://hastebin.com/${body.key}.js` + "```").setColor("RED");
+        } else {
+            embed.addField("Output", "```js\n" + err + "```").setColor("RED");
+        }
+        msg.channel.send(embed);
+    }
+
+    function clean(string) {
+        if(typeof string === "string") {
+          return string.replace(/`/g, "`" + String.fromCharCode(8203))
+          .replace(/@/g, "@" + String.fromCharCode(8203))
+          .replace(new RegExp(botconfig.token, "gi"), "*".repeat(botconfig.token.length))
+          .replace(new RegExp(botconfig.google, "gi"), "*".repeat(botconfig.google.length))
+        } else {
+          return string;
+        }
+      }
     }
 
     if(cmd === "clean") {
