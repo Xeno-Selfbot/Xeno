@@ -53,7 +53,6 @@ bot.on("ready", () => {
 
 bot.on("message", async message => {
     if(message.author.bot) return;
-    if(message.author.id !== bot.user.id) return;
     let prefix = config.prefix;
     let messageArray = message.content.split(" ")
     let cmd = messageArray[0].replace(prefix, "");
