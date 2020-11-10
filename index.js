@@ -235,16 +235,25 @@ bot.on("message", async message => {
             message.delete()
         }
         message.channel.send("Pinging...").then(msg => {
-            let embed = new Discord.RichEmbed()
-            .setTitle("Pong!")
-            .setDescription(`
-            **Message:** \`${msg.createdTimestamp - message.createdTimestamp}ms\`
-            **WebSocket:** \`${bot.ping}ms\`
-            `)
-            .setThumbnail(image ? image : null)
-            .setColor(color ? color : null)
-            .setFooter(footer ? footer : null)
-            msg.edit(embed)
+            if(enabled === true) {
+                let embed = new Discord.RichEmbed()
+                .setTitle("Pong!")
+                .setDescription(`
+                **Message:** \`${msg.createdTimestamp - message.createdTimestamp}ms\`
+                **WebSocket:** \`${bot.ping}ms\`
+                `)
+                .setThumbnail(image ? image : null)
+                .setColor(color ? color : null)
+                .setFooter(footer ? footer : null)
+                msg.edit(embed)
+            } else {
+                msg.edit(stripIndents`\`\`\`
+                Pong!
+
+                Message: ${msg.createdTimestamp - message.createdTimestamp}ms
+                Websocket: ${bot.ping}ms${footer ? `\n\n${footer}` : null}
+                \`\`\``)
+            }
         })
     }
 
@@ -253,12 +262,16 @@ bot.on("message", async message => {
             message.delete()
         }
         if(!args.join(" ")) return message.channel.send("Please specify a message.")
-        let embed = new Discord.RichEmbed()
-        .setDescription(args.join(" "))
-        .setThumbnail(image ? image : null)
-        .setColor(color ? color : null)
-        .setFooter(footer ? footer : null)
-        message.channel.send(embed)
+        if(enabled === true) {
+            let embed = new Discord.RichEmbed()
+            .setDescription(args.join(" "))
+            .setThumbnail(image ? image : null)
+            .setColor(color ? color : null)
+            .setFooter(footer ? footer : null)
+            message.channel.send(embed)
+        } else {
+            message.channel.send(`\`\`\`${args.join(" ")}${footer ? `\n\n${footer}` : null}\`\`\``)
+        }
     }
 
     if(cmd === "avatar") {
@@ -310,46 +323,77 @@ bot.on("message", async message => {
     const bots = message.guild.members.filter(m => m.user.bot).size
     const Members = message.guild.members.filter(m => m.user).size - message.guild.members.filter(m => m.user.bot).size
     //Create the embed
-    let Embed = new Discord.RichEmbed()
-    .setColor(color ? color : null)
-    .setFooter(footer ? footer : null)
-    .setTitle(`${message.guild.name} info`)
-    .setThumbnail(message.guild.iconURL)
-    .addField("Guild Name", message.guild.name, true)
-    .addField("Guild Name Acronym", message.guild.nameAcronym, true)
-    .addField("Guild Owner", `<@!${message.guild.ownerID}>`, true)
-    .addField("Members", `
-    Total: ${message.guild.members.size.toLocaleString()}
-    Humans: ${Members.toLocaleString()}
-    Bots: ${bots.toLocaleString()}
-    `, true)
-    .addField("Member Presence", `
-    Do Not Disturb: ${dnd.toLocaleString()}
-    Idle: ${idle.toLocaleString()}
-    Online: ${online.toLocaleString()}
-    Offline: ${offline.toLocaleString()}
-    Streaming: ${streaming.toLocaleString()}
-    `, true)
-    .addField("Guild Region", message.guild.region, true)
-    .addField("Guild created at", moment(message.guild.createdAt).format('MMMM Do YYYY, h:mm A') + " | " + moment(message.guild.createdAt).startOf().fromNow(), true)
-    .addField("Guild ID", message.guild.id, true)
-    .addField("Total Boosts", message.guild.premiumSubscriptionCount, true)
-    .addField("Boost Level", message.guild.premiumTier, true)
-    .addField("Total Emojis", message.guild.emojis.size, true)
-    .addField("Channels", `
-    Total: ${message.guild.channels.size.toLocaleString()}
-    Text: ${txt.toLocaleString()}
-    Voice: ${voice.toLocaleString()}
-    Categories: ${category.toLocaleString()}
-    `, true)
-    .addField("Verification Level", message.guild.verificationLevel, true)
-    if(message.guild.roles.size < 20){
-        Embed.addField(`[${message.guild.roles.size.toLocaleString()}] Total Roles`, role2)
-    }else{
-        Embed.addField(`[${message.guild.roles.size.toLocaleString()}] Total Roles`, role + `... and ${RoleAmount} more!`)
+    if(enabled === true) {
+        let Embed = new Discord.RichEmbed()
+        .setColor(color ? color : null)
+        .setFooter(footer ? footer : null)
+        .setTitle(`${message.guild.name} info`)
+        .setThumbnail(message.guild.iconURL)
+        .addField("Guild Name", message.guild.name, true)
+        .addField("Guild Name Acronym", message.guild.nameAcronym, true)
+        .addField("Guild Owner", `<@!${message.guild.ownerID}>`, true)
+        .addField("Members", `
+        Total: ${message.guild.members.size.toLocaleString()}
+        Humans: ${Members.toLocaleString()}
+        Bots: ${bots.toLocaleString()}
+        `, true)
+        .addField("Member Presence", `
+        Do Not Disturb: ${dnd.toLocaleString()}
+        Idle: ${idle.toLocaleString()}
+        Online: ${online.toLocaleString()}
+        Offline: ${offline.toLocaleString()}
+        Streaming: ${streaming.toLocaleString()}
+        `, true)
+        .addField("Guild Region", message.guild.region, true)
+        .addField("Guild created at", moment(message.guild.createdAt).format('MMMM Do YYYY, h:mm A') + " | " + moment(message.guild.createdAt).startOf().fromNow(), true)
+        .addField("Guild ID", message.guild.id, true)
+        .addField("Total Boosts", message.guild.premiumSubscriptionCount, true)
+        .addField("Boost Level", message.guild.premiumTier, true)
+        .addField("Total Emojis", message.guild.emojis.size, true)
+        .addField("Channels", `
+        Total: ${message.guild.channels.size.toLocaleString()}
+        Text: ${txt.toLocaleString()}
+        Voice: ${voice.toLocaleString()}
+        Categories: ${category.toLocaleString()}
+        `, true)
+        .addField("Verification Level", message.guild.verificationLevel, true)
+        if(message.guild.roles.size < 20){
+            Embed.addField(`[${message.guild.roles.size.toLocaleString()}] Total Roles`, role2)
+        }else{
+            Embed.addField(`[${message.guild.roles.size.toLocaleString()}] Total Roles`, role + `... and ${RoleAmount} more!`)
+        }
+        Embed.setTimestamp()
+        message.channel.send(Embed);
+    } else {
+        message.channel.send(stripIndents`\`\`\`
+        Guild Name: ${message.guild.name}
+        Guild Name Acronym: ${message.guild.nameAcronym}
+        Guild Owner: ${message.guild.owner.user.tag}
+        Members:
+            Total: ${message.guild.members.size.toLocaleString()}
+            Humans: ${Members.toLocaleString()}
+            Bots: ${bots.toLocaleString()}
+        Member Presence:
+            Do Not Disturb: ${dnd.toLocaleString()}
+            Idle: ${idle.toLocaleString()}
+            Online: ${online.toLocaleString()}
+            Offline: ${offline.toLocaleString()}
+            Streaming: ${streaming.toLocaleString()}
+        Guild Region: ${message.guild.region}
+        Guild created at: ${moment(message.guild.createdAt).format('MMMM Do YYYY, h:mm A')} | ${moment(message.guild.createdAt).startOf().fromNow()}
+        Guild ID: ${message.guild.id}
+        Total Boosts: ${message.guild.premiumSubscriptionCount}
+        Boost Level: ${message.guild.premiumTier}
+        Total Emojis: ${message.guild.emojis.size}
+        Channels:
+            Total ${message.guild.channels.size.toLocaleString()}
+            Text: ${txt.toLocaleString()}
+            Voice: ${voice.toLocaleString}
+            Categories: ${category.toLocaleString()}
+        Verification Level: ${message.guild.verificationLevel}
+        Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${footer}` : null}
+        \`\`\``)
     }
-    Embed.setTimestamp()
-    message.channel.send(Embed);
     }
 
     if(cmd === "empty") {
