@@ -407,12 +407,17 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
         }
         const {body} = await superagent.get(`https://some-random-api.ml/img/dog`)
         if(!body) return message.channel.send("Uh oh, it looks like that there was no body to load. Please try again.")
-        let embed = new Discord.RichEmbed()
-        .setTitle("Random dog image")
-        .setColor(color ? color : null)
-        .setFooter(footer ? footer : null)
-        .setImage(body.link)
-        message.channel.send(embed);
+        if(enabled === true) {
+            let embed = new Discord.RichEmbed()
+            .setTitle("Random dog image")
+            .setColor(color ? color : null)
+            .setFooter(footer ? footer : null)
+            .setImage(body.link)
+            message.channel.send(embed);
+        } else {
+            let img = new Discord.Attachment(body.link, "dog.png")
+            message.channel.send(img)
+        }
     }
 
     if(cmd === "cat") {
