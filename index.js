@@ -635,7 +635,7 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
             .setThumbnail(image ? image : null)
             .setColor(color ? color : null)
             .setFooter(footer ? footer : null)
-            .setDescription(`
+            .setDescription(stripIndents`\`\`\`
             <> = required | [] = optional
 
             \`${prefix}8ball <question>\` ❯ Asks the 8ball a question of your choice
@@ -665,7 +665,7 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
             \`${prefix}uptime\` ❯ Shows how long the bot has been currently been running for
             \`${prefix}wink <user>\` ❯ Random anime winking gif
             \`${prefix}webhookspam <amount> <message>\` ❯ Spams a webhook the specified amount of times and mentions everyone (Must have webhook id and token in config.json)
-            `)
+            \`\`\``)
         message.channel.send(embed)
         } else {
             message.channel.send(`\`\`\`
