@@ -743,23 +743,37 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
         if(message.deletable) {
             message.delete()
         }
-        let embed = new Discord.RichEmbed()
-        .setTitle("Info Commands")
-        .setThumbnail(image ? image : null)
-        .setColor(color ? color : null)
-        .setFooter(footer ? footer : null)
-        .setDescription(`
-        <> = required | [] = optional
+        if(enabled === true) {
+            let embed = new Discord.RichEmbed()
+            .setTitle("Info Commands")
+            .setThumbnail(image ? image : null)
+            .setColor(color ? color : null)
+            .setFooter(footer ? footer : null)
+            .setDescription(`
+            <> = required | [] = optional
 
-        \`${prefix}catfact\` ❯ Random cat fact
-        \`${prefix}dogfact\` ❯ Random dog fact
-        \`${prefix}foxfact\` ❯ Random fox fact
-        \`${prefix}help\` ❯ Shows a list of command categories
-        \`${prefix}serverinfo\` ❯ Shows the servers information
-        \`${prefix}whois [user]\` ❯ Shows information on the mentioned user
-        \`${prefix}botinfo\` ❯ Shows information on the Cryptic selfbot
-        `)
-        message.channel.send(embed)
+            \`${prefix}catfact\` ❯ Random cat fact
+            \`${prefix}dogfact\` ❯ Random dog fact
+            \`${prefix}foxfact\` ❯ Random fox fact
+            \`${prefix}help\` ❯ Shows a list of command categories
+            \`${prefix}serverinfo\` ❯ Shows the servers information
+            \`${prefix}whois [user]\` ❯ Shows information on the mentioned user
+            \`${prefix}botinfo\` ❯ Shows information on the Cryptic selfbot
+            `)
+            message.channel.send(embed)
+        } else {
+            message.channel.send(stripIndents`\`\`\`
+            <> = required | [] = optional
+
+            ${prefix}catfact ❯ Random cat fact
+            ${prefix}dogfact ❯ Random dog fact
+            ${prefix}foxfact ❯ Random fox fact
+            ${prefix}help ❯ Shows a list of command categories
+            ${prefix}serverinfo ❯ Shows the servers information
+            ${prefix}whois [user] ❯ Shows information on the mentioned user
+            ${prefix}botinfo ❯ Shows information on the Cryptic selfbot${footer ? `\n\n${footer}` : null}
+            \`\`\``)
+        }
     }
 
     if(cmd === "face") {
