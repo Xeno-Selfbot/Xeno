@@ -8,8 +8,9 @@ const figlet = require("figlet");
 const config = require("./config.json");
 const superagent = require("superagent");
 const bot = new Discord.Client();
-const { color, image, footer } = config.embedOptions;
+const { color, image, footer, enabled } = config.embedOptions;
 const { post } = require("node-superfetch");
+const { stripIndents } = require("common-tags");
 
 const selfbot = {
     version: "1.0.0",
@@ -90,20 +91,29 @@ bot.on("message", async message => {
         const snipes = bot.snipes.get(message.channel.id) || [];
         const msg = snipes[args[0]-1||0]
         if(!msg) return message.channel.send("❌ There's nothing to snipe!")
-        let embed = new Discord.RichEmbed()
-        .setAuthor(msg.author.tag, msg.author.displayAvatarURL)
-        .setDescription(`${msg.content}
+        if(enabled === true) {
+            let embed = new Discord.RichEmbed()
+            .setAuthor(msg.author.tag, msg.author.displayAvatarURL)
+            .setDescription(`${msg.content}
         
-        **Date:** ${msg.date}
-        **Page:** ${args[0]||1}/${snipes.length}
-        `)
-        .setThumbnail(image ? image : null)
-        .setColor(color ? color : null)
-        .setFooter(footer ? footer : null)
-        if(msg.attachment) {
-            embed.setImage(msg.attachment)
+            **Date:** ${msg.date}
+            **Page:** ${args[0]||1}/${snipes.length}
+            `)
+            .setThumbnail(image ? image : null)
+            .setColor(color ? color : null)
+            .setFooter(footer ? footer : null)
+            if(msg.attachment) {
+                embed.setImage(msg.attachment)
+            }
+            message.channel.send(embed)
+        } else {
+            message.channel.send(stripIndents```${msg.author.tag}
+
+            ${msg.content}
+
+            Date: ${msg.date}
+            Page: ${args[0]||1}/${snipes.length}${footer ? `\n\n${footer}` : null}```)
         }
-        message.channel.send(embed)
     }
 
     if(cmd === "eval") {

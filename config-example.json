@@ -6,6 +6,7 @@
     "webhookID": "" ,
     "webhookToken": "",
     "embedOptions": {
+        "enabled": true,
         "color": "",
         "image": "",
         "footer": "" 
