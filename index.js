@@ -668,7 +668,7 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
             `)
         message.channel.send(embed)
         } else {
-            message.channel.send(`\`\`\`
+            message.channel.send(stripIndents`\`\`\`
             <> = required | [] = optional
 
             ${prefix}8ball <question> ❯ Asks the 8ball a question of your choice
