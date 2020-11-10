@@ -563,12 +563,17 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
         }
         const {body} = await superagent.get("https://some-random-api.ml/meme")
         if(!body) return message.channel.send("Uh oh, it looks like that there was no body to load. Please try again.")
-        let embed = new Discord.RichEmbed()
-        .setTitle(body.caption)
-        .setImage(body.image)
-        .setColor(color ? color : null)
-        .setFooter(footer ? footer : null)
-        message.channel.send(embed)
+        if(enabled === true) {
+            let embed = new Discord.RichEmbed()
+            .setTitle(body.caption)
+            .setImage(body.image)
+            .setColor(color ? color : null)
+            .setFooter(footer ? footer : null)
+            message.channel.send(embed)
+        } else {
+            let img = new Discord.Attachment(body.image, "meme.png")
+            message.channel.send(body.caption, img)
+        }
     }
 
     if(cmd === "base64") {
@@ -692,8 +697,8 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
             ${prefix}text <bold|italics|underline|destroy|upper|lower|strikethrough|hidden|everything> <message> ❯ Sends your message in different forms
             ${prefix}uptime ❯ Shows how long the bot has been currently been running for
             ${prefix}wink <user> ❯ Random anime winking gif
-            ${prefix}webhookspam <amount> <message> ❯ Spams a webhook the specified amount of times and mentions everyone (Must have webhook id and token in config.json)
-            `)
+            ${prefix}webhookspam <amount> <message> ❯ Spams a webhook the specified amount of times and mentions everyone (Must have webhook id and token in config.json)${footer ? `\n\n${footer}` : null}\`\`\`
+            \`\`\``)
         }
     }
 
