@@ -365,34 +365,32 @@ bot.on("message", async message => {
         Embed.setTimestamp()
         message.channel.send(Embed);
     } else {
-        message.channel.send(stripIndents`\`\`\`
-        Guild Name: ${message.guild.name}
-        Guild Name Acronym: ${message.guild.nameAcronym}
-        Guild Owner: ${message.guild.owner.user.tag}
-        Members:
-        \u3000 Total: ${message.guild.members.size.toLocaleString()}
-        \u3000 Humans: ${Members.toLocaleString()}
-        \u3000 Bots: ${bots.toLocaleString()}
-        Member Presence:
-        \u3000 Do Not Disturb: ${dnd.toLocaleString()}
-        \u3000 Idle: ${idle.toLocaleString()}
-        \u3000 Online: ${online.toLocaleString()}
-        \u3000 Offline: ${offline.toLocaleString()}
-        \u3000 Streaming: ${streaming.toLocaleString()}
-        Guild Region: ${message.guild.region}
-        Guild created at: ${moment(message.guild.createdAt).format('MMMM Do YYYY, h:mm A')} | ${moment(message.guild.createdAt).startOf().fromNow()}
-        Guild ID: ${message.guild.id}
-        Total Boosts: ${message.guild.premiumSubscriptionCount}
-        Boost Level: ${message.guild.premiumTier}
-        Total Emojis: ${message.guild.emojis.size}
-        Channels:
-        \u3000 Total ${message.guild.channels.size.toLocaleString()}
-        \u3000 Text: ${txt.toLocaleString()}
-        \u3000 Voice: ${voice.toLocaleString}
-        \u3000 Categories: ${category.toLocaleString()}
-        Verification Level: ${message.guild.verificationLevel}
-        Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${footer}` : null}
-        \`\`\``)
+        message.channel.send(`\`\`\`Guild Name: ${message.guild.name}
+Guild Name Acronym: ${message.guild.nameAcronym}
+Guild Owner: ${message.guild.owner.user.tag}
+Members:
+    Total: ${message.guild.members.size.toLocaleString()}
+    Humans: ${Members.toLocaleString()}
+    Bots: ${bots.toLocaleString()}
+Member Presence:
+    Do Not Disturb: ${dnd.toLocaleString()}
+    Idle: ${idle.toLocaleString()}
+    Online: ${online.toLocaleString()}
+    Offline: ${offline.toLocaleString()}
+    Streaming: ${streaming.toLocaleString()}
+Guild Region: ${message.guild.region}
+Guild created at: ${moment(message.guild.createdAt).format('MMMM Do YYYY, h:mm A')} | ${moment(message.guild.createdAt).startOf().fromNow()}
+Guild ID: ${message.guild.id}
+Total Boosts: ${message.guild.premiumSubscriptionCount}
+Boost Level: ${message.guild.premiumTier}
+Total Emojis: ${message.guild.emojis.size}
+Channels:
+    Total ${message.guild.channels.size.toLocaleString()}
+    Text: ${txt.toLocaleString()}
+    Voice: ${voice.toLocaleString}
+    Categories: ${category.toLocaleString()}
+Verification Level: ${message.guild.verificationLevel}
+Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${footer}` : null}\`\`\``)
     }
     }
 
