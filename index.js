@@ -706,23 +706,37 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
         if(message.deletable) {
             message.delete()
         }
-        let embed = new Discord.RichEmbed()
-        .setTitle("Available Commands")
-        .setThumbnail(image ? image : null)
-        .setColor(color ? color : null)
-        .setFooter(footer ? footer : null)
-        .setDescription(`
-        <> = required | [] = optional
+        if(enabled === true) {
+            let embed = new Discord.RichEmbed()
+            .setTitle("Available Commands")
+            .setThumbnail(image ? image : null)
+            .setColor(color ? color : null)
+            .setFooter(footer ? footer : null)
+            .setDescription(`
+            <> = required | [] = optional
 
-        \`${prefix}animals\` ❯ Animals Commands
-        \`${prefix}encode/decode\` ❯ Encode/Decode Commands
-        \`${prefix}fun\` ❯ Fun Commands
-        \`${prefix}info\` ❯ Info Commands
-        \`${prefix}status\` ❯ Status Commands
-        \`${prefix}nuke\` ❯ Raiding Commands
-        \`${prefix}face\` ❯ Face Commands
-        `)
-        message.channel.send(embed)
+            \`${prefix}animals\` ❯ Animals Commands
+            \`${prefix}encode/decode\` ❯ Encode/Decode Commands
+            \`${prefix}fun\` ❯ Fun Commands
+            \`${prefix}info\` ❯ Info Commands
+            \`${prefix}status\` ❯ Status Commands
+            \`${prefix}nuke\` ❯ Raiding Commands
+            \`${prefix}face\` ❯ Face Commands
+            `)
+            message.channel.send(embed)
+        } else {
+            message.channel.send(stripIndents`\`\`\`
+            <> = required | [] = optional
+
+            ${prefix}animals ❯ Animals Commands
+            ${prefix}encode/decode ❯ Encode/Decode Commands
+            ${prefix}fun ❯ Fun Commands
+            ${prefix}info ❯ Info Commands
+            ${prefix}status ❯ Status Commands
+            ${prefix}nuke ❯ Raiding Commands
+            ${prefix}face ❯ Face Commands
+            \`\`\``)
+        }
     }
 
     if(cmd === "info") {
