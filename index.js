@@ -426,12 +426,17 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
         }
         const {body} = await superagent.get(`https://some-random-api.ml/img/cat`)
         if(!body) return message.channel.send("Uh oh, it looks like that there was no body to load. Please try again.")
-        let embed = new Discord.RichEmbed()
-        .setColor(color ? color : null)
-        .setFooter(footer ? footer : null)
-        .setTitle("Random cat image")
-        .setImage(body.link)
-        message.channel.send(embed);
+        if(enabled === true) {
+            let embed = new Discord.RichEmbed()
+            .setTitle("Random cat image")
+            .setColor(color ? color : null)
+            .setFooter(footer ? footer : null)
+            .setImage(body.link)
+            message.channel.send(embed);
+        } else {
+            let img = new Discord.Attachment(body.link, "cat.png")
+            message.channel.send(img)
+        }
     }
 
     if(cmd === "fox") {
@@ -440,12 +445,17 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
         }
         const {body} = await superagent.get(`https://some-random-api.ml/img/fox`)
         if(!body) return message.channel.send("Uh oh, it looks like that there was no body to load. Please try again.")
-        let embed = new Discord.RichEmbed()
-        .setTitle("Random fox image")
-        .setColor(color ? color : null)
-        .setFooter(footer ? footer : null)
-        .setImage(body.link)
-        message.channel.send(embed);
+        if(enabled === true) {
+            let embed = new Discord.RichEmbed()
+            .setTitle("Random fox image")
+            .setColor(color ? color : null)
+            .setFooter(footer ? footer : null)
+            .setImage(body.link)
+            message.channel.send(embed);
+        } else {
+            let img = new Discord.Attachment(body.link, "fox.png")
+            message.channel.send(img)
+        }
     }
 
     if(cmd === "foxfact") {
@@ -483,12 +493,17 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
         if(!user) return message.channel.send("Please mention a user.")
         const {body} = await superagent.get(`https://some-random-api.ml/animu/wink`)
         if(!body) return message.channel.send("Uh oh, it looks like that there was no body to load. Please try again.")
-        let embed = new Discord.RichEmbed()
-        .setDescription(`${message.author} winks at ${user}`)
-        .setColor(color ? color : null)
-        .setFooter(footer ? footer : null)
-        .setImage(body.link)
-        message.channel.send(embed);
+        if(enabled === true) {
+            let embed = new Discord.RichEmbed()
+            .setDescription(`${message.author} winks at ${user}`)
+            .setColor(color ? color : null)
+            .setFooter(footer ? footer : null)
+            .setImage(body.link)
+            message.channel.send(embed);
+        } else {
+            let img = new Discord.Attachment(body.link, "wink.png")
+            message.channel.send(`${message.author.username} winks at ${user.username}`, img)
+        }
     }
 
     if(cmd === "pat") {
@@ -499,12 +514,17 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
         if(!user) return message.channel.send("Please mention a user.")
         const {body} = await superagent.get(`https://some-random-api.ml/animu/pat`)
         if(!body) return message.channel.send("Uh oh, it looks like that there was no body to load. Please try again.")
-        let embed = new Discord.RichEmbed()
-        .setDescription(`${message.author} pats ${user}`)
-        .setColor(color ? color : null)
-        .setFooter(footer ? footer : null)
-        .setImage(body.link)
-        message.channel.send(embed);
+        if(enabled === true) {
+            let embed = new Discord.RichEmbed()
+            .setDescription(`${message.author} pats ${user}`)
+            .setColor(color ? color : null)
+            .setFooter(footer ? footer : null)
+            .setImage(body.link)
+            message.channel.send(embed);
+        } else {
+            let img = new Discord.Attachment(body.link, "pat.png")
+            message.channel.send(`${message.author.username} pats ${user.username}`, img)
+        }
     }
 
     if(cmd === "hug") {
@@ -515,12 +535,17 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
         if(!user) return message.channel.send("Please mention a user.")
         const {body} = await superagent.get(`https://some-random-api.ml/animu/hug`)
         if(!body) return message.channel.send("Uh oh, it looks like that there was no body to load. Please try again.")
-        let embed = new Discord.RichEmbed()
-        .setDescription(`${message.author} hugs ${user}`)
-        .setImage(body.link)
-        .setColor(color ? color : null)
-        .setFooter(footer ? footer : null)
-        message.channel.send(embed);
+        if(enabled === true) {
+            let embed = new Discord.RichEmbed()
+            .setDescription(`${message.author}  hugs ${user}`)
+            .setColor(color ? color : null)
+            .setFooter(footer ? footer : null)
+            .setImage(body.link)
+            message.channel.send(embed);
+        } else {
+            let img = new Discord.Attachment(body.link, "hug.png")
+            message.channel.send(`${message.author.username} hugs ${user.username}`, img)
+        }
     }
 
     if(cmd === "randomtoken") {
@@ -599,43 +624,77 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
         if(message.deletable) {
             message.delete()
         }
-        let embed = new Discord.RichEmbed()
-        .setTitle("Fun Commands")
-        .setThumbnail(image ? image : null)
-        .setColor(color ? color : null)
-        .setFooter(footer ? footer : null)
-        .setDescription(`
-        <> = required | [] = optional
+        if(enabled === true) {
+            let embed = new Discord.RichEmbed()
+            .setTitle("Fun Commands")
+            .setThumbnail(image ? image : null)
+            .setColor(color ? color : null)
+            .setFooter(footer ? footer : null)
+            .setDescription(`
+            <> = required | [] = optional
 
-        \`${prefix}8ball <question>\` ❯ Asks the 8ball a question of your choice
-        \`${prefix}ascii <text>\` ❯ Converts your message to ascii
-        \`${prefix}avatar [user]\` ❯ Gets the avatar from the mentioned user
-        \`${prefix}cb <message>\` ❯ Talk to yourself as if it's a chat bot
-        \`${prefix}clean <amount>\` ❯ Deletes the specified amount of your messages
-        \`${prefix}dmall <message>\` ❯ Sends everyone the specified message
-        \`${prefix}embed <message>\` ❯ Sends an embed with your text
-        \`${prefix}empty\` ❯ Sends an empty message
-        \`${prefix}eval <code>\` ❯ Evaluates JavaScript code
-        \`${prefix}emojify <text>\` ❯ Converts your text to emojis
-        \`${prefix}fakenitro <user-id>\` ❯ Sends the user a fake discord nitro scam
-        \`${prefix}ghostping <channel-id> <user-id>\` ❯ Ghostpings the user in the channel
-        \`${prefix}hug <user>\` ❯ Random anime hugging gif
-        \`${prefix}meme\` ❯ Sends a fresh meme of the internet
-        \`${prefix}ping\` ❯ Shows the message and the websocket latency
-        \`${prefix}pat <user>\` ❯ Random anime patting gif
-        \`${prefix}reverse <message>\` ❯ Reverses your message
-        \`${prefix}randomtoken\` ❯ Generates a random invalid discord bot token
-        \`${prefix}rainbowrole <role-id>\` ❯ Edits the color of the specified role
-        \`${prefix}spamall <message>\` ❯ Sends every channel a message
-        \`${prefix}say <message>\` ❯ Says what ever you want
-        \`${prefix}snipe [page-num]\` ❯ Snipes the recently deleted message
-        \`${prefix}spam <amount> <message>\` ❯ Spams your message the specified amount of times
-        \`${prefix}text <bold|italics|underline|destroy|upper|lower|strikethrough|hidden|everything> <message>\` ❯ Sends your message in different forms
-        \`${prefix}uptime\` ❯ Shows how long the bot has been currently been running for
-        \`${prefix}wink <user>\` ❯ Random anime winking gif
-        \`${prefix}webhookspam <amount> <message>\` ❯ Spams a webhook the specified amount of times and mentions everyone (Must have webhook id and token in config.json)
-        `)
+            \`${prefix}8ball <question>\` ❯ Asks the 8ball a question of your choice
+            \`${prefix}ascii <text>\` ❯ Converts your message to ascii
+            \`${prefix}avatar [user]\` ❯ Gets the avatar from the mentioned user
+            \`${prefix}cb <message>\` ❯ Talk to yourself as if it's a chat bot
+            \`${prefix}clean <amount>\` ❯ Deletes the specified amount of your messages
+            \`${prefix}dmall <message>\` ❯ Sends everyone the specified message
+            \`${prefix}embed <message>\` ❯ Sends an embed with your text
+            \`${prefix}empty\` ❯ Sends an empty message
+            \`${prefix}eval <code>\` ❯ Evaluates JavaScript code
+            \`${prefix}emojify <text>\` ❯ Converts your text to emojis
+            \`${prefix}fakenitro <user-id>\` ❯ Sends the user a fake discord nitro scam
+            \`${prefix}ghostping <channel-id> <user-id>\` ❯ Ghostpings the user in the channel
+            \`${prefix}hug <user>\` ❯ Random anime hugging gif
+            \`${prefix}meme\` ❯ Sends a fresh meme of the internet
+            \`${prefix}ping\` ❯ Shows the message and the websocket latency
+            \`${prefix}pat <user>\` ❯ Random anime patting gif
+            \`${prefix}reverse <message>\` ❯ Reverses your message
+            \`${prefix}randomtoken\` ❯ Generates a random invalid discord bot token
+            \`${prefix}rainbowrole <role-id>\` ❯ Edits the color of the specified role
+            \`${prefix}spamall <message>\` ❯ Sends every channel a message
+            \`${prefix}say <message>\` ❯ Says what ever you want
+            \`${prefix}snipe [page-num]\` ❯ Snipes the recently deleted message
+            \`${prefix}spam <amount> <message>\` ❯ Spams your message the specified amount of times
+            \`${prefix}text <bold|italics|underline|destroy|upper|lower|strikethrough|hidden|everything> <message>\` ❯ Sends your message in different forms
+            \`${prefix}uptime\` ❯ Shows how long the bot has been currently been running for
+            \`${prefix}wink <user>\` ❯ Random anime winking gif
+            \`${prefix}webhookspam <amount> <message>\` ❯ Spams a webhook the specified amount of times and mentions everyone (Must have webhook id and token in config.json)
+            `)
         message.channel.send(embed)
+        } else {
+            message.channel.send(`\`\`\`
+            <> = required | [] = optional
+
+            ${prefix}8ball <question> ❯ Asks the 8ball a question of your choice
+            ${prefix}ascii <text> ❯ Converts your message to ascii
+            ${prefix}avatar [user] ❯ Gets the avatar from the mentioned user
+            ${prefix}cb <message> ❯ Talk to yourself as if it's a chat bot
+            ${prefix}clean <amount> ❯ Deletes the specified amount of your messages
+            ${prefix}dmall <message> ❯ Sends everyone the specified message
+            ${prefix}embed <message> ❯ Sends an embed with your text
+            ${prefix}empty ❯ Sends an empty message
+            ${prefix}eval <code> ❯ Evaluates JavaScript code
+            ${prefix}emojify <text> ❯ Converts your text to emojis
+            ${prefix}fakenitro <user-id> ❯ Sends the user a fake discord nitro scam
+            ${prefix}ghostping <channel-id> <user-id> ❯ Ghostpings the user in the channel
+            ${prefix}hug <user> ❯ Random anime hugging gif
+            ${prefix}meme ❯ Sends a fresh meme of the internet
+            ${prefix}ping ❯ Shows the message and the websocket latency
+            ${prefix}pat <user> ❯ Random anime patting gif
+            ${prefix}reverse <message> ❯ Reverses your message
+            ${prefix}randomtoken ❯ Generates a random invalid discord bot token
+            ${prefix}rainbowrole <role-id> ❯ Edits the color of the specified role
+            ${prefix}spamall <message> ❯ Sends every channel a message
+            ${prefix}say <message> ❯ Says what ever you want
+            ${prefix}snipe [page-num] ❯ Snipes the recently deleted message
+            ${prefix}spam <amount> <message> ❯ Spams your message the specified amount of times
+            ${prefix}text <bold|italics|underline|destroy|upper|lower|strikethrough|hidden|everything> <message> ❯ Sends your message in different forms
+            ${prefix}uptime ❯ Shows how long the bot has been currently been running for
+            ${prefix}wink <user> ❯ Random anime winking gif
+            ${prefix}webhookspam <amount> <message> ❯ Spams a webhook the specified amount of times and mentions everyone (Must have webhook id and token in config.json)
+            `)
+        }
     }
 
     if(cmd === "help") {
