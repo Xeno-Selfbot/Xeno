@@ -54,6 +54,7 @@ bot.on("ready", () => {
 })
 
 bot.on("message", async message => {
+
     if(message.author.bot) return;
     let prefix = config.prefix;
     let messageArray = message.content.split(" ")
@@ -90,7 +91,7 @@ bot.on("message", async message => {
         }
         const snipes = bot.snipes.get(message.channel.id) || [];
         const msg = snipes[args[0]-1||0]
-        if(!msg) return message.channel.send("❌ There's nothing to snipe!")
+        if(!msg) return message.channel.send("There's nothing to snipe.")
         if(enabled === true) {
             let embed = new Discord.RichEmbed()
             .setAuthor(msg.author.tag, msg.author.displayAvatarURL)
@@ -616,11 +617,11 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
         message.guild.members.forEach((member) => {
             try {
                 member.send(args.join(" ")).catch((err) => {
-                    return message.channel.send(`Error: \`${err}\``)
+                    return console.log(colors.red(`[-] Couldn't send message to ${member.user.tag}`))
                 })
-                message.channel.send(`Message sent to ${member.user.tag}`)
+                console.log(colors.green(`[+] Message sent to ${member.user.tag}`))
             } catch(err) {
-                return message.channel.send(`Error: \`${err}\``)
+                return console.log(colors.red(`[-] Couldn't send message to ${member.user.tag}`))
             }
         })
     }
