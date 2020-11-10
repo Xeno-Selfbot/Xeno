@@ -107,14 +107,14 @@ bot.on("message", async message => {
             }
             message.channel.send(embed)
         } else {
-            message.channel.send(stripIndents```
+            message.channel.send(`\`\`
             ${msg.author.tag}
 
             ${msg.content}
 
             Date: ${msg.date}
             Page: ${args[0]||1}/${snipes.length}${footer ? `\n\n${footer}` : null}
-            ```)
+            \`\``)
         }
     }
 
