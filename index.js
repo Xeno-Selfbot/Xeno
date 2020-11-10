@@ -734,7 +734,7 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
             ${prefix}info ❯ Info Commands
             ${prefix}status ❯ Status Commands
             ${prefix}nuke ❯ Raiding Commands
-            ${prefix}face ❯ Face Commands
+            ${prefix}face ❯ Face Commands${footer ? `\n\n${footer}` : null}
             \`\`\``)
         }
     }
