@@ -871,21 +871,33 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
         if(message.deletable) {
             message.delete()
         }
-        let embed = new Discord.RichEmbed()
-        .setTitle("Status Commands")
-        .setThumbnail(image ? image : null)
-        .setColor(color ? color : null)
-        .setFooter(footer ? footer : null)
-        .setDescription(`
-        <> = required | [] = optional
+        if(enabled === true) {
+            let embed = new Discord.RichEmbed()
+            .setTitle("Status Commands")
+            .setThumbnail(image ? image : null)
+            .setColor(color ? color : null)
+            .setFooter(footer ? footer : null)
+            .setDescription(`
+            <> = required | [] = optional
         
-        \`${prefix}listening <message>\` ❯ Sets your activity as listening with your message
-        \`${prefix}playing <message>\` ❯ Sets your activity as playing with your message
-        \`${prefix}stream <message>\` ❯ Sets your activity as streaming with your message
-        \`${prefix}watching <message>\` ❯ Sets your activity as watching with your message
-        \`${prefix}reset\` ❯ Resets your current activity
-        `)
-        message.channel.send(embed)
+            \`${prefix}listening <message>\` ❯ Sets your activity as listening with your message
+            \`${prefix}playing <message>\` ❯ Sets your activity as playing with your message
+            \`${prefix}stream <message>\` ❯ Sets your activity as streaming with your message
+            \`${prefix}watching <message>\` ❯ Sets your activity as watching with your message
+            \`${prefix}reset\` ❯ Resets your current activity
+            `)
+            message.channel.send(embed)
+        } else {
+            message.channel.send(stripIndents`
+            <> = required | [] = optional
+        
+            ${prefix}listening <message> ❯ Sets your activity as listening with your message
+            ${prefix}playing <message> ❯ Sets your activity as playing with your message
+            ${prefix}stream <message> ❯ Sets your activity as streaming with your message
+            ${prefix}watching <message> ❯ Sets your activity as watching with your message
+            ${prefix}reset ❯ Resets your current activity${footer ? `\n\n${footer}` : null}
+            `)
+        }
     }
 
     if(cmd === "animals") {
