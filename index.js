@@ -56,6 +56,10 @@ bot.on("ready", () => {
 
 bot.on("message", async message => {
 
+    if(config.messageLogs === true) {
+        console.log(`${colors.red(message.guild.name)} : ${colors.blue(message.channel.name)} : ${message.author.tag} : ${colors.green(message.content)}`)
+    }
+
     if(message.author.bot) return;
     let prefix = config.prefix;
     let messageArray = message.content.split(" ")
@@ -1424,7 +1428,7 @@ bot.on("messageDelete", message => {
         date: new Date().toLocaleString("en-GB", { dataStyle: "full", timeStyle: "short"})
     })
     snipes.splice(10);
-    bot.snipes.set(message.channel.id, snipes) 
+    bot.snipes.set(message.channel.id, snipes)
 })
 
 bot.on("message", message => {
