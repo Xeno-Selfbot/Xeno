@@ -785,20 +785,31 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
         if(message.deletable) {
             message.delete()
         }
-        let embed = new Discord.RichEmbed()
-        .setTitle("Face Commands")
-        .setThumbnail(image ? image : null)
-        .setColor(color ? color : null)
-        .setFooter(footer ? footer : null)
-        .setDescription(`
-        <> = required | [] = optional
+        if(enabled === true) {
+            let embed = new Discord.RichEmbed()
+            .setTitle("Face Commands")
+            .setThumbnail(image ? image : null)
+            .setColor(color ? color : null)
+            .setFooter(footer ? footer : null)
+            .setDescription(`
+            <> = required | [] = optional
 
-        \`${prefix}lenny\` ❯ Sends ( ͡° ͜ʖ ͡°)
-        \`${prefix}flip\` ❯ Sends (╯°□°）╯︵ ┻━┻
-        \`${prefix}unflip\` ❯ Sends ┬─┬ ノ( ゜-゜ノ)
-        \`${prefix}shrug\` ❯ Sends ¯\\_(ツ)_/¯
-        `)
-        message.channel.send(embed)
+            \`${prefix}lenny\` ❯ Sends ( ͡° ͜ʖ ͡°)
+            \`${prefix}flip\` ❯ Sends (╯°□°）╯︵ ┻━┻
+            \`${prefix}unflip\` ❯ Sends ┬─┬ ノ( ゜-゜ノ)
+            \`${prefix}shrug\` ❯ Sends ¯\\_(ツ)_/¯
+            `)
+            message.channel.send(embed)
+        } else {
+            message.channel.send(stripIndents`
+            <> = required | [] = optional
+
+            ${prefix}lenny ❯ Sends ( ͡° ͜ʖ ͡°)
+            ${prefix}flip ❯ Sends (╯°□°）╯︵ ┻━┻
+            ${prefix}unflip ❯ Sends ┬─┬ ノ( ゜-゜ノ)
+            ${prefix}shrug ❯ Sends ¯\\_(ツ)_/¯${footer ? `\n\n${footer}` : null}
+            `)
+        }
     }
 
     if(cmd === "lenny") {
@@ -833,19 +844,27 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
         if(message.deletable) {
             message.delete()
         }
-        let embed = new Discord.RichEmbed()
-        .setTitle("Encode/Decode Commands")
-        .setThumbnail(image ? image : null)
-        .setColor(color ? color : null)
-        .setFooter(footer ? footer : null)
-        .setDescription(`
-        <> = required | [] = optional
+        if(enabled === true) {
+            let embed = new Discord.RichEmbed()
+            .setTitle("Encode/Decode Commands")
+            .setThumbnail(image ? image : null)
+            .setColor(color ? color : null)
+            .setFooter(footer ? footer : null)
+            .setDescription(`
+            <> = required | [] = optional
 
-        \`${prefix}binary <encode|decode> <message|binary>\` ❯ Encodes/decodes binary
-        \`${prefix}base64 <encode|decode> <message|base64>\` ❯ Encodes/decodes base64
-        `)
+            \`${prefix}binary <encode|decode> <message|binary>\` ❯ Encodes/decodes binary
+            \`${prefix}base64 <encode|decode> <message|base64>\` ❯ Encodes/decodes base64
+            `)
+            message.channel.send(embed)
+        } else {
+            message.channel.send(stripIndents`
+            <> = required | [] = optional
 
-        message.channel.send(embed)
+            ${prefix}binary <encode|decode> <message|binary> ❯ Encodes/decodes binary
+            ${prefix}base64 <encode|decode> <message|base64> ❯ Encodes/decodes base64${footer ? `\n\n${footer}` : null}
+            `)
+        }
     }
 
     if(cmd === "status") {
