@@ -631,13 +631,7 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
             message.delete()
         }
         if(enabled === true) {
-            let embed = new Discord.RichEmbed()
-            .setTitle("Fun Commands")
-            .setThumbnail(image ? image : null)
-            .setColor(color ? color : null)
-            .setFooter(footer ? footer : null)
-            .setDescription(`
-            <> = required | [] = optional
+            const description = stripIndents`<> = required | [] = optional
 
             \`${prefix}8ball <question>\` ❯ Asks the 8ball a question of your choice
             \`${prefix}ascii <text>\` ❯ Converts your message to ascii
@@ -665,8 +659,18 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
             \`${prefix}text <bold|italics|underline|destroy|upper|lower|strikethrough|hidden|everything> <message>\` ❯ Sends your message in different forms
             \`${prefix}uptime\` ❯ Shows how long the bot has been currently been running for
             \`${prefix}wink <user>\` ❯ Random anime winking gif
-            \`${prefix}webhookspam <amount> <message>\` ❯ Spams a webhook the specified amount of times and mentions everyone (Must have webhook id and token in config.json)
-            `)
+            \`${prefix}webhookspam <amount> <message>\` ❯ Spams a webhook the specified amount of times and mentions everyone (Must have webhook id and token in config.json)`
+            let embed = new Discord.RichEmbed()
+            .setTitle("Fun Commands")
+            .setThumbnail(image ? image : null)
+            .setColor(color ? color : null)
+            .setFooter(footer ? footer : null)
+            if(description.length < 2000) {
+                embed.setDescription(description)
+            } else {
+                const {body} = await post("https://hastebin.com/documents").send(description)
+                embed.setDescription(`The list was to big, click this link to view all commands:\n**https://hastebin.com/${body.key}**`)
+            }
         message.channel.send(embed)
         } else {
             message.channel.send(stripIndents`\`\`\`
