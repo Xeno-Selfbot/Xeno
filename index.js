@@ -276,7 +276,7 @@ bot.on("message", async message => {
             .setFooter(footer ? footer : null)
             message.channel.send(embed)
         } else {
-            message.channel.send(`\`\`\`${args.join(" ")}${footer ? `\n\n${footer}` : null}\`\`\``)
+            message.channel.send(`\`\`\`${args.join(" ")}\`\`\``)
         }
     }
 
