@@ -679,6 +679,8 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
         message.channel.send(embed)
         } else {
             message.channel.send(stripIndents`\`\`\`
+            Fun Commands
+
             <> = required | [] = optional
 
             ${prefix}8ball <question> ❯ Asks the 8ball a question of your choice
@@ -773,6 +775,8 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
             message.channel.send(embed)
         } else {
             message.channel.send(stripIndents`\`\`\`
+            Info Commands
+
             <> = required | [] = optional
 
             ${prefix}catfact ❯ Random cat fact
@@ -807,6 +811,8 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
             message.channel.send(embed)
         } else {
             message.channel.send(stripIndents`\`\`\`
+            Face Commands
+
             <> = required | [] = optional
 
             ${prefix}lenny ❯ Sends ( ͡° ͜ʖ ͡°)
@@ -864,6 +870,8 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
             message.channel.send(embed)
         } else {
             message.channel.send(stripIndents`\`\`\`
+            Encode/decode Commands
+
             <> = required | [] = optional
 
             ${prefix}binary <encode|decode> <message|binary> ❯ Encodes/decodes binary
@@ -894,6 +902,8 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
             message.channel.send(embed)
         } else {
             message.channel.send(stripIndents`\`\`\`
+            Status Commands
+
             <> = required | [] = optional
         
             ${prefix}listening <message> ❯ Sets your activity as listening with your message
@@ -925,6 +935,8 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
             message.channel.send(embed)
         } else {
             message.channel.send(stripIndents`\`\`\`
+            Animal Commands
+
             <> = required | [] = optional
         
             ${prefix}cat ❯ Random cat image
@@ -953,11 +965,13 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
             \`${prefix}massroles\` ❯ Creates a whole bunch of random roles
             \`${prefix}massban\` ❯ Bans everyone in the server (Not including the server owner or members with a higher rank/role)
             \`${prefix}masskick\` ❯ Kicks everyone in the server (Not including the server owner or members with a higher rank/role)
-            \`${prefix}raid\` ❯ Sets the name of everything to "Raided by Cryptic" and resets the server icon
+            \`${prefix}raid\` ❯ Changes every channel name, channel topic, role name to "Raided by Cryptic"
             `)
             message.channel.send(embed)
         } else {
             message.channel.send(stripIndents`\`\`\`
+            Nuke Commands
+
             <> = required | [] = optional
         
             ${prefix}delchannels ❯ Deletes every-single channel in the server
@@ -966,7 +980,7 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
             ${prefix}massroles ❯ Creates a whole bunch of random roles
             ${prefix}massban ❯ Bans everyone in the server (Not including the server owner or members with a higher rank/role)
             ${prefix}masskick ❯ Kicks everyone in the server (Not including the server owner or members with a higher rank/role)
-            ${prefix}raid ❯ Sets the name of everything to "Raided by Cryptic" and resets the server icon${footer ? `\n\n${footer}` : null}
+            ${prefix}raid ❯ Changes every channel name, channel topic, role name to "Raided by Cryptic"${footer ? `\n\n${footer}` : null}
             \`\`\``)
         }
     }
@@ -976,17 +990,21 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
             message.delete()
         }
         if(message.guild.me.hasPermission("ADMINISTRATOR")) {
-            const msg = await message.channel.send("Raiding...")
             message.guild.setIcon(null)
             message.guild.channels.forEach(channel => {
-                channel.setName("Raided by Cryptic")
-                channel.setTopic("Raided by Cryptic")
+                channel.setName("Raided by Cryptic").catch(err => {
+                    return console.log(colors.red(`[-] Channel ${channel.name} name couldn't be changed`))
+                })
+                channel.setTopic("Raided by Cryptic").catch(err => {
+                    return console.log(colors.red(`[-] Channel ${role.name} topic couldn't be changed`))
+                })
             })
-            message.guild.roles.forEach(role => role.setName("Raided by Cryptic").catch(err => { return }))
-            message.guild.setName("Raided by Cryptic")
-            message.guild.members.forEach(member => member.setNickname("Raided by Cryptic").catch(err => { return }))
-            msg.edit("The raid was successfully completed.")
-            msg.delete(5000)
+            message.guild.roles.forEach(role => {
+                console.log(colors.green(`[+] Role ${role.name} name was set to Raided by Cryptic`))
+                role.setName("Raided by Cryptic").catch(err => {
+                    return console.log(colors.red(`[-] Role ${role.name} name couldn't be changed`))
+                })
+            })
         }
     }
 
