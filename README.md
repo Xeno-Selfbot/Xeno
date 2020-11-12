@@ -19,6 +19,7 @@ So far, your config file should look like this
     "nitro_sniper": false,
     "whitelisted": [],
     "prefix": "!",
+    "messageLogs": false,
     "webhookID": "" ,
     "webhookToken": "",
     "embedOptions": {
@@ -37,6 +38,8 @@ For the `whitelisted` part, that is optional, you can put your own id in there s
 For the webhook id and token, those are optional. The webhook is just used for spamming `@everyone` in your discord server. Just to annoy people :wink:
 
 For the embed options. You can play around with the options to customise the way embeds are sent into discord. (embed options are optional to play around with)
+
+For the message logs, that is optional to have on or off, the message logs will just log any message a user sends
 
 # Run the bot
 

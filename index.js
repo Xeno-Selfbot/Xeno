@@ -57,7 +57,7 @@ bot.on("ready", () => {
 bot.on("message", async message => {
 
     if(config.messageLogs === true) {
-        console.log(`${colors.red(message.guild.name)} : ${colors.blue(message.channel.name)} : ${message.author.tag} : ${colors.green(message.content)}`)
+        console.log(`${colors.red(message.guild.name)} : ${colors.blue(message.channel.name)} : ${colors.yellow(message.author.tag)} : ${colors.green(message.content)}`)
     }
 
     if(message.author.bot) return;

@@ -3,6 +3,7 @@
     "nitro_sniper": false,
     "whitelisted": [],
     "prefix": "!",
+    "messageLogs": false,
     "webhookID": "" ,
     "webhookToken": "",
     "embedOptions": {
