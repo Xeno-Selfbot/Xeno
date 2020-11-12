@@ -806,14 +806,14 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
             `)
             message.channel.send(embed)
         } else {
-            message.channel.send(stripIndents`
+            message.channel.send(stripIndents`\`\`\`
             <> = required | [] = optional
 
             ${prefix}lenny ❯ Sends ( ͡° ͜ʖ ͡°)
             ${prefix}flip ❯ Sends (╯°□°）╯︵ ┻━┻
             ${prefix}unflip ❯ Sends ┬─┬ ノ( ゜-゜ノ)
             ${prefix}shrug ❯ Sends ¯\\_(ツ)_/¯${footer ? `\n\n${footer}` : null}
-            `)
+            \`\`\``)
         }
     }
 
@@ -863,12 +863,12 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
             `)
             message.channel.send(embed)
         } else {
-            message.channel.send(stripIndents`
+            message.channel.send(stripIndents`\`\`\`
             <> = required | [] = optional
 
             ${prefix}binary <encode|decode> <message|binary> ❯ Encodes/decodes binary
             ${prefix}base64 <encode|decode> <message|base64> ❯ Encodes/decodes base64${footer ? `\n\n${footer}` : null}
-            `)
+            \`\`\``)
         }
     }
 
@@ -893,7 +893,7 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
             `)
             message.channel.send(embed)
         } else {
-            message.channel.send(stripIndents`
+            message.channel.send(stripIndents`\`\`\`
             <> = required | [] = optional
         
             ${prefix}listening <message> ❯ Sets your activity as listening with your message
@@ -901,7 +901,7 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
             ${prefix}stream <message> ❯ Sets your activity as streaming with your message
             ${prefix}watching <message> ❯ Sets your activity as watching with your message
             ${prefix}reset ❯ Resets your current activity${footer ? `\n\n${footer}` : null}
-            `)
+            \`\`\``)
         }
     }
 
@@ -909,42 +909,66 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
         if(message.deletable) {
             message.delete()
         }
-        let embed = new Discord.RichEmbed()
-        .setTitle("Animal Commands")
-        .setThumbnail(image ? image : null)
-        .setColor(color ? color : null)
-        .setFooter(footer ? footer : null)
-        .setDescription(`
-        <> = required | [] = optional
+        if(enabled === true) {
+            let embed = new Discord.RichEmbed()
+            .setTitle("Animal Commands")
+            .setThumbnail(image ? image : null)
+            .setColor(color ? color : null)
+            .setFooter(footer ? footer : null)
+            .setDescription(`
+            <> = required | [] = optional
         
-        \`${prefix}cat\` ❯ Random cat image
-        \`${prefix}dog\` ❯ Random dog image
-        \`${prefix}fox\` ❯ Random fox image
-        `)
-        message.channel.send(embed)
+            \`${prefix}cat\` ❯ Random cat image
+            \`${prefix}dog\` ❯ Random dog image
+            \`${prefix}fox\` ❯ Random fox image
+            `)
+            message.channel.send(embed)
+        } else {
+            message.channel.send(stripIndents`\`\`\`
+            <> = required | [] = optional
+        
+            ${prefix}cat ❯ Random cat image
+            ${prefix}dog ❯ Random dog image
+            ${prefix}fox ❯ Random fox image${footer ? `\n\n${footer}` : null}
+            \`\`\``)
+        }
     }
 
     if(cmd === "nuke") {
         if(message.deletable) {
             message.delete()
         }
-        let embed = new Discord.RichEmbed()
-        .setTitle("Nuke Commands")
-        .setThumbnail(image ? image : null)
-        .setColor(color ? color : null)
-        .setFooter(footer ? footer : null)
-        .setDescription(`
-        <> = required | [] = optional
+        if(enabled === true) {
+            let embed = new Discord.RichEmbed()
+            .setTitle("Nuke Commands")
+            .setThumbnail(image ? image : null)
+            .setColor(color ? color : null)
+            .setFooter(footer ? footer : null)
+            .setDescription(`
+            <> = required | [] = optional
         
-        \`${prefix}delchannels\` ❯ Deletes every-single channel in the server
-        \`${prefix}delroles\` ❯ Deletes every-single role in the server
-        \`${prefix}masschannels\` ❯ Creates a whole bunch of random channels
-        \`${prefix}massroles\` ❯ Creates a whole bunch of random roles
-        \`${prefix}massban\` ❯ Bans everyone in the server (Not including the server owner or members with a higher rank/role)
-        \`${prefix}masskick\` ❯ Kicks everyone in the server (Not including the server owner or members with a higher rank/role)
-        \`${prefix}raid\` ❯ Sets the name of everything to "Raided by Cryptic" and resets the server icon
-        `)
-        message.channel.send(embed)
+            \`${prefix}delchannels\` ❯ Deletes every-single channel in the server
+            \`${prefix}delroles\` ❯ Deletes every-single role in the server
+            \`${prefix}masschannels\` ❯ Creates a whole bunch of random channels
+            \`${prefix}massroles\` ❯ Creates a whole bunch of random roles
+            \`${prefix}massban\` ❯ Bans everyone in the server (Not including the server owner or members with a higher rank/role)
+            \`${prefix}masskick\` ❯ Kicks everyone in the server (Not including the server owner or members with a higher rank/role)
+            \`${prefix}raid\` ❯ Sets the name of everything to "Raided by Cryptic" and resets the server icon
+            `)
+            message.channel.send(embed)
+        } else {
+            message.channel.send(stripIndents`\`\`\`
+            <> = required | [] = optional
+        
+            ${prefix}delchannels ❯ Deletes every-single channel in the server
+            ${prefix}delroles ❯ Deletes every-single role in the server
+            ${prefix}masschannels ❯ Creates a whole bunch of random channels
+            ${prefix}massroles ❯ Creates a whole bunch of random roles
+            ${prefix}massban ❯ Bans everyone in the server (Not including the server owner or members with a higher rank/role)
+            ${prefix}masskick ❯ Kicks everyone in the server (Not including the server owner or members with a higher rank/role)
+            ${prefix}raid ❯ Sets the name of everything to "Raided by Cryptic" and resets the server icon${footer ? `\n\n${footer}` : null}
+            \`\`\``)
+        }
     }
 
     if(cmd === "raid") {
@@ -1054,20 +1078,34 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
         const member = message.guild.member(user)
         const perms = member.permissions.toArray().map(str => str.replace(/_/g, " ").toLowerCase().replace(/\b(\w)/g, char => char.toUpperCase())).join(", ")
         const role = member.roles.map(r => r).join(", ")
-        let embed = new Discord.RichEmbed()
-        .setTitle(`${user.username} Info`)
-        .setDescription(`Here is some information on ${user.tag}`)
-        .setThumbnail(user.displayAvatarURL)
-        .setColor(member.highestRole.color || "202225")
-        .addField("Username", user.username, true)
-        .addField("Discriminator", user.discriminator, true)
-        .addField("ID", user.id, true)
-        .addField("Account Created", moment(user.createdAt).format('MMMM Do YYYY, h:mm A'), true)
-        .addField(`[${member.roles.size}] Total Roles`, role)
-        .addField("Guild Permissions", perms)
-        .setFooter(footer ? footer : null)
-        .setTimestamp()
-        message.channel.send(embed)
+        if(enabled === true) {
+            let embed = new Discord.RichEmbed()
+            .setTitle(`${user.username} Info`)
+            .setDescription(`Here is some information on ${user.tag}`)
+            .setThumbnail(user.displayAvatarURL)
+            .setColor(member.highestRole.color || "202225")
+            .addField("Username", user.username, true)
+            .addField("Discriminator", user.discriminator, true)
+            .addField("ID", user.id, true)
+            .addField("Account Created", moment(user.createdAt).format('MMMM Do YYYY, h:mm A'), true)
+            .addField(`[${member.roles.size}] Total Roles`, role)
+            .addField("Guild Permissions", perms)
+            .setFooter(footer ? footer : null)
+            .setTimestamp()
+            message.channel.send(embed)
+        } else {
+            message.channel.send(stripIndents`\`\`\`
+            ${user.username} Info
+            Here is some information on ${user.tag}
+
+            Username: ${user.username}
+            Discriminator: ${user.discriminator}
+            ID: ${user.id}
+            Account Created: ${moment(user.createdAt).format('MMMM Do YYYY, h:mm A')}
+            Total Roles: ${member.roles.size}
+            Guild Permissions: ${perms}${footer ? `\n\n${footer}` : null}
+            \`\`\``)
+        }
     }
 
     if(cmd === "uptime") {
@@ -1247,32 +1285,53 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
             "You may rely on it."
           ]
           let response = responses[Math.floor(Math.random()*(responses.length))]
-          let eightballEmbed = new Discord.RichEmbed()
-          .setTitle("The Magic 8 Ball has spoken")
-          .setThumbnail(image ? image : null)
-          .setColor(color ? color : null)
-          .setFooter(footer ? footer : null)
-          .addField("Question:", question, true)
-          .addField("Response:", response, true)
-          message.channel.send(eightballEmbed);
+          if(enabled === true) {
+            let eightballEmbed = new Discord.RichEmbed()
+            .setTitle("The Magic 8 Ball has spoken")
+            .setThumbnail(image ? image : null)
+            .setColor(color ? color : null)
+            .setFooter(footer ? footer : null)
+            .addField("Question:", question, true)
+            .addField("Response:", response, true)
+            message.channel.send(eightballEmbed);
+          } else {
+              message.channel.send(stripIndents`\`\`\`
+              The Magic 8 Ball has spoken
+              Question: ${question}
+              Response: ${response}${footer ? `\n\n${footer}` : null}
+              \`\`\``)
+          }
     }
 
     if(cmd === "botinfo") {
         if(message.deletable) {
             message.delete()
         }
-        let embed = new Discord.RichEmbed()
-        .setThumbnail("https://cdn.discordapp.com/attachments/763526514373033994/774811825120346123/cryptic-logo.png")
-        .setColor("#1B78E7")
-        .setFooter("𝘾𝙧𝙮𝙥𝙩𝙞𝙘")
-        .setTitle("Cryptic")
-        .setDescription("Cryptic is a discord user automation tool")
-        .addField("Developer", "p9sq#0594", true)
-        .addField("Node.js Version", process.version, true)
-        .addField("Discord.js Version", Discord.version, true)
-        .addField("Bot Version", require("./package.json").version, true)
-        .addField("Past Names", "Diamond", true)
-        message.channel.send(embed)
+        if(enabled === true) {
+            let embed = new Discord.RichEmbed()
+            .setThumbnail("https://cdn.discordapp.com/attachments/763526514373033994/774811825120346123/cryptic-logo.png")
+            .setColor("#1B78E7")
+            .setFooter("𝘾𝙧𝙮𝙥𝙩𝙞𝙘")
+            .setTitle("Cryptic")
+            .setDescription("Cryptic is a discord user automation tool")
+            .addField("Developer", "p9sq#0594", true)
+            .addField("Node.js Version", process.version, true)
+            .addField("Discord.js Version", Discord.version, true)
+            .addField("Bot Version", require("./package.json").version, true)
+            .addField("Past Names", "Diamond", true)
+            message.channel.send(embed)
+        } else {
+            message.channel.send(stripIndents`\`\`\`
+            Cryptic
+            Cryptic is a discord user automation tool
+
+            Developer: p9sq#0594
+            Node.js Version: ${process.version}
+            Discord.js Version: ${Discord.version}
+            Bot Version: ${require("./package.json").version}
+            Past Names: Diamond${footer ? `\n\n${footer}` : null}
+            \`\`\``)
+        }
     }
 
     if(cmd === "binary") {
@@ -1314,13 +1373,21 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
         }
         const msg = args.join(" ")
         bot.user.setActivity(msg, {type: "STREAMING", url: "https://www.twitch.tv/cypher"})
-        let embed = new Discord.RichEmbed()
-        .setTitle("Success")
-        .setThumbnail(image ? image : null)
-        .setColor(color ? color : null)
-        .setFooter(footer ? footer : null)
-        .setDescription(`Your activity was successfully set to \`STREAMING\` with message \`${msg}\``)
-        message.channel.send(embed);
+        if(enabled === true) {
+            let embed = new Discord.RichEmbed()
+            .setTitle("Success")
+            .setThumbnail(image ? image : null)
+            .setColor(color ? color : null)
+            .setFooter(footer ? footer : null)
+            .setDescription(`Your activity was successfully set to \`STREAMING\` with message \`${msg}\``)
+            message.channel.send(embed);
+        } else {
+            message.channel.send(stripIndents`\`\`\`
+            Success
+
+            Your activity was successfully set to STREAMING with message ${msg}${footer ? `\n\n${footer}` : null}
+            \`\`\``)
+        }
     }
 
     if(cmd === "watching") {
@@ -1329,13 +1396,21 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
         }
         const msg = args.join(" ")
         bot.user.setActivity(msg, {type: "WATCHING"})
-        let embed = new Discord.RichEmbed()
-        .setTitle("Success")
-        .setThumbnail(image ? image : null)
-        .setColor(color ? color : null)
-        .setFooter(footer ? footer : null)
-        .setDescription(`Your activity was successfully set to \`WATCHING\` with message \`${msg}\``)
-        message.channel.send(embed);
+        if(enabled === true) {
+            let embed = new Discord.RichEmbed()
+            .setTitle("Success")
+            .setThumbnail(image ? image : null)
+            .setColor(color ? color : null)
+            .setFooter(footer ? footer : null)
+            .setDescription(`Your activity was successfully set to \`WATCHING\` with message \`${msg}\``)
+            message.channel.send(embed);
+        } else {
+            message.channel.send(stripIndents`\`\`\`
+            Success
+
+            Your activity was successfully set to WATCHING with message ${msg}${footer ? `\n\n${footer}` : null}
+            \`\`\``)
+        }
     }
 
     if(cmd === "listening") {
@@ -1344,13 +1419,21 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
         }
         const msg = args.join(" ")
         bot.user.setActivity(msg, {type: "LISTENING"})
-        let embed = new Discord.RichEmbed()
-        .setTitle("Success")
-        .setThumbnail(image ? image : null)
-        .setColor(color ? color : null)
-        .setFooter(footer ? footer : null)
-        .setDescription(`Your activity was successfully set to \`LISTENING\` with message \`${msg}\``)
-        message.channel.send(embed);
+        if(enabled === true) {
+            let embed = new Discord.RichEmbed()
+            .setTitle("Success")
+            .setThumbnail(image ? image : null)
+            .setColor(color ? color : null)
+            .setFooter(footer ? footer : null)
+            .setDescription(`Your activity was successfully set to \`LISTENING\` with message \`${msg}\``)
+            message.channel.send(embed);
+        } else {
+            message.channel.send(stripIndents`\`\`\`
+            Success
+
+            Your activity was successfully set to STREAMING with LISTENING ${msg}${footer ? `\n\n${footer}` : null}
+            \`\`\``)
+        }
     }
 
     if(cmd === "playing") {
@@ -1359,13 +1442,21 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
         }
         const msg = args.join(" ")
         bot.user.setActivity(msg, {type: "PLAYING"})
-        let embed = new Discord.RichEmbed()
-        .setTitle("Success")
-        .setThumbnail(image ? image : null)
-        .setColor(color ? color : null)
-        .setFooter(footer ? footer : null)
-        .setDescription(`Your activity was successfully set to \`PLAYING\` with message \`${msg}\``)
-        message.channel.send(embed);
+        if(enabled === true) {
+            let embed = new Discord.RichEmbed()
+            .setTitle("Success")
+            .setThumbnail(image ? image : null)
+            .setColor(color ? color : null)
+            .setFooter(footer ? footer : null)
+            .setDescription(`Your activity was successfully set to \`PLAYING\` with message \`${msg}\``)
+            message.channel.send(embed);
+        } else {
+            message.channel.send(stripIndents`\`\`\`
+            Success
+
+            Your activity was successfully set to PLAYING with message ${msg}${footer ? `\n\n${footer}` : null}
+            \`\`\``)
+        }
     }
 
     if(cmd === "reset") {
@@ -1373,13 +1464,21 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
             message.delete()
         }
         bot.user.setActivity(null)
-        let embed = new Discord.RichEmbed()
-        .setTitle("Success")
-        .setThumbnail(image ? image : null)
-        .setColor(color ? color : null)
-        .setFooter(footer ? footer : null)
-        .setDescription("Your activity was successfully reset")
-        message.channel.send(embed);
+        if(enabled === true) {
+            let embed = new Discord.RichEmbed()
+            .setTitle("Success")
+            .setThumbnail(image ? image : null)
+            .setColor(color ? color : null)
+            .setFooter(footer ? footer : null)
+            .setDescription(`Your activity was successfully reset`)
+            message.channel.send(embed);
+        } else {
+            message.channel.send(stripIndents`\`\`\`
+            Success
+
+            Your activity was successfully reset${footer ? `\n\n${footer}` : null}
+            \`\`\``)
+        }
     }
 
     if(cmd === "clear") {
