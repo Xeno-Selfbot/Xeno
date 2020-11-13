@@ -719,6 +719,21 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
         }
     }
 
+    if(cmd === "chelp") {
+        if(message.deletable) {
+            message.delete()
+        }
+        console.log(stripIndents`<> = required | [] = optional
+
+        ${prefix}${colors.cyan("animals")} > ${colors.yellow("Animals Commands")}
+        ${prefix}${colors.green("encode/decode")} > ${colors.yellow("Encode/Decode Commands")}
+        ${prefix}${colors.rainbow("fun")} > ${colors.yellow("Fun Commands")}
+        ${prefix}${colors.grey("info")} > ${colors.yellow("Info Commands")}
+        ${prefix}${colors.america("status")} > ${colors.yellow("Status Commands")}
+        ${prefix}${colors.red("nuke")} > ${colors.yellow("Raiding Commands")}
+        ${prefix}${colors.magenta("face")} > ${colors.yellow("Face Commands")}`)
+    }
+
     if(cmd === "help") {
         if(message.deletable) {
             message.delete()
@@ -770,6 +785,7 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
             <> = required | [] = optional
 
             \`${prefix}catfact\` ❯ Random cat fact
+            \`${prefix}chelp\` ❯ Logs the help command to the console
             \`${prefix}dogfact\` ❯ Random dog fact
             \`${prefix}foxfact\` ❯ Random fox fact
             \`${prefix}help\` ❯ Shows a list of command categories
