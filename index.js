@@ -54,12 +54,12 @@ bot.on("ready", () => {
     `)
 })
 
-bot.on("message", async message => {
+bot.on("message", async(message) => {
 
     if(config.messageLogs === true) {
         console.log(`${colors.red(message.guild.name)} : ${colors.blue(message.channel.name)} : ${colors.yellow(message.author.tag)} : ${colors.green(message.content)}`)
     }
-
+    
     if(message.author.bot) return;
     let prefix = config.prefix;
     let messageArray = message.content.split(" ")
@@ -611,7 +611,12 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
             message.delete()
         }
         if(!args.join(" ")) return message.channel.send("Please provide a message.")
-        message.guild.channels.filter(ch => ch.type === "text").forEach(ch => ch.send(args.join(" ")))
+        message.guild.channels.filter(ch => ch.type === "text").forEach(ch => {
+            console.log(colors.green(`[+] Message sent to #${ch.name}`))
+            ch.send(args.join(" ")).catch(err => {
+                return console.log(colors.red(`[-] Message couldn't send to #${ch.name}`))
+            })
+        })
     }
 
     if(cmd === "dmall") {
