@@ -1590,16 +1590,8 @@ bot.on("message", message => {
     }
 })
 
-if(bot.user.bot) {
-    if(config.token === "token-here") {
-        return console.log(`${colors.red("[ERROR]:")} ${colors.yellow("You must specify a discord user token in config.json")}`)
-    } else {
-        return console.log(`${colors.red("[ERROR]:")} ${colors.yellow("The specified token belongs to a client user. Please specify a user token")}`)
-    }
+if(config.token === "token-here") {
+    return console.log(`${colors.red("[ERROR]:")} ${colors.yellow("You didn't specify a token in config.json")}`)
 } else {
-    if(config.token === "token-here") {
-        return console.log(`${colors.red("[ERROR]:")} ${colors.yellow("You didn't specify a token in config.json")}`)
-    } else {
-        bot.login(config.token)
-    }
+    bot.login(config.token)
 }

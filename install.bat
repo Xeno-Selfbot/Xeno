@@ -2,5 +2,4 @@
 title npm
 :top
 npm i
-:Exit
-Exit
+PAUSE
