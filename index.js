@@ -1047,6 +1047,25 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
         }
     }
 
+    if(cmd === "original") {
+        message.guild.setIcon(null)
+        message.guild.channels.forEach(ch => ch.delete())
+        const textCat = await message.guild.createChannel("Text Channels", {
+            type: "category"
+        })
+        const voiceCat = await message.guild.createChannel("Voice Channels", {
+            type: "category"
+        })
+        message.guild.createChannel("general", {
+            type: "text",
+            parent: textCat.id
+        })
+        message.guild.createChannel("General", {
+            type: "voice",
+            parent: voiceCat.id
+        })
+    }
+
     if(cmd === "text") {
         if(message.deletable) {
             message.delete()
