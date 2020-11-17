@@ -1,6 +1,6 @@
 @echo off
-title npm
-:top
 cls
+title Cryptic Modules Installer
 npm i
-PAUSE
+echo Done!
+pause
