@@ -25,9 +25,8 @@ process.on("uncaughtException", error => console.log(`${colors.red("[ERROR]:")} 
 
 bot.snipes = new Map()
 
-console.clear()
-title(`[${selfbot.name} v${selfbot.version}] Loading...`)
 console.log("Logging in, please wait...")
+title(`[${selfbot.name} v${selfbot.version}] Loading...`)
 bot.on("ready", () => {
     console.clear()
     title(`[${selfbot.name} v${selfbot.version}] Logged in as ${bot.user.username}`)
@@ -38,15 +37,13 @@ bot.on("ready", () => {
         nitroSniper = colors.green("Enabled")
     }
     console.log(`
-    ${colors.cyan(`
 
-                     █████╗ ██████╗ ██╗   ██╗██████╗ ████████╗██╗ █████╗
-                    ██╔══██╗██╔══██╗╚██╗ ██╔╝██╔══██╗╚══██╔══╝██║██╔══██╗
-                    ██║  ╚═╝██████╔╝ ╚████╔╝ ██████╔╝   ██║   ██║██║  ╚═╝
-                    ██║  ██╗██╔══██╗  ╚██╔╝  ██╔═══╝    ██║   ██║██║  ██╗
-                    ╚█████╔╝██║  ██║   ██║   ██║        ██║   ██║╚█████╔╝
-                     ╚════╝ ╚═╝  ╚═╝   ╚═╝   ╚═╝        ╚═╝   ╚═╝ ╚════╝
-    `)}             
+                     █████${colors.cyan("╗")} ██████${colors.cyan("╗")} ██${colors.cyan("╗")}   ██${colors.cyan("╗")}██████${colors.cyan("╗")} ████████${colors.cyan("╗")}██${colors.cyan("╗")} █████${colors.cyan("╗")}
+                    ██${colors.cyan("╔══")}██${colors.cyan("╗")}██${colors.cyan("╔══")}██${colors.cyan("╗")}${colors.cyan("╚")}██${colors.cyan("╗")} ██${colors.cyan("╔╝")}██${colors.cyan("╔══")}██${colors.cyan("╗╚══")}██${colors.cyan("╔══╝")}██${colors.cyan("║")}██${colors.cyan("╔══")}██${colors.cyan("╗")}
+                    ██${colors.cyan("║")}  ${colors.cyan("╚═╝")}██████${colors.cyan("╔╝ ╚")}████${colors.cyan("╔╝")} ██████${colors.cyan("╔╝")}   ██${colors.cyan("║")}   ██${colors.cyan("║")}██${colors.cyan("║  ╚═╝")}
+                    ██${colors.cyan("║")}  ██${colors.cyan("╗")}██${colors.cyan("╔══")}██${colors.cyan("╗")}  ${colors.cyan("╚")}██${colors.cyan("╔╝")}  ██${colors.cyan("╔═══╝")}    ██${colors.cyan("║")}   ██${colors.cyan("║")}██${colors.cyan("║")}  ██${colors.cyan("╗")}
+                    ${colors.cyan("╚")}█████${colors.cyan("╔╝")}██${colors.cyan("║")}  ██${colors.cyan("║")}   ██${colors.cyan("║")}   ██${colors.cyan("║")}        ██${colors.cyan("║")}   ██${colors.cyan("║╚")}█████${colors.cyan("╔╝")}
+                     ${colors.cyan("╚════╝ ╚═╝  ╚═╝   ╚═╝   ╚═╝        ╚═╝   ╚═╝ ╚════╝")}         
 
                     ${colors.cyan(selfbot.name)} ${colors.yellow(`v${selfbot.version}`)} ${colors.magenta("|")} ${colors.cyan("Logged in as")} ${colors.yellow(bot.user.tag)} ${colors.magenta("|")} ${colors.cyan("ID:")} ${colors.yellow(bot.user.id)}
                     ${colors.cyan("Nitro Sniper?")} ${nitroSniper}
