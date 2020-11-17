@@ -20,12 +20,14 @@ So far, your config file should look like this
     "whitelisted": [],
     "prefix": "!",
     "messageLogs": false,
+    "id": "account-id-here",
     "webhookID": "" ,
     "webhookToken": "",
     "embedOptions": {
+        "enabled": true,
         "color": "",
         "image": "",
-        "footer": "" 
+        "footer": ""
     }
 }
 ```
@@ -35,6 +37,8 @@ You should choose a desired prefix for the commands so then the commands won't r
 
 For the `whitelisted` part, that is optional, you can put your own id in there so then you can use the selfbot commands
 
+For the `id` part, you need to paste in your selfbot account id in there, just so if you have whitelisted users, the selfbot account can use the commands
+
 For the webhook id and token, those are optional. The webhook is just used for spamming `@everyone` in your discord server. Just to annoy people :wink:
 
 For the embed options. You can play around with the options to customise the way embeds are sent into discord. (embed options are optional to play around with)
@@ -43,7 +47,7 @@ For the message logs, that is optional to have on or off, the message logs will 
 
 # Run the bot
 
-To simply run the bot, just run `start.bat`. The bot should be working fine as long as you don't muck up the code.
+To simply run the bot, just run `launch.bat`. The bot should be working fine as long as you don't muck up the code.
 
 # Cryptic ToS
 

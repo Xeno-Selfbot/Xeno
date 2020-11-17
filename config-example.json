@@ -4,12 +4,13 @@
     "whitelisted": [],
     "prefix": "!",
     "messageLogs": false,
+    "id": "account-id-here",
     "webhookID": "" ,
     "webhookToken": "",
     "embedOptions": {
         "enabled": true,
         "color": "",
         "image": "",
-        "footer": "" 
+        "footer": ""
     }
 }
