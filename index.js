@@ -166,6 +166,15 @@ bot.on("message", async(message) => {
       }
     }
 
+    if(cmd === "hastebin") {
+        if(message.deletable) {
+            message.delete()
+        }
+        if(!args.join(" ")) return message.channel.send("Please specify a message.")
+        const {body} = await post("https://hastebin.com/documents").send(args.join(" "))
+        message.channel.send(`https://hastebin.com/${body.key}`)
+    }
+
     if(cmd === "clean") {
         let count = parseInt(args[0] || 1);
         message.channel.fetchMessages({limit: 100}).then(async(messages) => {
@@ -653,6 +662,7 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
             \`${prefix}fakenitro <user-id>\` ❯ Sends the user a fake discord nitro scam
             \`${prefix}ghostping <channel-id> <user-id>\` ❯ Ghostpings the user in the channel
             \`${prefix}hug <user>\` ❯ Random anime hugging gif
+            \`${prefix}hastebin <message>\` ❯ Sends your message to a hastebin
             \`${prefix}meme\` ❯ Sends a fresh meme of the internet
             \`${prefix}ping\` ❯ Shows the message and the websocket latency
             \`${prefix}pat <user>\` ❯ Random anime patting gif
@@ -698,6 +708,7 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
             ${prefix}fakenitro <user-id> ❯ Sends the user a fake discord nitro scam
             ${prefix}ghostping <channel-id> <user-id> ❯ Ghostpings the user in the channel
             ${prefix}hug <user> ❯ Random anime hugging gif
+            ${prefix}hastebin <message> ❯ Sends your message to a haste bin
             ${prefix}meme ❯ Sends a fresh meme of the internet
             ${prefix}ping ❯ Shows the message and the websocket latency
             ${prefix}pat <user> ❯ Random anime patting gif
