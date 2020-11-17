@@ -994,7 +994,8 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
             \`${prefix}massroles\` ❯ Creates a whole bunch of random roles
             \`${prefix}massban\` ❯ Bans everyone in the server (Not including the server owner or members with a higher rank/role)
             \`${prefix}masskick\` ❯ Kicks everyone in the server (Not including the server owner or members with a higher rank/role)
-            \`${prefix}raid\` ❯ Changes every channel name, channel topic, role name to "Raided by Cryptic"
+            \`${prefix}raid\` ❯ Changes the server name, icon, creates 100 roles and makes 100 text and voice channels
+            \`${prefix}original\` ❯ Resets the entire server
             `)
             message.channel.send(embed)
         } else {
@@ -1009,7 +1010,8 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
             ${prefix}massroles ❯ Creates a whole bunch of random roles
             ${prefix}massban ❯ Bans everyone in the server (Not including the server owner or members with a higher rank/role)
             ${prefix}masskick ❯ Kicks everyone in the server (Not including the server owner or members with a higher rank/role)
-            ${prefix}raid ❯ Changes every channel name, channel topic, role name to "Raided by Cryptic"${footer ? `\n\n${footer}` : null}
+            ${prefix}raid ❯ Changes the server name, icon, creates 100 roles and makes 100 text and voice channels
+            ${prefix}original ❯ Resets the entire server${footer ? `\n\n${footer}` : null}
             \`\`\``)
         }
     }
