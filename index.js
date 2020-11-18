@@ -14,7 +14,8 @@ const { stripIndents } = require("common-tags");
 
 const selfbot = {
     version: "1.0.0",
-    name: "Cryptic"
+    name: "Cryptic",
+    linecount: 1667
 }
 
 // Process
@@ -38,12 +39,22 @@ bot.on("ready", () => {
     }
     console.log(`
 
-                             █████${colors.cyan("╗")} ██████${colors.cyan("╗")} ██${colors.cyan("╗")}   ██${colors.cyan("╗")}██████${colors.cyan("╗")} ████████${colors.cyan("╗")}██${colors.cyan("╗")} █████${colors.cyan("╗")}
-                            ██${colors.cyan("╔══")}██${colors.cyan("╗")}██${colors.cyan("╔══")}██${colors.cyan("╗")}${colors.cyan("╚")}██${colors.cyan("╗")} ██${colors.cyan("╔╝")}██${colors.cyan("╔══")}██${colors.cyan("╗╚══")}██${colors.cyan("╔══╝")}██${colors.cyan("║")}██${colors.cyan("╔══")}██${colors.cyan("╗")}
-                            ██${colors.cyan("║")}  ${colors.cyan("╚═╝")}██████${colors.cyan("╔╝ ╚")}████${colors.cyan("╔╝")} ██████${colors.cyan("╔╝")}   ██${colors.cyan("║")}   ██${colors.cyan("║")}██${colors.cyan("║  ╚═╝")}
-                            ██${colors.cyan("║")}  ██${colors.cyan("╗")}██${colors.cyan("╔══")}██${colors.cyan("╗")}  ${colors.cyan("╚")}██${colors.cyan("╔╝")}  ██${colors.cyan("╔═══╝")}    ██${colors.cyan("║")}   ██${colors.cyan("║")}██${colors.cyan("║")}  ██${colors.cyan("╗")}
-                            ${colors.cyan("╚")}█████${colors.cyan("╔╝")}██${colors.cyan("║")}  ██${colors.cyan("║")}   ██${colors.cyan("║")}   ██${colors.cyan("║")}        ██${colors.cyan("║")}   ██${colors.cyan("║╚")}█████${colors.cyan("╔╝")}
-                             ${colors.cyan("╚════╝ ╚═╝  ╚═╝   ╚═╝   ╚═╝        ╚═╝   ╚═╝ ╚════╝")}         
+                             
+                            
+               
+                            
+                            ▄████▄   ██▀███ ▓██   ██▓ ██▓███  ▄▄▄█████▓ ██▓ ▄████▄  
+                           ▒██▀ ▀█  ▓██ ▒ ██▒▒██  ██▒▓██░  ██▒▓  ██▒ ▓▒▓██▒▒██▀ ▀█  
+                           ▒▓█    ▄ ▓██ ░▄█ ▒ ▒██ ██░▓██░ ██▓▒▒ ▓██░ ▒░▒██▒▒▓█    ▄ 
+                           ▒▓▓▄ ▄██▒▒██▀▀█▄   ░ ▐██▓░▒██▄█▓▒ ▒░ ▓██▓ ░ ░██░▒▓▓▄ ▄██▒
+                           ▒ ▓███▀ ░░██▓ ▒██▒ ░ ██▒▓░▒██▒ ░  ░  ▒██▒ ░ ░██░▒ ▓███▀ ░
+                           ░ ░▒ ▒  ░░ ▒▓ ░▒▓░  ██▒▒▒ ▒▓▒░ ░  ░  ▒ ░░   ░▓  ░ ░▒ ▒  ░
+                              ░  ▒     ░▒ ░ ▒░▓██ ░▒░ ░▒ ░         ░     ▒ ░  ░  ▒   
+                           ░          ░░   ░ ▒ ▒ ░░  ░░         ░       ▒ ░░        
+                           ░ ░         ░     ░ ░                        ░  ░ ░      
+                           ░                 ░ ░                           ░        
+ 
+          
 
                             ${colors.cyan(selfbot.name)} ${colors.yellow(`v${selfbot.version}`)} ${colors.magenta("|")} ${colors.cyan("Logged in as")} ${colors.yellow(bot.user.tag)} ${colors.magenta("|")} ${colors.cyan("ID:")} ${colors.yellow(bot.user.id)}
                             ${colors.cyan("Nitro Sniper?")} ${nitroSniper}
