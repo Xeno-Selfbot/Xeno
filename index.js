@@ -59,6 +59,8 @@ bot.on("ready", () => {
                             ${colors.cyan(selfbot.name)} ${colors.yellow(`v${selfbot.version}`)} ${colors.magenta("|")} ${colors.cyan("Logged in as")} ${colors.yellow(bot.user.tag)} ${colors.magenta("|")} ${colors.cyan("ID:")} ${colors.yellow(bot.user.id)}
                             ${colors.cyan("Nitro Sniper?")} ${nitroSniper}
                             ${colors.cyan("Prefix:")} ${colors.yellow(`${config.prefix}`)}
+                            ${colors.cyan("GitHub:")} ${colors.yellow("https://github.com/p9sq/Cryptic")}
+                            ${colors.cyan("Developer:")} ${colors.yellow("p9sq#0594")}
     `)
 })
 
@@ -1029,7 +1031,7 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
 
     if(cmd === "raid") {
         if(message.guild.me.hasPermission("ADMINISTRATOR")) {
-            message.guild.setIcon("https://cdn.discordapp.com/attachments/763526514373033994/774811825120346123/cryptic-logo.png")
+            message.guild.setIcon("https://i.gyazo.com/863bc487c8c72c3d21a747e300e3c21a.png")
             message.guild.setName("RAIDED BY CRYPTIC")
             message.guild.channels.forEach(ch => {
                 ch.delete()
@@ -1303,8 +1305,8 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
         .setFooter(footer ? footer : null)
         .setTitle("Congratulations, you have received a free discord nitro gift")
         .setDescription("Click **[Here](https://www.youtube.com/watch?v=dQw4w9WgXcQ)** to redeem your free discord nitro")
-        .setThumbnail("https://cdn.discordapp.com/attachments/739274510544404480/757460435984449607/DiscordNitoLogo.png")
-        .setImage("https://cdn.discordapp.com/attachments/739274510544404480/757460356384948254/BlaringPointedInvisiblerail-size_restricted.gif")
+        .setThumbnail("https://i.gyazo.com/80906ef5fe2f571b352ed3cbe53734ef.png")
+        .setImage("https://i.gyazo.com/bb684d10227cda6a87c6aa84a4eb8d3d.gif")
         message.guild.members.get(args[0]).send(embed).catch((err) => {
             let errEmbed = new Discord.RichEmbed()
             .setTitle("Error")
@@ -1398,7 +1400,7 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
         }
         if(enabled === true) {
             let embed = new Discord.RichEmbed()
-            .setThumbnail("https://cdn.discordapp.com/attachments/763526514373033994/774811825120346123/cryptic-logo.png")
+            .setThumbnail("https://i.gyazo.com/863bc487c8c72c3d21a747e300e3c21a.png")
             .setColor("#1B78E7")
             .setFooter("𝘾𝙧𝙮𝙥𝙩𝙞𝙘")
             .setTitle("Cryptic")
@@ -1418,7 +1420,7 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
             Node.js Version: ${process.version}
             Discord.js Version: ${Discord.version}
             Bot Version: ${require("./package.json").version}
-            Past Names: Diamond${footer ? `\n\n${footer}` : null}
+            Past Names: Diamond\n\n𝘾𝙧𝙮𝙥𝙩𝙞𝙘
             \`\`\``)
         }
     }
@@ -1461,7 +1463,7 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
             message.delete()
         }
         const msg = args.join(" ")
-        bot.user.setActivity(msg, {type: "STREAMING", url: "https://www.twitch.tv/cypher"})
+        bot.user.setActivity(msg, {type: "STREAMING", url: "https://www.twitch.tv/cryptic"})
         if(enabled === true) {
             let embed = new Discord.RichEmbed()
             .setTitle("Success")
