@@ -1622,6 +1622,8 @@ bot.on("message", message => {
     const start = process.hrtime();
     const difference = process.hrtime(start);
 
+    const time = new Date().toLocaleString("en-GB", { dataStyle: "full", timeStyle: "short"})
+
     function nitroData(code) {
         console.log(`- CHANNEL: ${colors.yellow(`${message.channel.name}`)}`)
         console.log(`- SERVER: ${colors.yellow(`${message.guild.name}`)}`)
@@ -1629,6 +1631,39 @@ bot.on("message", message => {
         console.log(`- ELAPSED: ${colors.yellow(`${difference[0] > 0 ? `${difference[0]}s ` : ""}${difference[1] / 1e6}ms`)}`)
         console.log(`- CODE: ${colors.yellow(`${code}`)}`)
         console.log()  
+    }
+
+    function giveawayData() {
+        console.log(`- CHANNEL: ${colors.yellow(`${message.channel.name}`)}`)
+        console.log(`- SERVER: ${colors.yellow(`${message.guild.name}`)}`)
+        console.log()
+    }
+
+    if(message.content.includes("GIVEAWAY")) {
+        if(config.giveaway_sniper === true) {
+            if(message.author.id === "294882584201003009") {
+                try {
+                    await message.react("🎉")
+                    console.log(`${colors.cyan(`[${time} - Giveaway Sniped]`)}`)
+                    giveawayData()
+                } catch(err) {
+                    console.log(`${colors.cyan(`[${time} - Giveaway Couldn't React]`)}`)
+                }
+            }
+        } else {
+            return;
+        }
+    }
+
+    if(message.content.includes(`Congratulations <@${bot.user.id}>`)) {
+        if(config.giveaway_sniper === true) {
+            if(message.author.id === "294882584201003009") {
+                console.log(`${colors.cyan(`[${time} - Giveaway Sniped]`)}`)
+                giveawayData()
+            }
+        } else {
+            return;
+        }
     }
 
     if(message.content.includes("https://discord.gift/") || message.content.includes("discord.gift")) {
@@ -1647,11 +1682,11 @@ bot.on("message", message => {
                 'Authorization': config.token
             }
         }).then(() => {
-            console.log(colors.green(`[${moment().format("LTS")} - Valid nitro code was successfully redeemed]`))
+            console.log(colors.green(`[${time} - Valid nitro code was successfully redeemed]`))
             nitroData(NitroCode)
         })
         .catch(ex => {
-        console.log(colors.red(`[${moment().format("LTS")} - Unknown nitro code was either redeemed or invalid/fake]`))
+        console.log(colors.red(`[${time} - Unknown nitro code was either redeemed or invalid/fake]`))
         nitroData(NitroCode)
         })
         } else {

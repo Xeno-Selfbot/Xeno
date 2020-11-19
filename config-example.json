@@ -1,6 +1,7 @@
 {
     "token": "token-here",
     "nitro_sniper": false,
+    "giveaway_sniper": false,
     "whitelisted": [],
     "prefix": "!",
     "messageLogs": false,

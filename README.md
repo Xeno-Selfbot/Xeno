@@ -17,6 +17,7 @@ So far, your config file should look like this
 {
     "token": "token-here",
     "nitro_sniper": false,
+    "giveaway_sniper": false,
     "whitelisted": [],
     "prefix": "!",
     "messageLogs": false,
@@ -34,6 +35,10 @@ So far, your config file should look like this
 
 You should choose a desired prefix for the commands so then the commands won't run if you sent `ping` for an example.
 [ NOTE: The prefix must not include any spaces or the commands will not register properly ]
+
+For the nitro sniper that is optional, but you can have it on so then you can snipe discord nitro and so the bot can instanly redeem it for you
+
+For the giveaway sniper that is optional, but you can have it on so then you can snipe giveaways that you have one
 
 For the `whitelisted` part, that is optional, you can put your own id in there so then you can use the selfbot commands
 
