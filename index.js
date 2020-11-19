@@ -32,10 +32,16 @@ bot.on("ready", () => {
     console.clear()
     title(`[${selfbot.name} v${selfbot.version}] Logged in as ${bot.user.username}`)
     let nitroSniper = "";
+    let giveawaySniper = "";
     if(config.nitro_sniper === false) {
         nitroSniper = colors.red("Disabled")
     } else if(config.nitro_sniper === true) {
         nitroSniper = colors.green("Enabled")
+    }
+    if(config.giveaway_sniper === false) {
+        giveawaySniper = colors.red("Disabled")
+    } else if(config.giveaway_sniper === true) {
+        giveawaySniper = colors.green("Enabled")
     }
     console.log(`
  
@@ -55,6 +61,7 @@ bot.on("ready", () => {
 
                             ${colors.cyan(selfbot.name)} ${colors.yellow(`v${selfbot.version}`)} ${colors.magenta("|")} ${colors.cyan("Logged in as")} ${colors.yellow(bot.user.tag)} ${colors.magenta("|")} ${colors.cyan("ID:")} ${colors.yellow(bot.user.id)}
                             ${colors.cyan("Nitro Sniper?")} ${nitroSniper}
+                            ${colors.cyan("Giveaway Sniper?")} ${giveawaySniper}
                             ${colors.cyan("Prefix:")} ${colors.yellow(`${config.prefix}`)}
                             ${colors.cyan("GitHub:")} ${colors.yellow("https://github.com/p9sq/Cryptic")}
                             ${colors.cyan("Developer:")} ${colors.yellow("p9sq#0594")}
