@@ -15,7 +15,7 @@ const { stripIndents } = require("common-tags");
 const selfbot = {
     version: "1.0.0",
     name: "Cryptic",
-    linecount: 1710
+    linecount: 1667
 }
 
 // Process
@@ -121,7 +121,7 @@ bot.on("message", async(message) => {
             `)
             .setThumbnail(image ? image : null)
             .setColor(color ? color : null)
-            .setFooter(footer ? footer : "")
+            .setFooter(footer ? footer : null)
             if(msg.attachment) {
                 embed.setImage(msg.attachment)
             }
@@ -274,7 +274,7 @@ bot.on("message", async(message) => {
                 `)
                 .setThumbnail(image ? image : null)
                 .setColor(color ? color : null)
-                .setFooter(footer ? footer : "")
+                .setFooter(footer ? footer : null)
                 msg.edit(embed)
             } else {
                 msg.edit(stripIndents`\`\`\`
@@ -297,7 +297,7 @@ bot.on("message", async(message) => {
             .setDescription(args.join(" "))
             .setThumbnail(image ? image : null)
             .setColor(color ? color : null)
-            .setFooter(footer ? footer : "")
+            .setFooter(footer ? footer : null)
             message.channel.send(embed)
         } else {
             message.channel.send(`\`\`\`${args.join(" ")}\`\`\``)
@@ -356,7 +356,7 @@ bot.on("message", async(message) => {
     if(enabled === true) {
         let Embed = new Discord.RichEmbed()
         .setColor(color ? color : null)
-        .setFooter(footer ? footer : "")
+        .setFooter(footer ? footer : null)
         .setTitle(`${message.guild.name} info`)
         .setThumbnail(message.guild.iconURL)
         .addField("Guild Name", message.guild.name, true)
@@ -441,7 +441,7 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
             let embed = new Discord.RichEmbed()
             .setTitle("Random dog image")
             .setColor(color ? color : null)
-            .setFooter(footer ? footer : "")
+            .setFooter(footer ? footer : null)
             .setImage(body.link)
             message.channel.send(embed);
         } else {
@@ -460,7 +460,7 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
             let embed = new Discord.RichEmbed()
             .setTitle("Random cat image")
             .setColor(color ? color : null)
-            .setFooter(footer ? footer : "")
+            .setFooter(footer ? footer : null)
             .setImage(body.link)
             message.channel.send(embed);
         } else {
@@ -479,7 +479,7 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
             let embed = new Discord.RichEmbed()
             .setTitle("Random fox image")
             .setColor(color ? color : null)
-            .setFooter(footer ? footer : "")
+            .setFooter(footer ? footer : null)
             .setImage(body.link)
             message.channel.send(embed);
         } else {
@@ -527,7 +527,7 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
             let embed = new Discord.RichEmbed()
             .setDescription(`${message.author} winks at ${user}`)
             .setColor(color ? color : null)
-            .setFooter(footer ? footer : "")
+            .setFooter(footer ? footer : null)
             .setImage(body.link)
             message.channel.send(embed);
         } else {
@@ -548,7 +548,7 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
             let embed = new Discord.RichEmbed()
             .setDescription(`${message.author} pats ${user}`)
             .setColor(color ? color : null)
-            .setFooter(footer ? footer : "")
+            .setFooter(footer ? footer : null)
             .setImage(body.link)
             message.channel.send(embed);
         } else {
@@ -569,7 +569,7 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
             let embed = new Discord.RichEmbed()
             .setDescription(`${message.author}  hugs ${user}`)
             .setColor(color ? color : null)
-            .setFooter(footer ? footer : "")
+            .setFooter(footer ? footer : null)
             .setImage(body.link)
             message.channel.send(embed);
         } else {
@@ -598,7 +598,7 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
             .setTitle(body.caption)
             .setImage(body.image)
             .setColor(color ? color : null)
-            .setFooter(footer ? footer : "")
+            .setFooter(footer ? footer : null)
             message.channel.send(embed)
         } else {
             let img = new Discord.Attachment(body.image, "meme.png")
@@ -699,7 +699,7 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
             .setTitle("Fun Commands")
             .setThumbnail(image ? image : null)
             .setColor(color ? color : null)
-            .setFooter(footer ? footer : "")
+            .setFooter(footer ? footer : null)
             if(description.length < 2000) {
                 embed.setDescription(description)
             } else {
@@ -769,7 +769,7 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
             .setTitle("Available Commands")
             .setThumbnail(image ? image : null)
             .setColor(color ? color : null)
-            .setFooter(footer ? footer : "")
+            .setFooter(footer ? footer : null)
             .setDescription(`
             <> = required | [] = optional
 
@@ -806,7 +806,7 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
             .setTitle("Info Commands")
             .setThumbnail(image ? image : null)
             .setColor(color ? color : null)
-            .setFooter(footer ? footer : "")
+            .setFooter(footer ? footer : null)
             .setDescription(`
             <> = required | [] = optional
 
@@ -846,7 +846,7 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
             .setTitle("Face Commands")
             .setThumbnail(image ? image : null)
             .setColor(color ? color : null)
-            .setFooter(footer ? footer : "")
+            .setFooter(footer ? footer : null)
             .setDescription(`
             <> = required | [] = optional
 
@@ -907,7 +907,7 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
             .setTitle("Encode/Decode Commands")
             .setThumbnail(image ? image : null)
             .setColor(color ? color : null)
-            .setFooter(footer ? footer : "")
+            .setFooter(footer ? footer : null)
             .setDescription(`
             <> = required | [] = optional
 
@@ -936,7 +936,7 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
             .setTitle("Status Commands")
             .setThumbnail(image ? image : null)
             .setColor(color ? color : null)
-            .setFooter(footer ? footer : "")
+            .setFooter(footer ? footer : null)
             .setDescription(`
             <> = required | [] = optional
         
@@ -971,7 +971,7 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
             .setTitle("Animal Commands")
             .setThumbnail(image ? image : null)
             .setColor(color ? color : null)
-            .setFooter(footer ? footer : "")
+            .setFooter(footer ? footer : null)
             .setDescription(`
             <> = required | [] = optional
         
@@ -1002,7 +1002,7 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
             .setTitle("Nuke Commands")
             .setThumbnail(image ? image : null)
             .setColor(color ? color : null)
-            .setFooter(footer ? footer : "")
+            .setFooter(footer ? footer : null)
             .setDescription(`
             <> = required | [] = optional
         
@@ -1159,7 +1159,7 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
             .setTitle("You've just been raided")
             .setThumbnail(image ? image : null)
             .setColor(color ? color : null)
-            .setFooter(footer ? footer : "")
+            .setFooter(footer ? footer : null)
             .setDescription(spamContent)
             hook.send("@everyone", embed)
           }
@@ -1186,7 +1186,7 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
             .addField("Account Created", moment(user.createdAt).format('MMMM Do YYYY, h:mm A'), true)
             .addField(`[${member.roles.size}] Total Roles`, role)
             .addField("Guild Permissions", perms)
-            .setFooter(footer ? footer : "")
+            .setFooter(footer ? footer : null)
             .setTimestamp()
             message.channel.send(embed)
         } else {
@@ -1307,7 +1307,7 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
         let embed = new Discord.RichEmbed()
         .setAuthor("Free Discord Nitro")
         .setColor(color ? color : null)
-        .setFooter(footer ? footer : "")
+        .setFooter(footer ? footer : null)
         .setTitle("Congratulations, you have received a free discord nitro gift")
         .setDescription("Click **[Here](https://www.youtube.com/watch?v=dQw4w9WgXcQ)** to redeem your free discord nitro")
         .setThumbnail("https://i.gyazo.com/80906ef5fe2f571b352ed3cbe53734ef.png")
@@ -1317,7 +1317,7 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
             .setTitle("Error")
             .setThumbnail(image ? image : null)
             .setColor(color ? color : null)
-            .setFooter(footer ? footer : "")
+            .setFooter(footer ? footer : null)
             .addField("Something went wrong", "```js\n" + err + "```")
             .setTimestamp()
             message.channel.send(errEmbed)
@@ -1326,7 +1326,7 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
         .setTitle("Success")
         .setThumbnail(image ? image : null)
         .setColor(color ? color : null)
-        .setFooter(footer ? footer : "")
+        .setFooter(footer ? footer : null)
         .setDescription(`${bot.users.get(args[0]).tag} has been sent a fake discord nitro scam`)
         .setTimestamp()
         message.channel.send(successEmbed)
@@ -1386,7 +1386,7 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
             .setTitle("The Magic 8 Ball has spoken")
             .setThumbnail(image ? image : null)
             .setColor(color ? color : null)
-            .setFooter(footer ? footer : "")
+            .setFooter(footer ? footer : null)
             .addField("Question:", question, true)
             .addField("Response:", response, true)
             message.channel.send(eightballEmbed);
@@ -1474,7 +1474,7 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
             .setTitle("Success")
             .setThumbnail(image ? image : null)
             .setColor(color ? color : null)
-            .setFooter(footer ? footer : "")
+            .setFooter(footer ? footer : null)
             .setDescription(`Your activity was successfully set to \`STREAMING\` with message \`${msg}\``)
             message.channel.send(embed);
         } else {
@@ -1497,7 +1497,7 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
             .setTitle("Success")
             .setThumbnail(image ? image : null)
             .setColor(color ? color : null)
-            .setFooter(footer ? footer : "")
+            .setFooter(footer ? footer : null)
             .setDescription(`Your activity was successfully set to \`WATCHING\` with message \`${msg}\``)
             message.channel.send(embed);
         } else {
@@ -1520,7 +1520,7 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
             .setTitle("Success")
             .setThumbnail(image ? image : null)
             .setColor(color ? color : null)
-            .setFooter(footer ? footer : "")
+            .setFooter(footer ? footer : null)
             .setDescription(`Your activity was successfully set to \`LISTENING\` with message \`${msg}\``)
             message.channel.send(embed);
         } else {
@@ -1543,7 +1543,7 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
             .setTitle("Success")
             .setThumbnail(image ? image : null)
             .setColor(color ? color : null)
-            .setFooter(footer ? footer : "")
+            .setFooter(footer ? footer : null)
             .setDescription(`Your activity was successfully set to \`PLAYING\` with message \`${msg}\``)
             message.channel.send(embed);
         } else {
@@ -1565,7 +1565,7 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
             .setTitle("Success")
             .setThumbnail(image ? image : null)
             .setColor(color ? color : null)
-            .setFooter(footer ? footer : "")
+            .setFooter(footer ? footer : null)
             .setDescription(`Your activity was successfully reset`)
             message.channel.send(embed);
         } else {
