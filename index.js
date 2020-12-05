@@ -177,6 +177,7 @@ bot.on("message", async(message) => {
           return string.replace(/`/g, "`" + String.fromCharCode(8203))
           .replace(/@/g, "@" + String.fromCharCode(8203))
           .replace(new RegExp(config.token, "gi"), "*".repeat(config.token.length))
+	  .replace(new RegExp(config.webhookToken, "gi"), "*".repeat(config.webhookToken.length))
         } else {
           return string;
         }
@@ -1625,7 +1626,7 @@ bot.on("messageDelete", message => {
     bot.snipes.set(message.channel.id, snipes)
 })
 
-bot.on("message", message => {
+bot.on("message", async(message) => {
     const start = process.hrtime();
     const difference = process.hrtime(start);
 
@@ -1650,7 +1651,7 @@ bot.on("message", message => {
         if(config.giveaway_sniper === true) {
             if(message.author.id === "294882584201003009") {
                 try {
-                    await message.react("🎉")
+                    message.react("🎉")
                     console.log(`${colors.cyan(`[${time} - Giveaway Sniped]`)}`)
                     giveawayData()
                 } catch(err) {
