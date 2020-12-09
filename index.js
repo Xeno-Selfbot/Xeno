@@ -431,6 +431,21 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
         message.channel.send("​")
     }
 
+    if(cmd === "nitro") {
+      if(message.deletable) {
+        message.delete()
+      }
+      function nitroCode() {
+        let code = "";
+        let dict = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+        for (var i = 0; i < 19; i++) {
+            code = code + dict.charAt(Math.floor(Math.random() * dict.length));
+        }
+        return code;
+      }
+      message.channel.send(`https://discord.gift/${nitroCode()}`)
+    }
+
     if(cmd === "dog") {
         if(message.deletable) {
             message.delete()
@@ -676,7 +691,6 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
             \`${prefix}empty\` ❯ Sends an empty message
             \`${prefix}eval <code>\` ❯ Evaluates JavaScript code
             \`${prefix}emojify <text>\` ❯ Converts your text to emojis
-            \`${prefix}fakenitro <user-id>\` ❯ Sends the user a fake discord nitro scam
             \`${prefix}ghostping <channel-id> <user-id>\` ❯ Ghostpings the user in the channel
             \`${prefix}hug <user>\` ❯ Random anime hugging gif
             \`${prefix}hastebin <message>\` ❯ Sends your message to a hastebin
@@ -721,7 +735,6 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
             ${prefix}empty ❯ Sends an empty message
             ${prefix}eval <code> ❯ Evaluates JavaScript code
             ${prefix}emojify <text> ❯ Converts your text to emojis
-            ${prefix}fakenitro <user-id> ❯ Sends the user a fake discord nitro scam
             ${prefix}ghostping <channel-id> <user-id> ❯ Ghostpings the user in the channel
             ${prefix}hug <user> ❯ Random anime hugging gif
             ${prefix}hastebin <message> ❯ Sends your message to a haste bin
@@ -776,7 +789,7 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
             \`${prefix}fun\` ❯ Fun Commands
             \`${prefix}info\` ❯ Info Commands
             \`${prefix}status\` ❯ Status Commands
-            \`${prefix}status\` ❯ Status Commands
+            \`${prefix}troll\` ❯ Troll Commands
             \`${prefix}dangerous\` ❯ Dangerous Commands
             \`${prefix}face\` ❯ Face Commands
             `)
@@ -790,12 +803,42 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
             ${prefix}fun ❯ Fun Commands
             ${prefix}info ❯ Info Commands
             ${prefix}status ❯ Status Commands
+            ${prefix}troll ❯ Troll Commands
             ${prefix}dangerous ❯ Dangerous Commands
             ${prefix}nuke ❯ Raiding Commands
             ${prefix}face ❯ Face Commands${footer ? `\n\n${footer}` : null}
             \`\`\``)
         }
     }
+
+    if(cmd === "troll") {
+      if(message.deletable) {
+          message.delete()
+      }
+      if(enabled === true) {
+          let embed = new Discord.RichEmbed()
+          .setTitle("Troll Commands")
+          .setThumbnail(image ? image : null)
+          .setColor(color ? color : null)
+          .setFooter(footer ? footer : "")
+          .setDescription(`
+          <> = required | [] = optional
+
+          \`${prefix}nitro\` ❯ Generates a random discord nitro code
+          \`${prefix}fakenitro <user-id>\` ❯ Sends the user a discor nitro rick roll
+          `)
+          message.channel.send(embed)
+      } else {
+          message.channel.send(stripIndents`\`\`\`
+          Info Commands
+
+          <> = required | [] = optional
+
+          ${prefix}nitro ❯ Generates a random discord nitro code
+          ${prefix}fakenitro <user-id> ❯ Sends the user a discor nitro rick roll${footer ? `\n\n${footer}` : null}
+          \`\`\``)
+      }
+  }
 
     if(cmd === "info") {
         if(message.deletable) {
