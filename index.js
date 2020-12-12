@@ -153,32 +153,32 @@ bot.on("message", async(message) => {
         ];
         const sentence = sentences[Math.floor(Math.random()*(sentences.length))];
         setTimeout(() => {
-            msg.edit(`Found IP: **${ip}**`)
+            msg.edit(`**Found IP** » ${ip}`)
             setTimeout(() => {
-                msg.edit(`Found Email: **${email}**`)
+                msg.edit(`**Found Email** » ${email}`)
                 setTimeout(() => {
-                    msg.edit(`Found Password: **${password}**`)
+                    msg.edit(`**Found Password** » ${password}`)
                     setTimeout(() => {
-                        msg.edit(`Found Username: **${targetID.username}**`)
+                        msg.edit(`**Found Username** » ${targetID.username}`)
                         setTimeout(() => {
-                            msg.edit(`Found Discriminator: **${targetID.discriminator}**`)
+                            msg.edit(`**Found Discriminator** » ${targetID.discriminator}`)
                             setTimeout(() => {
-                                msg.edit(`Found ID: **${targetID.id}**`)
+                                msg.edit(`**Found ID** » ${targetID.id}`)
                                 setTimeout(() => {
-                                    msg.edit(`Injecting virus into discriminator **${targetID.discriminator}**...`)
+                                    msg.edit(`**Injecting virus into discriminator** » ${targetID.discriminator}...`)
                                     setTimeout(() => {
-                                        msg.edit(`Reported to discord for selfbotting...`)
+                                        msg.edit(`**Reported to discord for selfbotting...**`)
                                         setTimeout(() => {
-                                            msg.edit(`Fetching DMs...`)
+                                            msg.edit(`**Fetching DMs...**`)
                                             setTimeout(() => {
-                                                msg.edit(`Most common sentence: **${sentence}**`)
+                                                msg.edit(`**Most common sentence** » ${sentence}`)
                                                 setTimeout(() => {
                                                     setTimeout(() => {
-                                                        msg.edit(`Sold all found data to the government...`)
+                                                        msg.edit(`**Sold all found data to the government...**`)
                                                         setTimeout(() => {
-                                                            msg.edit(`Complete!`)
+                                                            msg.edit(`**Complete!**`)
                                                             setTimeout(() => {
-                                                                message.channel.send(`The *totally* real hack has been successfully completed!`)
+                                                                message.channel.send(`**The *totally* real hack has been successfully completed!**`)
                                                             }, 1000)
                                                         }, 4000)
                                                     }, 4000)
@@ -216,8 +216,8 @@ bot.on("message", async(message) => {
             .setAuthor(msg.author.tag, msg.author.displayAvatarURL)
             .setDescription(`${msg.content}
         
-            **Date:** ${msg.date}
-            **Page:** ${args[0]||1}/${snipes.length}
+            **Date** » ${msg.date}
+            **Page** » ${args[0]||1}/${snipes.length}
             `)
             .setThumbnail(image ? image : null)
             .setColor(color ? color : null)
@@ -232,8 +232,8 @@ bot.on("message", async(message) => {
 
             ${msg.content}
 
-            Date: ${msg.date}
-            Page: ${args[0]||1}/${snipes.length}${footer ? `\n\n${footer}` : null}
+            Date » ${msg.date}
+            Page » ${args[0]||1}/${snipes.length}${footer ? `\n\n${footer}` : null}
             \`\`\``)
         }
     }
@@ -373,8 +373,8 @@ bot.on("message", async(message) => {
                 let embed = new Discord.RichEmbed()
                 .setTitle("Pong!")
                 .setDescription(`
-                **Message:** \`${msg.createdTimestamp - message.createdTimestamp}ms\`
-                **WebSocket:** \`${bot.ping}ms\`
+                **Message** » ${msg.createdTimestamp - message.createdTimestamp}ms
+                **WebSocket** » ${bot.ping}ms
                 `)
                 .setThumbnail(image ? image : null)
                 .setColor(color ? color : null)
@@ -384,8 +384,8 @@ bot.on("message", async(message) => {
                 msg.edit(stripIndents`\`\`\`
                 Pong!
 
-                Message: ${msg.createdTimestamp - message.createdTimestamp}ms
-                Websocket: ${bot.ping}ms${footer ? `\n\n${footer}` : null}
+                Message » ${msg.createdTimestamp - message.createdTimestamp}ms
+                Websocket » ${bot.ping}ms${footer ? `\n\n${footer}` : null}
                 \`\`\``)
             }
         })
@@ -423,7 +423,7 @@ bot.on("message", async(message) => {
         if(message.deletable) {
             message.delete()
         }
-    if(message.channel.type === "dm" || !message.guild || message.channel.type === "group") return message.author.send("This command cannot be executed in Direct Messages or in Private Groups.")
+    if(!message.guild) return message.author.send("This command cannot be executed in Direct Messages or in Private Groups.")
     //Guild Region
     if (message.guild.region === "brazil") message.guild.region = "Brazi`";
     if (message.guild.region === "europe") message.guild.region = "Europe";
@@ -806,33 +806,29 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
         if(enabled === true) {
             const description = stripIndents`<> = required | [] = optional
 
-            \`${prefix}8ball <question>\` ❯ Asks the 8ball a question of your choice
-            \`${prefix}ascii <text>\` ❯ Converts your message to ascii
-            \`${prefix}avatar [user]\` ❯ Gets the avatar from the mentioned user
-            \`${prefix}cb <message>\` ❯ Talk to yourself as if it's a chat bot
-            \`${prefix}clean <amount>\` ❯ Deletes the specified amount of your messages
-            \`${prefix}embed <message>\` ❯ Sends an embed with your text
-            \`${prefix}empty\` ❯ Sends an empty message
-            \`${prefix}eval <code>\` ❯ Evaluates JavaScript code
-            \`${prefix}emojify <text>\` ❯ Converts your text to emojis
-            \`${prefix}ghostping <channel-id> <user-id>\` ❯ Ghostpings the user in the channel
-            \`${prefix}hug <user>\` ❯ Random anime hugging gif
-            \`${prefix}hastebin <message>\` ❯ Sends your message to a hastebin
-            \`${prefix}hack <user-id>\` ❯ *Hacks* the user
-            \`${prefix}meme\` ❯ Sends a fresh meme of the internet
-            \`${prefix}ping\` ❯ Shows the message and the websocket latency
-            \`${prefix}pat <user>\` ❯ Random anime patting gif
-            \`${prefix}reverse <message>\` ❯ Reverses your message
-            \`${prefix}randomtoken\` ❯ Generates a random invalid discord bot token
-            \`${prefix}rainbowrole <role-id>\` ❯ Edits the color of the specified role
-            \`${prefix}spamall <message>\` ❯ Sends every channel a message
-            \`${prefix}say <message>\` ❯ Says what ever you want
-            \`${prefix}snipe [page-num]\` ❯ Snipes the recently deleted message
-            \`${prefix}spam <amount> <message>\` ❯ Spams your message the specified amount of times
-            \`${prefix}text <bold|italics|underline|destroy|upper|lower|strikethrough|hidden|everything> <message>\` ❯ Sends your message in different forms
-            \`${prefix}uptime\` ❯ Shows how long the bot has been currently been running for
-            \`${prefix}wink <user>\` ❯ Random anime winking gif
-            \`${prefix}webhookspam <amount> <message>\` ❯ Spams a webhook the specified amount of times and mentions everyone (Must have webhook id and token in config.json)`
+            **${prefix}8ball <question>** » Asks the 8ball a question of your choice
+            **${prefix}ascii <text>** » Converts your message to ascii
+            **${prefix}avatar [user]** » Gets the avatar from the mentioned user
+            **${prefix}cb <message>** » Talk to yourself as if it's a chat bot
+            **${prefix}embed <message>** » Sends an embed with your text
+            **${prefix}empty** » Sends an empty message
+            **${prefix}emojify <text>** » Converts your text to emojis
+            **${prefix}ghostping <channel-id> <user-id>** » Ghostpings the user in the channel
+            **${prefix}hug <user>** » Random anime hugging gif
+            **${prefix}hack <user-id>** » \\*Hacks\\* the user
+            **${prefix}meme** » Sends a fresh meme of the internet
+            **${prefix}ping** » Shows the message and the websocket latency
+            **${prefix}pat <user>** » Random anime patting gif
+            **${prefix}reverse <message>** » Reverses your message
+            **${prefix}randomtoken** » Generates a random invalid discord bot token
+            **${prefix}rainbowrole <role-id>** » Edits the color of the specified role
+            **${prefix}spamall <message>** » Sends every channel a message
+            **${prefix}say <message>** » Says what ever you want
+            **${prefix}spam <amount> <message>** » Spams your message the specified amount of times
+            **${prefix}text <bold|italics|underline|destroy|upper|lower|strikethrough|hidden|everything> <message>** » Sends your message in different forms
+            **${prefix}uptime** » Shows how long the bot has been currently been running for
+            **${prefix}wink <user>** » Random anime winking gif
+            **${prefix}webhookspam <amount> <message>** » Spams a webhook the specified amount of times and mentions everyone (Must have webhook id and token in config.json)`
             let embed = new Discord.RichEmbed()
             .setTitle("Fun Commands")
             .setThumbnail(image ? image : null)
@@ -851,33 +847,63 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
 
             <> = required | [] = optional
 
-            ${prefix}8ball <question> ❯ Asks the 8ball a question of your choice
-            ${prefix}ascii <text> ❯ Converts your message to ascii
-            ${prefix}avatar [user] ❯ Gets the avatar from the mentioned user
-            ${prefix}cb <message> ❯ Talk to yourself as if it's a chat bot
-            ${prefix}clean <amount> ❯ Deletes the specified amount of your messages
-            ${prefix}embed <message> ❯ Sends an embed with your text
-            ${prefix}empty ❯ Sends an empty message
-            ${prefix}eval <code> ❯ Evaluates JavaScript code
-            ${prefix}emojify <text> ❯ Converts your text to emojis
-            ${prefix}ghostping <channel-id> <user-id> ❯ Ghostpings the user in the channel
-            ${prefix}hug <user> ❯ Random anime hugging gif
-            ${prefix}hastebin <message> ❯ Sends your message to a haste bin
-            ${prefix}hack <user-id> ❯ *Hacks* the user
-            ${prefix}meme ❯ Sends a fresh meme of the internet
-            ${prefix}ping ❯ Shows the message and the websocket latency
-            ${prefix}pat <user> ❯ Random anime patting gif
-            ${prefix}reverse <message> ❯ Reverses your message
-            ${prefix}randomtoken ❯ Generates a random invalid discord bot token
-            ${prefix}rainbowrole <role-id> ❯ Edits the color of the specified role
-            ${prefix}spamall <message> ❯ Sends every channel a message
-            ${prefix}say <message> ❯ Says what ever you want
-            ${prefix}snipe [page-num] ❯ Snipes the recently deleted message
-            ${prefix}spam <amount> <message> ❯ Spams your message the specified amount of times
-            ${prefix}text <bold|italics|underline|destroy|upper|lower|strikethrough|hidden|everything> <message> ❯ Sends your message in different forms
-            ${prefix}uptime ❯ Shows how long the bot has been currently been running for
-            ${prefix}wink <user> ❯ Random anime winking gif
-            ${prefix}webhookspam <amount> <message> ❯ Spams a webhook the specified amount of times and mentions everyone (Must have webhook id and token in config.json)${footer ? `\n\n${footer}` : null}
+            ${prefix}8ball <question> » Asks the 8ball a question of your choice
+            ${prefix}ascii <text> » Converts your message to ascii
+            ${prefix}avatar [user] » Gets the avatar from the mentioned user
+            ${prefix}cb <message> » Talk to yourself as if it's a chat bot
+            ${prefix}embed <message> » Sends an embed with your text
+            ${prefix}empty » Sends an empty message
+            ${prefix}emojify <text> » Converts your text to emojis
+            ${prefix}ghostping <channel-id> <user-id> » Ghostpings the user in the channel
+            ${prefix}hug <user> » Random anime hugging gif
+            ${prefix}hack <user-id> » *Hacks* the user
+            ${prefix}meme » Sends a fresh meme of the internet
+            ${prefix}ping » Shows the message and the websocket latency
+            ${prefix}pat <user> » Random anime patting gif
+            ${prefix}reverse <message> » Reverses your message
+            ${prefix}randomtoken » Generates a random invalid discord bot token
+            ${prefix}rainbowrole <role-id> » Edits the color of the specified role
+            ${prefix}spamall <message> » Sends every channel a message
+            ${prefix}say <message> » Says what ever you want
+            ${prefix}spam <amount> <message> » Spams your message the specified amount of times
+            ${prefix}text <bold|italics|underline|destroy|upper|lower|strikethrough|hidden|everything> <message> » Sends your message in different forms
+            ${prefix}uptime » Shows how long the bot has been currently been running for
+            ${prefix}wink <user> » Random anime winking gif
+            ${prefix}webhookspam <amount> <message> » Spams a webhook the specified amount of times and mentions everyone (Must have webhook id and token in config.json)${footer ? `\n\n${footer}` : null}
+            \`\`\``)
+        }
+    }
+
+    if(cmd === "utility") {
+        console.log(`[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan("Command used")} ${colors.magenta("|")} ${colors.yellow(cmd)}`)
+        if(message.deletable) {
+            message.delete()
+        }
+        if(enabled === true) {
+            let embed = new Discord.RichEmbed()
+            .setTitle("Utility Commands")
+            .setThumbnail(image ? image : null)
+            .setColor(color ? color : null)
+            .setFooter(footer ? footer : "")
+            .setDescription(`
+            <> = required | [] = optional
+
+            **${prefix}clean <amount>** » Deletes the specified amount of your messages
+            **${prefix}codeblock <type> <code>** » Converts your text to a code block
+            **${prefix}eval <code>** » Evaluates JavaScript code
+            **${prefix}hastebin <message>** » Sends your message to a hastebin
+            **${prefix}snipe [page-num]** » Snipes the recently deleted message
+            `)
+            message.channel.send(embed)
+        } else {
+            message.channel.send(stripIndents`\`\`\`
+            <> = required | [] = optional
+
+            ${prefix}clean <amount> » Deletes the specified amount of your messages
+            ${prefix}codeblock <type> <code> » Converts your text to a code block
+            ${prefix}eval <code> » Evaluates JavaScript code
+            ${prefix}hastebin <message> » Sends your message to a haste bin
+            ${prefix}snipe [page-num] » Snipes the recently deleted message${footer ? `\n\n${footer}` : null}
             \`\`\``)
         }
     }
@@ -912,30 +938,32 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
             .setDescription(`
             <> = required | [] = optional
 
-            \`${prefix}animals\` ❯ Animals Commands
-            \`${prefix}encode/decode\` ❯ Encode/Decode Commands
-            \`${prefix}fun\` ❯ Fun Commands
-            \`${prefix}info\` ❯ Info Commands
-            \`${prefix}nuke\` ❯ Nuke Commands
-            \`${prefix}status\` ❯ Status Commands
-            \`${prefix}troll\` ❯ Troll Commands
-            \`${prefix}dangerous\` ❯ Dangerous Commands
-            \`${prefix}face\` ❯ Face Commands
+            **${prefix}animals** » Animals Commands
+            **${prefix}encode/decode** » Encode/Decode Commands
+            **${prefix}fun** » Fun Commands
+            **${prefix}info** » Info Commands
+            **${prefix}nuke** » Nuke Commands
+            **${prefix}status** » Status Commands
+            **${prefix}troll** » Troll Commands
+            **${prefix}dangerous** » Dangerous Commands
+            **${prefix}face** » Face Commands
+            **${prefix}utility** » Utility Commands
             `)
             message.channel.send(embed)
         } else {
             message.channel.send(stripIndents`\`\`\`
             <> = required | [] = optional
 
-            ${prefix}animals ❯ Animals Commands
-            ${prefix}encode/decode ❯ Encode/Decode Commands
-            ${prefix}fun ❯ Fun Commands
-            ${prefix}info ❯ Info Commands
-            ${prefix}nuke ❯ Nuke Commands
-            ${prefix}status ❯ Status Commands
-            ${prefix}troll ❯ Troll Commands
-            ${prefix}dangerous ❯ Dangerous Commands
-            ${prefix}face ❯ Face Commands${footer ? `\n\n${footer}` : null}
+            ${prefix}animals » Animals Commands
+            ${prefix}encode/decode » Encode/Decode Commands
+            ${prefix}fun » Fun Commands
+            ${prefix}info » Info Commands
+            ${prefix}nuke » Nuke Commands
+            ${prefix}status » Status Commands
+            ${prefix}troll » Troll Commands
+            ${prefix}dangerous » Dangerous Commands
+            ${prefix}face » Face Commands
+            ${prefix}utility » Utility Commands${footer ? `\n\n${footer}` : null}
             \`\`\``)
         }
     }
@@ -954,8 +982,8 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
           .setDescription(`
           <> = required | [] = optional
 
-          \`${prefix}nitro\` ❯ Generates a random discord nitro code
-          \`${prefix}fakenitro <user-id>\` ❯ Sends the user a discor nitro rick roll
+          **${prefix}nitro** » Generates a random discord nitro code
+          **${prefix}fakenitro <user-id>** » Sends the user a discor nitro rick roll
           `)
           message.channel.send(embed)
       } else {
@@ -964,8 +992,8 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
 
           <> = required | [] = optional
 
-          ${prefix}nitro ❯ Generates a random discord nitro code
-          ${prefix}fakenitro <user-id> ❯ Sends the user a discor nitro rick roll${footer ? `\n\n${footer}` : null}
+          ${prefix}nitro » Generates a random discord nitro code
+          ${prefix}fakenitro <user-id> » Sends the user a discor nitro rick roll${footer ? `\n\n${footer}` : null}
           \`\`\``)
       }
   }
@@ -984,14 +1012,14 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
             .setDescription(`
             <> = required | [] = optional
 
-            \`${prefix}catfact\` ❯ Random cat fact
-            \`${prefix}chelp\` ❯ Logs the help command to the console
-            \`${prefix}dogfact\` ❯ Random dog fact
-            \`${prefix}foxfact\` ❯ Random fox fact
-            \`${prefix}help\` ❯ Shows a list of command categories
-            \`${prefix}serverinfo\` ❯ Shows the servers information
-            \`${prefix}whois [user]\` ❯ Shows information on the mentioned user
-            \`${prefix}botinfo\` ❯ Shows information on the Cryptic selfbot
+            **${prefix}catfact** » Random cat fact
+            **${prefix}chelp** » Logs the help command to the console
+            **${prefix}dogfact** » Random dog fact
+            **${prefix}foxfact** » Random fox fact
+            **${prefix}help** » Shows a list of command categories
+            **${prefix}serverinfo** » Shows the servers information
+            **${prefix}whois [user]** » Shows information on the mentioned user
+            **${prefix}botinfo** » Shows information on the Cryptic selfbot
             `)
             message.channel.send(embed)
         } else {
@@ -1000,13 +1028,13 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
 
             <> = required | [] = optional
 
-            ${prefix}catfact ❯ Random cat fact
-            ${prefix}dogfact ❯ Random dog fact
-            ${prefix}foxfact ❯ Random fox fact
-            ${prefix}help ❯ Shows a list of command categories
-            ${prefix}serverinfo ❯ Shows the servers information
-            ${prefix}whois [user] ❯ Shows information on the mentioned user
-            ${prefix}botinfo ❯ Shows information on the Cryptic selfbot${footer ? `\n\n${footer}` : null}
+            ${prefix}catfact » Random cat fact
+            ${prefix}dogfact » Random dog fact
+            ${prefix}foxfact » Random fox fact
+            ${prefix}help » Shows a list of command categories
+            ${prefix}serverinfo » Shows the servers information
+            ${prefix}whois [user] » Shows information on the mentioned user
+            ${prefix}botinfo » Shows information on the Cryptic selfbot${footer ? `\n\n${footer}` : null}
             \`\`\``)
         }
     }
@@ -1025,10 +1053,10 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
             .setDescription(`
             <> = required | [] = optional
 
-            \`${prefix}lenny\` ❯ Sends ( ͡° ͜ʖ ͡°)
-            \`${prefix}flip\` ❯ Sends (╯°□°）╯︵ ┻━┻
-            \`${prefix}unflip\` ❯ Sends ┬─┬ ノ( ゜-゜ノ)
-            \`${prefix}shrug\` ❯ Sends ¯\\_(ツ)_/¯
+            **${prefix}lenny** » Sends ( ͡° ͜ʖ ͡°) into the current channel
+            **${prefix}flip** » Sends (╯°□°）╯︵ ┻━┻ into the current channel
+            **${prefix}unflip** » Sends ┬─┬ ノ( ゜-゜ノ) into the current channel
+            **${prefix}shrug** » Sends ¯\\_(ツ)_/¯ into the current channel
             `)
             message.channel.send(embed)
         } else {
@@ -1037,10 +1065,10 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
 
             <> = required | [] = optional
 
-            ${prefix}lenny ❯ Sends ( ͡° ͜ʖ ͡°)
-            ${prefix}flip ❯ Sends (╯°□°）╯︵ ┻━┻
-            ${prefix}unflip ❯ Sends ┬─┬ ノ( ゜-゜ノ)
-            ${prefix}shrug ❯ Sends ¯\\_(ツ)_/¯${footer ? `\n\n${footer}` : null}
+            ${prefix}lenny » Sends ( ͡° ͜ʖ ͡°) into the current channel
+            ${prefix}flip » Sends (╯°□°）╯︵ ┻━┻ into the current channel
+            ${prefix}unflip » Sends ┬─┬ ノ( ゜-゜ノ) into the current channel
+            ${prefix}shrug » Sends ¯\\_(ツ)_/¯ into the current channel${footer ? `\n\n${footer}` : null}
             \`\`\``)
         }
     }
@@ -1059,8 +1087,8 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
           .setDescription(`
           <> = required | [] = optional
 
-          \`${prefix}binary <encode|decode> <message|binary>\` ❯ Encodes/decodes binary
-          \`${prefix}base64 <encode|decode> <message|base64>\` ❯ Encodes/decodes base64
+          **${prefix}binary <encode|decode> <message|binary>** » Encodes/decodes binary
+          **${prefix}base64 <encode|decode> <message|base64>** » Encodes/decodes base64
           `)
           message.channel.send(embed)
       } else {
@@ -1069,8 +1097,8 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
 
           <> = required | [] = optional
 
-          ${prefix}binary <encode|decode> <message|binary> ❯ Encodes/decodes binary
-          ${prefix}base64 <encode|decode> <message|base64> ❯ Encodes/decodes base64${footer ? `\n\n${footer}` : null}
+          ${prefix}binary <encode|decode> <message|binary> » Encodes/decodes binary
+          ${prefix}base64 <encode|decode> <message|base64> » Encodes/decodes base64${footer ? `\n\n${footer}` : null}
           \`\`\``)
       }
   }
@@ -1089,11 +1117,11 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
           .setDescription(`
           <> = required | [] = optional
       
-          \`${prefix}listening <message>\` ❯ Sets your activity as listening with your message
-          \`${prefix}playing <message>\` ❯ Sets your activity as playing with your message
-          \`${prefix}stream <message>\` ❯ Sets your activity as streaming with your message
-          \`${prefix}watching <message>\` ❯ Sets your activity as watching with your message
-          \`${prefix}reset\` ❯ Resets your current activity
+          **${prefix}listening <message>** » Sets your activity as listening with your message
+          **${prefix}playing <message>** » Sets your activity as playing with your message
+          **${prefix}stream <message>** » Sets your activity as streaming with your message
+          **${prefix}watching <message>** » Sets your activity as watching with your message
+          **${prefix}reset** » Resets your current activity
           `)
           message.channel.send(embed)
       } else {
@@ -1102,11 +1130,11 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
 
           <> = required | [] = optional
       
-          ${prefix}listening <message> ❯ Sets your activity as listening with your message
-          ${prefix}playing <message> ❯ Sets your activity as playing with your message
-          ${prefix}stream <message> ❯ Sets your activity as streaming with your message
-          ${prefix}watching <message> ❯ Sets your activity as watching with your message
-          ${prefix}reset ❯ Resets your current activity${footer ? `\n\n${footer}` : null}
+          ${prefix}listening <message> » Sets your activity as listening with your message
+          ${prefix}playing <message> » Sets your activity as playing with your message
+          ${prefix}stream <message> » Sets your activity as streaming with your message
+          ${prefix}watching <message> » Sets your activity as watching with your message
+          ${prefix}reset » Resets your current activity${footer ? `\n\n${footer}` : null}
           \`\`\``)
       }
   }
@@ -1125,9 +1153,9 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
           .setDescription(`
           <> = required | [] = optional
       
-          \`${prefix}cat\` ❯ Random cat image
-          \`${prefix}dog\` ❯ Random dog image
-          \`${prefix}fox\` ❯ Random fox image
+          **${prefix}cat** » Random cat image
+          **${prefix}dog** » Random dog image
+          **${prefix}fox** » Random fox image
           `)
           message.channel.send(embed)
       } else {
@@ -1136,9 +1164,9 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
 
           <> = required | [] = optional
       
-          ${prefix}cat ❯ Random cat image
-          ${prefix}dog ❯ Random dog image
-          ${prefix}fox ❯ Random fox image${footer ? `\n\n${footer}` : null}
+          ${prefix}cat » Random cat image
+          ${prefix}dog » Random dog image
+          ${prefix}fox » Random fox image${footer ? `\n\n${footer}` : null}
           \`\`\``)
       }
   }
@@ -1157,14 +1185,14 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
           .setDescription(`
           <> = required | [] = optional
       
-          \`${prefix}delchannels\` ❯ Deletes every-single channel in the server
-          \`${prefix}delroles\` ❯ Deletes every-single role in the server
-          \`${prefix}masschannels\` ❯ Creates a whole bunch of random channels
-          \`${prefix}massroles\` ❯ Creates a whole bunch of random roles
-          \`${prefix}massban\` ❯ Bans everyone in the server (Not including the server owner or members with a higher rank/role)
-          \`${prefix}masskick\` ❯ Kicks everyone in the server (Not including the server owner or members with a higher rank/role)
-          \`${prefix}raid\` ❯ Changes the server name, icon, creates 100 roles and makes 100 text and voice channels
-          \`${prefix}original\` ❯ Resets the entire server
+          **${prefix}delchannels** » Deletes every-single channel in the server
+          **${prefix}delroles** » Deletes every-single role in the server
+          **${prefix}masschannels** » Creates a whole bunch of random channels
+          **${prefix}massroles** » Creates a whole bunch of random roles
+          **${prefix}massban** » Bans everyone in the server (Not including the server owner or members with a higher rank/role)
+          **${prefix}masskick** » Kicks everyone in the server (Not including the server owner or members with a higher rank/role)
+          **${prefix}raid** » Changes the server name, icon, creates 100 roles and makes 100 text and voice channels
+          **${prefix}original** » Resets the entire server
           `)
           message.channel.send(embed)
       } else {
@@ -1173,14 +1201,14 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
 
           <> = required | [] = optional
       
-          ${prefix}delchannels ❯ Deletes every-single channel in the server
-          ${prefix}delroles ❯ Deletes every-single role in the server
-          ${prefix}masschannels ❯ Creates a whole bunch of random channels
-          ${prefix}massroles ❯ Creates a whole bunch of random roles
-          ${prefix}massban ❯ Bans everyone in the server (Not including the server owner or members with a higher rank/role)
-          ${prefix}masskick ❯ Kicks everyone in the server (Not including the server owner or members with a higher rank/role)
-          ${prefix}raid ❯ Changes the server name, icon, creates 100 roles and makes 100 text and voice channels
-          ${prefix}original ❯ Resets the entire server${footer ? `\n\n${footer}` : null}
+          ${prefix}delchannels » Deletes every-single channel in the server
+          ${prefix}delroles » Deletes every-single role in the server
+          ${prefix}masschannels » Creates a whole bunch of random channels
+          ${prefix}massroles » Creates a whole bunch of random roles
+          ${prefix}massban » Bans everyone in the server (Not including the server owner or members with a higher rank/role)
+          ${prefix}masskick » Kicks everyone in the server (Not including the server owner or members with a higher rank/role)
+          ${prefix}raid » Changes the server name, icon, creates 100 roles and makes 100 text and voice channels
+          ${prefix}original » Resets the entire server${footer ? `\n\n${footer}` : null}
           \`\`\``)
       }
   }
@@ -1199,7 +1227,7 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
       .setDescription(`
         <> = required | [] = optional
       
-        \`${prefix}dmall\` ❯ Sends mostly everyone in the server a message of your choice
+        **${prefix}dmall** » Sends mostly everyone in the server a message of your choice
         `)
         message.channel.send(embed)
     } else {
@@ -1208,7 +1236,7 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
 
       <> = required | [] = optional
       
-      ${prefix}dmall ❯ Sends mostly everyone in the server a message of your choice${footer ? `\n\n${footer}` : null}
+      ${prefix}dmall » Sends mostly everyone in the server a message of your choice${footer ? `\n\n${footer}` : null}
       \`\`\``)
     }
   }
@@ -1386,7 +1414,7 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
         if(message.deletable) {
             message.delete()
         }
-        if(message.channel.type === "dm" || !message.guild || message.channel.type === "group") return message.author.send("This command cannot be executed in Direct Messages or in Private Groups.")
+        if(message.guild) return message.author.send("This command cannot be executed in Direct Messages or in Private Groups.")
         const user = message.mentions.users.first() || message.author;
         const member = message.guild.member(user)
         const perms = member.permissions.toArray().map(str => str.replace(/_/g, " ").toLowerCase().replace(/\b(\w)/g, char => char.toUpperCase())).join(", ")
