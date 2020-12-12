@@ -1248,6 +1248,83 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
           \`\`\``)
       }
   }
+  
+  if(cmd === "ban") {
+    console.log(`[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan("Command used")} ${colors.magenta("|")} ${colors.yellow(cmd)}`)
+    if(message.deletable) {
+      message.delete()
+    }
+    const user = message.mentions.users.first()
+    const member = message.guild.member(user);
+    let reason = args.slice(1).join(" ");
+    if(!reason) reason = "No reason provied"
+    
+    if(!message.guild.me.hasPermission("BAN_MEMBERS")) return message.channel.send("Error! I do not have enough permissions to do that")
+    if(user) {
+        if(member) {
+            member.ban({reason: reason}).then(() => {
+                message.channel.send(`**${user.tag}** was successfully banned from this server`)
+            })
+        } else {
+            message.channel.send("That user does not exist in this server")
+        }
+    } else {
+        message.channel.send("Please mention a user to ban")
+    }
+  }
+
+  if(cmd === "kick") {
+    console.log(`[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan("Command used")} ${colors.magenta("|")} ${colors.yellow(cmd)}`)
+    if(message.deletable) {
+      message.delete()
+    }
+    const user = message.mentions.users.first()
+    const member = message.guild.member(user);
+    let reason = args.slice(1).join(" ");
+    if(!reason) reason = "No reason provied"
+    
+    if(!message.guild.me.hasPermission("KICK_MEMBERS")) return message.channel.send("Error! I do not have enough permissions to do that")
+    if(user) {
+        if(member) {
+            member.kick(reason).then(() => {
+                message.channel.send(`**${user.tag}** was successfully kicked from this server`)
+            })
+        } else {
+            message.channel.send("That user does not exist in this server")
+        }
+    } else {
+        message.channel.send("Please mention a user to kick")
+    }
+  }
+
+  if(cmd === "createrole") {
+    console.log(`[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan("Command used")} ${colors.magenta("|")} ${colors.yellow(cmd)}`)
+    if(message.deletable) {
+      message.delete()
+    }
+    const roleColor = args[0]
+    const roleName = args.slice(1).join(" ")
+    if(!roleColor) return message.channel.send("Please specify a role color")
+    if(!roleName) return message.channel.send("Please specify a role name")
+    message.guild.createRole({
+        name: roleName,
+        color: roleColor
+    })
+    message.channel.send(`Successfully made the **${roleName}** role`)
+  }
+
+  if(cmd === "deleterole") {
+    console.log(`[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan("Command used")} ${colors.magenta("|")} ${colors.yellow(cmd)}`)
+    if(message.deletable) {
+      message.delete()
+    }
+    const roleName = message.guild.roles.find(role => role.name === args.join(" "))
+    if(!args.join(" ")) return message.channel.send("Please specify a role name to delete")
+    if(!roleName) return message.channel.send("That role does not exist")
+    roleName.delete()
+    message.channel.send(`Successfully deleted the **${args.join(" ")}** role`)
+  }
+
 
   if(cmd === "moderation") {
     console.log(`[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan("Command used")} ${colors.magenta("|")} ${colors.yellow(cmd)}`)
@@ -1263,7 +1340,11 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
       .setDescription(`
         <> = required | [] = optional
       
+        **${prefix}createrole <hex-color> <name>** » Creates a new role with the color
+        **${prefix}deleterole <name>** » Delets the role from the server
         **${prefix}rainbowrole <role-id>** » Edits that role to rainbow colors
+        **${prefix}ban <member> [reason]** » Bans the mentioned member from the server
+        **${prefix}kick <member> [reason]** » Kicks the mentioned member from the server
         `)
         message.channel.send(embed)
     } else {
@@ -1272,7 +1353,11 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
 
       <> = required | [] = optional
       
-      ${prefix}rainbowrole <role-id> » Edits that role to rainbow colors${footer ? `\n\n${footer}` : null}
+        ${prefix}createrole <hex-color> <name> » Creates a new role with the color
+        ${prefix}deleterole <name> » Delets the role from the server
+        ${prefix}rainbowrole <role-id> » Edits that role to rainbow colors
+        ${prefix}ban <member> [reason] » Bans the mentioned member from the server
+        ${prefix}kick <member> [reason] » Kicks the mentioned member from the server${footer ? `\n\n${footer}` : null}
       \`\`\``)
     }
   }
