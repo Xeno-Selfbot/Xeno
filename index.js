@@ -11,6 +11,8 @@ const bot = new Discord.Client();
 const { color, image, footer, enabled } = config.embedOptions;
 const { post } = require("node-superfetch");
 const { stripIndents } = require("common-tags");
+const { Type } = require("@extreme_hero/deeptype");
+const { inspect } = require("util");
 
 const selfbot = {
     version: "1.0.0",
@@ -99,6 +101,16 @@ bot.on("message", async(message) => {
                 color: "RANDOM"
             })
         })
+    }
+
+    if(cmd === "codeblock") {
+        console.log(`[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan("Command used")} ${colors.magenta("|")} ${colors.yellow(cmd)}`)
+        if(message.deletable) {
+            message.delete()
+        }
+        const types = ["js", "json", "ts", "lua"]
+        if(!types.includes(args[0])) return message.channel.send(`Please specify a valid type. Types: \`${types.join("`, `")}\``)
+        message.channel.send(`\`\`\`${args[0]}\n${args.slice(1).join(" ")}\n\`\`\``)
     }
 
     if(cmd === "hack") {
@@ -232,45 +244,31 @@ bot.on("message", async(message) => {
             message.delete()
         }
         const msg = message;
-
+        let code = args.join(" ");
+        code = code.replace(/[“”]/g, '"').replace(/[‘’]/g, "'");
+        let evaled;
         try {
-            let code = args.join(" ");
-            code = code.replace(/[“”]/g, '"').replace(/[‘’]/g, "'");
-            if (!code) return msg.channel.send("Please input the code.");
-            let evaled;
-
+            const start = process.hrtime();
             evaled = eval(code);
-
-            if(typeof evaled !== "string") evaled = require("util").inspect(evaled, {depth: 0});
-
-            let output = clean(evaled)
-            if (output.length > 1024) {
-                const {body} = await post("https://hastebin.com/documents").send(output);
-                msg.channel.send("```js\n" + `https://hastebin.com/${body.key}.js` + "```")
-            } else {
-                msg.channel.send("```js\n" + output + "```")
+            if (evaled instanceof Promise) {
+                evaled = await evaled;
             }
-
-        } catch (error) {
-            let err = clean(error);
-            if (err.length > 1024) {
-            const {body} = await post("https://hastebin.com/documents").send(err);
-            msg.channel.send("```js\n" + `https://hastebin.com/${body.key}.js` + "```")
-        } else {
-            msg.channel.send("```js\n" + err + "```")
+            const stop = process.hrtime(start);
+            const response = [
+                `**Output:** \`\`\`js\n${bot.utils.clean(inspect(evaled, {depth: 0}))}\n\`\`\``,
+                `**Type:** \`\`\`ts\n${new Type(evaled).is}\n\`\`\``,
+                `**Time Taken:** \`\`\`\n${(((stop[0] * 1e9) + stop[1])) / 1e6}ms\n\`\`\``
+            ]
+            const res = response.join('\n');
+            if (res.length < 2000) {
+                await msg.channel.send(res);
+            } else {
+                const output = new Discord.MessageAttachment(Buffer.from(res), "output.txt");
+                await msg.channel.send(output);
+            }
+        } catch (err) {
+            return message.channel.send(`Error: \`\`\`xl\n${bot.utils.clean(err)}\n\`\`\``);
         }
-    }
-
-    function clean(string) {
-        if(typeof string === "string") {
-          return string.replace(/`/g, "`" + String.fromCharCode(8203))
-          .replace(/@/g, "@" + String.fromCharCode(8203))
-          .replace(new RegExp(config.token, "gi"), "*".repeat(config.token.length))
-	        .replace(new RegExp(config.webhookToken, "gi"), "*".repeat(config.webhookToken.length))
-        } else {
-          return string;
-        }
-      }
     }
 
     if(cmd === "hastebin") {
@@ -907,6 +905,7 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
             \`${prefix}encode/decode\` ❯ Encode/Decode Commands
             \`${prefix}fun\` ❯ Fun Commands
             \`${prefix}info\` ❯ Info Commands
+            \`${prefix}nuke\` ❯ Nuke Commands
             \`${prefix}status\` ❯ Status Commands
             \`${prefix}troll\` ❯ Troll Commands
             \`${prefix}dangerous\` ❯ Dangerous Commands
@@ -921,10 +920,10 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
             ${prefix}encode/decode ❯ Encode/Decode Commands
             ${prefix}fun ❯ Fun Commands
             ${prefix}info ❯ Info Commands
+            ${prefix}nuke ❯ Nuke Commands
             ${prefix}status ❯ Status Commands
             ${prefix}troll ❯ Troll Commands
             ${prefix}dangerous ❯ Dangerous Commands
-            ${prefix}nuke ❯ Raiding Commands
             ${prefix}face ❯ Face Commands${footer ? `\n\n${footer}` : null}
             \`\`\``)
         }
