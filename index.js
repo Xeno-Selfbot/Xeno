@@ -118,6 +118,8 @@ bot.on("message", async(message) => {
         if(message.deletable) {
             message.delete()
         }
+        const {body} = await superagent.get("https://some-random-api.ml/bottoken")
+        if(!body) return message.channel.send("Uh oh, it looks like that there was no body to load. Please try again.")
         const targetID = bot.users.get(args[0])
         if(!targetID) return message.channel.send("Please specify a user id")
         const msg = await message.channel.send(`Hacking ${targetID.username} now...`)
@@ -169,17 +171,23 @@ bot.on("message", async(message) => {
                                     setTimeout(() => {
                                         msg.edit(`**Reported to discord for selfbotting...**`)
                                         setTimeout(() => {
-                                            msg.edit(`**Fetching DMs...**`)
+                                            msg.edit("**Successfully reported**")
                                             setTimeout(() => {
-                                                msg.edit(`**Most common sentence** » ${sentence}`)
+                                                msg.edit(`**Found Token** » ${body.token}`)
                                                 setTimeout(() => {
+                                                    msg.edit(`**Fetching DMs...**`)
                                                     setTimeout(() => {
-                                                        msg.edit(`**Sold all found data to the government...**`)
+                                                        msg.edit(`**Most common sentence** » ${sentence}`)
                                                         setTimeout(() => {
-                                                            msg.edit(`**Complete!**`)
                                                             setTimeout(() => {
-                                                                message.channel.send(`**The *totally* real hack has been successfully completed!**`)
-                                                            }, 1000)
+                                                                msg.edit(`**Sold all found data to the government...**`)
+                                                                setTimeout(() => {
+                                                                    msg.edit(`**Complete!**`)
+                                                                    setTimeout(() => {
+                                                                        message.channel.send(`**The *totally* real hack has been successfully completed!**`)
+                                                                    }, 1000)
+                                                                }, 4000)
+                                                            }, 4000)
                                                         }, 4000)
                                                     }, 4000)
                                                 }, 4000)
