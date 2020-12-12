@@ -949,16 +949,6 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
         }
     }
 
-    if(cmd === "reactall") {
-        console.log(`[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan("Command used")} ${colors.magenta("|")} ${colors.yellow(cmd)}`)
-        if(message.deletable) {
-            message.delete()
-        }
-        const emoji = args[0]
-        if(!args[0]) return message.channel.send("Please specify an emoji")
-        message.channel.messages.forEach(msg => msg.react(emoji))
-    }
-
     if(cmd === "chelp") {
         console.log(`[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan("Command used")} ${colors.magenta("|")} ${colors.yellow(cmd)}`)
         if(message.deletable) {
@@ -1335,6 +1325,16 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
       \`\`\``)
     }
   }
+
+  if(cmd === "reactall") {
+    console.log(`[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan("Command used")} ${colors.magenta("|")} ${colors.yellow(cmd)}`)
+    if(message.deletable) {
+        message.delete()
+    }
+    const emoji = args[0]
+    if(!args[0]) return message.channel.send("Please specify an emoji")
+    message.channel.messages.forEach(msg => msg.react(emoji))
+}
   
   if(cmd === "ban") {
     console.log(`[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan("Command used")} ${colors.magenta("|")} ${colors.yellow(cmd)}`)
