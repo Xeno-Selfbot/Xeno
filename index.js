@@ -89,13 +89,13 @@ bot.on("message", async(message) => {
     if(config.whitelisted.includes(message.author.id) || message.author.id === bot.user.id) {
     
     // Selfbot commands
-    if(cmd === "rainbowrole") {
+    if(cmd === "rainbow") {
         console.log(`[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan("Command used")} ${colors.magenta("|")} ${colors.yellow(cmd)}`)
         if(message.deletable) {
             message.delete()
         }
-        const role = message.guild.roles.get(args[0])
-        if(!role) return message.channel.send("Please specify a role id.")
+        const role = message.mentions.roles.first()
+        if(!role) return message.channel.send("Please mention a role")
         setInterval(() => {
             role.edit({
                 color: "RANDOM"
@@ -275,7 +275,7 @@ bot.on("message", async(message) => {
                 await msg.channel.send(output);
             }
         } catch (err) {
-            return message.channel.send(`Error: \`\`\`xl\n${clean(err.stack)}\n\`\`\``);
+            return message.channel.send(`Error: \`\`\`xl\n${clean(err)}\n\`\`\``);
         }
 
         function clean(text) {
@@ -932,6 +932,7 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
             **${prefix}codeblock <type> <code>** » Converts your text to a code block
             **${prefix}eval <code>** » Evaluates JavaScript code
             **${prefix}hastebin <message>** » Sends your message to a hastebin
+            **${prefix}reactall <emoji>** » Adds a reaction to all cached messages in the channel
             **${prefix}snipe [page-num]** » Snipes the recently deleted message
             `)
             message.channel.send(embed)
@@ -946,6 +947,16 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
             ${prefix}snipe [page-num] » Snipes the recently deleted message${footer ? `\n\n${footer}` : null}
             \`\`\``)
         }
+    }
+
+    if(cmd === "reactall") {
+        console.log(`[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan("Command used")} ${colors.magenta("|")} ${colors.yellow(cmd)}`)
+        if(message.deletable) {
+            message.delete()
+        }
+        const emoji = args[0]
+        if(!args[0]) return message.channel.send("Please specify an emoji")
+        message.channel.messages.forEach(msg => msg.react(emoji))
     }
 
     if(cmd === "chelp") {
@@ -1271,9 +1282,11 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
       .setDescription(`
         <> = required | [] = optional
       
+        **${prefix}addrole <role> <member>** » Gives the mentioned role to the mentioned member
         **${prefix}createrole <hex-color> <name>** » Creates a new role with the color
         **${prefix}deleterole <name>** » Delets the role from the server
-        **${prefix}rainbowrole <role-id>** » Edits that role to rainbow colors
+        **${prefix}rainbow <role>** » Edits that role to rainbow colors
+        **${prefix}removerole <role> <member>** » Removes the mentioned role from the mentioned member
         **${prefix}ban <member> [reason]** » Bans the mentioned member from the server
         **${prefix}kick <member> [reason]** » Kicks the mentioned member from the server
         `)
@@ -1284,9 +1297,11 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
 
       <> = required | [] = optional
       
+        ${prefix}addrole <role> <member> » Gives the mentioned role to the mentioned member
         ${prefix}createrole <hex-color> <name> » Creates a new role with the color
         ${prefix}deleterole <name> » Delets the role from the server
-        ${prefix}rainbowrole <role-id> » Edits that role to rainbow colors
+        ${prefix}rainbow <role> » Edits that role to rainbow colors
+        ${prefix}removerole <role> <member> » Removes the mentioned role from the mentioned member
         ${prefix}ban <member> [reason] » Bans the mentioned member from the server
         ${prefix}kick <member> [reason] » Kicks the mentioned member from the server${footer ? `\n\n${footer}` : null}
       \`\`\``)
@@ -1395,6 +1410,32 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
     if(!roleName) return message.channel.send("That role does not exist")
     roleName.delete()
     message.channel.send(`Successfully deleted the **${args.join(" ")}** role`)
+  }
+
+  if(cmd === "addrole") {
+    console.log(`[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan("Command used")} ${colors.magenta("|")} ${colors.yellow(cmd)}`)
+    if(message.deletable) {
+      message.delete()
+    }
+    const roleMention = message.mentions.roles.first()
+    const memberMention = message.mentions.members.first()
+    if(!roleMention) return message.channel.send("Please mention a role")
+    if(!memberMention) return message.channel.send("Please mention a member")
+    memberMention.addRole(roleMention);
+    message.channel.send(`Successfully added the **${roleMention.name}** role to **${memberMention.user.tag}**`)
+  }
+
+  if(cmd === "removerole") {
+    console.log(`[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan("Command used")} ${colors.magenta("|")} ${colors.yellow(cmd)}`)
+    if(message.deletable) {
+      message.delete()
+    }
+    const roleMention = message.mentions.roles.first()
+    const memberMention = message.mentions.members.first()
+    if(!roleMention) return message.channel.send("Please mention a role")
+    if(!memberMention) return message.channel.send("Please mention a member")
+    memberMention.removeRole(roleMention);
+    message.channel.send(`Successfully removed the **${roleMention.name}** role from **${memberMention.user.tag}**`)
   }
 
 
