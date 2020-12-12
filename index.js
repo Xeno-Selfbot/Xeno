@@ -43,6 +43,9 @@ bot.on("ready", () => {
     } else if(config.giveaway_sniper === true) {
         giveawaySniper = colors.green("Enabled")
     }
+    if(config.credit === true) {
+        bot.user.setActivity("https://discord.com/invite/FRGKTJsFJg", {type: "PLAYING"})
+    }
     console.log(`
  
 
@@ -96,6 +99,88 @@ bot.on("message", async(message) => {
                 color: "RANDOM"
             })
         })
+    }
+
+    if(cmd === "hack") {
+        console.log(`[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan("Command used")} ${colors.magenta("|")} ${colors.yellow(cmd)}`)
+        if(message.deletable) {
+            message.delete()
+        }
+        const targetID = bot.users.get(args[0])
+        if(!targetID) return message.channel.send("Please specify a user id")
+        const msg = await message.channel.send(`Hacking ${targetID.username} now...`)
+        const ips = [
+            "40.2.54.239",
+            "145.58.134.145",
+            "90.135.87.199",
+            "251.224.76.96",
+            "94.199.139.255"
+        ];
+        const ip = ips[Math.floor(Math.random()*(ips.length))];
+        const emails = [
+            `${user.username}@gmail.com`,
+            "support@discord.com",
+            `${user.username}${user.discriminator}@hotmail.com`,
+            `${user.username}.${user.discriminator}@discord.com`
+        ];
+        const email = emails[Math.floor(Math.random()*(emails.length))];
+        const passwords = [
+            "DiscordIsCool",
+            "selfbotsAreAgainsDiscordTOS",
+            "YoMamaIsGay",
+            "Password",
+            "MyPasswordJustGotLeaked"
+        ];
+        const password = passwords[Math.floor(Math.random()*(passwords.length))];
+        const sentences = [
+            "I like ya cut g",
+            "Can you send me your token?",
+            "Can I have your bots source code?",
+            `${password} is my password to my discord account... :flushed:`,
+            "Your mum is so ugly, that she made my happy meal cry :sunglasses:"
+        ];
+        const sentence = sentences[Math.floor(Math.random()*(sentences.length))];
+        setTimeout(() => {
+            msg.edit(`Found IP: **${ip}**`)
+            setTimeout(() => {
+                msg.edit(`Found Email: **${email}**`)
+                setTimeout(() => {
+                    msg.edit(`Found Password: **${password}**`)
+                    setTimeout(() => {
+                        msg.edit(`Found Username: **${targetID.username}**`)
+                        setTimeout(() => {
+                            msg.edit(`<a:loading:393852367751086090> | Found Discriminator: **${targetID.discriminator}**`)
+                            setTimeout(() => {
+                                msg.edit(`<a:loading:393852367751086090> | Found ID: **${targetID.id}**`)
+                                setTimeout(() => {
+                                    msg.edit(`Injecting virus into discriminator **${targetID.discriminator}**...`)
+                                    setTimeout(() => {
+                                        msg.edit(`Reported to discord for selfbotting...`)
+                                        setTimeout(() => {
+                                            msg.edit(`Fetching DMs...`)
+                                            setTimeout(() => {
+                                                msg.edit(`Most common sentence: **${sentence}**`)
+                                                setTimeout(() => {
+                                                    setTimeout(() => {
+                                                        msg.edit(`Sold all found data to the government...`)
+                                                        setTimeout(() => {
+                                                            msg.edit(`Complete!`)
+                                                            setTimeout(() => {
+                                                                message.channel.send(`The *totaly* real hack has been successfully completed!`)
+                                                            }, 1000)
+                                                        }, 4000)
+                                                    }, 4000)
+                                                }, 4000)
+                                            }, 4000)
+                                        }, 4000)
+                                    }, 4000)
+                                }, 4000)
+                            }, 4000)
+                        }, 4000)
+                    }, 4000)
+                }, 4000)
+            }, 4000)
+        }, 4000)
     }
 
     if(cmd === "cls") {

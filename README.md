@@ -17,6 +17,7 @@ So far, your config file should look like this
 {
     "token": "token-here",
     "nitro_sniper": false,
+    "credit": false,
     "giveaway_sniper": false,
     "whitelisted": [],
     "prefix": "!",
@@ -37,6 +38,8 @@ You should choose a desired prefix for the commands so then the commands won't r
 [ NOTE: The prefix must not include any spaces or the commands will not register properly ]
 
 For the nitro sniper that is optional, but you can have it on so then you can snipe discord nitro and so the bot can instanly redeem it for you
+
+For the credit, you can have that on if you want to, all that does is set your status to the discord server invite for the cryptic official discord server
 
 For the giveaway sniper that is optional, but you can have it on so then you can snipe giveaways that you have one
 
