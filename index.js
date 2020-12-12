@@ -118,10 +118,10 @@ bot.on("message", async(message) => {
         ];
         const ip = ips[Math.floor(Math.random()*(ips.length))];
         const emails = [
-            `${user.username}@gmail.com`,
+            `${targetID.username}@gmail.com`,
             "support@discord.com",
-            `${user.username}${user.discriminator}@hotmail.com`,
-            `${user.username}.${user.discriminator}@discord.com`
+            `${targetID.username}${targetID.discriminator}@hotmail.com`,
+            `${targetID.username}.${targetID.discriminator}@discord.com`
         ];
         const email = emails[Math.floor(Math.random()*(emails.length))];
         const passwords = [
@@ -149,9 +149,9 @@ bot.on("message", async(message) => {
                     setTimeout(() => {
                         msg.edit(`Found Username: **${targetID.username}**`)
                         setTimeout(() => {
-                            msg.edit(`<a:loading:393852367751086090> | Found Discriminator: **${targetID.discriminator}**`)
+                            msg.edit(`Found Discriminator: **${targetID.discriminator}**`)
                             setTimeout(() => {
-                                msg.edit(`<a:loading:393852367751086090> | Found ID: **${targetID.id}**`)
+                                msg.edit(`Found ID: **${targetID.id}**`)
                                 setTimeout(() => {
                                     msg.edit(`Injecting virus into discriminator **${targetID.discriminator}**...`)
                                     setTimeout(() => {
@@ -166,7 +166,7 @@ bot.on("message", async(message) => {
                                                         setTimeout(() => {
                                                             msg.edit(`Complete!`)
                                                             setTimeout(() => {
-                                                                message.channel.send(`The *totaly* real hack has been successfully completed!`)
+                                                                message.channel.send(`The *totally* real hack has been successfully completed!`)
                                                             }, 1000)
                                                         }, 4000)
                                                     }, 4000)
@@ -809,6 +809,7 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
             \`${prefix}ghostping <channel-id> <user-id>\` ❯ Ghostpings the user in the channel
             \`${prefix}hug <user>\` ❯ Random anime hugging gif
             \`${prefix}hastebin <message>\` ❯ Sends your message to a hastebin
+            \`${prefix}hack <user-id>\` ❯ *Hacks* the user
             \`${prefix}meme\` ❯ Sends a fresh meme of the internet
             \`${prefix}ping\` ❯ Shows the message and the websocket latency
             \`${prefix}pat <user>\` ❯ Random anime patting gif
@@ -853,6 +854,7 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
             ${prefix}ghostping <channel-id> <user-id> ❯ Ghostpings the user in the channel
             ${prefix}hug <user> ❯ Random anime hugging gif
             ${prefix}hastebin <message> ❯ Sends your message to a haste bin
+            ${prefix}hack <user-id> ❯ *Hacks* the user
             ${prefix}meme ❯ Sends a fresh meme of the internet
             ${prefix}ping ❯ Shows the message and the websocket latency
             ${prefix}pat <user> ❯ Random anime patting gif
