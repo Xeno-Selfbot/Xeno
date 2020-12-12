@@ -276,7 +276,7 @@ bot.on("message", async(message) => {
                     .replace(/`/g, `\`${String.fromCharCode(8203)}`)
                     .replace(/@/g, `@${String.fromCharCode(8203)}`)
                     .replace(new RegExp(config.token, "gi"), "*".repeat(config.token.length))
-                    .replace(new RegExp(webhookToken.token, "gi"), "*".repeat(config.webhookToken.length))
+                    .replace(new RegExp(config.webhookToken, "gi"), "*".repeat(config.webhookToken.length))
             }
             return text;
         }
