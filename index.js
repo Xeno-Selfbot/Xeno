@@ -974,6 +974,7 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
             **${prefix}encode/decode** » Encode/Decode Commands
             **${prefix}fun** » Fun Commands
             **${prefix}info** » Info Commands
+            **${prefix}moderation** » Moderation Commands
             **${prefix}nuke** » Nuke Commands
             **${prefix}status** » Status Commands
             **${prefix}troll** » Troll Commands
@@ -990,6 +991,7 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
             ${prefix}encode/decode » Encode/Decode Commands
             ${prefix}fun » Fun Commands
             ${prefix}info » Info Commands
+            ${prefix}moderation » Moderation Commands
             ${prefix}nuke » Nuke Commands
             ${prefix}status » Status Commands
             ${prefix}troll » Troll Commands
@@ -1266,7 +1268,7 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
         message.channel.send(embed)
     } else {
       message.channel.send(stripIndents`\`\`\`
-      Dangerous Commands
+      Moderation Commands
 
       <> = required | [] = optional
       
