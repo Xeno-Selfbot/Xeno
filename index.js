@@ -1248,6 +1248,70 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
           \`\`\``)
       }
   }
+
+  if(cmd === "moderation") {
+    console.log(`[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan("Command used")} ${colors.magenta("|")} ${colors.yellow(cmd)}`)
+    if(message.deletable) {
+      message.delete()
+    }
+    if(enabled === true) {
+      let embed = new Discord.RichEmbed()
+      .setTitle("Moderation Commands")
+      .setThumbnail(image ? image : null)
+      .setColor(color ? color : null)
+      .setFooter(footer ? footer : "")
+      .setDescription(`
+        <> = required | [] = optional
+      
+        **${prefix}createrole <hex-color> <name>** » Creates a new role with the color
+        **${prefix}deleterole <name>** » Delets the role from the server
+        **${prefix}rainbowrole <role-id>** » Edits that role to rainbow colors
+        **${prefix}ban <member> [reason]** » Bans the mentioned member from the server
+        **${prefix}kick <member> [reason]** » Kicks the mentioned member from the server
+        `)
+        message.channel.send(embed)
+    } else {
+      message.channel.send(stripIndents`\`\`\`
+      Moderation Commands
+
+      <> = required | [] = optional
+      
+        ${prefix}createrole <hex-color> <name> » Creates a new role with the color
+        ${prefix}deleterole <name> » Delets the role from the server
+        ${prefix}rainbowrole <role-id> » Edits that role to rainbow colors
+        ${prefix}ban <member> [reason] » Bans the mentioned member from the server
+        ${prefix}kick <member> [reason] » Kicks the mentioned member from the server${footer ? `\n\n${footer}` : null}
+      \`\`\``)
+    }
+  }
+
+  if(cmd === "dangerous") {
+    console.log(`[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan("Command used")} ${colors.magenta("|")} ${colors.yellow(cmd)}`)
+    if(message.deletable) {
+      message.delete()
+    }
+    if(enabled === true) {
+      let embed = new Discord.RichEmbed()
+      .setTitle("Dangerous Commands")
+      .setThumbnail(image ? image : null)
+      .setColor(color ? color : null)
+      .setFooter(footer ? footer : "")
+      .setDescription(`
+        <> = required | [] = optional
+      
+        **${prefix}dmall** » Sends mostly everyone in the server a message of your choice
+        `)
+        message.channel.send(embed)
+    } else {
+      message.channel.send(stripIndents`\`\`\`
+      Dangerous Commands
+
+      <> = required | [] = optional
+      
+      ${prefix}dmall » Sends mostly everyone in the server a message of your choice${footer ? `\n\n${footer}` : null}
+      \`\`\``)
+    }
+  }
   
   if(cmd === "ban") {
     console.log(`[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan("Command used")} ${colors.magenta("|")} ${colors.yellow(cmd)}`)
@@ -1325,70 +1389,6 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
     message.channel.send(`Successfully deleted the **${args.join(" ")}** role`)
   }
 
-
-  if(cmd === "moderation") {
-    console.log(`[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan("Command used")} ${colors.magenta("|")} ${colors.yellow(cmd)}`)
-    if(message.deletable) {
-      message.delete()
-    }
-    if(enabled === true) {
-      let embed = new Discord.RichEmbed()
-      .setTitle("Moderation Commands")
-      .setThumbnail(image ? image : null)
-      .setColor(color ? color : null)
-      .setFooter(footer ? footer : "")
-      .setDescription(`
-        <> = required | [] = optional
-      
-        **${prefix}createrole <hex-color> <name>** » Creates a new role with the color
-        **${prefix}deleterole <name>** » Delets the role from the server
-        **${prefix}rainbowrole <role-id>** » Edits that role to rainbow colors
-        **${prefix}ban <member> [reason]** » Bans the mentioned member from the server
-        **${prefix}kick <member> [reason]** » Kicks the mentioned member from the server
-        `)
-        message.channel.send(embed)
-    } else {
-      message.channel.send(stripIndents`\`\`\`
-      Moderation Commands
-
-      <> = required | [] = optional
-      
-        ${prefix}createrole <hex-color> <name> » Creates a new role with the color
-        ${prefix}deleterole <name> » Delets the role from the server
-        ${prefix}rainbowrole <role-id> » Edits that role to rainbow colors
-        ${prefix}ban <member> [reason] » Bans the mentioned member from the server
-        ${prefix}kick <member> [reason] » Kicks the mentioned member from the server${footer ? `\n\n${footer}` : null}
-      \`\`\``)
-    }
-  }
-
-  if(cmd === "dangerous") {
-    console.log(`[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan("Command used")} ${colors.magenta("|")} ${colors.yellow(cmd)}`)
-    if(message.deletable) {
-      message.delete()
-    }
-    if(enabled === true) {
-      let embed = new Discord.RichEmbed()
-      .setTitle("Dangerous Commands")
-      .setThumbnail(image ? image : null)
-      .setColor(color ? color : null)
-      .setFooter(footer ? footer : "")
-      .setDescription(`
-        <> = required | [] = optional
-      
-        **${prefix}dmall** » Sends mostly everyone in the server a message of your choice
-        `)
-        message.channel.send(embed)
-    } else {
-      message.channel.send(stripIndents`\`\`\`
-      Dangerous Commands
-
-      <> = required | [] = optional
-      
-      ${prefix}dmall » Sends mostly everyone in the server a message of your choice${footer ? `\n\n${footer}` : null}
-      \`\`\``)
-    }
-  }
 
     if(cmd === "lenny") {
         console.log(`[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan("Command used")} ${colors.magenta("|")} ${colors.yellow(cmd)}`)
