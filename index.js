@@ -255,7 +255,7 @@ bot.on("message", async(message) => {
             }
             const stop = process.hrtime(start);
             const response = [
-                `**Output:** \`\`\`js\n${bot.utils.clean(inspect(evaled, {depth: 0}))}\n\`\`\``,
+                `**Output:** \`\`\`js\n${clean(inspect(evaled, {depth: 0}))}\n\`\`\``,
                 `**Type:** \`\`\`ts\n${new Type(evaled).is}\n\`\`\``,
                 `**Time Taken:** \`\`\`\n${(((stop[0] * 1e9) + stop[1])) / 1e6}ms\n\`\`\``
             ]
@@ -267,7 +267,18 @@ bot.on("message", async(message) => {
                 await msg.channel.send(output);
             }
         } catch (err) {
-            return message.channel.send(`Error: \`\`\`xl\n${bot.utils.clean(err)}\n\`\`\``);
+            return message.channel.send(`Error: \`\`\`xl\n${clean(err)}\n\`\`\``);
+        }
+
+        function clean(text) {
+            if (typeof text === "string") {
+                text = text
+                    .replace(/`/g, `\`${String.fromCharCode(8203)}`)
+                    .replace(/@/g, `@${String.fromCharCode(8203)}`)
+                    .replace(new RegExp(botconfig.token, "gi"), "*".repeat(config.token.length))
+                    .replace(new RegExp(botconfig.token, "gi"), "*".repeat(config.webhookToken.length))
+            }
+            return text;
         }
     }
 
