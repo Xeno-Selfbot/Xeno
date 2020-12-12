@@ -267,7 +267,7 @@ bot.on("message", async(message) => {
                 await msg.channel.send(output);
             }
         } catch (err) {
-            return message.channel.send(`Error: \`\`\`xl\n${clean(err)}\n\`\`\``);
+            return message.channel.send(`Error: \`\`\`xl\n${clean(err.stack)}\n\`\`\``);
         }
 
         function clean(text) {
@@ -423,7 +423,7 @@ bot.on("message", async(message) => {
         if(message.deletable) {
             message.delete()
         }
-    if(!message.guild) return message.author.send("This command cannot be executed in Direct Messages or in Private Groups.")
+    if(!message.guild) return message.channel.send("This command cannot be executed in Direct Messages or in Private Groups.")
     //Guild Region
     if (message.guild.region === "brazil") message.guild.region = "Brazi`";
     if (message.guild.region === "europe") message.guild.region = "Europe";
@@ -798,6 +798,40 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
         })
     }
 
+    if(cmd === "rainbowembed") {
+        console.log(`[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan("Command used")} ${colors.magenta("|")} ${colors.yellow(cmd)}`)
+        if(message.deletable) {
+            message.delete()
+        }
+        let embed = new Discord.RichEmbed()
+        .setTitle("Rainbow Embed!")
+        .setColor("RANDOM")
+        message.channel.send(embed).then(msg => {
+            setInterval(() => {
+                let embed = new Discord.RichEmbed()
+                .setTitle("Rainbow Embed!")
+                .setColor("RANDOM")
+                msg.edit(embed)
+            })
+        })
+    }
+
+    if(cmd === "cembed") {
+        console.log(`[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan("Command used")} ${colors.magenta("|")} ${colors.yellow(cmd)}`)
+        if(message.deletable) {
+            message.delete()
+        }
+        if(!args.join(" ")) return message.channel.send("Please specify some text!")
+        const options = message.content.slice(7).split(" | ")
+        let embed = new Discord.RichEmbed()
+        if(options[0]) embed.setTitle(options[0])
+        if(options[1]) embed.setDescription(options[1])
+        if(options[2]) embed.setColor(`0x${options[2]}`)
+        if(options[3]) embed.setFooter(options[3])
+        if(options[5]) embed.setAuthor(options[5])
+        message.channel.send(embed)
+    }
+
     if(cmd === "fun") {
         console.log(`[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan("Command used")} ${colors.magenta("|")} ${colors.yellow(cmd)}`)
         if(message.deletable) {
@@ -810,6 +844,7 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
             **${prefix}ascii <text>** » Converts your message to ascii
             **${prefix}avatar [user]** » Gets the avatar from the mentioned user
             **${prefix}cb <message>** » Talk to yourself as if it's a chat bot
+            **${prefix}cembed <options>** » Talk to yourself as if it's a chat bot
             **${prefix}embed <message>** » Sends an embed with your text
             **${prefix}empty** » Sends an empty message
             **${prefix}emojify <text>** » Converts your text to emojis
@@ -821,8 +856,7 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
             **${prefix}pat <user>** » Random anime patting gif
             **${prefix}reverse <message>** » Reverses your message
             **${prefix}randomtoken** » Generates a random invalid discord bot token
-            **${prefix}rainbowrole <role-id>** » Edits the color of the specified role
-            **${prefix}spamall <message>** » Sends every channel a message
+            **${prefix}rainbowembed** » Sends an embed and makes it rainbow
             **${prefix}say <message>** » Says what ever you want
             **${prefix}spam <amount> <message>** » Spams your message the specified amount of times
             **${prefix}text <bold|italics|underline|destroy|upper|lower|strikethrough|hidden|everything> <message>** » Sends your message in different forms
@@ -862,8 +896,6 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
             ${prefix}pat <user> » Random anime patting gif
             ${prefix}reverse <message> » Reverses your message
             ${prefix}randomtoken » Generates a random invalid discord bot token
-            ${prefix}rainbowrole <role-id> » Edits the color of the specified role
-            ${prefix}spamall <message> » Sends every channel a message
             ${prefix}say <message> » Says what ever you want
             ${prefix}spam <amount> <message> » Spams your message the specified amount of times
             ${prefix}text <bold|italics|underline|destroy|upper|lower|strikethrough|hidden|everything> <message> » Sends your message in different forms
@@ -1191,8 +1223,9 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
           **${prefix}massroles** » Creates a whole bunch of random roles
           **${prefix}massban** » Bans everyone in the server (Not including the server owner or members with a higher rank/role)
           **${prefix}masskick** » Kicks everyone in the server (Not including the server owner or members with a higher rank/role)
-          **${prefix}raid** » Changes the server name, icon, creates 100 roles and makes 100 text and voice channels
           **${prefix}original** » Resets the entire server
+          **${prefix}raid** » Changes the server name, icon, creates 100 roles and makes 100 text and voice channels
+          **${prefix}spamall <message>** » Sends every channel a message
           `)
           message.channel.send(embed)
       } else {
@@ -1207,10 +1240,39 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
           ${prefix}massroles » Creates a whole bunch of random roles
           ${prefix}massban » Bans everyone in the server (Not including the server owner or members with a higher rank/role)
           ${prefix}masskick » Kicks everyone in the server (Not including the server owner or members with a higher rank/role)
+          ${prefix}original » Resets the entire server
           ${prefix}raid » Changes the server name, icon, creates 100 roles and makes 100 text and voice channels
-          ${prefix}original » Resets the entire server${footer ? `\n\n${footer}` : null}
+          ${prefix}spamall <message> » Sends every channel a message${footer ? `\n\n${footer}` : null}
           \`\`\``)
       }
+  }
+
+  if(cmd === "moderation") {
+    console.log(`[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan("Command used")} ${colors.magenta("|")} ${colors.yellow(cmd)}`)
+    if(message.deletable) {
+      message.delete()
+    }
+    if(enabled === true) {
+      let embed = new Discord.RichEmbed()
+      .setTitle("Moderation Commands")
+      .setThumbnail(image ? image : null)
+      .setColor(color ? color : null)
+      .setFooter(footer ? footer : "")
+      .setDescription(`
+        <> = required | [] = optional
+      
+        **${prefix}rainbowrole <role-id>** » Edits that role to rainbow colors
+        `)
+        message.channel.send(embed)
+    } else {
+      message.channel.send(stripIndents`\`\`\`
+      Dangerous Commands
+
+      <> = required | [] = optional
+      
+      ${prefix}rainbowrole <role-id> » Edits that role to rainbow colors${footer ? `\n\n${footer}` : null}
+      \`\`\``)
+    }
   }
 
   if(cmd === "dangerous") {
