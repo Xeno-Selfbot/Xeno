@@ -1334,7 +1334,16 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
     const emoji = args[0]
     if(!args[0]) return message.channel.send("Please specify an emoji")
     message.channel.messages.forEach(msg => msg.react(emoji))
-}
+  }
+
+  if(cmd === "spoiler") {
+    console.log(`[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan("Command used")} ${colors.magenta("|")} ${colors.yellow(cmd)}`)
+    if(message.deletable) {
+        message.delete()
+    }
+    if(!args.join(" ")) return message.channel.send("Please specify a message")
+    message.channel.send(`||${message.content.split("").join("||")}||`)
+  }
   
   if(cmd === "ban") {
     console.log(`[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan("Command used")} ${colors.magenta("|")} ${colors.yellow(cmd)}`)
