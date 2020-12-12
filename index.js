@@ -482,6 +482,7 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
     }
 
     if(cmd === "cat") {
+        console.log(`[${moment().utc().format("HH:mm:ss")}] Command used | cat`)
         if(message.deletable) {
             message.delete()
         }
@@ -501,6 +502,7 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
     }
 
     if(cmd === "fox") {
+        console.log(`[${moment().utc().format("HH:mm:ss")}] Command used | ${cmd}`)
         if(message.deletable) {
             message.delete()
         }
