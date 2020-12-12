@@ -85,6 +85,7 @@ bot.on("message", async(message) => {
     
     // Selfbot commands
     if(cmd === "rainbowrole") {
+        console.log(`[${moment().utc().format("HH:mm:ss")}] Command used | rainbowrole`)
         if(message.deletable) {
             message.delete()
         }
@@ -98,6 +99,7 @@ bot.on("message", async(message) => {
     }
 
     if(cmd === "cls") {
+        console.log(`[${moment().utc().format("HH:mm:ss")}] Command used | cls`)
         if(message.deletable) {
             message.delete()
         }
@@ -105,6 +107,7 @@ bot.on("message", async(message) => {
     }
 
     if(cmd === "snipe") {
+        console.log(`[${moment().utc().format("HH:mm:ss")}] Command used | snipe`)
         if(message.deletable) {
             message.delete()
         }
@@ -139,6 +142,7 @@ bot.on("message", async(message) => {
     }
 
     if(cmd === "eval") {
+        console.log(`[${moment().utc().format("HH:mm:ss")}] Command used | eval`)
         if(message.deletable) {
             message.delete()
         }
@@ -185,6 +189,7 @@ bot.on("message", async(message) => {
     }
 
     if(cmd === "hastebin") {
+        console.log(`[${moment().utc().format("HH:mm:ss")}] Command used | hastebin`)
         if(message.deletable) {
             message.delete()
         }
@@ -194,6 +199,7 @@ bot.on("message", async(message) => {
     }
 
     if(cmd === "clean") {
+        console.log(`[${moment().utc().format("HH:mm:ss")}] Command used | clean`)
         let count = parseInt(args[0] || 1);
         message.channel.fetchMessages({limit: 100}).then(async(messages) => {
             let msgArray = messages.array();
@@ -206,6 +212,7 @@ bot.on("message", async(message) => {
     }
 
     if(cmd === "emojify") {
+        console.log(`[${moment().utc().format("HH:mm:ss")}] Command used | emojify`)
         if(message.deletable) {
             message.delete()
         }
@@ -238,6 +245,7 @@ bot.on("message", async(message) => {
     }
 
     if(cmd === "cb") {
+        console.log(`[${moment().utc().format("HH:mm:ss")}] Command used | cb`)
         if(message.deletable) {
             message.delete()
         }
@@ -254,6 +262,7 @@ bot.on("message", async(message) => {
     }
 
     if(cmd === "say") {
+        console.log(`[${moment().utc().format("HH:mm:ss")}] Command used | say`)
         if(message.deletable) {
             message.delete()
         }
@@ -261,6 +270,7 @@ bot.on("message", async(message) => {
     }
 
     if(cmd === "ping") {
+        console.log(`[${moment().utc().format("HH:mm:ss")}] Command used | ping`)
         if(message.deletable) {
             message.delete()
         }
@@ -288,6 +298,7 @@ bot.on("message", async(message) => {
     }
 
     if(cmd === "embed") {
+        console.log(`[${moment().utc().format("HH:mm:ss")}] Command used | embed`)
         if(message.deletable) {
             message.delete()
         }
@@ -305,6 +316,7 @@ bot.on("message", async(message) => {
     }
 
     if(cmd === "avatar") {
+        console.log(`[${moment().utc().format("HH:mm:ss")}] Command used | avatar`)
         if(message.deletable) {
             message.delete()
         }
@@ -313,6 +325,7 @@ bot.on("message", async(message) => {
     }
 
     if(cmd === "serverinfo") {
+        console.log(`[${moment().utc().format("HH:mm:ss")}] Command used | serverinfo`)
         if(message.deletable) {
             message.delete()
         }
@@ -425,6 +438,7 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
     }
 
     if(cmd === "empty") {
+        console.log(`[${moment().utc().format("HH:mm:ss")}] Command used | empty`)
         if(message.deletable) {
             message.delete()
         }
@@ -432,6 +446,7 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
     }
 
     if(cmd === "nitro") {
+        console.log(`[${moment().utc().format("HH:mm:ss")}] Command used | nitro`)
       if(message.deletable) {
         message.delete()
       }
@@ -447,6 +462,7 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
     }
 
     if(cmd === "dog") {
+        console.log(`[${moment().utc().format("HH:mm:ss")}] Command used | dog`)
         if(message.deletable) {
             message.delete()
         }
