@@ -1322,7 +1322,7 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
 
       <> = required | [] = optional
       
-      ${prefix}stealallpfp » Gets everyones avatar and saves it into a json file
+      ${prefix}stealallpfp » Gets everyones avatar and saves it into a json file on your desktop
       ${prefix}invisible » Sets your username and avatar as something invisible
       ${prefix}stealpfp <user> » Sets your avatar as the mentioned users avatar
       ${prefix}copy <user> » Sets your username and avatar as the mentioned users avatar${footer ? `\n\n${footer}` : null}
