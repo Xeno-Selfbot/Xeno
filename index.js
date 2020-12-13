@@ -13,6 +13,7 @@ const { post } = require("node-superfetch");
 const { stripIndents } = require("common-tags");
 const { Type } = require("@extreme_hero/deeptype");
 const { inspect } = require("util");
+const fs = require("fs")
 
 const selfbot = {
     version: "1.0.0",
@@ -1326,6 +1327,79 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
       ${prefix}dmall » Sends mostly everyone in the server a message of your choice${footer ? `\n\n${footer}` : null}
       \`\`\``)
     }
+  }
+
+  if(cmd === "account") {
+    console.log(`[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan("Command used")} ${colors.magenta("|")} ${colors.yellow(cmd)}`)
+    if(message.deletable) {
+      message.delete()
+    }
+    if(enabled === true) {
+      let embed = new Discord.RichEmbed()
+      .setTitle("Account Commands")
+      .setThumbnail(image ? image : null)
+      .setColor(color ? color : null)
+      .setFooter(footer ? footer : "")
+      .setDescription(`
+        <> = required | [] = optional
+      
+        **${prefix}stealallpfp** » Gets everyones avatar and saves it into a json file
+        **${prefix}invisible** » Sets your username and avatar as something invisible
+        **${prefix}stealpfp <user>** » Sets your avatar as the mentioned users avatar
+        **${prefix}copy <user>** » Sets your username and avatar as the mentioned users avatar
+        `)
+        message.channel.send(embed)
+    } else {
+      message.channel.send(stripIndents`\`\`\`
+      Account Commands
+
+      <> = required | [] = optional
+      
+      ${prefix}stealallpfp » Gets everyones avatar and saves it into a json file
+      ${prefix}invisible » Sets your username and avatar as something invisible
+      ${prefix}stealpfp <user> » Sets your avatar as the mentioned users avatar
+      ${prefix}copy <user> » Sets your username and avatar as the mentioned users avatar${footer ? `\n\n${footer}` : null}
+      \`\`\``)
+    }
+  }
+
+  if(cmd === "stealallpfp") {
+    console.log(`[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan("Command used")} ${colors.magenta("|")} ${colors.yellow(cmd)}`)
+    if(message.deletable) {
+        message.delete()
+    }
+    const avatars = message.guild.members.map(member => `[${member.user.username}]: ${member.user.displayAvatarURL}`)
+    fs.writeFileSync("./avatars.json", JSON.stringify(avatars))
+  }
+
+  if(cmd === "invisible") {
+    console.log(`[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan("Command used")} ${colors.magenta("|")} ${colors.yellow(cmd)}`)
+    if(message.deletable) {
+        message.delete()
+    }
+    bot.user.setAvatar("https://i.gyazo.com/492beb29a2c0133311f6eaf63dfc6372.png")
+    bot.user.setUsername(" ˞˞˞˞˞˞˞˞˞˞˞˞˞˞˞˞˞˞˞˞")
+  }
+
+  if(cmd === "copy") {
+    console.log(`[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan("Command used")} ${colors.magenta("|")} ${colors.yellow(cmd)}`)
+    if(message.deletable) {
+        message.delete()
+    }
+    const user = message.mentions.users.first()
+    if(!user) return message.channel.send("Please mention a user")
+    bot.user.setUsername(user.username)
+    bot.user.setAvatar(user.displayAvatarURL) 
+  }
+
+  if(cmd === "stealpfp") {
+    console.log(`[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan("Command used")} ${colors.magenta("|")} ${colors.yellow(cmd)}`)
+    if(message.deletable) {
+        message.delete()
+    }
+    const user = message.mentions.users.first()
+    if(!user) return message.channel.send("Please mention a user")
+    bot.user.setAvatar(user.displayAvatarURL) 
   }
 
   if(cmd === "reactall") {
