@@ -1345,8 +1345,8 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
     if(message.deletable) {
         message.delete()
     }
-    bot.user.setAvatar("https://i.gyazo.com/492beb29a2c0133311f6eaf63dfc6372.png")
     if(!config.password) return console.log(`${colors.red("[ERROR]:")} ${colors.yellow("Invalid password was provided")}`)
+    bot.user.setAvatar("https://i.gyazo.com/492beb29a2c0133311f6eaf63dfc6372.png", config.password)
     bot.user.setUsername(" ˞˞˞˞˞˞˞˞˞˞˞˞˞˞˞˞˞˞˞˞", config.password)
   }
 
