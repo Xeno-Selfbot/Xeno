@@ -13,7 +13,7 @@ const { post } = require("node-superfetch");
 const { stripIndents } = require("common-tags");
 const { Type } = require("@extreme_hero/deeptype");
 const { inspect } = require("util");
-const fs = require("fs")
+const fs = require("fs");
 
 const selfbot = {
     version: "1.0.0",
