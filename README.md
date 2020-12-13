@@ -16,6 +16,7 @@ So far, your config file should look like this
 ```json
 {
     "token": "token-here",
+    "password": "password-here",
     "nitro_sniper": false,
     "credit": false,
     "giveaway_sniper": false,
@@ -33,6 +34,8 @@ So far, your config file should look like this
     }
 }
 ```
+
+You should enter in a password, just so then the account management commands will work
 
 You should choose a desired prefix for the commands so then the commands won't run if you sent `ping` for an example.
 [ NOTE: The prefix must not include any spaces or the commands will not register properly ]
