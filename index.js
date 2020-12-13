@@ -70,7 +70,7 @@ bot.on("ready", () => {
                             ${colors.cyan("Giveaway Sniper?")} ${giveawaySniper}
                             ${colors.cyan("Prefix:")} ${colors.yellow(`${config.prefix}`)}
                             ${colors.cyan("GitHub:")} ${colors.yellow("https://github.com/p9sq/Cryptic")}
-                            ${colors.cyan("Developer:")} ${colors.yellow("p9sq#0594")}
+                            ${colors.cyan("Developer:")} ${colors.yellow("p9sq69#0594")}
     `)
 })
 
@@ -807,24 +807,6 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
         })
     }
 
-    if(cmd === "rainbowembed") {
-        console.log(`[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan("Command used")} ${colors.magenta("|")} ${colors.yellow(cmd)}`)
-        if(message.deletable) {
-            message.delete()
-        }
-        let embed = new Discord.RichEmbed()
-        .setTitle("Rainbow Embed!")
-        .setColor("RANDOM")
-        message.channel.send(embed).then(msg => {
-            setInterval(() => {
-                let embed = new Discord.RichEmbed()
-                .setTitle("Rainbow Embed!")
-                .setColor("RANDOM")
-                msg.edit(embed)
-            })
-        })
-    }
-
     if(cmd === "cembed") {
         console.log(`[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan("Command used")} ${colors.magenta("|")} ${colors.yellow(cmd)}`)
         if(message.deletable) {
@@ -850,26 +832,15 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
             const description = stripIndents`<> = required | [] = optional
 
             **${prefix}8ball <question>** » Asks the 8ball a question of your choice
-            **${prefix}ascii <text>** » Converts your message to ascii
             **${prefix}avatar [user]** » Gets the avatar from the mentioned user
             **${prefix}cb <message>** » Talk to yourself as if it's a chat bot
-            **${prefix}cembed <options>** » Talk to yourself as if it's a chat bot
-            **${prefix}embed <message>** » Sends an embed with your text
-            **${prefix}empty** » Sends an empty message
-            **${prefix}emojify <text>** » Converts your text to emojis
             **${prefix}ghostping <channel-id> <user-id>** » Ghostpings the user in the channel
             **${prefix}hug <user>** » Random anime hugging gif
             **${prefix}hack <user-id>** » \\*Hacks\\* the user
             **${prefix}meme** » Sends a fresh meme of the internet
             **${prefix}ping** » Shows the message and the websocket latency
             **${prefix}pat <user>** » Random anime patting gif
-            **${prefix}reverse <message>** » Reverses your message
             **${prefix}randomtoken** » Generates a random invalid discord bot token
-            **${prefix}rainbowembed** » Sends an embed and makes it rainbow
-            **${prefix}say <message>** » Says what ever you want
-            **${prefix}spam <amount> <message>** » Spams your message the specified amount of times
-            **${prefix}spolier <message>** » Converts your text to a spoiler
-            **${prefix}text <bold|italics|underline|destroy|upper|lower|strikethrough|hidden|everything> <message>** » Sends your message in different forms
             **${prefix}uptime** » Shows how long the bot has been currently been running for
             **${prefix}wink <user>** » Random anime winking gif
             **${prefix}webhookspam <amount> <message>** » Spams a webhook the specified amount of times and mentions everyone (Must have webhook id and token in config.json)`
@@ -892,27 +863,62 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
             <> = required | [] = optional
 
             ${prefix}8ball <question> » Asks the 8ball a question of your choice
-            ${prefix}ascii <text> » Converts your message to ascii
             ${prefix}avatar [user] » Gets the avatar from the mentioned user
             ${prefix}cb <message> » Talk to yourself as if it's a chat bot
-            ${prefix}embed <message> » Sends an embed with your text
-            ${prefix}empty » Sends an empty message
-            ${prefix}emojify <text> » Converts your text to emojis
             ${prefix}ghostping <channel-id> <user-id> » Ghostpings the user in the channel
             ${prefix}hug <user> » Random anime hugging gif
             ${prefix}hack <user-id> » *Hacks* the user
             ${prefix}meme » Sends a fresh meme of the internet
             ${prefix}ping » Shows the message and the websocket latency
             ${prefix}pat <user> » Random anime patting gif
-            ${prefix}reverse <message> » Reverses your message
             ${prefix}randomtoken » Generates a random invalid discord bot token
-            ${prefix}say <message> » Says what ever you want
-            ${prefix}spam <amount> <message> » Spams your message the specified amount of times
-            ${prefix}spolier <message> » Converts your text to a spoiler
-            ${prefix}text <bold|italics|underline|destroy|upper|lower|strikethrough|hidden|everything> <message> » Sends your message in different forms
             ${prefix}uptime » Shows how long the bot has been currently been running for
             ${prefix}wink <user> » Random anime winking gif
             ${prefix}webhookspam <amount> <message> » Spams a webhook the specified amount of times and mentions everyone (Must have webhook id and token in config.json)${footer ? `\n\n${footer}` : null}
+            \`\`\``)
+        }
+    }
+
+    if(cmd === "text") {
+        console.log(`[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan("Command used")} ${colors.magenta("|")} ${colors.yellow(cmd)}`)
+        if(message.deletable) {
+            message.delete()
+        }
+        if(enabled === true) {
+            let embed = new Discord.RichEmbed()
+            .setTitle("Text Commands")
+            .setThumbnail(image ? image : null)
+            .setColor(color ? color : null)
+            .setFooter(footer ? footer : "")
+            .setDescription(`
+            <> = required | [] = optional
+
+            **${prefix}ascii <text>** » Converts your message to ascii
+            **${prefix}cembed <options>** » Talk to yourself as if it's a chat bot
+            **${prefix}embed <message>** » Sends an embed with your text
+            **${prefix}empty** » Sends an empty message
+            **${prefix}emojify <text>** » Converts your text to emojis
+            **${prefix}reverse <message>** » Reverses your message
+            **${prefix}say <message>** » Says what ever you want
+            **${prefix}spam <amount> <message>** » Spams your message the specified amount of times
+            **${prefix}spolier <message>** » Converts your text to a spoiler
+            **${prefix}msg <bold|italics|underline|destroy|upper|lower|strikethrough|hidden|everything> <message>** » Sends your message in different forms
+            `)
+            message.channel.send(embed)
+        } else {
+            message.channel.send(stripIndents`\`\`\`
+            <> = required | [] = optional
+
+            ${prefix}ascii <text> » Converts your message to ascii
+            ${prefix}cembed <options> » Talk to yourself as if it's a chat bot
+            ${prefix}embed <message> » Sends an embed with your text
+            ${prefix}empty » Sends an empty message
+            ${prefix}emojify <text> » Converts your text to emojis
+            ${prefix}reverse <message> » Reverses your message
+            ${prefix}say <message> » Says what ever you want
+            ${prefix}spam <amount> <message> » Spams your message the specified amount of times
+            ${prefix}spolier <message> » Converts your text to a spoiler
+            ${prefix}msg <bold|italics|underline|destroy|upper|lower|strikethrough|hidden|everything> <message> » Sends your message in different forms${footer ? `\n\n${footer}` : null}
             \`\`\``)
         }
     }
@@ -952,22 +958,6 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
         }
     }
 
-    if(cmd === "chelp") {
-        console.log(`[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan("Command used")} ${colors.magenta("|")} ${colors.yellow(cmd)}`)
-        if(message.deletable) {
-            message.delete()
-        }
-        console.log(stripIndents`<> = required | [] = optional
-
-        ${prefix}${colors.cyan("animals")} > ${colors.yellow("Animals Commands")}
-        ${prefix}${colors.green("encode/decode")} > ${colors.yellow("Encode/Decode Commands")}
-        ${prefix}${colors.rainbow("fun")} > ${colors.yellow("Fun Commands")}
-        ${prefix}${colors.grey("info")} > ${colors.yellow("Info Commands")}
-        ${prefix}${colors.america("status")} > ${colors.yellow("Status Commands")}
-        ${prefix}${colors.red("nuke")} > ${colors.yellow("Raiding Commands")}
-        ${prefix}${colors.magenta("face")} > ${colors.yellow("Face Commands")}`)
-    }
-
     if(cmd === "help") {
         console.log(`[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan("Command used")} ${colors.magenta("|")} ${colors.yellow(cmd)}`)
         if(message.deletable) {
@@ -983,6 +973,7 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
             <> = required | [] = optional
 
             **${prefix}animals** » Animals Commands
+            **${prefix}account** » Account Commands
             **${prefix}encode/decode** » Encode/Decode Commands
             **${prefix}fun** » Fun Commands
             **${prefix}info** » Info Commands
