@@ -1000,6 +1000,7 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
             <> = required | [] = optional
 
             ${prefix}animals » Animals Commands
+            ${prefix}account » Account Commands
             ${prefix}encode/decode » Encode/Decode Commands
             ${prefix}fun » Fun Commands
             ${prefix}info » Info Commands
