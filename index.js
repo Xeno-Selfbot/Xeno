@@ -894,6 +894,8 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
             <> = required | [] = optional
 
             **${prefix}ascii <text>** » Converts your message to ascii
+            **${prefix}binary <encode|decode> <message|binary>** » Encodes/decodes binary
+            **${prefix}base64 <encode|decode> <message|base64>** » Encodes/decodes base64
             **${prefix}cembed <options>** » Talk to yourself as if it's a chat bot
             **${prefix}embed <message>** » Sends an embed with your text
             **${prefix}empty** » Sends an empty message
@@ -910,6 +912,8 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
             <> = required | [] = optional
 
             ${prefix}ascii <text> » Converts your message to ascii
+            ${prefix}binary <encode|decode> <message|binary> » Encodes/decodes binary
+            ${prefix}base64 <encode|decode> <message|base64> » Encodes/decodes base64
             ${prefix}cembed <options> » Talk to yourself as if it's a chat bot
             ${prefix}embed <message> » Sends an embed with your text
             ${prefix}empty » Sends an empty message
@@ -957,7 +961,7 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
             \`\`\``)
         }
     }
-
+    
     if(cmd === "help") {
         console.log(`[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan("Command used")} ${colors.magenta("|")} ${colors.yellow(cmd)}`)
         if(message.deletable) {
@@ -981,6 +985,7 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
             **${prefix}nuke** » Nuke Commands
             **${prefix}status** » Status Commands
             **${prefix}troll** » Troll Commands
+            **${prefix}text** » Text Commands
             **${prefix}dangerous** » Dangerous Commands
             **${prefix}face** » Face Commands
             **${prefix}utility** » Utility Commands
@@ -1110,36 +1115,6 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
             \`\`\``)
         }
     }
-
-    if(cmd === "encode/decode") {
-        console.log(`[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan("Command used")} ${colors.magenta("|")} ${colors.yellow(cmd)}`)
-      if(message.deletable) {
-          message.delete()
-      }
-      if(enabled === true) {
-          let embed = new Discord.RichEmbed()
-          .setTitle("Encode/Decode Commands")
-          .setThumbnail(image ? image : null)
-          .setColor(color ? color : null)
-          .setFooter(footer ? footer : "")
-          .setDescription(`
-          <> = required | [] = optional
-
-          **${prefix}binary <encode|decode> <message|binary>** » Encodes/decodes binary
-          **${prefix}base64 <encode|decode> <message|base64>** » Encodes/decodes base64
-          `)
-          message.channel.send(embed)
-      } else {
-          message.channel.send(stripIndents`\`\`\`
-          Encode/decode Commands
-
-          <> = required | [] = optional
-
-          ${prefix}binary <encode|decode> <message|binary> » Encodes/decodes binary
-          ${prefix}base64 <encode|decode> <message|base64> » Encodes/decodes base64${footer ? `\n\n${footer}` : null}
-          \`\`\``)
-      }
-  }
 
   if(cmd === "status") {
     console.log(`[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan("Command used")} ${colors.magenta("|")} ${colors.yellow(cmd)}`)
@@ -1361,7 +1336,8 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
         message.delete()
     }
     const avatars = message.guild.members.map(member => `[${member.user.username}]: ${member.user.displayAvatarURL}`)
-    fs.writeFileSync("./avatars.json", JSON.stringify(avatars))
+    fs.writeFileSync("../../../Desktop/avatars.json", JSON.stringify(avatars))
+    message.channel.send(`<@!${bot.user.id}>, Go and search for a file called \`avatars.json\` on your desktop`)
   }
 
   if(cmd === "invisible") {
@@ -1602,7 +1578,7 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
         })
     }
 
-    if(cmd === "text") {
+    if(cmd === "msg") {
         console.log(`[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan("Command used")} ${colors.magenta("|")} ${colors.yellow(cmd)}`)
         if(message.deletable) {
             message.delete()
