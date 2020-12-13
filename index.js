@@ -867,6 +867,7 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
             **${prefix}rainbowembed** » Sends an embed and makes it rainbow
             **${prefix}say <message>** » Says what ever you want
             **${prefix}spam <amount> <message>** » Spams your message the specified amount of times
+            **${prefix}spolier <message>** » Converts your text to a spoiler
             **${prefix}text <bold|italics|underline|destroy|upper|lower|strikethrough|hidden|everything> <message>** » Sends your message in different forms
             **${prefix}uptime** » Shows how long the bot has been currently been running for
             **${prefix}wink <user>** » Random anime winking gif
@@ -906,6 +907,7 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
             ${prefix}randomtoken » Generates a random invalid discord bot token
             ${prefix}say <message> » Says what ever you want
             ${prefix}spam <amount> <message> » Spams your message the specified amount of times
+            ${prefix}spolier <message> » Converts your text to a spoiler
             ${prefix}text <bold|italics|underline|destroy|upper|lower|strikethrough|hidden|everything> <message> » Sends your message in different forms
             ${prefix}uptime » Shows how long the bot has been currently been running for
             ${prefix}wink <user> » Random anime winking gif
@@ -1342,7 +1344,7 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
         message.delete()
     }
     if(!args.join(" ")) return message.channel.send("Please specify a message")
-    message.channel.send(`||${message.content.split("").join("||")}||`)
+    message.channel.send(`||${message.content.slice(9).split("").join("||||")}||`)
   }
   
   if(cmd === "ban") {
