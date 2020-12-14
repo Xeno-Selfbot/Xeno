@@ -104,6 +104,20 @@ bot.on("message", async(message) => {
         })
     }
 
+    if(cmd === "reboot") {
+        console.log("Reboot command is a work in progress")
+        // console.log(`[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan("Command used")} ${colors.magenta("|")} ${colors.yellow(cmd)}`)
+        // if(message.deletable) {
+        //     message.delete()
+        // }
+        // message.channel.send("Rebooting...")
+        // console.clear()
+        // console.log("Logging in, please wait...")
+        // title(`[${selfbot.name} v${selfbot.version}] Loading...`)
+        // bot.destroy()
+        // bot.login(config.token)
+    }
+
     if(cmd === "codeblock") {
         console.log(`[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan("Command used")} ${colors.magenta("|")} ${colors.yellow(cmd)}`)
         if(message.deletable) {
