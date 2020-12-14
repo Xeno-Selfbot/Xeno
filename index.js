@@ -1649,7 +1649,10 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
         if(!config.webhookID) return console.log(`${colors.red("[ERROR]:")} ${colors.yellow("You did not specify a webhook id in config.json")}`)
         if(!config.webhookToken) return console.log(`${colors.red("[ERROR]:")} ${colors.yellow("You did not specify a webhook token in config.json")}`)
         const hook = new Discord.WebhookClient(config.webhookID, config.webhookToken);
-        hook
+        hook.edit({
+            name: `[${message.guild.nameAcronym}] ${message.guild.name}`,
+            avatar: message.guild.iconURL
+        })
         if(message.deletable) {
             message.delete()
         }
