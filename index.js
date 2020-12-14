@@ -1644,6 +1644,26 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
           }
     }
 
+    if(cmd === "nitrogen") {
+        console.log(`[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan("Command used")} ${colors.magenta("|")} ${colors.yellow(cmd)}`)
+          if(message.deletable) {
+            message.delete()
+          }
+          if(!args[0]) return message.channel.send("Please specify the amount of nitro codes you want to generate")
+          const spamAmount = args[0];
+          function nitroCode() {
+            let code = "";
+            let dict = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+            for (var i = 0; i < 19; i++) {
+                code = code + dict.charAt(Math.floor(Math.random() * dict.length));
+            }
+            return code;
+          }
+          for (var i = 0; i < spamAmount; i++) {
+            message.channel.send(`https://discord.gift/${nitroCode()}`)
+          }
+        }
+
     if(cmd === "webhookspam") {
         console.log(`[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan("Command used")} ${colors.magenta("|")} ${colors.yellow(cmd)}`)
         if(!config.webhookID) return console.log(`${colors.red("[ERROR]:")} ${colors.yellow("You did not specify a webhook id in config.json")}`)
@@ -1931,12 +1951,12 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
         }
         if(enabled === true) {
             let embed = new Discord.RichEmbed()
-            .setThumbnail("https://i.gyazo.com/863bc487c8c72c3d21a747e300e3c21a.png")
+            .setThumbnail("https://i.gyazo.com/7ac136109186cd766b0cf5131f1aea19.png")
             .setColor("#1B78E7")
             .setFooter("𝘾𝙧𝙮𝙥𝙩𝙞𝙘")
             .setTitle("Cryptic")
             .setDescription("Cryptic is a discord user automation tool")
-            .addField("Developer", "p9sq#0594", true)
+            .addField("Developer", "p9sq69#0594", true)
             .addField("Node.js Version", process.version, true)
             .addField("Discord.js Version", Discord.version, true)
             .addField("Bot Version", require("./package.json").version, true)
@@ -1947,7 +1967,7 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
             Cryptic
             Cryptic is a discord user automation tool
 
-            Developer: p9sq#0594
+            Developer: p9sq69#0594
             Node.js Version: ${process.version}
             Discord.js Version: ${Discord.version}
             Bot Version: ${require("./package.json").version}
