@@ -7,12 +7,12 @@
     "prefix": "!",
     "messageLogs": false,
     "id": "account-id-here",
-    "webhookID": "" ,
-    "webhookToken": "",
+    "webhookID": "webhook-id-here" ,
+    "webhookToken": "webhook-token-here",
     "embedOptions": {
         "enabled": true,
-        "color": "",
-        "image": "",
-        "footer": ""
+        "color": "hex-color",
+        "image": "some-image-url-here",
+        "footer": "some-text-here"
     }
 }

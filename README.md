@@ -18,19 +18,18 @@ So far, your config file should look like this
     "token": "token-here",
     "password": "password-here",
     "nitro_sniper": false,
-    "credit": false,
     "giveaway_sniper": false,
     "whitelisted": [],
     "prefix": "!",
     "messageLogs": false,
     "id": "account-id-here",
-    "webhookID": "" ,
-    "webhookToken": "",
+    "webhookID": "webhook-id-here" ,
+    "webhookToken": "webhook-token-here",
     "embedOptions": {
         "enabled": true,
-        "color": "",
-        "image": "",
-        "footer": ""
+        "color": "hex-color",
+        "image": "some-image-url-here",
+        "footer": "some-text-here"
     }
 }
 ```
