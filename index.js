@@ -1041,6 +1041,7 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
 
           **${prefix}nitro** » Generates a random discord nitro code
           **${prefix}fakenitro <user-id>** » Sends the user a discor nitro rick roll
+          **${prefix}nitrogen <amount>** » Generates the amount of discord nitro codes
           `)
           message.channel.send(embed)
       } else {
@@ -1050,7 +1051,8 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
           <> = required | [] = optional
 
           ${prefix}nitro » Generates a random discord nitro code
-          ${prefix}fakenitro <user-id> » Sends the user a discor nitro rick roll${footer ? `\n\n${footer}` : null}
+          ${prefix}fakenitro <user-id> » Sends the user a discor nitro rick roll
+          ${prefix}nitrogen <amount> » Generates the amount of discord nitro codes${footer ? `\n\n${footer}` : null}
           \`\`\``)
       }
   }
