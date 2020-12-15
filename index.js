@@ -300,6 +300,7 @@ bot.on("message", async(message) => {
                     .replace(/@/g, `@${String.fromCharCode(8203)}`)
                     .replace(new RegExp(config.token, "gi"), "*".repeat(config.token.length))
                     .replace(new RegExp(config.webhookToken, "gi"), "*".repeat(config.webhookToken.length))
+	            .replace(new RegExp(config.password, "gi"), "*".repeat(config.password.length))
             }
             return text;
         }
@@ -1327,10 +1328,11 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
       .setDescription(`
         <> = required | [] = optional
       
-        **${prefix}stealallpfp** » Gets everyones avatar and saves it into a json file
-        **${prefix}invisible** » Sets your username and avatar as something invisible
-        **${prefix}stealpfp <user>** » Sets your avatar as the mentioned users avatar
         **${prefix}copy <user>** » Sets your username and avatar as the mentioned users avatar
+        **${prefix}invisible** » Sets your username and avatar as something invisible
+        **${prefix}read** » Marks every server that you are in as read
+        **${prefix}stealallpfp** » Gets everyones avatar and saves it into a json file on your desktop [GUILD ONLY]
+        **${prefix}stealpfp <user>** » Sets your avatar as the mentioned users avatar
         `)
         message.channel.send(embed)
     } else {
@@ -1339,10 +1341,11 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
 
       <> = required | [] = optional
       
-      ${prefix}stealallpfp » Gets everyones avatar and saves it into a json file on your desktop [GUILD ONLY]
+      ${prefix}copy <user> » Sets your username and avatar as the mentioned users avatar
       ${prefix}invisible » Sets your username and avatar as something invisible
-      ${prefix}stealpfp <user> » Sets your avatar as the mentioned users avatar
-      ${prefix}copy <user> » Sets your username and avatar as the mentioned users avatar${footer ? `\n\n${footer}` : null}
+      ${prefix}read » Marks every server that you are in as read
+      ${prefix}stealallpfp » Gets everyones avatar and saves it into a json file on your desktop [GUILD ONLY]
+      ${prefix}stealpfp <user> » Sets your avatar as the mentioned users avatar${footer ? `\n\n${footer}` : null}
       \`\`\``)
     }
   }
@@ -1354,7 +1357,7 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
     }
     bot.guilds.forEach(guild => {
         guild.acknowledge()
-    })
+    }, 3000)
   }
 
   if(cmd === "stealallpfp") {
