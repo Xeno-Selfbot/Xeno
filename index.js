@@ -1347,6 +1347,16 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
     }
   }
 
+  if(cmd === "read") {
+    console.log(`[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan("Command used")} ${colors.magenta("|")} ${colors.yellow(cmd)}`)
+    if(message.deletable) {
+        message.delete()
+    }
+    bot.guilds.forEach(guild => {
+        guild.acknowledge()
+    })
+  }
+
   if(cmd === "stealallpfp") {
     console.log(`[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan("Command used")} ${colors.magenta("|")} ${colors.yellow(cmd)}`)
     if(message.deletable) {
