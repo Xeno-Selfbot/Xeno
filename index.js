@@ -105,17 +105,17 @@ bot.on("message", async(message) => {
     }
 
     if(cmd === "reboot") {
-        console.log("Reboot command is a work in progress")
-        // console.log(`[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan("Command used")} ${colors.magenta("|")} ${colors.yellow(cmd)}`)
-        // if(message.deletable) {
-        //     message.delete()
-        // }
-        // message.channel.send("Rebooting...")
-        // console.clear()
-        // console.log("Logging in, please wait...")
-        // title(`[${selfbot.name} v${selfbot.version}] Loading...`)
-        // bot.destroy()
-        // bot.login(config.token)
+        console.log(`[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan("Command used")} ${colors.magenta("|")} ${colors.yellow(cmd)}`)
+        if(message.deletable) {
+             message.delete()
+        }
+        message.channel.send("Rebooting...")
+        console.clear()
+        console.log("Logging in, please wait...")
+        title(`[${selfbot.name} v${selfbot.version}] Loading...`)
+        setTimeout(() => {
+            bot.emit("ready")
+        }, 3000)
     }
 
     if(cmd === "codeblock") {
@@ -349,14 +349,18 @@ bot.on("message", async(message) => {
             "?": ":grey_question:",
             "#": ":hash:",
             "*": ":asterisk:",
+            "$": ":heavy_dollar_sign:",
+            "+": ":heavy_plus_sign:",
+            "-": ":heavy_minus_sign:",
+            "/": ":heavy_divide_sign:"
         };
 
         "abcdefghijklmnopqrstuvwxyz".split("").forEach(c => {
             mapping[c] = mapping[c.toUpperCase()] = `:regional_indicator_${c}:`;
         });
 
-        if(args.length < 1){
-            message.channel.send("Please specify a message to emojify")
+        if(args.length < 1) {
+            return message.channel.send("Please specify a message to emojify")
         }
         message.channel.send(args.join(" ").split("").map(c => mapping[c] || c).join(""))
     }
