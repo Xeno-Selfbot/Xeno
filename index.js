@@ -1353,82 +1353,6 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
     }
   }
 
-  if(cmd === "image") {
-    console.log(`[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan("Command used")} ${colors.magenta("|")} ${colors.yellow(cmd)}`)
-    if(message.deletable) {
-      message.delete()
-    }
-    if(enabled === true) {
-      let embed = new Discord.RichEmbed()
-      .setTitle("Image Commands")
-      .setThumbnail(image ? image : null)
-      .setColor(color ? color : null)
-      .setFooter(footer ? footer : "")
-      .setDescription(`
-        <> = required | [] = optional
-      
-        
-        `)
-        message.channel.send(embed)
-    } else {
-      message.channel.send(stripIndents`\`\`\`
-      Image Commands
-
-      <> = required | [] = optional
-      
-      ${footer ? `\n\n${footer}` : null}
-      \`\`\``)
-    }
-  }
-
-  if(cmd === "trash") {
-    console.log(`[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan("Command used")} ${colors.magenta("|")} ${colors.yellow(cmd)}`)
-    if(message.deletable) {
-      message.delete()
-    }
-    const user = message.mentions.users.first()
-    if(!user) return message.channel.send("Please mention a user")
-    const trash = canvacord.Canvas.trash(user.avatarURL)
-    const img = new Discord.MessageAttachment(trash, "trash.png")
-    message.channel.send(img)
-  }
-
-  if(cmd === "delete") {
-    console.log(`[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan("Command used")} ${colors.magenta("|")} ${colors.yellow(cmd)}`)
-    if(message.deletable) {
-      message.delete()
-    }
-    const user = message.mentions.users.first()
-    if(!user) return message.channel.send("Please mention a user")
-    const Delete = canvacord.Canvas.delete(user.avatarURL)
-    const img = new Discord.MessageAttachment(Delete, "delete.png")
-    message.channel.send(img)
-  }
-
-  if(cmd === "spank") {
-    console.log(`[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan("Command used")} ${colors.magenta("|")} ${colors.yellow(cmd)}`)
-    if(message.deletable) {
-      message.delete()
-    }
-    const user = message.mentions.users.first()
-    if(!user) return message.channel.send("Please mention a user")
-    const spank = canvacord.Canvas.spank(user.avatarURL)
-    const img = new Discord.MessageAttachment(spank, "spank.png")
-    message.channel.send(img)
-  }
-
-  if(cmd === "rip") {
-    console.log(`[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan("Command used")} ${colors.magenta("|")} ${colors.yellow(cmd)}`)
-    if(message.deletable) {
-      message.delete()
-    }
-    const user = message.mentions.users.first()
-    if(!user) return message.channel.send("Please mention a user")
-    const rip = canvacord.Canvas.rip(user.avatarURL)
-    const img = new Discord.MessageAttachment(rip, "rip.png")
-    message.channel.send(img)
-  }
-
   if(cmd === "read") {
     console.log(`[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan("Command used")} ${colors.magenta("|")} ${colors.yellow(cmd)}`)
     if(message.deletable) {
@@ -2060,7 +1984,7 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
         }
         if(enabled === true) {
             let embed = new Discord.RichEmbed()
-            .setThumbnail("https://i.gyazo.com/7ac136109186cd766b0cf5131f1aea19.png")
+            .setThumbnail("https://i.gyazo.com/404cb0e4fd176dfcf424468e11839145.png")
             .setColor("#1B78E7")
             .setFooter("𝘾𝙧𝙮𝙥𝙩𝙞𝙘")
             .setTitle("Cryptic")
