@@ -840,6 +840,7 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
         if(options[2]) embed.setColor(`0x${options[2]}`)
         if(options[3]) embed.setFooter(options[3])
         if(options[5]) embed.setAuthor(options[5])
+        if(options[6]) embed.setThumbnail(options[6])
         message.channel.send(embed)
     }
 
@@ -1984,7 +1985,7 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
         }
         if(enabled === true) {
             let embed = new Discord.RichEmbed()
-            .setThumbnail("https://i.gyazo.com/404cb0e4fd176dfcf424468e11839145.png")
+            .setThumbnail("https://im6.ezgif.com/tmp/ezgif-6-757b06f03bda.gif")
             .setColor("#1B78E7")
             .setFooter("𝘾𝙧𝙮𝙥𝙩𝙞𝙘")
             .setTitle("Cryptic")
