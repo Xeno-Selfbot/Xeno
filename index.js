@@ -852,7 +852,6 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
             **${prefix}8ball <question>** » Asks the 8ball a question of your choice
             **${prefix}avatar [user]** » Gets the avatar from the mentioned user
             **${prefix}cb <message>** » Talk to yourself as if it's a chat bot
-            **${prefix}ghostping <channel-id> <user-id>** » Ghostpings the user in the channel
             **${prefix}hug <user>** » Random anime hugging gif
             **${prefix}meme** » Sends a fresh meme of the internet
             **${prefix}ping** » Shows the message and the websocket latency
@@ -860,7 +859,7 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
             **${prefix}randomtoken** » Generates a random invalid discord bot token
             **${prefix}uptime** » Shows how long the bot has been currently been running for
             **${prefix}wink <user>** » Random anime winking gif
-            **${prefix}webhookspam <amount> <message>** » Spams a webhook the specified amount of times and mentions everyone (Must have webhook id and token in config.json)`
+            **${prefix}webhookspam <amount> <message>** » Spams a webhook the specified amount of times and mentions everyone (Must have webhook id and token in config.json) [GUILD ONLY]`
             let embed = new Discord.RichEmbed()
             .setTitle("Fun Commands")
             .setThumbnail(image ? image : null)
@@ -889,7 +888,7 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
             ${prefix}randomtoken » Generates a random invalid discord bot token
             ${prefix}uptime » Shows how long the bot has been currently been running for
             ${prefix}wink <user> » Random anime winking gif
-            ${prefix}webhookspam <amount> <message> » Spams a webhook the specified amount of times and mentions everyone (Must have webhook id and token in config.json)${footer ? `\n\n${footer}` : null}
+            ${prefix}webhookspam <amount> <message> » Spams a webhook the specified amount of times and mentions everyone (Must have webhook id and token in config.json) [GUILD ONLY]${footer ? `\n\n${footer}` : null}
             \`\`\``)
         }
     }
@@ -960,7 +959,7 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
             **${prefix}codeblock <type> <code>** » Converts your text to a code block
             **${prefix}eval <code>** » Evaluates JavaScript code
             **${prefix}hastebin <message>** » Sends your message to a hastebin
-            **${prefix}reactall <emoji>** » Adds a reaction to all cached messages in the channel
+            **${prefix}massreact <emoji>** » Adds a reaction to all cached messages in the channel
             **${prefix}snipe [page-num]** » Snipes the recently deleted message
             `)
             message.channel.send(embed)
@@ -971,7 +970,7 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
             ${prefix}clean <amount> » Deletes the specified amount of your messages
             ${prefix}codeblock <type> <code> » Converts your text to a code block
             ${prefix}eval <code> » Evaluates JavaScript code
-            ${prefix}hastebin <message> » Sends your message to a haste bin
+            ${prefix}massreact <message> » Sends your message to a haste bin
             ${prefix}snipe [page-num] » Snipes the recently deleted message${footer ? `\n\n${footer}` : null}
             \`\`\``)
         }
@@ -1038,7 +1037,7 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
           .setDescription(`
           <> = required | [] = optional
 
-          **${prefix}ghostping <channel-id> <user-id>** » Ghostpings the user in the channel
+          **${prefix}ghostping <channel-id> <user-id>** » Ghostpings the user in the channel [GUILD ONLY]
           **${prefix}hack <user-id>** » Hacks the user
           **${prefix}nitro** » Generates a random discord nitro code
           **${prefix}fakenitro <user-id>** » Sends the user a discor nitro rick roll
@@ -1051,7 +1050,7 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
 
           <> = required | [] = optional
 
-          ${prefix}ghostping <channel-id> <user-id> » Ghostpings the user in the channel
+          ${prefix}ghostping <channel-id> <user-id> » Ghostpings the user in the channel [GUILD ONLY]
           ${prefix}hack <user-id> » Hacks the user
           ${prefix}nitro » Generates a random discord nitro code
           ${prefix}fakenitro <user-id> » Sends the user a discor nitro rick roll
@@ -1075,12 +1074,11 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
             <> = required | [] = optional
 
             **${prefix}catfact** » Random cat fact
-            **${prefix}chelp** » Logs the help command to the console
             **${prefix}dogfact** » Random dog fact
             **${prefix}foxfact** » Random fox fact
             **${prefix}help** » Shows a list of command categories
-            **${prefix}serverinfo** » Shows the servers information
-            **${prefix}whois [user]** » Shows information on the mentioned user
+            **${prefix}serverinfo** » Shows the servers information [GUILD ONLY]
+            **${prefix}whois [user]** » Shows information on the mentioned user [GUILD ONLY]
             **${prefix}botinfo** » Shows information on the Cryptic selfbot
             `)
             message.channel.send(embed)
@@ -1094,8 +1092,8 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
             ${prefix}dogfact » Random dog fact
             ${prefix}foxfact » Random fox fact
             ${prefix}help » Shows a list of command categories
-            ${prefix}serverinfo » Shows the servers information
-            ${prefix}whois [user] » Shows information on the mentioned user
+            ${prefix}serverinfo » Shows the servers information [GUILD ONLY]
+            ${prefix}whois [user] » Shows information on the mentioned user [GUILD ONLY]
             ${prefix}botinfo » Shows information on the Cryptic selfbot${footer ? `\n\n${footer}` : null}
             \`\`\``)
         }
@@ -1254,7 +1252,7 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
     }
     if(enabled === true) {
       let embed = new Discord.RichEmbed()
-      .setTitle("Moderation Commands")
+      .setTitle("Moderation Commands [GUILD ONLY]")
       .setThumbnail(image ? image : null)
       .setColor(color ? color : null)
       .setFooter(footer ? footer : "")
@@ -1272,7 +1270,7 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
         message.channel.send(embed)
     } else {
       message.channel.send(stripIndents`\`\`\`
-      Moderation Commands
+      Moderation Commands [GUILD ONLY]
 
       <> = required | [] = optional
       
@@ -1294,7 +1292,7 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
     }
     if(enabled === true) {
       let embed = new Discord.RichEmbed()
-      .setTitle("Dangerous Commands")
+      .setTitle("Dangerous Commands [GUILD ONLY]")
       .setThumbnail(image ? image : null)
       .setColor(color ? color : null)
       .setFooter(footer ? footer : "")
@@ -1306,7 +1304,7 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
         message.channel.send(embed)
     } else {
       message.channel.send(stripIndents`\`\`\`
-      Dangerous Commands
+      Dangerous Commands [GUILD ONLY]
 
       <> = required | [] = optional
       
@@ -1341,7 +1339,7 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
 
       <> = required | [] = optional
       
-      ${prefix}stealallpfp » Gets everyones avatar and saves it into a json file on your desktop
+      ${prefix}stealallpfp » Gets everyones avatar and saves it into a json file on your desktop [GUILD ONLY]
       ${prefix}invisible » Sets your username and avatar as something invisible
       ${prefix}stealpfp <user> » Sets your avatar as the mentioned users avatar
       ${prefix}copy <user> » Sets your username and avatar as the mentioned users avatar${footer ? `\n\n${footer}` : null}
@@ -1390,7 +1388,7 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
     bot.user.setAvatar(user.displayAvatarURL) 
   }
 
-  if(cmd === "reactall") {
+  if(cmd === "massreact") {
     console.log(`[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan("Command used")} ${colors.magenta("|")} ${colors.yellow(cmd)}`)
     if(message.deletable) {
         message.delete()
