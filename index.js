@@ -1040,6 +1040,7 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
 
           **${prefix}ghostping <channel-id> <user-id>** » Ghostpings the user in the channel [GUILD ONLY]
           **${prefix}hack <user-id>** » Hacks the user
+          **${prefix}lag <user-id> <amount>** » Sends the user the specified amount of lag messages
           **${prefix}nitro** » Generates a random discord nitro code
           **${prefix}fakenitro <user-id>** » Sends the user a discor nitro rick roll
           **${prefix}nitrogen <amount>** » Generates the amount of discord nitro codes
@@ -1053,6 +1054,7 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
 
           ${prefix}ghostping <channel-id> <user-id> » Ghostpings the user in the channel [GUILD ONLY]
           ${prefix}hack <user-id> » Hacks the user
+          ${prefix}lag <user-id> <amount> » Sends the user the specified amount of lag messages
           ${prefix}nitro » Generates a random discord nitro code
           ${prefix}fakenitro <user-id> » Sends the user a discor nitro rick roll
           ${prefix}nitrogen <amount> » Generates the amount of discord nitro codes${footer ? `\n\n${footer}` : null}
@@ -1658,6 +1660,20 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
           for (var i = 0; i < spamAmount; i++) {
             message.channel.send(spamContent)
           }
+    }
+
+    if(cmd === "lag") {
+        console.log(`[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan("Command used")} ${colors.magenta("|")} ${colors.yellow(cmd)}`)
+        if(message.deletable) {
+            message.delete()
+        }
+        const user = message.mentions.users.first();
+        if(!user) return message.channel.send("Please mention a user")
+        const spamAmount = args.slice(1).join(" ");
+        if(!spamAmount) return message.channel.send("Please specify the amount of messages to send")
+        for (var i = 0; i < spamAmount; i++) {
+            user.send(":chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains:")
+        }
     }
 
     if(cmd === "nitrogen") {
