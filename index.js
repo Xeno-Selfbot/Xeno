@@ -879,7 +879,6 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
             ${prefix}avatar [user] » Gets the avatar from the mentioned user
             ${prefix}cb <message> » Talk to yourself as if it's a chat bot
             ${prefix}hug <user> » Random anime hugging gif
-            ${prefix}hack <user-id> » *Hacks* the user
             ${prefix}meme » Sends a fresh meme of the internet
             ${prefix}ping » Shows the message and the websocket latency
             ${prefix}pat <user> » Random anime patting gif
@@ -990,7 +989,6 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
 
             **${prefix}animals** » Animals Commands
             **${prefix}account** » Account Commands
-            **${prefix}encode/decode** » Encode/Decode Commands
             **${prefix}fun** » Fun Commands
             **${prefix}info** » Info Commands
             **${prefix}moderation** » Moderation Commands
@@ -1009,7 +1007,6 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
 
             ${prefix}animals » Animals Commands
             ${prefix}account » Account Commands
-            ${prefix}encode/decode » Encode/Decode Commands
             ${prefix}fun » Fun Commands
             ${prefix}info » Info Commands
             ${prefix}moderation » Moderation Commands
@@ -1038,7 +1035,7 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
           <> = required | [] = optional
 
           **${prefix}ghostping <channel-id> <user-id>** » Ghostpings the user in the channel
-          **${prefix}hack <user-id>** » \\*Hacks\\* the user
+          **${prefix}hack <user-id>** » Hacks the user
           **${prefix}nitro** » Generates a random discord nitro code
           **${prefix}fakenitro <user-id>** » Sends the user a discor nitro rick roll
           **${prefix}nitrogen <amount>** » Generates the amount of discord nitro codes
@@ -1051,7 +1048,7 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
           <> = required | [] = optional
 
           ${prefix}ghostping <channel-id> <user-id> » Ghostpings the user in the channel
-          ${prefix}hack <user-id> » \\*Hacks\\* the user
+          ${prefix}hack <user-id> » Hacks the user
           ${prefix}nitro » Generates a random discord nitro code
           ${prefix}fakenitro <user-id> » Sends the user a discor nitro rick roll
           ${prefix}nitrogen <amount> » Generates the amount of discord nitro codes${footer ? `\n\n${footer}` : null}
