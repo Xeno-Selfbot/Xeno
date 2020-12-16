@@ -314,9 +314,9 @@ bot.on("message", async(message) => {
         if(!args.join(" ")) return message.channel.send("Please specify a message.")
         const {body} = await post("https://hastebin.com/documents").send(args.join(" "))
         let embed = new Discord.RichEmbed()
-        .setThumbnail("https://media0.giphy.com/media/TzyV32fsqLpbA0PHJf/giphy.gif")
-        .setColor("#1B78E7")
-        .setFooter("𝘾𝙧𝙮𝙥𝙩𝙞𝙘")
+        .setThumbnail(image ? image : null)
+        .setColor(color ? color : null)
+        .setFooter(footer ? footer : "")
         .setDescription(`https://hastebin.com/${body.key}`)
         message.channel.send(embed)
     }
