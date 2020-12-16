@@ -104,9 +104,15 @@ bot.on("message", async(message) => {
         if(message.deletable) {
             message.delete()
         }
-        const types = ["js", "json", "ts", "lua"]
+        const types = ["js", "json", "ts", "lua", "css", "html", "yaml", "py", "ruby", "java"]
         if(!types.includes(args[0])) return message.channel.send(`Please specify a valid type. Types: \`${types.join("`, `")}\``)
-        message.channel.send(`\`\`\`${args[0]}\n${args.slice(1).join(" ")}\n\`\`\``)
+        let embed = new Discord.RichEmbed()
+        .setTitle("Code Block")
+        .setDescription(`\`\`\`${args[0]}\n${args.slice(1).join(" ")}\n\`\`\``)
+        .setThumbnail(image ? image : "https://media3.giphy.com/media/TzyV32fsqLpbA0PHJf/giphy.gif")
+        .setColor(color ? color : "#1B78E7")
+        .setFooter(footer ? footer : "𝘾𝙧𝙮𝙥𝙩𝙞𝙘")
+        message.channel.send(embed)
     }
 
     if(cmd === "hack") {
@@ -295,7 +301,7 @@ bot.on("message", async(message) => {
         if(!args.join(" ")) return message.channel.send("Please specify a message.")
         const {body} = await post("https://hastebin.com/documents").send(args.join(" "))
         let embed = new Discord.RichEmbed()
-        .setThumbnail(image ? image : "https://media4.giphy.com/media/6cXJU3ZCj0U7gy8ZXo/giphy.gif")
+        .setThumbnail(image ? image : "https://media3.giphy.com/media/TzyV32fsqLpbA0PHJf/giphy.gif")
         .setColor(color ? color : "#1B78E7")
         .setFooter(footer ? footer : "𝘾𝙧𝙮𝙥𝙩𝙞𝙘")
         .setDescription(`https://hastebin.com/${body.key}`)
@@ -904,7 +910,6 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
             **${prefix}emojify <text>** » Converts your text to emojis
             **${prefix}reverse <message>** » Reverses your message
             **${prefix}say <message>** » Says what ever you want
-            **${prefix}spam <amount> <message>** » Spams your message the specified amount of times
             **${prefix}spolier <message>** » Converts your text to a spoiler
             **${prefix}msg <bold|italics|underline|destroy|upper|lower|strikethrough|hidden|everything> <message>** » Sends your message in different forms
             `)
@@ -922,7 +927,6 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
             ${prefix}emojify <text> » Converts your text to emojis
             ${prefix}reverse <message> » Reverses your message
             ${prefix}say <message> » Says what ever you want
-            ${prefix}spam <amount> <message> » Spams your message the specified amount of times
             ${prefix}spolier <message> » Converts your text to a spoiler
             ${prefix}msg <bold|italics|underline|destroy|upper|lower|strikethrough|hidden|everything> <message> » Sends your message in different forms${footer ? `\n\n${footer}` : null}
             \`\`\``)
@@ -980,14 +984,13 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
 
             **${prefix}animals** » Animals Commands
             **${prefix}account** » Account Commands
+            **${prefix}abusive** » Nuke Commands
             **${prefix}fun** » Fun Commands
             **${prefix}info** » Info Commands
             **${prefix}moderation** » Moderation Commands
-            **${prefix}nuke** » Nuke Commands
             **${prefix}status** » Status Commands
             **${prefix}troll** » Troll Commands
             **${prefix}text** » Text Commands
-            **${prefix}dangerous** » Dangerous Commands
             **${prefix}face** » Face Commands
             **${prefix}utility** » Utility Commands
             `)
@@ -998,13 +1001,12 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
 
             ${prefix}animals » Animals Commands
             ${prefix}account » Account Commands
+            ${prefix}abusive » Nuke Commands
             ${prefix}fun » Fun Commands
             ${prefix}info » Info Commands
             ${prefix}moderation » Moderation Commands
-            ${prefix}nuke » Nuke Commands
             ${prefix}status » Status Commands
             ${prefix}troll » Troll Commands
-            ${prefix}dangerous » Dangerous Commands
             ${prefix}face » Face Commands
             ${prefix}utility » Utility Commands${footer ? `\n\n${footer}` : null}
             \`\`\``)
@@ -1030,7 +1032,6 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
           **${prefix}lag <user-id> <amount>** » Sends the user the specified amount of lag messages
           **${prefix}nitro** » Generates a random discord nitro code
           **${prefix}fakenitro <user-id>** » Sends the user a discor nitro rick roll
-          **${prefix}nitrogen <amount>** » Generates the amount of discord nitro codes
           `)
           message.channel.send(embed)
       } else {
@@ -1041,10 +1042,8 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
 
           ${prefix}ghostping <channel-id> <user-id> » Ghostpings the user in the channel [GUILD ONLY]
           ${prefix}hack <user-id> » Hacks the user
-          ${prefix}lag <user-id> <amount> » Sends the user the specified amount of lag messages
           ${prefix}nitro » Generates a random discord nitro code
-          ${prefix}fakenitro <user-id> » Sends the user a discor nitro rick roll
-          ${prefix}nitrogen <amount> » Generates the amount of discord nitro codes${footer ? `\n\n${footer}` : null}
+          ${prefix}fakenitro <user-id> » Sends the user a discor nitro rick roll${footer ? `\n\n${footer}` : null}
           \`\`\``)
       }
   }
@@ -1131,7 +1130,7 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
       if(enabled === true) {
           let embed = new Discord.RichEmbed()
           .setTitle("Status Commands")
-          .setThumbnail(image ? image : "https://media4.giphy.com/media/6cXJU3ZCj0U7gy8ZXo/giphy.gif")
+          .setThumbnail(image ? image : "https://media3.giphy.com/media/TzyV32fsqLpbA0PHJf/giphy.gif")
           .setColor(color ? color : "#1B78E7")
           .setFooter(footer ? footer : "𝘾𝙧𝙮𝙥𝙩𝙞𝙘")
           .setDescription(`
@@ -1191,46 +1190,54 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
       }
   }
 
-  if(cmd === "nuke") {
+  if(cmd === "abuse") {
     console.log(`[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan("Command used")} ${colors.magenta("|")} ${colors.yellow(cmd)}`)
       if(message.deletable) {
           message.delete()
       }
       if(enabled === true) {
           let embed = new Discord.RichEmbed()
-          .setTitle("Nuke Commands")
+          .setTitle("Abusive Commands")
           .setThumbnail(image ? image : "https://media4.giphy.com/media/6cXJU3ZCj0U7gy8ZXo/giphy.gif")
           .setColor(color ? color : "#1B78E7")
           .setFooter(footer ? footer : "𝘾𝙧𝙮𝙥𝙩𝙞𝙘")
           .setDescription(`
           <> = required | [] = optional
       
+          **${prefix}dmall** » Sends mostly everyone in the server a message of your choice
           **${prefix}delchannels** » Deletes every-single channel in the server
           **${prefix}delroles** » Deletes every-single role in the server
+          **${prefix}lag <user-id> <amount>** » Sends the user the specified amount of lag messages
           **${prefix}masschannels** » Creates a whole bunch of random channels
           **${prefix}massroles** » Creates a whole bunch of random roles
           **${prefix}massban** » Bans everyone in the server (Not including the server owner or members with a higher rank/role)
           **${prefix}masskick** » Kicks everyone in the server (Not including the server owner or members with a higher rank/role)
+          **${prefix}nitrogen <amount>** » Generates the amount of discord nitro codes
           **${prefix}original** » Resets the entire server
           **${prefix}raid** » Changes the server name, icon, creates 100 roles and makes 100 text and voice channels
           **${prefix}spamall <message>** » Sends every channel a message
+          **${prefix}spam <amount> <message>** » Spams your message the specified amount of times
           `)
           message.channel.send(embed)
       } else {
           message.channel.send(stripIndents`\`\`\`
-          Nuke Commands
+          Abusive Commands
 
           <> = required | [] = optional
       
+          ${prefix}dmall » Sends mostly everyone in the server a message of your choice
           ${prefix}delchannels » Deletes every-single channel in the server
           ${prefix}delroles » Deletes every-single role in the server
+          ${prefix}lag <user-id> <amount> » Sends the user the specified amount of lag messages
           ${prefix}masschannels » Creates a whole bunch of random channels
           ${prefix}massroles » Creates a whole bunch of random roles
           ${prefix}massban » Bans everyone in the server (Not including the server owner or members with a higher rank/role)
           ${prefix}masskick » Kicks everyone in the server (Not including the server owner or members with a higher rank/role)
+          ${prefix}nitrogen <amount> » Generates the amount of discord nitro codes
           ${prefix}original » Resets the entire server
           ${prefix}raid » Changes the server name, icon, creates 100 roles and makes 100 text and voice channels
-          ${prefix}spamall <message> » Sends every channel a message${footer ? `\n\n${footer}` : null}
+          ${prefix}spamall <message> » Sends every channel a message
+          ${prefix}spam <amount> <message> » Spams your message the specified amount of times${footer ? `\n\n${footer}` : null}
           \`\`\``)
       }
   }
@@ -1271,34 +1278,6 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
         ${prefix}removerole <role> <member> » Removes the mentioned role from the mentioned member
         ${prefix}ban <member> [reason] » Bans the mentioned member from the server
         ${prefix}kick <member> [reason] » Kicks the mentioned member from the server${footer ? `\n\n${footer}` : null}
-      \`\`\``)
-    }
-  }
-
-  if(cmd === "dangerous") {
-    console.log(`[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan("Command used")} ${colors.magenta("|")} ${colors.yellow(cmd)}`)
-    if(message.deletable) {
-      message.delete()
-    }
-    if(enabled === true) {
-      let embed = new Discord.RichEmbed()
-      .setTitle("Dangerous Commands [GUILD ONLY]")
-      .setThumbnail(image ? image : "https://media4.giphy.com/media/6cXJU3ZCj0U7gy8ZXo/giphy.gif")
-      .setColor(color ? color : "#1B78E7")
-      .setFooter(footer ? footer : "𝘾𝙧𝙮𝙥𝙩𝙞𝙘")
-      .setDescription(`
-        <> = required | [] = optional
-      
-        **${prefix}dmall** » Sends mostly everyone in the server a message of your choice
-        `)
-        message.channel.send(embed)
-    } else {
-      message.channel.send(stripIndents`\`\`\`
-      Dangerous Commands [GUILD ONLY]
-
-      <> = required | [] = optional
-      
-      ${prefix}dmall » Sends mostly everyone in the server a message of your choice${footer ? `\n\n${footer}` : null}
       \`\`\``)
     }
   }
