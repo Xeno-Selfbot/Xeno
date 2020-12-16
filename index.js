@@ -38,20 +38,20 @@ bot.on("ready", () => {
         bot.user.setActivity("https://discord.com/invite/FRGKTJsFJg", {type: "PLAYING"})
     }
     console.log(`
- 
 
-                             ▄████▄   ██▀███ ▓██   ██▓ ██▓███  ▄▄▄█████▓ ██▓ ▄████▄  
-                            ▒██▀ ▀█  ▓██ ▒ ██▒▒██  ██▒▓██░  ██▒▓  ██▒ ▓▒▓██▒▒██▀ ▀█  
+
+                             ▄████▄   ██▀███ ▓██   ██▓ ██▓███  ▄▄▄█████▓ ██▓ ▄████▄
+                            ▒██▀ ▀█  ▓██ ▒ ██▒▒██  ██▒▓██░  ██▒▓  ██▒ ▓▒▓██▒▒██▀ ▀█
                             ▒▓█    ▄ ▓██ ░▄█ ▒ ▒██ ██░▓██░ ██▓▒▒ ▓██░ ▒░▒██▒▒▓█    ▄ 
                             ▒▓▓▄ ▄██▒▒██▀▀█▄   ░ ▐██▓░▒██▄█▓▒ ▒░ ▓██▓ ░ ░██░▒▓▓▄ ▄██▒
                             ▒ ▓███▀ ░░██▓ ▒██▒ ░ ██▒▓░▒██▒ ░  ░  ▒██▒ ░ ░██░▒ ▓███▀ ░
                             ░ ░▒ ▒  ░░ ▒▓ ░▒▓░  ██▒▒▒ ▒▓▒░ ░  ░  ▒ ░░   ░▓  ░ ░▒ ▒  ░
-                               ░  ▒     ░▒ ░ ▒░▓██ ░▒░ ░▒ ░         ░     ▒ ░  ░  ▒   
-                            ░          ░░   ░ ▒ ▒ ░░  ░░         ░       ▒ ░░        
-                            ░ ░         ░     ░ ░                        ░  ░ ░      
-                            ░                 ░ ░                           ░        
+                               ░  ▒     ░▒ ░ ▒░▓██ ░▒░ ░▒ ░         ░     ▒ ░  ░  ▒
+                            ░          ░░   ░ ▒ ▒ ░░  ░░         ░       ▒ ░░  
+                            ░ ░         ░     ░ ░                        ░  ░ ░
+                            ░                 ░ ░                           ░
 
-                            
+
 
                             ${colors.cyan(selfbot.name)} ${colors.yellow(`v${selfbot.version}`)} ${colors.magenta("|")} ${colors.cyan("Logged in as")} ${colors.yellow(bot.user.tag)} ${colors.magenta("|")} ${colors.cyan("ID:")} ${colors.yellow(bot.user.id)}
                             ${colors.cyan("Nitro Sniper?")} ${config.nitro_sniper ? colors.green("Enabled") : colors.red("Disabled")}
