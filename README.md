@@ -23,8 +23,7 @@ So far, your config file should look like this
     "prefix": "!",
     "messageLogs": false,
     "id": "account-id-here",
-    "webhookID": "webhook-id-here" ,
-    "webhookToken": "webhook-token-here",
+    "webhookURL": "webhook-url-here",
     "embedOptions": {
         "enabled": true,
         "color": "hex-color",
@@ -49,7 +48,7 @@ For the `whitelisted` part, that is optional, you can put your own id in there s
 
 For the `id` part, you need to paste in your selfbot account id in there, just so if you have whitelisted users, the selfbot account can use the commands
 
-For the webhook id and token, those are optional. The webhook is just used for spamming `@everyone` in your discord server. Just to annoy people :wink:
+For the webhook url, that is optional. The webhook is just used for spamming `@everyone` in your discord server. Just to annoy people :wink:
 
 For the embed options. You can play around with the options to customise the way embeds are sent into discord. (embed options are optional to play around with)
 

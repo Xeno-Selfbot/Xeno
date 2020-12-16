@@ -7,8 +7,7 @@
     "prefix": "!",
     "messageLogs": false,
     "id": "account-id-here",
-    "webhookID": "webhook-id-here" ,
-    "webhookToken": "webhook-token-here",
+    "webhookURL": "webhook-url-here",
     "embedOptions": {
         "enabled": true,
         "color": "hex-color",

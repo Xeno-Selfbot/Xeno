@@ -14,6 +14,7 @@ const { stripIndents } = require("common-tags");
 const { Type } = require("@extreme_hero/deeptype");
 const { inspect } = require("util");
 const fs = require("fs");
+const webhook = require("webhook-discord");
 
 const selfbot = {
     version: "1.0.0",
@@ -1197,7 +1198,7 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
       }
       if(enabled === true) {
           let embed = new Discord.RichEmbed()
-          .setTitle("Abusive Commands")
+          .setTitle("Abusive Commands [GUILD ONLY]")
           .setThumbnail(image ? image : "https://media4.giphy.com/media/6cXJU3ZCj0U7gy8ZXo/giphy.gif")
           .setColor(color ? color : "#1B78E7")
           .setFooter(footer ? footer : "𝘾𝙧𝙮𝙥𝙩𝙞𝙘")
@@ -1221,7 +1222,7 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
           message.channel.send(embed)
       } else {
           message.channel.send(stripIndents`\`\`\`
-          Abusive Commands
+          Abusive Commands [GUILD ONLY]
 
           <> = required | [] = optional
       
@@ -1664,36 +1665,29 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
 
     if(cmd === "webhookspam") {
         console.log(`[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan("Command used")} ${colors.magenta("|")} ${colors.yellow(cmd)}`)
-        if(!config.webhookID) return console.log(`${colors.red("[ERROR]:")} ${colors.yellow("You did not specify a webhook id in config.json")}`)
-        if(!config.webhookToken) return console.log(`${colors.red("[ERROR]:")} ${colors.yellow("You did not specify a webhook token in config.json")}`)
-        const hook = new Discord.WebhookClient(config.webhookID, config.webhookToken);
-        hook.edit({
-            name: `[${message.guild.nameAcronym}] ${message.guild.name}`,
-            avatar: message.guild.iconURL
-        })
         if(message.deletable) {
             message.delete()
         }
-        if (!args[0] || !/\d{1,2}/ig.test(args[0])) {
-            return message.channel.send("Please specify the amount of messages to spam.")
-          } else {
-            var spamAmount = args[0]
-          }
-          if (!args[1]) {
-            return message.channel.send("Please provide a message.")
-          } else {
-            args.splice(0, 1)
-            var spamContent = args.join(" ")
-          }
-          for (var i = 0; i < spamAmount; i++) {
-            let embed = new Discord.RichEmbed()
+        if(!config.webhookURL) return console.log(`${colors.red("[ERROR]:")} ${colors.yellow("Webhook URL not specified in config.json")}`)
+        const spamAmount = args[0];
+        const spamContent = args.slice(1).join(" ")
+        if(!spamAmount) return message.channel.send("Please specify the amount of messages to spam!")
+        if(!spamContent) return message.channel.send("Please provide a message")
+        if(`[${message.guild.nameAcronym}] ${message.guild.name}`.length > 40) return console.log(`${colors.red(`[ERROR]:`)} ${colors.yellow(`Guild name is to long`)}`)
+
+        const cryptic = new webhook.Webhook(config.webhookURL)
+        for (var i = 0; i < spamAmount; i++) {
+            const hook = new webhook.MessageBuilder()
+            .setName(`[${message.guild.nameAcronym}] ${message.guild.name}`)
+            .setAvatar(message.guild.iconURL)
+            .setText("@everyone")
             .setTitle("You've just been raided")
             .setThumbnail(image ? image : "https://media3.giphy.com/media/TzyV32fsqLpbA0PHJf/giphy.gif")
             .setColor(color ? color : "#1B78E7")
             .setFooter(footer ? footer : "𝘾𝙧𝙮𝙥𝙩𝙞𝙘")
             .setDescription(spamContent)
-            hook.send("@everyone", embed)
-          }
+            cryptic.send(hook)
+        }
     }
 
     if(cmd === "whois") {

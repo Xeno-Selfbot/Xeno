@@ -19,6 +19,7 @@
     "moment": "^2.28.0",
     "node-fetch": "^2.6.1",
     "node-superfetch": "^0.1.10",
-    "superagent": "^6.1.0"
+    "superagent": "^6.1.0",
+    "webhook-discord": "^3.7.7"
   }
 }
