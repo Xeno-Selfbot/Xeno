@@ -14,7 +14,6 @@ const { stripIndents } = require("common-tags");
 const { Type } = require("@extreme_hero/deeptype");
 const { inspect } = require("util");
 const fs = require("fs");
-const canvacord = require("canvacord");
 
 const selfbot = {
     version: "1.0.0",
@@ -314,7 +313,10 @@ bot.on("message", async(message) => {
         }
         if(!args.join(" ")) return message.channel.send("Please specify a message.")
         const {body} = await post("https://hastebin.com/documents").send(args.join(" "))
-        message.channel.send(`https://hastebin.com/${body.key}`)
+        let embed = new Discord.RichEmbed()
+        .setThumbnail(image ? image : null)
+        .setColor("#1B78E7")
+        .setFooter("𝘾𝙧𝙮𝙥𝙩𝙞𝙘")
     }
 
     if(cmd === "clean") {
@@ -1985,7 +1987,7 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
         }
         if(enabled === true) {
             let embed = new Discord.RichEmbed()
-            .setThumbnail("https://im6.ezgif.com/tmp/ezgif-6-757b06f03bda.gif")
+            .setThumbnail("https://media3.giphy.com/media/6cXJU3ZCj0U7gy8ZXo/giphy.gif")
             .setColor("#1B78E7")
             .setFooter("𝘾𝙧𝙮𝙥𝙩𝙞𝙘")
             .setTitle("Cryptic")

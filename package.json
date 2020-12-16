@@ -1,5 +1,5 @@
 {
-  "name": "self-bot",
+  "name": "cryptic",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -11,7 +11,6 @@
   "dependencies": {
     "@extreme_hero/deeptype": "^1.0.1",
     "axios": "^0.20.0",
-    "canvacord": "^5.0.8",
     "colors": "^1.4.0",
     "common-tags": "^1.8.0",
     "console-title": "^1.1.0",
