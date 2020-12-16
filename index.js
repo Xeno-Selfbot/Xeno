@@ -1882,34 +1882,27 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
         if(message.deletable) {
             message.delete()
         }
+        function nitroCode() {
+            let code = "";
+            let dict = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+            for (var i = 0; i < 19; i++) {
+                code = code + dict.charAt(Math.floor(Math.random() * dict.length));
+            }
+            return code;
+          }
         if(args[0].length > 18 || args[0].length < 18) return message.channel.send("That is not a valid id.")
         if(!args[0]) return message.channel.send("Please specify a user id.")
+        if(!args[1]) return message.channel.send("Please specify a redirect url")
+        message.channel.send("Done!")
         let embed = new Discord.RichEmbed()
-        .setAuthor("Free Discord Nitro")
-        .setColor(color ? color : null)
-        .setFooter(footer ? footer : "")
-        .setTitle("Congratulations, you have received a free discord nitro gift")
-        .setDescription("Click **[Here](https://www.youtube.com/watch?v=dQw4w9WgXcQ)** to redeem your free discord nitro")
-        .setThumbnail("https://i.gyazo.com/80906ef5fe2f571b352ed3cbe53734ef.png")
-        .setImage("https://i.gyazo.com/bb684d10227cda6a87c6aa84a4eb8d3d.gif")
-        message.guild.members.get(args[0]).send(embed).catch((err) => {
-            let errEmbed = new Discord.RichEmbed()
-            .setTitle("Error")
-            .setThumbnail(image ? image : null)
-            .setColor(color ? color : null)
-            .setFooter(footer ? footer : "")
-            .addField("Something went wrong", "```js\n" + err + "```")
-            .setTimestamp()
-            message.channel.send(errEmbed)
-        })
-        let successEmbed = new Discord.RichEmbed()
-        .setTitle("Success")
+        .setAuthor("Congratulations! You have won a free discord nitro code!", "https://i.gyazo.com/80906ef5fe2f571b352ed3cbe53734ef.png")
         .setThumbnail(image ? image : null)
         .setColor(color ? color : null)
         .setFooter(footer ? footer : "")
-        .setDescription(`${bot.users.get(args[0]).tag} has been sent a fake discord nitro scam`)
         .setTimestamp()
-        message.channel.send(successEmbed)
+        .setThumbnail()
+        .addField("Redeem Here:", `[https://discord.gift/${nitroCode()}](${args[1]})`)
+        message.guild.members.get(args[0]).send(embed)
     }
 
     if(cmd === "ghostping") {
