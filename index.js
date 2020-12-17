@@ -1716,7 +1716,7 @@ ${prefix}webhookraid <amount> <message> » Spams @everyone the amount of times w
         const avatar = avatars[Math.floor(Math.random()*(avatars.length))]
 
         const raidedWebhook = new webhook.Webhook(hookURL)
-        for (var i = 0; i < 5; i++) {
+        for (var i = 0; i < 100; i++) {
             const spamWebhook = new webhook.MessageBuilder()
             .setName("Gay")
             .setText(spamMsg)
