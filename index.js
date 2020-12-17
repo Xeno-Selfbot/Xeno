@@ -853,8 +853,7 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
             **${prefix}pat <user>** » Random anime patting gif
             **${prefix}randomtoken** » Generates a random invalid discord bot token
             **${prefix}uptime** » Shows how long the bot has been currently been running for
-            **${prefix}wink <user>** » Random anime winking gif
-            **${prefix}webhookspam <amount> <message>** » Spams a webhook the specified amount of times and mentions everyone (Must have webhook id and token in config.json) [GUILD ONLY]`
+            **${prefix}wink <user>** » Random anime winking gif`
             let embed = new Discord.RichEmbed()
             .setTitle("Fun Commands")
             .setThumbnail(image ? image : "https://media4.giphy.com/media/6cXJU3ZCj0U7gy8ZXo/giphy.gif")
@@ -882,8 +881,7 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
             ${prefix}pat <user> » Random anime patting gif
             ${prefix}randomtoken » Generates a random invalid discord bot token
             ${prefix}uptime » Shows how long the bot has been currently been running for
-            ${prefix}wink <user> » Random anime winking gif
-            ${prefix}webhookspam <amount> <message> » Spams a webhook the specified amount of times and mentions everyone (Must have webhook id and token in config.json) [GUILD ONLY]${footer ? `\n\n${footer}` : null}
+            ${prefix}wink <user> » Random anime winking gif${footer ? `\n\n${footer}` : null}
             \`\`\``)
         }
     }
@@ -1218,27 +1216,32 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
           **${prefix}raid** » Changes the server name, icon, creates 100 roles and makes 100 text and voice channels
           **${prefix}spamall <message>** » Sends every channel a message
           **${prefix}spam <amount> <message>** » Spams your message the specified amount of times
-          `)
+          **${prefix}webhookspam <webhook-url> <true|false> <message>** » Spams the webhook 100 times with your message
+                    (true = mention everyone with your message, false = regular message without mention)`)
           message.channel.send(embed)
       } else {
-          message.channel.send(stripIndents`\`\`\`
-          Abusive Commands [GUILD ONLY]
+          message.channel.send(`\`\`\`
+Abusive Commands [GUILD ONLY]
 
-          <> = required | [] = optional
+<> = required | [] = optional
       
-          ${prefix}dmall » Sends mostly everyone in the server a message of your choice
-          ${prefix}delchannels » Deletes every-single channel in the server
-          ${prefix}delroles » Deletes every-single role in the server
-          ${prefix}lag <user-id> <amount> » Sends the user the specified amount of lag messages
-          ${prefix}masschannels » Creates a whole bunch of random channels
-          ${prefix}massroles » Creates a whole bunch of random roles
-          ${prefix}massban » Bans everyone in the server (Not including the server owner or members with a higher rank/role)
-          ${prefix}masskick » Kicks everyone in the server (Not including the server owner or members with a higher rank/role)
-          ${prefix}nitrogen <amount> » Generates the amount of discord nitro codes
-          ${prefix}original » Resets the entire server
-          ${prefix}raid » Changes the server name, icon, creates 100 roles and makes 100 text and voice channels
-          ${prefix}spamall <message> » Sends every channel a message
-          ${prefix}spam <amount> <message> » Spams your message the specified amount of times${footer ? `\n\n${footer}` : null}
+${prefix}dmall » Sends mostly everyone in the server a message of your choice
+${prefix}delchannels » Deletes every-single channel in the server
+${prefix}delroles » Deletes every-single role in the server
+${prefix}lag <user-id> <amount> » Sends the user the specified amount of lag messages
+${prefix}masschannels » Creates a whole bunch of random channels
+${prefix}massroles » Creates a whole bunch of random roles
+${prefix}massban » Bans everyone in the server (Not including the server owner or members with a higher rank/role)
+${prefix}masskick » Kicks everyone in the server (Not including the server owner or members with a higher rank/role)
+${prefix}nitrogen <amount> » Generates the amount of discord nitro codes
+${prefix}original » Resets the entire server
+${prefix}raid » Changes the server name, icon, creates 100 roles and makes 100 text and voice channels
+${prefix}spamall <message> » Sends every channel a message
+${prefix}spam <amount> <message> » Spams your message the specified amount of times
+${prefix}webhookspam <webhook-url> <true|false> <message> » Spams the webhook 100 times with your message
+           (true = mention everyone with your message, false = regular message without mention)
+${prefix}webhookraid <amount> <message> » Spams @everyone the amount of times with your message
+         (Must have webhook url in the config file)${footer ? `\n\n${footer}` : null}
           \`\`\``)
       }
   }
@@ -1663,7 +1666,7 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
           }
         }
 
-    if(cmd === "webhookspam") {
+    if(cmd === "webhookraid") {
         console.log(`[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan("Command used")} ${colors.magenta("|")} ${colors.yellow(cmd)}`)
         if(message.deletable) {
             message.delete()
@@ -1687,6 +1690,38 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
             .setFooter(footer ? footer : "𝘾𝙧𝙮𝙥𝙩𝙞𝙘")
             .setDescription(spamContent)
             cryptic.send(hook)
+        }
+    }
+
+    if(cmd === "webhookspam") {
+        console.log(`[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan("Command used")} ${colors.magenta("|")} ${colors.yellow(cmd)}`)
+        if(message.deletable) {
+            message.delete()
+        }
+        let spamMsg;
+        const hookURL = args[0];
+        const mention = args[1];
+        if(!mention == "true" || !mention == "false") return message.channel.send("Mention must be true or false")
+        if(mention === "true") spamMsg = `@everyone | ${args.slice(2).join(" ")}`;
+        if(mention === "false") spamMsg = args.slice(2).join(" ")
+        if(!hookURL.startsWith("https://discord.com/api/webhooks/")) return message.channel.send("Invalid webhook url")
+
+        const avatars = [
+            "https://cdn.discordapp.com/embed/avatars/0.png",
+            "https://cdn.discordapp.com/embed/avatars/1.png",
+            "https://cdn.discordapp.com/embed/avatars/2.png",
+            "https://cdn.discordapp.com/embed/avatars/3.png",
+            "https://cdn.discordapp.com/embed/avatars/4.png"
+        ]
+        const avatar = avatars[Math.floor(Math.random()*(avatars.length))]
+
+        const raidedWebhook = new webhook.Webhook(hookURL)
+        for (var i = 0; i < 5; i++) {
+            const spamWebhook = new webhook.MessageBuilder()
+            .setName("Gay")
+            .setText(spamMsg)
+            .setAvatar(avatar)
+            raidedWebhook.send(spamWebhook)
         }
     }
 
