@@ -1706,21 +1706,10 @@ ${prefix}webhookraid <amount> <message> » Spams @everyone the amount of times w
         if(mention === "false") spamMsg = args.slice(2).join(" ")
         if(!hookURL.startsWith("https://discord.com/api/webhooks/")) return message.channel.send("Invalid webhook url")
 
-        const avatars = [
-            "https://cdn.discordapp.com/embed/avatars/0.png",
-            "https://cdn.discordapp.com/embed/avatars/1.png",
-            "https://cdn.discordapp.com/embed/avatars/2.png",
-            "https://cdn.discordapp.com/embed/avatars/3.png",
-            "https://cdn.discordapp.com/embed/avatars/4.png"
-        ]
-        const avatar = avatars[Math.floor(Math.random()*(avatars.length))]
-
         const raidedWebhook = new webhook.Webhook(hookURL)
         for (var i = 0; i < 100; i++) {
             const spamWebhook = new webhook.MessageBuilder()
-            .setName("Gay")
             .setText(spamMsg)
-            .setAvatar(avatar)
             raidedWebhook.send(spamWebhook)
         }
     }
