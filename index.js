@@ -942,6 +942,7 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
             .setDescription(`
             <> = required | [] = optional
 
+            **${prefix}1337 <text>** » Speak 1337
             **${prefix}ascii <text>** » Converts your message to ascii
             **${prefix}binary <encode|decode> <message|binary>** » Encodes/decodes binary
             **${prefix}base64 <encode|decode> <message|base64>** » Encodes/decodes base64
@@ -959,6 +960,7 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
             message.channel.send(stripIndents`\`\`\`
             <> = required | [] = optional
 
+            ${prefix}1337 <text> » Speak 1337
             ${prefix}ascii <text> » Converts your message to ascii
             ${prefix}binary <encode|decode> <message|binary> » Encodes/decodes binary
             ${prefix}base64 <encode|decode> <message|base64> » Encodes/decodes base64
@@ -972,6 +974,27 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
             ${prefix}msg <bold|italics|underline|destroy|upper|lower|strikethrough|hidden|everything> <message> » Sends your message in different forms${footer ? `\n\n${footer}` : null}
             \`\`\``)
         }
+    }
+
+    if(cmd === "1337") {
+        console.log(`[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan("Command used")} ${colors.magenta("|")} ${colors.yellow(cmd)}`)
+        if(message.deletable) {
+            message.delete()
+        }
+        const text = args.join(" ")
+        if(!text) return message.channel.send("Please specify some text to speak in 1337")
+        const newtext = text
+                        .replace("a", "4")
+                        .replace("A", "4")
+                        .replace("e", "3")
+                        .replace("E", "3")
+                        .replace("i", "!")
+                        .replace("I", "!")
+                        .replace("o", "0")
+                        .replace("O", "0")
+                        .replace("u", "|_|")
+                        .replace("U", "|_|");
+        message.channel.send(newtext)
     }
 
     if(cmd === "utility") {
