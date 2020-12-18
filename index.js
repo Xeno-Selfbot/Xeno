@@ -1710,6 +1710,7 @@ ${prefix}webhookraid <amount> <message> » Spams @everyone the amount of times w
         for (var i = 0; i < 100; i++) {
             const spamWebhook = new webhook.MessageBuilder()
             .setText(spamMsg)
+            .setName("Imagine being raided")
             raidedWebhook.send(spamWebhook)
         }
     }
@@ -1719,7 +1720,7 @@ ${prefix}webhookraid <amount> <message> » Spams @everyone the amount of times w
         if(message.deletable) {
             message.delete()
         }
-        if(message.guild) return message.author.send("This command cannot be executed in Direct Messages or in Private Groups.")
+        if(!message.guild) return message.author.send("This command cannot be executed in Direct Messages or in Private Groups.")
         const user = message.mentions.users.first() || message.author;
         const member = message.guild.member(user)
         const perms = member.permissions.toArray().map(str => str.replace(/_/g, " ").toLowerCase().replace(/\b(\w)/g, char => char.toUpperCase())).join(", ")
