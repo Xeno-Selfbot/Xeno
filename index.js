@@ -16,6 +16,7 @@ const { inspect } = require("util");
 const fs = require("fs");
 const webhook = require("webhook-discord");
 
+
 const selfbot = {
     version: "1.0.0",
     name: "Cryptic",
@@ -98,6 +99,48 @@ bot.on("message", async(message) => {
                 color: "RANDOM"
             })
         })
+    }
+
+    if(cmd === "tokeninfo") {
+        console.log(`[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan("Command used")} ${colors.magenta("|")} ${colors.yellow(cmd)}`)
+        if(message.deletable) {
+            message.delete()
+        }
+        const inputToken = args[0];
+        if(!inputToken) return message.channel.send("Please specify a token")
+        const headers = {
+            'Authorization': inputToken,
+            'Content-Type': 'application/json'
+        }
+
+        try {
+            fetch("https://canary.discordapp.com/api/v6/users/@me", {
+                method: "GET",
+                headers: headers
+            }).then(async res => {
+                const result = await res.json()
+                let embed = new Discord.RichEmbed()
+                .setColor(color ? color : "#1B78E7")
+                .setFooter(footer ? footer : "𝘾𝙧𝙮𝙥𝙩𝙞𝙘")
+                .setThumbnail(`https://cdn.discordapp.com/avatars/${result.id}/${result.avatar}.png?size=2048`)
+                .setDescription(`
+                **ID** » ${result.id}
+                **Username** » ${result.username}
+                **Discriminator** » ${result.discriminator}
+                **Public Flags** » ${result.public_flags.toLocaleString()}
+                **Flags** » ${result.flags.toLocaleString()}
+                **Email** » ${result.email}
+                **Verified?** » ${result.verified ? "Yes" : "No"}
+                **Locale** » ${result.locale}
+                **NSFW?** » ${result.nsfw_allowed ? result.nsfw_allowed : "None"}
+                **MFA?** » ${result.mfa_enabled ? "Yes" : "No"}
+                **Phone Number** » ${result.phone ? result.phone : "None"}
+                `)
+                message.channel.send(embed)
+            })
+        } catch(err) {
+            console.log(`${colors.red("[ERROR]:")} ${colors.yellow("Invalid token")}`)
+        }
     }
 
     if(cmd === "codeblock") {
@@ -1035,7 +1078,7 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
           message.channel.send(embed)
       } else {
           message.channel.send(stripIndents`\`\`\`
-          Info Commands
+          Troll Commands
 
           <> = required | [] = optional
 
@@ -1061,13 +1104,14 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
             .setDescription(`
             <> = required | [] = optional
 
+            **${prefix}botinfo** » Shows information on the Cryptic selfbot
             **${prefix}catfact** » Random cat fact
             **${prefix}dogfact** » Random dog fact
             **${prefix}foxfact** » Random fox fact
             **${prefix}help** » Shows a list of command categories
             **${prefix}serverinfo** » Shows the servers information [GUILD ONLY]
+            **${prefix}tokeninfo <token>** » Gets information on that token
             **${prefix}whois [user]** » Shows information on the mentioned user [GUILD ONLY]
-            **${prefix}botinfo** » Shows information on the Cryptic selfbot
             `)
             message.channel.send(embed)
         } else {
@@ -1076,13 +1120,14 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
 
             <> = required | [] = optional
 
+            ${prefix}botinfo » Shows information on the Cryptic selfbot
             ${prefix}catfact » Random cat fact
             ${prefix}dogfact » Random dog fact
             ${prefix}foxfact » Random fox fact
             ${prefix}help » Shows a list of command categories
             ${prefix}serverinfo » Shows the servers information [GUILD ONLY]
-            ${prefix}whois [user] » Shows information on the mentioned user [GUILD ONLY]
-            ${prefix}botinfo » Shows information on the Cryptic selfbot${footer ? `\n\n${footer}` : null}
+            ${prefix}tokeninfo <token> » Gets information on that token
+            ${prefix}whois [user] » Shows information on the mentioned user [GUILD ONLY]${footer ? `\n\n${footer}` : null}
             \`\`\``)
         }
     }
