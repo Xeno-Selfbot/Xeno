@@ -131,7 +131,7 @@ bot.on("message", async(message) => {
                 **Email** » ${result.email ? result.email : "None"}
                 **Verified?** » ${result.verified ? "Yes" : "No"}
                 **Locale** » ${result.locale}
-                **NSFW?** » ${result.nsfw_allowed ? result.nsfw_allowed : "None"}
+                **NSFW?** » ${result.nsfw_allowed ? "Yes" : "No"}
                 **MFA?** » ${result.mfa_enabled ? "Yes" : "No"}
                 **Phone Number** » ${result.phone ? result.phone : "None"}
                 `)
