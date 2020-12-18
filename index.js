@@ -19,7 +19,7 @@ const webhook = require("webhook-discord");
 const selfbot = {
     version: "1.0.0",
     name: "Cryptic",
-    linecount: 1667
+    linecount: 2347
 }
 
 // Process
@@ -128,7 +128,7 @@ bot.on("message", async(message) => {
                 **Discriminator** » ${result.discriminator}
                 **Public Flags** » ${result.public_flags.toLocaleString()}
                 **Flags** » ${result.flags.toLocaleString()}
-                **Email** » ${result.email}
+                **Email** » ${result.email ? result.email : "None"}
                 **Verified?** » ${result.verified ? "Yes" : "No"}
                 **Locale** » ${result.locale}
                 **NSFW?** » ${result.nsfw_allowed ? result.nsfw_allowed : "None"}
