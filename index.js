@@ -16,7 +16,6 @@ const { inspect } = require("util");
 const fs = require("fs");
 const webhook = require("webhook-discord");
 
-
 const selfbot = {
     version: "1.0.0",
     name: "Cryptic",
