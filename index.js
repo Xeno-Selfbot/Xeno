@@ -17,9 +17,9 @@ const fs = require("fs");
 const webhook = require("webhook-discord");
 
 const selfbot = {
-    version: "1.0.0",
+    version: "5.3.1",
     name: "Cryptic",
-    linecount: 2347
+    linecount: 2345
 }
 
 // Process
@@ -41,25 +41,23 @@ bot.on("ready", () => {
     console.log(`
 
 
-                             ▄████▄   ██▀███ ▓██   ██▓ ██▓███  ▄▄▄█████▓ ██▓ ▄████▄
-                            ▒██▀ ▀█  ▓██ ▒ ██▒▒██  ██▒▓██░  ██▒▓  ██▒ ▓▒▓██▒▒██▀ ▀█
-                            ▒▓█    ▄ ▓██ ░▄█ ▒ ▒██ ██░▓██░ ██▓▒▒ ▓██░ ▒░▒██▒▒▓█    ▄ 
-                            ▒▓▓▄ ▄██▒▒██▀▀█▄   ░ ▐██▓░▒██▄█▓▒ ▒░ ▓██▓ ░ ░██░▒▓▓▄ ▄██▒
-                            ▒ ▓███▀ ░░██▓ ▒██▒ ░ ██▒▓░▒██▒ ░  ░  ▒██▒ ░ ░██░▒ ▓███▀ ░
-                            ░ ░▒ ▒  ░░ ▒▓ ░▒▓░  ██▒▒▒ ▒▓▒░ ░  ░  ▒ ░░   ░▓  ░ ░▒ ▒  ░
-                               ░  ▒     ░▒ ░ ▒░▓██ ░▒░ ░▒ ░         ░     ▒ ░  ░  ▒
-                            ░          ░░   ░ ▒ ▒ ░░  ░░         ░       ▒ ░░  
-                            ░ ░         ░     ░ ░                        ░  ░ ░
-                            ░                 ░ ░                           ░
+                            ${colors.red(`
+                             ██████╗██████╗ ██╗   ██╗██████╗ ████████╗██╗ ██████╗
+                            ██╔════╝██╔══██╗╚██╗ ██╔╝██╔══██╗╚══██╔══╝██║██╔════╝
+                            ██║     ██████╔╝ ╚████╔╝ ██████╔╝   ██║   ██║██║     
+                            ██║     ██╔══██╗  ╚██╔╝  ██╔═══╝    ██║   ██║██║     
+                            ╚██████╗██║  ██║   ██║   ██║        ██║   ██║╚██████╗
+                             ╚═════╝╚═╝  ╚═╝   ╚═╝   ╚═╝        ╚═╝   ╚═╝ ╚═════╝
+                             `)}
+                                                      
+ 
 
-
-
-                            ${colors.cyan(selfbot.name)} ${colors.yellow(`v${selfbot.version}`)} ${colors.magenta("|")} ${colors.cyan("Logged in as")} ${colors.yellow(bot.user.tag)} ${colors.magenta("|")} ${colors.cyan("ID:")} ${colors.yellow(bot.user.id)}
-                            ${colors.cyan("Nitro Sniper?")} ${config.nitro_sniper ? colors.green("Enabled") : colors.red("Disabled")}
-                            ${colors.cyan("Giveaway Sniper?")} ${config.giveaway_sniper ? colors.green("Enabled") : colors.red("Disabled")}
-                            ${colors.cyan("Prefix:")} ${colors.yellow(`${config.prefix}`)}
-                            ${colors.cyan("GitHub:")} ${colors.yellow("https://github.com/p9sq/Cryptic")}
-                            ${colors.cyan("Developer:")} ${colors.yellow("p9sq69#0594")}
+                            ${colors.red(selfbot.name)} ${colors.cyan(`v${selfbot.version}`)} ${colors.yellow("|")} ${colors.red("Logged in as")} ${colors.cyan(bot.user.tag)} ${colors.yellow("|")} ${colors.red("ID:")} ${colors.cyan(bot.user.id)}
+                            ${colors.red("Nitro Sniper?")} ${config.nitro_sniper ? colors.green("Enabled") : colors.red("Disabled")}
+                            ${colors.red("Giveaway Sniper?")} ${config.giveaway_sniper ? colors.green("Enabled") : colors.red("Disabled")}
+                            ${colors.red("Prefix:")} ${colors.cyan(`${config.prefix}`)}
+                            ${colors.red("GitHub:")} ${colors.cyan("https://github.com/p9sq/Cryptic")}
+                            ${colors.red("Developer:")} ${colors.cyan("p9sq69#0594")}
     `)
 })
 
