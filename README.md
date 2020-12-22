@@ -62,7 +62,7 @@ To simply run the bot, just run `launch.bat`. The bot should be working fine as 
 
 1. You MUST NOT claim the code as your own code
 2. You MUST NOT claim owner ship of the bot
-3. Obfuscated the code. So know nobody can claim as their original scripting. Well, unless people are smart enough to fully deobfuscate the code and change it
+3. Feel free to edit the code to make something better, but only if you know what you are doing
 
 # Cryptic Risks
 

