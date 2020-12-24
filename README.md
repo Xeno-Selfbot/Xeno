@@ -2,9 +2,9 @@
 A discord user automation tool
 
 # Installation
-1. If you don't have `node.js` installed, make sure to download it [here](https://nodejs.org/en/)\
-2. Run `install.bat`\
-3. Wait for everything to install\
+1. If you don't have `node.js` installed, make sure to download it [here](https://nodejs.org/en/)
+2. Run `install.bat`
+3. Wait for everything to install
 4. Then you are done installing the required packages!
 
 # Setup
