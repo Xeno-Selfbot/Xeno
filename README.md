@@ -39,21 +39,21 @@ You should enter in a password, just so then the account management commands wil
 You should choose a desired prefix for the commands so then the commands won't run if you sent `ping` for an example.
 [ NOTE: The prefix must not include any spaces or the commands will not register properly ]
 
-For the nitro sniper that is optional, but you can have it on so then you can snipe discord nitro and so the bot can instanly redeem it for you
+For the `nitro_sniper` that is optional, but you can have it on so then you can snipe discord nitro and so the bot can instanly redeem it for you
 
-For the credit, you can have that on if you want to, all that does is set your status to the discord server invite for the cryptic official discord server
+For the `credit`, you can have that on if you want to, all that does is set your status to the discord server invite for the Xeno official discord server
 
-For the giveaway sniper that is optional, but you can have it on so then you can snipe giveaways that you have one
+For the `giveaway_sniper` that is optional, but you can have it on so then you can snipe giveaways that you have one
 
 For the `whitelisted` part, that is optional, you can put your own id in there so then you can use the selfbot commands
 
 For the `id` part, you need to paste in your selfbot account id in there, just so if you have whitelisted users, the selfbot account can use the commands
 
-For the webhook url, that is optional. The webhook is just used for spamming `@everyone` in your discord server. Just to annoy people :wink:
+For the `webhook_url`, that is optional. The webhook is just used for spamming `@everyone` in your discord server. Just to annoy people :wink:
 
-For the embed options. You can play around with the options to customise the way embeds are sent into discord. (embed options are optional to play around with)
+For the `embedOptions`. You can play around with the options to customise the way embeds are sent into discord. (embed options are optional to play around with)
 
-For the message logs, that is optional to have on or off, the message logs will just log any message a user sends
+For the `messageLogs`, that is optional to have on or off, the message logs will just log any message a user sends
 
 # Run the bot
 
