@@ -84,13 +84,17 @@ bot.on("message", async(message) => {
         }
         const role = message.mentions.roles.first()
         if(!role) return message.channel.send("Please mention a role")
-        let embed = new Discord.RichEmbed()
-        .setTitle("Success")
-        .setDescription(`Successfully made the ${role.name} role rainbow`)
-        .setThumbnail(image ? image : "https://i.gyazo.com/9a01772609666c18b012df6efeb3d5f8.jpg")
-        .setColor(color ? color : "#ff0000")
-        .setFooter(footer ? footer : "𝙓𝙚𝙣𝙤")
-        message.channel.send(embed)
+        if(enabled === true) {
+            let embed = new Discord.RichEmbed()
+            .setTitle("Success")
+            .setDescription(`Successfully made the ${role.name} role rainbow`)
+            .setThumbnail(image ? image : "https://i.gyazo.com/9a01772609666c18b012df6efeb3d5f8.jpg")
+            .setColor(color ? color : "#ff0000")
+            .setFooter(footer ? footer : "𝙓𝙚𝙣𝙤")
+            message.channel.send(embed)
+        } else {
+            message.channel.send(`Successfully made the ${role.name} role rainbow`)
+        }
         setInterval(() => {
             role.edit({
                 color: "RANDOM"
@@ -106,8 +110,8 @@ bot.on("message", async(message) => {
         const inputToken = args[0];
         if(!inputToken) return message.channel.send("Please specify a token")
         const headers = {
-            'Authorization': inputToken,
-            'Content-Type': 'application/json'
+            "Authorization": inputToken,
+            "Content-Type": "application/json"
         }
 
         try {
@@ -116,24 +120,39 @@ bot.on("message", async(message) => {
                 headers: headers
             }).then(async res => {
                 const result = await res.json()
-                let embed = new Discord.RichEmbed()
-                .setColor(color ? color : "#1B78E7")
-                .setFooter(footer ? footer : "𝘾𝙧𝙮𝙥𝙩𝙞𝙘")
-                .setThumbnail(`https://cdn.discordapp.com/avatars/${result.id}/${result.avatar}.png?size=2048`)
-                .setDescription(`
-                **ID** » ${result.id}
-                **Username** » ${result.username}
-                **Discriminator** » ${result.discriminator}
-                **Public Flags** » ${result.public_flags.toLocaleString()}
-                **Flags** » ${result.flags.toLocaleString()}
-                **Email** » ${result.email ? result.email : "None"}
-                **Verified?** » ${result.verified ? "Yes" : "No"}
-                **Locale** » ${result.locale}
-                **NSFW?** » ${result.nsfw_allowed ? "Yes" : "No"}
-                **MFA?** » ${result.mfa_enabled ? "Yes" : "No"}
-                **Phone Number** » ${result.phone ? result.phone : "None"}
-                `)
-                message.channel.send(embed)
+                if(enabled === true) {
+                    let embed = new Discord.RichEmbed()
+                    .setColor(color ? color : "#1B78E7")
+                    .setFooter(footer ? footer : "𝘾𝙧𝙮𝙥𝙩𝙞𝙘")
+                    .setThumbnail(`https://cdn.discordapp.com/avatars/${result.id}/${result.avatar}.png?size=2048`)
+                    .setDescription(`
+                    **ID** » ${result.id}
+                    **Username** » ${result.username}
+                    **Discriminator** » ${result.discriminator}
+                    **Public Flags** » ${result.public_flags.toLocaleString()}
+                    **Flags** » ${result.flags.toLocaleString()}
+                    **Email** » ${result.email ? result.email : "None"}
+                    **Verified?** » ${result.verified ? "Yes" : "No"}
+                    **Locale** » ${result.locale}
+                    **NSFW?** » ${result.nsfw_allowed ? "Yes" : "No"}
+                    **MFA?** » ${result.mfa_enabled ? "Yes" : "No"}
+                    **Phone Number** » ${result.phone ? result.phone : "None"}
+                    `)
+                    message.channel.send(embed)
+                } else {
+                    message.channel.send(stripIndents`\`\`\`
+                    ID » ${result.id}
+                    Username » ${result.username}
+                    Discriminator » ${result.discriminator}
+                    Public Flags » ${result.public_flags.toLocaleString()}
+                    Flags » ${result.flags.toLocaleString()}
+                    Email » ${result.email ? result.email : "None"}
+                    Verified? » ${result.verified ? "Yes" : "No"}
+                    Locale » ${result.locale}
+                    NSFW? » ${result.nsfw_allowed ? "Yes" : "No"}
+                    MFA? » ${result.mfa_enabled ? "Yes" : "No"}
+                    Phone Number » ${result.phone ? result.phone : "None"}${footer ? `\n\n${footer}` : "𝙓𝙚𝙣𝙤"}\`\`\``)
+                }
             })
         } catch(err) {
             console.log(`${colors.red("[ERROR]:")} ${colors.yellow("Invalid token")}`)
@@ -147,13 +166,17 @@ bot.on("message", async(message) => {
         }
         const types = ["js", "json", "ts", "lua", "css", "html", "yaml", "py", "ruby", "java"]
         if(!types.includes(args[0])) return message.channel.send(`Please specify a valid type. Types: \`${types.join("`, `")}\``)
-        let embed = new Discord.RichEmbed()
-        .setTitle("Code Block")
-        .setDescription(`\`\`\`${args[0]}\n${args.slice(1).join(" ")}\n\`\`\``)
-        .setThumbnail(image ? image : "https://i.gyazo.com/9a01772609666c18b012df6efeb3d5f8.jpg")
-        .setColor(color ? color : "#ff0000")
-        .setFooter(footer ? footer : "𝙓𝙚𝙣𝙤")
-        message.channel.send(embed)
+        if(enabled === true) {
+            let embed = new Discord.RichEmbed()
+            .setTitle("Code Block")
+            .setDescription(`\`\`\`${args[0]}\n${args.slice(1).join(" ")}\n\`\`\``)
+            .setThumbnail(image ? image : "https://i.gyazo.com/9a01772609666c18b012df6efeb3d5f8.jpg")
+            .setColor(color ? color : "#ff0000")
+            .setFooter(footer ? footer : "𝙓𝙚𝙣𝙤")
+            message.channel.send(embed)
+        } else {
+           message.channel.send(`\`\`\`${args[0]}\n${args.slice(1).join(" ")}${footer ? `\n\n${footer}` : "𝙓𝙚𝙣𝙤"}\n\`\`\``) 
+        }
     }
 
     if(cmd === "hack") {
@@ -284,7 +307,7 @@ bot.on("message", async(message) => {
             ${msg.content}
 
             Date » ${msg.date}
-            Page » ${args[0]||1}/${snipes.length}${footer ? `\n\n${footer}` : null}
+            Page » ${args[0]||1}/${snipes.length}${footer ? `\n\n${footer}` : "𝙓𝙚𝙣𝙤"}
             \`\`\``)
         }
     }
@@ -446,7 +469,7 @@ bot.on("message", async(message) => {
                 Pong!
 
                 Message » ${msg.createdTimestamp - message.createdTimestamp}ms
-                Websocket » ${bot.ping}ms${footer ? `\n\n${footer}` : null}
+                Websocket » ${bot.ping}ms${footer ? `\n\n${footer}` : "𝙓𝙚𝙣𝙤"}
                 \`\`\``)
             }
         })
@@ -588,7 +611,7 @@ Channels:
     Voice: ${voice.toLocaleString}
     Categories: ${category.toLocaleString()}
 Verification Level: ${message.guild.verificationLevel}
-Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${footer}` : null}\`\`\``)
+Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${footer}` : "𝙓𝙚𝙣𝙤"}\`\`\``)
     }
     }
 
@@ -921,7 +944,7 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
             ${prefix}pat <user> » Random anime patting gif
             ${prefix}randomtoken » Generates a random invalid discord bot token
             ${prefix}uptime » Shows how long the bot has been currently been running for
-            ${prefix}wink <user> » Random anime winking gif${footer ? `\n\n${footer}` : null}
+            ${prefix}wink <user> » Random anime winking gif${footer ? `\n\n${footer}` : "𝙓𝙚𝙣𝙤"}
             \`\`\``)
         }
     }
@@ -969,7 +992,7 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
             ${prefix}reverse <message> » Reverses your message
             ${prefix}say <message> » Says what ever you want
             ${prefix}spolier <message> » Converts your text to a spoiler
-            ${prefix}msg <bold|italics|underline|destroy|upper|lower|strikethrough|hidden|everything> <message> » Sends your message in different forms${footer ? `\n\n${footer}` : null}
+            ${prefix}msg <bold|italics|underline|destroy|upper|lower|strikethrough|hidden|everything> <message> » Sends your message in different forms${footer ? `\n\n${footer}` : "𝙓𝙚𝙣𝙤"}
             \`\`\``)
         }
     }
@@ -1025,7 +1048,7 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
             ${prefix}codeblock <type> <code> » Converts your text to a code block
             ${prefix}eval <code> » Evaluates JavaScript code
             ${prefix}massreact <message> » Sends your message to a haste bin
-            ${prefix}snipe [page-num] » Snipes the recently deleted message${footer ? `\n\n${footer}` : null}
+            ${prefix}snipe [page-num] » Snipes the recently deleted message${footer ? `\n\n${footer}` : "𝙓𝙚𝙣𝙤"}
             \`\`\``)
         }
     }
@@ -1070,7 +1093,7 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
             ${prefix}status » Status Commands
             ${prefix}troll » Troll Commands
             ${prefix}face » Face Commands
-            ${prefix}utility » Utility Commands${footer ? `\n\n${footer}` : null}
+            ${prefix}utility » Utility Commands${footer ? `\n\n${footer}` : "𝙓𝙚𝙣𝙤"}
             \`\`\``)
         }
     }
@@ -1105,7 +1128,7 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
           ${prefix}ghostping <channel-id> <user-id> » Ghostpings the user in the channel [GUILD ONLY]
           ${prefix}hack <user-id> » Hacks the user
           ${prefix}nitro » Generates a random discord nitro code
-          ${prefix}fakenitro <user-id> » Sends the user a discor nitro rick roll${footer ? `\n\n${footer}` : null}
+          ${prefix}fakenitro <user-id> » Sends the user a discor nitro rick roll${footer ? `\n\n${footer}` : "𝙓𝙚𝙣𝙤"}
           \`\`\``)
       }
   }
@@ -1147,7 +1170,7 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
             ${prefix}help » Shows a list of command categories
             ${prefix}serverinfo » Shows the servers information [GUILD ONLY]
             ${prefix}tokeninfo <token> » Gets information on that token
-            ${prefix}whois [user] » Shows information on the mentioned user [GUILD ONLY]${footer ? `\n\n${footer}` : null}
+            ${prefix}whois [user] » Shows information on the mentioned user [GUILD ONLY]${footer ? `\n\n${footer}` : "𝙓𝙚𝙣𝙤"}
             \`\`\``)
         }
     }
@@ -1181,7 +1204,7 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
             ${prefix}lenny » Sends ( ͡° ͜ʖ ͡°) into the current channel
             ${prefix}flip » Sends (╯°□°）╯︵ ┻━┻ into the current channel
             ${prefix}unflip » Sends ┬─┬ ノ( ゜-゜ノ) into the current channel
-            ${prefix}shrug » Sends ¯\\_(ツ)_/¯ into the current channel${footer ? `\n\n${footer}` : null}
+            ${prefix}shrug » Sends ¯\\_(ツ)_/¯ into the current channel${footer ? `\n\n${footer}` : "𝙓𝙚𝙣𝙤"}
             \`\`\``)
         }
     }
@@ -1217,7 +1240,7 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
           ${prefix}playing <message> » Sets your activity as playing with your message
           ${prefix}stream <message> » Sets your activity as streaming with your message
           ${prefix}watching <message> » Sets your activity as watching with your message
-          ${prefix}reset » Resets your current activity${footer ? `\n\n${footer}` : null}
+          ${prefix}reset » Resets your current activity${footer ? `\n\n${footer}` : "𝙓𝙚𝙣𝙤"}
           \`\`\``)
       }
   }
@@ -1249,7 +1272,7 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
       
           ${prefix}cat » Random cat image
           ${prefix}dog » Random dog image
-          ${prefix}fox » Random fox image${footer ? `\n\n${footer}` : null}
+          ${prefix}fox » Random fox image${footer ? `\n\n${footer}` : "𝙓𝙚𝙣𝙤"}
           \`\`\``)
       }
   }
@@ -1306,7 +1329,7 @@ ${prefix}spam <amount> <message> » Spams your message the specified amount of t
 ${prefix}webhookspam <webhook-url> <true|false> <message> » Spams the webhook 100 times with your message
            (true = mention everyone with your message, false = regular message without mention)
 ${prefix}webhookraid <amount> <message> » Spams @everyone the amount of times with your message
-         (Must have webhook url in the config file)${footer ? `\n\n${footer}` : null}
+         (Must have webhook url in the config file)${footer ? `\n\n${footer}` : "𝙓𝙚𝙣𝙤"}
           \`\`\``)
       }
   }
@@ -1346,7 +1369,7 @@ ${prefix}webhookraid <amount> <message> » Spams @everyone the amount of times w
         ${prefix}rainbow <role> » Edits that role to rainbow colors
         ${prefix}removerole <role> <member> » Removes the mentioned role from the mentioned member
         ${prefix}ban <member> [reason] » Bans the mentioned member from the server
-        ${prefix}kick <member> [reason] » Kicks the mentioned member from the server${footer ? `\n\n${footer}` : null}
+        ${prefix}kick <member> [reason] » Kicks the mentioned member from the server${footer ? `\n\n${footer}` : "𝙓𝙚𝙣𝙤"}
       \`\`\``)
     }
   }
@@ -1382,7 +1405,7 @@ ${prefix}webhookraid <amount> <message> » Spams @everyone the amount of times w
       ${prefix}invisible » Sets your username and avatar as something invisible
       ${prefix}read » Marks every server that you are in as read
       ${prefix}stealallpfp » Gets everyones avatar and saves it into a json file on your desktop [GUILD ONLY]
-      ${prefix}stealpfp <user> » Sets your avatar as the mentioned users avatar${footer ? `\n\n${footer}` : null}
+      ${prefix}stealpfp <user> » Sets your avatar as the mentioned users avatar${footer ? `\n\n${footer}` : "𝙓𝙚𝙣𝙤"}
       \`\`\``)
     }
   }
@@ -1815,7 +1838,7 @@ ${prefix}webhookraid <amount> <message> » Spams @everyone the amount of times w
             ID: ${user.id}
             Account Created: ${moment(user.createdAt).format('MMMM Do YYYY, h:mm A')}
             Total Roles: ${member.roles.size}
-            Guild Permissions: ${perms}${footer ? `\n\n${footer}` : null}
+            Guild Permissions: ${perms}${footer ? `\n\n${footer}` : "𝙓𝙚𝙣𝙤"}
             \`\`\``)
         }
     }
@@ -2051,7 +2074,7 @@ ${prefix}webhookraid <amount> <message> » Spams @everyone the amount of times w
             Node.js Version: ${process.version}
             Discord.js Version: ${Discord.version}
             Bot Version: ${require("./package.json").version}
-            Past Names: Cryptic, Diamond\n\nff0000
+            Past Names: Cryptic, Diamond\n\n𝙓𝙚𝙣𝙤
             \`\`\``)
         }
     }
@@ -2100,16 +2123,16 @@ ${prefix}webhookraid <amount> <message> » Spams @everyone the amount of times w
         if(enabled === true) {
             let embed = new Discord.RichEmbed()
             .setTitle("Success")
-            .setThumbnail(image ? image : "https://media3.giphy.com/media/TzyV32fsqLpbA0PHJf/giphy.gif")
-            .setColor(color ? color : "#1B78E7")
-            .setFooter(footer ? footer : "𝘾𝙧𝙮𝙥𝙩𝙞𝙘")
+            .setThumbnail(image ? image : "https://i.gyazo.com/9a01772609666c18b012df6efeb3d5f8.jpg")
+            .setColor(color ? color : "#ff0000")
+            .setFooter(footer ? footer : "𝙓𝙚𝙣𝙤")
             .setDescription(`Your activity was successfully set to \`STREAMING\` with message \`${msg}\``)
             message.channel.send(embed);
         } else {
             message.channel.send(stripIndents`\`\`\`
             Success
 
-            Your activity was successfully set to STREAMING with message ${msg}${footer ? `\n\n${footer}` : null}
+            Your activity was successfully set to STREAMING with message ${msg}${footer ? `\n\n${footer}` : "𝙓𝙚𝙣𝙤"}
             \`\`\``)
         }
     }
@@ -2124,16 +2147,16 @@ ${prefix}webhookraid <amount> <message> » Spams @everyone the amount of times w
         if(enabled === true) {
             let embed = new Discord.RichEmbed()
             .setTitle("Success")
-            .setThumbnail(image ? image : "https://media3.giphy.com/media/TzyV32fsqLpbA0PHJf/giphy.gif")
-            .setColor(color ? color : "#1B78E7")
-            .setFooter(footer ? footer : "𝘾𝙧𝙮𝙥𝙩𝙞𝙘")
+            .setThumbnail(image ? image : "https://i.gyazo.com/9a01772609666c18b012df6efeb3d5f8.jpg")
+            .setColor(color ? color : "#ff0000")
+            .setFooter(footer ? footer : "𝙓𝙚𝙣𝙤")
             .setDescription(`Your activity was successfully set to \`WATCHING\` with message \`${msg}\``)
             message.channel.send(embed);
         } else {
             message.channel.send(stripIndents`\`\`\`
             Success
 
-            Your activity was successfully set to WATCHING with message ${msg}${footer ? `\n\n${footer}` : null}
+            Your activity was successfully set to WATCHING with message ${msg}${footer ? `\n\n${footer}` : "𝙓𝙚𝙣𝙤"}
             \`\`\``)
         }
     }
@@ -2148,16 +2171,16 @@ ${prefix}webhookraid <amount> <message> » Spams @everyone the amount of times w
         if(enabled === true) {
             let embed = new Discord.RichEmbed()
             .setTitle("Success")
-            .setThumbnail(image ? image : "https://media3.giphy.com/media/TzyV32fsqLpbA0PHJf/giphy.gif")
-            .setColor(color ? color : "#1B78E7")
-            .setFooter(footer ? footer : "𝘾𝙧𝙮𝙥𝙩𝙞𝙘")
+            .setThumbnail(image ? image : "https://i.gyazo.com/9a01772609666c18b012df6efeb3d5f8.jpg")
+            .setColor(color ? color : "#ff0000")
+            .setFooter(footer ? footer : "𝙓𝙚𝙣𝙤")
             .setDescription(`Your activity was successfully set to \`LISTENING\` with message \`${msg}\``)
             message.channel.send(embed);
         } else {
             message.channel.send(stripIndents`\`\`\`
             Success
 
-            Your activity was successfully set to STREAMING with LISTENING ${msg}${footer ? `\n\n${footer}` : null}
+            Your activity was successfully set to STREAMING with LISTENING ${msg}${footer ? `\n\n${footer}` : "𝙓𝙚𝙣𝙤"}
             \`\`\``)
         }
     }
@@ -2172,16 +2195,16 @@ ${prefix}webhookraid <amount> <message> » Spams @everyone the amount of times w
         if(enabled === true) {
             let embed = new Discord.RichEmbed()
             .setTitle("Success")
-            .setThumbnail(image ? image : "https://media3.giphy.com/media/TzyV32fsqLpbA0PHJf/giphy.gif")
-            .setColor(color ? color : "#1B78E7")
-            .setFooter(footer ? footer : "𝘾𝙧𝙮𝙥𝙩𝙞𝙘")
+            .setThumbnail(image ? image : "https://i.gyazo.com/9a01772609666c18b012df6efeb3d5f8.jpg")
+            .setColor(color ? color : "#ff0000")
+            .setFooter(footer ? footer : "𝙓𝙚𝙣𝙤")
             .setDescription(`Your activity was successfully set to \`PLAYING\` with message \`${msg}\``)
             message.channel.send(embed);
         } else {
             message.channel.send(stripIndents`\`\`\`
             Success
 
-            Your activity was successfully set to PLAYING with message ${msg}${footer ? `\n\n${footer}` : null}
+            Your activity was successfully set to PLAYING with message ${msg}${footer ? `\n\n${footer}` : "𝙓𝙚𝙣𝙤"}
             \`\`\``)
         }
     }
@@ -2195,16 +2218,16 @@ ${prefix}webhookraid <amount> <message> » Spams @everyone the amount of times w
         if(enabled === true) {
             let embed = new Discord.RichEmbed()
             .setTitle("Success")
-            .setThumbnail(image ? image : "https://media3.giphy.com/media/TzyV32fsqLpbA0PHJf/giphy.gif")
-            .setColor(color ? color : "#1B78E7")
-            .setFooter(footer ? footer : "𝘾𝙧𝙮𝙥𝙩𝙞𝙘")
+            .setThumbnail(image ? image : "https://i.gyazo.com/9a01772609666c18b012df6efeb3d5f8.jpg")
+            .setColor(color ? color : "#ff0000")
+            .setFooter(footer ? footer : "𝙓𝙚𝙣𝙤")
             .setDescription(`Your activity was successfully reset`)
             message.channel.send(embed);
         } else {
             message.channel.send(stripIndents`\`\`\`
             Success
 
-            Your activity was successfully reset${footer ? `\n\n${footer}` : null}
+            Your activity was successfully reset${footer ? `\n\n${footer}` : "𝙓𝙚𝙣𝙤"}
             \`\`\``)
         }
     }
@@ -2341,5 +2364,5 @@ bot.on("message", async(message) => {
 if(config.token === "token-here") {
     return console.log(`${colors.red("[ERROR]:")} ${colors.yellow("You didn't specify a token in config.json")}`)
 } else {
-    bot.login(config.token)
+    bot.login(config.token).catch(err => console.log(`${colors.red("[ERROR]:")} ${colors.yellow("Invalid Token")}`))
 }
