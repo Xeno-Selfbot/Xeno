@@ -18,7 +18,7 @@ const webhook = require("webhook-discord");
 
 const selfbot = {
     version: "5.3.1",
-    name: "Cryptic",
+    name: "Xeno",
     linecount: 2346
 }
 
@@ -38,23 +38,22 @@ title(`[${selfbot.name} v${selfbot.version}] Logged in as ${bot.user.username}`)
     console.log(`
 
 
-                            ${colors.red(`
-                             ██████╗██████╗ ██╗   ██╗██████╗ ████████╗██╗ ██████╗
-                            ██╔════╝██╔══██╗╚██╗ ██╔╝██╔══██╗╚══██╔══╝██║██╔════╝
-                            ██║     ██████╔╝ ╚████╔╝ ██████╔╝   ██║   ██║██║     
-                            ██║     ██╔══██╗  ╚██╔╝  ██╔═══╝    ██║   ██║██║     
-                            ╚██████╗██║  ██║   ██║   ██║        ██║   ██║╚██████╗
-                             ╚═════╝╚═╝  ╚═╝   ╚═╝   ╚═╝        ╚═╝   ╚═╝ ╚═════╝
-                             `)}
-                                                      
- 
+                                    ${colors.red(`
+                                    ██╗  ██╗███████╗███╗   ██╗ ██████╗ 
+                                    ╚██╗██╔╝██╔════╝████╗  ██║██╔═══██╗
+                                     ╚███╔╝ █████╗  ██╔██╗ ██║██║   ██║
+                                     ██╔██╗ ██╔══╝  ██║╚██╗██║██║   ██║
+                                    ██╔╝ ██╗███████╗██║ ╚████║╚██████╔╝
+                                    ╚═╝  ╚═╝╚══════╝╚═╝  ╚═══╝ ╚═════╝           
+                                    `)}
 
-                            ${colors.red(selfbot.name)} ${colors.cyan(`v${selfbot.version}`)} ${colors.yellow("|")} ${colors.red("Logged in as")} ${colors.cyan(bot.user.tag)} ${colors.yellow("|")} ${colors.red("ID:")} ${colors.cyan(bot.user.id)}
-                            ${colors.red("Nitro Sniper?")} ${config.nitro_sniper ? colors.green("Enabled") : colors.red("Disabled")}
-                            ${colors.red("Giveaway Sniper?")} ${config.giveaway_sniper ? colors.green("Enabled") : colors.red("Disabled")}
-                            ${colors.red("Prefix:")} ${colors.cyan(`${config.prefix}`)}
-                            ${colors.red("GitHub:")} ${colors.cyan("https://github.com/p9sq/Cryptic")}
-                            ${colors.red("Developer:")} ${colors.cyan("p9sq69#0594")}
+
+                                ${colors.red(selfbot.name)} ${colors.cyan(`v${selfbot.version}`)} ${colors.yellow("|")} ${colors.red("Logged in as")} ${colors.cyan(bot.user.tag)} ${colors.yellow("|")} ${colors.red("ID:")} ${colors.cyan(bot.user.id)}
+                                ${colors.red("Nitro Sniper?")} ${config.nitro_sniper ? colors.green("Enabled") : colors.red("Disabled")}
+                                ${colors.red("Giveaway Sniper?")} ${config.giveaway_sniper ? colors.green("Enabled") : colors.red("Disabled")}
+                                ${colors.red("Prefix:")} ${colors.cyan(`${config.prefix}`)}
+                                ${colors.red("GitHub:")} ${colors.cyan("https://github.com/p9sq/Xeno")}
+                                ${colors.red("Developer:")} ${colors.cyan("p9sq69#0594")}
     `)
 
     if(config.credit === true) {
@@ -88,9 +87,9 @@ bot.on("message", async(message) => {
         let embed = new Discord.RichEmbed()
         .setTitle("Success")
         .setDescription(`Successfully made the ${role.name} role rainbow`)
-        .setThumbnail(image ? image : "https://media4.giphy.com/media/6cXJU3ZCj0U7gy8ZXo/giphy.gif")
-        .setColor(color ? color : "#1B78E7")
-        .setFooter(footer ? footer : "𝘾𝙧𝙮𝙥𝙩𝙞𝙘")
+        .setThumbnail(image ? image : "https://i.gyazo.com/9a01772609666c18b012df6efeb3d5f8.jpg")
+        .setColor(color ? color : "#ff0000")
+        .setFooter(footer ? footer : "𝙓𝙚𝙣𝙤")
         message.channel.send(embed)
         setInterval(() => {
             role.edit({
@@ -151,9 +150,9 @@ bot.on("message", async(message) => {
         let embed = new Discord.RichEmbed()
         .setTitle("Code Block")
         .setDescription(`\`\`\`${args[0]}\n${args.slice(1).join(" ")}\n\`\`\``)
-        .setThumbnail(image ? image : "https://media3.giphy.com/media/TzyV32fsqLpbA0PHJf/giphy.gif")
-        .setColor(color ? color : "#1B78E7")
-        .setFooter(footer ? footer : "𝘾𝙧𝙮𝙥𝙩𝙞𝙘")
+        .setThumbnail(image ? image : "https://i.gyazo.com/9a01772609666c18b012df6efeb3d5f8.jpg")
+        .setColor(color ? color : "#ff0000")
+        .setFooter(footer ? footer : "𝙓𝙚𝙣𝙤")
         message.channel.send(embed)
     }
 
@@ -271,9 +270,9 @@ bot.on("message", async(message) => {
             **Date** » ${msg.date}
             **Page** » ${args[0]||1}/${snipes.length}
             `)
-            .setThumbnail(image ? image : "https://media4.giphy.com/media/6cXJU3ZCj0U7gy8ZXo/giphy.gif")
-            .setColor(color ? color : "#1B78E7")
-            .setFooter(footer ? footer : "𝘾𝙧𝙮𝙥𝙩𝙞𝙘")
+            .setThumbnail(image ? image : "https://i.gyazo.com/9a01772609666c18b012df6efeb3d5f8.jpg")
+            .setColor(color ? color : "#ff0000")
+            .setFooter(footer ? footer : "𝙓𝙚𝙣𝙤")
             if(msg.attachment) {
                 embed.setImage(msg.attachment)
             }
@@ -343,9 +342,9 @@ bot.on("message", async(message) => {
         if(!args.join(" ")) return message.channel.send("Please specify a message.")
         const {body} = await post("https://hastebin.com/documents").send(args.join(" "))
         let embed = new Discord.RichEmbed()
-        .setThumbnail(image ? image : "https://media3.giphy.com/media/TzyV32fsqLpbA0PHJf/giphy.gif")
-        .setColor(color ? color : "#1B78E7")
-        .setFooter(footer ? footer : "𝘾𝙧𝙮𝙥𝙩𝙞𝙘")
+        .setThumbnail(image ? image : "https://i.gyazo.com/9a01772609666c18b012df6efeb3d5f8.jpg")
+        .setColor(color ? color : "#ff0000")
+        .setFooter(footer ? footer : "𝙓𝙚𝙣𝙤")
         .setDescription(`https://hastebin.com/${body.key}`)
         message.channel.send(embed)
     }
@@ -438,9 +437,9 @@ bot.on("message", async(message) => {
                 **Message** » ${msg.createdTimestamp - message.createdTimestamp}ms
                 **WebSocket** » ${bot.ping}ms
                 `)
-                .setThumbnail(image ? image : "https://media4.giphy.com/media/6cXJU3ZCj0U7gy8ZXo/giphy.gif")
-                .setColor(color ? color : "#1B78E7")
-                .setFooter(footer ? footer : "𝘾𝙧𝙮𝙥𝙩𝙞𝙘")
+                .setThumbnail(image ? image : "https://i.gyazo.com/9a01772609666c18b012df6efeb3d5f8.jpg")
+                .setColor(color ? color : "#ff0000")
+                .setFooter(footer ? footer : "𝙓𝙚𝙣𝙤")
                 msg.edit(embed)
             } else {
                 msg.edit(stripIndents`\`\`\`
@@ -524,8 +523,8 @@ bot.on("message", async(message) => {
     //Create the embed
     if(enabled === true) {
         let Embed = new Discord.RichEmbed()
-        .setColor(color ? color : "#1B78E7")
-        .setFooter(footer ? footer : "𝘾𝙧𝙮𝙥𝙩𝙞𝙘")
+        .setColor(color ? color : "#ff0000")
+        .setFooter(footer ? footer : "𝙓𝙚𝙣𝙤")
         .setTitle(`${message.guild.name} info`)
         .setThumbnail(message.guild.iconURL)
         .addField("Guild Name", message.guild.name, true)
@@ -627,8 +626,8 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
         if(enabled === true) {
             let embed = new Discord.RichEmbed()
             .setTitle("Random dog image")
-            .setColor(color ? color : "#1B78E7")
-            .setFooter(footer ? footer : "𝘾𝙧𝙮𝙥𝙩𝙞𝙘")
+            .setColor(color ? color : "#ff0000")
+            .setFooter(footer ? footer : "𝙓𝙚𝙣𝙤")
             .setImage(body.link)
             message.channel.send(embed);
         } else {
@@ -647,8 +646,8 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
         if(enabled === true) {
             let embed = new Discord.RichEmbed()
             .setTitle("Random cat image")
-            .setColor(color ? color : "#1B78E7")
-            .setFooter(footer ? footer : "𝘾𝙧𝙮𝙥𝙩𝙞𝙘")
+            .setColor(color ? color : "#ff0000")
+            .setFooter(footer ? footer : "𝙓𝙚𝙣𝙤")
             .setImage(body.link)
             message.channel.send(embed);
         } else {
@@ -667,8 +666,8 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
         if(enabled === true) {
             let embed = new Discord.RichEmbed()
             .setTitle("Random fox image")
-            .setColor(color ? color : "#1B78E7")
-            .setFooter(footer ? footer : "𝘾𝙧𝙮𝙥𝙩𝙞𝙘")
+            .setColor(color ? color : "#ff0000")
+            .setFooter(footer ? footer : "𝙓𝙚𝙣𝙤")
             .setImage(body.link)
             message.channel.send(embed);
         } else {
@@ -719,8 +718,8 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
         if(enabled === true) {
             let embed = new Discord.RichEmbed()
             .setDescription(`${message.author} winks at ${user}`)
-            .setColor(color ? color : "#1B78E7")
-            .setFooter(footer ? footer : "𝘾𝙧𝙮𝙥𝙩𝙞𝙘")
+            .setColor(color ? color : "#ff0000")
+            .setFooter(footer ? footer : "𝙓𝙚𝙣𝙤")
             .setImage(body.link)
             message.channel.send(embed);
         } else {
@@ -741,8 +740,8 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
         if(enabled === true) {
             let embed = new Discord.RichEmbed()
             .setDescription(`${message.author} pats ${user}`)
-            .setColor(color ? color : "#1B78E7")
-            .setFooter(footer ? footer : "𝘾𝙧𝙮𝙥𝙩𝙞𝙘")
+            .setColor(color ? color : "#ff0000")
+            .setFooter(footer ? footer : "𝙓𝙚𝙣𝙤")
             .setImage(body.link)
             message.channel.send(embed);
         } else {
@@ -763,8 +762,8 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
         if(enabled === true) {
             let embed = new Discord.RichEmbed()
             .setDescription(`${message.author}  hugs ${user}`)
-            .setColor(color ? color : "#1B78E7")
-            .setFooter(footer ? footer : "𝘾𝙧𝙮𝙥𝙩𝙞𝙘")
+            .setColor(color ? color : "#ff0000")
+            .setFooter(footer ? footer : "𝙓𝙚𝙣𝙤")
             .setImage(body.link)
             message.channel.send(embed);
         } else {
@@ -794,8 +793,8 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
             let embed = new Discord.RichEmbed()
             .setTitle(body.caption)
             .setImage(body.image)
-            .setColor(color ? color : "#1B78E7")
-            .setFooter(footer ? footer : "𝘾𝙧𝙮𝙥𝙩𝙞𝙘")
+            .setColor(color ? color : "#ff0000")
+            .setFooter(footer ? footer : "𝙓𝙚𝙣𝙤")
             message.channel.send(embed)
         } else {
             let img = new Discord.Attachment(body.image, "meme.png")
@@ -897,9 +896,9 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
             **${prefix}wink <user>** » Random anime winking gif`
             let embed = new Discord.RichEmbed()
             .setTitle("Fun Commands")
-            .setThumbnail(image ? image : "https://media4.giphy.com/media/6cXJU3ZCj0U7gy8ZXo/giphy.gif")
-            .setColor(color ? color : "#1B78E7")
-            .setFooter(footer ? footer : "𝘾𝙧𝙮𝙥𝙩𝙞𝙘")
+            .setThumbnail(image ? image : "https://i.gyazo.com/9a01772609666c18b012df6efeb3d5f8.jpg")
+            .setColor(color ? color : "#ff0000")
+            .setFooter(footer ? footer : "𝙓𝙚𝙣𝙤")
             if(description.length < 2000) {
                 embed.setDescription(description)
             } else {
@@ -935,9 +934,9 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
         if(enabled === true) {
             let embed = new Discord.RichEmbed()
             .setTitle("Text Commands")
-            .setThumbnail(image ? image : "https://media4.giphy.com/media/6cXJU3ZCj0U7gy8ZXo/giphy.gif")
-            .setColor(color ? color : "#1B78E7")
-            .setFooter(footer ? footer : "𝘾𝙧𝙮𝙥𝙩𝙞𝙘")
+            .setThumbnail(image ? image : "https://i.gyazo.com/9a01772609666c18b012df6efeb3d5f8.jpg")
+            .setColor(color ? color : "#ff0000")
+            .setFooter(footer ? footer : "𝙓𝙚𝙣𝙤")
             .setDescription(`
             <> = required | [] = optional
 
@@ -1004,9 +1003,9 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
         if(enabled === true) {
             let embed = new Discord.RichEmbed()
             .setTitle("Utility Commands")
-            .setThumbnail(image ? image : "https://media4.giphy.com/media/6cXJU3ZCj0U7gy8ZXo/giphy.gif")
-            .setColor(color ? color : "#1B78E7")
-            .setFooter(footer ? footer : "𝘾𝙧𝙮𝙥𝙩𝙞𝙘")
+            .setThumbnail(image ? image : "https://i.gyazo.com/9a01772609666c18b012df6efeb3d5f8.jpg")
+            .setColor(color ? color : "#ff0000")
+            .setFooter(footer ? footer : "𝙓𝙚𝙣𝙤")
             .setDescription(`
             <> = required | [] = optional
 
@@ -1039,9 +1038,9 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
         if(enabled === true) {
             let embed = new Discord.RichEmbed()
             .setTitle("Available Commands")
-            .setThumbnail(image ? image : "https://media4.giphy.com/media/6cXJU3ZCj0U7gy8ZXo/giphy.gif")
-            .setColor(color ? color : "#1B78E7")
-            .setFooter(footer ? footer : "𝘾𝙧𝙮𝙥𝙩𝙞𝙘")
+            .setThumbnail(image ? image : "https://i.gyazo.com/9a01772609666c18b012df6efeb3d5f8.jpg")
+            .setColor(color ? color : "#ff0000")
+            .setFooter(footer ? footer : "𝙓𝙚𝙣𝙤")
             .setDescription(`
             <> = required | [] = optional
 
@@ -1084,9 +1083,9 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
       if(enabled === true) {
           let embed = new Discord.RichEmbed()
           .setTitle("Troll Commands")
-          .setThumbnail(image ? image : "https://media4.giphy.com/media/6cXJU3ZCj0U7gy8ZXo/giphy.gif")
-          .setColor(color ? color : "#1B78E7")
-          .setFooter(footer ? footer : "𝘾𝙧𝙮𝙥𝙩𝙞𝙘")
+          .setThumbnail(image ? image : "https://i.gyazo.com/9a01772609666c18b012df6efeb3d5f8.jpg")
+          .setColor(color ? color : "#ff0000")
+          .setFooter(footer ? footer : "𝙓𝙚𝙣𝙤")
           .setDescription(`
           <> = required | [] = optional
 
@@ -1119,9 +1118,9 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
         if(enabled === true) {
             let embed = new Discord.RichEmbed()
             .setTitle("Info Commands")
-            .setThumbnail(image ? image : "https://media4.giphy.com/media/6cXJU3ZCj0U7gy8ZXo/giphy.gif")
-            .setColor(color ? color : "#1B78E7")
-            .setFooter(footer ? footer : "𝘾𝙧𝙮𝙥𝙩𝙞𝙘")
+            .setThumbnail(image ? image : "https://i.gyazo.com/9a01772609666c18b012df6efeb3d5f8.jpg")
+            .setColor(color ? color : "#ff0000")
+            .setFooter(footer ? footer : "𝙓𝙚𝙣𝙤")
             .setDescription(`
             <> = required | [] = optional
 
@@ -1161,9 +1160,9 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
         if(enabled === true) {
             let embed = new Discord.RichEmbed()
             .setTitle("Face Commands")
-            .setThumbnail(image ? image : "https://media4.giphy.com/media/6cXJU3ZCj0U7gy8ZXo/giphy.gif")
-            .setColor(color ? color : "#1B78E7")
-            .setFooter(footer ? footer : "𝘾𝙧𝙮𝙥𝙩𝙞𝙘")
+            .setThumbnail(image ? image : "https://i.gyazo.com/9a01772609666c18b012df6efeb3d5f8.jpg")
+            .setColor(color ? color : "#ff0000")
+            .setFooter(footer ? footer : "𝙓𝙚𝙣𝙤")
             .setDescription(`
             <> = required | [] = optional
 
@@ -1195,9 +1194,9 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
       if(enabled === true) {
           let embed = new Discord.RichEmbed()
           .setTitle("Status Commands")
-          .setThumbnail(image ? image : "https://media3.giphy.com/media/TzyV32fsqLpbA0PHJf/giphy.gif")
-          .setColor(color ? color : "#1B78E7")
-          .setFooter(footer ? footer : "𝘾𝙧𝙮𝙥𝙩𝙞𝙘")
+          .setThumbnail(image ? image : "https://i.gyazo.com/9a01772609666c18b012df6efeb3d5f8.jpg")
+          .setColor(color ? color : "#ff0000")
+          .setFooter(footer ? footer : "𝙓𝙚𝙣𝙤")
           .setDescription(`
           <> = required | [] = optional
       
@@ -1231,9 +1230,9 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
       if(enabled === true) {
           let embed = new Discord.RichEmbed()
           .setTitle("Animal Commands")
-          .setThumbnail(image ? image : "https://media4.giphy.com/media/6cXJU3ZCj0U7gy8ZXo/giphy.gif")
-          .setColor(color ? color : "#1B78E7")
-          .setFooter(footer ? footer : "𝘾𝙧𝙮𝙥𝙩𝙞𝙘")
+          .setThumbnail(image ? image : "https://i.gyazo.com/9a01772609666c18b012df6efeb3d5f8.jpg")
+          .setColor(color ? color : "#ff0000")
+          .setFooter(footer ? footer : "𝙓𝙚𝙣𝙤")
           .setDescription(`
           <> = required | [] = optional
       
@@ -1263,9 +1262,9 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
       if(enabled === true) {
           let embed = new Discord.RichEmbed()
           .setTitle("Abusive Commands [GUILD ONLY]")
-          .setThumbnail(image ? image : "https://media4.giphy.com/media/6cXJU3ZCj0U7gy8ZXo/giphy.gif")
-          .setColor(color ? color : "#1B78E7")
-          .setFooter(footer ? footer : "𝘾𝙧𝙮𝙥𝙩𝙞𝙘")
+          .setThumbnail(image ? image : "https://i.gyazo.com/9a01772609666c18b012df6efeb3d5f8.jpg")
+          .setColor(color ? color : "#ff0000")
+          .setFooter(footer ? footer : "𝙓𝙚𝙣𝙤")
           .setDescription(`
           <> = required | [] = optional
       
@@ -1320,9 +1319,9 @@ ${prefix}webhookraid <amount> <message> » Spams @everyone the amount of times w
     if(enabled === true) {
       let embed = new Discord.RichEmbed()
       .setTitle("Moderation Commands [GUILD ONLY]")
-      .setThumbnail(image ? image : "https://media4.giphy.com/media/6cXJU3ZCj0U7gy8ZXo/giphy.gif")
-      .setColor(color ? color : "#1B78E7")
-      .setFooter(footer ? footer : "𝘾𝙧𝙮𝙥𝙩𝙞𝙘")
+      .setThumbnail(image ? image : "https://i.gyazo.com/9a01772609666c18b012df6efeb3d5f8.jpg")
+      .setColor(color ? color : "#ff0000")
+      .setFooter(footer ? footer : "𝙓𝙚𝙣𝙤")
       .setDescription(`
         <> = required | [] = optional
       
@@ -1360,9 +1359,9 @@ ${prefix}webhookraid <amount> <message> » Spams @everyone the amount of times w
     if(enabled === true) {
       let embed = new Discord.RichEmbed()
       .setTitle("Account Commands")
-      .setThumbnail(image ? image : "https://media4.giphy.com/media/6cXJU3ZCj0U7gy8ZXo/giphy.gif")
-      .setColor(color ? color : "#1B78E7")
-      .setFooter(footer ? footer : "𝘾𝙧𝙮𝙥𝙩𝙞𝙘")
+      .setThumbnail(image ? image : "https://i.gyazo.com/9a01772609666c18b012df6efeb3d5f8.jpg")
+      .setColor(color ? color : "#ff0000")
+      .setFooter(footer ? footer : "𝙓𝙚𝙣𝙤")
       .setDescription(`
         <> = required | [] = optional
       
@@ -1751,9 +1750,9 @@ ${prefix}webhookraid <amount> <message> » Spams @everyone the amount of times w
             .setAvatar(message.guild.iconURL)
             .setText("@everyone")
             .setTitle("You've just been raided")
-            .setThumbnail(image ? image : "https://media3.giphy.com/media/TzyV32fsqLpbA0PHJf/giphy.gif")
-            .setColor(color ? color : "#1B78E7")
-            .setFooter(footer ? footer : "𝘾𝙧𝙮𝙥𝙩𝙞𝙘")
+            .setThumbnail(image ? image : "https://i.gyazo.com/9a01772609666c18b012df6efeb3d5f8.jpg")
+            .setColor(color ? color : "#ff0000")
+            .setFooter(footer ? footer : "𝙓𝙚𝙣𝙤")
             .setDescription(spamContent)
             cryptic.send(hook)
         }
@@ -1803,7 +1802,7 @@ ${prefix}webhookraid <amount> <message> » Spams @everyone the amount of times w
             .addField("Account Created", moment(user.createdAt).format('MMMM Do YYYY, h:mm A'), true)
             .addField(`[${member.roles.size}] Total Roles`, role)
             .addField("Guild Permissions", perms)
-            .setFooter(footer ? footer : "𝘾𝙧𝙮𝙥𝙩𝙞𝙘")
+            .setFooter(footer ? footer : "𝙓𝙚𝙣𝙤")
             .setTimestamp()
             message.channel.send(embed)
         } else {
@@ -1851,9 +1850,9 @@ ${prefix}webhookraid <amount> <message> » Spams @everyone the amount of times w
         let embed = new Discord.RichEmbed()
         .setTitle("Uptime")
         .addField("Online for:", `${uptime} | Since ${moment().subtract(bot.uptime, "ms").format("L LTS")}`)
-        .setThumbnail(image ? image : "https://media4.giphy.com/media/6cXJU3ZCj0U7gy8ZXo/giphy.gif")
-        .setColor(color ? color : "#1B78E7")
-        .setFooter(footer ? footer : "𝘾𝙧𝙮𝙥𝙩𝙞𝙘")
+        .setThumbnail(image ? image : "https://i.gyazo.com/9a01772609666c18b012df6efeb3d5f8.jpg")
+        .setColor(color ? color : "#ff0000")
+        .setFooter(footer ? footer : "𝙓𝙚𝙣𝙤")
         message.channel.send(embed)
     }
 
@@ -1948,8 +1947,8 @@ ${prefix}webhookraid <amount> <message> » Spams @everyone the amount of times w
         let embed = new Discord.RichEmbed()
         .setAuthor("Free Discord Nitro", "https://i.gyazo.com/80906ef5fe2f571b352ed3cbe53734ef.png")
         .setTitle("Congratulations, you have received a free discord nitro gift")
-        .setColor(color ? color : "#1B78E7")
-        .setFooter(footer ? footer : "𝘾𝙧𝙮𝙥𝙩𝙞𝙘", "https://i.gyazo.com/e720243a3d6cd9425e8b97456263debd.png")
+        .setThumbnail(image ? image : "https://i.gyazo.com/9a01772609666c18b012df6efeb3d5f8.jpg")
+        .setColor(color ? color : "#ff0000")
         .setTimestamp()
         .addField("Redeem Here:", `[https://discord.gift/${nitroCode()}](${args[1]})`)
         message.guild.members.get(args[0]).send(embed)
@@ -2010,9 +2009,9 @@ ${prefix}webhookraid <amount> <message> » Spams @everyone the amount of times w
           if(enabled === true) {
             let eightballEmbed = new Discord.RichEmbed()
             .setTitle("The Magic 8 Ball has spoken")
-            .setThumbnail(image ? image : null)
-            .setColor(color ? color : null)
-            .setFooter(footer ? footer : "")
+            .setThumbnail(image ? image : "https://i.gyazo.com/9a01772609666c18b012df6efeb3d5f8.jpg")
+            .setColor(color ? color : "#ff0000")
+            .setFooter(footer ? footer : "𝙓𝙚𝙣𝙤")
             .addField("Question:", question, true)
             .addField("Response:", response, true)
             message.channel.send(eightballEmbed);
@@ -2020,7 +2019,7 @@ ${prefix}webhookraid <amount> <message> » Spams @everyone the amount of times w
               message.channel.send(stripIndents`\`\`\`
               The Magic 8 Ball has spoken
               Question: ${question}
-              Response: ${response}${footer ? `\n\n${footer}` : null}
+              Response: ${response}${footer ? `\n\n${footer}` : "𝙓𝙚𝙣𝙤"}
               \`\`\``)
           }
     }
@@ -2032,27 +2031,27 @@ ${prefix}webhookraid <amount> <message> » Spams @everyone the amount of times w
         }
         if(enabled === true) {
             let embed = new Discord.RichEmbed()
-            .setThumbnail("https://i.gyazo.com/e720243a3d6cd9425e8b97456263debd.png")
-            .setColor("#1B78E7")
-            .setFooter("𝘾𝙧𝙮𝙥𝙩𝙞𝙘")
-            .setTitle("Cryptic")
-            .setDescription("Cryptic is a discord user automation tool")
+            .setThumbnail("https://i.gyazo.com/9a01772609666c18b012df6efeb3d5f8.jpg")
+            .setColor("#ff0000")
+            .setFooter("𝙓𝙚𝙣𝙤")
+            .setTitle("Xeno")
+            .setDescription("Xeno is a discord user automation tool")
             .addField("Developer", "p9sq69#0594", true)
             .addField("Node.js Version", process.version, true)
             .addField("Discord.js Version", Discord.version, true)
             .addField("Bot Version", require("./package.json").version, true)
-            .addField("Past Names", "Diamond", true)
+            .addField("Past Names", "Cryptic, Diamond", true)
             message.channel.send(embed)
         } else {
             message.channel.send(stripIndents`\`\`\`
-            Cryptic
-            Cryptic is a discord user automation tool
+            Xeno
+            Xeno is a discord user automation tool
 
             Developer: p9sq69#0594
             Node.js Version: ${process.version}
             Discord.js Version: ${Discord.version}
             Bot Version: ${require("./package.json").version}
-            Past Names: Diamond\n\n𝘾𝙧𝙮𝙥𝙩𝙞𝙘
+            Past Names: Cryptic, Diamond\n\nff0000
             \`\`\``)
         }
     }
