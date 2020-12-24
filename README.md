@@ -2,12 +2,12 @@
 A discord user automation tool
 
 # Installation
+1. If you don't have `node.js` installed, make sure to download it [here](https://nodejs.org/en/)\
+2. Run `install.bat`\
+3. Wait for everything to install\
+4. Then you are done installing the required packages!
 
-Run `install.bat`\
-Wait for everything to install\
-Then you are done installing the required packages!
 # Setup
-
 Before you do anything, make sure you rename `config-example.json` to `config.json`
 
 Next, get your discord token and paste it into `config.json`
