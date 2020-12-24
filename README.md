@@ -1,4 +1,4 @@
-# Cryptic
+# Xeno
 A discord user automation tool
 
 # Installation
@@ -18,17 +18,18 @@ So far, your config file should look like this
     "token": "token-here",
     "password": "password-here",
     "nitro_sniper": false,
+    "credit": false,
     "giveaway_sniper": false,
     "whitelisted": [],
-    "prefix": "!",
+    "prefix": "prefix-here",
     "messageLogs": false,
     "id": "account-id-here",
     "webhookURL": "webhook-url-here",
     "embedOptions": {
         "enabled": true,
-        "color": "hex-color",
-        "image": "some-image-url-here",
-        "footer": "some-text-here"
+        "color": "",
+        "image": "",
+        "footer": ""
     }
 }
 ```
@@ -58,13 +59,13 @@ For the message logs, that is optional to have on or off, the message logs will 
 
 To simply run the bot, just run `launch.bat`. The bot should be working fine as long as you don't muck up the code.
 
-# Cryptic ToS
+# Xeno ToS
 
 1. You MUST NOT claim the code as your own code
 2. You MUST NOT claim owner ship of the bot
 3. Feel free to edit the code to make something better, but only if you know what you are doing
 
-# Cryptic Risks
+# Xeno Risks
 
 Beware that your account is\
 at risk when using this bot.\
