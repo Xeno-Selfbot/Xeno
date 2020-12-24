@@ -15,8 +15,8 @@ Next, get your discord token and paste it into `config.json`
 So far, your config file should look like this
 ```json
 {
-    "token": "token-here",
-    "password": "password-here",
+    "token": "account-token-here",
+    "password": "account-password-here",
     "nitro_sniper": false,
     "credit": false,
     "giveaway_sniper": false,
