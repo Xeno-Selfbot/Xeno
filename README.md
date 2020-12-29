@@ -17,6 +17,7 @@ So far, your config file should look like this
 {
     "token": "account-token-here",
     "password": "account-password-here",
+    "afk_message": "afk-message-here",
     "nitro_sniper": false,
     "credit": false,
     "giveaway_sniper": false,
@@ -38,6 +39,8 @@ You should enter in a password, just so then the account management commands wil
 
 You should choose a desired prefix for the commands so then the commands won't run if you sent `ping` for an example.
 [ NOTE: The prefix must not include any spaces or the commands will not register properly ]
+
+For the `afk_message`, you can type one if you want to. It's just the message the bot will send when afk mode is on
 
 For the `nitro_sniper` that is optional, but you can have it on so then you can snipe discord nitro and so the bot can instanly redeem it for you
 

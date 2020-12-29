@@ -28,7 +28,9 @@ process.on("uncaughtExceptionMonitor", error => console.log(`${colors.red("[ERRO
 process.on("uncaughtException", error => console.log(`${colors.red("[ERROR]:")} ${colors.yellow(error.message)}`))
 // Process
 
-bot.snipes = new Map()
+bot.snipes = new Map();
+
+let afkMode = false;
 
 console.log("Logging in, please wait...")
 title(`[${selfbot.name} v${selfbot.version}] Loading...`)
@@ -122,8 +124,8 @@ bot.on("message", async(message) => {
                 const result = await res.json()
                 if(enabled === true) {
                     let embed = new Discord.RichEmbed()
-                    .setColor(color ? color : "#1B78E7")
-                    .setFooter(footer ? footer : "𝘾𝙧𝙮𝙥𝙩𝙞𝙘")
+                    .setColor(color ? color : "#ff0000")
+                    .setFooter(footer ? footer : "𝙓𝙚𝙣𝙤")
                     .setThumbnail(`https://cdn.discordapp.com/avatars/${result.id}/${result.avatar}.png?size=2048`)
                     .setDescription(`
                     **ID** » ${result.id}
@@ -275,6 +277,24 @@ bot.on("message", async(message) => {
             message.delete()
         }
         console.clear()
+    }
+
+    if(cmd === "afk") {
+        console.log(`[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan("Command used")} ${colors.magenta("|")} ${colors.yellow(cmd)}`)
+        if(message.deletable) {
+            message.delete()
+        }
+        if(!args[0]) return message.channel.send("Please specify either on or off.")
+        const options = ["on", "off"];
+        if(!options.includes(args[0])) return message.channel.send("Please specify a valid option. Options: on, off.")
+        if(args[0] === options[0] && afkMode === false) {
+            afkMode = true;
+            message.channel.send(`Afk has been enabled. Afk message: ${config.afk_message ? config.afk_message : "Hey there, I am currently afk. Try dming me later! :slight_smile:"}`)
+        }
+        if(args[0] === options[1] && afkMode === true) {
+            afkMode = false;
+            message.channel.send("Afk mode has been disabled.")
+        }
     }
 
     if(cmd === "snipe") {
@@ -2285,6 +2305,13 @@ bot.on("messageDelete", message => {
 })
 
 bot.on("message", async(message) => {
+
+    if(message.channel.type === "dm") {
+        if(afkMode === true) {
+            message.author.send(config.afk_message ? config.afk_message : "Hey there, I am currently afk. Try dming me later! :slight_smile:")
+        }
+    }
+
     const start = process.hrtime();
     const difference = process.hrtime(start);
 

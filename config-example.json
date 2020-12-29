@@ -1,6 +1,7 @@
 {
     "token": "token-here",
     "password": "password-here",
+    "afk_message": "",
     "nitro_sniper": false,
     "giveaway_sniper": false,
     "whitelisted": [],
