@@ -2309,6 +2309,8 @@ bot.on("message", async(message) => {
     if(message.channel.type === "dm") {
         if(afkMode === true) {
             message.author.send(config.afk_message ? config.afk_message : "Hey there, I am currently afk. Try dming me later! :slight_smile:")
+        } else {
+            return;
         }
     }
 
