@@ -1091,7 +1091,7 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
 
             **${prefix}animals** » Animals Commands
             **${prefix}account** » Account Commands
-            **${prefix}abusive** » Nuke Commands
+            **${prefix}abuse** » Nuke Commands
             **${prefix}fun** » Fun Commands
             **${prefix}info** » Info Commands
             **${prefix}moderation** » Moderation Commands
