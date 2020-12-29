@@ -1052,6 +1052,7 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
             .setDescription(`
             <> = required | [] = optional
 
+            **${prefix}afk <on - off>** » Enabels or Disables afk mode
             **${prefix}clean <amount>** » Deletes the specified amount of your messages
             **${prefix}codeblock <type> <code>** » Converts your text to a code block
             **${prefix}eval <code>** » Evaluates JavaScript code
@@ -1064,6 +1065,7 @@ Total Roles: ${message.guild.roles.size.toLocaleString()}${footer ? `\n\n${foote
             message.channel.send(stripIndents`\`\`\`
             <> = required | [] = optional
 
+            ${prefix}afk <on - off> » Enabels or Disables afk mode
             ${prefix}clean <amount> » Deletes the specified amount of your messages
             ${prefix}codeblock <type> <code> » Converts your text to a code block
             ${prefix}eval <code> » Evaluates JavaScript code
