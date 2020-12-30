@@ -17,6 +17,7 @@ module.exports = async (bot) => {
             if(message.deletable) {
                 message.delete();
             }
+            // Add command code here
         }
     })
 }
